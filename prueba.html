@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar con Tailwind CSS</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+
+    <nav class="bg-gray-800 text-white p-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div>
+                <a href="#" class="text-lg font-bold">Logo</a>
+            </div>
+            <div class="hidden md:flex space-x-4">
+                <a href="#" class="hover:text-gray-300">Inicio</a>
+                <div class="relative">
+                    <a href="#" class="hover:text-gray-300">Productos</a>
+                    <div class="absolute top-full left-0 bg-gray-800 text-white p-4 mt-1 hidden group-hover:block">
+                        <a href="#" class="block px-4 py-2">Producto 1</a>
+                        <a href="#" class="block px-4 py-2">Producto 2</a>
+                        <a href="#" class="block px-4 py-2">Producto 3</a>
+                    </div>
+                </div>
+                <a href="#" class="hover:text-gray-300">Nosotros</a>
+                <a href="#" class="hover:text-gray-300">Contacto</a>
+            </div>
+            <div class="md:hidden">
+                <!-- Mobile menu button -->
+                <button type="button"
+                    class="text-gray-300 hover:text-white focus:outline-none focus:text-white">
+                    <svg viewBox="0 0 20 20" fill="currentColor" class="menu w-6 h-6">
+                        <path fill-rule="evenodd"
+                            d="M2 5a1 1 0 0 1 1-1h14a1 1 0 0 1 0 2H3a1 1 0 0 1-1-1zm0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 0 2H3a1 1 0 0 1-1-1zm0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 0 2H3a1 1 0 0 1-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        // JavaScript para el botón de menú móvil (opcional)
+        const menuButton = document.querySelector('.menu');
+        const mobileMenu = document.querySelector('.hidden');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+
+</html>
