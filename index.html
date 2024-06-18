@@ -15,149 +15,13 @@
       href="https://unpkg.com/flowbite@^2.1/dist/flowbite.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <script src="https://unpkg.com/flowbite@^2.1/dist/flowbite.min.js"></script>
-    <style>
-      .bg-green-500{
-        background-color: #107926;
-      }
-      body {
-        font-family: "Work Sans", sans-serif;
-      }
-
-      .hero-section h1,
-      .hero-section p,
-      .hero-section button,
-      .section-separator,
-      .section-separator-VERDE,
-      .nota p,
-      .texto-sobre-imagen,
-      .imagen-con-desenfoque {
-        font-family: "Work Sans", sans-serif;
-      }
-
-      .navbar-transparent {
-        background-color: white;
-    transition: background-color 0.3s ease;
-  }
-  .navbar-white {
-    background-color: white;
-    transition: background-color 0.3s ease;
-  }
-      .hero-section {
-        position: relative;
-        background-image: url("img_recuros_pagina/IMG_COVER_ALUMNOS_SALACOMPUTO.jpg");
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center;
-        height: 100vh;
-      }
-
-      .hero-content {
-        z-index: 1;
-      }
-
-      .hero-section::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.5); /* Optional: Add a dark overlay */
-        z-index: 0;
-      }
-
-      .hero-content {
-        position: relative;
-        z-index: 2;
-        color: white;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-      }
-
-      .hero-content button {
-        background-color: rgba(255, 255, 255, 0.8);
-        color: #000;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        text-transform: uppercase;
-        font-weight: bold;
-        transition: background-color 0.3s ease;
-      }
-
-      .hero-content button:hover {
-        background-color: rgba(255, 255, 255, 1);
-      }
-
-      .section-separator {
-        width: 100%;
-        height: 4px;
-        background-color: #f97316; /* Orange color */
-        margin: 0.5rem auto;
-      }
-
-      .section-separator-VERDE {
-        width: 100%;
-        height: 4px;
-        background-color: #278a2a; /* Orange color */
-        margin: 0.5rem auto;
-      }
-
-      .nota {
-        position: relative;
-        overflow: hidden;
-      }
-
-      .nota:hover:hover .texto-sobre-imagen {
-        opacity: 1;
-      }
-      .imagen-con-desenfoque:hover {
-        filter: blur(5px);
-        transform: rotate(5deg);
-        cursor: pointer;
-      }
-
-      .nota:hover {
-        cursor: pointer;
-        transition: transform 0.3s ease;
-      }
-      .nota:active {
-        transform: rotate(5deg);
-      }
-
-      /* Estilo del texto */
-      .texto-sobre-imagen {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        opacity: 0;
-        transition: opacity 0.3s ease;
-        color: white;
-        text-align: center;
-        z-index: 1;
-      }
-
-      /* Estilo para el desenfoque */
-      .imagen-con-desenfoque {
-        transition: filter 0.3s ease;
-      }
-
-      .imagen-con-desenfoque:hover {
-        filter: blur(5px);
-      }
-
-      .relative {
-        z-index: 1;
-      }
-
-      
-        
-    </style>
+    
   </head>
   <body>
     <!-- INCIO NAVBAR CON SUBEMENUS -->
@@ -223,10 +87,6 @@
     </nav>
     <!-- FIN NAVBAR CON SUBEMENUS -->
 
-
-
-
-
     
     <!-- BOTON SUBIR INICIO -->
     <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" class="fixed bottom-6 right-6 bg-green-500 text-white rounded-full p-3 shadow-md hover:bg-green-600 transition-all duration-300 ease-in-out">
@@ -236,8 +96,7 @@
     </button>
     <!-- BOTON SUBIR FIN -->
     
-    
-        
+       
 
     <!-- SECTION HERO INICIO -->
     <section class="hero-section flex items-center justify-center bg-white-500">
@@ -398,9 +257,20 @@
         <p class="text-gray-500">Última Actualización - Mayo 2024</p>
       </section>
 
-      <section class="w-70 h-40vh bg-gray-200 flex items-center justify-center">
-          <img src="img_recuros_pagina/CONVOCATORIOAS/BANNERS/BANNER_ARTEYCULTURA.png" alt="Mi imagen" class="max-w-full max-h-full">
-      </section>
+      <section class="w-full max-h-full bg-white bg-gray-200 p-8 rounded-lg shadow-lg flex flex-wrap items-center justify-center">
+        <div class="max-w-xl p-4">
+            <img src="img_recuros_pagina/CONVOCATORIOAS/BANNERS/BANNER_ARTEYCULTURA.png" alt="Imagen de ejemplo 1" class="w-full h-auto rounded-lg shadow-lg">
+        </div>
+        <div class="max-w-xl p-4">
+            <img src="img_recuros_pagina/CONVOCATORIOAS/BANNERS/EXAMEN_NUEVO_INGRESO.png" alt="Imagen de ejemplo 2" class="w-full h-auto rounded-lg shadow-lg">
+        </div>
+       
+    </section>
+    
+    
+    
+    
+    
       
     
 

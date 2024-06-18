@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CECYTE BCS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link
+      href="https://unpkg.com/flowbite@^2.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="https://unpkg.com/flowbite@^2.1/dist/flowbite.min.js"></script>
+</head>
+<body class="bg-white-100">
+
+    <!-- INCIO NAVBAR CON SUBEMENUS -->
+    <nav id="navbar" class="navbar-transparent fixed w-full top-0 left-0 z-10">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="img_logos/logo_Cecyte_vertical_sin_fondo.png" class="h-10" alt="CECYTEBCS" />
+            </a>
+            <button id="menu-toggle" data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul
+                    class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-gray-100 md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-gray-700"
+                            aria-current="page">INICIO</a>
+                    </li>
+                    <li>
+                        <button class="block py-2 px-3 text-white bg-green-700 rounded md:bg-transparent md:text-green-700 md:p-0 dark:text-white md:dark:text-green-500"
+                            aria-expanded="false" aria-haspopup="true" onclick="toggleSubMenu('submenu-institucion')">INSTITUCIÓN</button>
+                        <!-- Submenu for INSTITUCIÓN -->
+                        <ul id="submenu-institucion" class="hidden absolute mt-2 w-48 bg-white shadow-lg rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700" aria-label="submenu">
+                            <li><a href="#" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Misión y Visión</a></li>
+                            <li><a href="#" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Historia</a></li>
+                            <li><a href="#" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Instalaciones</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-gray-100 md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-gray-700"
+                            aria-expanded="false" aria-haspopup="true" onclick="toggleSubMenu('submenu-oferta-educativa')">OFERTA EDUCATIVA</button>
+                        <!-- Submenu for OFERTA EDUCATIVA -->
+                        <ul id="submenu-oferta-educativa" class="hidden absolute mt-2 w-48 bg-white shadow-lg rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700" aria-label="submenu">
+                            <li><a href="#" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Carreras</a></li>
+                            <li><a href="#" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Planes de Estudio</a></li>
+                            <li><a href="#" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Requisitos de Admisión</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-gray-100 md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-gray-700"
+                            aria-expanded="false" aria-haspopup="true" onclick="toggleSubMenu('submenu-alumnos')">ALUMNOS</button>
+                        <!-- Submenu for ALUMNOS -->
+                        <ul id="submenu-alumnos" class="hidden absolute mt-2 w-48 bg-white shadow-lg rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700" aria-label="submenu">
+                            <li><a href="#" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Horarios</a></li>
+                            <li><a href="#" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Calendario</a></li>
+                            <li><a href="#" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Actividades</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-3 text-orange-700 rounded hover:bg-gray-100 md:hover:bg-gray-100 md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-gray-700">DOCENTES</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="w-full h-1 bg-orange-500"></div>
+    </nav>
+    <!-- FIN NAVBAR CON SUBEMENUS -->
+
+    <!-- Contenido Principal -->
+    <main > 
+        <div class="container mx-auto p-4">
+            <h1 class="text-3xl font-bold mb-6 text-center">MISIÓN, VISIÓN, OBJETIVOS E HISTORIA</h1>
+            <p class="text-lg mb-6 text-center">
+                Bienvenido a esta página centrada con Tailwind CSS. Aquí puedes poner cualquier texto, imágenes u otros elementos que necesites.
+            </p>
+            <div class="flex flex-wrap items-center justify-center">
+                <div class="max-w-xs p-4">
+                    <img src="https://via.placeholder.com/150" alt="Ejemplo de imagen" class="mx-auto">
+                    <h2 class="text-xl font-semibold text-center mt-4">Subtítulo</h2>
+                    <p class="text-center mt-2">Este es un ejemplo de contenido dentro de un contenedor.</p>
+                </div>
+                <div class="max-w-xs p-4">
+                    <img src="https://via.placeholder.com/150" alt="Ejemplo de imagen" class="mx-auto">
+                    <h2 class="text-xl font-semibold text-center mt-4">Subtítulo</h2>
+                    <p class="text-center mt-2">Este es un ejemplo de contenido dentro de un contenedor.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white dark:bg-gray-900 mt-10">
+        <div class="border-t-4 border-gray-400 dark:border-gray-1000"></div>
+        <div class="mx-auto w-full max-w-screen-xl">
+          <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+              >
+                Sitios de Interés
+              </h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                  <a href="https://itaibcs.net/" class="hover:underline"
+                    >ITAI del Estado de B.C.S.</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a
+                    href="https://transparencia.cre.gob.mx/plataforma-nacional-de-transparencia-sipot/"
+                    class="hover:underline"
+                    >SIPOT</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+              >
+                Domicilio
+              </h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                  <p>Golfo de California No. 190</p>
+                </li>
+                <li class="mb-4">
+                  <p>Col. El Conchalito.</p>
+                </li>
+                <li class="mb-4">
+                  <p>Cp: 23090</p>
+                </li>
+                <li class="mb-4">
+                  <p>La Paz B.C.S</p>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+              >
+                Teléfonos
+              </h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">612 - 12 32244</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">612 - 12 40430</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">612 - 12 40656</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">612 - 12 40656</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+              >
+                SIGUENOS
+              </h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                  <a
+                    href="https://www.facebook.com/DGCECYTEBCS"
+                    class="hover:underline"
+                    >FACEBOOK</a
+                  >
+                </li>
+  
+                <li class="mb-4">
+                  <a
+                    href="https://x.com/CECYTE_BCS?lang=es"
+                    class="hover:underline"
+                    >x</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a
+                    href="https://www.youtube.com/channel/UCAjoT3ODBsMhq75-KFJuNYA"
+                    class="hover:underline"
+                    >YOUTUBE</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <div class="text-center p-4 bg-gray-800 text-white text-sm">
+          © 2024 Departamento de Informática. Todos los derechos reservados.
+        </div>
+      </footer>
+
+    <script>
+      
+        const menuToggle = document.getElementById("menu-toggle");
+        const navbar = document.getElementById("navbar-default");
+        document.addEventListener('DOMContentLoaded', function() {
+      const navbar = document.getElementById('navbar');
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+          navbar.classList.remove('navbar-transparent');
+          navbar.classList.add('navbar-white');
+        } else {
+          navbar.classList.remove('navbar-white');
+          navbar.classList.add('navbar-transparent');
+        }
+      });
+    });
+  
+        menuToggle.addEventListener("click", () => {
+          navbar.classList.toggle("hidden");
+        });
+  
+       function toggleSubMenu(id) {
+      const submenu = document.getElementById(id);
+      submenu.classList.toggle('hidden');
+      const button = document.querySelector(`[aria-controls="${id}"]`);
+      const expanded = button.getAttribute('aria-expanded') === 'true' || false;
+      button.setAttribute('aria-expanded', !expanded);
+    }
+  
+    function closeSubMenu(id) {
+      const submenu = document.getElementById(id);
+      submenu.classList.add('hidden');
+      const button = document.querySelector(`[aria-controls="${id}"]`);
+      button.setAttribute('aria-expanded', 'false');
+    }
+  
+    function cancelClose(id) {
+      const submenu = document.getElementById(id);
+      submenu.classList.remove('hidden');
+    }
+        
+      </script>
+    
+</body>
+</html>
