@@ -6,7 +6,7 @@
   }
 
   main{
-    margin-top: 8rem;
+    margin-top: 4.5rem;
   }
 
   .hero-section h1,
@@ -36,6 +36,7 @@
     background-position: center;
     height: 100vh;
   }
+  
 
   .hero-content {
     z-index: 1;
@@ -135,3 +136,11 @@
   .relative {
     z-index: 1;
   }
+
+  .parallax {
+    background-image: url('img_recuros_pagina/img_oferta_edu/pro_alimentos/frutas.jpeg'); /* Reemplaza con tu URL de imagen */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

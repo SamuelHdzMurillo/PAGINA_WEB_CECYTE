@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producción Industrial de Alimentos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="/style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link
+      href="https://unpkg.com/flowbite@^2.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="https://unpkg.com/flowbite@^2.1/dist/flowbite.min.js"></script>
+</head>
+<body class="bg-white-500">
+    <!-- INCIO NAVBAR CON SUBEMENUS -->
+    <nav id="navbar" class="navbar-transparent fixed w-full top-0 left-0 z-10">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="/img_logos/logo_Cecyte_vertical_sin_fondo.png" class="h-10" alt="CECYTEBCS" />
+            </a>
+            <button id="menu-toggle" data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul
+                    class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-gray-100 md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-gray-700"
+                            aria-current="page">INICIO</a>
+                    </li>
+                    <li>
+                        <button class="block py-2 px-3 text-white bg-green-700 rounded md:bg-transparent md:text-green-700 md:p-0 dark:text-white md:dark:text-green-500"
+                            aria-expanded="false" aria-haspopup="true" onclick="toggleSubMenu('submenu-institucion')">INSTITUCIÓN</button>
+                        <!-- Submenu for INSTITUCIÓN -->
+                        <ul id="submenu-institucion" class="hidden absolute mt-2 w-48 bg-white shadow-lg rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700" aria-label="submenu">
+                            <li><a href="#" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Misión y Visión</a></li>
+                            <li><a href="#" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Historia</a></li>
+                            <li><a href="#" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Instalaciones</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-gray-100 md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-gray-700"
+                            aria-expanded="false" aria-haspopup="true" onclick="toggleSubMenu('submenu-oferta-educativa')">OFERTA EDUCATIVA</button>
+                        <!-- Submenu for OFERTA EDUCATIVA -->
+                        <ul id="submenu-oferta-educativa" class="hidden absolute mt-2 w-48 bg-white shadow-lg rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700" aria-label="submenu">
+                            <li><a href="#" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">PRODUCCIÓN INDUSTRIAL DE ALIMENTOS</a></li>
+                            <li><a href="#" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Planes de Estudio</a></li>
+                            <li><a href="#" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Requisitos de Admisión</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-gray-100 md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-gray-700"
+                            aria-expanded="false" aria-haspopup="true" onclick="toggleSubMenu('submenu-alumnos')">ALUMNOS</button>
+                        <!-- Submenu for ALUMNOS -->
+                        <ul id="submenu-alumnos" class="hidden absolute mt-2 w-48 bg-white shadow-lg rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700" aria-label="submenu">
+                            <li><a href="#" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Horarios</a></li>
+                            <li><a href="#" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Calendario</a></li>
+                            <li><a href="#" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Actividades</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-3 text-orange-700 rounded hover:bg-gray-100 md:hover:bg-gray-100 md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-gray-700">DOCENTES</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="w-full h-1 bg-orange-500"></div>
+    </nav>
+    <!-- FIN NAVBAR CON SUBEMENUS -->
+
+   
+
+      <main>
+        <div class="parallax">
+            <div class="container mx-auto py-24">
+                <div class="flex flex-col md:flex-row justify-between bg-orange-500 bg-opacity-75 p-8">
+                    <div class="max-h-full md:w-full animate__animated animate__fadeInRight">
+                        <h1 class="text-4xl font-bold text-white">PRODUCCIÓN INDUSTRIAL DE ALIMENTOS</h1>
+                        <p class="text-lg text-white mt-4"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mx-auto p-8 bg-white shadow-lg rounded-lg">
+                <div id="accordion-collapse" data-accordion="collapse">
+                    <h3 id="accordion-heading-1">
+                        <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 hover:bg-gray-100" data-accordion-target="#accordion-body-1" aria-expanded="true" aria-controls="accordion-body-1">
+                            <span>Justificación de la carrera.</span>
+                            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414-1.414l5-5A1 1 0 0110 3z" clip-rule="evenodd"></path></svg>
+                        </button>
+                    </h3>
+                    <div id="accordion-body-1" class="hidden" aria-labelledby="accordion-heading-1">
+                        <div class="p-5 border border-b-0 border-gray-200">
+                            <p class="text-gray-500">Las tendencias globalizadoras, actualmente exigen mayor competitividad y profesionalismo del recurso humano, como pieza clave en el desarrollo nacional. Los altos índices de desnutrición, la escasez de alimentos y la pobreza en aumento de los suelos, son problemas que alertan hacia la búsqueda de un mayor y mejor aprovechamiento de los recursos naturales. En México se produce gran diversidad de éstos y su optimización depende en gran medida de las alternativas de conservación y procesamiento que ofrezca la industria alimentaria, a través de sus distintas aplicaciones tecnológicas.</p>
+                        </div>
+                    </div>
+                    <h3 id="accordion-heading-2">
+                        <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 hover:bg-gray-100" data-accordion-target="#accordion-body-2" aria-expanded="false" aria-controls="accordion-body-2">
+                            <span>¿Porque elegir esta Carrena?</span>
+                            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414-1.414l5-5A1 1 0 0110 3z" clip-rule="evenodd"></path></svg>
+                        </button>
+                    </h3>
+                    <div id="accordion-body-2" class="hidden" aria-labelledby="accordion-heading-2">
+                        <div class="p-5 border border-b-0 border-gray-200">
+                            <p class="text-gray-500">La carrera de Técnico en producción industrial de alimentos ofrece las competencias profesionales que permiten al estudiante conservar y procesar las distintas materias primas de origen primario, como las frutas, hortalizas, cereales, carnes, aves, pescados, mariscos y derivados lácteos, en productos y subproductos, que demandan la aplicación de conocimiento para su aprovechamiento.
+                                Asimismo, podrá desarrollar competencias genéricas relacionadas principalmente con la participación en los procesos de comunicación en distintos contextos, la integración efectiva a los equipos de trabajo y la intervención consciente, desde su comunidad en particular, en el país y el mundo en general, todo con apego al cuidado del medio ambiente.</p>
+                        </div>
+                    </div>
+                    <h3 id="accordion-heading-3">
+                        <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 hover:bg-gray-100" data-accordion-target="#accordion-body-3" aria-expanded="false" aria-controls="accordion-body-3">
+                            <span>Desarrollo de Competencias en la Carrera Técnica</span>
+                            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414-1.414l5-5A1 1 0 0110 3z" clip-rule="evenodd"></path></svg>
+                        </button>
+                    </h3>
+                    <div id="accordion-body-3" class="hidden" aria-labelledby="accordion-heading-3">
+                        <div class="p-5 border border-t-0 border-gray-200">
+                            <p class="text-gray-500">La formación profesional se inicia en el segundo semestre y se concluye en el sexto semestre desarrollando en este lapso de tiempo las competencias: ejecutar procesos de conservación y transformación de alimentos, aplicando la reglamentación, legislación y normatividad vigente, hacia el cumplimiento de estándares establecidos de calidad e inocuidad; al mismo tiempo que pueda evaluar los resultados obtenidos, que le permitan realizar ajustes de mejora continua en la producción y optimización de recursos, hasta el sexto semestre de la carrera técnica.
+                                Todas estas competencias posibilitan al egresado su incorporación al mundo laboral o desarrollar procesos productivos independientes, de acuerdo con sus intereses profesionales o las necesidades en su entorno social.
+                                Los primeros tres módulos de la carrera técnica tienen una duración de 272 horas cada uno, y los dos últimos de 192, un total de 1200 horas de formación profesional.</p>
+                        </div>
+                    </div>
+                    <h3 id="accordion-heading-4">
+                        <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 hover:bg-gray-100" data-accordion-target="#accordion-body-4" aria-expanded="false" aria-controls="accordion-body-4">
+                            <span>Competencia 4</span>
+                            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414-1.414l5-5A1 1 0 0110 3z" clip-rule="evenodd"></path></svg>
+                        </button>
+                    </h3>
+                    <div id="accordion-body-4" class="hidden" aria-labelledby="accordion-heading-4">
+                        <div class="p-5 border border-t-0 border-gray-200">
+                            <p class="text-gray-500">Procesa alimentos a partir de frutas y hortalizas con calidad e inocuidad.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+        </div>
+
+
+      </main>
+
+</body>
+</html>
