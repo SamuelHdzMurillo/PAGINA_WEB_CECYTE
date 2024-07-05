@@ -138,7 +138,7 @@
   }
 
   .parallax {
-    background-image: url('img_recuros_pagina/img_oferta_edu/pro_alimentos/frutas.jpeg'); /* Reemplaza con tu URL de imagen */
+     /* Reemplaza con tu URL de imagen */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
