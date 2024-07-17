@@ -602,6 +602,8 @@
       
       const menuToggle = document.getElementById("menu-toggle");
       const navbar = document.getElementById("navbar-default");
+
+
       document.addEventListener('DOMContentLoaded', function() {
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', function() {
@@ -615,23 +617,23 @@
     });
   });
 
-      menuToggle.addEventListener("click", () => {
-        navbar.classList.toggle("hidden");
-      });
+      function toggleSubMenu(id) {
+    const submenus = document.querySelectorAll('[aria-label="submenu"]');
+    submenus.forEach(submenu => {
+      if (submenu.id !== id) {
+        submenu.classList.add('hidden');
+        const button = document.querySelector(`[onclick="toggleSubMenu('${submenu.id}')"]`);
+        if (button) {
+          button.setAttribute('aria-expanded', 'false');
+        }
+      }
+    });
 
-     function toggleSubMenu(id) {
     const submenu = document.getElementById(id);
     submenu.classList.toggle('hidden');
-    const button = document.querySelector(`[aria-controls="${id}"]`);
+    const button = document.querySelector(`[onclick="toggleSubMenu('${id}')"]`);
     const expanded = button.getAttribute('aria-expanded') === 'true' || false;
     button.setAttribute('aria-expanded', !expanded);
-  }
-
-  function closeSubMenu(id) {
-    const submenu = document.getElementById(id);
-    submenu.classList.add('hidden');
-    const button = document.querySelector(`[aria-controls="${id}"]`);
-    button.setAttribute('aria-expanded', 'false');
   }
 
   function cancelClose(id) {
