@@ -47,7 +47,7 @@
                             aria-current="page">INICIO</a>
                     </li>
                     <li>
-                        <button class="block py-2 px-3 text-white bg-green-700 rounded md:bg-transparent md:text-green-700 md:p-0 dark:text-white md:dark:text-green-500"
+                        <button class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-gray-100 md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-gray-700"
                             aria-expanded="false" aria-haspopup="true" onclick="toggleSubMenu('submenu-institucion')">INSTITUCIÓN</button>
                         <!-- Submenu for INSTITUCIÓN -->
                         <ul id="submenu-institucion" class="hidden absolute mt-2 w-48 bg-white shadow-lg rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700" aria-label="submenu">
@@ -57,13 +57,15 @@
                         </ul>
                     </li>
                     <li>
-                        <button class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-gray-100 md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-gray-700"
+                        <button class="block py-2 px-3 text-white bg-green-700 rounded md:bg-transparent md:text-green-700 md:p-0 dark:text-white md:dark:text-green-500"
                             aria-expanded="false" aria-haspopup="true" onclick="toggleSubMenu('submenu-oferta-educativa')">OFERTA EDUCATIVA</button>
                         <!-- Submenu for OFERTA EDUCATIVA -->
                         <ul id="submenu-oferta-educativa" class="hidden absolute mt-2 w-48 bg-white shadow-lg rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700" aria-label="submenu">
-                            <li><a href="#" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">PRODUCCIÓN INDUSTRIAL DE ALIMENTOS</a></li>
-                            <li><a href="#" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Planes de Estudio</a></li>
-                            <li><a href="#" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Requisitos de Admisión</a></li>
+                            <li><a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">SOPORTE Y MANTENIMIENTO DE EQUIPO DE CÓMPUTO</a></li>
+                            <li><a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/ecoturismo.html" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">ECOTURISMO</a></li>
+                            <li><a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">PRODUCCIÓN INDUSTRIAL DE ALIMENTOS</a></li>
+                            <li><a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/mantenimiento_industrial.html" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">MATENIMIENTO INDUSTRIAL</a></li>
+                            <li><a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/servicios_de_hoteleria.html" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">SERVICIOS DE HOTELERÍA</a></li>
                         </ul>
                     </li>
                     <li>
@@ -249,6 +251,49 @@
 
 
       </main>
-
+      <script>
+      
+        const menuToggle = document.getElementById("menu-toggle");
+        const navbar = document.getElementById("navbar-default");
+  
+  
+        document.addEventListener('DOMContentLoaded', function() {
+      const navbar = document.getElementById('navbar');
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+          navbar.classList.remove('navbar-transparent');
+          navbar.classList.add('navbar-white');
+        } else {
+          navbar.classList.remove('navbar-white');
+          navbar.classList.add('navbar-transparent');
+        }
+      });
+    });
+  
+        function toggleSubMenu(id) {
+      const submenus = document.querySelectorAll('[aria-label="submenu"]');
+      submenus.forEach(submenu => {
+        if (submenu.id !== id) {
+          submenu.classList.add('hidden');
+          const button = document.querySelector(`[onclick="toggleSubMenu('${submenu.id}')"]`);
+          if (button) {
+            button.setAttribute('aria-expanded', 'false');
+          }
+        }
+      });
+  
+      const submenu = document.getElementById(id);
+      submenu.classList.toggle('hidden');
+      const button = document.querySelector(`[onclick="toggleSubMenu('${id}')"]`);
+      const expanded = button.getAttribute('aria-expanded') === 'true' || false;
+      button.setAttribute('aria-expanded', !expanded);
+    }
+  
+    function cancelClose(id) {
+      const submenu = document.getElementById(id);
+      submenu.classList.remove('hidden');
+    }
+        
+      </script>
 </body>
 </html>
