@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Planteles EMSAD</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="/PAGINA_WEB_CECYTE/style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link
+      href="https://unpkg.com/flowbite@^2.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="https://unpkg.com/flowbite@^2.1/dist/flowbite.min.js"></script>
+</head>
+<body class="bg-white-100">
+
+    <!-- INCIO NAVBAR CON SUBEMENUS -->
+    <nav id="navbar" class="navbar-transparent fixed w-full top-0 left-0 z-10">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="/PAGINA_WEB_CECYTE/img_logos/logo_Cecyte_vertical_sin_fondo.png" class="h-10" alt="CECYTEBCS" />
+            </a>
+            <button id="menu-toggle" data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul
+                    class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-gray-100 md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-gray-700"
+                            aria-current="page">INICIO</a>
+                    </li>
+                    <li>
+                        <button class="block py-2 px-3 text-white bg-green-700 rounded md:bg-transparent md:text-green-700 md:p-0 dark:text-white md:dark:text-green-500"
+                            aria-expanded="false" aria-haspopup="true" onclick="toggleSubMenu('submenu-institucion')">INSTITUCIÓN</button>
+                        <!-- Submenu for INSTITUCIÓN -->
+                        <ul id="submenu-institucion" class="hidden absolute mt-2 w-48 bg-white shadow-lg rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700" aria-label="submenu">
+                            <li><a href="#" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Misión y Visión</a></li>
+                            <li><a href="#" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Historia</a></li>
+                            <li><a href="#" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Instalaciones</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-gray-100 md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-gray-700"
+                            aria-expanded="false" aria-haspopup="true" onclick="toggleSubMenu('submenu-oferta-educativa')">OFERTA EDUCATIVA</button>
+                        <!-- Submenu for OFERTA EDUCATIVA -->
+                        <ul id="submenu-oferta-educativa" class="hidden absolute mt-2 w-48 bg-white shadow-lg rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700" aria-label="submenu">
+                            <li><a href="#" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">PRODUCCIÓN INDUSTRIAL DE ALIMENTOS</a></li>
+                            <li><a href="#" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Planes de Estudio</a></li>
+                            <li><a href="#" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Requisitos de Admisión</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-gray-100 md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-gray-700"
+                            aria-expanded="false" aria-haspopup="true" onclick="toggleSubMenu('submenu-alumnos')">ALUMNOS</button>
+                        <!-- Submenu for ALUMNOS -->
+                        <ul id="submenu-alumnos" class="hidden absolute mt-2 w-48 bg-white shadow-lg rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700" aria-label="submenu">
+                            <li><a href="#" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Horarios</a></li>
+                            <li><a href="#" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Calendario</a></li>
+                            <li><a href="#" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Actividades</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-3 text-orange-700 rounded hover:bg-gray-100 md:hover:bg-gray-100 md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-gray-700">DOCENTES</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="w-full h-1 bg-orange-500"></div>
+    </nav>
+    <!-- FIN NAVBAR CON SUBEMENUS -->
+
+
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-6 space-y-6">
+        <!-- Introducción -->
+        <section class="bg-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-bold text-green-600 border-b-4 border-orange-500 inline-block mb-4">Acerca de EMSaD</h2>
+            <div class="section-separator"></div>
+            <p class="mt-4 text-justify">Los Centros de Educación Media Superior a Distancia (EMSaD) son una modalidad educativa perteneciente al Colegio de Estudios Científicos y Tecnológicos del Estado de Baja California Sur (CECYTEBCS), que ofrece estudios de bachillerato tecnológico a jóvenes y adultos en comunidades rurales y semiurbanas, permitiéndoles acceder a una educación de calidad sin necesidad de trasladarse a las ciudades.</p>
+        </section>
+
+        <!-- Planteles EMSaD -->
+        <section class="bg-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-bold text-green-600 border-b-4 border-green-500 inline-block mb-4">Planteles EMSaD</h2>
+            <div class="section-separator"></div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
+                    <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_01/emsad01.jpg" alt="EMSaD 01 Bahía Asunción" class="rounded-t-lg w-full h-48 object-cover">
+                    <h3 class="text-2xl font-bold text-green-600 mt-4">EMSaD 01 - Bahía Asunción</h3>
+                    <p class="mt-2 text-gray-700">C. Luis Fernández Ojeda, Coordinador del Centro.</p>
+                    <p class="text-gray-700">Email: <a href="mailto:emsad01@cecytebcs.edu.mx" class="text-green-600 hover:underline">emsad01@cecytebcs.edu.mx</a></p>
+                    <p class="text-gray-700">Teléfono: (615) 160 0041</p>
+                    <p class="text-gray-700">Domicilio: Av. Benito Juárez y Calle Atún, CP 23960. Bahía Asunción, B.C.S.</p>
+                </div>
+                
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
+                    <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_03/emsad_03.jpg" alt="EMSaD 03 Bahía Tortugas" class="rounded-t-lg w-full h-48 object-cover">
+                    <h3 class="text-2xl font-bold text-green-600 mt-4">EMSaD 03 - Bahía Tortugas</h3>
+                    <p class="mt-2 text-gray-700">C. Sergio Jorge Barajas Torres, Coordinador del Centro.</p>
+                    <p class="text-gray-700">Email: <a href="mailto:emsad03@cecytebcs.edu.mx" class="text-green-600 hover:underline">emsad03@cecytebcs.edu.mx</a></p>
+                    <p class="text-gray-700">Teléfono: (615) 158 0447</p>
+                    <p class="text-gray-700">Domicilio: Marina Nacional Norte s/n, CP 23950, Bahía Tortugas, B.C.S.</p>
+                </div>
+                
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
+                    <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_06/emsad06.jpg" alt="EMSaD 06 La Bocana" class="rounded-t-lg w-full h-48 object-cover">
+                    <h3 class="text-2xl font-bold text-green-600 mt-4">EMSaD 06 - La Bocana</h3>
+                    <p class="mt-2 text-gray-700">C. Nohelia Aguilar Villavicencio, Coordinador del Centro.</p>
+                    <p class="text-gray-700">Email: <a href="mailto:emsad06@cecytebcs.edu.mx" class="text-green-600 hover:underline">emsad06@cecytebcs.edu.mx</a></p>
+                    <p class="text-gray-700">Teléfono: (615) 156 0006</p>
+                    <p class="text-gray-700">Domicilio: Dom. Avenida Abulon esquina Garropa s/n, CP 23973, La Bocana, B.C.S.</p>
+                </div>
+                
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
+                    <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/EMSAD/SIN_IMAGEN/defauklt.png" alt="EMSaD 07 San Ignacio" class="rounded-t-lg w-full max-h-full object-cover">
+                    <h3 class="text-2xl font-bold text-green-600 mt-4">EMSaD 07 - San Ignacio</h3>
+                    <p class="mt-2 text-gray-700">C. José Lino Fontes Murillo, Coordinador del Centro.</p>
+                    <p class="text-gray-700">Email: <a href="mailto:emsad07@cecytebcs.edu.mx" class="text-green-600 hover:underline">emsad07@cecytebcs.edu.mx</a></p>
+                    <p class="text-gray-700">Teléfono: (615) 154 0025</p>
+                    <p class="text-gray-700">Domicilio: Av. Venustiano Carranza # 20, Col. Pueblo Nuevo, CP 23930, San Ignacio, B.C.S.</p>
+                </div>
+                
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
+                    <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/EMSAD/SIN_IMAGEN/defauklt.png" alt="EMSaD 08 Ciudad Insurgentes" class="rounded-t-lg w-full max-h-full object-cover">
+                    <h3 class="text-2xl font-bold text-green-600 mt-4">EMSaD 08 - Ciudad Insurgentes</h3>
+                    <p class="mt-2 text-gray-700">C. Vianey Arce Gerardo, Coordinadora del Centro.</p>
+                    <p class="text-gray-700">Email: <a href="mailto:emsad08@cecytebcs.edu.mx" class="text-green-600 hover:underline">emsad08@cecytebcs.edu.mx</a></p>
+                    <p class="text-gray-700">Teléfono: (613) 131 0954</p>
+                    <p class="text-gray-700">Domicilio: Av. Vicente Guerrero e/ 18 De Julio y 21 De Marzo, CP 23700, Cd. Insurgentes, B.C.S.</p>
+                </div>
+                
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
+                    <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/EMSAD/SIN_IMAGEN/defauklt.png" alt="EMSaD 09 Benito Juárez" class="rounded-t-lg w-full max-h-full object-cover">
+                    <h3 class="text-2xl font-bold text-green-600 mt-4">EMSaD 09 - Benito Juárez</h3>
+                    <p class="mt-2 text-gray-700">C. Francisco Javier Ponce Bernal, Coordinador del Centro.</p>
+                    <p class="text-gray-700">Email: <a href="mailto:emsad09@cecytebcs.edu.mx" class="text-green-600 hover:underline">emsad09@cecytebcs.edu.mx</a></p>
+                    <p class="text-gray-700">Teléfono: (613) 131 6054</p>
+                    <p class="text-gray-700">Domicilio: Dom. Calzada de la Reforma, CP 23730, Benito Juárez, B.C.S.</p>
+                </div>
+                
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
+                    <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_10/emsad10.jpg" alt="EMSaD 10 Puerto Adolfo López Mateos" class="rounded-t-lg w-full h-48 object-cover">
+                    <h3 class="text-2xl font-bold text-green-600 mt-4">EMSaD 10 - Puerto Adolfo López Mateos</h3>
+                    <p class="mt-2 text-gray-700">C. José Manuel Miranda Cadena, Coordinador del Centro.</p>
+                    <p class="text-gray-700">Email: <a href="mailto:emsad10@cecytebcs.edu.mx" class="text-green-600 hover:underline">emsad10@cecytebcs.edu.mx</a></p>
+                    <p class="text-gray-700">Teléfono: (613) 131 5258</p>
+                    <p class="text-gray-700">Domicilio: Lázaro Cárdenas y Anastacio Bustamante s/n, CP 23710, Pto. Adolfo López Mateos, B.C.S.</p>
+                </div>
+                
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
+                    <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_11/emsad11.jpg" alt="EMSaD 11 San Isidro" class="rounded-t-lg w-full h-48 object-cover">
+                    <h3 class="text-2xl font-bold text-green-600 mt-4">EMSaD 11 - San Isidro</h3>
+                    <p class="mt-2 text-gray-700">C. Mónica Ramona Meza Higuera, Coordinadora del Centro.</p>
+                    <p class="text-gray-700">Email: <a href="mailto:emsad11@cecytebcs.edu.mx" class="text-green-600 hover:underline">emsad11@cecytebcs.edu.mx</a></p>
+                    <p class="text-gray-700">Teléfono: (613) 118 2907</p>
+                    <p class="text-gray-700">Domicilio: Col. Ranchera, CP 23810, San Isidro, Comondú, B.C.S.</p>
+                </div>
+                
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
+                    <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_12/emsad12.jpg" alt="EMSaD 12 Las Pocitas" class="rounded-t-lg w-full h-48 object-cover">
+                    <h3 class="text-2xl font-bold text-green-600 mt-4">EMSaD 12 - Las Pocitas</h3>
+                    <p class="mt-2 text-gray-700">C. Javier Amarillas Marquez, Coordinador del Centro.</p>
+                    <p class="text-gray-700">Email: <a href="mailto:emsad12@cecytebcs.edu.mx" class="text-green-600 hover:underline">emsad12@cecytebcs.edu.mx</a></p>
+                    <p class="text-gray-700">Teléfono: (612) 111 2222</p>
+                    <p class="text-gray-700">Domicilio: Carretera Transpeninsular Km. 112, La Paz- Ciudad Constitución, CP 23150, Las Pocitas, B.C.S.</p>
+                </div>
+                
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
+                    <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_13/EMSAD13-1.jpg" alt="EMSaD 13 Manuel Márquez de León" class="rounded-t-lg w-full h-48 object-cover">
+                    <h3 class="text-2xl font-bold text-green-600 mt-4">EMSaD 13 - Manuel Márquez de León</h3>
+                    <p class="mt-2 text-gray-700">C. Leyla Zulema Contreras, Coordinadora del Centro.</p>
+                    <p class="text-gray-700">Email: <a href="mailto:emsad13@cecytebcs.edu.mx" class="text-green-600 hover:underline">emsad13@cecytebcs.edu.mx</a></p>
+                    <p class="text-gray-700">Teléfono: (612) 185 8446</p>
+                    <p class="text-gray-700">Domicilio: Calle San Juan Bautista e/ San Ramón Nonato y Santa Ana, CP 23038, Colonia Villas De Guadalupe, La Paz, B.C.S.</p>
+                </div>
+                
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
+                    <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/EMSAD/SIN_IMAGEN/defauklt.png" alt="EMSaD 14 Ejido Melitón Albañez Domínguez" class="rounded-t-lg w-full max-h-full object-cover">
+                    <h3 class="text-2xl font-bold text-green-600 mt-4">EMSaD 14 - Ejido Melitón Albañez Domínguez</h3>
+                    <p class="mt-2 text-gray-700">C. Mariel Gerardo Arce, Coordinadora del Centro.</p>
+                    <p class="text-gray-700">Email: <a href="mailto:emsad14@cecytebcs.edu.mx" class="text-green-600 hover:underline">emsad14@cecytebcs.edu.mx</a></p>
+                    <p class="text-gray-700">Teléfono: (613) 137 2586</p>
+                    <p class="text-gray-700">Domicilio: Domicilio Conocido, CP 23258, Localidad Ejido Melitón Albañez Domínguez, B.C.S.</p>
+                </div>
+                
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
+                    <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_16/emsad16.jpg" alt="EMSaD 16 Los Barriles" class="rounded-t-lg w-full h-48 object-cover">
+                    <h3 class="text-2xl font-bold text-green-600 mt-4">EMSaD 16 - Los Barriles</h3>
+                    <p class="mt-2 text-gray-700">C. Carmen Cota Ruíz, Coordinadora del Centro.</p>
+                    <p class="text-gray-700">Email: <a href="mailto:emsad16@cecytebcs.edu.mx" class="text-green-600 hover:underline">emsad16@cecytebcs.edu.mx</a></p>
+                    <p class="text-gray-700">Teléfono: (624) 124 8566</p>
+                    <p class="text-gray-700">Domicilio: Carretera Transpeninsular, Kilómetro 101 Tramo Cabo San Lucas- La Paz, CP 23330, Los Barriles, B.C.S.</p>
+                </div>
+                
+            </div>
+        </section>
+
+        
+    </main>
+    <footer class="bg-white dark:bg-gray-900 mt-10">
+        <div class="border-t-4 border-gray-400 dark:border-gray-1000"></div>
+        <div class="mx-auto w-full max-w-screen-xl">
+          <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+              >
+                Sitios de Interés
+              </h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                  <a href="https://itaibcs.net/" class="hover:underline"
+                    >ITAI del Estado de B.C.S.</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a
+                    href="https://transparencia.cre.gob.mx/plataforma-nacional-de-transparencia-sipot/"
+                    class="hover:underline"
+                    >SIPOT</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+              >
+                Domicilio
+              </h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                  <p>Golfo de California No. 190</p>
+                </li>
+                <li class="mb-4">
+                  <p>Col. El Conchalito.</p>
+                </li>
+                <li class="mb-4">
+                  <p>Cp: 23090</p>
+                </li>
+                <li class="mb-4">
+                  <p>La Paz B.C.S</p>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+              >
+                Teléfonos
+              </h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">612 - 12 32244</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">612 - 12 40430</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">612 - 12 40656</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">612 - 12 40656</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+              >
+                SIGUENOS
+              </h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                  <a
+                    href="https://www.facebook.com/DGCECYTEBCS"
+                    class="hover:underline"
+                    >FACEBOOK</a
+                  >
+                </li>
+  
+                <li class="mb-4">
+                  <a
+                    href="https://x.com/CECYTE_BCS?lang=es"
+                    class="hover:underline"
+                    >x</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a
+                    href="https://www.youtube.com/channel/UCAjoT3ODBsMhq75-KFJuNYA"
+                    class="hover:underline"
+                    >YOUTUBE</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <div class="text-center p-4 bg-gray-800 text-white text-sm">
+          © 2024 Departamento de Informática. Todos los derechos reservados.
+        </div>
+      </footer>
+
+      <script>
+      
+        const menuToggle = document.getElementById("menu-toggle");
+        const navbar = document.getElementById("navbar-default");
+        document.addEventListener('DOMContentLoaded', function() {
+      const navbar = document.getElementById('navbar');
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+          navbar.classList.remove('navbar-transparent');
+          navbar.classList.add('navbar-white');
+        } else {
+          navbar.classList.remove('navbar-white');
+          navbar.classList.add('navbar-transparent');
+        }
+      });
+    });
+  
+        menuToggle.addEventListener("click", () => {
+          navbar.classList.toggle("hidden");
+        });
+  
+       function toggleSubMenu(id) {
+      const submenu = document.getElementById(id);
+      submenu.classList.toggle('hidden');
+      const button = document.querySelector(`[aria-controls="${id}"]`);
+      const expanded = button.getAttribute('aria-expanded') === 'true' || false;
+      button.setAttribute('aria-expanded', !expanded);
+    }
+  
+    function closeSubMenu(id) {
+      const submenu = document.getElementById(id);
+      submenu.classList.add('hidden');
+      const button = document.querySelector(`[aria-controls="${id}"]`);
+      button.setAttribute('aria-expanded', 'false');
+    }
+  
+    function cancelClose(id) {
+      const submenu = document.getElementById(id);
+      submenu.classList.remove('hidden');
+    }
+        
+      </script>
+</body>
+</html>

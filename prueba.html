@@ -1,57 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar con Tailwind CSS</title>
+    <title>EMSaD - CECYTEBCS</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .bg-gradient {
+            background: linear-gradient(90deg, #38b2ac 0%, #68d391 100%);
+        }
+    </style>
 </head>
-
-<body class="bg-gray-100">
-
-    <nav class="bg-gray-800 text-white p-4">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <div>
-                <a href="#" class="text-lg font-bold">Logo</a>
-            </div>
-            <div class="hidden md:flex space-x-4">
-                <a href="#" class="hover:text-gray-300">Inicio</a>
-                <div class="relative">
-                    <a href="#" class="hover:text-gray-300">Productos</a>
-                    <div class="absolute top-full left-0 bg-gray-800 text-white p-4 mt-1 hidden group-hover:block">
-                        <a href="#" class="block px-4 py-2">Producto 1</a>
-                        <a href="#" class="block px-4 py-2">Producto 2</a>
-                        <a href="#" class="block px-4 py-2">Producto 3</a>
-                    </div>
-                </div>
-                <a href="#" class="hover:text-gray-300">Nosotros</a>
-                <a href="#" class="hover:text-gray-300">Contacto</a>
-            </div>
-            <div class="md:hidden">
-                <!-- Mobile menu button -->
-                <button type="button"
-                    class="text-gray-300 hover:text-white focus:outline-none focus:text-white">
-                    <svg viewBox="0 0 20 20" fill="currentColor" class="menu w-6 h-6">
-                        <path fill-rule="evenodd"
-                            d="M2 5a1 1 0 0 1 1-1h14a1 1 0 0 1 0 2H3a1 1 0 0 1-1-1zm0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 0 2H3a1 1 0 0 1-1-1zm0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 0 2H3a1 1 0 0 1-1-1z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                </button>
-            </div>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Header -->
+    <header class="bg-gradient text-white py-6">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold">CECYTEBCS</h1>
+            <p class="mt-2 text-lg">Educación Media Superior a Distancia (EMSaD)</p>
         </div>
-    </nav>
+    </header>
 
-    <script>
-        // JavaScript para el botón de menú móvil (opcional)
-        const menuButton = document.querySelector('.menu');
-        const mobileMenu = document.querySelector('.hidden');
+    <!-- Main Content -->
+    <main class="container mx-auto p-6 space-y-6">
+        <!-- Introducción -->
+        <section class="bg-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-bold text-green-600 border-b-4 border-orange-500 inline-block mb-4">Introducción</h2>
+            <p class="mt-4 text-justify">Los Centros de Educación Media Superior a Distancia (EMSaD) son una modalidad educativa perteneciente al Colegio de Estudios Científicos y Tecnológicos del Estado de Baja California Sur (CECYTEBCS), que ofrece estudios de bachillerato tecnológico a jóvenes y adultos en comunidades rurales y semiurbanas, permitiéndoles acceder a una educación de calidad sin necesidad de trasladarse a las ciudades.</p>
+        </section>
 
-        menuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-    </script>
+        <!-- Planteles EMSaD -->
+        <section class="bg-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-bold text-orange-600 border-b-4 border-green-500 inline-block mb-4">Planteles EMSaD</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-green-600">EMSaD 01 Bahía Asunción</h3>
+                    <p class="mt-2">Domicilio Conocido S/N, Bahía Asunción, B.C.S.</p>
+                    <p>Tel: (615) 161 7475</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_03/emsad_03.jpg" alt="EMSaD 02 El Centenario" class="rounded-t-lg">
+                    <h3 class="text-xl font-bold text-green-600">EMSaD 02 El Centenario</h3>
+                    <p class="mt-2">Calle Pípila y Manuel Altamirano S/N, Col. El Centenario, La Paz, B.C.S.</p>
+                    <p>Tel: (612) 123 4567</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-green-600">EMSaD 03 Bahía Tortugas</h3>
+                    <p class="mt-2">Domicilio Conocido S/N, Bahía Tortugas, B.C.S.</p>
+                    <p>Tel: (615) 162 1234</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-green-600">EMSaD 04 Guerrero Negro</h3>
+                    <p class="mt-2">Domicilio Conocido S/N, Guerrero Negro, B.C.S.</p>
+                    <p>Tel: (615) 157 1234</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-green-600">EMSaD 05 La Ribera</h3>
+                    <p class="mt-2">Domicilio Conocido S/N, La Ribera, B.C.S.</p>
+                    <p>Tel: (612) 157 5678</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-green-600">EMSaD 06 Villa Alberto Alvarado</h3>
+                    <p class="mt-2">Domicilio Conocido S/N, Villa Alberto Alvarado, B.C.S.</p>
+                    <p>Tel: (615) 166 3456</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-green-600">EMSaD 07 Vizcaíno</h3>
+                    <p class="mt-2">Domicilio Conocido S/N, Vizcaíno, B.C.S.</p>
+                    <p>Tel: (615) 160 5678</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-green-600">EMSaD 08 Puerto Adolfo López Mateos</h3>
+                    <p class="mt-2">Domicilio Conocido S/N, Puerto Adolfo López Mateos, B.C.S.</p>
+                    <p>Tel: (612) 125 6789</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-green-600">EMSaD 09 San Juanico</h3>
+                    <p class="mt-2">Domicilio Conocido S/N, San Juanico, B.C.S.</p>
+                    <p>Tel: (615) 165 6789</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-green-600">EMSaD 10 Santa Rosalía</h3>
+                    <p class="mt-2">Domicilio Conocido S/N, Santa Rosalía, B.C.S.</p>
+                    <p>Tel: (615) 154 1234</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-green-600">EMSaD 11 La Paz</h3>
+                    <p class="mt-2">Domicilio Conocido S/N, La Paz, B.C.S.</p>
+                    <p>Tel: (612) 154 5678</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-green-600">EMSaD 12 Cabo San Lucas</h3>
+                    <p class="mt-2">Domicilio Conocido S/N, Cabo San Lucas, B.C.S.</p>
+                    <p>Tel: (624) 143 6789</p>
+                </div>
+            </div>
+        </section>
 
+        <!-- Footer -->
+        <footer class="bg-gradient text-white py-6">
+            <div class="container mx-auto text-center">
+                <p class="text-lg">© 2024 CECYTEBCS. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </main>
 </body>
-
 </html>
