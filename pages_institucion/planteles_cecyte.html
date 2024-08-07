@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Planteles CECYTE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="/PAGINA_WEB_CECYTE/style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link
+      href="https://unpkg.com/flowbite@^2.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="https://unpkg.com/flowbite@^2.1/dist/flowbite.min.js"></script>
+</head>
+<body class="bg-white-100">
+
+    <!-- INCIO NAVBAR CON SUBEMENUS -->
+    <nav id="navbar" class="navbar-transparent fixed w-full top-0 left-0 z-10">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="/PAGINA_WEB_CECYTE/img_logos/logo_Cecyte_vertical_sin_fondo.png" class="h-10" alt="CECYTEBCS" />
+        </a>
+        <button id="menu-toggle" data-collapse-toggle="navbar-default" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+              <a href="/PAGINA_WEB_CECYTE/index.html"
+                class="block py-2 px-3 text-white bg-green-700 rounded md:bg-transparent md:text-green-700 md:p-0 dark:text-white md:dark:text-green-500"
+                aria-current="page">INICIO</a>
+            </li>
+            <li>
+              <button class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-gray-100 md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-gray-700"
+                aria-expanded="false" aria-haspopup="true" onclick="toggleSubMenu('submenu-institucion')">INSTITUCIÓN</button>
+              <!-- Submenu for INSTITUCIÓN -->
+              <ul id="submenu-institucion" class="hidden absolute mt-2 w-48 bg-white shadow-lg rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700" aria-label="submenu">
+                <li><a href="/PAGINA_WEB_CECYTE/pages_institucion/pagina_historia.html" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Misión ,Visión y Historia</a></li>
+                
+                <li><a href="/PAGINA_WEB_CECYTE/pages_institucion/planteles_emsad.html" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Instalaciones Emsad</a></li>
+              </ul>
+            </li>
+            <li>
+              <button class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-gray-100 md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-gray-700"
+                aria-expanded="false" aria-haspopup="true" onclick="toggleSubMenu('submenu-oferta-educativa')">OFERTA EDUCATIVA</button>
+              <!-- Submenu for OFERTA EDUCATIVA -->
+              <ul id="submenu-oferta-educativa" class="hidden absolute mt-2 w-48 bg-white shadow-lg rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700" aria-label="submenu">
+                
+                <li><a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">SOPORTE Y MANTENIMIENTO DE EQUIPO DE CÓMPUTO</a></li>
+                <li><a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/programacion.html" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">PROGRAMACIÓN</a></li>
+                <li><a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/ventas.html" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">VENTAS</a></li>
+                <li><a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/ecoturismo.html" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">ECOTURISMO</a></li>
+                <li><a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">PRODUCCIÓN INDUSTRIAL DE ALIMENTOS</a></li>
+                <li><a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/mantenimiento_industrial.html" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">MATENIMIENTO INDUSTRIAL</a></li>
+                <li><a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/servicios_de_hoteleria.html" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">SERVICIOS DE HOTELERÍA</a></li>
+                
+              </ul>
+            </li>
+            <li>
+              <button class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-gray-100 md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-gray-700"
+                aria-expanded="false" aria-haspopup="true" onclick="toggleSubMenu('submenu-alumnos')">ALUMNOS</button>
+              <!-- Submenu for ALUMNOS -->
+              <ul id="submenu-alumnos" class="hidden absolute mt-2 w-48 bg-white shadow-lg rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700" aria-label="submenu">
+                <li><a href="#" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Horarios</a></li>
+                <li><a href="#" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Calendario</a></li>
+                <li><a href="#" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Actividades</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="block py-2 px-3 text-orange-700 rounded hover:bg-gray-100 md:hover:bg-gray-100 md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-gray-700">DOCENTES</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="w-full h-1 bg-orange-500"></div>
+    </nav>
+    <!-- FIN NAVBAR CON SUBEMENUS -->
+
+
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-6 space-y-6">
+        <!-- Introducción -->
+        <section class="bg-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-bold text-green-600 border-b-4 border-orange-500 inline-block mb-4">Acerca de CecyteBCS</h2>
+            <div class="section-separator"></div>
+            <p class="mt-4 text-justify">El Colegio de Estudios Científicos y Tecnológicos del Estado de Baja California Sur (CECYTEBCS) es una institución educativa que ofrece estudios de bachillerato tecnológico a jóvenes y adultos en todo el estado. Su misión es brindar una educación de calidad, fomentando el desarrollo integral de sus estudiantes a través de programas educativos que combinan la formación académica con la capacitación técnica. Esto permite a los estudiantes acceder a mejores oportunidades laborales y continuar con estudios superiores, contribuyendo así al desarrollo social y económico de sus comunidades.</p>
+        </section>
+
+        <!-- Planteles EMSaD -->
+        <section class="bg-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-bold text-green-600 border-b-4 border-green-500 inline-block mb-4">Planteles CECYTE</h2>
+            <div class="section-separator"></div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
+                    <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/CECYTE/CECYTE_01_MULEGE/01_M.jpeg" alt="CECyT 01 - Mulegé" class="rounded-t-lg w-full h-48 object-cover">
+                    <h3 class="text-2xl font-bold text-green-600 mt-4">CECyT 01 - Mulegé | 03ETC0003A</h3>
+                    <p class="mt-2 text-gray-700">C. Enrique Medina Ríos, Director de plantel.</p>
+                    <p class="text-gray-700">Email: <a href="mailto:cecyt01@cecytebcs.edu.mx" class="text-green-600 hover:underline">cecyt01@cecytebcs.edu.mx</a></p>
+                    <p class="text-gray-700">Teléfono: (615) 103 9360</p>
+                    <p class="text-gray-700">Domicilio: Carretera Transpeninsular Km. 128 + 800, s/n, Col. Vista al Mar, CP 23900. Heróica Mulegé, B.C.S.</p>
+                </div>
+                
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
+                    <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/CECYTE/CECYTE_02_TODOS_SANTOS/02_TS.jpg" alt="CECyT 02 - Todos Santos" class="rounded-t-lg w-full h-48 object-cover">
+                    <h3 class="text-2xl font-bold text-green-600 mt-4">CECyT 02 - Todos Santos | 03ETC0001C</h3>
+                    <p class="mt-2 text-gray-700">C. Raúl Jaramillo Ramírez, Director de plantel.</p>
+                    <p class="text-gray-700">Email: <a href="mailto:cecyt02@cecytebcs.edu.mx" class="text-green-600 hover:underline">cecyt02@cecytebcs.edu.mx</a></p>
+                    <p class="text-gray-700">Teléfono: (612) 145 0302</p>
+                    <p class="text-gray-700">Domicilio: Calle del Huerto e/ Morelos e Hidalgo, CP 23300, Todos Santos, B.C.S.</p>
+                </div>
+                
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
+                    <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/CECYTE/CECYTE_03_SANTIAGO/03_S.png" alt="CECyT 03 - Santiago" class="rounded-t-lg w-full h-48 object-cover">
+                    <h3 class="text-2xl font-bold text-green-600 mt-4">CECyT 03 - Santiago | 03ETC0002B</h3>
+                    <p class="mt-2 text-gray-700">C. Rosario Guadalupe Hernández Estrada, Directora de plantel.</p>
+                    <p class="text-gray-700">Email: <a href="mailto:cecyt03@cecytebcs.edu.mx" class="text-green-600 hover:underline">cecyt03@cecytebcs.edu.mx</a></p>
+                    <p class="text-gray-700">Teléfono: (624)130 2089</p>
+                    <p class="text-gray-700">Domicilio: Calle Dr. Cirilo Mondragón Ochoa s/n, CP 23500, Santiago, B.C.S</p>
+                </div>
+                
+                
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
+                    <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/CECYTE/CECYTE_04_SJC/04_SJC.jpg" alt="EMSaD 07 San Ignacio" class="rounded-t-lg w-full max-h-full object-cover">
+                    <h3 class="text-2xl font-bold text-green-600 mt-4">CECyT 04 - San José del Cabo | 03ETC0004Z</h3>
+                    <p class="mt-2 text-gray-700">C. Oscar Castro Orozco, Director de plantel.</p>
+                    <p class="text-gray-700">Email: <a href="mailto:cecyt04@cecytebcs.edu.mx" class="text-green-600 hover:underline">cecyt04@cecytebcs.edu.mx</a></p>
+                    <p class="text-gray-700">Teléfono: (624) 172 8737</p>
+                    <p class="text-gray-700">Domicilio: Av. De los Pescadores e/ Cesar Martínez Ceseña y Aurora Castro Márquez, CP 23428, Colonia Santa Rosa, San José Del Cabo, B.C.S.</p>
+                </div>
+                
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
+                  <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/CECYTE/CECYTE_05_CSL/054_CSL.jpg" alt="CECyT 05 - Cabo San Lucas" class="rounded-t-lg w-full h-48 object-cover">
+                  <h3 class="text-2xl font-bold text-green-600 mt-4">CECyT 05 - Cabo San Lucas | 03ETC0005Z</h3>
+                  <p class="mt-2 text-gray-700">MC. José Antonio García Loaiza, Director de plantel.</p>
+                  <p class="text-gray-700">Email: <a href="mailto:cecyt05@cecytebcs.edu.mx" class="text-green-600 hover:underline">cecyt05@cecytebcs.edu.mx</a></p>
+                  <p class="text-gray-700">Teléfono: (624) 146 6996</p>
+                  <p class="text-gray-700">Domicilio: Av. Pez Argos Plateado e/ Pez Xifo y Av. Los Quelones, Colonia El Caribe Invi, CP 23477, Cabo San Lucas, B.C.S.</p>
+              </div>
+              
+                
+              <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
+                <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/CECYTE/CECYTE_06_VIZCAINO/06_V.jpg" alt="CECyT 06 - Vizcaíno" class="rounded-t-lg w-full h-48 object-cover">
+                <h3 class="text-2xl font-bold text-green-600 mt-4">CECyT 06 - Vizcaíno | 03ETC0006Y</h3>
+                <p class="mt-2 text-gray-700">C. Eva Medina Cháidez, Directora de plantel.</p>
+                <p class="text-gray-700">Email: <a href="mailto:cecyt06@cecytebcs.edu.mx" class="text-green-600 hover:underline">cecyt06@cecytebcs.edu.mx</a></p>
+                <p class="text-gray-700">Teléfono: (615) 156 4671</p>
+                <p class="text-gray-700">Domicilio: Av. Otoño e/ Blvd. 16 de Septiembre y Av. Pino Suarez, Colonia Magisterial, CP 23938. Villa Alberto Alvarado Arámburo, B.C.S.</p>
+            </div>
+            
+                
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
+              <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/CECYTE/CECYTE_07_SJDC/07_SJDC.jpg" alt="CECyT 07 - San José del Cabo" class="rounded-t-lg w-full h-48 object-cover">
+              <h3 class="text-2xl font-bold text-green-600 mt-4">CECyT 07 - San José del Cabo | 03ETC0007X</h3>
+              <p class="mt-2 text-gray-700">C. Diego García García, Director de plantel.</p>
+              <p class="text-gray-700">Email: <a href="mailto:cecyt07@cecytebcs.edu.mx" class="text-green-600 hover:underline">cecyt07@cecytebcs.edu.mx</a></p>
+              <p class="text-gray-700">Teléfono: (624) 130 3038</p>
+              <p class="text-gray-700">Domicilio: Calle Julio Pimentel s/n, Colonia San Bernabé s/n, CP 23436, San José Del Cabo, B.C.S.</p>
+          </div>
+          
+                
+          <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
+            <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/CECYTE/CECYTE_08_LAPAZ/08_LPZ.jpg" alt="CECyT 08 - La Paz" class="rounded-t-lg w-full h-48 object-cover">
+            <h3 class="text-2xl font-bold text-green-600 mt-4">CECyT 08 - La Paz | 03ETC0008W</h3>
+            <p class="mt-2 text-gray-700">C. Olga Guadalupe Arias Cobarrubias, Directora de plantel.</p>
+            <p class="text-gray-700">Email: <a href="mailto:cecyt08@cecytebcs.edu.mx" class="text-green-600 hover:underline">cecyt08@cecytebcs.edu.mx</a></p>
+            <p class="text-gray-700">Teléfono: (612) 114 7508</p>
+            <p class="text-gray-700">Domicilio: Calle del Arriero entre Calle Salmón y Calle Ocre, Fraccionamiento Camino Real, CP 23081. La Paz, B.C.S.</p>
+        </div>
+        
+                
+        <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
+          <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/CECYTE/CECYTE_09_LOS_PLANES/09_LP.jpg" alt="CECyT 09 - Los Planes" class="rounded-t-lg w-full h-48 object-cover">
+          <h3 class="text-2xl font-bold text-green-600 mt-4">CECyT 09 - Los Planes | 03ETC0009V</h3>
+          <p class="mt-2 text-gray-700">C. Sergio Aguirre Jauregui, Director de plantel.</p>
+          <p class="text-gray-700">Email: <a href="mailto:cecyt09@cecytebcs.edu.mx" class="text-green-600 hover:underline">cecyt09@cecytebcs.edu.mx</a></p>
+          <p class="text-gray-700">Teléfono: (612) 140 0164</p>
+          <p class="text-gray-700">Domicilio: Carretera La Paz - Los Planes, Km. 38.5 Ejido Juan Domínguez Cota, Delegación San Juan De Los Planes, B.C.S.</p>
+      </div>
+      
+                
+      <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
+        <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/CECYTE/CECYTE_10_CDCONSTITUCION/10_CDC.jpg" alt="CECyT 10 - Ciudad Constitución" class="rounded-t-lg w-full h-48 object-cover">
+        <h3 class="text-2xl font-bold text-green-600 mt-4">CECyT 10 - Ciudad Constitución | 03ETC0013H</h3>
+        <p class="mt-2 text-gray-700">Lic. Mayra Yadira Fonseca Espinoza, Directora de plantel.</p>
+        <p class="text-gray-700">Email: <a href="mailto:cecyt10@cecytebcs.edu.mx" class="text-green-600 hover:underline">cecyt10@cecytebcs.edu.mx</a></p>
+        <p class="text-gray-700">Teléfono: (613) 132 0040</p>
+        <p class="text-gray-700">Domicilio: Calle Constituyentes de 1974, e/ Calle Juan Domínguez Cota y Calle Pablo L. Martinez, Colonia 4 De Marzo, CP 23730, Ciudad Constitución, B.C.S.</p>
+    </div>
+    
+                
+    <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
+      <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/CECYTE/CECYTE_11_EL_CENTENARIO/11_C.jpg" alt="CECyT 11 - El Centenario" class="rounded-t-lg w-full h-48 object-cover">
+      <h3 class="text-2xl font-bold text-green-600 mt-4">CECyT 11 - El Centenario | 03ETC0014G</h3>
+      <p class="mt-2 text-gray-700">C. Pablo Moisés Avilés Matus, Director de plantel.</p>
+      <p class="text-gray-700">Email: <a href="mailto:cecyt11@cecytebcs.edu.mx" class="text-green-600 hover:underline">cecyt11@cecytebcs.edu.mx</a></p>
+      <p class="text-gray-700">Teléfono: (612) 124 8238</p>
+      <p class="text-gray-700">Domicilio: Calle Sin Nombre entre Prolongación Rosaura Zapata y Callejón 1, CP 23205, El Centenario, B.C.S.</p>
+  </div>
+  
+                
+                
+                
+            </div>
+        </section>
+
+        
+    </main>
+    <footer class="bg-white dark:bg-gray-900 mt-10">
+        <div class="border-t-4 border-gray-400 dark:border-gray-1000"></div>
+        <div class="mx-auto w-full max-w-screen-xl">
+          <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+              >
+                Sitios de Interés
+              </h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                  <a href="https://itaibcs.net/" class="hover:underline"
+                    >ITAI del Estado de B.C.S.</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a
+                    href="https://transparencia.cre.gob.mx/plataforma-nacional-de-transparencia-sipot/"
+                    class="hover:underline"
+                    >SIPOT</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+              >
+                Domicilio
+              </h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                  <p>Golfo de California No. 190</p>
+                </li>
+                <li class="mb-4">
+                  <p>Col. El Conchalito.</p>
+                </li>
+                <li class="mb-4">
+                  <p>Cp: 23090</p>
+                </li>
+                <li class="mb-4">
+                  <p>La Paz B.C.S</p>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+              >
+                Teléfonos
+              </h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">612 - 12 32244</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">612 - 12 40430</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">612 - 12 40656</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">612 - 12 40656</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+              >
+                SIGUENOS
+              </h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                  <a
+                    href="https://www.facebook.com/DGCECYTEBCS"
+                    class="hover:underline"
+                    >FACEBOOK</a
+                  >
+                </li>
+  
+                <li class="mb-4">
+                  <a
+                    href="https://x.com/CECYTE_BCS?lang=es"
+                    class="hover:underline"
+                    >x</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a
+                    href="https://www.youtube.com/channel/UCAjoT3ODBsMhq75-KFJuNYA"
+                    class="hover:underline"
+                    >YOUTUBE</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <div class="text-center p-4 bg-gray-800 text-white text-sm">
+          © 2024 Departamento de Informática. Todos los derechos reservados.
+        </div>
+      </footer>
+
+      <script>
+      
+        const menuToggle = document.getElementById("menu-toggle");
+        const navbar = document.getElementById("navbar-default");
+        document.addEventListener('DOMContentLoaded', function() {
+      const navbar = document.getElementById('navbar');
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+          navbar.classList.remove('navbar-transparent');
+          navbar.classList.add('navbar-white');
+        } else {
+          navbar.classList.remove('navbar-white');
+          navbar.classList.add('navbar-transparent');
+        }
+      });
+    });
+  
+        menuToggle.addEventListener("click", () => {
+          navbar.classList.toggle("hidden");
+        });
+  
+       function toggleSubMenu(id) {
+      const submenu = document.getElementById(id);
+      submenu.classList.toggle('hidden');
+      const button = document.querySelector(`[aria-controls="${id}"]`);
+      const expanded = button.getAttribute('aria-expanded') === 'true' || false;
+      button.setAttribute('aria-expanded', !expanded);
+    }
+  
+    function closeSubMenu(id) {
+      const submenu = document.getElementById(id);
+      submenu.classList.add('hidden');
+      const button = document.querySelector(`[aria-controls="${id}"]`);
+      button.setAttribute('aria-expanded', 'false');
+    }
+  
+    function cancelClose(id) {
+      const submenu = document.getElementById(id);
+      submenu.classList.remove('hidden');
+    }
+        
+      </script>
+</body>
+</html>
