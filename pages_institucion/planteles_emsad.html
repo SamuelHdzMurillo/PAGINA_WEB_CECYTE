@@ -6,7 +6,8 @@
     <title> Planteles EMSAD</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="/PAGINA_WEB_CECYTE/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/style.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
@@ -26,72 +27,101 @@
 <body class="bg-white-100">
 
     <!-- INCIO NAVBAR CON SUBEMENUS -->
-    <nav id="navbar" class="navbar-transparent fixed w-full top-0 left-0 z-10">
-      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="/PAGINA_WEB_CECYTE/img_logos/logo_Cecyte_vertical_sin_fondo.png" class="h-10" alt="CECYTEBCS" />
-        </a>
-        <button id="menu-toggle" data-collapse-toggle="navbar-default" type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-default" aria-expanded="false">
-          <span class="sr-only">Open main menu</span>
-          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M1 1h15M1 7h15M1 13h15" />
-          </svg>
-        </button>
-        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul
-            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            <li>
-              <a href="/PAGINA_WEB_CECYTE/index.html"
-                class="block py-2 px-3 text-white bg-green-700 rounded md:bg-transparent md:text-green-700 md:p-0 dark:text-white md:dark:text-green-500"
-                aria-current="page">INICIO</a>
-            </li>
-            <li>
-              <button class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-gray-100 md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-gray-700"
-                aria-expanded="false" aria-haspopup="true" onclick="toggleSubMenu('submenu-institucion')">INSTITUCIÓN</button>
-              <!-- Submenu for INSTITUCIÓN -->
-              <ul id="submenu-institucion" class="hidden absolute mt-2 w-48 bg-white shadow-lg rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700" aria-label="submenu">
-                <li><a href="/PAGINA_WEB_CECYTE/pages_institucion/pagina_historia.html" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Misión ,Visión y Historia</a></li>
-                
-                <li><a href="/PAGINA_WEB_CECYTE/pages_institucion/planteles_emsad.html" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Instalaciones Emsad</a></li>
-              </ul>
-            </li>
-            <li>
-              <button class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-gray-100 md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-gray-700"
-                aria-expanded="false" aria-haspopup="true" onclick="toggleSubMenu('submenu-oferta-educativa')">OFERTA EDUCATIVA</button>
-              <!-- Submenu for OFERTA EDUCATIVA -->
-              <ul id="submenu-oferta-educativa" class="hidden absolute mt-2 w-48 bg-white shadow-lg rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700" aria-label="submenu">
-                
-                <li><a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">SOPORTE Y MANTENIMIENTO DE EQUIPO DE CÓMPUTO</a></li>
-                <li><a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/programacion.html" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">PROGRAMACIÓN</a></li>
-                <li><a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/ventas.html" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">VENTAS</a></li>
-                <li><a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/ecoturismo.html" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">ECOTURISMO</a></li>
-                <li><a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">PRODUCCIÓN INDUSTRIAL DE ALIMENTOS</a></li>
-                <li><a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/mantenimiento_industrial.html" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">MATENIMIENTO INDUSTRIAL</a></li>
-                <li><a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/servicios_de_hoteleria.html" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">SERVICIOS DE HOTELERÍA</a></li>
-                
-              </ul>
-            </li>
-            <li>
-              <button class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-gray-100 md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-gray-700"
-                aria-expanded="false" aria-haspopup="true" onclick="toggleSubMenu('submenu-alumnos')">ALUMNOS</button>
-              <!-- Submenu for ALUMNOS -->
-              <ul id="submenu-alumnos" class="hidden absolute mt-2 w-48 bg-white shadow-lg rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700" aria-label="submenu">
-                <li><a href="#" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Horarios</a></li>
-                <li><a href="#" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Calendario</a></li>
-                <li><a href="#" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Actividades</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#" class="block py-2 px-3 text-orange-700 rounded hover:bg-gray-100 md:hover:bg-gray-100 md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-gray-700">DOCENTES</a>
-            </li>
-          </ul>
-        </div>
+    <nav class="bg-white shadow-lg">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between h-16">
+              <!-- Logo -->
+              <div class="flex-shrink-0 flex items-center">
+                  <img src="/img_logos/logo_Cecyte_vertical_sin_fondo.png" alt="logo_Cecyte_vertical_sin_fondo" class="h-12 w-auto">
+              </div>
+              <!-- Responsive menu button -->
+              <div class="flex items-center sm:hidden">
+                  <button id="menu-btn" class="text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700">
+                      <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                      </svg>
+                  </button>
+              </div>
+              <!-- Navbar links -->
+              <div class="hidden sm:flex sm:items-center sm:ml-6">
+                  <div class="relative group">
+                      <a href="/index.html" class="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">Inicio</a>
+                  </div>
+                  <div class="relative group">
+                      <a href="#" class="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">Institución</a>
+                      <!-- Submenu -->
+                      <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md z-10">
+                          <a href="/pages_institucion/pagina_historia.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Historia, Misión y Visión</a>
+                          <a href="/pages_institucion/planteles_emsad.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Planteles Emsad</a>
+                          <a href="/pages_institucion/planteles_cecyte.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Planteles CecyteBCS</a>
+                      </div>
+                  </div>
+                  <div class="relative group">
+                      <a href="#" class="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">Oferta Educativa</a>
+                      <!-- Submenu -->
+                      <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
+                          
+                          <a href="/pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Soporte  y  Mantenimiento equipo de computo</a>
+          <a href="/pages_oferta_educativa/programacion.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programacion</a>
+          <a href="/pages_oferta_educativa/ventas.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ventas</a>
+          <a href="/pages_oferta_educativa/ecoturismo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ecoturismo</a>
+          <a href="/pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Producción industrial de alimentos</a>
+          <a href="/pages_oferta_educativa/mantenimiento_industrial.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Mantenimiento Industrial</a>
+          <a href="/pages_oferta_educativa/servicios_de_hoteleria.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Servicios de Hoteleria</a>
+                      </div>
+                  </div>
+                  <div class="relative group">
+                      <a href="#" class="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">Alumnos</a>
+                      <!-- Submenu -->
+                      <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
+                          
+                          <a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Prueba</a>
+          
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <!-- Responsive Menu -->
+      <div class="sm:hidden hidden" id="mobile-menu">
+          <a href="/index.html" class="block text-gray-700 hover:text-green-600 px-4 py-2">Inicio</a>
+          <div class="block">
+              <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="servicios-btn">
+                  Institución
+                  <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+              </button>
+              <!-- Submenu -->
+              <div class="hidden" id="servicios-submenu">
+                  <a href="/pages_institucion/pagina_historia.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Historia, Misión y Visión</a>
+                  <a href="/pages_institucion/planteles_emsad.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Planteles Emsad</a>
+                  <a href="/pages_institucion/planteles_cecyte.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Planteles CecyteBCS</a>
+              </div>
+          </div>
+          <div class="block">
+              <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="nosotros-btn">
+                  Oferta Educativa
+                  <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+              </button>
+              <!-- Submenu -->
+              <div class="hidden" id="nosotros-submenu">
+                  <a href="/pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Soporte  y  Mantenimiento equipo de computo</a>
+                  <a href="/pages_oferta_educativa/programacion.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programacion</a>
+                  <a href="/pages_oferta_educativa/ventas.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ventas</a>
+                  <a href="/pages_oferta_educativa/ecoturismo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ecoturismo</a>
+                  <a href="/pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Producción industrial de alimentos</a>
+                  <a href="/pages_oferta_educativa/mantenimiento_industrial.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Mantenimiento industrial</a>
+                  <a href="/pages_oferta_educativa/servicios_de_hoteleria.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Servicios de Hoteleria</a>
+              </div>
+          </div>
+          <a href="#" class="block text-gray-700 hover:text-green-600 px-4 py-2">Alumnos</a>
       </div>
       <div class="w-full h-1 bg-orange-500"></div>
-    </nav>
+  </nav>
     <!-- FIN NAVBAR CON SUBEMENUS -->
 
 
@@ -101,17 +131,17 @@
         <!-- Introducción -->
         <section class="bg-white p-8 rounded-lg shadow-lg">
             <h2 class="text-3xl font-bold text-green-600 border-b-4 border-orange-500 inline-block mb-4">Acerca de EMSaD</h2>
-            <div class="section-separator"></div>
+            
             <p class="mt-4 text-justify">Los Centros de Educación Media Superior a Distancia (EMSaD) son una modalidad educativa perteneciente al Colegio de Estudios Científicos y Tecnológicos del Estado de Baja California Sur (CECYTEBCS), que ofrece estudios de bachillerato tecnológico a jóvenes y adultos en comunidades rurales y semiurbanas, permitiéndoles acceder a una educación de calidad sin necesidad de trasladarse a las ciudades.</p>
         </section>
 
         <!-- Planteles EMSaD -->
         <section class="bg-white p-8 rounded-lg shadow-lg">
-            <h2 class="text-3xl font-bold text-green-600 border-b-4 border-green-500 inline-block mb-4">Planteles EMSaD</h2>
-            <div class="section-separator"></div>
+            <h2 class="text-3xl font-bold text-green-600 border-b-4 border-orange-500 inline-block mb-4">Planteles EMSaD</h2>
+            
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
                 <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
-                    <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_01/emsad01.jpg" alt="EMSaD 01 Bahía Asunción" class="rounded-t-lg w-full h-48 object-cover">
+                    <img src="/img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_01/emsad01.jpg" alt="EMSaD 01 Bahía Asunción" class="rounded-t-lg w-full h-48 object-cover">
                     <h3 class="text-2xl font-bold text-green-600 mt-4">EMSaD 01 - Bahía Asunción</h3>
                     <p class="mt-2 text-gray-700">C. Luis Fernández Ojeda, Coordinador del Centro.</p>
                     <p class="text-gray-700">Email: <a href="mailto:emsad01@cecytebcs.edu.mx" class="text-green-600 hover:underline">emsad01@cecytebcs.edu.mx</a></p>
@@ -120,7 +150,7 @@
                 </div>
                 
                 <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
-                    <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_03/emsad_03.jpg" alt="EMSaD 03 Bahía Tortugas" class="rounded-t-lg w-full h-48 object-cover">
+                    <img src="/img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_03/emsad_03.jpg" alt="EMSaD 03 Bahía Tortugas" class="rounded-t-lg w-full h-48 object-cover">
                     <h3 class="text-2xl font-bold text-green-600 mt-4">EMSaD 03 - Bahía Tortugas</h3>
                     <p class="mt-2 text-gray-700">C. Sergio Jorge Barajas Torres, Coordinador del Centro.</p>
                     <p class="text-gray-700">Email: <a href="mailto:emsad03@cecytebcs.edu.mx" class="text-green-600 hover:underline">emsad03@cecytebcs.edu.mx</a></p>
@@ -129,7 +159,7 @@
                 </div>
                 
                 <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
-                    <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_06/emsad06.jpg" alt="EMSaD 06 La Bocana" class="rounded-t-lg w-full h-48 object-cover">
+                    <img src="/img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_06/emsad06.jpg" alt="EMSaD 06 La Bocana" class="rounded-t-lg w-full h-48 object-cover">
                     <h3 class="text-2xl font-bold text-green-600 mt-4">EMSaD 06 - La Bocana</h3>
                     <p class="mt-2 text-gray-700">C. Nohelia Aguilar Villavicencio, Coordinador del Centro.</p>
                     <p class="text-gray-700">Email: <a href="mailto:emsad06@cecytebcs.edu.mx" class="text-green-600 hover:underline">emsad06@cecytebcs.edu.mx</a></p>
@@ -138,7 +168,7 @@
                 </div>
                 
                 <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
-                    <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/EMSAD/SIN_IMAGEN/defauklt.png" alt="EMSaD 07 San Ignacio" class="rounded-t-lg w-full max-h-full object-cover">
+                    <img src="/img_recuros_pagina/img_planteles/EMSAD/SIN_IMAGEN/defauklt.png" alt="EMSaD 07 San Ignacio" class="rounded-t-lg w-full max-h-full object-cover">
                     <h3 class="text-2xl font-bold text-green-600 mt-4">EMSaD 07 - San Ignacio</h3>
                     <p class="mt-2 text-gray-700">C. José Lino Fontes Murillo, Coordinador del Centro.</p>
                     <p class="text-gray-700">Email: <a href="mailto:emsad07@cecytebcs.edu.mx" class="text-green-600 hover:underline">emsad07@cecytebcs.edu.mx</a></p>
@@ -147,7 +177,7 @@
                 </div>
                 
                 <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
-                    <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/EMSAD/SIN_IMAGEN/defauklt.png" alt="EMSaD 08 Ciudad Insurgentes" class="rounded-t-lg w-full max-h-full object-cover">
+                    <img src="/img_recuros_pagina/img_planteles/EMSAD/SIN_IMAGEN/defauklt.png" alt="EMSaD 08 Ciudad Insurgentes" class="rounded-t-lg w-full max-h-full object-cover">
                     <h3 class="text-2xl font-bold text-green-600 mt-4">EMSaD 08 - Ciudad Insurgentes</h3>
                     <p class="mt-2 text-gray-700">C. Vianey Arce Gerardo, Coordinadora del Centro.</p>
                     <p class="text-gray-700">Email: <a href="mailto:emsad08@cecytebcs.edu.mx" class="text-green-600 hover:underline">emsad08@cecytebcs.edu.mx</a></p>
@@ -156,7 +186,7 @@
                 </div>
                 
                 <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
-                    <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/EMSAD/SIN_IMAGEN/defauklt.png" alt="EMSaD 09 Benito Juárez" class="rounded-t-lg w-full max-h-full object-cover">
+                    <img src="/img_recuros_pagina/img_planteles/EMSAD/SIN_IMAGEN/defauklt.png" alt="EMSaD 09 Benito Juárez" class="rounded-t-lg w-full max-h-full object-cover">
                     <h3 class="text-2xl font-bold text-green-600 mt-4">EMSaD 09 - Benito Juárez</h3>
                     <p class="mt-2 text-gray-700">C. Francisco Javier Ponce Bernal, Coordinador del Centro.</p>
                     <p class="text-gray-700">Email: <a href="mailto:emsad09@cecytebcs.edu.mx" class="text-green-600 hover:underline">emsad09@cecytebcs.edu.mx</a></p>
@@ -165,7 +195,7 @@
                 </div>
                 
                 <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
-                    <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_10/emsad10.jpg" alt="EMSaD 10 Puerto Adolfo López Mateos" class="rounded-t-lg w-full h-48 object-cover">
+                    <img src="/img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_10/emsad10.jpg" alt="EMSaD 10 Puerto Adolfo López Mateos" class="rounded-t-lg w-full h-48 object-cover">
                     <h3 class="text-2xl font-bold text-green-600 mt-4">EMSaD 10 - Puerto Adolfo López Mateos</h3>
                     <p class="mt-2 text-gray-700">C. José Manuel Miranda Cadena, Coordinador del Centro.</p>
                     <p class="text-gray-700">Email: <a href="mailto:emsad10@cecytebcs.edu.mx" class="text-green-600 hover:underline">emsad10@cecytebcs.edu.mx</a></p>
@@ -174,7 +204,7 @@
                 </div>
                 
                 <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
-                    <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_11/emsad11.jpg" alt="EMSaD 11 San Isidro" class="rounded-t-lg w-full h-48 object-cover">
+                    <img src="/img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_11/emsad11.jpg" alt="EMSaD 11 San Isidro" class="rounded-t-lg w-full h-48 object-cover">
                     <h3 class="text-2xl font-bold text-green-600 mt-4">EMSaD 11 - San Isidro</h3>
                     <p class="mt-2 text-gray-700">C. Mónica Ramona Meza Higuera, Coordinadora del Centro.</p>
                     <p class="text-gray-700">Email: <a href="mailto:emsad11@cecytebcs.edu.mx" class="text-green-600 hover:underline">emsad11@cecytebcs.edu.mx</a></p>
@@ -183,7 +213,7 @@
                 </div>
                 
                 <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
-                    <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_12/emsad12.jpg" alt="EMSaD 12 Las Pocitas" class="rounded-t-lg w-full h-48 object-cover">
+                    <img src="/img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_12/emsad12.jpg" alt="EMSaD 12 Las Pocitas" class="rounded-t-lg w-full h-48 object-cover">
                     <h3 class="text-2xl font-bold text-green-600 mt-4">EMSaD 12 - Las Pocitas</h3>
                     <p class="mt-2 text-gray-700">C. Javier Amarillas Marquez, Coordinador del Centro.</p>
                     <p class="text-gray-700">Email: <a href="mailto:emsad12@cecytebcs.edu.mx" class="text-green-600 hover:underline">emsad12@cecytebcs.edu.mx</a></p>
@@ -192,7 +222,7 @@
                 </div>
                 
                 <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
-                    <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_13/EMSAD13-1.jpg" alt="EMSaD 13 Manuel Márquez de León" class="rounded-t-lg w-full h-48 object-cover">
+                    <img src="/img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_13/EMSAD13-1.jpg" alt="EMSaD 13 Manuel Márquez de León" class="rounded-t-lg w-full h-48 object-cover">
                     <h3 class="text-2xl font-bold text-green-600 mt-4">EMSaD 13 - Manuel Márquez de León</h3>
                     <p class="mt-2 text-gray-700">C. Leyla Zulema Contreras, Coordinadora del Centro.</p>
                     <p class="text-gray-700">Email: <a href="mailto:emsad13@cecytebcs.edu.mx" class="text-green-600 hover:underline">emsad13@cecytebcs.edu.mx</a></p>
@@ -201,7 +231,7 @@
                 </div>
                 
                 <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
-                    <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/EMSAD/SIN_IMAGEN/defauklt.png" alt="EMSaD 14 Ejido Melitón Albañez Domínguez" class="rounded-t-lg w-full max-h-full object-cover">
+                    <img src="/img_recuros_pagina/img_planteles/EMSAD/SIN_IMAGEN/defauklt.png" alt="EMSaD 14 Ejido Melitón Albañez Domínguez" class="rounded-t-lg w-full max-h-full object-cover">
                     <h3 class="text-2xl font-bold text-green-600 mt-4">EMSaD 14 - Ejido Melitón Albañez Domínguez</h3>
                     <p class="mt-2 text-gray-700">C. Mariel Gerardo Arce, Coordinadora del Centro.</p>
                     <p class="text-gray-700">Email: <a href="mailto:emsad14@cecytebcs.edu.mx" class="text-green-600 hover:underline">emsad14@cecytebcs.edu.mx</a></p>
@@ -210,7 +240,7 @@
                 </div>
                 
                 <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
-                    <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_16/emsad16.jpg" alt="EMSaD 16 Los Barriles" class="rounded-t-lg w-full h-48 object-cover">
+                    <img src="/img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_16/emsad16.jpg" alt="EMSaD 16 Los Barriles" class="rounded-t-lg w-full h-48 object-cover">
                     <h3 class="text-2xl font-bold text-green-600 mt-4">EMSaD 16 - Los Barriles</h3>
                     <p class="mt-2 text-gray-700">C. Carmen Cota Ruíz, Coordinadora del Centro.</p>
                     <p class="text-gray-700">Email: <a href="mailto:emsad16@cecytebcs.edu.mx" class="text-green-600 hover:underline">emsad16@cecytebcs.edu.mx</a></p>

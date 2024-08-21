@@ -6,7 +6,8 @@
     <title> Planteles CECYTE</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="/PAGINA_WEB_CECYTE/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/style.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
@@ -26,72 +27,101 @@
 <body class="bg-white-100">
 
     <!-- INCIO NAVBAR CON SUBEMENUS -->
-    <nav id="navbar" class="navbar-transparent fixed w-full top-0 left-0 z-10">
-      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="/PAGINA_WEB_CECYTE/img_logos/logo_Cecyte_vertical_sin_fondo.png" class="h-10" alt="CECYTEBCS" />
-        </a>
-        <button id="menu-toggle" data-collapse-toggle="navbar-default" type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-default" aria-expanded="false">
-          <span class="sr-only">Open main menu</span>
-          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M1 1h15M1 7h15M1 13h15" />
-          </svg>
-        </button>
-        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul
-            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            <li>
-              <a href="/PAGINA_WEB_CECYTE/index.html"
-                class="block py-2 px-3 text-white bg-green-700 rounded md:bg-transparent md:text-green-700 md:p-0 dark:text-white md:dark:text-green-500"
-                aria-current="page">INICIO</a>
-            </li>
-            <li>
-              <button class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-gray-100 md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-gray-700"
-                aria-expanded="false" aria-haspopup="true" onclick="toggleSubMenu('submenu-institucion')">INSTITUCIÓN</button>
-              <!-- Submenu for INSTITUCIÓN -->
-              <ul id="submenu-institucion" class="hidden absolute mt-2 w-48 bg-white shadow-lg rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700" aria-label="submenu">
-                <li><a href="/PAGINA_WEB_CECYTE/pages_institucion/pagina_historia.html" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Misión ,Visión y Historia</a></li>
-                
-                <li><a href="/PAGINA_WEB_CECYTE/pages_institucion/planteles_emsad.html" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Instalaciones Emsad</a></li>
-              </ul>
-            </li>
-            <li>
-              <button class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-gray-100 md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-gray-700"
-                aria-expanded="false" aria-haspopup="true" onclick="toggleSubMenu('submenu-oferta-educativa')">OFERTA EDUCATIVA</button>
-              <!-- Submenu for OFERTA EDUCATIVA -->
-              <ul id="submenu-oferta-educativa" class="hidden absolute mt-2 w-48 bg-white shadow-lg rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700" aria-label="submenu">
-                
-                <li><a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">SOPORTE Y MANTENIMIENTO DE EQUIPO DE CÓMPUTO</a></li>
-                <li><a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/programacion.html" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">PROGRAMACIÓN</a></li>
-                <li><a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/ventas.html" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">VENTAS</a></li>
-                <li><a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/ecoturismo.html" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">ECOTURISMO</a></li>
-                <li><a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">PRODUCCIÓN INDUSTRIAL DE ALIMENTOS</a></li>
-                <li><a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/mantenimiento_industrial.html" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">MATENIMIENTO INDUSTRIAL</a></li>
-                <li><a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/servicios_de_hoteleria.html" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">SERVICIOS DE HOTELERÍA</a></li>
-                
-              </ul>
-            </li>
-            <li>
-              <button class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-gray-100 md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-gray-700"
-                aria-expanded="false" aria-haspopup="true" onclick="toggleSubMenu('submenu-alumnos')">ALUMNOS</button>
-              <!-- Submenu for ALUMNOS -->
-              <ul id="submenu-alumnos" class="hidden absolute mt-2 w-48 bg-white shadow-lg rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700" aria-label="submenu">
-                <li><a href="#" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Horarios</a></li>
-                <li><a href="#" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Calendario</a></li>
-                <li><a href="#" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Actividades</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#" class="block py-2 px-3 text-orange-700 rounded hover:bg-gray-100 md:hover:bg-gray-100 md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-gray-700">DOCENTES</a>
-            </li>
-          </ul>
-        </div>
+    <nav class="bg-white shadow-lg">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between h-16">
+              <!-- Logo -->
+              <div class="flex-shrink-0 flex items-center">
+                  <img src="/img_logos/logo_Cecyte_vertical_sin_fondo.png" alt="logo_Cecyte_vertical_sin_fondo" class="h-12 w-auto">
+              </div>
+              <!-- Responsive menu button -->
+              <div class="flex items-center sm:hidden">
+                  <button id="menu-btn" class="text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700">
+                      <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                      </svg>
+                  </button>
+              </div>
+              <!-- Navbar links -->
+              <div class="hidden sm:flex sm:items-center sm:ml-6">
+                  <div class="relative group">
+                      <a href="/index.html" class="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">Inicio</a>
+                  </div>
+                  <div class="relative group">
+                      <a href="#" class="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">Institución</a>
+                      <!-- Submenu -->
+                      <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md z-10">
+                          <a href="/pages_institucion/pagina_historia.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Historia, Misión y Visión</a>
+                          <a href="/pages_institucion/planteles_emsad.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Planteles Emsad</a>
+                          <a href="/pages_institucion/planteles_cecyte.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Planteles CecyteBCS</a>
+                      </div>
+                  </div>
+                  <div class="relative group">
+                      <a href="#" class="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">Oferta Educativa</a>
+                      <!-- Submenu -->
+                      <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
+                          
+                          <a href="/pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Soporte  y  Mantenimiento equipo de computo</a>
+          <a href="/pages_oferta_educativa/programacion.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programacion</a>
+          <a href="/pages_oferta_educativa/ventas.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ventas</a>
+          <a href="/pages_oferta_educativa/ecoturismo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ecoturismo</a>
+          <a href="/pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Producción industrial de alimentos</a>
+          <a href="/pages_oferta_educativa/mantenimiento_industrial.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Mantenimiento Industrial</a>
+          <a href="/pages_oferta_educativa/servicios_de_hoteleria.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Servicios de Hoteleria</a>
+                      </div>
+                  </div>
+                  <div class="relative group">
+                      <a href="#" class="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">Alumnos</a>
+                      <!-- Submenu -->
+                      <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
+                          
+                          <a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Prueba</a>
+          
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <!-- Responsive Menu -->
+      <div class="sm:hidden hidden" id="mobile-menu">
+          <a href="/index.html" class="block text-gray-700 hover:text-green-600 px-4 py-2">Inicio</a>
+          <div class="block">
+              <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="servicios-btn">
+                  Institución
+                  <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+              </button>
+              <!-- Submenu -->
+              <div class="hidden" id="servicios-submenu">
+                  <a href="/pages_institucion/pagina_historia.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Historia, Misión y Visión</a>
+                  <a href="/pages_institucion/planteles_emsad.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Planteles Emsad</a>
+                  <a href="/pages_institucion/planteles_cecyte.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Planteles CecyteBCS</a>
+              </div>
+          </div>
+          <div class="block">
+              <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="nosotros-btn">
+                  Oferta Educativa
+                  <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+              </button>
+              <!-- Submenu -->
+              <div class="hidden" id="nosotros-submenu">
+                  <a href="/pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Soporte  y  Mantenimiento equipo de computo</a>
+                  <a href="/pages_oferta_educativa/programacion.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programacion</a>
+                  <a href="/pages_oferta_educativa/ventas.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ventas</a>
+                  <a href="/pages_oferta_educativa/ecoturismo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ecoturismo</a>
+                  <a href="/pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Producción industrial de alimentos</a>
+                  <a href="/pages_oferta_educativa/mantenimiento_industrial.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Mantenimiento industrial</a>
+                  <a href="/pages_oferta_educativa/servicios_de_hoteleria.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Servicios de Hoteleria</a>
+              </div>
+          </div>
+          <a href="#" class="block text-gray-700 hover:text-green-600 px-4 py-2">Alumnos</a>
       </div>
       <div class="w-full h-1 bg-orange-500"></div>
-    </nav>
+  </nav>
     <!-- FIN NAVBAR CON SUBEMENUS -->
 
 
@@ -101,18 +131,18 @@
         <!-- Introducción -->
         <section class="bg-white p-8 rounded-lg shadow-lg">
             <h2 class="text-3xl font-bold text-green-600 border-b-4 border-orange-500 inline-block mb-4">Acerca de CecyteBCS</h2>
-            <div class="section-separator"></div>
+            
             <p class="mt-4 text-justify">El Colegio de Estudios Científicos y Tecnológicos del Estado de Baja California Sur (CECYTEBCS) es una institución educativa que ofrece estudios de bachillerato tecnológico a jóvenes y adultos en todo el estado. Su misión es brindar una educación de calidad, fomentando el desarrollo integral de sus estudiantes a través de programas educativos que combinan la formación académica con la capacitación técnica. Esto permite a los estudiantes acceder a mejores oportunidades laborales y continuar con estudios superiores, contribuyendo así al desarrollo social y económico de sus comunidades.</p>
         </section>
 
         <!-- Planteles EMSaD -->
         <section class="bg-white p-8 rounded-lg shadow-lg">
-            <h2 class="text-3xl font-bold text-green-600 border-b-4 border-green-500 inline-block mb-4">Planteles CECYTE</h2>
-            <div class="section-separator"></div>
+            <h2 class="text-3xl font-bold text-green-600 border-b-4 border-orange-600 inline-block mb-4">Planteles CECYTE</h2>
+            
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
 
                 <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
-                    <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/CECYTE/CECYTE_01_MULEGE/01_M.jpeg" alt="CECyT 01 - Mulegé" class="rounded-t-lg w-full h-48 object-cover">
+                    <img src="/img_recuros_pagina/img_planteles/CECYTE/CECYTE_01_MULEGE/01_M.jpeg" alt="CECyT 01 - Mulegé" class="rounded-t-lg w-full h-48 object-cover">
                     <h3 class="text-2xl font-bold text-green-600 mt-4">CECyT 01 - Mulegé | 03ETC0003A</h3>
                     <p class="mt-2 text-gray-700">C. Enrique Medina Ríos, Director de plantel.</p>
                     <p class="text-gray-700">Email: <a href="mailto:cecyt01@cecytebcs.edu.mx" class="text-green-600 hover:underline">cecyt01@cecytebcs.edu.mx</a></p>
@@ -121,7 +151,7 @@
                 </div>
                 
                 <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
-                    <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/CECYTE/CECYTE_02_TODOS_SANTOS/02_TS.jpg" alt="CECyT 02 - Todos Santos" class="rounded-t-lg w-full h-48 object-cover">
+                    <img src="/img_recuros_pagina/img_planteles/CECYTE/CECYTE_02_TODOS_SANTOS/02_TS.jpg" alt="CECyT 02 - Todos Santos" class="rounded-t-lg w-full h-48 object-cover">
                     <h3 class="text-2xl font-bold text-green-600 mt-4">CECyT 02 - Todos Santos | 03ETC0001C</h3>
                     <p class="mt-2 text-gray-700">C. Raúl Jaramillo Ramírez, Director de plantel.</p>
                     <p class="text-gray-700">Email: <a href="mailto:cecyt02@cecytebcs.edu.mx" class="text-green-600 hover:underline">cecyt02@cecytebcs.edu.mx</a></p>
@@ -130,7 +160,7 @@
                 </div>
                 
                 <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
-                    <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/CECYTE/CECYTE_03_SANTIAGO/03_S.png" alt="CECyT 03 - Santiago" class="rounded-t-lg w-full h-48 object-cover">
+                    <img src="/img_recuros_pagina/img_planteles/CECYTE/CECYTE_03_SANTIAGO/03_S.png" alt="CECyT 03 - Santiago" class="rounded-t-lg w-full h-48 object-cover">
                     <h3 class="text-2xl font-bold text-green-600 mt-4">CECyT 03 - Santiago | 03ETC0002B</h3>
                     <p class="mt-2 text-gray-700">C. Rosario Guadalupe Hernández Estrada, Directora de plantel.</p>
                     <p class="text-gray-700">Email: <a href="mailto:cecyt03@cecytebcs.edu.mx" class="text-green-600 hover:underline">cecyt03@cecytebcs.edu.mx</a></p>
@@ -140,7 +170,7 @@
                 
                 
                 <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
-                    <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/CECYTE/CECYTE_04_SJC/04_SJC.jpg" alt="EMSaD 07 San Ignacio" class="rounded-t-lg w-full max-h-full object-cover">
+                    <img src="/img_recuros_pagina/img_planteles/CECYTE/CECYTE_04_SJC/04_SJC.jpg" alt="EMSaD 07 San Ignacio" class="rounded-t-lg w-full max-h-full object-cover">
                     <h3 class="text-2xl font-bold text-green-600 mt-4">CECyT 04 - San José del Cabo | 03ETC0004Z</h3>
                     <p class="mt-2 text-gray-700">C. Oscar Castro Orozco, Director de plantel.</p>
                     <p class="text-gray-700">Email: <a href="mailto:cecyt04@cecytebcs.edu.mx" class="text-green-600 hover:underline">cecyt04@cecytebcs.edu.mx</a></p>
@@ -149,7 +179,7 @@
                 </div>
                 
                 <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
-                  <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/CECYTE/CECYTE_05_CSL/054_CSL.jpg" alt="CECyT 05 - Cabo San Lucas" class="rounded-t-lg w-full h-48 object-cover">
+                  <img src="/img_recuros_pagina/img_planteles/CECYTE/CECYTE_05_CSL/054_CSL.jpg" alt="CECyT 05 - Cabo San Lucas" class="rounded-t-lg w-full h-48 object-cover">
                   <h3 class="text-2xl font-bold text-green-600 mt-4">CECyT 05 - Cabo San Lucas | 03ETC0005Z</h3>
                   <p class="mt-2 text-gray-700">MC. José Antonio García Loaiza, Director de plantel.</p>
                   <p class="text-gray-700">Email: <a href="mailto:cecyt05@cecytebcs.edu.mx" class="text-green-600 hover:underline">cecyt05@cecytebcs.edu.mx</a></p>
@@ -159,7 +189,7 @@
               
                 
               <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
-                <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/CECYTE/CECYTE_06_VIZCAINO/06_V.jpg" alt="CECyT 06 - Vizcaíno" class="rounded-t-lg w-full h-48 object-cover">
+                <img src="/img_recuros_pagina/img_planteles/CECYTE/CECYTE_06_VIZCAINO/06_V.jpg" alt="CECyT 06 - Vizcaíno" class="rounded-t-lg w-full h-48 object-cover">
                 <h3 class="text-2xl font-bold text-green-600 mt-4">CECyT 06 - Vizcaíno | 03ETC0006Y</h3>
                 <p class="mt-2 text-gray-700">C. Eva Medina Cháidez, Directora de plantel.</p>
                 <p class="text-gray-700">Email: <a href="mailto:cecyt06@cecytebcs.edu.mx" class="text-green-600 hover:underline">cecyt06@cecytebcs.edu.mx</a></p>
@@ -169,7 +199,7 @@
             
                 
             <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
-              <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/CECYTE/CECYTE_07_SJDC/07_SJDC.jpg" alt="CECyT 07 - San José del Cabo" class="rounded-t-lg w-full h-48 object-cover">
+              <img src="/img_recuros_pagina/img_planteles/CECYTE/CECYTE_07_SJDC/07_SJDC.jpg" alt="CECyT 07 - San José del Cabo" class="rounded-t-lg w-full h-48 object-cover">
               <h3 class="text-2xl font-bold text-green-600 mt-4">CECyT 07 - San José del Cabo | 03ETC0007X</h3>
               <p class="mt-2 text-gray-700">C. Diego García García, Director de plantel.</p>
               <p class="text-gray-700">Email: <a href="mailto:cecyt07@cecytebcs.edu.mx" class="text-green-600 hover:underline">cecyt07@cecytebcs.edu.mx</a></p>
@@ -179,7 +209,7 @@
           
                 
           <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
-            <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/CECYTE/CECYTE_08_LAPAZ/08_LPZ.jpg" alt="CECyT 08 - La Paz" class="rounded-t-lg w-full h-48 object-cover">
+            <img src="/img_recuros_pagina/img_planteles/CECYTE/CECYTE_08_LAPAZ/08_LPZ.jpg" alt="CECyT 08 - La Paz" class="rounded-t-lg w-full h-48 object-cover">
             <h3 class="text-2xl font-bold text-green-600 mt-4">CECyT 08 - La Paz | 03ETC0008W</h3>
             <p class="mt-2 text-gray-700">C. Olga Guadalupe Arias Cobarrubias, Directora de plantel.</p>
             <p class="text-gray-700">Email: <a href="mailto:cecyt08@cecytebcs.edu.mx" class="text-green-600 hover:underline">cecyt08@cecytebcs.edu.mx</a></p>
@@ -189,7 +219,7 @@
         
                 
         <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
-          <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/CECYTE/CECYTE_09_LOS_PLANES/09_LP.jpg" alt="CECyT 09 - Los Planes" class="rounded-t-lg w-full h-48 object-cover">
+          <img src="/img_recuros_pagina/img_planteles/CECYTE/CECYTE_09_LOS_PLANES/09_LP.jpg" alt="CECyT 09 - Los Planes" class="rounded-t-lg w-full h-48 object-cover">
           <h3 class="text-2xl font-bold text-green-600 mt-4">CECyT 09 - Los Planes | 03ETC0009V</h3>
           <p class="mt-2 text-gray-700">C. Sergio Aguirre Jauregui, Director de plantel.</p>
           <p class="text-gray-700">Email: <a href="mailto:cecyt09@cecytebcs.edu.mx" class="text-green-600 hover:underline">cecyt09@cecytebcs.edu.mx</a></p>
@@ -199,7 +229,7 @@
       
                 
       <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
-        <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/CECYTE/CECYTE_10_CDCONSTITUCION/10_CDC.jpg" alt="CECyT 10 - Ciudad Constitución" class="rounded-t-lg w-full h-48 object-cover">
+        <img src="/img_recuros_pagina/img_planteles/CECYTE/CECYTE_10_CDCONSTITUCION/10_CDC.jpg" alt="CECyT 10 - Ciudad Constitución" class="rounded-t-lg w-full h-48 object-cover">
         <h3 class="text-2xl font-bold text-green-600 mt-4">CECyT 10 - Ciudad Constitución | 03ETC0013H</h3>
         <p class="mt-2 text-gray-700">Lic. Mayra Yadira Fonseca Espinoza, Directora de plantel.</p>
         <p class="text-gray-700">Email: <a href="mailto:cecyt10@cecytebcs.edu.mx" class="text-green-600 hover:underline">cecyt10@cecytebcs.edu.mx</a></p>
@@ -209,7 +239,7 @@
     
                 
     <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto">
-      <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/CECYTE/CECYTE_11_EL_CENTENARIO/11_C.jpg" alt="CECyT 11 - El Centenario" class="rounded-t-lg w-full h-48 object-cover">
+      <img src="/img_recuros_pagina/img_planteles/CECYTE/CECYTE_11_EL_CENTENARIO/11_C.jpg" alt="CECyT 11 - El Centenario" class="rounded-t-lg w-full h-48 object-cover">
       <h3 class="text-2xl font-bold text-green-600 mt-4">CECyT 11 - El Centenario | 03ETC0014G</h3>
       <p class="mt-2 text-gray-700">C. Pablo Moisés Avilés Matus, Director de plantel.</p>
       <p class="text-gray-700">Email: <a href="mailto:cecyt11@cecytebcs.edu.mx" class="text-green-600 hover:underline">cecyt11@cecytebcs.edu.mx</a></p>

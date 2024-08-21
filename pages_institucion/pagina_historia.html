@@ -6,7 +6,8 @@
     <title>CECYTE BCS</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="/PAGINA_WEB_CECYTE/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/style.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
@@ -26,72 +27,101 @@
 <body class="bg-white-100">
 
     <!-- INCIO NAVBAR CON SUBEMENUS -->
-    <nav id="navbar" class="navbar-transparent fixed w-full top-0 left-0 z-10">
-      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="/PAGINA_WEB_CECYTE/img_logos/logo_Cecyte_vertical_sin_fondo.png" class="h-10" alt="CECYTEBCS" />
-        </a>
-        <button id="menu-toggle" data-collapse-toggle="navbar-default" type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-default" aria-expanded="false">
-          <span class="sr-only">Open main menu</span>
-          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M1 1h15M1 7h15M1 13h15" />
-          </svg>
-        </button>
-        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul
-            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            <li>
-              <a href="/PAGINA_WEB_CECYTE/index.html"
-                class="block py-2 px-3 text-white bg-green-700 rounded md:bg-transparent md:text-green-700 md:p-0 dark:text-white md:dark:text-green-500"
-                aria-current="page">INICIO</a>
-            </li>
-            <li>
-              <button class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-gray-100 md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-gray-700"
-                aria-expanded="false" aria-haspopup="true" onclick="toggleSubMenu('submenu-institucion')">INSTITUCIÓN</button>
-              <!-- Submenu for INSTITUCIÓN -->
-              <ul id="submenu-institucion" class="hidden absolute mt-2 w-48 bg-white shadow-lg rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700" aria-label="submenu">
-                <li><a href="/PAGINA_WEB_CECYTE/pages_institucion/pagina_historia.html" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Misión ,Visión y Historia</a></li>
-                
-                <li><a href="/PAGINA_WEB_CECYTE/pages_institucion/planteles_emsad.html" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Instalaciones Emsad</a></li>
-              </ul>
-            </li>
-            <li>
-              <button class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-gray-100 md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-gray-700"
-                aria-expanded="false" aria-haspopup="true" onclick="toggleSubMenu('submenu-oferta-educativa')">OFERTA EDUCATIVA</button>
-              <!-- Submenu for OFERTA EDUCATIVA -->
-              <ul id="submenu-oferta-educativa" class="hidden absolute mt-2 w-48 bg-white shadow-lg rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700" aria-label="submenu">
-                
-                <li><a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">SOPORTE Y MANTENIMIENTO DE EQUIPO DE CÓMPUTO</a></li>
-                <li><a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/programacion.html" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">PROGRAMACIÓN</a></li>
-                <li><a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/ventas.html" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">VENTAS</a></li>
-                <li><a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/ecoturismo.html" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">ECOTURISMO</a></li>
-                <li><a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">PRODUCCIÓN INDUSTRIAL DE ALIMENTOS</a></li>
-                <li><a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/mantenimiento_industrial.html" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">MATENIMIENTO INDUSTRIAL</a></li>
-                <li><a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/servicios_de_hoteleria.html" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">SERVICIOS DE HOTELERÍA</a></li>
-                
-              </ul>
-            </li>
-            <li>
-              <button class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-gray-100 md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-gray-700"
-                aria-expanded="false" aria-haspopup="true" onclick="toggleSubMenu('submenu-alumnos')">ALUMNOS</button>
-              <!-- Submenu for ALUMNOS -->
-              <ul id="submenu-alumnos" class="hidden absolute mt-2 w-48 bg-white shadow-lg rounded-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700" aria-label="submenu">
-                <li><a href="#" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Horarios</a></li>
-                <li><a href="#" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Calendario</a></li>
-                <li><a href="#" class="block py-2 px-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:text-gray-200">Actividades</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#" class="block py-2 px-3 text-orange-700 rounded hover:bg-gray-100 md:hover:bg-gray-100 md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-gray-700">DOCENTES</a>
-            </li>
-          </ul>
-        </div>
+    <nav class="bg-white shadow-lg">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between h-16">
+              <!-- Logo -->
+              <div class="flex-shrink-0 flex items-center">
+                  <img src="/img_logos/logo_Cecyte_vertical_sin_fondo.png" alt="logo_Cecyte_vertical_sin_fondo" class="h-12 w-auto">
+              </div>
+              <!-- Responsive menu button -->
+              <div class="flex items-center sm:hidden">
+                  <button id="menu-btn" class="text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700">
+                      <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                      </svg>
+                  </button>
+              </div>
+              <!-- Navbar links -->
+              <div class="hidden sm:flex sm:items-center sm:ml-6">
+                  <div class="relative group">
+                      <a href="/index.html" class="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">Inicio</a>
+                  </div>
+                  <div class="relative group">
+                      <a href="#" class="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">Institución</a>
+                      <!-- Submenu -->
+                      <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md z-10">
+                          <a href="/pages_institucion/pagina_historia.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Historia, Misión y Visión</a>
+                          <a href="/pages_institucion/planteles_emsad.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Planteles Emsad</a>
+                          <a href="/pages_institucion/planteles_cecyte.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Planteles CecyteBCS</a>
+                      </div>
+                  </div>
+                  <div class="relative group">
+                      <a href="#" class="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">Oferta Educativa</a>
+                      <!-- Submenu -->
+                      <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
+                          
+                          <a href="/pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Soporte  y  Mantenimiento equipo de computo</a>
+          <a href="/pages_oferta_educativa/programacion.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programacion</a>
+          <a href="/pages_oferta_educativa/ventas.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ventas</a>
+          <a href="/pages_oferta_educativa/ecoturismo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ecoturismo</a>
+          <a href="/pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Producción industrial de alimentos</a>
+          <a href="/pages_oferta_educativa/mantenimiento_industrial.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Mantenimiento Industrial</a>
+          <a href="/pages_oferta_educativa/servicios_de_hoteleria.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Servicios de Hoteleria</a>
+                      </div>
+                  </div>
+                  <div class="relative group">
+                      <a href="#" class="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">Alumnos</a>
+                      <!-- Submenu -->
+                      <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
+                          
+                          <a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Prueba</a>
+          
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <!-- Responsive Menu -->
+      <div class="sm:hidden hidden" id="mobile-menu">
+          <a href="/index.html" class="block text-gray-700 hover:text-green-600 px-4 py-2">Inicio</a>
+          <div class="block">
+              <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="servicios-btn">
+                  Institución
+                  <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+              </button>
+              <!-- Submenu -->
+              <div class="hidden" id="servicios-submenu">
+                  <a href="/pages_institucion/pagina_historia.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Historia, Misión y Visión</a>
+                  <a href="/pages_institucion/planteles_emsad.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Planteles Emsad</a>
+                  <a href="/pages_institucion/planteles_cecyte.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Planteles CecyteBCS</a>
+              </div>
+          </div>
+          <div class="block">
+              <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="nosotros-btn">
+                  Oferta Educativa
+                  <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+              </button>
+              <!-- Submenu -->
+              <div class="hidden" id="nosotros-submenu">
+                  <a href="/pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Soporte  y  Mantenimiento equipo de computo</a>
+                  <a href="/pages_oferta_educativa/programacion.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programacion</a>
+                  <a href="/pages_oferta_educativa/ventas.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ventas</a>
+                  <a href="/pages_oferta_educativa/ecoturismo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ecoturismo</a>
+                  <a href="/pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Producción industrial de alimentos</a>
+                  <a href="/pages_oferta_educativa/mantenimiento_industrial.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Mantenimiento industrial</a>
+                  <a href="/pages_oferta_educativa/servicios_de_hoteleria.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Servicios de Hoteleria</a>
+              </div>
+          </div>
+          <a href="#" class="block text-gray-700 hover:text-green-600 px-4 py-2">Alumnos</a>
       </div>
       <div class="w-full h-1 bg-orange-500"></div>
-    </nav>
+  </nav>
     <!-- FIN NAVBAR CON SUBEMENUS -->
 
     <!-- Contenido Principal -->
@@ -101,30 +131,30 @@
 
         <!-- Logo Section -->
         <section class="bg-white p-8 rounded-lg shadow-lg text-center">
-          <img src="/PAGINA_WEB_CECYTE/img_logos/logo_Cecyte_vertical_con_fondo.png" alt="Logo de la Institución" class="mx-auto mb-4">
+          <img src="/img_logos/logo_Cecyte_vertical_con_fondo.png" alt="Logo de la Institución" class="mx-auto mb-4">
       </section>
 
       <!-- Misión Section -->
       <section class="bg-white p-8 rounded-lg shadow-lg">
-          <h2 class="text-3xl font-bold text-green-600 border-b-4 border-orange-500 inline-block mb-4">Misión</h2>
+          <h2 class="text-3xl font-bold text-green-600 border-b-4 border-orange-600 inline-block mb-4">Misión</h2>
           <p class="mt-4 text-justify">Asegurar la impartición de los servicios de Educación Media Superior en sus modalidades de bachillerato general y bachillerato tecnológico, conjugando convenientemente el conocimiento teórico que enfatice su vertiente propedéutica y el logro de competencias, habilidades y destrezas que den ascendencia a su línea tecnológica, así como facilitar el acceso al conocimiento y a la preparación técnica a los jóvenes, particularmente a los avecinados en el medio rural o semiurbano.</p>
       </section>
 
       <!-- Visión Section -->
       <section class="bg-white p-8 rounded-lg shadow-lg">
-          <h2 class="text-3xl font-bold text-orange-600 border-b-4 border-green-500 inline-block mb-4">Visión</h2>
+          <h2 class="text-3xl font-bold text-green-600 border-b-4 border-orange-600 inline-block mb-4">Visión</h2>
           <p class="mt-4 text-justify">El CECyTE-BCS se propone lograr una formación educativa integral, de calidad, que permita a sus egresados participar en la sociedad del conocimiento, realizar estudios de nivel superior e integrarse al campo laboral de manera exitosa, constituyendo los servicios de educación media superior en un espacio de convivencia juvenil ordenada, plural y respetuosa, que fomente el aprendizaje colaborativo y la discusión en un ambiente de libertad y rigor académico que vincule los centros escolares con sus propias comunidades para lograr una interrelación más estrecha y pertinente entre planes y programas de estudio, el ámbito laboral y el desarrollo sustentables entre regiones y microrregiones del Estado de BCS.</p>
       </section>
 
       <!-- Objetivo General Section -->
       <section class="bg-white p-8 rounded-lg shadow-lg">
-          <h2 class="text-3xl font-bold text-green-600 border-b-4 border-orange-500 inline-block mb-4">Objetivo General</h2>
+          <h2 class="text-3xl font-bold text-green-600 border-b-4 border-orange-600 inline-block mb-4">Objetivo General</h2>
           <p class="mt-4 text-justify">Impartir la educación en el nivel medio superior en las modalidades de bachillerato general y bachillerato tecnológico, a través de los centros EMSaD y planteles CECyT, conjuntando convenientemente el conocimiento teórico que asegure su vertiente propedéutica y el logro de habilidades y destrezas que den ascendencia a su línea general y tecnológica, impulsando una educación sustentada en valores humanos y cívicos, que promueva las raíces culturales y tradiciones regionales de México y del mundo, que estimule la formación de actitudes para el cuidado de la salud, que fomente una cultura ecológica y que promueva el interés por la ciencia y la tecnología entre los alumnos, mediante programas y proyectos acordes al enfoque del desarrollo de competencias.</p>
       </section>
 
       <!-- Objetivos Específicos Section -->
       <section class="bg-white p-8 rounded-lg shadow-lg">
-          <h2 class="text-3xl font-bold text-orange-600 border-b-4 border-green-500 inline-block mb-4">Objetivos Específicos</h2>
+          <h2 class="text-3xl font-bold text-green-600 border-b-4 border-orange-500 inline-block mb-4">Objetivos Específicos</h2>
           <ul class="list-disc list-inside mt-4 space-y-2">
               <li>Promover en los Planteles CECyT y Centros EMSAD la función orientadora como modalidad efectiva para que los alumnos de este nivel resuelvan problemas propios de la edad y la situación escolar, así como elegir la carrera profesional acorde con sus intereses y aptitudes.</li>
               <li>Impulsar el mejoramiento de los resultados educativos de los estudiantes.</li>
@@ -149,7 +179,7 @@
           <p class="mt-4 text-justify">Dada la gran necesidad de ampliar la cobertura hacia zonas rurales y geográficamente dispersas, entre 1999 y 2013, los gobiernos federal y estatal, que confiaron plenamente en que nuestro subsistema atendería con eficiencia y calidad esta necesidad, permitiendo a los jóvenes prepararse para continuar sus estudios superiores y mejorar su calidad de vida sin salir de sus propias localidades, autorizaron los presupuestos necesarios para la creación y operación de 14 centros, EMSaD adicionales y de 4 planteles CECyT y la conversión de 4 centros EMSaD a planteles de bachillerato tecnológico.</p>
           <p class="mt-4 text-justify">De esta manera, el CECyTE de B. C. S. cubre la Educación Media Superior en el Estado, desde Bahía Tortugas hasta San José del Cabo, atendiendo actualmente a 7793 alumnos, con programas académicos, culturales y deportivos que propician su desarrollo integral, ofreciéndoles una adecuada preparación que les permite continuar sus estudios a nivel superior o en su caso incorporarse al sector productivo, a través de 11 planteles CECyT y 12 centros EMSaD.</p>
           <p class="mt-4 text-justify">Con el objetivo de posicionar la identidad gráfica de los Colegios de Estudios Científicos y Tecnológicos a nivel nacional y proyectar unión, coherencia y uniformidad, generando un sentido de identificación y pertenencia al subsistema, la Coordinación nacional de CECyTEs hizo la solicitud a todos los Colegios del país de adoptar el Manual de Identidad Gráfica de los CECyTEs, que incluye un nuevo logotipo, misma que fue aprobada por la H. Junta Directiva del Colegio en la sesión ordinaria correspondiente al tercer trimestre de 2014, que se llevó a cabo el 31 de octubre de ese año.</p>
-          <img src="/PAGINA_WEB_CECYTE/img_logos/Logo-Anterior.gif" alt="Logotipo Original" class="my-4 mx-auto">
+          <img src="/img_logos/Logo-Anterior.gif" alt="Logotipo Original" class="my-4 mx-auto">
           <p class="mt-4 text-justify">El Logotipo está conformado por dos estructuras gráficas y las siglas de la institución. La primera figura consta de 6 gráficos abstractos, interpretando al país en un movimiento progresivo en tonos verdes, pues, además, este color crea equilibrio y tranquilidad, que refleja también el espíritu de la institución. La segunda figura representa unidad y pertenencia para la institución con un enfoque científico: el átomo color verde representa al alumno a nivel nacional y su anillo color naranja representa la creatividad y la energía de los jóvenes de nuestro subsistema. Las siglas son fuertes y son uno de los elementos que más identifican a los CECyTEs, puesto que en cualquier Estado siempre prevalecen. La tipografía gris en conjunto con las siglas, proporcionan una plataforma de descanso a los gráficos y estas últimas tienen un referente especial, pues el texto en gris es variable según el estado a que pertenece.</p>
       </section>
   </main>
@@ -260,48 +290,29 @@
         </div>
       </footer>
 
-    <script>
-      
-        const menuToggle = document.getElementById("menu-toggle");
-        const navbar = document.getElementById("navbar-default");
-        document.addEventListener('DOMContentLoaded', function() {
-      const navbar = document.getElementById('navbar');
-      window.addEventListener('scroll', function() {
-        if (window.scrollY > 50) {
-          navbar.classList.remove('navbar-transparent');
-          navbar.classList.add('navbar-white');
-        } else {
-          navbar.classList.remove('navbar-white');
-          navbar.classList.add('navbar-transparent');
-        }
-      });
-    });
+      <script>
+        // Toggle the mobile menu
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
   
-        menuToggle.addEventListener("click", () => {
-          navbar.classList.toggle("hidden");
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
         });
   
-       function toggleSubMenu(id) {
-      const submenu = document.getElementById(id);
-      submenu.classList.toggle('hidden');
-      const button = document.querySelector(`[aria-controls="${id}"]`);
-      const expanded = button.getAttribute('aria-expanded') === 'true' || false;
-      button.setAttribute('aria-expanded', !expanded);
-    }
+        // Toggle submenus in mobile menu
+        const serviciosBtn = document.getElementById('servicios-btn');
+        const serviciosSubmenu = document.getElementById('servicios-submenu');
+        const nosotrosBtn = document.getElementById('nosotros-btn');
+        const nosotrosSubmenu = document.getElementById('nosotros-submenu');
   
-    function closeSubMenu(id) {
-      const submenu = document.getElementById(id);
-      submenu.classList.add('hidden');
-      const button = document.querySelector(`[aria-controls="${id}"]`);
-      button.setAttribute('aria-expanded', 'false');
-    }
+        serviciosBtn.addEventListener('click', () => {
+            serviciosSubmenu.classList.toggle('hidden');
+        });
   
-    function cancelClose(id) {
-      const submenu = document.getElementById(id);
-      submenu.classList.remove('hidden');
-    }
-        
-      </script>
+        nosotrosBtn.addEventListener('click', () => {
+            nosotrosSubmenu.classList.toggle('hidden');
+        });
+    </script>
     
 </body>
 </html>
