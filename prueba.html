@@ -3,135 +3,340 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Navbar con Submenús</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <title>Directorio Telefónico</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Flowbite -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.4.7/flowbite.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="/PAGINA_WEB_CECYTE/style.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
 </head>
-<body class="bg-gray-100">
-    <!-- Navbar -->
-    <nav class="bg-white shadow-lg">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <!-- Logo -->
-                <div class="flex-shrink-0 flex items-center">
-                    <img src="img_logos/logo_Cecyte_vertical_sin_fondo.png" alt="logo_Cecyte_vertical_sin_fondo" class="h-12 w-auto">
-                </div>
-                <!-- Responsive menu button -->
-                <div class="flex items-center sm:hidden">
-                    <button id="menu-btn" class="text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700">
-                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                        </svg>
+<body>
+    <div class="container mx-auto p-8">
+        <div class="border-b border-gray-200">
+            <ul class="flex flex-wrap -mb-px text-sm font-medium text-center text-gray-500">
+                <li class="mr-2">
+                    <button class="inline-block p-4 border-b-2 border-green-500 text-green-500 rounded-t-lg" id="informatica-tab" data-tabs-target="#informatica" type="button" role="tab" aria-controls="informatica" aria-selected="true">
+                        Dirección General
                     </button>
-                </div>
-                <!-- Navbar links -->
-                <div class="hidden sm:flex sm:items-center sm:ml-6">
-                    <div class="relative group">
-                        <a href="#" class="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">Inicio</a>
-                    </div>
-                    <div class="relative group">
-                        <a href="#" class="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">Institución</a>
-                        <!-- Submenu -->
-                        <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md z-10">
-                            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Historia, Misión y Visión</a>
-                            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Planteles Emsad</a>
-                            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Planteles CecyteBCS</a>
-                        </div>
-                    </div>
-                    <div class="relative group">
-                        <a href="#" class="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">Oferta Educativa</a>
-                        <!-- Submenu -->
-                        <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
-                            
-                            <a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Soporte  y  Mantenimiento equipo de computo</a>
-            <a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/programacion.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programacion</a>
-            <a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/ventas.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ventas</a>
-            <a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/ecoturismo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ecoturismo</a>
-            <a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Producción industrial de alimentos</a>
-            <a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/mantenimiento_industrial.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Mantenimiento Industrial</a>
-            <a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/servicios_de_hoteleria.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Servicios de Hoteleria</a>
-                        </div>
-                    </div>
-                    <div class="relative group">
-                        <a href="#" class="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">Alumnos</a>
-                        <!-- Submenu -->
-                        <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
-                            
-                            <a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Prueba</a>
-            
-                        </div>
-                    </div>
-                </div>
-            </div>
+                </li>
+                <li class="mr-2">
+                    <button class="inline-block p-4 border-b-2 rounded-t-lg" id="Admin-tab" data-tabs-target="#Admin" type="button" role="tab" aria-controls="Admin" aria-selected="false">
+                        Dirección de Administración
+                    </button>
+                </li>
+                <li class="mr-2">
+                    <button class="inline-block p-4 border-b-2 rounded-t-lg" id="DirPE-tab" data-tabs-target="#DirPE" type="button" role="tab" aria-controls="DirPE" aria-selected="false">
+                        Dirección de Planeación y Evaluación
+                    </button>
+                </li>
+                <li class="mr-2">
+                    <button class="inline-block p-4 border-b-2 rounded-t-lg" id="recursos-tab" data-tabs-target="#recursos" type="button" role="tab" aria-controls="recursos" aria-selected="false">
+                        Recursos Humanos
+                    </button>
+                </li>
+            </ul>
         </div>
         
-        <!-- Responsive Menu -->
-        <div class="sm:hidden hidden" id="mobile-menu">
-            <a href="#" class="block text-gray-700 hover:text-green-600 px-4 py-2">Inicio</a>
-            <div class="block">
-                <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="servicios-btn">
-                    Institución
-                    <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                    </svg>
-                </button>
-                <!-- Submenu -->
-                <div class="hidden" id="servicios-submenu">
-                    <a href="#" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Historia, Misión y Visión</a>
-                    <a href="#" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Planteles Emsad</a>
-                    <a href="#" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Planteles CecyteBCS</a>
+        <div id="myTabContent">
+            <div class="p-6" id="informatica" role="tabpanel" aria-labelledby="informatica-tab">
+                <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- Tarjeta de Esteban Ojeda Ramírez -->
+                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_dg/img_prof_esteban_ojeda.jpg" alt="Esteban Ojeda Ramírez">
+                        <h3 class="text-xl font-semibold">Mtro. Esteban Ojeda Ramírez</h3>
+                        <div class="section-separator"></div>
+                        <p class="text-gray-500">Director General</p>
+                        <p class="mt-2 text-sm">Extensión: 101</p>
+                        <p class="text-sm">Email: <a href="mailto:direcciongeneral@cecytebcs.edu.mx" class="text-green-500">direcciongeneral@cecytebcs.edu.mx</a></p>
+                    </div>
+            
+                    <!-- Tarjeta de Míriam Claudeth Mendoza Geraldo -->
+                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_dg/img_miriam_claudeth_mendoza.jpg" alt="Míriam Claudeth Mendoza Geraldo">
+                        <h3 class="text-xl font-semibold">C. Míriam Claudeth Mendoza Geraldo</h3>
+                        <div class="section-separator"></div>
+                        <p class="text-gray-500">Secretaria de Dirección General</p>
+                        <p class="mt-2 text-sm">Extensión: 101</p>
+                        <p class="text-sm">Email: <a href="mailto:direcciongeneral@cecytebcs.edu.mx" class="text-green-500">direcciongeneral@cecytebcs.edu.mx</a></p>
+                    </div>
+            
+                    <!-- Tarjeta de Iván Tarsi Casillas Ojeda -->
+                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="/img_dt/img_dg/img_ivan_tarsi.jpg" alt="Iván Tarsi Casillas Ojeda">
+                        <h3 class="text-xl font-semibold">C. Iván Tarsi Casillas Ojeda</h3>
+                        <div class="section-separator"></div>
+                        <p class="text-gray-500">Encargado del Área Jurídica</p>
+                        <p class="mt-2 text-sm">Teléfono: N/A</p>
+                        <p class="text-sm">Email: <a href="mailto:juridico@cecytebcs.edu.mx" class="text-green-500">juridico@cecytebcs.edu.mx</a></p>
+                    </div>
+            
+                    <!-- Tarjeta de María Elena Castro Terrazas -->
+                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_dg/img_maria_elena_castro.png" alt="María Elena Castro Terrazas">
+                        <h3 class="text-xl font-semibold">C. María Elena Castro Terrazas</h3>
+                        <div class="section-separator"></div>
+                        <p class="text-gray-500">Contralora</p>
+                        <p class="mt-2 text-sm">Extensión: 119</p>
+                        <p class="text-sm">Email: <a href="mailto:direcciongeneral@cecytebcs.edu.mx" class="text-green-500">direcciongeneral@cecytebcs.edu.mx</a></p>
+                    </div>
+            
+                    <!-- Tarjeta de Gabriela Murillo Castro -->
+                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_dg/img_gabriela_murillo_castro.png" alt="Gabriela Murillo Castro">
+                        <h3 class="text-xl font-semibold">C. Gabriela Murillo Castro</h3>
+                        <div class="section-separator"></div>
+                        <p class="text-gray-500">Titular de Transparencia</p>
+                        <p class="mt-2 text-sm">Extensión: 108</p>
+                        <p class="text-sm">Email: <a href="mailto:transparencia@cecytebcs.edu.mx" class="text-green-500">transparencia@cecytebcs.edu.mx</a></p>
+                    </div>
+            
+                    <!-- Tarjeta de Alejandra Viridiana Morales Higuera -->
+                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="/img_dt/img_dg/img_alejandra_viridiana_morales_higuera.jpg" alt="Alejandra Viridiana Morales Higuera">
+                        <h3 class="text-xl font-semibold">C. Alejandra Viridiana Morales Higuera</h3>
+                        <div class="section-separator"></div>
+                        <p class="text-gray-500">Oficialía de Partes</p>
+                        <p class="mt-2 text-sm">Extensión: 104</p>
+                        <p class="text-sm">Email: <a href="mailto:correspondencia@cecytebcs.edu.mx" class="text-green-500">correspondencia@cecytebcs.edu.mx</a></p>
+                    </div>
+            
                 </div>
             </div>
-            <div class="block">
-                <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="nosotros-btn">
-                    Oferta Educativa
-                    <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                    </svg>
-                </button>
-                <!-- Submenu -->
-                <div class="hidden" id="nosotros-submenu">
-                    <a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Soporte  y  Mantenimiento equipo de computo</a>
-                    <a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/programacion.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programacion</a>
-                    <a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/ventas.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ventas</a>
-                    <a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/ecoturismo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ecoturismo</a>
-                    <a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Producción industrial de alimentos</a>
-                    <a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/mantenimiento_industrial.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Mantenimiento industrial</a>
-                    <a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/servicios_de_hoteleria.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Servicios de Hoteleria</a>
+            
+            <div class="hidden p-4" id="Admin" role="tabpanel" aria-labelledby="Admin-tab">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- Tarjeta de Rosa Evelia Solorio Ramírez -->
+                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_dg/img_rosa_evelia.jpg" alt="Rosa Evelia Solorio Ramírez">
+                        <h3 class="text-xl font-semibold">C. Rosa Evelia Solorio Ramírez</h3>
+                        <div class="section-separator"></div>
+                        <p class="text-gray-500">Directora de Administración</p>
+                        <p class="mt-2 text-sm">Extensión: 121</p>
+                        <p class="text-sm">Email: <a href="mailto:administracion@cecytebcs.edu.mx" class="text-green-500">administracion@cecytebcs.edu.mx</a></p>
+                    </div>
+        
+                    <!-- Tarjeta de María Elena Arellano Tellez -->
+                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_da/img_maria_elena_arellano.jpg" alt="María Elena Arellano Tellez">
+                        <h3 class="text-xl font-semibold">C. María Elena Arellano Tellez</h3>
+                        <div class="section-separator"></div>
+                        <p class="text-gray-500">Secretaria de Dirección de Administración</p>
+                        <p class="mt-2 text-sm">Extensión: 121</p>
+                        <p class="text-sm">Email: <a href="mailto:administracion@cecytebcs.edu.mx" class="text-green-500">administracion@cecytebcs.edu.mx</a></p>
+                    </div>
+        
+                    <!-- Tarjeta de Dante Ulises Villalobos Carballo -->
+                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_da/img_dante_ulises_villalobos.jpg" alt="Dante Ulises Villalobos Carballo">
+                        <h3 class="text-xl font-semibold">C. Dante Ulises Villalobos Carballo</h3>
+                        <div class="section-separator"></div>
+                        <p class="text-gray-500">Subdirector de Recursos Humanos</p>
+                        <p class="mt-2 text-sm">Extensión: 125</p>
+                        <p class="text-sm">Email: <a href="mailto:administracion@cecytebcs.edu.mx" class="text-green-500">administracion@cecytebcs.edu.mx</a></p>
+                    </div>
+        
+                    <!-- Tarjeta de Hilda del Rosario Gaxiola Gómez -->
+                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_da/img_hilda_gaxiola.png" alt="Hilda del Rosario Gaxiola Gómez">
+                        <h3 class="text-xl font-semibold">C. Hilda del Rosario Gaxiola Gómez</h3>
+                        <div class="section-separator"></div>
+                        <p class="text-gray-500">Aplicación de Movimientos de Nomina</p>
+                        <p class="mt-2 text-sm">Extensión: 128</p>
+                        <p class="text-sm">Email: <a href="mailto:rh@cecytebcs.edu.mx" class="text-green-500">rh@cecytebcs.edu.mx</a></p>
+                    </div>
+        
+                    <!-- Tarjeta de Ángeles Evelyn Espinoza Amador -->
+                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_da/img_angeles_evelyn_ezpinoza_aamador.jpg" alt="Ángeles Evelyn Espinoza Amador">
+                        <h3 class="text-xl font-semibold">C. Ángeles Evelyn Espinoza Amador</h3>
+                        <div class="section-separator"></div>
+                        <p class="text-gray-500">Auxiliar de Recursos Humanos</p>
+                        <p class="mt-2 text-sm">Extensión: 122</p>
+                        <p class="text-sm">Email: <a href="mailto:rh@cecytebcs.edu.mx" class="text-green-500">rh@cecytebcs.edu.mx</a></p>
+                    </div>
+        
+                    <!-- Tarjeta de Cristian Eleazar Salgado Landa -->
+                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_da/img_cristian_eleazar_salgado.jpg" alt="Cristian Eleazar Salgado Landa">
+                        <h3 class="text-xl font-semibold">C. Cristian Eleazar Salgado Landa</h3>
+                        <div class="section-separator"></div>
+                        <p class="text-gray-500">Auxiliar de Recursos Humanos</p>
+                        <p class="mt-2 text-sm">Extensión: 127</p>
+                        <p class="text-sm">Email: <a href="mailto:rh@cecytebcs.edu.mx" class="text-green-500">rh@cecytebcs.edu.mx</a></p>
+                    </div>
+        
+                    <!-- Tarjeta de Maria del Rosario De la Peña Rochin -->
+                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_da/img_maria_del_rosario_peña.png" alt="Maria del Rosario De la Peña Rochin">
+                        <h3 class="text-xl font-semibold">C. Maria del Rosario De la Peña Rochin</h3>
+                        <div class="section-separator"></div>
+                        <p class="text-gray-500">Auxiliar de Recursos Humanos</p>
+                        <p class="mt-2 text-sm">Extensión: 122</p>
+                        <p class="text-sm">Email: <a href="mailto:rh@cecytebcs.edu.mx" class="text-green-500">rh@cecytebcs.edu.mx</a></p>
+                    </div>
+        
+                    <!-- Tarjeta de Jesus Wenceslao Guluarte -->
+                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_da/img_jesus_wencelao.jpg" alt="Jesus Wenceslao Guluarte">
+                        <h3 class="text-xl font-semibold">C. Jesus Wenceslao Guluarte</h3>
+                        <div class="section-separator"></div>
+                        <p class="text-gray-500">Auxiliar de Recursos Humanos</p>
+                        <p class="mt-2 text-sm">Extensión: 122</p>
+                        <p class="text-sm">Email: <a href="mailto:rh@cecytebcs.edu.mx" class="text-green-500">rh@cecytebcs.edu.mx</a></p>
+                    </div>
+        
+                    <!-- Tarjeta de Rocío Lizeth Enciso Villarreal -->
+                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_da/img_rocio_ensiso.png" alt="Rocío Lizeth Enciso Villarreal">
+                        <h3 class="text-xl font-semibold">C. Rocío Lizeth Enciso Villarreal</h3>
+                        <div class="section-separator"></div>
+                        <p class="text-gray-500">Incidencias - Timbrado de Nomina</p>
+                        <p class="mt-2 text-sm">Extensión: 108</p>
+                        <p class="text-sm">Email: <a href="mailto:rh@cecytebcs.edu.mx" class="text-green-500">rh@cecytebcs.edu.mx</a></p>
+                    </div>
+        
+                    <!-- Tarjeta de María José Meza Huerta -->
+                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_da/img_maria_jose_huerta.jpg" alt="María José Meza Huerta">
+                        <h3 class="text-xl font-semibold">C. María José Meza Huerta</h3>
+                        <div class="section-separator"></div>
+                        <p class="text-gray-500">Movimientos Afiliatorios de ISSSTE</p>
+                        <p class="mt-2 text-sm">Extensión: 109</p>
+                        <p class="text-sm">Email: <a href="mailto:rh@cecytebcs.edu.mx" class="text-green-500">rh@cecytebcs.edu.mx</a></p>
+                    </div>
+        
+                    <!-- Tarjeta de Brenda Edith Osorio -->
+                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_da/img_brenda_edith_osorio.png" alt="Brenda Edith Osorio">
+                        <h3 class="text-xl font-semibold">C. Brenda Edith Osorio</h3>
+                        <div class="section-separator"></div>
+                        <p class="text-gray-500">Soporte Técnico en Dirección General y Planteles</p>
+                        <p class="mt-2 text-sm">Extensión: 161</p>
+                        <p class="text-sm">Email: <a href="mailto:brenda.osorio@cecytebcs.edu.mx" class="text-green-500">brenda.osorio@cecytebcs.edu.mx</a></p>
+                    </div>
+        
+                    <!-- Tarjeta de Yoliztli Villavicencio Vélazquez -->
+                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_da/img_yoliztli_villavicencio.jpg" alt="Yoliztli Villavicencio Vélazquez">
+                        <h3 class="text-xl font-semibold">C. Yoliztli Villavicencio Vélazquez</h3>
+                        <div class="section-separator"></div>
+                        <p class="text-gray-500">Auxiliar Administrativo y Soporte Técnico</p>
+                        <p class="mt-2 text-sm">Extensión: 163</p>
+                        <p class="text-sm">Email: <a href="mailto:yoliztli.villavicencio@cecytebcs.edu.mx" class="text-green-500">yoliztli.villavicencio@cecytebcs.edu.mx</a></p>
+                    </div>
+        
+                    <!-- Tarjeta de Claudia Luz Arballo Cota -->
+                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_da/img_claudia_luz_arballo.jpg" alt="Claudia Luz Arballo Cota">
+                        <h3 class="text-xl font-semibold">C. Claudia Luz Arballo Cota</h3>
+                        <div class="section-separator"></div>
+                        <p class="text-gray-500">Jefe del Departamento de Recursos Materiales</p>
+                        <p class="mt-2 text-sm">Extensión: 124</p>
+                        <p class="text-sm">Email: <a href="mailto:r.materiales@cecytebcs.edu.mx" class="text-green-500">r.materiales@cecytebcs.edu.mx</a></p>
+                    </div>
+        
+                    <!-- Tarjeta de Marianela Bareño Gerardo -->
+                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_da/img_marianela_bareño_gerardo.jpg" alt="Marianela Bareño Gerardo">
+                        <h3 class="text-xl font-semibold">C. Marianela Bareño Gerardo</h3>
+                        <div class="section-separator"></div>
+                        <p class="text-gray-500">Encargada del Departamento de Recursos Materiales</p>
+                        <p class="mt-2 text-sm">Extensión: 124</p>
+                        <p class="text-sm">Email: <a href="mailto:ingresos.propios@cecytebcs.edu.mx" class="text-green-500">ingresos.propios@cecytebcs.edu.mx</a></p>
+                    </div>
+        
+                    <!-- Tarjeta de Sandra Mireya Lucero Araiza -->
+                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_da/img_sandra_mireya_lucero.jpg" alt="Sandra Mireya Lucero Araiza">
+                        <h3 class="text-xl font-semibold">C. Sandra Mireya Lucero Araiza</h3>
+                        <div class="section-separator"></div>
+                        <p class="text-gray-500">Auxiliar del Departamento de Recursos Materiales</p>
+                        <p class="mt-2 text-sm">Extensión: 164</p>
+                        <p class="text-sm">Email: <a href="mailto:almacen@cecytebcs.edu.mx" class="text-green-500">almacen@cecytebcs.edu.mx</a></p>
+                    </div>
+        
+                    <!-- Tarjeta de Rodolfo Estrada Martínez -->
+                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_da/img_rodolfo_estrada_martinez.jpg" alt="Rodolfo Estrada Martínez">
+                        <h3 class="text-xl font-semibold">C. Rodolfo Estrada Martínez</h3>
+                        <div class="section-separator"></div>
+                        <p class="text-gray-500">Auxiliar del Departamento de Recursos Materiales</p>
+                        <p class="mt-2 text-sm">Extensión: 164</p>
+                        <p class="text-sm">Email: <a href="mailto:rodolfo.estrada@cecytebcs.edu.mx" class="text-green-500">rodolfo.estrada@cecytebcs.edu.mx</a></p>
+                    </div>
+        
+                    <!-- Tarjeta de José David Olachea Pérez -->
+                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_da/img_jose_david_olachea.jpg" alt="José David Olachea Pérez">
+                        <h3 class="text-xl font-semibold">C. José David Olachea Pérez</h3>
+                        <div class="section-separator"></div>
+                        <p class="text-gray-500">Jefe del Departamento de Recursos Financieros</p>
+                        <p class="mt-2 text-sm">Extensión: 129</p>
+                        <p class="text-sm">Email: <a href="mailto:r.financieros@cecytebcs.edu.mx" class="text-green-500">r.financieros@cecytebcs.edu.mx</a></p>
+                    </div>
+        
+                    <!-- Tarjeta de Cynthia Ivette Méndez Martin -->
+                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_da/img_cynthia_ivette_mendez.png" alt="Cynthia Ivette Méndez Martin">
+                        <h3 class="text-xl font-semibold">C. Cynthia Ivette Méndez Martin</h3>
+                        <div class="section-separator"></div>
+                        <p class="text-gray-500">Ingresos Propios</p>
+                        <p class="mt-2 text-sm">Extensión: 123</p>
+                        <p class="text-sm">Email: <a href="mailto:rh@cecytebcs.edu.mx" class="text-green-500">rh@cecytebcs.edu.mx</a></p>
+                    </div>
+        
+                    <!-- Tarjeta de Christian Julián Romero Martínez -->
+                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_da/img_christian_julian_romero.jpg" alt="Christian Julián Romero Martínez">
+                        <h3 class="text-xl font-semibold">C. Christian Julián Romero Martínez</h3>
+                        <div class="section-separator"></div>
+                        <p class="text-gray-500">Jefe del Departamento de Servicios Generales</p>
+                        <p class="mt-2 text-sm">Extensión: 126</p>
+                        <p class="text-sm">Email: <a href="mailto:servicios@cecytebcs.edu.mx" class="text-green-500">servicios@cecytebcs.edu.mx</a></p>
+                    </div>
+        
                 </div>
             </div>
-            <a href="#" class="block text-gray-700 hover:text-green-600 px-4 py-2">Alumnos</a>
+            
+            <div class="hidden p-4" id="DirPE" role="tabpanel" aria-labelledby="DirPE">
+                <h2 class="text-2xl font-semibold">Recursos Humanos</h2>
+                <p>Responsable: Ana García</p>
+                <p>Teléfono: (555) 456-7890</p>
+                <p>Email: recursos@example.com</p>
+            </div>
+            
         </div>
-        <div class="w-full h-1 bg-orange-500"></div>
-    </nav>
+    </div>
 
+    <!-- Flowbite and Tailwind JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.4.7/flowbite.min.js"></script>
+    
+    <!-- Script para manejar el cambio de pestañas -->
     <script>
-        // Toggle the mobile menu
-        const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
+        document.querySelectorAll('[data-tabs-target]').forEach(tab => {
+            tab.addEventListener('click', function () {
+                const target = document.querySelector(this.getAttribute('data-tabs-target'));
 
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+                document.querySelectorAll('[role="tabpanel"]').forEach(panel => {
+                    panel.classList.add('hidden');
+                });
 
-        // Toggle submenus in mobile menu
-        const serviciosBtn = document.getElementById('servicios-btn');
-        const serviciosSubmenu = document.getElementById('servicios-submenu');
-        const nosotrosBtn = document.getElementById('nosotros-btn');
-        const nosotrosSubmenu = document.getElementById('nosotros-submenu');
+                document.querySelectorAll('[role="tab"]').forEach(tab => {
+                    tab.classList.remove('border-green-500', 'text-green-500');
+                    tab.setAttribute('aria-selected', 'false');
+                });
 
-        serviciosBtn.addEventListener('click', () => {
-            serviciosSubmenu.classList.toggle('hidden');
-        });
-
-        nosotrosBtn.addEventListener('click', () => {
-            nosotrosSubmenu.classList.toggle('hidden');
+                target.classList.remove('hidden');
+                this.classList.add('border-green-500', 'text-green-500');
+                this.setAttribute('aria-selected', 'true');
+            });
         });
     </script>
 </body>
