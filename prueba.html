@@ -3,96 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EMSaD - CECYTEBCS</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <style>
-        .bg-gradient {
-            background: linear-gradient(90deg, #38b2ac 0%, #68d391 100%);
-        }
-    </style>
+    <title>Responsive Navbar con Submenús</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="/PAGINA_WEB_CECYTE/style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 </head>
-<body class="bg-gray-100 text-gray-800">
-    <!-- Header -->
-    <header class="bg-gradient text-white py-6">
-        <div class="container mx-auto text-center">
-            <h1 class="text-4xl font-bold">CECYTEBCS</h1>
-            <p class="mt-2 text-lg">Educación Media Superior a Distancia (EMSaD)</p>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-<main class="container mx-auto p-6 space-y-6">
-    <!-- Introducción -->
-    <section class="bg-white p-8 rounded-lg shadow-lg">
-        <h2 class="text-3xl font-bold text-green-600 border-b-4 border-orange-500 inline-block mb-4">Introducción</h2>
-        <p class="mt-4 text-justify">Los Centros de Educación Media Superior a Distancia (EMSaD) son una modalidad educativa perteneciente al Colegio de Estudios Científicos y Tecnológicos del Estado de Baja California Sur (CECYTEBCS), que ofrece estudios de bachillerato tecnológico a jóvenes y adultos en comunidades rurales y semiurbanas, permitiéndoles acceder a una educación de calidad sin necesidad de trasladarse a las ciudades.</p>
-    </section>
-
-    <!-- Planteles CECYT -->
-    <section class="bg-white p-8 rounded-lg shadow-lg">
-        <h2 class="text-3xl font-bold text-orange-600 border-b-4 border-green-500 inline-block mb-4">Planteles CECYT</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <img src="img_logos/logo_Cecyte_vertical_sin_fondo.png" alt="logo_Cecyte_vertical_sin_fondo" class="h-12 w-auto">
+                </div>
+                <!-- Responsive menu button -->
+                <div class="flex items-center sm:hidden">
+                    <button id="menu-btn" class="text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700">
+                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+                <!-- Navbar links -->
+                <div class="hidden sm:flex sm:items-center sm:ml-6">
+                    <div class="relative group">
+                        <a href="#" class="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">Inicio</a>
+                    </div>
+                    <div class="relative group">
+                        <a href="#" class="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">Institución</a>
+                        <!-- Submenu -->
+                        <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md z-10">
+                            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Historia, Misión y Visión</a>
+                            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Planteles Emsad</a>
+                            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Planteles CecyteBCS</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="#" class="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">Oferta Educativa</a>
+                        <!-- Submenu -->
+                        <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
+                            
+                            <a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Soporte  y  Mantenimiento equipo de computo</a>
+            <a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/programacion.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programacion</a>
+            <a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/ventas.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ventas</a>
+            <a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/ecoturismo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ecoturismo</a>
+            <a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Producción industrial de alimentos</a>
+            <a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/mantenimiento_industrial.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Mantenimiento Industrial</a>
+            <a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/servicios_de_hoteleria.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Servicios de Hoteleria</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="#" class="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">Alumnos</a>
+                        <!-- Submenu -->
+                        <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
+                            
+                            <a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Prueba</a>
             
-            <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-                <img src="/PAGINA_WEB_CECYTE/img_recuros_pagina/img_planteles/CECYTE/CECYTE_01_MULEGE/01_M.jpeg" alt="CECyT 01 - Mulegé" class="rounded-t-lg w-full h-48 object-cover">
-                <h3 class="text-xl font-bold text-green-600">CECYT 01 - Mulegé</h3>
-                <p class="mt-2 font-semibold">C. Enrique Medina Ríos, Director de plantel</p>
-                <p class="mt-2">Email: <a href="mailto:cecyt01@cecytebcs.edu.mx" class="text-blue-500 underline">cecyt01@cecytebcs.edu.mx</a></p>
-                <p class="mt-2">Teléfono: (615) 103 9360</p>
-                <p class="mt-2">Domicilio: Carretera Transpeninsular Km. 128 + 800, s/n, Col. Vista al Mar, CP 23900. Heróica Mulegé, B.C.S.</p>
-            </div>
-
-            
-            <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-                <img src="https://cecytebcs.edu.mx/wp-content/uploads/2021/01/cecyt02.jpg" alt="CECYT 02 La Paz" class="rounded-t-lg">
-                <h3 class="text-xl font-bold text-green-600">CECYT 02 La Paz</h3>
-                <p class="mt-2">Calle Pípila y Manuel Altamirano S/N, Col. El Centenario, La Paz, B.C.S.</p>
-                <p>Tel: (612) 123 4567</p>
-            </div>
-            <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-                <img src="https://cecytebcs.edu.mx/wp-content/uploads/2021/01/cecyt03.jpg" alt="CECYT 03 San José del Cabo" class="rounded-t-lg">
-                <h3 class="text-xl font-bold text-green-600">CECYT 03 San José del Cabo</h3>
-                <p class="mt-2">Domicilio Conocido S/N, San José del Cabo, B.C.S.</p>
-                <p>Tel: (624) 146 1234</p>
-            </div>
-            <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-                <img src="https://cecytebcs.edu.mx/wp-content/uploads/2021/01/cecyt04.jpg" alt="CECYT 04 Ciudad Constitución" class="rounded-t-lg">
-                <h3 class="text-xl font-bold text-green-600">CECYT 04 Ciudad Constitución</h3>
-                <p class="mt-2">Domicilio Conocido S/N, Ciudad Constitución, B.C.S.</p>
-                <p>Tel: (613) 132 1234</p>
-            </div>
-            <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-                <img src="https://cecytebcs.edu.mx/wp-content/uploads/2021/01/cecyt05.jpg" alt="CECYT 05 Loreto" class="rounded-t-lg">
-                <h3 class="text-xl font-bold text-green-600">CECYT 05 Loreto</h3>
-                <p class="mt-2">Domicilio Conocido S/N, Loreto, B.C.S.</p>
-                <p>Tel: (613) 135 5678</p>
-            </div>
-            <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-                <img src="https://cecytebcs.edu.mx/wp-content/uploads/2021/01/cecyt06.jpg" alt="CECYT 06 Guerrero Negro" class="rounded-t-lg">
-                <h3 class="text-xl font-bold text-green-600">CECYT 06 Guerrero Negro</h3>
-                <p class="mt-2">Domicilio Conocido S/N, Guerrero Negro, B.C.S.</p>
-                <p>Tel: (615) 157 3456</p>
-            </div>
-            <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-                <img src="https://cecytebcs.edu.mx/wp-content/uploads/2021/01/cecyt07.jpg" alt="CECYT 07 Santa Rosalía" class="rounded-t-lg">
-                <h3 class="text-xl font-bold text-green-600">CECYT 07 Santa Rosalía</h3>
-                <p class="mt-2">Domicilio Conocido S/N, Santa Rosalía, B.C.S.</p>
-                <p>Tel: (615) 154 1234</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
-</main>
-
-
-        <!-- Footer -->
-        <footer class="bg-gradient text-white py-6">
-            <div class="container mx-auto text-center">
-                <p class="text-lg">© 2024 CECYTEBCS. Todos los derechos reservados.</p>
+        
+        <!-- Responsive Menu -->
+        <div class="sm:hidden hidden" id="mobile-menu">
+            <a href="#" class="block text-gray-700 hover:text-green-600 px-4 py-2">Inicio</a>
+            <div class="block">
+                <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="servicios-btn">
+                    Institución
+                    <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <!-- Submenu -->
+                <div class="hidden" id="servicios-submenu">
+                    <a href="#" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Historia, Misión y Visión</a>
+                    <a href="#" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Planteles Emsad</a>
+                    <a href="#" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Planteles CecyteBCS</a>
+                </div>
             </div>
-        </footer>
-    </main>
+            <div class="block">
+                <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="nosotros-btn">
+                    Oferta Educativa
+                    <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <!-- Submenu -->
+                <div class="hidden" id="nosotros-submenu">
+                    <a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Soporte  y  Mantenimiento equipo de computo</a>
+                    <a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/programacion.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programacion</a>
+                    <a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/ventas.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ventas</a>
+                    <a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/ecoturismo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ecoturismo</a>
+                    <a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Producción industrial de alimentos</a>
+                    <a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/mantenimiento_industrial.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Mantenimiento industrial</a>
+                    <a href="/PAGINA_WEB_CECYTE/pages_oferta_educativa/servicios_de_hoteleria.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Servicios de Hoteleria</a>
+                </div>
+            </div>
+            <a href="#" class="block text-gray-700 hover:text-green-600 px-4 py-2">Alumnos</a>
+        </div>
+        <div class="w-full h-1 bg-orange-500"></div>
+    </nav>
+
+    <script>
+        // Toggle the mobile menu
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Toggle submenus in mobile menu
+        const serviciosBtn = document.getElementById('servicios-btn');
+        const serviciosSubmenu = document.getElementById('servicios-submenu');
+        const nosotrosBtn = document.getElementById('nosotros-btn');
+        const nosotrosSubmenu = document.getElementById('nosotros-submenu');
+
+        serviciosBtn.addEventListener('click', () => {
+            serviciosSubmenu.classList.toggle('hidden');
+        });
+
+        nosotrosBtn.addEventListener('click', () => {
+            nosotrosSubmenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
