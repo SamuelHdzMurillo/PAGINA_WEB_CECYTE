@@ -1,456 +1,262 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directorio Telefónico</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Tailwind CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <!-- Flowbite -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.4.7/flowbite.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider de Carreras</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
-</head>
-<body>
-    <div class="container mx-auto p-8">
-        <div class="border-b border-gray-200">
-            <ul class="flex flex-wrap -mb-px text-sm font-medium text-center text-gray-500">
-
-                <li class="mr-2">
-                    <button class="inline-block p-4 border-b-2 border-green-500 text-green-500 rounded-t-lg" id="informatica-tab" data-tabs-target="#informatica" type="button" role="tab" aria-controls="informatica" aria-selected="true">
-                        Dirección General
-                    </button>
-                </li>
-
-                <li class="mr-2">
-                    <button class="inline-block p-4 border-b-2 rounded-t-lg" id="Admin-tab" data-tabs-target="#Admin" type="button" role="tab" aria-controls="Admin" aria-selected="false">
-                        Dirección de Administración
-                    </button>
-                </li>
-
-                <li class="mr-2">
-                    <button class="inline-block p-4 border-b-2 rounded-t-lg" id="DirPE-tab" data-tabs-target="#DirPE" type="button" role="tab" aria-controls="DirPE" aria-selected="false">
-                        Dirección de Planeación y Evaluación
-                    </button>
-                </li>
-
-                <li class="mr-2">
-                    <button class="inline-block p-4 border-b-2 rounded-t-lg" id="recursos-tab" data-tabs-target="#recursos" type="button" role="tab" aria-controls="recursos" aria-selected="false">
-                        Recursos Humanos
-                    </button>
-                </li>
-               
-            </ul>
+    <style>
+      .slider {
+        scroll-snap-type: x mandatory;
+        display: flex;
+        overflow-x: scroll;
+        scrollbar-width: none; /* Oculta la barra de desplazamiento en Firefox */
+        -ms-overflow-style: none; /* Oculta la barra de desplazamiento en Internet Explorer y Edge */
+      }
+      .slider::-webkit-scrollbar {
+        display: none; /* Oculta la barra de desplazamiento en Chrome, Safari y Opera */
+      }
+      .slide {
+        scroll-snap-align: start;
+        flex: none;
+        width: 100%;
+        max-width: 100%;
+        position: relative;
+        height: 500px;
+      }
+      .slide-content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="relative w-full max-w-6xl mx-auto">
+      <!-- Slider -->
+      <div class="slider">
+        <!-- Slide 1 -->
+        <div
+          class="slide bg-cover bg-center"
+          style="
+            background-image: url('img_recuros_pagina/img_oferta_edu/programacion/programacion_s.jpg');
+          "
+        >
+          <div class="slide-content">
+            <h2 class="text-4xl font-bold">Programación</h2>
+            <p class="mt-2">
+              La carrera de Técnico en programación ofrece las competencias
+              profesionales que permiten al estudiante realizar actividades
+              dirigidas a: analizar, diseñar, desarrollar, instalar y mantener
+              software de aplicación.
+            </p>
+            <button
+              class="mt-4 px-4 py-2 bg-green-700 text-white rounded hover:bg-green-800 transition"
+            >
+              <a href="/pages_oferta_educativa/programacion.html"
+                >Más Información</a
+              >
+            </button>
+          </div>
         </div>
-        
-        <div id="myTabContent">
-            <div class="p-6" id="informatica" role="tabpanel" aria-labelledby="informatica-tab">
-                <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                    <!-- Tarjeta de Esteban Ojeda Ramírez -->
-                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
-                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_dg/img_prof_esteban_ojeda.jpg" alt="Esteban Ojeda Ramírez">
-                        <h3 class="text-xl font-semibold">Mtro. Esteban Ojeda Ramírez</h3>
-                        <div class="section-separator"></div>
-                        <p class="text-gray-500">Director General</p>
-                        <p class="mt-2 text-sm">Extensión: 101</p>
-                        <p class="text-sm">Email: <a href="mailto:direcciongeneral@cecytebcs.edu.mx" class="text-green-500">direcciongeneral@cecytebcs.edu.mx</a></p>
-                    </div>
-            
-                    <!-- Tarjeta de Míriam Claudeth Mendoza Geraldo -->
-                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
-                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_dg/img_miriam_claudeth_mendoza.jpg" alt="Míriam Claudeth Mendoza Geraldo">
-                        <h3 class="text-xl font-semibold">C. Míriam Claudeth Mendoza Geraldo</h3>
-                        <div class="section-separator"></div>
-                        <p class="text-gray-500">Secretaria de Dirección General</p>
-                        <p class="mt-2 text-sm">Extensión: 101</p>
-                        <p class="text-sm">Email: <a href="mailto:direcciongeneral@cecytebcs.edu.mx" class="text-green-500">direcciongeneral@cecytebcs.edu.mx</a></p>
-                    </div>
-            
-                    <!-- Tarjeta de Iván Tarsi Casillas Ojeda -->
-                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
-                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="/img_dt/img_dg/img_ivan_tarsi.jpg" alt="Iván Tarsi Casillas Ojeda">
-                        <h3 class="text-xl font-semibold">C. Iván Tarsi Casillas Ojeda</h3>
-                        <div class="section-separator"></div>
-                        <p class="text-gray-500">Encargado del Área Jurídica</p>
-                        <p class="mt-2 text-sm">Teléfono: N/A</p>
-                        <p class="text-sm">Email: <a href="mailto:juridico@cecytebcs.edu.mx" class="text-green-500">juridico@cecytebcs.edu.mx</a></p>
-                    </div>
-            
-                    <!-- Tarjeta de María Elena Castro Terrazas -->
-                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
-                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_dg/img_maria_elena_castro.png" alt="María Elena Castro Terrazas">
-                        <h3 class="text-xl font-semibold">C. María Elena Castro Terrazas</h3>
-                        <div class="section-separator"></div>
-                        <p class="text-gray-500">Contralora</p>
-                        <p class="mt-2 text-sm">Extensión: 119</p>
-                        <p class="text-sm">Email: <a href="mailto:direcciongeneral@cecytebcs.edu.mx" class="text-green-500">direcciongeneral@cecytebcs.edu.mx</a></p>
-                    </div>
-            
-                    <!-- Tarjeta de Gabriela Murillo Castro -->
-                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
-                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_dg/img_gabriela_murillo_castro.png" alt="Gabriela Murillo Castro">
-                        <h3 class="text-xl font-semibold">C. Gabriela Murillo Castro</h3>
-                        <div class="section-separator"></div>
-                        <p class="text-gray-500">Titular de Transparencia</p>
-                        <p class="mt-2 text-sm">Extensión: 108</p>
-                        <p class="text-sm">Email: <a href="mailto:transparencia@cecytebcs.edu.mx" class="text-green-500">transparencia@cecytebcs.edu.mx</a></p>
-                    </div>
-            
-                    <!-- Tarjeta de Alejandra Viridiana Morales Higuera -->
-                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
-                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="/img_dt/img_dg/img_alejandra_viridiana_morales_higuera.jpg" alt="Alejandra Viridiana Morales Higuera">
-                        <h3 class="text-xl font-semibold">C. Alejandra Viridiana Morales Higuera</h3>
-                        <div class="section-separator"></div>
-                        <p class="text-gray-500">Oficialía de Partes</p>
-                        <p class="mt-2 text-sm">Extensión: 104</p>
-                        <p class="text-sm">Email: <a href="mailto:correspondencia@cecytebcs.edu.mx" class="text-green-500">correspondencia@cecytebcs.edu.mx</a></p>
-                    </div>
-            
-                </div>
-            </div>
-            
-            <div class="hidden p-4" id="Admin" role="tabpanel" aria-labelledby="Admin-tab">
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                    <!-- Tarjeta de Rosa Evelia Solorio Ramírez -->
-                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
-                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_dg/img_rosa_evelia.jpg" alt="Rosa Evelia Solorio Ramírez">
-                        <h3 class="text-xl font-semibold">C. Rosa Evelia Solorio Ramírez</h3>
-                        <div class="section-separator"></div>
-                        <p class="text-gray-500">Directora de Administración</p>
-                        <p class="mt-2 text-sm">Extensión: 121</p>
-                        <p class="text-sm">Email: <a href="mailto:administracion@cecytebcs.edu.mx" class="text-green-500">administracion@cecytebcs.edu.mx</a></p>
-                    </div>
-        
-                    <!-- Tarjeta de María Elena Arellano Tellez -->
-                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
-                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_da/img_maria_elena_arellano.jpg" alt="María Elena Arellano Tellez">
-                        <h3 class="text-xl font-semibold">C. María Elena Arellano Tellez</h3>
-                        <div class="section-separator"></div>
-                        <p class="text-gray-500">Secretaria de Dirección de Administración</p>
-                        <p class="mt-2 text-sm">Extensión: 121</p>
-                        <p class="text-sm">Email: <a href="mailto:administracion@cecytebcs.edu.mx" class="text-green-500">administracion@cecytebcs.edu.mx</a></p>
-                    </div>
-        
-                    <!-- Tarjeta de Dante Ulises Villalobos Carballo -->
-                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
-                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_da/img_dante_ulises_villalobos.jpg" alt="Dante Ulises Villalobos Carballo">
-                        <h3 class="text-xl font-semibold">C. Dante Ulises Villalobos Carballo</h3>
-                        <div class="section-separator"></div>
-                        <p class="text-gray-500">Subdirector de Recursos Humanos</p>
-                        <p class="mt-2 text-sm">Extensión: 125</p>
-                        <p class="text-sm">Email: <a href="mailto:administracion@cecytebcs.edu.mx" class="text-green-500">administracion@cecytebcs.edu.mx</a></p>
-                    </div>
-        
-                    <!-- Tarjeta de Hilda del Rosario Gaxiola Gómez -->
-                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
-                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_da/img_hilda_gaxiola.png" alt="Hilda del Rosario Gaxiola Gómez">
-                        <h3 class="text-xl font-semibold">C. Hilda del Rosario Gaxiola Gómez</h3>
-                        <div class="section-separator"></div>
-                        <p class="text-gray-500">Aplicación de Movimientos de Nomina</p>
-                        <p class="mt-2 text-sm">Extensión: 128</p>
-                        <p class="text-sm">Email: <a href="mailto:rh@cecytebcs.edu.mx" class="text-green-500">rh@cecytebcs.edu.mx</a></p>
-                    </div>
-        
-                    <!-- Tarjeta de Ángeles Evelyn Espinoza Amador -->
-                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
-                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_da/img_angeles_evelyn_ezpinoza_aamador.jpg" alt="Ángeles Evelyn Espinoza Amador">
-                        <h3 class="text-xl font-semibold">C. Ángeles Evelyn Espinoza Amador</h3>
-                        <div class="section-separator"></div>
-                        <p class="text-gray-500">Auxiliar de Recursos Humanos</p>
-                        <p class="mt-2 text-sm">Extensión: 122</p>
-                        <p class="text-sm">Email: <a href="mailto:rh@cecytebcs.edu.mx" class="text-green-500">rh@cecytebcs.edu.mx</a></p>
-                    </div>
-        
-                    <!-- Tarjeta de Cristian Eleazar Salgado Landa -->
-                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
-                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_da/img_cristian_eleazar_salgado.jpg" alt="Cristian Eleazar Salgado Landa">
-                        <h3 class="text-xl font-semibold">C. Cristian Eleazar Salgado Landa</h3>
-                        <div class="section-separator"></div>
-                        <p class="text-gray-500">Auxiliar de Recursos Humanos</p>
-                        <p class="mt-2 text-sm">Extensión: 127</p>
-                        <p class="text-sm">Email: <a href="mailto:rh@cecytebcs.edu.mx" class="text-green-500">rh@cecytebcs.edu.mx</a></p>
-                    </div>
-        
-                    <!-- Tarjeta de Maria del Rosario De la Peña Rochin -->
-                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
-                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_da/img_maria_del_rosario_peña.png" alt="Maria del Rosario De la Peña Rochin">
-                        <h3 class="text-xl font-semibold">C. Maria del Rosario De la Peña Rochin</h3>
-                        <div class="section-separator"></div>
-                        <p class="text-gray-500">Auxiliar de Recursos Humanos</p>
-                        <p class="mt-2 text-sm">Extensión: 122</p>
-                        <p class="text-sm">Email: <a href="mailto:rh@cecytebcs.edu.mx" class="text-green-500">rh@cecytebcs.edu.mx</a></p>
-                    </div>
-        
-                    <!-- Tarjeta de Jesus Wenceslao Guluarte -->
-                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
-                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_da/img_jesus_wencelao.jpg" alt="Jesus Wenceslao Guluarte">
-                        <h3 class="text-xl font-semibold">C. Jesus Wenceslao Guluarte</h3>
-                        <div class="section-separator"></div>
-                        <p class="text-gray-500">Auxiliar de Recursos Humanos</p>
-                        <p class="mt-2 text-sm">Extensión: 122</p>
-                        <p class="text-sm">Email: <a href="mailto:rh@cecytebcs.edu.mx" class="text-green-500">rh@cecytebcs.edu.mx</a></p>
-                    </div>
-        
-                    <!-- Tarjeta de Rocío Lizeth Enciso Villarreal -->
-                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
-                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_da/img_rocio_ensiso.png" alt="Rocío Lizeth Enciso Villarreal">
-                        <h3 class="text-xl font-semibold">C. Rocío Lizeth Enciso Villarreal</h3>
-                        <div class="section-separator"></div>
-                        <p class="text-gray-500">Incidencias - Timbrado de Nomina</p>
-                        <p class="mt-2 text-sm">Extensión: 108</p>
-                        <p class="text-sm">Email: <a href="mailto:rh@cecytebcs.edu.mx" class="text-green-500">rh@cecytebcs.edu.mx</a></p>
-                    </div>
-        
-                    <!-- Tarjeta de María José Meza Huerta -->
-                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
-                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_da/img_maria_jose_huerta.jpg" alt="María José Meza Huerta">
-                        <h3 class="text-xl font-semibold">C. María José Meza Huerta</h3>
-                        <div class="section-separator"></div>
-                        <p class="text-gray-500">Movimientos Afiliatorios de ISSSTE</p>
-                        <p class="mt-2 text-sm">Extensión: 109</p>
-                        <p class="text-sm">Email: <a href="mailto:rh@cecytebcs.edu.mx" class="text-green-500">rh@cecytebcs.edu.mx</a></p>
-                    </div>
-        
-                    <!-- Tarjeta de Brenda Edith Osorio -->
-                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
-                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_da/img_brenda_edith_osorio.png" alt="Brenda Edith Osorio">
-                        <h3 class="text-xl font-semibold">C. Brenda Edith Osorio</h3>
-                        <div class="section-separator"></div>
-                        <p class="text-gray-500">Soporte Técnico en Dirección General y Planteles</p>
-                        <p class="mt-2 text-sm">Extensión: 161</p>
-                        <p class="text-sm">Email: <a href="mailto:brenda.osorio@cecytebcs.edu.mx" class="text-green-500">brenda.osorio@cecytebcs.edu.mx</a></p>
-                    </div>
-        
-                    <!-- Tarjeta de Yoliztli Villavicencio Vélazquez -->
-                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
-                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_da/img_yoliztli_villavicencio.jpg" alt="Yoliztli Villavicencio Vélazquez">
-                        <h3 class="text-xl font-semibold">C. Yoliztli Villavicencio Vélazquez</h3>
-                        <div class="section-separator"></div>
-                        <p class="text-gray-500">Auxiliar Administrativo y Soporte Técnico</p>
-                        <p class="mt-2 text-sm">Extensión: 163</p>
-                        <p class="text-sm">Email: <a href="mailto:yoliztli.villavicencio@cecytebcs.edu.mx" class="text-green-500">yoliztli.villavicencio@cecytebcs.edu.mx</a></p>
-                    </div>
-        
-                    <!-- Tarjeta de Claudia Luz Arballo Cota -->
-                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
-                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_da/img_claudia_luz_arballo.jpg" alt="Claudia Luz Arballo Cota">
-                        <h3 class="text-xl font-semibold">C. Claudia Luz Arballo Cota</h3>
-                        <div class="section-separator"></div>
-                        <p class="text-gray-500">Jefe del Departamento de Recursos Materiales</p>
-                        <p class="mt-2 text-sm">Extensión: 124</p>
-                        <p class="text-sm">Email: <a href="mailto:r.materiales@cecytebcs.edu.mx" class="text-green-500">r.materiales@cecytebcs.edu.mx</a></p>
-                    </div>
-        
-                    <!-- Tarjeta de Marianela Bareño Gerardo -->
-                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
-                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_da/img_marianela_bareño_gerardo.jpg" alt="Marianela Bareño Gerardo">
-                        <h3 class="text-xl font-semibold">C. Marianela Bareño Gerardo</h3>
-                        <div class="section-separator"></div>
-                        <p class="text-gray-500">Encargada del Departamento de Recursos Materiales</p>
-                        <p class="mt-2 text-sm">Extensión: 124</p>
-                        <p class="text-sm">Email: <a href="mailto:ingresos.propios@cecytebcs.edu.mx" class="text-green-500">ingresos.propios@cecytebcs.edu.mx</a></p>
-                    </div>
-        
-                    <!-- Tarjeta de Sandra Mireya Lucero Araiza -->
-                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
-                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_da/img_sandra_mireya_lucero.jpg" alt="Sandra Mireya Lucero Araiza">
-                        <h3 class="text-xl font-semibold">C. Sandra Mireya Lucero Araiza</h3>
-                        <div class="section-separator"></div>
-                        <p class="text-gray-500">Auxiliar del Departamento de Recursos Materiales</p>
-                        <p class="mt-2 text-sm">Extensión: 164</p>
-                        <p class="text-sm">Email: <a href="mailto:almacen@cecytebcs.edu.mx" class="text-green-500">almacen@cecytebcs.edu.mx</a></p>
-                    </div>
-        
-                    <!-- Tarjeta de Rodolfo Estrada Martínez -->
-                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
-                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_da/img_rodolfo_estrada_martinez.jpg" alt="Rodolfo Estrada Martínez">
-                        <h3 class="text-xl font-semibold">C. Rodolfo Estrada Martínez</h3>
-                        <div class="section-separator"></div>
-                        <p class="text-gray-500">Auxiliar del Departamento de Recursos Materiales</p>
-                        <p class="mt-2 text-sm">Extensión: 164</p>
-                        <p class="text-sm">Email: <a href="mailto:rodolfo.estrada@cecytebcs.edu.mx" class="text-green-500">rodolfo.estrada@cecytebcs.edu.mx</a></p>
-                    </div>
-        
-                    <!-- Tarjeta de José David Olachea Pérez -->
-                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
-                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_da/img_jose_david_olachea.jpg" alt="José David Olachea Pérez">
-                        <h3 class="text-xl font-semibold">C. José David Olachea Pérez</h3>
-                        <div class="section-separator"></div>
-                        <p class="text-gray-500">Jefe del Departamento de Recursos Financieros</p>
-                        <p class="mt-2 text-sm">Extensión: 129</p>
-                        <p class="text-sm">Email: <a href="mailto:r.financieros@cecytebcs.edu.mx" class="text-green-500">r.financieros@cecytebcs.edu.mx</a></p>
-                    </div>
-        
-                    <!-- Tarjeta de Cynthia Ivette Méndez Martin -->
-                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
-                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_da/img_cynthia_ivette_mendez.png" alt="Cynthia Ivette Méndez Martin">
-                        <h3 class="text-xl font-semibold">C. Cynthia Ivette Méndez Martin</h3>
-                        <div class="section-separator"></div>
-                        <p class="text-gray-500">Ingresos Propios</p>
-                        <p class="mt-2 text-sm">Extensión: 123</p>
-                        <p class="text-sm">Email: <a href="mailto:rh@cecytebcs.edu.mx" class="text-green-500">rh@cecytebcs.edu.mx</a></p>
-                    </div>
-        
-                    <!-- Tarjeta de Christian Julián Romero Martínez -->
-                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
-                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_da/img_christian_julian_romero.jpg" alt="Christian Julián Romero Martínez">
-                        <h3 class="text-xl font-semibold">C. Christian Julián Romero Martínez</h3>
-                        <div class="section-separator"></div>
-                        <p class="text-gray-500">Jefe del Departamento de Servicios Generales</p>
-                        <p class="mt-2 text-sm">Extensión: 126</p>
-                        <p class="text-sm">Email: <a href="mailto:servicios@cecytebcs.edu.mx" class="text-green-500">servicios@cecytebcs.edu.mx</a></p>
-                    </div>
-        
-                </div>
-            </div>
-            
-            <div class="hidden p-4" id="DirPE" role="tabpanel" aria-labelledby="DirPE">
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
-                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_dp/img_camarillo.jpg" alt="Jesús Roberto Camarillo Guillén">
-                        <h3 class="text-xl font-semibold">C. Jesús Roberto Camarillo Guillén</h3>
-                        <div class="section-separator"></div>
-                        <p class="text-gray-500">Director de Planeación y Evaluación</p>
-                        <p class="mt-2 text-sm">Extensión: 141</p>
-                        <p class="text-sm">Email: <a href="mailto:planeacion@cecytebcs.edu.mx" class="text-green-500">planeacion@cecytebcs.edu.mx</a></p>
-                    </div>
-                    
-                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
-                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_dp/img_karla_gaxiola.jpg" alt="Karla Zulema Gaxiola Gómez">
-                        <h3 class="text-xl font-semibold">C. Karla Zulema Gaxiola Gómez</h3>
-                        <div class="section-separator"></div>
-                        <p class="text-gray-500">Subdirectora de Planeación y Evaluación</p>
-                        <p class="mt-2 text-sm">Extensión: 145</p>
-                        <p class="text-sm">Email: <a href="mailto:programa.planeacion@cecytebcs.edu.mx" class="text-green-500">programa.planeacion@cecytebcs.edu.mx</a></p>
-                    </div>
-                    
-                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
-                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_dp/img_liliana_favela.jpg" alt="Liliana Favela Rodríguez">
-                        <h3 class="text-xl font-semibold">C. Liliana Favela Rodríguez</h3>
-                        <div class="section-separator"></div>
-                        <p class="text-gray-500">Secretaria de Dirección de Planeación y Evaluación</p>
-                        <p class="mt-2 text-sm">Extensión: 141</p>
-                        <p class="text-sm">Email: <a href="mailto:planeacion@cecytebcs.edu.mx" class="text-green-500">planeacion@cecytebcs.edu.mx</a></p>
-                    </div>
-                    
-                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
-                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_dp/img_miguel_angel_heras.jpg" alt="Miguel Angel Gutiérrez Heras">
-                        <h3 class="text-xl font-semibold">C. Miguel Angel Gutiérrez Heras</h3>
-                        <div class="section-separator"></div>
-                        <p class="text-gray-500">Evaluación y Seguimiento</p>
-                        <p class="mt-2 text-sm">Extensión: 143</p>
-                        <p class="text-sm">Email: <a href="mailto:evaluacion.planeacion@cecytebcs.edu.mx" class="text-green-500">evaluacion.planeacion@cecytebcs.edu.mx</a></p>
-                    </div>
-                    
-                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
-                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_dp/img_monica_bañales.jpg" alt="Mónica Bañales Cossio">
-                        <h3 class="text-xl font-semibold">C. Mónica Bañales Cossio</h3>
-                        <div class="section-separator"></div>
-                        <p class="text-gray-500">Infraestructura Educativa</p>
-                        <p class="mt-2 text-sm">Extensión: 144</p>
-                        <p class="text-sm">Email: <a href="mailto:aux.presupuesto@cecytebcs.edu.mx" class="text-green-500">aux.presupuesto@cecytebcs.edu.mx</a></p>
-                    </div>
-                    
-                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
-                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_dp/img_carmene_yadira_sanchez.jpg" alt="Carmen Yadira Sánchez Nuñez">
-                        <h3 class="text-xl font-semibold">C. Carmen Yadira Sánchez Nuñez</h3>
-                        <div class="section-separator"></div>
-                        <p class="text-gray-500">Auxiliar de Planeación y Evaluación</p>
-                        <p class="mt-2 text-sm">Extensión: 146</p>
-                        <p class="text-sm">Email: <a href="mailto:aux.planeacion@cecytebcs.edu.mx" class="text-green-500">aux.planeacion@cecytebcs.edu.mx</a></p>
-                    </div>
-                    
-                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
-                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_dp/img_fabiola_patricia.jpg" alt="Fabiola Patricia Velázquez Calderón">
-                        <h3 class="text-xl font-semibold">C. Fabiola Patricia Velázquez Calderón</h3>
-                        <div class="section-separator"></div>
-                        <p class="text-gray-500">Auxiliar de Presupuesto</p>
-                        <p class="mt-2 text-sm">Extensión: 144</p>
-                        <p class="text-sm">Email: <a href="mailto:aux.presupuesto@cecytebcs.edu.mx" class="text-green-500">aux.presupuesto@cecytebcs.edu.mx</a></p>
-                    </div>
-                    
-                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
-                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_dp/img_sergio_salgado.jpg" alt="Sergio Ernesto Salgado Miranda">
-                        <h3 class="text-xl font-semibold">C. Sergio Ernesto Salgado Miranda</h3>
-                        <div class="section-separator"></div>
-                        <p class="text-gray-500">Inventarios</p>
-                        <p class="mt-2 text-sm">Extensión: 147</p>
-                        <p class="text-sm">Email: <a href="mailto:bienes.planeacion@cecytebcs.edu.mx" class="text-green-500">bienes.planeacion@cecytebcs.edu.mx</a></p>
-                    </div>
-                    
-                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
-                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_dp/img_monica_lizet_marquez.jpg" alt="Mónica Lizet Márquez Lara">
-                        <h3 class="text-xl font-semibold">C. Mónica Lizet Márquez Lara</h3>
-                        <div class="section-separator"></div>
-                        <p class="text-gray-500">Inventarios</p>
-                        <p class="mt-2 text-sm">Extensión: 147</p>
-                        <p class="text-sm">Email: <a href="mailto:inventario@cecytebcs.edu.mx" class="text-green-500">inventario@cecytebcs.edu.mx</a></p>
-                    </div>
-                    
-                    <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
-                        <img class="w-28 h-28 rounded-full mb-4 object-contain object-center" src="img_dt/img_dp/img_domingo_guzman.jpg" alt="Domingo Guzman Higuera Higuera">
-                        <h3 class="text-xl font-semibold">C. Domingo Guzman Higuera Higuera</h3>
-                        <div class="section-separator"></div>
-                        <p class="text-gray-500">Inventarios</p>
-                        <p class="mt-2 text-sm">Extensión: 147</p>
-                        <p class="text-sm">Email: <a href="mailto:inventario@cecytebcs.edu.mx" class="text-green-500">inventario@cecytebcs.edu.mx</a></p>
-                    </div>
-                    
-                <div>
-                    <div class="hidden p-4" id="recursos" role="tabpanel" aria-labelledby="recursos-tab">
-                        <h2 class="text-2xl font-semibold">Recursos Humanos</h2>
-                        <p>Responsable: Ana García</p>
-                        <p>Teléfono: (555) 456-7890</p>
-                        <p>Email: recursos@example.com</p>
-                        <h2 class="text-2xl font-semibold">Recursos Humanos</h2>
-                        <p>Responsable: Ana García</p>
-                        <p>Teléfono: (555) 456-7890</p>
-                        <p>Email: recursos@example.com</p>
-                        <h2 class="text-2xl font-semibold">Recursos Humanos</h2>
-                        <p>Responsable: Ana García</p>
-                        <p>Teléfono: (555) 456-7890</p>
-                        <p>Email: recursos@example.com</p>
-                        <h2 class="text-2xl font-semibold">Recursos Humanos</h2>
-                        <p>Responsable: Ana García</p>
-                        <p>Teléfono: (555) 456-7890</p>
-                        <p>Email: recursos@example.com</p>
-                    </div>
-            </div>
-
-           
-            
+        <!-- Slide 2 -->
+        <div
+          class="slide bg-cover bg-center"
+          style="
+            background-image: url('img_recuros_pagina/img_oferta_edu/mnto_computo/mnto_computo_s.webp');
+          "
+        >
+          <div class="slide-content">
+            <h2 class="text-4xl font-bold">
+              Soporte y Mantenimiento de Equipo de Computo
+            </h2>
+            <p class="mt-2">
+              La carrera de Técnico en soporte y mantenimiento de equipo de
+              cómputo se desarrolla como vertiente de la carrera de Informática
+              y ofrece las competencias profesionales que permiten un desarrollo
+              personal.
+            </p>
+            <button
+              class="mt-4 px-4 py-2 bg-green-700 text-white rounded hover:bg-green-800 transition"
+            >
+              Más Información
+            </button>
+          </div>
         </div>
+
+        <!-- Slide 3 -->
+        <div
+          class="slide bg-cover bg-center"
+          style="
+            background-image: url('img_recuros_pagina/img_oferta_edu/ecoturismo/eoc_s.jpg');
+          "
+        >
+          <div class="slide-content">
+            <h2 class="text-4xl font-bold">Ecoturismo</h2>
+            <p class="mt-2">
+              La carrera de Técnico en Ecoturismo ofrece las competencias
+              profesionales que permiten al egresado realizar actividades
+              basadas en las necesidades detectadas en el ramo del turismo, el
+              cual genera una gran derrama económica naturaleza.
+            </p>
+            <button
+              class="mt-4 px-4 py-2 bg-green-700 text-white rounded hover:bg-green-800 transition"
+            >
+              Más Información
+            </button>
+          </div>
+        </div>
+
+        !-- Slide 3 -->
+        <div
+          class="slide bg-cover bg-center"
+          style="
+            background-image: url('img_recuros_pagina/img_oferta_edu/pro_alimentos/prod_s.jpg');
+          "
+        >
+          <div class="slide-content">
+            <h2 class="text-4xl font-bold">
+              Producción industrial de alimentos
+            </h2>
+            <p class="mt-2">
+              Las tendencias globalizadoras, actualmente exigen mayor
+              competitividad y profesionalismo del recurso humano, como pieza
+              clave en el desarrollo nacional.
+            </p>
+            <button
+              class="mt-4 px-4 py-2 bg-green-700 text-white rounded hover:bg-green-800 transition"
+            >
+              Más Información
+            </button>
+          </div>
+        </div>
+
+        !-- Slide 3 -->
+        <div
+          class="slide bg-cover bg-center"
+          style="
+            background-image: url('img_recuros_pagina/img_oferta_edu/mnto_industrial/mntoindus_s.jpg');
+          "
+        >
+          <div class="slide-content">
+            <h2 class="text-4xl font-bold">Mantenimiento industrial</h2>
+            <p class="mt-2">
+              La carrera de Técnico en mantenimiento industrial ofrece las
+              competencias profesionales que permiten al estudiante realizar
+              actividades dirigidas a realizar mantenimiento a instalaciones
+              eléctricas, fabricar pequeñas estructuras metálicas.
+            </p>
+            <button
+              class="mt-4 px-4 py-2 bg-green-700 text-white rounded hover:bg-green-800 transition"
+            >
+              Más Información
+            </button>
+          </div>
+        </div>
+
+        !-- Slide 3 -->
+        <div
+          class="slide bg-cover bg-center"
+          style="
+            background-image: url('img_recuros_pagina/img_oferta_edu/serv_hoteleria/serv_hoteleria_s.jpg');
+          "
+        >
+          <div class="slide-content">
+            <h2 class="text-4xl font-bold">Servicios de hotelería</h2>
+            <p class="mt-2">
+              La carrera de Técnico en Servicios de Hotelería ofrece las
+              competencias profesionales que permiten al egresado realizar
+              actividades basadas en las necesidades detectadas en el ramo del
+              hotelería, la cual genera una gran derrama económica.
+            </p>
+            <button
+              class="mt-4 px-4 py-2 bg-green-700 text-white rounded hover:bg-green-800 transition"
+            >
+              Más Información
+            </button>
+          </div>
+        </div>
+
+        !-- Slide 3 -->
+        <div
+          class="slide bg-cover bg-center"
+          style="
+            background-image: url('img_recuros_pagina/img_oferta_edu/ventas/ventas1k.webp');
+          "
+        >
+          <div class="slide-content">
+            <h2 class="text-4xl font-bold">Ventas</h2>
+            <p class="mt-2">
+              La carrera de Técnico en ventas ofrece las competencias
+              profesionales que permiten al estudiante realizar actividades
+              dirigidas a posicionar un producto o servicio de una empresa en el
+              mercado, auxiliar en el proceso de administración del área de
+              ventas y en la elaboración del estudio de mercado.
+            </p>
+            <button
+              class="mt-4 px-4 py-2 bg-green-700 text-white rounded hover:bg-green-800 transition"
+            >
+              Más Información
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Buttons -->
+      <button
+        id="prev"
+        class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-green-700 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-green-800 transition"
+      >
+        ←
+      </button>
+      <button
+        id="next"
+        class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-green-700 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-green-800 transition"
+      >
+        →
+      </button>
     </div>
 
-    <!-- Flowbite and Tailwind JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.4.7/flowbite.min.js"></script>
-    
-    <!-- Script para manejar el cambio de pestañas -->
+    <!-- JavaScript para la funcionalidad del slider -->
     <script>
-        document.querySelectorAll('[data-tabs-target]').forEach(tab => {
-            tab.addEventListener('click', function () {
-                const target = document.querySelector(this.getAttribute('data-tabs-target'));
+      const slider = document.querySelector(".slider");
+      const slides = document.querySelectorAll(".slide");
+      const prevButton = document.getElementById("prev");
+      const nextButton = document.getElementById("next");
+      let currentIndex = 0;
 
-                document.querySelectorAll('[role="tabpanel"]').forEach(panel => {
-                    panel.classList.add('hidden');
-                });
-
-                document.querySelectorAll('[role="tab"]').forEach(tab => {
-                    tab.classList.remove('border-green-500', 'text-green-500');
-                    tab.setAttribute('aria-selected', 'false');
-                });
-
-                target.classList.remove('hidden');
-                this.classList.add('border-green-500', 'text-green-500');
-                this.setAttribute('aria-selected', 'true');
-            });
+      function updateSlider() {
+        const width = slides[0].offsetWidth;
+        slider.scrollTo({
+          left: width * currentIndex,
+          behavior: "smooth",
         });
+      }
+
+      prevButton.addEventListener("click", () => {
+        if (currentIndex > 0) {
+          currentIndex--;
+          updateSlider();
+        }
+      });
+
+      nextButton.addEventListener("click", () => {
+        if (currentIndex < slides.length - 1) {
+          currentIndex++;
+          updateSlider();
+        }
+      });
+
+      // Inicializar el slider
+      updateSlider();
     </script>
-</body>
+  </body>
 </html>

@@ -1,146 +1,172 @@
-.bg-green-500{
-    background-color: #107926;
-  }
-  body {
-    font-family: "Work Sans", sans-serif;
-  }
+.bg-green-500 {
+  background-color: #107926;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+}
 
-  main{
-  
-  }
+main {
+}
 
-  .hero-section h1,
-  .hero-section p,
-  .hero-section button,
-  .section-separator,
-  .section-separator-VERDE,
-  .nota p,
-  .texto-sobre-imagen,
-  .imagen-con-desenfoque {
-    font-family: "Work Sans", sans-serif;
-  }
+.hero-section h1,
+.hero-section p,
+.hero-section button,
+.section-separator,
+.section-separator-VERDE,
+.nota p,
+.texto-sobre-imagen,
+.imagen-con-desenfoque {
+  font-family: "Work Sans", sans-serif;
+}
 
-  .navbar-transparent {
-    background-color: white;
-    transition: background-color 0.3s ease;
-  }
-  .navbar-white {
-    background-color: white;
-    transition: background-color 0.3s ease;
-  }
-  .hero-section {
-    position: relative;
-    background-image: url("img_recuros_pagina/IMG_COVER_ALUMNOS_SALACOMPUTO.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    height: 100vh;
-  }
-  
+.navbar-transparent {
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+.navbar-white {
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+.hero-section {
+  position: relative;
+  background-image: url("img_recuros_pagina/img_noticias/ajedrez_noticias.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+}
 
-  .hero-content {
-    z-index: 1;
-  }
+.hero-content {
+  z-index: 1;
+}
 
-  .hero-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.2); /* Optional: Add a dark overlay */
-    z-index: 0;
-  }
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0); /* Optional: Add a dark overlay */
+  z-index: 0;
+}
 
-  .hero-content {
-    position: relative;
-    z-index: 2;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-  }
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
 
-  .hero-content button {
-    background-color: rgba(255, 255, 255, 0.8);
-    color: #000;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-  }
+.hero-content button {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
 
-  .hero-content button:hover {
-    background-color: rgba(255, 255, 255, 1);
-  }
+.hero-content button:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
 
-  .section-separator {
-    width: 100%;
-    height: 4px;
-    background-color: #f97316; /* Orange color */
-    margin: 0.5rem auto;
-  }
+.section-separator {
+  width: 100%;
+  height: 4px;
+  background-color: #f97316; /* Orange color */
+  margin: 0.5rem auto;
+}
 
-  .section-separator-VERDE {
-    width: 100%;
-    height: 4px;
-    background-color: #278a2a; /* Orange color */
-    margin: 0.5rem auto;
-  }
+.section-separator-VERDE {
+  width: 100%;
+  height: 4px;
+  background-color: #278a2a; /* Orange color */
+  margin: 0.5rem auto;
+}
 
-  .nota {
-    position: relative;
-    overflow: hidden;
-  }
+.nota {
+  position: relative;
+  overflow: hidden;
+}
 
-  .nota:hover:hover .texto-sobre-imagen {
-    opacity: 1;
-  }
-  .imagen-con-desenfoque:hover {
-    filter: blur(5px);
-    transform: rotate(5deg);
-    cursor: pointer;
-  }
+.nota:hover:hover .texto-sobre-imagen {
+  opacity: 1;
+}
+.imagen-con-desenfoque:hover {
+  filter: blur(5px);
+  transform: rotate(5deg);
+  cursor: pointer;
+}
 
-  .nota:hover {
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-  .nota:active {
-    transform: rotate(5deg);
-  }
+.nota:hover {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.nota:active {
+  transform: rotate(5deg);
+}
 
-  /* Estilo del texto */
-  .texto-sobre-imagen {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    color: white;
-    text-align: center;
-    z-index: 1;
-  }
+/* Estilo del texto */
+.texto-sobre-imagen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
 
-  /* Estilo para el desenfoque */
-  .imagen-con-desenfoque {
-    transition: filter 0.3s ease;
-  }
+/* Estilo para el desenfoque */
+.imagen-con-desenfoque {
+  transition: filter 0.3s ease;
+}
 
-  .imagen-con-desenfoque:hover {
-    filter: blur(5px);
-  }
+.imagen-con-desenfoque:hover {
+  filter: blur(5px);
+}
 
-  .relative {
-    z-index: 1;
-  }
+.relative {
+  z-index: 1;
+}
 
-  .parallax {
-     /* Reemplaza con tu URL de imagen */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.parallax {
+  /* Reemplaza con tu URL de imagen */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider {
+  scroll-snap-type: x mandatory;
+  display: flex;
+  overflow-x: scroll;
+  scrollbar-width: none; /* Oculta la barra de desplazamiento en Firefox */
+  -ms-overflow-style: none; /* Oculta la barra de desplazamiento en Internet Explorer y Edge */
+}
+.slider::-webkit-scrollbar {
+  display: none; /* Oculta la barra de desplazamiento en Chrome, Safari y Opera */
+}
+.slide {
+  scroll-snap-align: start;
+  flex: none;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  height: 500px;
+}
+.slide-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 20px;
 }
