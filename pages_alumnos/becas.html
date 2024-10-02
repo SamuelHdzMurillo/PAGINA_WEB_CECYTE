@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sección de Becas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+
+  <body class="bg-gray-100 font-sans">
+    <!-- Header Section -->
+    <header class="bg-green-700 text-white py-10">
+      <div class="max-w-5xl mx-auto text-center">
+        <h1 class="text-5xl font-bold mb-4">Explora Nuestras Becas</h1>
+        <p class="text-xl font-light">
+          Descubre las oportunidades que tenemos para apoyarte en tu educación
+        </p>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="max-w-5xl mx-auto p-6">
+      <!-- Becas Estatales -->
+      <div class="bg-white rounded-lg shadow-lg mb-6 overflow-hidden">
+        <div
+          class="flex items-center justify-between p-6 bg-blue-50 cursor-pointer border-b"
+          onclick="toggleInfo('beca-estatales')"
+        >
+          <h2 class="text-2xl font-semibold text-gray-800 flex items-center">
+            <i class="fas fa-university mr-3 text-blue-600"></i> Becas Estatales
+          </h2>
+          <i
+            class="fas fa-chevron-down text-gray-600"
+            id="icon-beca-estatales"
+          ></i>
+        </div>
+        <div id="beca-estatales" class="hidden px-6 py-4 space-y-4">
+          <div class="bg-gray-50 p-4 rounded-lg">
+            <h3 class="text-xl font-semibold text-gray-700">
+              BECA DE TRANSPORTE
+            </h3>
+            <p class="text-gray-600">
+              Se entrega a los alumnos inscritos en los Planteles CECyT y/o
+              Centros EMSaD con el objetivo de apoyar a los jóvenes estudiantes
+              más necesitados de nuestro Estado que viven alejados del plantel
+              educativo al que asisten, y a cuyas familias el traslado mediante
+              transporte público y/o asociaciones de transporte les representa
+              una importante inversión económica.
+            </p>
+            <br />
+            <a
+              class="text-orange-600 underline hover:text-orange-800"
+              href="https://drive.google.com/file/d/1qvmH2uN-7NadCKQ4kiUuHjdNR3xi6C8q/view?usp=sharing"
+              >Clic aqui para más Información.</a
+            >
+          </div>
+          <div class="bg-gray-50 p-4 rounded-lg">
+            <h3 class="text-xl font-semibold text-gray-700">
+              BECA DE EXCELENCIA
+            </h3>
+            <p class="text-gray-600">
+              La Beca a la Excelencia académica es un beneficio económico que
+              otorga el Gobierno del Estado a los alumnos destacados por su alto
+              nivel académico y observen una conducta ejemplar y solidaria
+              dentro y fuera de la institución donde se encuentren realizando
+              sus estudios, con el fin de colaborar en el cumplimiento de los
+              objetivos y metas, que en el ramo educativo establece en el plan
+              estatal de desarrollo y fomentar en México una Educación de
+              Calidad.
+            </p>
+            <br />
+            <a
+              class="text-orange-600 underline hover:text-orange-800"
+              href="https://drive.google.com/file/d/1IfDO-9VDpde1lk-vh8PQeVbw1brfpcgb/view?usp=sharing"
+              >Clic aqui para más Información.</a
+            >
+          </div>
+          <div class="bg-gray-50 p-4 rounded-lg">
+            <h3 class="text-xl font-semibold text-gray-700">
+              BECA PATRONATO DEL ESTUDIANTES SUDCALIFORNIANO
+            </h3>
+            <p class="text-gray-600">
+              Este programa Estatal consiste en otorgar becas como estímulo
+              económico, para contribuir a la formación académica y al
+              desarrollo integral de los estudiantes sudcalifornianos desde
+              nivel básico hasta profesional. Para realizar tu trámite ingresa a
+              la página :
+            </p>
+            <br />
+            <a
+              class="text-orange-600 underline hover:text-orange-800"
+              href="http://pesbcs.gob.mx/"
+              >http://www.pesbcs.gob.mx</a
+            >
+          </div>
+
+          <div class="bg-gray-50 p-4 rounded-lg">
+            <h3 class="text-xl font-semibold text-gray-700">BECA NEE</h3>
+            <p class="text-gray-600">
+              PROGRAMA ESTATAL DE BECAS DE NECESIDADES EDUCATIVAS ESPECIALES
+            </p>
+            <br />
+            <p>
+              La Beca de Necesidades Educativas Especiales es un Programa del
+              Gobierno del Estado que tiene como objetivo brindar un apoyo a los
+              estudiantes que cuenten con alguna capacidad física diferente o
+              intelectual, para que amplíen sus oportunidades de continuar o
+              concluir su formación académica. Para solicitar tu beca debes
+              ponerte en contacto con la Dirección del Plantel.
+            </p>
+          </div>
+
+          <div class="bg-gray-50 p-4 rounded-lg">
+            <h3 class="text-xl font-semibold text-gray-700">
+              BBECA BENITO JUÁREZ
+            </h3>
+            <p class="text-gray-600">
+              Beca Universal para Estudiantes de Educación Media Superior Benito
+              Juárez
+            </p>
+            <br />
+            <p>
+              Es un apoyo del Gobierno de México dirigido a las y los alumnos
+              que cursan el bachillerato o profesional técnico bachiller en
+              alguna escuela pública. Tienen prioridad las y los alumnos
+              inscritos en escuelas de modalidad escolarizada o mixta que se
+              ubican en localidades prioritarias. Al comenzar el semestre o
+              periodo escolar, debes ponerte en contacto con el enlace de becas
+              de tu escuela para corroborar que estés inscrita o inscrito y
+              entregar tus datos de contacto cuando el plantel te lo solicite.
+            </p>
+            <br />
+            <a
+              class="text-orange-600 underline hover:text-orange-800"
+              href="bit.ly/ReglasDeOperaciónBecaMediaSuperior2022"
+              >bit.ly/ReglasDeOperaciónBecaMediaSuperior2022</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Becas Benito Juárez -->
+      <div class="bg-white rounded-lg shadow-lg mb-6 overflow-hidden">
+        <div
+          class="flex items-center justify-between p-6 bg-blue-50 cursor-pointer border-b"
+          onclick="toggleInfo('beca-benito-juarez')"
+        >
+          <h2 class="text-2xl font-semibold text-gray-800 flex items-center">
+            <i class="fas fa-book-open mr-3 text-green-600"></i> Becas Benito
+            Juárez
+          </h2>
+          <i
+            class="fas fa-chevron-down text-gray-600"
+            id="icon-beca-benito-juarez"
+          ></i>
+        </div>
+        <div id="beca-benito-juarez" class="hidden px-6 py-4 space-y-4">
+          <div class="bg-gray-50 p-4 rounded-lg">
+            <h3 class="text-xl font-semibold text-gray-700">
+              Beca Benito Juárez 
+            </h3>
+            <p class="text-gray-600">
+              <p>Documentos de descarga:</p>
+              <br>
+              <p>procesos de Beca Universal <a  class="text-orange-600 underline hover:text-orange-800" href="https://drive.google.com/file/d/1m1uOQ6UQXlvBFoegsGPpxOKyNTJVPNlg/view?usp=sharing">(DESCARGAR)</a></p>
+
+              <p>Capacitación SIREL <a class="text-orange-600 underline hover:text-orange-800" href="https://drive.google.com/file/d/1vrO1SG21jMZwxAKL3TBI1fQtDiKRELfY/view?usp=sharing">(DESCARGAR)</a></p>
+
+              <p>Guia de usuario SIREL <a class="text-orange-600 underline hover:text-orange-800" href="https://drive.google.com/file/d/1Ab-kJbYz-EwGOtHDf3WA-UBtJQKCez90/view?usp=sharing">(DESCARGAR)</a></p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleInfo(id) {
+        const element = document.getElementById(id);
+        const icon = document.getElementById("icon-" + id);
+        if (element.classList.contains("hidden")) {
+          element.classList.remove("hidden");
+          icon.classList.replace("fa-chevron-down", "fa-chevron-up");
+        } else {
+          element.classList.add("hidden");
+          icon.classList.replace("fa-chevron-up", "fa-chevron-down");
+        }
+      }
+    </script>
+  </body>
+</html>
