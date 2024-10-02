@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orientación Educativa y Servicios</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="font-sans antialiased">
+    <!-- Banner Superior -->
+    <div class="text-white p-8 text-center">
+      <img
+        src="/img_logos/acompanamiento-2.png"
+        alt="Logo de la Institución"
+        class="mx-auto mb-1"
+      />
+    </div>
+
+    <!-- Sección de Contenido Expandible -->
+    <section class="p-8">
+      <div class="space-y-4">
+        <!-- ORIENTACIÓN EDUCATIVA -->
+        <div>
+          <button
+            onclick="toggleContent('orientacion')"
+            class="w-full bg-gray-200 text-left p-4 rounded-md focus:outline-none"
+          >
+            ORIENTACIÓN EDUCATIVA
+          </button>
+          <div id="orientacion" class="hidden p-4 bg-gray-100 rounded-md">
+            <p>
+              El Programa de Orientación Educativa del CECyTE de B.C.S., enfoca
+              sus esfuerzos en la prevención y atención de los factores de
+              riesgo de los estudiantes, tales como dificultades psicológicas,
+              el ausentismo y la reprobación; en fortalecer la toma de
+              decisiones responsables y las Habilidades Socioemocionales en los
+              estudiantes. De igual manera, brinda apoyo a través de la
+              orientación vocacional y profesiográfica.
+            </p>
+            <br />
+            Se divide en distintas modalidades: la atención individualizada
+            (Servicio de Orientación Educativa); grupal o colectiva (masivo).
+          </div>
+        </div>
+
+        <!-- TUTORÍAS -->
+        <div>
+          <button
+            onclick="toggleContent('tutorias')"
+            class="w-full bg-gray-200 text-left p-4 rounded-md focus:outline-none"
+          >
+            TUTORÍAS
+          </button>
+          <div id="tutorias" class="hidden p-4 bg-gray-100 rounded-md">
+            <p>
+              El Programa de Tutoría Académicas del CECyTE De B.C.S., ofrece al
+              estudiante un seguimiento académico desde que ingresa hasta que
+              concluye sus estudios, mediante la designación de una figura
+              responsable de un grupo de estudiantes llamado “Tutor”, “Monitor”
+              o “Asesor” (generalmente un docente), cuyo acompañamiento se
+              enfoca en atender dificultades en las esferas académica,
+              socioemocional y vocacional de los estudiantes.
+            </p>
+            <br />Se divide en distintas modalidades: la atención
+            individualizada (Servicio de Orientación Educativa); grupal o
+            colectiva (masiva).
+          </div>
+        </div>
+
+        <!-- CONSTRUYE T -->
+        <div>
+          <button
+            onclick="toggleContent('construyet')"
+            class="w-full bg-gray-200 text-left p-4 rounded-md focus:outline-none"
+          >
+            CONSTRUYE T
+          </button>
+          <div id="construyet" class="hidden p-4 bg-gray-100 rounded-md">
+            <p>
+              El Programa CONSTRUYE T, promover el aprendizaje de las
+              habilidades socioemocionales de los estudiantes, los docentes y de
+              los directivos; así mismo, encausa sus esfuerzos en impulsar la
+              mejora del ambiente escolar.
+            </p>
+            <br />
+            <p>
+              En total engloba seis habilidades organizadas en tres dimensiones:
+            </p>
+            <br />
+            <p>Conoce T, incluye “Autoconocimiento” y “Autorregulación”;</p>
+            <br />
+            <p>Relaciona T, incluye “Conciencia social” y “Colaboración”;</p>
+            <br />
+            <p>Elige T, “Toma responsable de decisiones” y “Perseverancia”.</p>
+            <br />
+            <br />
+            <p>
+              Más información ingresando al sitio:
+              <a href="https://construye-t.org.mx/"
+                >http://www.construye-t.org.mx/</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <!-- MOVIMIENTO CONTRA EL ABANDONO ESCOLAR -->
+        <div>
+          <button
+            onclick="toggleContent('abandono')"
+            class="w-full bg-gray-200 text-left p-4 rounded-md focus:outline-none"
+          >
+            MOVIMIENTO CONTRA EL ABANDONO ESCOLAR
+          </button>
+          <div id="abandono" class="hidden p-4 bg-gray-100 rounded-md">
+            <p>
+              El Programa Yo No Abandono, que forma parte del “Movimiento Contra
+              El Abandono Escolar”, el cual promueve labores de prevención de
+              dicho fenómeno social, a través de labores de monitoreo de la
+              reprobación y ausentismo (factores de riesgo), del seguimiento
+              estadístico de los niveles y las causas y estrategias
+              implementadas.
+            </p>
+            <br />
+            <p>
+              Así mismo, requiere de la participación activa del director y
+              subdirector del plantel en la realización de intervenciones
+              específicas con estudiantes y padres de familia, mediante las
+              líneas de acción descritas en los documentos de la “Caja de
+              herramientas” del programa.
+            </p>
+          </div>
+        </div>
+
+        <!-- ATENCIÓN A LA INCLUSIÓN EDUCATIVA -->
+        <div>
+          <button
+            onclick="toggleContent('inclusion')"
+            class="w-full bg-gray-200 text-left p-4 rounded-md focus:outline-none"
+          >
+            ATENCIÓN A LA INCLUSIÓN EDUCATIVA
+          </button>
+          <div id="inclusion" class="hidden p-4 bg-gray-100 rounded-md">
+            <p>
+              Esta línea de acción del Nuevo Currículum de la Educación Media
+              Superior, promueve la mejora de las estrategias didácticas
+              implementadas en los centros educativos para la atención de
+              estudiantes en condiciones de vulnerabilidad, tal como lo señalan
+              los principios de la educación inclusiva.
+            </p>
+            <br />
+            <p>
+              Dentro de este rubro, se considera la capacitación para docentes,
+              la mejore de la accesibilidad en espacios escolares, así como
+              labores de difusión y promoción de la integración educativa.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function toggleContent(id) {
+        const content = document.getElementById(id);
+        content.classList.toggle("hidden");
+      }
+    </script>
+  </body>
+</html>
