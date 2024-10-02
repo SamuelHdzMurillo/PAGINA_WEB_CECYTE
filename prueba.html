@@ -3,260 +3,90 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Slider de Carreras</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <style>
-      .slider {
-        scroll-snap-type: x mandatory;
-        display: flex;
-        overflow-x: scroll;
-        scrollbar-width: none; /* Oculta la barra de desplazamiento en Firefox */
-        -ms-overflow-style: none; /* Oculta la barra de desplazamiento en Internet Explorer y Edge */
-      }
-      .slider::-webkit-scrollbar {
-        display: none; /* Oculta la barra de desplazamiento en Chrome, Safari y Opera */
-      }
-      .slide {
-        scroll-snap-align: start;
-        flex: none;
-        width: 100%;
-        max-width: 100%;
-        position: relative;
-        height: 500px;
-      }
-      .slide-content {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: rgba(0, 0, 0, 0.5);
-        color: white;
-        padding: 20px;
-      }
-    </style>
+    <title>Footer Example</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN for social icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
-  <body class="bg-gray-100 flex items-center justify-center min-h-screen">
-    <div class="relative w-full max-w-6xl mx-auto">
-      <!-- Slider -->
-      <div class="slider">
-        <!-- Slide 1 -->
-        <div
-          class="slide bg-cover bg-center"
-          style="
-            background-image: url('img_recuros_pagina/img_oferta_edu/programacion/programacion_s.jpg');
-          "
-        >
-          <div class="slide-content">
-            <h2 class="text-4xl font-bold">Programación</h2>
-            <p class="mt-2">
-              La carrera de Técnico en programación ofrece las competencias
-              profesionales que permiten al estudiante realizar actividades
-              dirigidas a: analizar, diseñar, desarrollar, instalar y mantener
-              software de aplicación.
+  <body class="bg-gray-900 text-gray-400">
+    <!-- Footer -->
+    <footer class="bg-black text-gray-400 py-10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="md:flex md:justify-between">
+          <!-- Left section -->
+          <div>
+            <img
+              src="img_logos/logo_Cecyte_vertical_sin_fondo.png"
+              alt="Logo"
+              class="w-50 h-50 mb-4"
+            />
+            <h3 class="text-white text-lg font-semibold">Maxwell</h3>
+            <p class="mt-2 text-sm">
+              We are growing your business with a personal AI manager.
             </p>
-            <button
-              class="mt-4 px-4 py-2 bg-green-700 text-white rounded hover:bg-green-800 transition"
-            >
-              <a href="/pages_oferta_educativa/programacion.html"
-                >Más Información</a
-              >
-            </button>
+          </div>
+
+          <!-- Right section: Company, Resources, Legal -->
+          <div class="mt-10 md:mt-0 md:flex md:space-x-16">
+            <!-- Company column -->
+            <div>
+              <h3 class="text-white text-sm font-semibold mb-4">COMPANY</h3>
+              <ul class="space-y-2 text-sm">
+                <li><a href="#" class="hover:underline">Blog</a></li>
+                <li><a href="#" class="hover:underline">Careers</a></li>
+                <li><a href="#" class="hover:underline">Pricing</a></li>
+              </ul>
+            </div>
+
+            <!-- Resources column -->
+            <div>
+              <h3 class="text-white text-sm font-semibold mb-4">RESOURCES</h3>
+              <ul class="space-y-2 text-sm">
+                <li><a href="#" class="hover:underline">Documentation</a></li>
+                <li><a href="#" class="hover:underline">Papers</a></li>
+                <li>
+                  <a href="#" class="hover:underline">Press Conferences</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Legal column -->
+            <div>
+              <h3 class="text-white text-sm font-semibold mb-4">LEGAL</h3>
+              <ul class="space-y-2 text-sm">
+                <li>
+                  <a href="#" class="hover:underline">Terms of Service</a>
+                </li>
+                <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                <li><a href="#" class="hover:underline">Cookies Policy</a></li>
+                <li><a href="#" class="hover:underline">Data Processing</a></li>
+              </ul>
+            </div>
           </div>
         </div>
 
-        <!-- Slide 2 -->
+        <!-- Footer bottom -->
         <div
-          class="slide bg-cover bg-center"
-          style="
-            background-image: url('img_recuros_pagina/img_oferta_edu/mnto_computo/mnto_computo_s.webp');
-          "
+          class="border-t border-gray-700 mt-8 pt-8 flex items-center justify-between"
         >
-          <div class="slide-content">
-            <h2 class="text-4xl font-bold">
-              Soporte y Mantenimiento de Equipo de Computo
-            </h2>
-            <p class="mt-2">
-              La carrera de Técnico en soporte y mantenimiento de equipo de
-              cómputo se desarrolla como vertiente de la carrera de Informática
-              y ofrece las competencias profesionales que permiten un desarrollo
-              personal.
-            </p>
-            <button
-              class="mt-4 px-4 py-2 bg-green-700 text-white rounded hover:bg-green-800 transition"
-            >
-              Más Información
-            </button>
-          </div>
-        </div>
-
-        <!-- Slide 3 -->
-        <div
-          class="slide bg-cover bg-center"
-          style="
-            background-image: url('img_recuros_pagina/img_oferta_edu/ecoturismo/eoc_s.jpg');
-          "
-        >
-          <div class="slide-content">
-            <h2 class="text-4xl font-bold">Ecoturismo</h2>
-            <p class="mt-2">
-              La carrera de Técnico en Ecoturismo ofrece las competencias
-              profesionales que permiten al egresado realizar actividades
-              basadas en las necesidades detectadas en el ramo del turismo, el
-              cual genera una gran derrama económica naturaleza.
-            </p>
-            <button
-              class="mt-4 px-4 py-2 bg-green-700 text-white rounded hover:bg-green-800 transition"
-            >
-              Más Información
-            </button>
-          </div>
-        </div>
-
-        !-- Slide 3 -->
-        <div
-          class="slide bg-cover bg-center"
-          style="
-            background-image: url('img_recuros_pagina/img_oferta_edu/pro_alimentos/prod_s.jpg');
-          "
-        >
-          <div class="slide-content">
-            <h2 class="text-4xl font-bold">
-              Producción industrial de alimentos
-            </h2>
-            <p class="mt-2">
-              Las tendencias globalizadoras, actualmente exigen mayor
-              competitividad y profesionalismo del recurso humano, como pieza
-              clave en el desarrollo nacional.
-            </p>
-            <button
-              class="mt-4 px-4 py-2 bg-green-700 text-white rounded hover:bg-green-800 transition"
-            >
-              Más Información
-            </button>
-          </div>
-        </div>
-
-        !-- Slide 3 -->
-        <div
-          class="slide bg-cover bg-center"
-          style="
-            background-image: url('img_recuros_pagina/img_oferta_edu/mnto_industrial/mntoindus_s.jpg');
-          "
-        >
-          <div class="slide-content">
-            <h2 class="text-4xl font-bold">Mantenimiento industrial</h2>
-            <p class="mt-2">
-              La carrera de Técnico en mantenimiento industrial ofrece las
-              competencias profesionales que permiten al estudiante realizar
-              actividades dirigidas a realizar mantenimiento a instalaciones
-              eléctricas, fabricar pequeñas estructuras metálicas.
-            </p>
-            <button
-              class="mt-4 px-4 py-2 bg-green-700 text-white rounded hover:bg-green-800 transition"
-            >
-              Más Información
-            </button>
-          </div>
-        </div>
-
-        !-- Slide 3 -->
-        <div
-          class="slide bg-cover bg-center"
-          style="
-            background-image: url('img_recuros_pagina/img_oferta_edu/serv_hoteleria/serv_hoteleria_s.jpg');
-          "
-        >
-          <div class="slide-content">
-            <h2 class="text-4xl font-bold">Servicios de hotelería</h2>
-            <p class="mt-2">
-              La carrera de Técnico en Servicios de Hotelería ofrece las
-              competencias profesionales que permiten al egresado realizar
-              actividades basadas en las necesidades detectadas en el ramo del
-              hotelería, la cual genera una gran derrama económica.
-            </p>
-            <button
-              class="mt-4 px-4 py-2 bg-green-700 text-white rounded hover:bg-green-800 transition"
-            >
-              Más Información
-            </button>
-          </div>
-        </div>
-
-        !-- Slide 3 -->
-        <div
-          class="slide bg-cover bg-center"
-          style="
-            background-image: url('img_recuros_pagina/img_oferta_edu/ventas/ventas1k.webp');
-          "
-        >
-          <div class="slide-content">
-            <h2 class="text-4xl font-bold">Ventas</h2>
-            <p class="mt-2">
-              La carrera de Técnico en ventas ofrece las competencias
-              profesionales que permiten al estudiante realizar actividades
-              dirigidas a posicionar un producto o servicio de una empresa en el
-              mercado, auxiliar en el proceso de administración del área de
-              ventas y en la elaboración del estudio de mercado.
-            </p>
-            <button
-              class="mt-4 px-4 py-2 bg-green-700 text-white rounded hover:bg-green-800 transition"
-            >
-              Más Información
-            </button>
+          <p class="text-sm">&copy; 2023 Maxwell Inc. All rights reserved.</p>
+          <div class="flex space-x-6">
+            <a href="#" class="text-gray-400 hover:text-gray-500">
+              <span class="sr-only">YouTube</span>
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-gray-500">
+              <span class="sr-only">Facebook</span>
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-gray-500">
+              <span class="sr-only">Instagram</span>
+              <i class="fab fa-instagram"></i>
+            </a>
           </div>
         </div>
       </div>
-
-      <!-- Navigation Buttons -->
-      <button
-        id="prev"
-        class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-green-700 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-green-800 transition"
-      >
-        ←
-      </button>
-      <button
-        id="next"
-        class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-green-700 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-green-800 transition"
-      >
-        →
-      </button>
-    </div>
-
-    <!-- JavaScript para la funcionalidad del slider -->
-    <script>
-      const slider = document.querySelector(".slider");
-      const slides = document.querySelectorAll(".slide");
-      const prevButton = document.getElementById("prev");
-      const nextButton = document.getElementById("next");
-      let currentIndex = 0;
-
-      function updateSlider() {
-        const width = slides[0].offsetWidth;
-        slider.scrollTo({
-          left: width * currentIndex,
-          behavior: "smooth",
-        });
-      }
-
-      prevButton.addEventListener("click", () => {
-        if (currentIndex > 0) {
-          currentIndex--;
-          updateSlider();
-        }
-      });
-
-      nextButton.addEventListener("click", () => {
-        if (currentIndex < slides.length - 1) {
-          currentIndex++;
-          updateSlider();
-        }
-      });
-
-      // Inicializar el slider
-      updateSlider();
-    </script>
+    </footer>
   </body>
 </html>
