@@ -1,89 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Footer Example</title>
-    <!-- Tailwind CSS CDN -->
+    <title>Footer con Noticias Anteriores</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Enlace para Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome CDN for social icons -->
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- Enlace para Font Awesome -->
   </head>
-  <body class="bg-gray-900 text-gray-400">
-    <!-- Footer -->
-    <footer class="bg-black text-gray-400 py-10">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="md:flex md:justify-between">
-          <!-- Left section -->
-          <div>
+
+  <body class="bg-gray-100">
+    <!-- Contenido de la página -->
+    <div class="min-h-screen flex items-center justify-center">
+      <h1 class="text-3xl font-bold">Contenido Principal de la Página</h1>
+    </div>
+
+    <!-- Footer con Noticias Anteriores -->
+    <footer class="bg-gray-900 text-white p-8">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-xl font-semibold mb-4">Noticias Anteriores</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Noticia 1 -->
+          <a href="">
+            <div class="flex items-start space-x-4">
+              <img
+                src="img_recuros_pagina/img_noticias/ajedrez_noticias.jpg"
+                alt="Noticia 1"
+                class="w-20 h-20 object-cover rounded-md"
+              />
+              <div>
+                <h3 class="text-lg font-medium">Título de Noticia 1</h3>
+                <p class="text-sm text-gray-400">
+                  Descripción breve de la noticia, que puede tener unas pocas
+                  líneas.
+                </p>
+              </div>
+            </div>
+          </a>
+          <!-- Noticia 2 -->
+          <div class="flex items-start space-x-4">
             <img
-              src="img_logos/logo_Cecyte_vertical_sin_fondo.png"
-              alt="Logo"
-              class="w-50 h-50 mb-4"
+              src="/img_recuros_pagina/img_noticias/bailes_noticias.jpg"
+              alt="Noticia 2"
+              class="w-20 h-20 object-cover rounded-md"
             />
-            <h3 class="text-white text-lg font-semibold">Maxwell</h3>
-            <p class="mt-2 text-sm">
-              We are growing your business with a personal AI manager.
-            </p>
-          </div>
-
-          <!-- Right section: Company, Resources, Legal -->
-          <div class="mt-10 md:mt-0 md:flex md:space-x-16">
-            <!-- Company column -->
             <div>
-              <h3 class="text-white text-sm font-semibold mb-4">COMPANY</h3>
-              <ul class="space-y-2 text-sm">
-                <li><a href="#" class="hover:underline">Blog</a></li>
-                <li><a href="#" class="hover:underline">Careers</a></li>
-                <li><a href="#" class="hover:underline">Pricing</a></li>
-              </ul>
-            </div>
-
-            <!-- Resources column -->
-            <div>
-              <h3 class="text-white text-sm font-semibold mb-4">RESOURCES</h3>
-              <ul class="space-y-2 text-sm">
-                <li><a href="#" class="hover:underline">Documentation</a></li>
-                <li><a href="#" class="hover:underline">Papers</a></li>
-                <li>
-                  <a href="#" class="hover:underline">Press Conferences</a>
-                </li>
-              </ul>
-            </div>
-
-            <!-- Legal column -->
-            <div>
-              <h3 class="text-white text-sm font-semibold mb-4">LEGAL</h3>
-              <ul class="space-y-2 text-sm">
-                <li>
-                  <a href="#" class="hover:underline">Terms of Service</a>
-                </li>
-                <li><a href="#" class="hover:underline">Privacy Policy</a></li>
-                <li><a href="#" class="hover:underline">Cookies Policy</a></li>
-                <li><a href="#" class="hover:underline">Data Processing</a></li>
-              </ul>
+              <h3 class="text-lg font-medium">Título de Noticia 2</h3>
+              <p class="text-sm text-gray-400">
+                Descripción breve de la noticia, que puede tener unas pocas
+                líneas.
+              </p>
             </div>
           </div>
-        </div>
-
-        <!-- Footer bottom -->
-        <div
-          class="border-t border-gray-700 mt-8 pt-8 flex items-center justify-between"
-        >
-          <p class="text-sm">&copy; 2023 Maxwell Inc. All rights reserved.</p>
-          <div class="flex space-x-6">
-            <a href="#" class="text-gray-400 hover:text-gray-500">
-              <span class="sr-only">YouTube</span>
-              <i class="fab fa-youtube"></i>
-            </a>
-            <a href="#" class="text-gray-400 hover:text-gray-500">
-              <span class="sr-only">Facebook</span>
-              <i class="fab fa-facebook"></i>
-            </a>
-            <a href="#" class="text-gray-400 hover:text-gray-500">
-              <span class="sr-only">Instagram</span>
-              <i class="fab fa-instagram"></i>
-            </a>
+          <!-- Noticia 3 -->
+          <div class="flex items-start space-x-4">
+            <img
+              src="/img_recuros_pagina/img_noticias/escolta_noticias.jpg"
+              alt="Noticia 3"
+              class="w-20 h-20 object-cover rounded-md"
+            />
+            <div>
+              <h3 class="text-lg font-medium">Título de Noticia 3</h3>
+              <p class="text-sm text-gray-400">
+                Descripción breve de la noticia, que puede tener unas pocas
+                líneas.
+              </p>
+            </div>
           </div>
         </div>
       </div>
