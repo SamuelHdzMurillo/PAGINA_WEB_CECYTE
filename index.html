@@ -778,11 +778,15 @@
       });
 
       nextButton.addEventListener("click", () => {
-        if (currentIndex < slides.length - 1) {
-          currentIndex++;
-          updateSlider();
-        }
-      });
+  if (currentIndex < slides.length - 1) {
+    currentIndex++;
+    updateSlider();
+  } else {
+    // Loop back to the first slide
+    currentIndex = 0;
+    updateSlider();
+  }
+});
 
       // Inicializar el slider
       updateSlider();
