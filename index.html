@@ -27,8 +27,9 @@
     <script src="https://unpkg.com/flowbite@^2.1/dist/flowbite.min.js"></script>
     
   </head>
-  <body>
+  <body onload="mostrarFecha()">
     <!-- INCIO NAVBAR CON SUBEMENUS -->
+     
     <nav class="bg-white shadow-lg fixed top-0 left-0 w-full z-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex justify-between h-16">
@@ -213,7 +214,15 @@
 </div>
 
       <div class="w-full h-1 bg-orange-500"></div>
+      <!-- LEMA -->
+    <section class="w-full bg-gray-500 text-white py-2 flex justify-center items-center">
+      <h1 class="text-xl md:text-xl font-bold text-center">
+          "CECyTE: Orgullo y transformacion de la Nueva Escuela Mexicana."
+      </h1>
+    </section>
+    <!-- LEMA -->
   </nav>
+  
     <!-- FIN NAVBAR CON SUBEMENUS -->
 
     
@@ -224,6 +233,8 @@
       </svg>
     </button>
     <!-- BOTON SUBIR FIN -->
+    
+
     
        
 
@@ -245,8 +256,38 @@
       </div>
     </section>
     <!-- SECTION HERO INICIO -->
+
+
+     <!-- INICIO -->
+    <section class="text-center bg-white p-8 rounded-lg shadow-lg">
+      <h2 class="text-2xl font-bold text-gray-900">¿Que es la nueva Escuela Mexicana?</h2>
+      <div class="section-separator"></div>
+      <div class="flex items-center justify-center space-x-2 text-gray-500">
+        <p>Última Actualización -</p>
+        <p><span id="mes"></span></p>
+        <p><span id="año"></span></p>
+      </div>
     
+    </section>
+    </div>
+    <!-- FIN  -->
+
+    <div class="flex justify-center p-4 rounded-lg overflow-hidden  bg-white">
+      <div class="w-full max-w-4xl rounded-lg overflow-hidden  bg-white">
+          <div class="relative w-full pt-[56.25%]"> 
+              <iframe 
+                  class="absolute top-0 left-0 w-full h-full rounded-lg"
+                  src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FDGCECYTEBCS%2Fvideos%2F553124231110293%2F&show_text=true&width=560&t=0" 
+                  frameborder="0"
+                  allowfullscreen
+                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+              </iframe>
+          </div>
+      </div>
+  </div>
+  
     
+
     
     
     
@@ -267,10 +308,19 @@
     <section class="text-center bg-white p-8 rounded-lg shadow-lg">
       <h2 class="text-2xl font-bold text-gray-900">Noticias Destacadas</h2>
       <div class="section-separator"></div>
-      <p class="text-gray-500">Última Actualización - Noviembre 2024</p>
+      <p class="text-gray-500">Última Actualización - Enero 2025</p>
     </section>
     </div>
     <!-- FIN SECTION DE MISION -->
+
+
+    
+
+
+
+    
+  
+   
 
     
       <!-- inicio de carousel  -->  
@@ -409,7 +459,7 @@
     <section class="text-center bg-white p-8 rounded-lg shadow-lg">
       <h2 class="text-2xl font-bold text-gray-900">CONOCE NUESTRAS CARRERAS</h2>
       <div class="section-separator-VERDE"></div>
-      <p class="text-gray-500">Última Actualización - Noviembre 2024</p>
+      <p class="text-gray-500">Última Actualización - Enero 2025</p>
     </section>
 
     
@@ -606,7 +656,7 @@
      <section class="text-center bg-white p-8 rounded-lg shadow-lg">
       <h2 class="text-2xl font-bold text-gray-900">CONVOCATORIAS</h2>
       <div class="section-separator-VERDE"></div>
-      <p class="text-gray-500">Última Actualización - Noviembre 2024</p>
+      <p class="text-gray-500">Última Actualización - Enero 2025</p>
     </section>
 
     <section class="w-full bg-white p-8 rounded-lg shadow-lg flex flex-col items-center">
@@ -843,6 +893,15 @@
     updateSlider();
   }
 });
+
+function mostrarFecha() {
+            const fecha = new Date();
+            const mes = fecha.toLocaleDateString('es-ES', { month: 'long' });
+            const año = fecha.getFullYear();
+            
+            document.getElementById("mes").textContent = mes;
+            document.getElementById("año").textContent = año;
+        }
 
       // Inicializar el slider
       updateSlider();
