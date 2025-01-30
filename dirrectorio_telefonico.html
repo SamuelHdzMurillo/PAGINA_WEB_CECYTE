@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directorio Telefónico</title>
+     <!-- Flowbite -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.4.7/flowbite.min.css" rel="stylesheet">
+     <!-- Tailwind CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+     
+     <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+
+ <!-- INCIO NAVBAR CON SUBEMENUS -->
+ <nav class="bg-white shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+            <!-- Logo -->
+            <div class="flex-shrink-0 flex items-center">
+                <img src="img_logos/logo_Cecyte_vertical_sin_fondo.png" alt="logo_Cecyte_vertical_sin_fondo" class="h-12 w-auto">
+            </div>
+            <!-- Responsive menu button -->
+            <div class="flex items-center sm:hidden">
+                <button id="menu-btn" class="text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700">
+                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Navbar links -->
+            <div class="hidden sm:flex sm:items-center sm:ml-6">
+                <div class="relative group">
+                    <a href="index.html" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Inicio</a>
+                </div>
+                <div class="relative group">
+                    <a href="#" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Institución</a>
+                    <!-- Submenu -->
+                    <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md z-10">
+                        <a href="pages_institucion/pagina_historia.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Historia, Misión y Visión</a>
+
+                        <a href="pages_institucion/planteles_cecyte.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Planteles CecyteBCS</a>
+                        
+                        <a href="pages_institucion/planteles_emsad.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Planteles Emsad</a>
+                        
+                        <a href="directorio_telefonico.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Directorio Telefónico</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <a href="#" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Oferta Educativa</a>
+                    <!-- Submenu -->
+                    <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
+                        
+                        <a href="pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Soporte  y  Mantenimiento equipo de computo</a>
+                        <a href="pages_oferta_educativa/programacion.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programacion</a>
+                        <a href="pages_oferta_educativa/ventas.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ventas</a>
+                        <a href="pages_oferta_educativa/ecoturismo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ecoturismo</a>
+                        <a href="pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Producción industrial de alimentos</a>
+                        <a href="pages_oferta_educativa/mantenimiento_industrial.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Mantenimiento Industrial</a>
+                        <a href="pages_oferta_educativa/servicios_de_hoteleria.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Servicios de Hoteleria</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <a href="#" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Alumnos</a>
+                    <!-- Submenu -->
+                    <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
+                        
+                        <a href="pages_alumnos/becas.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Becas</a>
+                        <a href="pages_alumnos/prog_acompanamiento.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programa de Acompañamiento</a>
+                        <a href="pages_alumnos/requisitos_de_ingreso.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Requisitos de Ingreso</a>
+                    </div>
+                </div>
+
+                <div class="relative group">
+                  <a href="#" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Normatividad</a>
+                  <!-- Submenu -->
+                  <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
+                      
+                      <a href="pages_normatividad/manuales_de_procedimientos.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Manuales de Procedimientos</a>
+                      
+
+                      <a href="pages_normatividad/manuales_de_org.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Manuales de Organizacion</a>
+
+                      <a href="https://drive.google.com/file/d/1w1kARXVhw-SFsSY7q7JPBH4MgAqN8C_S/view?usp=drive_link" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Reglamento interno</a>
+
+                      <a href="https://drive.google.com/file/d/13m142kMwEJ6hj8xaDJXu-XdA-jAkO9jb/view?usp=sharing" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Codigo de Conducta</a>
+
+                      <a href="https://drive.google.com/file/d/1lIJBD8IXxHcM3hwp7v3VmG2X1EJZXKnG/view?usp=sharing" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Protocolo de Seguridad </a>
+
+                      
+      
+                  </div>
+              </div>
+
+                <div class="relative group">
+                  <a href="https://transparencia.cecytebcs.edu.mx/" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Transparencia</a>
+                  <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
+
+                    <a href="https://transparencia.cecytebcs.edu.mx/informacion-publica/articulo-75" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Articulo 75</a>
+                      
+                    <a href="pages_transparencia/cuenta_publica.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Cuenta publica</a>
+
+                    <a href="pages_transparencia/ley_diciplina.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ley de diciplina Financiera </a>
+
+                    
+    
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Responsive Menu -->
+    <div class="sm:hidden hidden" id="mobile-menu">
+  <a href="#" class="block text-gray-700 hover:text-green-600 px-4 py-2">Inicio</a>
+  <div class="block">
+      <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="servicios-btn">
+          Institución
+          <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+      </button>
+      <!-- Submenu -->
+      <div class="hidden" id="servicios-submenu">
+          <a href="pages_institucion/pagina_historia.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Historia, Misión y Visión</a>
+          <a href="pages_institucion/planteles_cecyte.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Planteles CecyteBCS</a>
+          <a href="pages_institucion/planteles_emsad.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Planteles Emsad</a>
+          <a href="directorio_telefonico.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Directorio Telefonico</a>
+      </div>
+  </div>
+  <div class="block">
+      <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="nosotros-btn">
+          Oferta Educativa
+          
+          <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+      </button>
+      
+      <!-- Submenu -->
+      <div class="hidden" id="nosotros-submenu">
+          <a href="pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Soporte y Mantenimiento equipo de cómputo</a>
+          <a href="pages_oferta_educativa/programacion.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programación</a>
+          <a href="pages_oferta_educativa/ventas.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ventas</a>
+          <a href="pages_oferta_educativa/ecoturismo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ecoturismo</a>
+          <a href="pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Producción industrial de alimentos</a>
+          <a href="pages_oferta_educativa/mantenimiento_industrial.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Mantenimiento industrial</a>
+          <a href="pages_oferta_educativa/servicios_de_hoteleria.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Servicios de Hotelería</a>
+      </div>
+  </div>
+  <div class="block">
+    <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="alumnos-btn">
+      Alumnos
+      <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+      </svg>
+    </button>
+    <!-- Submenu -->
+    <div class="hidden" id="alumnos-submenu">
+      <a href="pages_alumnos/becas.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Becas</a>
+      <a href="pages_alumnos/prog_acompanamiento.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programa de Acompañamiento</a>
+      <a href="pages_alumnos/requisitos_de_ingreso.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Requisitos de Ingreso</a>
+    </div>
+  </div>
+
+
+
+  <div class="block">
+    <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="norma-btn">
+      Normatividad
+      <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+      </svg>
+    </button>
+    <!-- Submenu -->
+    <div class="hidden" id="norma-submenu">
+      <a href="/pages_normatividad/manuales_de_procedimientos.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Manual de Procedimientos</a>
+      <a href="/pages_normatividad/manuales_de_org.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Manual de Organizacion</a>
+    </div>
+  </div>
+
+  <div class="block">
+    <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="trns-btn">
+      Transparencia
+      <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+      </svg>
+    </button>
+    <!-- Submenu -->
+    <div class="hidden" id="trns-submenu">
+      <a href="/pages_transparencia/cuenta_publica.html" class="block px-4 py-4 text-gray-700 hover:bg-gray-100">Cuenta publica</a>
+      <a href="/pages_transparencia/ley_diciplina.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ley de diciplina</a>
+    </div>
+  </div>
+  
+</div>
+</div>
+
+    <div class="w-full h-1 bg-orange-500"></div>
+</nav>
+  <!-- FIN NAVBAR CON SUBEMENUS -->
+
+<body class="bg-gray-100 font-sans">
+    <div class="container mx-auto px-4 py-8">
+        <div class="container mx-auto px-4 py-8">
+            <section class="order-first bg-green-700 rounded-lg shadow-lg p-12 text-center">
+            
+                <h1 class="text-4xl font-extrabold text-white mb-4">Directorio Telefonico </h1>
+                
+              </section>
+        </div>
+
+      <!-- Tabs de secciones -->
+      <div class="mb-4 flex flex-wrap gap-2">
+        <button class="tab-button px-4 py-2 rounded-lg font-medium transition-all focus:ring-2 focus:ring-orange-400 bg-orange-500 text-black  hover:bg-gray-400" data-tab="general">Dirección General</button>
+        <button class="tab-button px-4 py-2 rounded-lg font-medium transition-all focus:ring-2 focus:ring-gray-400 bg-gray-300 text-black hover:bg-gray-400" data-tab="admin">Dirección de Administración</button>
+        <button class="tab-button px-4 py-2 rounded-lg font-medium transition-all focus:ring-2 focus:ring-gray-400 bg-gray-300 text-black hover:bg-gray-400" data-tab="pla">Dirección de Planeación y Evaluación</button>
+        <button class="tab-button px-4 py-2 rounded-lg font-medium transition-all focus:ring-2 focus:ring-gray-400 bg-gray-300 text-black hover:bg-gray-400" data-tab="aca">Dirección Académica</button>
+        <button class="tab-button px-4 py-2 rounded-lg font-medium transition-all focus:ring-2 focus:ring-gray-400 bg-gray-300 text-black hover:bg-gray-400" data-tab="vinc">Dirección de Vinculación</button>
+        <button class="tab-button px-4 py-2 rounded-lg font-medium transition-all focus:ring-2 focus:ring-gray-400 bg-gray-300 text-black hover:bg-gray-400" data-tab="cont">Dirección de Contabilidad</button>
+    </div>
+
+
+        <!-- Barra de búsqueda -->
+        <div class="mb-6">
+            <input type="text" id="searchInput" placeholder="Buscar contacto..." class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600">
+        </div>
+
+        <!-- Secciones de contactos -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <div id="general" class="tab-content">
+                <ul class="divide-y divide-gray-200">
+                    <!-- persona -->
+                    <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="img_dt/img_dg/img_prof_esteban_ojeda.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                                <div class="ml-4">
+                                    <h2 class="text-lg font-semibold">
+                                        Mtro. Esteban Ojeda Ramírez</h2>
+                                    <p class="text-sm text-gray-500">Director General</p>
+                                    <p class="text-sm text-gray-600">Extensión: 101 | Email: direcciongeneral@cecytebcs.edu.mx</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                     <!-- persona -->
+                     <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="img_dt/img_dg/img_miriam_claudeth_mendoza.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                                <div class="ml-4">
+                                    <h2 class="text-lg font-semibold">
+                                        C. Míriam Claudeth Mendoza Geraldo</h2>
+                                    <p class="text-sm text-gray-500">Secretaria de Dirección General</p>
+                                    <p class="text-sm text-gray-600">Extensión: 101 | Email: direcciongeneral@cecytebcs.edu.mx</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- persona -->
+                    <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="img_dt/img_dg/golfredo_meza_cota.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                                <div class="ml-4">
+                                    <h2 class="text-lg font-semibold">
+                                        C. Golfredo Meza Cota</h2>
+                                    <p class="text-sm text-gray-500">Jefe del Departamento Jurídico</p>
+                                    <p class="text-sm text-gray-600">Teléfono:  | Email: juridico@cecytebcs.edu.mx</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- persona -->
+                    <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="img_dt/img_dg/img_maria_elena_castro.png" alt="Avatar" class="w-20 h-20 rounded">
+                                <div class="ml-4">
+                                    <h2 class="text-lg font-semibold">
+                                        C. María Elena Castro Terrazas</h2>
+                                    <p class="text-sm text-gray-500">Contralora</p>
+                                    <p class="text-sm text-gray-600">Extensión: 119 | Email: direcciongeneral@cecytebcs.edu.mx</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- persona -->
+                    <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="img_dt/img_dg/img_gabriela_murillo_castro.png" alt="Avatar" class="w-20 h-20 rounded">
+                                <div class="ml-4">
+                                    <h2 class="text-lg font-semibold">
+                                        C. Gabriela Murillo Castro</h2>
+                                    <p class="text-sm text-gray-500">Titular de Transparencia</p>
+                                    <p class="text-sm text-gray-600">Extensión: 108 | Email: transparencia@cecytebcs.edu.mx</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- persona -->
+                    <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="img_dt/img_dg/img_alejandra_viridiana_morales_higuera.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                                <div class="ml-4">
+                                    <h2 class="text-lg font-semibold">
+                                        C. Alejandra Viridiana Morales Higuera</h2>
+                                    <p class="text-sm text-gray-500">Oficialía de Partes</p>
+                                    <p class="text-sm text-gray-600">Extensión: 104 | Email: correspondencia@cecytebcs.edu.mx</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+
+            </div>
+
+            <div id="admin" class="tab-content hidden">
+                <ul class="divide-y divide-gray-200">
+                    <!-- persona -->
+                    <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="img_dt/img_dg/img_rosa_evelia.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                                <div class="ml-4">
+                                    <h2 class="text-lg font-semibold">C. Rosa Evelia Solorio Ramírez</h2>
+                                    <p class="text-sm text-gray-500">Directora  de Administración</p>
+                                    <p class="text-sm text-gray-600">Extensión: 121 | Email: administracion@cecytebcs.edu.mx</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- persona -->
+                    <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="img_dt/img_da/img_maria_elena_arellano.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                                <div class="ml-4">
+                                    <h2 class="text-lg font-semibold">C. María Elena Arellano Tellez</h2>
+                                    <p class="text-sm text-gray-500">Secretaria de Dirección de Administración</p>
+                                    <p class="text-sm text-gray-600">Extensión: 121 | Email: administracion@cecytebcs.edu.mx</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- persona -->
+                    <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="img_dt/img_da/img_dante_ulises_villalobos.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                                <div class="ml-4">
+                                    <h2 class="text-lg font-semibold">C. Dante Ulises Villalobos Carballo</h2>
+                                    <p class="text-sm text-gray-500">Director de Recursos Humanos</p>
+                                    <p class="text-sm text-gray-600">Extensión: 125 | Email: administración@cecytebcs.edu.mx</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- persona -->
+                    <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="img_dt/img_da/img_hilda_gaxiola.png" alt="Avatar" class="w-20 h-20 rounded">
+                                <div class="ml-4">
+                                    <h2 class="text-lg font-semibold">C. Hilda del Rosario Gaxiola Gómez</h2>
+                                    <p class="text-sm text-gray-500">Jefa del Depto. de Nominas, Auditorias y Prestaciones Económicas</p>
+                                    <p class="text-sm text-gray-600">Extensión: 128 | Email: rh@cecytebcs.edu.mx</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- persona -->
+                    <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="img_dt/img_da/img_angeles_evelyn_ezpinoza_aamador.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                                <div class="ml-4">
+                                    <h2 class="text-lg font-semibold">C. Ángeles Evelyn Espinoza Amador</h2>
+                                    <p class="text-sm text-gray-500">Jefa del Depto. de Administración de Personal</p>
+                                    <p class="text-sm text-gray-600">Extensión: 122 | Email: rh@cecytebcs.edu.mx</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- persona -->
+                    <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="img_dt/img_da/img_cristian_eleazar_salgado.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                                <div class="ml-4">
+                                    <h2 class="text-lg font-semibold">C. Cristian Eleazar Salgado Landa</h2>
+                                    <p class="text-sm text-gray-500">Auxiliar de Recursos Humanos</p>
+                                    <p class="text-sm text-gray-600">Extensión: 127 | Email: rh@cecytebcs.edu.mx</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- persona -->
+                    <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="img_dt/img_da/img_maria_del_rosario_peña.png" alt="Avatar" class="w-20 h-20 rounded">
+                                <div class="ml-4">
+                                    <h2 class="text-lg font-semibold">C. Maria del Rosario De la Peña Rochin</h2>
+                                    <p class="text-sm text-gray-500">Auxiliar de Recursos Humanos</p>
+                                    <p class="text-sm text-gray-600">Extensión: 122 | Email: rh@cecytebcs.edu.mx</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                     <!-- persona -->
+                     <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="img_dt/img_da/img_jesus_wencelao.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                                <div class="ml-4">
+                                    <h2 class="text-lg font-semibold">C. Jesus Wenceslao Guluarte</h2>
+                                    <p class="text-sm text-gray-500">Auxiliar de Recursos Humanos</p>
+                                    <p class="text-sm text-gray-600">Extensión: 108 | Email: rh@cecytebcs.edu.mx</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- persona -->
+                    <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="img_dt/img_da/img_maria_jose_huerta.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                                <div class="ml-4">
+                                    <h2 class="text-lg font-semibold">C. María José  Meza Huerta</h2>
+                                    <p class="text-sm text-gray-500">Movimientos Afiliatorios de ISSSTE</p>
+                                    <p class="text-sm text-gray-600">Extensión: 109 | Email: rh@cecytebcs.edu.mx</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- persona -->
+                    <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="img_dt/" alt="Avatar" class="w-20 h-20 rounded">
+                                <div class="ml-4">
+                                    <h2 class="text-lg font-semibold">C. Daniel Carillo Cortes</h2>
+                                    <p class="text-sm text-gray-500">Jefe de Departamento de Informática</p>
+                                    <p class="text-sm text-gray-600">-----</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- persona -->
+                    <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="img_dt/" alt="Avatar" class="w-20 h-20 rounded">
+                                <div class="ml-4">
+                                    <h2 class="text-lg font-semibold">C.Samuel Hernandez Murillo</h2>
+                                    <p class="text-sm text-gray-500">Departamento de Programacion y procesos Informáticos </p>
+                                    <p class="text-sm text-gray-600">Extensión: 163 |</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- persona -->
+                    <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="img_dt/img_da/img_yoliztli_villavicencio.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                                <div class="ml-4">
+                                    <h2 class="text-lg font-semibold">C. Yoliztli Villavicencio Vélazquez</h2>
+                                    <p class="text-sm text-gray-500">Auxiliar Administrativo y Soporte Técnico</p>
+                                    <p class="text-sm text-gray-600">Extensión: 166 | Email: yoliztli.villavicencio@cecytebcs.edu.mx</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- persona -->
+                    <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="img_dt/img_da/img_claudia_luz_arballo.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                                <div class="ml-4">
+                                    <h2 class="text-lg font-semibold">C. Claudia Luz Arballo Cota</h2>
+                                    <p class="text-sm text-gray-500">Jefe del Departamento de Recursos Materiales</p>
+                                    <p class="text-sm text-gray-600">Extensión: 124 | Email: r.materiales@cecytebcs.edu.mx</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- persona -->
+                    <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="img_dt/img_da/img_marianela_bareño_gerardo.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                                <div class="ml-4">
+                                    <h2 class="text-lg font-semibold">C. Marianela Bareño Gerardo</h2>
+                                    <p class="text-sm text-gray-500">Encargada del Departamento de Recursos Materiales</p>
+                                    <p class="text-sm text-gray-600">Extensión: 124 | Email: ingresos.propios@cecytebcs.edu.mx</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- persona -->
+                    <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="img_dt/img_da/img_sandra_mireya_lucero.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                                <div class="ml-4">
+                                    <h2 class="text-lg font-semibold">C. Sandra Mireya Lucero Araiza</h2>
+                                    <p class="text-sm text-gray-500">Auxiliar del Departamento de Recursos Materiales</p>
+                                    <p class="text-sm text-gray-600">Extensión: 164 | Email: almacen@cecytebcs.edu.mx</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- persona -->
+                    <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="img_dt/img_da/img_rodolfo_estrada_martinez.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                                <div class="ml-4">
+                                    <h2 class="text-lg font-semibold">C. Rodolfo Estrada Martínez</h2>
+                                    <p class="text-sm text-gray-500">Auxiliar del Departamento de Recursos Materiales</p>
+                                    <p class="text-sm text-gray-600">Extensión: 164 | Email: rodolfo.estrada@cecytebcs.edu.mx</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- persona -->
+                    <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="img_dt/img_da/img_jose_david_olachea.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                                <div class="ml-4">
+                                    <h2 class="text-lg font-semibold">C. José David Olachea Pérez</h2>
+                                    <p class="text-sm text-gray-500">Jefe del Departamento de Recursos Financieros</p>
+                                    <p class="text-sm text-gray-600">Extensión: 129 | Email: r.financieros@cecytebcs.edu.mx</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- persona -->
+                    <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="img_dt/img_da/img_cynthia_ivette_mendez.png" alt="Avatar" class="w-20 h-20 rounded">
+                                <div class="ml-4">
+                                    <h2 class="text-lg font-semibold">C. Cynthia Ivette Méndez Martin</h2>
+                                    <p class="text-sm text-gray-500">Ingresos Propios</p>
+                                    <p class="text-sm text-gray-600">Extensión: 123 | Email: rh@cecytebcs.edu.mx</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- persona -->
+                    <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="img_dt/img_da/img_christian_julian_romero.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                                <div class="ml-4">
+                                    <h2 class="text-lg font-semibold">C. Christian Julián Romero Martínez</h2>
+                                    <p class="text-sm text-gray-500">Jefe del Departamento de Servicios Generales</p>
+                                    <p class="text-sm text-gray-600">Extensión: 126 | Email: servicios@cecytebcs.edu.mx</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div id="pla" class="tab-content hidden">
+                <ul class="divide-y divide-gray-200">
+                    <!-- persona -->
+                    <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="img_dt/img_dp/img_karla_zule_dir.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                                <div class="ml-4">
+                                    <h2 class="text-lg font-semibold">C. Karla Zulema Gaxiola Gómez</h2>
+                                    <p class="text-sm text-gray-500">Directora de Planeación y Evaluación.</p>
+                                    <p class="text-sm text-gray-600">Extensión: 140 | Email: planeacion@cecytebcs.edu.mx</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                     <!-- persona -->
+                     <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="img_dt/img_dp/cecilia_miranda_amador.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                                <div class="ml-4">
+                                    <h2 class="text-lg font-semibold">C. Cecilia Miranda Amador</h2>
+                                    <p class="text-sm text-gray-500">Subdirectora de Planeación y Evaluación</p>
+                                    <p class="text-sm text-gray-600">Extensión: 145 | Email: inventario@cecytebcs.edu.mx</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- persona -->
+                    <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="img_dt/img_dp/img_liliana_favela.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                                <div class="ml-4">
+                                    <h2 class="text-lg font-semibold">C. Liliana Favela Rodríguez</h2>
+                                    <p class="text-sm text-gray-500">Secretaria de Dirección de Planeación y Evaluación</p>
+                                    <p class="text-sm text-gray-600">Extensión: 141 | Email: planeacion@cecytebcs.edu.mx</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- persona -->
+                    <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="img_dt/img_dp/img_miguel_angel_heras.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                                <div class="ml-4">
+                                    <h2 class="text-lg font-semibold">C. Miguel Angel Gutiérrez Heras</h2>
+                                    <p class="text-sm text-gray-500">Evaluación y Seguimiento</p>
+                                    <p class="text-sm text-gray-600">Extensión: 143 | Email: evaluacion.planeacion@cecytebcs.edu.mx</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- persona -->
+                    <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="img_dt/img_dp/img_monica_bañales.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                                <div class="ml-4">
+                                    <h2 class="text-lg font-semibold">C. Mónica Bañales Cossio</h2>
+                                    <p class="text-sm text-gray-500">Infraestructura Educativa</p>
+                                    <p class="text-sm text-gray-600">Extensión: 144 | Email: aux.presupuesto@cecytebcs.edu.mx</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- persona -->
+                    <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="img_dt/img_dp/img_carmene_yadira_sanchez.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                                <div class="ml-4">
+                                    <h2 class="text-lg font-semibold">C. Carmen Yadira Sánchez Nuñez</h2>
+                                    <p class="text-sm text-gray-500">Auxiliar de Planeación y Evaluación</p>
+                                    <p class="text-sm text-gray-600">Extensión: 146 | Email: aux.planeacion@cecytebcs.edu.mx</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- persona -->
+                    <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="img_dt/img_dp/img_fabiola_patricia.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                                <div class="ml-4">
+                                    <h2 class="text-lg font-semibold">C. Fabiola Patricia Velázquez Calderón</h2>
+                                    <p class="text-sm text-gray-500">Auxiliar de Presupuesto</p>
+                                    <p class="text-sm text-gray-600">Extensión: 144 | Email: aux.presupuesto@cecytebcs.edu.mx</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                     <!-- persona -->
+                     <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="img_dt/img_dp/img_sergio_salgado.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                                <div class="ml-4">
+                                    <h2 class="text-lg font-semibold">C. Sergio Ernesto Salgado Miranda</h2>
+                                    <p class="text-sm text-gray-500">Inventarios</p>
+                                    <p class="text-sm text-gray-600">Extensión: 147 | Email: bienes.planeacion@cecytebcs.edu.mx</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                     <!-- persona -->
+                     <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="img_dt/img_dp/img_monica_lizet_marquez.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                                <div class="ml-4">
+                                    <h2 class="text-lg font-semibold">C. Mónica Lizet Márquez Lara</h2>
+                                    <p class="text-sm text-gray-500">Inventarios</p>
+                                    <p class="text-sm text-gray-600">Extensión: 147 | Email: inventario@cecytebcs.edu.mx</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                     <!-- persona -->
+                     <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="img_dt/img_dp/img_domingo_guzman.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                                <div class="ml-4">
+                                    <h2 class="text-lg font-semibold">C. Domingo Guzman Higuera Higuera</h2>
+                                    <p class="text-sm text-gray-500">Inventarios</p>
+                                    <p class="text-sm text-gray-600">Extensión: 147 | Email: inventario@cecytebcs.edu.mx</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Secciones de contactos -->
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+        <div id="aca" class="tab-content">
+            <ul class="divide-y divide-gray-200">
+                <!-- persona -->
+                <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="img_dt/img_daca/img_roberto_carlos.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                            <div class="ml-4">
+                                <h2 class="text-lg font-semibold">
+                                    C. Roberto C. Martínez Zavala</h2>
+                                <p class="text-sm text-gray-500">Director Académico</p>
+                                <p class="text-sm text-gray-600">Extensión: 130 | Email: direccionacademica@cecytebcs.edu.mx</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                 <!-- persona -->
+                 <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="img_dt/img_daca/img_norma_leticia.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                            <div class="ml-4">
+                                <h2 class="text-lg font-semibold">
+                                    C. Norma Leticia León Avilés</h2>
+                                <p class="text-sm text-gray-500">Secretaria de Dirección Académica</p>
+                                <p class="text-sm text-gray-600">Extensión: 131 | Email: direccionacademica@cecytebcs.edu.mx</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- persona -->
+                <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="img_dt/img_daca/img_norma_romero.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                            <div class="ml-4">
+                                <h2 class="text-lg font-semibold">
+                                    C. Minerva Romero Cinco</h2>
+                                <p class="text-sm text-gray-500">Subdirectora Académica</p>
+                                <p class="text-sm text-gray-600">Extensión: 132 | Email: subdir.academico@cecytebcs.edu.mx</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- persona -->
+                <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="img_dt/img_daca/img_ingrid_danahi_pacheco.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                            <div class="ml-4">
+                                <h2 class="text-lg font-semibold">
+                                    C. Ingrid Danahí Pacheco Pérez</h2>
+                                <p class="text-sm text-gray-500">Jefa de Departamento de Capacitación y Desarrollo</p>
+                                <p class="text-sm text-gray-600">Extensión: 137 | Email: desarrollo.academico@cecytebcs.edu.mx</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- persona -->
+                <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="img_dt/img_daca/img_rosa_isela_meza.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                            <div class="ml-4">
+                                <h2 class="text-lg font-semibold">
+                                    C. Rosa Isela Meza Castro</h2>
+                                <p class="text-sm text-gray-500">Asistente Académico</p>
+                                <p class="text-sm text-gray-600">Extensión: 173 | Email: asistente.academico@cecytebcs.edu.mx</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- persona -->
+                <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="img_dt/img_daca/img_marco_antonio.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                            <div class="ml-4">
+                                <h2 class="text-lg font-semibold">
+                                    C. Marco Antonio Hirales Patrón</h2>
+                                <p class="text-sm text-gray-500">Registro, Certificación y Titulación</p>
+                                <p class="text-sm text-gray-600">Extensión: 134 | Email: marco.hirales@cecytebcs.edu.mx</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- persona -->
+                <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="img_dt/img_daca/img_candelaria_erika.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                            <div class="ml-4">
+                                <h2 class="text-lg font-semibold">
+                                    C. Candelaria Erika Coronado García</h2>
+                                <p class="text-sm text-gray-500">Registro, Certificación y Titulación</p>
+                                <p class="text-sm text-gray-600">Extensión: 134 | Email: aux.docentes@cecytebcs.edu.mx</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- persona -->
+                <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="img_dt/img_daca/img_oscar_guevara.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                            <div class="ml-4">
+                                <h2 class="text-lg font-semibold">
+                                    C. Oscar Guevara Domínguez</h2>
+                                <p class="text-sm text-gray-500">Jefe del Depto. de Seguimiento y Desarrollo Académico</p>
+                                <p class="text-sm text-gray-600">Extensión: 138 | Email: seguimiento.academico@cecytebcs.edu.mx</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- persona -->
+                <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="img_dt/img_daca/img_angelica_yadira_ramos.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                            <div class="ml-4">
+                                <h2 class="text-lg font-semibold">
+                                    C. Angélica Yadira Ramos Manriquez</h2>
+                                <p class="text-sm text-gray-500">Encargada del Depto. de Servicios Escolares</p>
+                                <p class="text-sm text-gray-600">Extensión: 170 | Email:  Email: serv.escolares@cecytebcs.edu.mx</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- persona -->
+                <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="img_dt/img_daca/img_candelaria_erika.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                            <div class="ml-4">
+                                <h2 class="text-lg font-semibold">
+                                    C. Glenda Insunza Valdez</h2>
+                                <p class="text-sm text-gray-500">Control Escolar de Planteles CECyT</p>
+                                <p class="text-sm text-gray-600">Extensión: 172 | Email: serv.escolares@cecytebcs.edu.mx</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- persona -->
+                <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="img_dt/img_daca/img_myriam_guadalupe.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                            <div class="ml-4">
+                                <h2 class="text-lg font-semibold">
+                                    C. Myriam Guadalupe Cazares Rojas</h2>
+                                <p class="text-sm text-gray-500">Control Escolar EMSaD</p>
+                                <p class="text-sm text-gray-600">Extensión: 171 | Email: escolares.emsad@cecytebcs.edu.mx</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- persona -->
+                <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="img_dt/img_daca/img_francis_alicia_caro.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                            <div class="ml-4">
+                                <h2 class="text-lg font-semibold">
+                                    C. Francis Alicia Caro Gómez</h2>
+                                <p class="text-sm text-gray-500">Jefa del Depto. de Orientación y Extensión Educativa</p>
+                                <p class="text-sm text-gray-600">Extensión: 173 | Email: orientacion@cecytebcs.edu.mx</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- persona -->
+                <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="img_dt/img_daca/img_francisco_rodriguez.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                            <div class="ml-4">
+                                <h2 class="text-lg font-semibold">
+                                    C. Francisco Rodriguez Gerardo</h2>
+                                <p class="text-sm text-gray-500">Jefe de Oficina de Orientación Educativa</p>
+                                <p class="text-sm text-gray-600">Extensión: 138 | Email: francisco.rodriguez@cecytebcs.edu.mx</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- persona -->
+                <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="img_dt/img_daca/img_manuel_catalan.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                            <div class="ml-4">
+                                <h2 class="text-lg font-semibold">
+                                    C. Manuel Catalán Galván</h2>
+                                <p class="text-sm text-gray-500">Encargado de Planes y Programas de Estudios</p>
+                                <p class="text-sm text-gray-600">Extensión: 105 | Email:  @cecytebcs.edu.mx</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+        <div id="vinc" class="tab-content">
+            <ul class="divide-y divide-gray-200">
+                <!-- persona -->
+                <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="img_dt/img_vinc/img_imer_noe.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                            <div class="ml-4">
+                                <h2 class="text-lg font-semibold">
+                                    C. Imer Noé Osuna Cárdenas</h2>
+                                <p class="text-sm text-gray-500">Director de Vinculación</p>
+                                <p class="text-sm text-gray-600">Ext: 181 | Email: vinculacion@cecytebcs.edu.mx</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                 <!-- persona -->
+                 <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="img_dt/img_vinc/img_marlen_leyva.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                            <div class="ml-4">
+                                <h2 class="text-lg font-semibold">
+                                    C. Marlen Leyva Montaño</h2>
+                                <p class="text-sm text-gray-500">Secretaria de Dirección de Vinculación</p>
+                                <p class="text-sm text-gray-600">Ext: 181 | Email: vinculacion@cecytebcs.edu.mx</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- persona -->
+                <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="img_dt/img_vinc/img_sandra_luz.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                            <div class="ml-4">
+                                <h2 class="text-lg font-semibold">
+                                    C. Sandra Luz Orozco Peña</h2>
+                                <p class="text-sm text-gray-500">Seguimiento a Egresados</p>
+                                <p class="text-sm text-gray-600">Ext: 181 | Email: seguimiento.egresados@cecytebcs.edu.mx</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- persona -->
+                <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="img_dt/img_vinc/img_jorge_alberto.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                            <div class="ml-4">
+                                <h2 class="text-lg font-semibold">
+                                    C. Jorge Alberto Sánchez Aguirre.</h2>
+                                <p class="text-sm text-gray-500"></p>
+                                <p class="text-sm text-gray-600">Ext: 181 | Email: diseno.vinculacion@cecytebcs.edu.mx</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- persona -->
+                <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="img_dt/img_vinc/img_rigoberto_burgoin.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                            <div class="ml-4">
+                                <h2 class="text-lg font-semibold">
+                                    C. Rigoberto Castro Burgoin.</h2>
+                                <p class="text-sm text-gray-500">Extensión Educativa</p>
+                                <p class="text-sm text-gray-600">Ext: 181 | Email: extension.educativa@cecytebcs.edu.mx</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+        <div id="cont" class="tab-content">
+            <ul class="divide-y divide-gray-200">
+                <!-- persona -->
+                <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="img_dt/img_cont/img_ana_karen.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                            <div class="ml-4">
+                                <h2 class="text-lg font-semibold">
+                                    C. Ana Karen Lagarda Lara</h2>
+                                <p class="text-sm text-gray-500">Directora de Contabilidad</p>
+                                <p class="text-sm text-gray-600">Extensión: 150 | Email: contabilidad@cecytebcs.edu.mx</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                 <!-- persona -->
+                 <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="img_dt/img_cont/img_acela_susana.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                            <div class="ml-4">
+                                <h2 class="text-lg font-semibold">
+                                    C. Acela Susana Anzaldo Romero</h2>
+                                <p class="text-sm text-gray-500">Jefe de Departamento de Contabilidad</p>
+                                <p class="text-sm text-gray-600">Extensión: 151 | Email: acela.anzaldo@cecytebcs.edu.mx</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- persona -->
+                <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="img_dt/img_cont/img_claudia_guluarte.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                            <div class="ml-4">
+                                <h2 class="text-lg font-semibold">
+                                    C. Claudia Guluarte Gutierrez</h2>
+                                <p class="text-sm text-gray-500">Jefe de Oficina de Contabilidad</p>
+                                <p class="text-sm text-gray-600">Extensión: 152 | Email: claudia.guluarte@cecytebcs.edu.mx</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- persona -->
+                <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="img_dt/img_cont/img_anabel_cancino.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                            <div class="ml-4">
+                                <h2 class="text-lg font-semibold">
+                                    C. Anabel Cancino Rubio</h2>
+                                <p class="text-sm text-gray-500">Fondo Revolvente Planteles Cecyt | Tienda Escolar</p>
+                                <p class="text-sm text-gray-600">Extensión: 110 | Email: anabel.cancino@cecytebcs.edu.mx</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- persona -->
+                <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="img_dt/img_cont/img_misael_cosio.jpg" alt="Avatar" class="w-20 h-20 rounded">
+                            <div class="ml-4">
+                                <h2 class="text-lg font-semibold">
+                                    C. Missael De Jesús Cosio Ruiz</h2>
+                                <p class="text-sm text-gray-500">Fondo Revolvente Centros Emsad | Viáticos</p>
+                                <p class="text-sm text-gray-600">Extensión: 152 | Email: misael.cosio@cecytebcs.edu.mx</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    
+
+
+    
+
+    <!-- Script para la funcionalidad de tabs y búsqueda -->
+    <script>
+        const buttons = document.querySelectorAll('.tab-button');
+        const contents = document.querySelectorAll('.tab-content');
+        const searchInput = document.getElementById('searchInput');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                buttons.forEach(btn => btn.classList.replace('bg-orange-500', 'bg-gray-300'));
+                button.classList.replace('bg-gray-300', 'bg-orange-500');
+
+                contents.forEach(content => content.classList.add('hidden'));
+                document.getElementById(button.getAttribute('data-tab')).classList.remove('hidden');
+            });
+        });
+
+        searchInput.addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            const activeTab = document.querySelector('.tab-content:not(.hidden)');
+            const contacts = activeTab.querySelectorAll('li');
+
+            contacts.forEach(contact => {
+                const name = contact.querySelector('h2').textContent.toLowerCase();
+                const phone = contact.querySelector('p:nth-child(3)').textContent.toLowerCase();
+                const position = contact.querySelector('p:nth-child(2)').textContent.toLowerCase();
+
+                if (name.includes(searchTerm) || phone.includes(searchTerm) || position.includes(searchTerm)) {
+                    contact.style.display = 'flex';
+                } else {
+                    contact.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
