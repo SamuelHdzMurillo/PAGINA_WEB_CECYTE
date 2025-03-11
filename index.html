@@ -238,24 +238,150 @@
     
        
 
-    <!-- SECTION HERO INICIO -->
-    <section class="hero-section flex items-center justify-center bg-white-500">
-      <div class="container mx-auto">
-        <div class="flex flex-col md:flex-row justify-between">
-          <div class="w-full md:w-1/2 p-8 animate__animated animate__fadeInLeft bg-green-600 bg-opacity-80 flex items-center justify-center sticky top-0">
-            <!-- Left Div Content -->
-            <img src="img_logos/logo_Cecyte_vertical_sin_fondo.png" alt="Imagen" class="max-w-full mb-4">
-          </div>
-          <div class="w-full md:w-1/2 p-8 animate__animated animate__fadeInRight bg-orange-500 bg-opacity-60">
-            <!-- Right Div Content -->
-            <h1 class="text-4xl font-bold text-white">Colegio de Estudios Científicos y Tecnológicos.</h1>
-            <p class="text-2xl font-bold text-white mt-4">“Ciencia y Tecnología, Luz y Camino”</p>
+<!-- SECTION HERO INICIO -->
+<section class="hero-section min-h-screen relative overflow-hidden">
+  <!-- Capa negra constante -->
+  <div class="absolute inset-0 bg-black opacity-50 z-10"></div>
 
-          </div>
+  <!-- Fondo dinámico con transición suave -->
+  <div class="absolute inset-0 bg-cover bg-center" id="bgSlideshow"></div>
+
+  <!-- Main content container -->
+  <div class="container mx-auto px-4 h-screen flex items-center relative z-20">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <!-- Left column - Logo -->
+      <div class="relative animate-float">
+        <img 
+          src="img_logos/logo_Cecyte_vertical_sin_fondo.png" 
+          alt="CECyTE Logo" 
+          class="relative max-w-md mx-auto transform hover:scale-105 transition-all duration-500 drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]"
+        >
+      </div>
+
+      <!-- Right column - Text content -->
+      <div class="text-center md:text-left space-y-8 animate-fadeIn">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight animate-slideRight">
+          Colegio de Estudios 
+          <span class="text-orange-400">Científicos</span> y 
+          <span class="text-orange-400">Tecnológicos</span>
+        </h1>
+        <p class="text-2xl md:text-3xl text-gray-200 font-light italic animate-slideUp">
+          "Ciencia y Tecnología, Luz y Camino"
+        </p>
+        <p class="text-lg text-gray-300 max-w-xl animate-fadeIn">
+          Formando líderes del mañana con excelencia académica y valores sólidos para un futuro brillante.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+          <a href="#programas" 
+             class="px-8 py-4 bg-orange-500 text-white font-bold rounded-lg hover:bg-orange-600 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+            Explorar Programas
+          </a>
+          <a href="#contacto" 
+             class="px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+            Contactar
+          </a>
         </div>
       </div>
-    </section>
-    <!-- SECTION HERO INICIO -->
+    </div>
+  </div>
+
+  <script>
+    const backgroundImages = [
+      'img_recuros_pagina/img_noticias/beisbol.jpg',
+      'img_recuros_pagina/img_noticias/escolta_2.jpg',
+      'img_recuros_pagina/img_noticias/futbol_2.jpg',
+    ];
+
+    let currentImageIndex = 0;
+    let nextImageIndex = 1;
+    const bgSlideshow = document.getElementById('bgSlideshow');
+    const TRANSITION_DURATION = 1000;
+    const DISPLAY_DURATION = 5000;
+
+    // Create and preload images
+    const preloadedImages = backgroundImages.map(src => {
+      const img = new Image();
+      img.src = src;
+      return img;
+    });
+
+    function updateBackground() {
+      // Set next image as background but keep it hidden
+      const nextImage = backgroundImages[nextImageIndex];
+      const currentOpacity = window.getComputedStyle(bgSlideshow).opacity;
+      
+      // Create a new div for the next image
+      const nextDiv = document.createElement('div');
+      nextDiv.className = 'absolute inset-0 bg-cover bg-center';
+      nextDiv.style.backgroundImage = `url('${nextImage}')`;
+      nextDiv.style.opacity = '0';
+      nextDiv.style.transition = `opacity ${TRANSITION_DURATION}ms ease-in-out`;
+      bgSlideshow.parentNode.insertBefore(nextDiv, bgSlideshow.nextSibling);
+
+      // Fade in next image while fading out current
+      requestAnimationFrame(() => {
+        nextDiv.style.opacity = '1';
+        bgSlideshow.style.opacity = '0';
+      });
+
+      // After transition, cleanup and prepare for next
+      setTimeout(() => {
+        bgSlideshow.style.backgroundImage = `url('${nextImage}')`;
+        bgSlideshow.style.opacity = '1';
+        nextDiv.remove();
+        
+        currentImageIndex = nextImageIndex;
+        nextImageIndex = (nextImageIndex + 1) % backgroundImages.length;
+      }, TRANSITION_DURATION);
+    }
+
+    // Initialize first image
+    bgSlideshow.style.backgroundImage = `url('${backgroundImages[currentImageIndex]}')`;
+    bgSlideshow.style.opacity = '1';
+
+    // Start slideshow after all images are loaded
+    Promise.all(preloadedImages.map(img => {
+      return new Promise((resolve) => {
+        if (img.complete) resolve();
+        img.onload = resolve;
+      });
+    })).then(() => {
+      setInterval(updateBackground, DISPLAY_DURATION + TRANSITION_DURATION);
+    });
+
+    // Add custom animations
+    const style = document.createElement('style');
+    style.textContent = `
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-20px); }
+        100% { transform: translateY(0px); }
+      }
+      
+      @keyframes slideRight {
+        from { transform: translateX(-100%); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
+      }
+      
+      @keyframes slideUp {
+        from { transform: translateY(50px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+      }
+      
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      
+      .animate-float { animation: float 6s ease-in-out infinite; }
+      .animate-slideRight { animation: slideRight 1s ease-out; }
+      .animate-slideUp { animation: slideUp 1s ease-out 0.5s backwards; }
+      .animate-fadeIn { animation: fadeIn 2s ease-out; }
+    `;
+    document.head.appendChild(style);
+  </script>
+</section>
+<!-- SECTION HERO FIN -->
 
 
    
