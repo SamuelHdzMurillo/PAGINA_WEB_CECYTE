@@ -240,86 +240,107 @@
     </button>
     <!-- BOTON SUBIR FIN -->
 
-    <!-- Contenido Principal -->
-    <main class="container mx-auto px-6 py-12 space-y-16">
-      <!-- Logo Hero Section -->
-      <section class="order-first bg-green-700 rounded-lg shadow-lg p-12 text-center">
-        <img
-          src="../img_logos/logo_Cecyte_vertical_sin_fondo.png"
-          alt="Logo de la Institución"
-          class="w-60 mx-auto drop-shadow-xl mb-6"
-        />
-        <h1 class="text-4xl font-extrabold text-white mb-4">Bienvenido a CECyTE BCS</h1>
-        <p class="text-lg text-white/90">
-          Formamos estudiantes líderes con valores y habilidades para transformar su entorno.
-        </p>
-      </section>
-    
-      <!-- Misión -->
-      <section class="bg-white shadow-md rounded-xl overflow-hidden">
-        <div class="grid md:grid-cols-2 items-center">
-          <div class="p-8">
-            <h2 class="text-3xl font-bold text-green-700 mb-4">Misión</h2>
-            <p class="text-lg text-gray-700">
-              Proveer educación media superior de calidad que combine conocimiento teórico y técnico, con especial atención a jóvenes de áreas rurales y semiurbanas.
-            </p>
-          </div>
-          <div class="flex items-center justify-center">
-            <img src="../img_recuros_pagina/IMG_COVER_ALUMNOS_SALACOMPUTO.jpg" alt="Icono de Misión" class="w-full h-full object-cover">
-          </div>
+    <!-- Main Content -->
+<main class="container mx-auto px-4 py-16 space-y-20">
+  <!-- Hero Section -->
+  <section class="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+    <div class="absolute inset-0 hero-overlay"></div>
+    <img src="../img_recuros_pagina/IMG_COVER_ALUMNOS_SALACOMPUTO.jpg" 
+         alt="School Hero" 
+         class="w-full h-full object-cover">
+    <div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center p-8">
+      <img src="../img_logos/logo_Cecyte_vertical_sin_fondo.png" 
+           alt="CECyTE Logo" 
+           class="w-40 mb-8 animate__animated animate__fadeInDown">
+      <h1 class="text-5xl font-bold mb-4 animate__animated animate__fadeInUp">
+        Colegio de Estudios Científicos y Tecnológicos
+      </h1>
+      <p class="text-xl animate__animated animate__fadeInUp animate__delay-1s">
+        Formando líderes para el futuro
+      </p>
+    </div>
+  </section>
+
+  <!-- Mission & Vision Section -->
+  <section class="grid md:grid-cols-2 gap-8">
+    <div class="content-card section-fade-in">
+      <div class="p-8 h-full">
+        <div class="flex items-center mb-6">
+          <i class="fas fa-bullseye text-3xl text-green-600 mr-4"></i>
+          <h2 class="text-3xl font-bold text-green-700">Misión</h2>
         </div>
-      </section>
-    
-      <!-- Visión -->
-      <section class="bg-white shadow-md rounded-xl overflow-hidden">
-        <div class="grid md:grid-cols-2 items-center">
-          <div class="flex items-center justify-center">
-            <img src="../img_recuros_pagina/img_noticias/arteyculturapeidra_noticias.jpg" alt="Icono de Visión" class="w-full h-full object-cover">
-          </div>
-          <div class="p-8">
-            <h2 class="text-3xl font-bold text-orange-600 mb-4">Visión</h2>
-            <p class="text-lg text-gray-700">
-              Ser una institución que forme estudiantes integrales, preparados para la sociedad del conocimiento y el mercado laboral, con vínculos sólidos con sus comunidades.
-            </p>
-          </div>
-        </div>
-      </section>
-    
-      <!-- Objetivo General -->
-      <section class="relative bg-gray-50 shadow-lg rounded-xl p-8">
-        <h2 class="text-3xl font-bold text-green-700 mb-4">Objetivo General</h2>
-        <p class="text-lg text-gray-700">
-          Ofrecer educación sustentada en valores, habilidades tecnológicas y competencias que impulsen la ciencia, la ecología y la identidad cultural.
+        <p class="text-gray-700 leading-relaxed">
+          Asegurar la impartición de los servicios de Educación Media Superior en sus modalidades de bachillerato general y bachillerato tecnológico, conjugando convenientemente el conocimiento teórico que enfatice su vertiente propedéutica y el logro de competencias, habilidades y destrezas que den ascendencia a su línea tecnológica, así como facilitar el acceso al conocimiento y a la preparación técnica a los jóvenes, particularmente a los avecinados en el medio rural o semiurbano.
         </p>
-        <div class="absolute inset-x-0 bottom-0 h-2 bg-orange-500"></div>
-      </section>
-    
-      <!-- Objetivos Específicos -->
-      <section class="relative bg-white shadow-md rounded-xl p-8 space-y-4">
-        <h2 class="text-3xl font-bold text-green-700 mb-4">Objetivos Específicos</h2>
-        <ul class="text-lg text-gray-700 list-disc list-inside space-y-2">
-          <li>Promover orientación académica y profesional efectiva.</li>
-          <li>Fomentar la permanencia escolar con apoyos académicos y económicos.</li>
-          <li>Impulsar la participación en actividades científicas y culturales.</li>
-          <li>Administrar recursos eficientemente para atender las demandas educativas.</li>
+      </div>
+    </div>
+
+    <div class="content-card section-fade-in">
+      <div class="p-8 h-full">
+        <div class="flex items-center mb-6">
+          <i class="fas fa-eye text-3xl text-orange-600 mr-4"></i>
+          <h2 class="text-3xl font-bold text-orange-600">Visión</h2>
+        </div>
+        <p class="text-gray-700 leading-relaxed">
+          El CECyTE-BCS se propone lograr una formación educativa integral,  de calidad, que permita a sus egresados participar en la sociedad del conocimiento, realizar estudios de nivel superior e integrarse al campo laboral de manera exitosa, constituyendo  los servicios de educación media superior en un espacio de convivencia juvenil ordenada, plural y respetuosa, que fomente el aprendizaje colaborativo y la discusión en un ambiente de libertad y rigor académico que vincule  los centros escolares con sus propias comunidades para lograr una interrelación más estrecha y pertinente entre planes y programas de estudio, el ámbito laboral y el desarrollo sustentables entre regiones y microrregiones del Estado de BCS.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Objectives Section -->
+<section class="bg-gray-50 rounded-2xl p-12 shadow-xl section-fade-in">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-4xl font-bold text-center text-green-700 mb-12">
+      Objetivos Institucionales
+    </h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow">
+        <h3 class="text-2xl font-semibold text-orange-600 mb-4">
+          Objetivo General
+        </h3>
+        <p class="text-gray-700">
+          Impartir la educación en el nivel medio superior en las modalidades de bachillerato general y bachillerato tecnológico, a través de los centros EMSaD y planteles CECyT. Nuestro enfoque combina el conocimiento teórico con habilidades prácticas, asegurando una formación integral que promueve valores humanos, cívicos, y culturales. Además, fomentamos el cuidado de la salud, la conciencia ecológica, y el interés por la ciencia y la tecnología, mediante programas basados en el desarrollo de competencias.
+        </p>
+        <p class="text-gray-700 mt-4">
+          También nos enfocamos en mejorar los resultados educativos, apoyar la permanencia de estudiantes en riesgo de deserción, y promover la equidad de género. Continuamos implementando la Reforma Integral de la Educación Media Superior para integrar más planteles al Sistema Nacional de Bachillerato, garantizando una educación de calidad que responda a las necesidades de la sociedad.
+        </p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow">
+        <h3 class="text-2xl font-semibold text-green-700 mb-4">
+          Objetivos Específicos
+        </h3>
+        <ul class="list-disc list-inside text-gray-700 space-y-2">
+          <li>Promover en los Planteles CECyT y Centros EMSaD la función orientadora para que los alumnos resuelvan problemas escolares y elijan carreras profesionales acordes a sus intereses y aptitudes.</li>
+          <li>Reforzar el proceso de enseñanza-aprendizaje con actividades curriculares y extracurriculares planeadas, fomentando el aprovechamiento social de los recursos naturales.</li>
+          <li>Impulsar cambios en la educación media superior que promuevan la equidad entre hombres y mujeres, construyendo relaciones de igualdad y solidaridad.</li>
+          <li>Emprender estrategias de planeación para el crecimiento del Colegio, atendiendo la demanda con la apertura de nuevas escuelas y mejorando la infraestructura y equipamiento.</li>
+          <li>Administrar eficientemente los recursos del Colegio, cumpliendo con las políticas de la H. Junta Directiva y las normas federales y estatales.</li>
+          <li>Impulsar actividades que promuevan la participación de alumnos y maestros en encuentros científicos y humanísticos para su formación integral.</li>
         </ul>
-        <div class="absolute inset-x-0 bottom-0 h-2 bg-orange-500"></div>
-      </section>
-    
-      <!-- Reseña Histórica -->
-      <section class="relative bg-white shadow-lg rounded-xl p-8">
-        <h2 class="text-3xl font-bold text-green-700 mb-4">Reseña Histórica</h2>
-        <p class="text-lg text-gray-700 mb-6">
-          Fundado en 1993, el CECyTE BCS ha crecido para atender a más de 7,793 estudiantes en todo el estado, ofreciendo educación integral con programas académicos y culturales.
-        </p>
-        <div class="grid md:grid-cols-2 items-center">
-          <img src="../img_logos/Logo-Anterior.gif" alt="Logotipo Original" class="w-30 h-30 object-cover">
-          <p class="text-lg text-gray-700">
-            El logotipo actual simboliza unidad y progreso, con gráficos verdes que representan al país y un átomo que destaca la creatividad juvenil.
-          </p>
-        </div>
-      </section>
-    </main>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ... existing footer content ... -->
+
+<script>
+  // Add intersection observer for fade-in animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.section-fade-in').forEach(section => {
+    observer.observe(section);
+  });
+</script>
     
     
 
@@ -470,3 +491,9 @@
     </script>
   </body>
 </html>
+
+<style>
+  
+</style>
+
+
