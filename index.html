@@ -271,13 +271,16 @@
         <p class="text-lg text-gray-300 max-w-xl animate-fadeIn">
           Formando líderes del mañana con excelencia académica y valores sólidos para un futuro brillante.
         </p>
+        <!-- In the hero section, modify the links -->
         <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-          <a href="#programas" 
-             class="px-8 py-4 bg-orange-500 text-white font-bold rounded-lg hover:bg-orange-600 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+          <a href="#carreras" 
+             class="px-8 py-4 bg-orange-500 text-white font-bold rounded-lg hover:bg-orange-600 transition-all duration-300 transform hover:scale-105 hover:shadow-lg scroll-smooth"
+             onclick="scrollToSection('carreras')">
             Explorar Programas
           </a>
-          <a href="#contacto" 
-             class="px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+          <a href="#footer" 
+             class="px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-105 hover:shadow-lg scroll-smooth"
+             onclick="scrollToSection('footer')">
             Contactar
           </a>
         </div>
@@ -291,6 +294,33 @@
       'img_recuros_pagina/img_noticias/escolta_2.jpg',
       'img_recuros_pagina/img_noticias/futbol_2.jpg',
     ];
+
+    function scrollToSection(sectionId) {
+  event.preventDefault();
+  const element = document.getElementById(sectionId);
+  if (element) {
+    const headerHeight = 120; // Adjust this value to match your header height
+    const elementPosition = element.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth'
+    });
+  }
+}
+
+// Add event listeners after DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+  const links = document.querySelectorAll('a[href^="#"]');
+  links.forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const id = this.getAttribute('href').slice(1);
+      scrollToSection(id);
+    });
+  });
+});
 
     let currentImageIndex = 0;
     let nextImageIndex = 1;
@@ -557,11 +587,135 @@
     
 
     
-  
+  <!-- INICIO SECTION DE CARDS NOTICIAS -->
+  <section class="text-center bg-white p-8 rounded-lg ">
+    <h2 class="text-2xl font-bold text-gray-900">EXPLORA NUESTRAS CARRERAS </h2>
+    <div class="section-separator"></div>
+    <p class="text-gray-500">Última Actualización - MARZO 2025</p>
+  </section>
    
 
     
-     
+     <!-- INICIO SECTION CARRERAS -->
+<section id="carreras" class="bg-white py-16">
+  <div class="container mx-auto px-4">
+    
+
+    <!-- Career Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Programación -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+        <div class="h-48 bg-green-600 flex items-center justify-center">
+          <i class="fas fa-code text-6xl text-white"></i>
+        </div>
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-gray-900 mb-3">Programación</h3>
+          <p class="text-gray-600 mb-4">Conviértete en un experto en desarrollo de software. Aprende lenguajes de programación, desarrollo web y aplicaciones móviles.</p>
+          <ul class="text-gray-600 mb-6">
+            <li class="flex items-center mb-2"><i class="fas fa-check text-green-600 mr-2"></i>Desarrollo Web</li>
+            <li class="flex items-center mb-2"><i class="fas fa-check text-green-600 mr-2"></i>Aplicaciones Móviles</li>
+            <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i>Bases de Datos</li>
+          </ul>
+          <a href="pages_oferta_educativa/programacion.html" class="inline-block bg-green-600 text-white py-2 px-6 rounded-full hover:bg-green-700 transition-colors duration-300">Explorar más</a>
+        </div>
+      </div>
+
+      <!-- Mantenimiento de Equipo de Cómputo -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+        <div class="h-48 bg-blue-600 flex items-center justify-center">
+          <i class="fas fa-laptop text-6xl text-white"></i>
+        </div>
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-gray-900 mb-3">Mantenimiento de Equipo de Cómputo</h3>
+          <p class="text-gray-600 mb-4">Especialízate en el mantenimiento y reparación de equipos informáticos, redes y sistemas operativos.</p>
+          <ul class="text-gray-600 mb-6">
+            <li class="flex items-center mb-2"><i class="fas fa-check text-blue-600 mr-2"></i>Hardware y Software</li>
+            <li class="flex items-center mb-2"><i class="fas fa-check text-blue-600 mr-2"></i>Redes Informáticas</li>
+            <li class="flex items-center"><i class="fas fa-check text-blue-600 mr-2"></i>Soporte Técnico</li>
+          </ul>
+          <a href="pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="inline-block bg-blue-600 text-white py-2 px-6 rounded-full hover:bg-blue-700 transition-colors duration-300">Explorar más</a>
+        </div>
+      </div>
+
+      <!-- Ventas -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+        <div class="h-48 bg-purple-600 flex items-center justify-center">
+          <i class="fas fa-chart-line text-6xl text-white"></i>
+        </div>
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-gray-900 mb-3">Ventas</h3>
+          <p class="text-gray-600 mb-4">Desarrolla habilidades en marketing, negociación y estrategias de venta para destacar en el mundo comercial.</p>
+          <ul class="text-gray-600 mb-6">
+            <li class="flex items-center mb-2"><i class="fas fa-check text-purple-600 mr-2"></i>Marketing Digital</li>
+            <li class="flex items-center mb-2"><i class="fas fa-check text-purple-600 mr-2"></i>Estrategias de Venta</li>
+            <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-2"></i>Atención al Cliente</li>
+          </ul>
+          <a href="pages_oferta_educativa/ventas.html" class="inline-block bg-purple-600 text-white py-2 px-6 rounded-full hover:bg-purple-700 transition-colors duration-300">Explorar más</a>
+        </div>
+      </div>
+
+      <!-- More careers... -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+        <div class="h-48 bg-yellow-600 flex items-center justify-center">
+          <i class="fas fa-mountain text-6xl text-white"></i>
+        </div>
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-gray-900 mb-3">Ecoturismo</h3>
+          <p class="text-gray-600 mb-4">Aprende a gestionar proyectos turísticos sostenibles y a promover la conservación del medio ambiente.</p>
+          <ul class="text-gray-600 mb-6">
+            <li class="flex items-center mb-2"><i class="fas fa-check text-yellow-600 mr-2"></i>Turismo Sostenible</li>
+            <li class="flex items-center mb-2"><i class="fas fa-check text-yellow-600 mr-2"></i>Gestión Ambiental</li>
+            <li class="flex items-center"><i class="fas fa-check text-yellow-600 mr-2"></i>Guía Turístico</li>
+          </ul>
+          <a href="pages_oferta_educativa/ecoturismo.html" class="inline-block bg-yellow-600 text-white py-2 px-6 rounded-full hover:bg-yellow-700 transition-colors duration-300">Explorar más</a>
+        </div>
+      </div>
+
+      <!-- Servicios de Hotelería -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+        <div class="h-48 bg-red-600 flex items-center justify-center">
+          <i class="fas fa-hotel text-6xl text-white"></i>
+        </div>
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-gray-900 mb-3">Servicios de Hotelería</h3>
+          <p class="text-gray-600 mb-4">Prepárate para una carrera en la industria hotelera y turística, desarrollando habilidades en gestión y servicio al cliente.</p>
+          <ul class="text-gray-600 mb-6">
+            <li class="flex items-center mb-2"><i class="fas fa-check text-red-600 mr-2"></i>Gestión Hotelera</li>
+            <li class="flex items-center mb-2"><i class="fas fa-check text-red-600 mr-2"></i>Servicio al Cliente</li>
+            <li class="flex items-center"><i class="fas fa-check text-red-600 mr-2"></i>Organización de Eventos</li>
+          </ul>
+          <a href="pages_oferta_educativa/servicios_de_hoteleria.html" class="inline-block bg-red-600 text-white py-2 px-6 rounded-full hover:bg-red-700 transition-colors duration-300">Explorar más</a>
+        </div>
+      </div>
+
+      <!-- Producción Industrial de Alimentos -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+        <div class="h-48 bg-orange-600 flex items-center justify-center">
+          <i class="fas fa-industry text-6xl text-white"></i>
+        </div>
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-gray-900 mb-3">Producción Industrial de Alimentos</h3>
+          <p class="text-gray-600 mb-4">Especialízate en procesos de producción alimentaria, control de calidad y seguridad alimentaria.</p>
+          <ul class="text-gray-600 mb-6">
+            <li class="flex items-center mb-2"><i class="fas fa-check text-orange-600 mr-2"></i>Procesos de Producción</li>
+            <li class="flex items-center mb-2"><i class="fas fa-check text-orange-600 mr-2"></i>Control de Calidad</li>
+            <li class="flex items-center"><i class="fas fa-check text-orange-600 mr-2"></i>Seguridad Alimentaria</li>
+          </ul>
+          <a href="pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="inline-block bg-orange-600 text-white py-2 px-6 rounded-full hover:bg-orange-700 transition-colors duration-300">Explorar más</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="text-center mt-16">
+      <p class="text-xl text-gray-600 mb-6">¿Listo para comenzar tu viaje profesional?</p>
+      <a href="pages_alumnos/requisitos_de_ingreso.html" class="inline-block bg-green-600 text-white py-3 px-8 rounded-full text-lg font-semibold hover:bg-green-700 transition-colors duration-300">
+        Conoce los Requisitos de Ingreso
+      </a>
+    </div>
+  </div>
+</section>
+<!-- FIN SECTION CARRERAS -->
 
 
      
@@ -618,7 +772,7 @@
 
 
 
-    <footer class="bg-white dark:bg-gray-900">
+    <footer id="footer" class="bg-white dark:bg-gray-900">
       <div class="border-t-4 border-gray-400 dark:border-gray-1000"></div>
       <div class="mx-auto w-full max-w-screen-xl">
         <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
