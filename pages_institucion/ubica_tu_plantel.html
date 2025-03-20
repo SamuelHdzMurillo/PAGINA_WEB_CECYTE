@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ubica tu Plantel - CECyTE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    
+    <style>
+      #map {
+        height: 100vh;
+        width: 100vw;
+        z-index: 0;  /* Changed from 1 to 0 */
+      }
+      /* Add this to ensure navbar stays on top */
+      nav {
+        position: relative;
+        z-index: 9999;
+      }
+      .button-panel {
+        z-index: 9998;
+        background-color: rgba(255, 255, 255, 0.95);
+      }
+      #schoolInfo {
+        z-index: 9997;
+      }
+      
+      .leaflet-control select {
+        min-width: 100px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+   <!-- INCIO NAVBAR CON SUBEMENUS -->
+<nav class="bg-white shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+            <!-- Logo -->
+            <div class="flex-shrink-0 flex items-center">
+                <img src="../img_logos/logo_Cecyte_vertical_sin_fondo.png" alt="logo_Cecyte_vertical_sin_fondo" class="h-12 w-auto">
+            </div>
+            <!-- Responsive menu button -->
+            <div class="flex items-center sm:hidden">
+                <button id="menu-btn" class="text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700">
+                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Navbar links -->
+            <div class="hidden sm:flex sm:items-center sm:ml-6">
+                <div class="relative group">
+                    <a href="../index.html" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Inicio</a>
+                </div>
+                <div class="relative group">
+                    <a href="#" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Institución</a>
+                    <!-- Submenu -->
+                    <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md z-10">
+                        <a href="../pages_institucion/pagina_historia.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Historia, Misión y Visión</a>
+  
+                        <a href="../pages_institucion/planteles_cecyte.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Planteles CecyteBCS</a>
+                        
+                        <a href="../pages_institucion/planteles_emsad.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Planteles Emsad</a>
+                        
+                        <a href="../directorio_telefonico.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Directorio Telefónico</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <a href="#" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Oferta Educativa</a>
+                    <!-- Submenu -->
+                    <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
+                        
+                        <a href="../pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Soporte  y  Mantenimiento equipo de computo</a>
+                        <a href="../pages_oferta_educativa/programacion.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programacion</a>
+                        <a href="../pages_oferta_educativa/ventas.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ventas</a>
+                        <a href="../pages_oferta_educativa/ecoturismo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ecoturismo</a>
+                        <a href="../pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Producción industrial de alimentos</a>
+                        <a href="../pages_oferta_educativa/mantenimiento_industrial.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Mantenimiento Industrial</a>
+                        <a href="../pages_oferta_educativa/servicios_de_hoteleria.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Servicios de Hoteleria</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <a href="#" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Alumnos</a>
+                    <!-- Submenu -->
+                    <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
+                        
+                        <a href="../pages_alumnos/becas.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Becas</a>
+                        <a href="../pages_alumnos/prog_acompanamiento.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programa de Acompañamiento</a>
+                        <a href="../pages_alumnos/requisitos_de_ingreso.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Requisitos de Ingreso</a>
+                    </div>
+                </div>
+  
+                <div class="relative group">
+                  <a href="#" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Normatividad</a>
+                  <!-- Submenu -->
+                  <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
+                      
+                      <a href="../pages_normatividad/manuales_de_procedimientos.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Manuales de Procedimientos</a>
+                      
+  
+                      <a href="../pages_normatividad/manuales_de_org.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Manuales de Organizacion</a>
+  
+                      <a href="https://drive.google.com/file/d/1w1kARXVhw-SFsSY7q7JPBH4MgAqN8C_S/view?usp=drive_link" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Reglamento interno</a>
+  
+                      <a href="https://drive.google.com/file/d/13m142kMwEJ6hj8xaDJXu-XdA-jAkO9jb/view?usp=sharing" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Codigo de Conducta</a>
+  
+                      <a href="https://drive.google.com/file/d/1lIJBD8IXxHcM3hwp7v3VmG2X1EJZXKnG/view?usp=sharing" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Protocolo de Seguridad </a>
+  
+                      
+      
+                  </div>
+              </div>
+  
+                <div class="relative group">
+                  <a href="https://transparencia.cecytebcs.edu.mx/" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Transparencia</a>
+                  <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
+  
+                    <a href="https://transparencia.cecytebcs.edu.mx/informacion-publica/articulo-75" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Articulo 75</a>
+                      
+                    <a href="../pages_transparencia/cuenta_publica.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Cuenta publica</a>
+  
+                    <a href="../pages_transparencia/ley_diciplina.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ley de diciplina Financiera </a>
+  
+                    
+    
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Responsive Menu -->
+    <div class="sm:hidden hidden" id="mobile-menu">
+  <a href="#" class="block text-gray-700 hover:text-green-600 px-4 py-2">Inicio</a>
+  <div class="block">
+      <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="servicios-btn">
+          Institución
+          <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+      </button>
+      <!-- Submenu -->
+      <div class="hidden" id="servicios-submenu">
+          <a href="../pages_institucion/pagina_historia.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Historia, Misión y Visión</a>
+          <a href="../pages_institucion/planteles_cecyte.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Planteles CecyteBCS</a>
+          <a href="../pages_institucion/planteles_emsad.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Planteles Emsad</a>
+          <a href="../directorio_telefonico.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Directorio Telefonico</a>
+      </div>
+  </div>
+  <div class="block">
+      <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="nosotros-btn">
+          Oferta Educativa
+          
+          <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+      </button>
+      
+      <!-- Submenu -->
+      <div class="hidden" id="nosotros-submenu">
+          <a href="../pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Soporte y Mantenimiento equipo de cómputo</a>
+          <a href="../pages_oferta_educativa/programacion.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programación</a>
+          <a href="../pages_oferta_educativa/ventas.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ventas</a>
+          <a href="../pages_oferta_educativa/ecoturismo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ecoturismo</a>
+          <a href="../pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Producción industrial de alimentos</a>
+          <a href="../pages_oferta_educativa/mantenimiento_industrial.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Mantenimiento industrial</a>
+          <a href="../pages_oferta_educativa/servicios_de_hoteleria.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Servicios de Hotelería</a>
+      </div>
+  </div>
+  <div class="block">
+    <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="alumnos-btn">
+      Alumnos
+      <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+      </svg>
+    </button>
+    <!-- Submenu -->
+    <div class="hidden" id="alumnos-submenu">
+      <a href="../pages_alumnos/becas.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Becas</a>
+      <a href="../pages_alumnos/prog_acompanamiento.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programa de Acompañamiento</a>
+      <a href="../pages_alumnos/requisitos_de_ingreso.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Requisitos de Ingreso</a>
+    </div>
+  </div>
+  
+  
+  
+  <div class="block">
+    <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="norma-btn">
+      Normatividad
+      <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+      </svg>
+    </button>
+    <!-- Submenu -->
+    <div class="hidden" id="norma-submenu">
+      <a href="../pages_normatividad/manuales_de_procedimientos.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Manual de Procedimientos</a>
+      <a href="../pages_normatividad/manuales_de_org.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Manual de Organizacion</a>
+    </div>
+  </div>
+  
+  <div class="block">
+    <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="trns-btn">
+      Transparencia
+      <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+      </svg>
+    </button>
+    <!-- Submenu -->
+    <div class="hidden" id="trns-submenu">
+      <a href="https://transparencia.cecytebcs.edu.mx/" class="block px-4 py-4 text-gray-700 hover:bg-gray-100">Artiuclo 75</a>
+      <a href="../pages_transparencia/cuenta_publica.html" class="block px-4 py-4 text-gray-700 hover:bg-gray-100">Cuenta publica</a>
+      <a href="../pages_transparencia/ley_diciplina.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ley de diciplina</a>
+    </div>
+  </div>
+  
+  </div>
+  </div>
+  
+    <div class="w-full h-1 bg-orange-500"></div>
+  </nav>
+  <!-- FIN NAVBAR CON SUBEMENUS -->
+<body class="overflow-hidden">
+    <!-- Add button panel -->
+    <!-- Update the button panel div class -->
+    <div
+      class="fixed top-50 right-4 z-50 rounded-lg shadow-xl p-4 max-h-[90vh] overflow-y-auto w-64 button-panel"
+    >
+      <div class="mb-4">
+        <h3 class="text-lg font-bold text-gray-800 mb-2">CECyTE Planteles</h3>
+        <div class="space-y-2" id="cecyteButtons">
+          <!-- CECyTE buttons will be generated here -->
+        </div>
+      </div>
+      <div>
+        <h3 class="text-lg font-bold text-gray-800 mb-2">EMSAD Centros</h3>
+        <div class="space-y-2" id="emsadButtons">
+          <!-- EMSAD buttons will be generated here -->
+        </div>
+      </div>
+    </div>
+
+    <div id="map" class="relative"></div>
+
+    <div
+      id="schoolInfo"
+      class="hidden fixed bottom-0 left-0 right-0 bg-white p-6 rounded-t-3xl shadow-2xl modal"
+    >
+      <h2 id="schoolName" class="text-2xl font-bold text-gray-800 mb-2"></h2>
+      <p id="schoolDetails" class="text-gray-600"></p>
+      <button
+        onclick="closeModal()"
+        class="absolute top-4 right-4 text-gray-500 hover:text-gray-700"
+      >
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+      // Initialize map centered on Baja California Sur
+      const map = L.map("map").setView([25.5937, -111.3932], 7);
+      
+      // Define different map styles
+      const mapStyles = {
+        streets: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '© OpenStreetMap contributors'
+        }),
+        satellite: L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+          attribution: '© Esri'
+        }),
+        terrain: L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+          attribution: '© OpenTopoMap'
+        })
+      };
+
+      // Add the default style
+      mapStyles.streets.addTo(map);
+
+      // Add style switcher control
+      const styleControl = L.control({ position: 'topleft' });
+      styleControl.onAdd = function() {
+        const div = L.DomUtil.create('div', 'leaflet-bar leaflet-control');
+        div.innerHTML = `
+          <select class="p-2 bg-white border rounded shadow-sm" onchange="changeMapStyle(this.value)">
+            <option value="streets">Streets</option>
+            <option value="satellite">Satellite</option>
+            <option value="terrain">Terrain</option>
+          </select>
+        `;
+        return div;
+      };
+      styleControl.addTo(map);
+
+      // Function to change map style
+      function changeMapStyle(style) {
+        Object.values(mapStyles).forEach(layer => map.removeLayer(layer));
+        mapStyles[style].addTo(map);
+      }
+
+      // Custom pin icons
+      const cecyteIcon = L.icon({
+        iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-orange.png',
+        shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [1, -34],
+        shadowSize: [41, 41]
+      });
+
+      const emsadIcon = L.icon({
+        iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+        shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [1, -34],
+        shadowSize: [41, 41]
+      });
+
+      // School locations data
+      const schools = {
+        cecytes: [
+          {
+            name: "CECyT 01 - Mulegé",
+            location: [26.873564918462165, -111.94217503608256],
+            details: "Plantel principal en La Paz",
+          },
+          {
+            name: "CECyT 02 - Todos Santos", 
+            location: [23.448965940475677, -110.22063293956815],
+            details: "Plantel San José del Cabo",
+          },
+          {
+            name: "CECyT 03 - Santiago",
+            location: [23.476990370944463, -109.71446261756259],
+            details: "Plantel Cabo San Lucas",
+          },
+          {
+            name: "CECyT 04 - San José del Cabo",
+            location: [23.093522399280445, -109.72572397524469], 
+            details: "Plantel Guerrero Negro",
+          },
+          {
+            name: "CECyT 05 - Cabo San Lucas",
+            location: [22.93778878669306, -109.92670586175653], 
+            details: "Plantel Guerrero Negro",
+          },
+          {
+            name: "CECyT 06 - Vizcaíno",
+            location: [27.85261495571236, -113.42064864835281], 
+            details: "Plantel Guerrero Negro",
+          },
+          {
+            name: "CECyT 07 - San José del Cabo",
+            location: [23.135836002882126, -109.71124334270363], 
+            details: "Plantel Guerrero Negro",
+          },
+          {
+            name: "CECyT 08 - La Paz",
+            location: [24.057138652372732, -110.2905862115481], 
+            details: "Plantel Guerrero Negro",
+          },
+          {
+            name: "CECyT 09 - Los Planes",
+            location: [23.974316060300442, -109.96780124615195], 
+            details: "Plantel Guerrero Negro",
+          },
+          {
+            name: "CECyT 10 - Cd. Constitución ",
+            location: [25.042473348082375, -111.64313428524196], 
+            details: "Plantel Guerrero Negro",
+          },
+          {
+            name: "CECyT 11 - El Centenario ",
+            location: [24.09604700201797, -110.41384107106433], 
+            details: "Plantel Guerrero Negro",
+          },
+        ],
+        emsad: [
+          {
+            name: "EMSaD 01 - Bahia Asunción",
+            location: [27.13996617747351, -114.29514938295469],
+            details: "Centro EMSAD El Triunfo",
+          },
+          {
+            name: "EMSaD 03 - Bahía Tortugas",
+            location: [27.69322047302178, -114.89125074627738],
+            details: "Centro EMSAD Los Barriles", 
+          },
+          {
+            name: "EMSaD 06 - La Bocana",
+            location: [26.797476307120448, -113.71209480117214],
+            details: "Centro EMSAD San Javier",
+          },
+          {
+            name: "EMSaD 07 - San Ignacio",
+            location: [27.28331974167212, -112.89689909120796],
+            details: "Centro EMSAD San Javier",
+          },
+          {
+            name: "EMSaD 08 - Ciudad Insurgentes",
+            location: [25.259700510116563, -111.77467761835742],
+            details: "Centro EMSAD San Javier",
+          },
+          {
+            name: "EMSaD 09 - Benito Juarez",
+            location: [25.11528896679925, -111.82713684016714],
+            details: "Centro EMSAD San Javier",
+          },
+          {
+            name: "EMSaD 10 - Puerto Adolfo López Mateos",
+            location: [25.191195621361256, -112.10583417518794],
+            details: "Centro EMSAD San Javier",
+          },
+          {
+            name: "EMSaD 11 - San Isidro",
+            location: [26.204266214470067, -112.04423242489457],
+            details: "Centro EMSAD San Javier",
+          },
+          {
+            name: "EMSaD 12 - Las Pocitas",
+            location: [24.392909895632314, -111.10646490167478],
+            details: "Centro EMSAD San Javier",
+          },
+          {
+            name: "EMSaD 13 - Manuel Marquez de Leon",
+            location: [24.160945514197117, -110.26818824638043],
+            details: "Centro EMSAD San Javier",
+          },
+          {
+            name: "EMSaD 14 - Ejido Melitón Albañez Domínguez",
+            location: [23.662544234791472, -110.42151473898444],
+            details: "Centro EMSAD San Javier",
+          },
+          {
+            name: "EMSaD 16 - Los Barriles",
+            location: [23.682590377366544, -109.71745171807392],
+            details: "Centro EMSAD San Javier",
+          },
+        ],
+      };
+
+      function showSchoolInfo(school) {
+        document.getElementById("schoolName").textContent = school.name;
+        document.getElementById("schoolDetails").textContent = school.details;
+        document.getElementById("schoolInfo").classList.remove("hidden");
+      }
+
+      function closeModal() {
+        document.getElementById("schoolInfo").classList.add("hidden");
+      }
+
+      // Add markers with custom pins for CECyTE schools
+      schools.cecytes.forEach((school) => {
+        L.marker(school.location, { icon: cecyteIcon })  // Changed from pinIcon to cecyteIcon
+          .addTo(map)
+          .bindPopup(school.name)
+          .on("click", () => showSchoolInfo(school));
+      });
+
+      // Add markers with custom pins for EMSAD schools  
+      schools.emsad.forEach((school) => {
+        L.marker(school.location, { icon: emsadIcon })   // Changed from pinIcon to emsadIcon
+          .addTo(map)
+          .bindPopup(school.name)
+          .on("click", () => showSchoolInfo(school));
+      });
+
+      // Create buttons for schools
+      function createSchoolButtons() {
+        const cecyteContainer = document.getElementById("cecyteButtons");
+        const emsadContainer = document.getElementById("emsadButtons");
+
+        schools.cecytes.forEach((school) => {
+          const button = document.createElement("button");
+          button.className =
+            "w-full text-left px-3 py-2 rounded bg-orange-100 hover:bg-orange-200 transition-colors text-sm";
+          button.textContent = school.name;
+          button.onclick = () => {
+            map.setView(school.location, 13);
+            showSchoolInfo(school);
+          };
+          cecyteContainer.appendChild(button);
+        });
+
+        schools.emsad.forEach((school) => {
+          const button = document.createElement("button");
+          button.className =
+            "w-full text-left px-3 py-2 rounded bg-green-100 hover:bg-green-200 transition-colors text-sm";
+          button.textContent = school.name;
+          button.onclick = () => {
+            map.setView(school.location, 13);
+            showSchoolInfo(school);
+          };
+          emsadContainer.appendChild(button);
+        });
+      }
+
+      // Initialize buttons
+      createSchoolButtons();
+    </script>
+  </body>
+</html>
