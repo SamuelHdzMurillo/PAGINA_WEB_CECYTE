@@ -234,16 +234,16 @@
     <!-- Add button panel -->
     <!-- Update the button panel div class -->
     <div
-      class="fixed top-50 right-4 z-50 rounded-lg shadow-xl p-4 max-h-[90vh] overflow-y-auto w-64 button-panel"
+      class="fixed top-50 right-4 z-50 rounded-lg shadow-xl p-4 max-h-[90vh] overflow-y-auto w-64 button-panel bg-white"
     >
       <div class="mb-4">
-        <h3 class="text-lg font-bold text-gray-800 mb-2">CECyTE Planteles</h3>
+        <h3 class="text-lg font-bold text-gray-900 mb-2">CECyTE Planteles</h3>
         <div class="space-y-2" id="cecyteButtons">
           <!-- CECyTE buttons will be generated here -->
         </div>
       </div>
       <div>
-        <h3 class="text-lg font-bold text-gray-800 mb-2">EMSAD Centros</h3>
+        <h3 class="text-lg font-bold text-gray-900 mb-2">EMSAD Centros</h3>
         <div class="space-y-2" id="emsadButtons">
           <!-- EMSAD buttons will be generated here -->
         </div>
@@ -496,7 +496,7 @@
         schools.cecytes.forEach((school) => {
           const button = document.createElement("button");
           button.className =
-            "w-full text-left px-3 py-2 rounded bg-orange-100 hover:bg-orange-200 transition-colors text-sm";
+            "w-full text-left px-3 py-2 rounded bg-orange-500 hover:bg-orange-700 transition-colors text-sm";
           button.textContent = school.name;
           button.onclick = () => {
             map.setView(school.location, 13);
@@ -508,7 +508,7 @@
         schools.emsad.forEach((school) => {
           const button = document.createElement("button");
           button.className =
-            "w-full text-left px-3 py-2 rounded bg-green-100 hover:bg-green-200 transition-colors text-sm";
+            "w-full text-left px-3 py-2 rounded bg-green-600 hover:bg-green-700 transition-colors text-sm";
           button.textContent = school.name;
           button.onclick = () => {
             map.setView(school.location, 13);

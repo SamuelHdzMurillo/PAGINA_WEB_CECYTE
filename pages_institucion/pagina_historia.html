@@ -28,7 +28,7 @@
     <script src="https://unpkg.com/flowbite@^2.1/dist/flowbite.min.js"></script>
   </head>
   <!-- INCIO NAVBAR CON SUBEMENUS -->
-<nav class="bg-white shadow-lg">
+<nav class="bg-white shadow-lg fixed w-full top-0 z-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between h-16">
           <!-- Logo -->
@@ -218,70 +218,61 @@
   <body class="bg-white-100">
     
 
-    <!-- BOTON SUBIR INICIO -->
-    <button
-      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
-      class="fixed bottom-6 right-6 bg-green-700 text-white rounded-full p-3 shadow-md hover:bg-green-600 transition-all duration-300 ease-in-out"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="h-8 w-8"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M5 15l7-7 7 7"
-        />
-      </svg>
-    </button>
-    <!-- BOTON SUBIR FIN -->
+   
 
     <!-- Main Content -->
-<main class="container mx-auto px-4 py-16 space-y-20">
-  <!-- Hero Section -->
-<section class="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl" style="z-index: -1;">
-    <div class="absolute inset-0 hero-overlay"></div>
-    <img src="../img_recuros_pagina/IMG_COVER_ALUMNOS_SALACOMPUTO.jpg" 
-         alt="School Hero" 
-         class="w-full h-full object-cover">
-    <div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center p-8">
+<main class="container mx-auto px-4 py-16 space-y-20 mt-20">
+  <!-- Hero Section with Parallax Effect -->
+<section class="relative h-[600px] rounded-3xl overflow-hidden shadow-2xl">
+    <!-- Black overlay with increased opacity -->
+    <div class="absolute inset-0 bg-gradient-to-b from-black/80 to-black/60 z-10"></div>
+    <!-- Additional black tint layer -->
+    <div class="absolute inset-0 bg-black opacity-40"></div>
+    <div class="absolute inset-0 bg-fixed" style="background: url('../img_recuros_pagina/IMG_COVER_ALUMNOS_SALACOMPUTO.jpg') center/cover;"></div>
+    <div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center p-8 space-y-8 z-20">
       <img src="../img_logos/logo_Cecyte_vertical_sin_fondo.png" 
            alt="CECyTE Logo" 
-           class="w-40 mb-8 animate__animated animate__fadeInDown">
-      <h1 class="text-5xl font-bold mb-4 animate__animated animate__fadeInUp">
-        Colegio de Estudios Científicos y Tecnológicos
+           class="w-48 animate__animated animate__fadeInDown">
+      <h1 class="text-6xl font-bold mb-4 animate__animated animate__fadeInUp leading-tight">
+        Colegio de Estudios Científicos<br>y Tecnológicos
       </h1>
-      <p class="text-xl animate__animated animate__fadeInUp animate__delay-1s">
-        Formando líderes para el futuro
+      <p class="text-2xl animate__animated animate__fadeInUp animate__delay-1s font-light">
+        Formando líderes para el futuro de Baja California Sur
       </p>
     </div>
 </section>
 
-  <!-- Mission & Vision Section -->
-  <section class="grid md:grid-cols-2 gap-8">
-    <div class="content-card section-fade-in">
-      <div class="p-8 h-full">
-        <div class="flex items-center mb-6">
-          <i class="fas fa-bullseye text-3xl text-green-600 mr-4"></i>
-          <h2 class="text-3xl font-bold text-green-700">Misión</h2>
+  <!-- Mission & Vision Cards -->
+  <section class="grid md:grid-cols-2 gap-12 px-4">
+    <!-- Mission Card -->
+    <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-all duration-300 section-fade-in">
+      <div class="bg-green-600 p-6">
+        <div class="flex items-center space-x-4">
+          <div class="p-3 bg-white/20 rounded-full">
+            <i class="fas fa-bullseye text-3xl text-white"></i>
+          </div>
+          <h2 class="text-3xl font-bold text-white">Misión</h2>
         </div>
-        <p class="text-gray-700 leading-relaxed">
+      </div>
+      <div class="p-8">
+        <p class="text-gray-700 leading-relaxed text-lg">
           Asegurar la impartición de los servicios de Educación Media Superior en sus modalidades de bachillerato general y bachillerato tecnológico, conjugando convenientemente el conocimiento teórico que enfatice su vertiente propedéutica y el logro de competencias, habilidades y destrezas que den ascendencia a su línea tecnológica, así como facilitar el acceso al conocimiento y a la preparación técnica a los jóvenes, particularmente a los avecinados en el medio rural o semiurbano.
         </p>
       </div>
     </div>
 
-    <div class="content-card section-fade-in">
-      <div class="p-8 h-full">
-        <div class="flex items-center mb-6">
-          <i class="fas fa-eye text-3xl text-orange-600 mr-4"></i>
-          <h2 class="text-3xl font-bold text-orange-600">Visión</h2>
+    <!-- Vision Card -->
+    <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-all duration-300 section-fade-in">
+      <div class="bg-orange-500 p-6">
+        <div class="flex items-center space-x-4">
+          <div class="p-3 bg-white/20 rounded-full">
+            <i class="fas fa-eye text-3xl text-white"></i>
+          </div>
+          <h2 class="text-3xl font-bold text-white">Visión</h2>
         </div>
-        <p class="text-gray-700 leading-relaxed">
+      </div>
+      <div class="p-8">
+        <p class="text-gray-700 leading-relaxed text-lg">
           El CECyTE-BCS se propone lograr una formación educativa integral,  de calidad, que permita a sus egresados participar en la sociedad del conocimiento, realizar estudios de nivel superior e integrarse al campo laboral de manera exitosa, constituyendo  los servicios de educación media superior en un espacio de convivencia juvenil ordenada, plural y respetuosa, que fomente el aprendizaje colaborativo y la discusión en un ambiente de libertad y rigor académico que vincule  los centros escolares con sus propias comunidades para lograr una interrelación más estrecha y pertinente entre planes y programas de estudio, el ámbito laboral y el desarrollo sustentables entre regiones y microrregiones del Estado de BCS.
         </p>
       </div>
@@ -289,39 +280,78 @@
   </section>
 
   <!-- Objectives Section -->
-<section class="bg-gray-50 rounded-2xl p-12 shadow-xl section-fade-in">
-  <div class="max-w-4xl mx-auto">
-    <h2 class="text-4xl font-bold text-center text-green-700 mb-12">
-      Objetivos Institucionales
-    </h2>
-    <div class="grid md:grid-cols-2 gap-8">
-      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow">
-        <h3 class="text-2xl font-semibold text-orange-600 mb-4">
+  <section class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-12 shadow-xl section-fade-in">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl font-bold text-center text-green-700 mb-12">
+        Objetivos Institucionales
+      </h2>
+      
+      <!-- General Objective -->
+      <div class="bg-white rounded-2xl shadow-lg p-8 mb-12 hover:shadow-xl transition-all duration-300">
+        <h3 class="text-3xl font-bold text-orange-600 mb-6 flex items-center">
+          <i class="fas fa-star mr-4"></i>
           Objetivo General
         </h3>
-        <p class="text-gray-700">
-          Impartir la educación en el nivel medio superior en las modalidades de bachillerato general y bachillerato tecnológico, a través de los centros EMSaD y planteles CECyT. Nuestro enfoque combina el conocimiento teórico con habilidades prácticas, asegurando una formación integral que promueve valores humanos, cívicos, y culturales. Además, fomentamos el cuidado de la salud, la conciencia ecológica, y el interés por la ciencia y la tecnología, mediante programas basados en el desarrollo de competencias.
-        </p>
-        <p class="text-gray-700 mt-4">
-          También nos enfocamos en mejorar los resultados educativos, apoyar la permanencia de estudiantes en riesgo de deserción, y promover la equidad de género. Continuamos implementando la Reforma Integral de la Educación Media Superior para integrar más planteles al Sistema Nacional de Bachillerato, garantizando una educación de calidad que responda a las necesidades de la sociedad.
+        <p class="text-gray-700 text-lg leading-relaxed">
+          Impartir la educación en el nivel medio superior en las modalidades de bachillerato general y bachillerato tecnológico, a través de los centros EMSaD y planteles CECyT, conjuntando convenientemente el conocimiento teórico que asegure su vertiente propedéutica y el logro de habilidades y destrezas que den ascendencia a su línea general y tecnológica, impulsando una educación sustentada en valores humanos y cívicos, que promueva las raíces culturales y tradiciones regionales de México y del mundo, que estimule la formación de actitudes para el cuidado de la salud, que fomente una cultura ecológica y que promueva el interés por la ciencia y la tecnología entre los alumnos, mediante programas y proyectos acordes al enfoque del desarrollo de competencias.
         </p>
       </div>
-      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow">
-        <h3 class="text-2xl font-semibold text-green-700 mb-4">
+
+      <!-- Specific Objectives -->
+      <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300">
+        <h3 class="text-3xl font-bold text-green-700 mb-6 flex items-center">
+          <i class="fas fa-list-check mr-4"></i>
           Objetivos Específicos
         </h3>
-        <ul class="list-disc list-inside text-gray-700 space-y-2">
-          <li>Promover en los Planteles CECyT y Centros EMSaD la función orientadora para que los alumnos resuelvan problemas escolares y elijan carreras profesionales acordes a sus intereses y aptitudes.</li>
-          <li>Reforzar el proceso de enseñanza-aprendizaje con actividades curriculares y extracurriculares planeadas, fomentando el aprovechamiento social de los recursos naturales.</li>
-          <li>Impulsar cambios en la educación media superior que promuevan la equidad entre hombres y mujeres, construyendo relaciones de igualdad y solidaridad.</li>
-          <li>Emprender estrategias de planeación para el crecimiento del Colegio, atendiendo la demanda con la apertura de nuevas escuelas y mejorando la infraestructura y equipamiento.</li>
-          <li>Administrar eficientemente los recursos del Colegio, cumpliendo con las políticas de la H. Junta Directiva y las normas federales y estatales.</li>
-          <li>Impulsar actividades que promuevan la participación de alumnos y maestros en encuentros científicos y humanísticos para su formación integral.</li>
+        <ul class="space-y-6 text-gray-700">
+          <li class="flex items-start group hover:bg-gray-50 p-4 rounded-lg transition-all duration-300">
+            <i class="fas fa-check-circle text-green-500 mt-1 mr-3 group-hover:scale-110 transition-transform"></i>
+            <span class="text-lg">Promover en los Planteles CECyT y Centros EMSAD la función orientadora como modalidad efectiva para que los alumnos de este nivel resuelvan problemas propios de la edad y la situación escolar, así como elegir la carrera profesional acorde con sus intereses y aptitudes.</span>
+          </li>
+          
+          <li class="flex items-start group hover:bg-gray-50 p-4 rounded-lg transition-all duration-300">
+            <i class="fas fa-check-circle text-green-500 mt-1 mr-3 group-hover:scale-110 transition-transform"></i>
+            <span class="text-lg">Impulsar el mejoramiento de los resultados educativos de los estudiantes.</span>
+          </li>
+          
+          <li class="flex items-start group hover:bg-gray-50 p-4 rounded-lg transition-all duration-300">
+            <i class="fas fa-check-circle text-green-500 mt-1 mr-3 group-hover:scale-110 transition-transform"></i>
+            <span class="text-lg">Apoyar la permanencia de los estudiantes en riesgo de desertar del plantel escolar, a través de programas interinstitucionales que les brinden asesoría académica y orientación psicológica. Así mismo, la atención a mujeres estudiantes en riesgo de abandono temporal de los estudios será cubierto a través de apoyos económicos, mediante el otorgamiento de becas.</span>
+          </li>
+          
+          <li class="flex items-start group hover:bg-gray-50 p-4 rounded-lg transition-all duration-300">
+            <i class="fas fa-check-circle text-green-500 mt-1 mr-3 group-hover:scale-110 transition-transform"></i>
+            <span class="text-lg">Reforzar el proceso enseñanza-aprendizaje con actividades curriculares y extracurriculares debidamente planeadas y ejecutadas, así como promover un mejor aprovechamiento social de los recursos naturales.</span>
+          </li>
+          
+          <li class="flex items-start group hover:bg-gray-50 p-4 rounded-lg transition-all duration-300">
+            <i class="fas fa-check-circle text-green-500 mt-1 mr-3 group-hover:scale-110 transition-transform"></i>
+            <span class="text-lg">Impulsar cambios en la educación media superior que promuevan la equidad entre hombres y mujeres para construir relaciones de igualdad y solidaridad.</span>
+          </li>
+          
+          <li class="flex items-start group hover:bg-gray-50 p-4 rounded-lg transition-all duration-300">
+            <i class="fas fa-check-circle text-green-500 mt-1 mr-3 group-hover:scale-110 transition-transform"></i>
+            <span class="text-lg">Continuar con implementación de la Reforma Integral de la Educación Media Superior, utilizando los mecanismos de apoyo y siguiendo los lineamientos para desarrollar las competencias del perfil del egresado.</span>
+          </li>
+          
+          <li class="flex items-start group hover:bg-gray-50 p-4 rounded-lg transition-all duration-300">
+            <i class="fas fa-check-circle text-green-500 mt-1 mr-3 group-hover:scale-110 transition-transform"></i>
+            <span class="text-lg">Emprender estrategias de planeación para el crecimiento del Colegio, atendiendo la demanda con la apertura de nuevas escuelas y mejorando la infraestructura y equipamiento.</span>
+          </li>
+          
+          <li class="flex items-start group hover:bg-gray-50 p-4 rounded-lg transition-all duration-300">
+            <i class="fas fa-check-circle text-green-500 mt-1 mr-3 group-hover:scale-110 transition-transform"></i>
+            <span class="text-lg">Administrar eficientemente los recursos del Colegio, cumpliendo con las políticas de la H. Junta Directiva y las normas federales y estatales.</span>
+          </li>
+          
+          <li class="flex items-start group hover:bg-gray-50 p-4 rounded-lg transition-all duration-300">
+            <i class="fas fa-check-circle text-green-500 mt-1 mr-3 group-hover:scale-110 transition-transform"></i>
+            <span class="text-lg">Impulsar actividades que promuevan la participación de alumnos y maestros en encuentros científicos y humanísticos que favorezcan su formación integral.</span>
+          </li>
         </ul>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 </main>
 
 <!-- ... existing footer content ... -->
