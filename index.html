@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <!-- Meta tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CECYTE BCS</title>
     
+    <!-- Estilos y fuentes -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    
+    <!-- Librerías y frameworks -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link
       href="https://unpkg.com/flowbite@^2.1/dist/flowbite.min.css"
@@ -28,213 +31,190 @@
     
   </head>
   <body onload="mostrarFecha()">
-    <!-- INCIO NAVBAR CON SUBEMENUS -->
-     
+    <!-- Barra de navegación -->
     <nav class="bg-white shadow-lg fixed top-0 left-0 w-full z-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex justify-between h-16">
-              <!-- Logo -->
-              <div class="flex-shrink-0 flex items-center">
-                  <img src="img_logos/logo_Cecyte_vertical_sin_fondo.png" alt="logo_Cecyte_vertical_sin_fondo" class="h-12 w-auto">
-              </div>
-              <!-- Responsive menu button -->
-              <div class="flex items-center sm:hidden">
-                  <button id="menu-btn" class="text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700">
-                      <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                      </svg>
-                  </button>
-              </div>
-              <!-- Navbar links -->
-              <div class="hidden sm:flex sm:items-center sm:ml-6">
-                <div class="relative group">
-                  <a href="#" class="text-gray-700 hover:text-green-600 px-8 py-5 rounded-md text-sm font-medium">Docentes</a>
-                  <!-- Submenu -->
-                  <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md z-10">
-                      <a href="pages_institucion/" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Convocatorias</a>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <img src="img_logos/logo_Cecyte_vertical_sin_fondo.png" alt="logo_Cecyte_vertical_sin_fondo" class="h-12 w-auto">
+                </div>
 
-                      <a href="https://sites.google.com/cecytebcs.edu.mx/orientacionespej23/inicio?authuser=0" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Centro Virtual 2024-2025</a>
-                      
-                      
-                  </div>
-                  </div>
-                  
-                  <div class="relative group">
-                      <a href="#" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Institución</a>
-                      <!-- Submenu -->
-                      <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md z-10">
-                          <a href="pages_institucion/pagina_historia.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Historia, Misión y Visión</a>
+                <!-- Botón de menú móvil -->
+                <div class="flex items-center sm:hidden">
+                    <button id="menu-btn" class="text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700">
+                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
 
-                          <a href="pages_institucion/planteles_cecyte.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Planteles CecyteBCS</a>
-                          
-                          <a href="pages_institucion/planteles_emsad.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Planteles Emsad</a>
-                          
-                          <a href="directorio_telefonico.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Directorio Telefónico</a>
-                      </div>
-                  </div>
-                  <div class="relative group">
-                      <a href="#" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Oferta Educativa</a>
-                      <!-- Submenu -->
-                      <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
-                          
-                          <a href="pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Soporte  y  Mantenimiento equipo de computo</a>
-                          <a href="pages_oferta_educativa/programacion.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programacion</a>
-                          <a href="pages_oferta_educativa/ventas.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ventas</a>
-                          <a href="pages_oferta_educativa/ecoturismo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ecoturismo</a>
-                          <a href="pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Producción industrial de alimentos</a>
-                          <a href="pages_oferta_educativa/mantenimiento_industrial.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Mantenimiento Industrial</a>
-                          <a href="pages_oferta_educativa/servicios_de_hoteleria.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Servicios de Hoteleria</a>
-                      </div>
-                  </div>
-                  <div class="relative group">
-                      <a href="#" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Alumnos</a>
-                      <!-- Submenu -->
-                      <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
-                          
-                          <a href="pages_alumnos/becas.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Becas</a>
-                          <a href="pages_alumnos/prog_acompanamiento.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programa de Acompañamiento</a>
-                          <a href="pages_alumnos/requisitos_de_ingreso.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Requisitos de Ingreso</a>
-                      </div>
-                  </div>
+                <!-- Enlaces de navegación -->
+                <div class="hidden sm:flex sm:items-center sm:ml-6">
+                    <!-- Menú Docentes -->
+                    <div class="relative group">
+                        <a href="#" class="text-gray-700 hover:text-green-600 px-8 py-5 rounded-md text-sm font-medium">Docentes</a>
+                        <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md z-10">
+                            <a href="pages_institucion/" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Convocatorias</a>
+                            <a href="https://sites.google.com/cecytebcs.edu.mx/orientacionespej23/inicio?authuser=0" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Centro Virtual 2024-2025</a>
+                        </div>
+                    </div>
 
-                  <div class="relative group">
-                    <a href="#" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Normatividad</a>
-                    <!-- Submenu -->
-                    <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
-                        
-                        <a href="pages_normatividad/manuales_de_procedimientos.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Manuales de Procedimientos</a>
-                        
+                    <!-- Menú Institución -->
+                    <div class="relative group">
+                        <a href="#" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Institución</a>
+                        <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md z-10">
+                            <a href="pages_institucion/pagina_historia.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Historia, Misión y Visión</a>
+                            <a href="pages_institucion/planteles_cecyte.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Planteles CecyteBCS</a>
+                            <a href="pages_institucion/planteles_emsad.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Planteles Emsad</a>
+                            <a href="directorio_telefonico.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Directorio Telefónico</a>
+                        </div>
+                    </div>
 
-                        <a href="pages_normatividad/manuales_de_org.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Manuales de Organizacion</a>
+                    <!-- Menú Oferta Educativa -->
+                    <div class="relative group">
+                        <a href="#" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Oferta Educativa</a>
+                        <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
+                            <a href="pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Soporte y Mantenimiento equipo de computo</a>
+                            <a href="pages_oferta_educativa/programacion.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programacion</a>
+                            <a href="pages_oferta_educativa/ventas.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ventas</a>
+                            <a href="pages_oferta_educativa/ecoturismo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ecoturismo</a>
+                            <a href="pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Producción industrial de alimentos</a>
+                            <a href="pages_oferta_educativa/mantenimiento_industrial.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Mantenimiento Industrial</a>
+                            <a href="pages_oferta_educativa/servicios_de_hoteleria.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Servicios de Hoteleria</a>
+                        </div>
+                    </div>
 
-                        <a href="https://drive.google.com/file/d/1w1kARXVhw-SFsSY7q7JPBH4MgAqN8C_S/view?usp=drive_link" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Reglamento interno</a>
+                    <!-- Menú Alumnos -->
+                    <div class="relative group">
+                        <a href="#" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Alumnos</a>
+                        <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
+                            <a href="pages_alumnos/becas.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Becas</a>
+                            <a href="pages_alumnos/prog_acompanamiento.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programa de Acompañamiento</a>
+                            <a href="pages_alumnos/requisitos_de_ingreso.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Requisitos de Ingreso</a>
+                        </div>
+                    </div>
 
-                        <a href="https://drive.google.com/file/d/13m142kMwEJ6hj8xaDJXu-XdA-jAkO9jb/view?usp=sharing" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Codigo de Conducta</a>
+                    <!-- Menú Normatividad -->
+                    <div class="relative group">
+                        <a href="#" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Normatividad</a>
+                        <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
+                            <a href="pages_normatividad/manuales_de_procedimientos.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Manuales de Procedimientos</a>
+                            <a href="pages_normatividad/manuales_de_org.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Manuales de Organizacion</a>
+                            <a href="https://drive.google.com/file/d/1w1kARXVhw-SFsSY7q7JPBH4MgAqN8C_S/view?usp=drive_link" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Reglamento interno</a>
+                            <a href="https://drive.google.com/file/d/13m142kMwEJ6hj8xaDJXu-XdA-jAkO9jb/view?usp=sharing" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Codigo de Conducta</a>
+                            <a href="https://drive.google.com/file/d/1lIJBD8IXxHcM3hwp7v3VmG2X1EJZXKnG/view?usp=sharing" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Protocolo de Seguridad</a>
+                        </div>
+                    </div>
 
-                        <a href="https://drive.google.com/file/d/1lIJBD8IXxHcM3hwp7v3VmG2X1EJZXKnG/view?usp=sharing" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Protocolo de Seguridad </a>
-
-                        
-        
+                    <!-- Menú Transparencia -->
+                    <div class="relative group">
+                        <a href="https://transparencia.cecytebcs.edu.mx/" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Transparencia</a>
+                        <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
+                            <a href="https://transparencia.cecytebcs.edu.mx/informacion-publica/articulo-75" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Articulo 75</a>
+                            <a href="pages_transparencia/cuenta_publica.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Cuenta publica</a>
+                            <a href="pages_transparencia/ley_diciplina.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ley de diciplina Financiera</a>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
 
-                  <div class="relative group">
-                    <a href="https://transparencia.cecytebcs.edu.mx/" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Transparencia</a>
-                    <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
-
-                      <a href="https://transparencia.cecytebcs.edu.mx/informacion-publica/articulo-75" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Articulo 75</a>
-                        
-                      <a href="pages_transparencia/cuenta_publica.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Cuenta publica</a>
-
-                      <a href="pages_transparencia/ley_diciplina.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ley de diciplina Financiera </a>
-
-                      
-      
-                  </div>
+        <!-- Menú móvil -->
+        <div class="sm:hidden hidden" id="mobile-menu">
+            <a href="#" class="block text-gray-700 hover:text-green-600 px-4 py-2">Inicio</a>
+            <div class="block">
+                <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="servicios-btn">
+                    Institución
+                    <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <!-- Submenu -->
+                <div class="hidden" id="servicios-submenu">
+                    <a href="pages_institucion/pagina_historia.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Historia, Misión y Visión</a>
+                    <a href="pages_institucion/planteles_cecyte.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Planteles CecyteBCS</a>
+                    <a href="pages_institucion/planteles_emsad.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Planteles Emsad</a>
+                    <a href="directorio_telefonico.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Directorio Telefonico</a>
                 </div>
+            </div>
+            <div class="block">
+                <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="nosotros-btn">
+                    Oferta Educativa
+                    
+                    <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                
+                <!-- Submenu -->
+                <div class="hidden" id="nosotros-submenu">
+                    <a href="pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Soporte y Mantenimiento equipo de cómputo</a>
+                    <a href="pages_oferta_educativa/programacion.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programación</a>
+                    <a href="pages_oferta_educativa/ventas.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ventas</a>
+                    <a href="pages_oferta_educativa/ecoturismo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ecoturismo</a>
+                    <a href="pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Producción industrial de alimentos</a>
+                    <a href="pages_oferta_educativa/mantenimiento_industrial.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Mantenimiento industrial</a>
+                    <a href="pages_oferta_educativa/servicios_de_hoteleria.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Servicios de Hotelería</a>
+                </div>
+            </div>
+            <div class="block">
+              <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="alumnos-btn">
+                Alumnos
+                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <!-- Submenu -->
+              <div class="hidden" id="alumnos-submenu">
+                <a href="pages_alumnos/becas.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Becas</a>
+                <a href="pages_alumnos/prog_acompanamiento.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programa de Acompañamiento</a>
+                <a href="pages_alumnos/requisitos_de_ingreso.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Requisitos de Ingreso</a>
               </div>
-          </div>
-      </div>
-      
-      <!-- Responsive Menu -->
-      <div class="sm:hidden hidden" id="mobile-menu">
-    <a href="#" class="block text-gray-700 hover:text-green-600 px-4 py-2">Inicio</a>
-    <div class="block">
-        <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="servicios-btn">
-            Institución
-            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-        </button>
-        <!-- Submenu -->
-        <div class="hidden" id="servicios-submenu">
-            <a href="pages_institucion/pagina_historia.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Historia, Misión y Visión</a>
-            <a href="pages_institucion/planteles_cecyte.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Planteles CecyteBCS</a>
-            <a href="pages_institucion/planteles_emsad.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Planteles Emsad</a>
-            <a href="directorio_telefonico.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Directorio Telefonico</a>
-        </div>
-    </div>
-    <div class="block">
-        <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="nosotros-btn">
-            Oferta Educativa
+            </div>
+
+
+
+            <div class="block">
+              <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="norma-btn">
+                Normatividad
+                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <!-- Submenu -->
+              <div class="hidden" id="norma-submenu">
+                <a href="pages_normatividad/manuales_de_procedimientos.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Manual de Procedimientos</a>
+                <a href="pages_normatividad/manuales_de_org.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Manual de Organizacion</a>
+              </div>
+            </div>
+
+            <div class="block">
+              <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="trns-btn">
+                Transparencia
+                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <!-- Submenu -->
+              <div class="hidden" id="trns-submenu">
+                <a href="pages_transparencia/cuenta_publica.html" class="block px-4 py-4 text-gray-700 hover:bg-gray-100">Cuenta publica</a>
+                <a href="pages_transparencia/ley_diciplina.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ley de diciplina</a>
+              </div>
+            </div>
             
-            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-        </button>
-        
-        <!-- Submenu -->
-        <div class="hidden" id="nosotros-submenu">
-            <a href="pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Soporte y Mantenimiento equipo de cómputo</a>
-            <a href="pages_oferta_educativa/programacion.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programación</a>
-            <a href="pages_oferta_educativa/ventas.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ventas</a>
-            <a href="pages_oferta_educativa/ecoturismo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ecoturismo</a>
-            <a href="pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Producción industrial de alimentos</a>
-            <a href="pages_oferta_educativa/mantenimiento_industrial.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Mantenimiento industrial</a>
-            <a href="pages_oferta_educativa/servicios_de_hoteleria.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Servicios de Hotelería</a>
         </div>
     </div>
-    <div class="block">
-      <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="alumnos-btn">
-        Alumnos
-        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-        </svg>
-      </button>
-      <!-- Submenu -->
-      <div class="hidden" id="alumnos-submenu">
-        <a href="pages_alumnos/becas.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Becas</a>
-        <a href="pages_alumnos/prog_acompanamiento.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programa de Acompañamiento</a>
-        <a href="pages_alumnos/requisitos_de_ingreso.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Requisitos de Ingreso</a>
-      </div>
-    </div>
 
-
-
-    <div class="block">
-      <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="norma-btn">
-        Normatividad
-        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-        </svg>
-      </button>
-      <!-- Submenu -->
-      <div class="hidden" id="norma-submenu">
-        <a href="pages_normatividad/manuales_de_procedimientos.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Manual de Procedimientos</a>
-        <a href="pages_normatividad/manuales_de_org.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Manual de Organizacion</a>
-      </div>
-    </div>
-
-    <div class="block">
-      <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="trns-btn">
-        Transparencia
-        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-        </svg>
-      </button>
-      <!-- Submenu -->
-      <div class="hidden" id="trns-submenu">
-        <a href="pages_transparencia/cuenta_publica.html" class="block px-4 py-4 text-gray-700 hover:bg-gray-100">Cuenta publica</a>
-        <a href="pages_transparencia/ley_diciplina.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ley de diciplina</a>
-      </div>
-    </div>
-    
-  </div>
-</div>
-
-      <div class="w-full h-1 bg-orange-500"></div>
-      <!-- LEMA -->
+    <!-- Lema -->
+    <div class="w-full h-1 bg-orange-500"></div>
     <section class="w-full bg-gray-500 text-white py-2 flex justify-center items-center">
-      <h1 class="text-xl md:text-xl font-bold text-center">
-          "CECyTE: Orgullo y transformacion de la Nueva Escuela Mexicana."
-      </h1>
+        <h1 class="text-xl md:text-xl font-bold text-center">
+            "CECyTE: Orgullo y transformacion de la Nueva Escuela Mexicana."
+        </h1>
     </section>
-    <!-- LEMA -->
-  </nav>
-  
-    <!-- FIN NAVBAR CON SUBEMENUS -->
+    </nav>
 
-    
     <!-- BOTON SUBIR INICIO -->
     <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" class="fixed bottom-6 right-6 bg-green-700 text-white rounded-full p-3 shadow-md hover:bg-green-600 transition-all duration-500 ease-in-out">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -242,728 +222,696 @@
       </svg>
     </button>
     <!-- BOTON SUBIR FIN -->
-    
 
-    
-       
+    <!-- SECTION HERO INICIO -->
+    <section class="hero-section min-h-screen relative overflow-hidden">
+      <!-- Capa negra constante -->
+      <div class="absolute inset-0 bg-black opacity-50 z-10"></div>
 
-<!-- SECTION HERO INICIO -->
-<section class="hero-section min-h-screen relative overflow-hidden">
-  <!-- Capa negra constante -->
-  <div class="absolute inset-0 bg-black opacity-50 z-10"></div>
+      <!-- Fondo dinámico con transición suave -->
+      <div class="absolute inset-0 bg-cover bg-center" id="bgSlideshow"></div>
 
-  <!-- Fondo dinámico con transición suave -->
-  <div class="absolute inset-0 bg-cover bg-center" id="bgSlideshow"></div>
+      <!-- Main content container -->
+      <div class="container mx-auto px-4 h-screen flex items-center relative z-20">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <!-- Left column - Logo -->
+          <div class="relative animate-float">
+            <img 
+              src="img_logos/logo_Cecyte_vertical_sin_fondo.png" 
+              alt="CECyTE Logo" 
+              class="relative max-w-md mx-auto transform hover:scale-105 transition-all duration-500 drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]"
+            >
+          </div>
 
-  <!-- Main content container -->
-  <div class="container mx-auto px-4 h-screen flex items-center relative z-20">
-    <div class="grid md:grid-cols-2 gap-12 items-center">
-      <!-- Left column - Logo -->
-      <div class="relative animate-float">
-        <img 
-          src="img_logos/logo_Cecyte_vertical_sin_fondo.png" 
-          alt="CECyTE Logo" 
-          class="relative max-w-md mx-auto transform hover:scale-105 transition-all duration-500 drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]"
-        >
+          <!-- Right column - Text content -->
+          <div class="text-center md:text-left space-y-8 animate-fadeIn">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight animate-slideRight">
+              Colegio de Estudios 
+              <span class="text-orange-400">Científicos</span> y 
+              <span class="text-orange-400">Tecnológicos</span>
+            </h1>
+            <p class="text-2xl md:text-3xl text-gray-200 font-light italic animate-slideUp">
+              "Ciencia y Tecnología, Luz y Camino"
+            </p>
+            <p class="text-lg text-gray-300 max-w-xl animate-fadeIn">
+              Formando líderes del mañana con excelencia académica y valores sólidos para un futuro brillante.
+            </p>
+            <!-- In the hero section, modify the links -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+              <a href="#carreras" 
+                 class="px-8 py-4 bg-orange-500 text-white font-bold rounded-lg hover:bg-orange-600 transition-all duration-300 transform hover:scale-105 hover:shadow-lg scroll-smooth"
+                 onclick="scrollToSection('carreras')">
+                Explorar Programas
+              </a>
+              <a href="#footer" 
+                 class="px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-105 hover:shadow-lg scroll-smooth"
+                 onclick="scrollToSection('footer')">
+                Contactar
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <!-- Right column - Text content -->
-      <div class="text-center md:text-left space-y-8 animate-fadeIn">
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight animate-slideRight">
-          Colegio de Estudios 
-          <span class="text-orange-400">Científicos</span> y 
-          <span class="text-orange-400">Tecnológicos</span>
-        </h1>
-        <p class="text-2xl md:text-3xl text-gray-200 font-light italic animate-slideUp">
-          "Ciencia y Tecnología, Luz y Camino"
+      <script>
+        const backgroundImages = [
+          'img_recuros_pagina/img_noticias/beisbol.jpg',
+          'img_recuros_pagina/img_noticias/escolta_2.jpg',
+          'img_recuros_pagina/img_noticias/futbol_2.jpg',
+        ];
+
+        function scrollToSection(sectionId) {
+          event.preventDefault();
+          const element = document.getElementById(sectionId);
+          if (element) {
+            const headerHeight = 120; // Adjust this value to match your header height
+            const elementPosition = element.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
+
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth'
+            });
+          }
+        }
+
+        // Add event listeners after DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+          const links = document.querySelectorAll('a[href^="#"]');
+          links.forEach(link => {
+            link.addEventListener('click', function(e) {
+              e.preventDefault();
+              const id = this.getAttribute('href').slice(1);
+              scrollToSection(id);
+            });
+          });
+        });
+
+        let currentImageIndex = 0;
+        let nextImageIndex = 1;
+        const bgSlideshow = document.getElementById('bgSlideshow');
+        const TRANSITION_DURATION = 1000;
+        const DISPLAY_DURATION = 5000;
+
+        // Create and preload images
+        const preloadedImages = backgroundImages.map(src => {
+          const img = new Image();
+          img.src = src;
+          return img;
+        });
+
+        function updateBackground() {
+          // Set next image as background but keep it hidden
+          const nextImage = backgroundImages[nextImageIndex];
+          const currentOpacity = window.getComputedStyle(bgSlideshow).opacity;
+          
+          // Create a new div for the next image
+          const nextDiv = document.createElement('div');
+          nextDiv.className = 'absolute inset-0 bg-cover bg-center';
+          nextDiv.style.backgroundImage = `url('${nextImage}')`;
+          nextDiv.style.opacity = '0';
+          nextDiv.style.transition = `opacity ${TRANSITION_DURATION}ms ease-in-out`;
+          bgSlideshow.parentNode.insertBefore(nextDiv, bgSlideshow.nextSibling);
+
+          // Fade in next image while fading out current
+          requestAnimationFrame(() => {
+            nextDiv.style.opacity = '1';
+            bgSlideshow.style.opacity = '0';
+          });
+
+          // After transition, cleanup and prepare for next
+          setTimeout(() => {
+            bgSlideshow.style.backgroundImage = `url('${nextImage}')`;
+            bgSlideshow.style.opacity = '1';
+            nextDiv.remove();
+            
+            currentImageIndex = nextImageIndex;
+            nextImageIndex = (nextImageIndex + 1) % backgroundImages.length;
+          }, TRANSITION_DURATION);
+        }
+
+        // Initialize first image
+        bgSlideshow.style.backgroundImage = `url('${backgroundImages[currentImageIndex]}')`;
+        bgSlideshow.style.opacity = '1';
+
+        // Start slideshow after all images are loaded
+        Promise.all(preloadedImages.map(img => {
+          return new Promise((resolve) => {
+            if (img.complete) resolve();
+            img.onload = resolve;
+          });
+        })).then(() => {
+          setInterval(updateBackground, DISPLAY_DURATION + TRANSITION_DURATION);
+        });
+
+        // Add custom animations
+        const style = document.createElement('style');
+        style.textContent = `
+          @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+          }
+          
+          @keyframes slideRight {
+            from { transform: translateX(-100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+          }
+          
+          @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+          }
+          
+          @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+          }
+          
+          .animate-float { animation: float 6s ease-in-out infinite; }
+          .animate-slideRight { animation: slideRight 1s ease-out; }
+          .animate-slideUp { animation: slideUp 1s ease-out 0.5s backwards; }
+          .animate-fadeIn { animation: fadeIn 2s ease-out; }
+        `;
+        document.head.appendChild(style);
+      </script>
+    </section>
+    <!-- SECTION HERO FIN -->
+
+    <!-- INICIO SECTION DE MISION -->
+    <section class="bg-white py-20">
+      <div class="container mx-auto px-4">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
+          <!-- Image Gallery Section -->
+          <div class="relative lg:w-1/2">
+            <!-- Decorative circle background -->
+            <div class="absolute inset-0 bg-gradient-to-br from-green-50 to-green-100 rounded-full transform -rotate-6"></div>
+            
+            <!-- Main Image with enhanced styling -->
+            <div class="relative">
+              <img
+                class="rounded-full w-[280px] h-[280px] lg:w-[400px] lg:h-[400px] object-cover border-8 border-white shadow-2xl transform hover:scale-105 transition-transform duration-500"
+                src="img_recuros_pagina/img_noticias/honores_noticias.jpg" 
+                alt="About CECyTE"
+              />
+              
+              <!-- Floating circular images with hover effects -->
+              <img 
+                class="absolute z-10 top-0 -left-10 w-24 h-24 lg:w-32 lg:h-32 rounded-full border-4 border-white shadow-lg object-cover transform hover:scale-110 transition-transform duration-300"
+                src="img_recuros_pagina/img_noticias/arteyculturapeidra_noticias.jpg" 
+                alt="Cultural Activities"
+              />
+              
+              <img 
+                class="absolute z-10 bottom-20 -left-16 w-24 h-24 lg:w-32 lg:h-32 rounded-full border-4 border-white shadow-lg object-cover transform hover:scale-110 transition-transform duration-300"
+                src="img_recuros_pagina/img_noticias/cantante_noticas.jpg" 
+                alt="Student Activities"
+              />
+              
+              <img 
+                class="absolute z-10 bottom-0 left-10 w-24 h-24 lg:w-32 lg:h-32 rounded-full border-4 border-white shadow-lg object-cover transform hover:scale-110 transition-transform duration-300"
+                src="img_recuros_pagina/img_noticias/escolta_noticias.jpg" 
+                alt="Academic Excellence"
+              />
+            </div>
+          </div>
+
+          <!-- Content Section -->
+          <div class="lg:w-1/2 space-y-8 bg-white rounded-2xl p-8 shadow-xl">
+            <div class="space-y-4">
+              <h2 class="text-4xl font-bold text-green-700 leading-tight">
+                Nuestra Misión
+              </h2>
+              
+              <div class="w-20 h-1 bg-green-600"></div>
+              
+              <blockquote class="text-2xl font-semibold text-gray-700 italic border-l-4 border-green-500 pl-4 my-6">
+                "CECyTE: Orgullo y transformación de la Nueva Escuela Mexicana."
+              </blockquote>
+              
+              <p class="text-lg text-gray-600 leading-relaxed">
+                Asegurar la impartición de los servicios de Educación Media Superior en sus modalidades de bachillerato general y bachillerato tecnológico, conjugando convenientemente el conocimiento teórico que enfatice su vertiente propedéutica y el logro de competencias, habilidades y destrezas que den ascendencia a su línea tecnológica, así como facilitar el acceso al conocimiento y a la preparación técnica a los jóvenes, particularmente a los avecinados en el medio rural o semiurbano.
+              </p>
+            </div>
+
+            <a href="pages_institucion/pagina_historia.html" 
+               class="inline-block px-8 py-4 bg-green-700 text-white font-semibold rounded-lg transform hover:scale-105 hover:bg-green-800 transition-all duration-300 shadow-lg hover:shadow-xl">
+              Más sobre CecyteBCS
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FIN SECTION DE MISION -->
+
+    <!-- INICIO SECTION DE CARDS NOTICIAS -->
+    <section class="relative bg-white py-5">
+      <!-- Decorative background elements -->
+      <div class="absolute inset-0 overflow-hidden">
+        <div class="absolute -top-10 -left-10 w-40 h-40 bg-green-50 rounded-full opacity-20"></div>
+        <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-orange-50 rounded-full opacity-20"></div>
+      </div>
+
+      <!-- Content container -->
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-4xl font-extrabold text-gray-900 mb-4 tracking-tight">
+          ÚLTIMAS NOTICIAS
+        </h2>
+        
+        <div class="flex justify-center items-center gap-4 mb-6">
+          <div class="h-1 w-20 bg-green-600 rounded"></div>
+          <div class="h-1 w-20 bg-orange-500 rounded"></div>
+          <div class="h-1 w-20 bg-green-600 rounded"></div>
+        </div>
+
+        <p class="text-lg text-gray-600 font-medium">
+          Última Actualización - <span class="text-green-600">Febrero 2025</span>
         </p>
-        <p class="text-lg text-gray-300 max-w-xl animate-fadeIn">
-          Formando líderes del mañana con excelencia académica y valores sólidos para un futuro brillante.
-        </p>
-        <!-- In the hero section, modify the links -->
-        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-          <a href="#carreras" 
-             class="px-8 py-4 bg-orange-500 text-white font-bold rounded-lg hover:bg-orange-600 transition-all duration-300 transform hover:scale-105 hover:shadow-lg scroll-smooth"
-             onclick="scrollToSection('carreras')">
-            Explorar Programas
-          </a>
-          <a href="#footer" 
-             class="px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-105 hover:shadow-lg scroll-smooth"
-             onclick="scrollToSection('footer')">
-            Contactar
+      </div>
+    </section>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- News Card -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-500 hover:shadow-2xl">
+          <a href="pages_notas/festival_municipal_arte_y_cultura_la_paz/arte_y_cultura_la_paz.html" class="block">
+            <div class="relative">
+              <img src="pages_notas/festival_municipal_arte_y_cultura_la_paz/img/img_14.jpg" 
+                   class="w-full h-64 object-cover transition-transform duration-500 hover:scale-110" 
+                   alt="Olimpiada Municipal Deportiva">
+              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                <div class="flex items-center gap-2">
+                  <span class="px-3 py-1 bg-green-600 text-white text-xs font-bold rounded-full">NOTICIAS</span>
+                  <time class="text-white text-sm">27 Mar 2025</time>
+                </div>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors duration-300">
+                Festival Municipal de arte y cultura, La paz 
+              </h3>
+              <p class="text-gray-600 text-sm line-clamp-2">
+                Descubre los detalles del Festival de Arte y cultura la paz 2025.
+              </p>
+            </div>
           </a>
         </div>
+
+        <!-- News Card -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-500 hover:shadow-2xl">
+          <a href="pages_notas/cecytebcs_ayuntamineto_unen_fuerzas/cecyte_y_ayuntamiento_la_paz_unen_esfuerzos.html" class="block">
+            <div class="relative">
+              <img src="pages_notas/cecytebcs_ayuntamineto_unen_fuerzas/img/img_3.jpg" 
+                   class="w-full h-64 object-cover transition-transform duration-500 hover:scale-110" 
+                   alt="Olimpiada Municipal Deportiva">
+              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                <div class="flex items-center gap-2">
+                  <span class="px-3 py-1 bg-green-600 text-white text-xs font-bold rounded-full">NOTICIAS</span>
+                  <time class="text-white text-sm">27 Mar 2025</time>
+                </div>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors duration-300">
+               CECyTE BCS y Ayuntamiento de la Paz unen esfuerzos por la educación.
+              </h3>
+              <p class="text-gray-600 text-sm line-clamp-2">
+                Descubre los detalles.
+              </p>
+            </div>
+          </a>
+        </div>
+
+         <!-- News Card -->
+         <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-500 hover:shadow-2xl">
+          <a href="pages_notas/feria_cecyte11_centenario_31_aniversario/feria_academica_cecyte11_31_aniversario.html" class="block">
+            <div class="relative">
+              <img src="pages_notas/feria_cecyte11_centenario_31_aniversario/img/img_4.jpg" 
+                   class="w-full h-64 object-cover transition-transform duration-500 hover:scale-110" 
+                   alt="Olimpiada Municipal Deportiva">
+              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                <div class="flex items-center gap-2">
+                  <span class="px-3 py-1 bg-green-600 text-white text-xs font-bold rounded-full">NOTICIAS</span>
+                  <time class="text-white text-sm">26 Mar 2025</time>
+                </div>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors duration-300">
+                Feria academica en el Cecyte11 el Centenario por el 31 Aniversario del CECyTEBCS.
+              </h3>
+              <p class="text-gray-600 text-sm line-clamp-2">
+                Descubre los detalles de la feria academica por el 31 Aniversario del CECyTEBCS.
+              </p>
+            </div>
+          </a>
+        </div>
+        
+        <!-- News Card -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-500 hover:shadow-2xl">
+          <a href="pages_notas/olimpiada_municipal_mulege_2025/olimpiada_municipal_mulege_2025.html" class="block">
+            <div class="relative">
+              <img src="pages_notas/olimpiada_municipal_mulege_2025/img/img_9.jpg" 
+                   class="w-full h-64 object-cover transition-transform duration-500 hover:scale-110" 
+                   alt="Olimpiada Municipal Deportiva">
+              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                <div class="flex items-center gap-2">
+                  <span class="px-3 py-1 bg-green-600 text-white text-xs font-bold rounded-full">NOTICIAS</span>
+                  <time class="text-white text-sm">20 Mar 2025</time>
+                </div>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors duration-300">
+                Olimpiada Municipal Deportiva, Mulegé 2025
+              </h3>
+              <p class="text-gray-600 text-sm line-clamp-2">
+                Descubre los detalles de la Olimpiada Municipal Deportiva en Mulegé 2025.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Repeat pattern for other news items with varied images and content -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-500 hover:shadow-2xl">
+          <a href="pages_notas/cecyte_jornada_nacional_paz_addicciones/cecyte_se_suma_a_la_jornada_nacional_por_la_paz.html" class="block">
+            <div class="relative">
+              <img src="pages_notas/cecyte_jornada_nacional_paz_addicciones/img/img_1.jpg" 
+                   class="w-full h-64 object-cover transition-transform duration-500 hover:scale-110" 
+                   alt="Jornada Nacional por la Paz">
+              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                <div class="flex items-center gap-2">
+                  <span class="px-3 py-1 bg-green-600 text-white text-xs font-bold rounded-full">NOTICIAS</span>
+                  <time class="text-white text-sm">20 Mar 2025</time>
+                </div>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors duration-300">
+                CECyTEBCS se suma a la "Jornada Nacional por la Paz y las Adicciones"
+              </h3>
+              <p class="text-gray-600 text-sm line-clamp-2">
+                Conoce las iniciativas y acciones en pro de la paz y contra las adicciones.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Additional news cards following the same enhanced pattern -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-500 hover:shadow-2xl">
+          <a href="pages_notas/colaboracion_cecyte_mulege/cecyte_firma_convenio_mulege.html" class="block">
+            <div class="relative">
+              <img src="pages_notas/colaboracion_cecyte_mulege/img/img_1.jpg" 
+                   class="w-full h-64 object-cover transition-transform duration-500 hover:scale-110" 
+                   alt="Firma de Convenio">
+              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                <div class="flex items-center gap-2">
+                  <span class="px-3 py-1 bg-green-600 text-white text-xs font-bold rounded-full">NOTICIAS</span>
+                  <time class="text-white text-sm">20 Mar 2025</time>
+                </div>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors duration-300">
+                Firma de Convenio de Colaboración entre CECYTEBCS, H. Ayuntamiento de Mulegé y NASE
+              </h3>
+              <p class="text-gray-600 text-sm line-clamp-2">
+                Fortaleciendo lazos institucionales para el desarrollo educativo.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Continue pattern for remaining news items -->
+
+      </div>
+
+      <!-- Pagination or Load More button can be added here -->
+      <div class="mt-12 text-center">
+        <button class="px-6 py-3 bg-green-600 text-white rounded-full hover:bg-green-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">
+          <a href="noticias.html">Ver más noticias</a>
+        </button>
       </div>
     </div>
-  </div>
+    <!-- FIN SECTION DE CARDS NOTICIAS -->
 
-  <script>
-    const backgroundImages = [
-      'img_recuros_pagina/img_noticias/beisbol.jpg',
-      'img_recuros_pagina/img_noticias/escolta_2.jpg',
-      'img_recuros_pagina/img_noticias/futbol_2.jpg',
-    ];
-
-    function scrollToSection(sectionId) {
-  event.preventDefault();
-  const element = document.getElementById(sectionId);
-  if (element) {
-    const headerHeight = 120; // Adjust this value to match your header height
-    const elementPosition = element.getBoundingClientRect().top;
-    const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
-
-    window.scrollTo({
-      top: offsetPosition,
-      behavior: 'smooth'
-    });
-  }
-}
-
-// Add event listeners after DOM is loaded
-document.addEventListener('DOMContentLoaded', function() {
-  const links = document.querySelectorAll('a[href^="#"]');
-  links.forEach(link => {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      const id = this.getAttribute('href').slice(1);
-      scrollToSection(id);
-    });
-  });
-});
-
-    let currentImageIndex = 0;
-    let nextImageIndex = 1;
-    const bgSlideshow = document.getElementById('bgSlideshow');
-    const TRANSITION_DURATION = 1000;
-    const DISPLAY_DURATION = 5000;
-
-    // Create and preload images
-    const preloadedImages = backgroundImages.map(src => {
-      const img = new Image();
-      img.src = src;
-      return img;
-    });
-
-    function updateBackground() {
-      // Set next image as background but keep it hidden
-      const nextImage = backgroundImages[nextImageIndex];
-      const currentOpacity = window.getComputedStyle(bgSlideshow).opacity;
-      
-      // Create a new div for the next image
-      const nextDiv = document.createElement('div');
-      nextDiv.className = 'absolute inset-0 bg-cover bg-center';
-      nextDiv.style.backgroundImage = `url('${nextImage}')`;
-      nextDiv.style.opacity = '0';
-      nextDiv.style.transition = `opacity ${TRANSITION_DURATION}ms ease-in-out`;
-      bgSlideshow.parentNode.insertBefore(nextDiv, bgSlideshow.nextSibling);
-
-      // Fade in next image while fading out current
-      requestAnimationFrame(() => {
-        nextDiv.style.opacity = '1';
-        bgSlideshow.style.opacity = '0';
-      });
-
-      // After transition, cleanup and prepare for next
-      setTimeout(() => {
-        bgSlideshow.style.backgroundImage = `url('${nextImage}')`;
-        bgSlideshow.style.opacity = '1';
-        nextDiv.remove();
+    <!-- INICIO SECTION DE CARDS NOTICIAS -->
+    <section class="relative py-16 bg-gradient-to-b from-white to-gray-50">
+      <div class="container mx-auto px-4">
+        <!-- Decorative elements -->
+        <div class="absolute top-0 left-0 w-32 h-32 bg-green-50 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
+        <div class="absolute top-0 right-0 w-32 h-32 bg-orange-50 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
         
-        currentImageIndex = nextImageIndex;
-        nextImageIndex = (nextImageIndex + 1) % backgroundImages.length;
-      }, TRANSITION_DURATION);
-    }
-
-    // Initialize first image
-    bgSlideshow.style.backgroundImage = `url('${backgroundImages[currentImageIndex]}')`;
-    bgSlideshow.style.opacity = '1';
-
-    // Start slideshow after all images are loaded
-    Promise.all(preloadedImages.map(img => {
-      return new Promise((resolve) => {
-        if (img.complete) resolve();
-        img.onload = resolve;
-      });
-    })).then(() => {
-      setInterval(updateBackground, DISPLAY_DURATION + TRANSITION_DURATION);
-    });
-
-    // Add custom animations
-    const style = document.createElement('style');
-    style.textContent = `
-      @keyframes float {
-        0% { transform: translateY(0px); }
-        50% { transform: translateY(-20px); }
-        100% { transform: translateY(0px); }
-      }
-      
-      @keyframes slideRight {
-        from { transform: translateX(-100%); opacity: 0; }
-        to { transform: translateX(0); opacity: 1; }
-      }
-      
-      @keyframes slideUp {
-        from { transform: translateY(50px); opacity: 0; }
-        to { transform: translateY(0); opacity: 1; }
-      }
-      
-      @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
-      }
-      
-      .animate-float { animation: float 6s ease-in-out infinite; }
-      .animate-slideRight { animation: slideRight 1s ease-out; }
-      .animate-slideUp { animation: slideUp 1s ease-out 0.5s backwards; }
-      .animate-fadeIn { animation: fadeIn 2s ease-out; }
-    `;
-    document.head.appendChild(style);
-  </script>
-</section>
-<!-- SECTION HERO FIN -->
-
-
-   
-
-    
-    
-<!-- INICIO SECTION DE MISION -->
-<section class="bg-white py-20">
-  <div class="container mx-auto px-4">
-    <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
-      <!-- Image Gallery Section -->
-      <div class="relative lg:w-1/2">
-        <!-- Decorative circle background -->
-        <div class="absolute inset-0 bg-gradient-to-br from-green-50 to-green-100 rounded-full transform -rotate-6"></div>
-        
-        <!-- Main Image with enhanced styling -->
-        <div class="relative">
-          <img
-            class="rounded-full w-[280px] h-[280px] lg:w-[400px] lg:h-[400px] object-cover border-8 border-white shadow-2xl transform hover:scale-105 transition-transform duration-500"
-            src="img_recuros_pagina/img_noticias/honores_noticias.jpg" 
-            alt="About CECyTE"
-          />
-          
-          <!-- Floating circular images with hover effects -->
-          <img 
-            class="absolute z-10 top-0 -left-10 w-24 h-24 lg:w-32 lg:h-32 rounded-full border-4 border-white shadow-lg object-cover transform hover:scale-110 transition-transform duration-300"
-            src="img_recuros_pagina/img_noticias/arteyculturapeidra_noticias.jpg" 
-            alt="Cultural Activities"
-          />
-          
-          <img 
-            class="absolute z-10 bottom-20 -left-16 w-24 h-24 lg:w-32 lg:h-32 rounded-full border-4 border-white shadow-lg object-cover transform hover:scale-110 transition-transform duration-300"
-            src="img_recuros_pagina/img_noticias/cantante_noticas.jpg" 
-            alt="Student Activities"
-          />
-          
-          <img 
-            class="absolute z-10 bottom-0 left-10 w-24 h-24 lg:w-32 lg:h-32 rounded-full border-4 border-white shadow-lg object-cover transform hover:scale-110 transition-transform duration-300"
-            src="img_recuros_pagina/img_noticias/escolta_noticias.jpg" 
-            alt="Academic Excellence"
-          />
-        </div>
-      </div>
-
-      <!-- Content Section -->
-      <div class="lg:w-1/2 space-y-8 bg-white rounded-2xl p-8 shadow-xl">
-        <div class="space-y-4">
-          <h2 class="text-4xl font-bold text-green-700 leading-tight">
-            Nuestra Misión
+        <div class="relative text-center max-w-3xl mx-auto">
+          <!-- Main heading with animated underline -->
+          <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
+            Explora Nuestras Carreras
           </h2>
           
-          <div class="w-20 h-1 bg-green-600"></div>
-          
-          <blockquote class="text-2xl font-semibold text-gray-700 italic border-l-4 border-green-500 pl-4 my-6">
-            "CECyTE: Orgullo y transformación de la Nueva Escuela Mexicana."
-          </blockquote>
-          
-          <p class="text-lg text-gray-600 leading-relaxed">
-            Asegurar la impartición de los servicios de Educación Media Superior en sus modalidades de bachillerato general y bachillerato tecnológico, conjugando convenientemente el conocimiento teórico que enfatice su vertiente propedéutica y el logro de competencias, habilidades y destrezas que den ascendencia a su línea tecnológica, así como facilitar el acceso al conocimiento y a la preparación técnica a los jóvenes, particularmente a los avecinados en el medio rural o semiurbano.
+          <!-- Decorative separator -->
+          <div class="flex justify-center items-center gap-4 mb-6">
+            <div class="h-1 w-20 bg-green-600 rounded animate-pulse"></div>
+            <div class="h-1 w-20 bg-orange-500 rounded animate-pulse"></div>
+            <div class="h-1 w-20 bg-green-600 rounded animate-pulse"></div>
+          </div>
+
+          <!-- Subtitle with highlight -->
+          <p class="text-lg text-gray-600">
+            Última Actualización - <span class="font-semibold text-green-600">MARZO 2025</span>
           </p>
         </div>
-
-        <a href="pages_institucion/pagina_historia.html" 
-           class="inline-block px-8 py-4 bg-green-700 text-white font-semibold rounded-lg transform hover:scale-105 hover:bg-green-800 transition-all duration-300 shadow-lg hover:shadow-xl">
-          Más sobre CecyteBCS
-        </a>
       </div>
-    </div>
-  </div>
-</section>
-<!-- FIN SECTION DE MISION -->
-
-
-
-<!-- INICIO SECTION DE CARDS NOTICIAS -->
-<section class="relative bg-white py-5">
-  <!-- Decorative background elements -->
-  <div class="absolute inset-0 overflow-hidden">
-    <div class="absolute -top-10 -left-10 w-40 h-40 bg-green-50 rounded-full opacity-20"></div>
-    <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-orange-50 rounded-full opacity-20"></div>
-  </div>
-
-  <!-- Content container -->
-  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-    <h2 class="text-4xl font-extrabold text-gray-900 mb-4 tracking-tight">
-      ÚLTIMAS NOTICIAS
-    </h2>
-    
-    <div class="flex justify-center items-center gap-4 mb-6">
-      <div class="h-1 w-20 bg-green-600 rounded"></div>
-      <div class="h-1 w-20 bg-orange-500 rounded"></div>
-      <div class="h-1 w-20 bg-green-600 rounded"></div>
-    </div>
-
-    <p class="text-lg text-gray-600 font-medium">
-      Última Actualización - <span class="text-green-600">Febrero 2025</span>
-    </p>
-  </div>
-</section>
-
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-    
-
-     <!-- News Card -->
-     <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-500 hover:shadow-2xl">
-      <a href="pages_notas/festival_municipal_arte_y_cultura_la_paz/arte_y_cultura_la_paz.html" class="block">
-        <div class="relative">
-          <img src="pages_notas/festival_municipal_arte_y_cultura_la_paz/img/img_14.jpg" 
-               class="w-full h-64 object-cover transition-transform duration-500 hover:scale-110" 
-               alt="Olimpiada Municipal Deportiva">
-          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-            <div class="flex items-center gap-2">
-              <span class="px-3 py-1 bg-green-600 text-white text-xs font-bold rounded-full">NOTICIAS</span>
-              <time class="text-white text-sm">27 Mar 2025</time>
-            </div>
-          </div>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors duration-300">
-            Festival Municipal de arte y cultura, La paz 
-          </h3>
-          <p class="text-gray-600 text-sm line-clamp-2">
-            Descubre los detalles del Festival de Arte y cultura la paz 2025.
-          </p>
-        </div>
-      </a>
-    </div>
-
-    <!-- News Card -->
-    <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-500 hover:shadow-2xl">
-      <a href="pages_notas/cecytebcs_ayuntamineto_unen_fuerzas/cecyte_y_ayuntamiento_la_paz_unen_esfuerzos.html" class="block">
-        <div class="relative">
-          <img src="pages_notas/cecytebcs_ayuntamineto_unen_fuerzas/img/img_3.jpg" 
-               class="w-full h-64 object-cover transition-transform duration-500 hover:scale-110" 
-               alt="Olimpiada Municipal Deportiva">
-          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-            <div class="flex items-center gap-2">
-              <span class="px-3 py-1 bg-green-600 text-white text-xs font-bold rounded-full">NOTICIAS</span>
-              <time class="text-white text-sm">27 Mar 2025</time>
-            </div>
-          </div>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors duration-300">
-           CECyTE BCS y Ayuntamiento de la Paz unen esfuerzos por la educación.
-          </h3>
-          <p class="text-gray-600 text-sm line-clamp-2">
-            Descubre los detalles.
-          </p>
-        </div>
-      </a>
-    </div>
-
-     <!-- News Card -->
-     <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-500 hover:shadow-2xl">
-      <a href="pages_notas/feria_cecyte11_centenario_31_aniversario/feria_academica_cecyte11_31_aniversario.html" class="block">
-        <div class="relative">
-          <img src="pages_notas/feria_cecyte11_centenario_31_aniversario/img/img_4.jpg" 
-               class="w-full h-64 object-cover transition-transform duration-500 hover:scale-110" 
-               alt="Olimpiada Municipal Deportiva">
-          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-            <div class="flex items-center gap-2">
-              <span class="px-3 py-1 bg-green-600 text-white text-xs font-bold rounded-full">NOTICIAS</span>
-              <time class="text-white text-sm">26 Mar 2025</time>
-            </div>
-          </div>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors duration-300">
-            Feria academica en el Cecyte11 el Centenario por el 31 Aniversario del CECyTEBCS.
-          </h3>
-          <p class="text-gray-600 text-sm line-clamp-2">
-            Descubre los detalles de la feria academica por el 31 Aniversario del CECyTEBCS.
-          </p>
-        </div>
-      </a>
-    </div>
-    
-    <!-- News Card -->
-    <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-500 hover:shadow-2xl">
-      <a href="pages_notas/olimpiada_municipal_mulege_2025/olimpiada_municipal_mulege_2025.html" class="block">
-        <div class="relative">
-          <img src="pages_notas/olimpiada_municipal_mulege_2025/img/img_9.jpg" 
-               class="w-full h-64 object-cover transition-transform duration-500 hover:scale-110" 
-               alt="Olimpiada Municipal Deportiva">
-          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-            <div class="flex items-center gap-2">
-              <span class="px-3 py-1 bg-green-600 text-white text-xs font-bold rounded-full">NOTICIAS</span>
-              <time class="text-white text-sm">20 Mar 2025</time>
-            </div>
-          </div>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors duration-300">
-            Olimpiada Municipal Deportiva, Mulegé 2025
-          </h3>
-          <p class="text-gray-600 text-sm line-clamp-2">
-            Descubre los detalles de la Olimpiada Municipal Deportiva en Mulegé 2025.
-          </p>
-        </div>
-      </a>
-    </div>
-
-    <!-- Repeat pattern for other news items with varied images and content -->
-    <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-500 hover:shadow-2xl">
-      <a href="pages_notas/cecyte_jornada_nacional_paz_addicciones/cecyte_se_suma_a_la_jornada_nacional_por_la_paz.html" class="block">
-        <div class="relative">
-          <img src="pages_notas/cecyte_jornada_nacional_paz_addicciones/img/img_1.jpg" 
-               class="w-full h-64 object-cover transition-transform duration-500 hover:scale-110" 
-               alt="Jornada Nacional por la Paz">
-          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-            <div class="flex items-center gap-2">
-              <span class="px-3 py-1 bg-green-600 text-white text-xs font-bold rounded-full">NOTICIAS</span>
-              <time class="text-white text-sm">20 Mar 2025</time>
-            </div>
-          </div>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors duration-300">
-            CECyTEBCS se suma a la "Jornada Nacional por la Paz y las Adicciones"
-          </h3>
-          <p class="text-gray-600 text-sm line-clamp-2">
-            Conoce las iniciativas y acciones en pro de la paz y contra las adicciones.
-          </p>
-        </div>
-      </a>
-    </div>
-
-    <!-- Additional news cards following the same enhanced pattern -->
-    <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-500 hover:shadow-2xl">
-      <a href="pages_notas/colaboracion_cecyte_mulege/cecyte_firma_convenio_mulege.html" class="block">
-        <div class="relative">
-          <img src="pages_notas/colaboracion_cecyte_mulege/img/img_1.jpg" 
-               class="w-full h-64 object-cover transition-transform duration-500 hover:scale-110" 
-               alt="Firma de Convenio">
-          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-            <div class="flex items-center gap-2">
-              <span class="px-3 py-1 bg-green-600 text-white text-xs font-bold rounded-full">NOTICIAS</span>
-              <time class="text-white text-sm">20 Mar 2025</time>
-            </div>
-          </div>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors duration-300">
-            Firma de Convenio de Colaboración entre CECYTEBCS, H. Ayuntamiento de Mulegé y NASE
-          </h3>
-          <p class="text-gray-600 text-sm line-clamp-2">
-            Fortaleciendo lazos institucionales para el desarrollo educativo.
-          </p>
-        </div>
-      </a>
-    </div>
-
-    <!-- Continue pattern for remaining news items -->
-
-  </div>
-
-  <!-- Pagination or Load More button can be added here -->
-  <div class="mt-12 text-center">
-    <button class="px-6 py-3 bg-green-600 text-white rounded-full hover:bg-green-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">
-      <a href="noticias.html">Ver más noticias</a>
-    </button>
-  </div>
-</div>
-<!-- FIN SECTION DE CARDS NOTICIAS -->
-
-    
-
-    
-<!-- INICIO SECTION DE CARDS NOTICIAS -->
-<section class="relative py-16 bg-gradient-to-b from-white to-gray-50">
-  <div class="container mx-auto px-4">
-    <!-- Decorative elements -->
-    <div class="absolute top-0 left-0 w-32 h-32 bg-green-50 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
-    <div class="absolute top-0 right-0 w-32 h-32 bg-orange-50 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
-    
-    <div class="relative text-center max-w-3xl mx-auto">
-      <!-- Main heading with animated underline -->
-      <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
-        Explora Nuestras Carreras
-      </h2>
-      
-      <!-- Decorative separator -->
-      <div class="flex justify-center items-center gap-4 mb-6">
-        <div class="h-1 w-20 bg-green-600 rounded animate-pulse"></div>
-        <div class="h-1 w-20 bg-orange-500 rounded animate-pulse"></div>
-        <div class="h-1 w-20 bg-green-600 rounded animate-pulse"></div>
-      </div>
-
-      <!-- Subtitle with highlight -->
-      <p class="text-lg text-gray-600">
-        Última Actualización - <span class="font-semibold text-green-600">MARZO 2025</span>
-      </p>
-    </div>
-  </div>
-</section>
+    </section>
    
-
-    
-<!-- INICIO SECTION CARRERAS -->
-<section id="carreras" class="bg-white py-12">
-  <div class="max-w-5xl mx-auto px-4">
-    <!-- Career Cards Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Programación -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
-        <div class="h-32 bg-green-600 flex items-center justify-center">
-          <i class="fas fa-code text-4xl text-white"></i>
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-900 mb-2">Programación</h3>
-          <p class="text-sm text-gray-600 mb-3">Desarrollo de software, web y aplicaciones móviles.</p>
-          <ul class="text-sm text-gray-600 mb-4">
-            <li class="flex items-center mb-1"><i class="fas fa-check text-green-600 mr-2"></i>Desarrollo Web</li>
-            <li class="flex items-center mb-1"><i class="fas fa-check text-green-600 mr-2"></i>Apps Móviles</li>
-            <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i>Bases de Datos</li>
-          </ul>
-          <a href="pages_oferta_educativa/programacion.html" class="inline-block bg-green-600 text-white text-sm py-2 px-4 rounded-full hover:bg-green-700 transition-colors duration-300">Explorar más</a>
-        </div>
-      </div>
-
-      <!-- Mantenimiento de Equipo de Cómputo -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
-        <div class="h-32 bg-blue-600 flex items-center justify-center">
-          <i class="fas fa-laptop text-4xl text-white"></i>
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-900 mb-2">Mant. de Equipo de Cómputo</h3>
-          <p class="text-sm text-gray-600 mb-3">Mantenimiento y reparación de equipos informáticos.</p>
-          <ul class="text-sm text-gray-600 mb-4">
-            <li class="flex items-center mb-1"><i class="fas fa-check text-blue-600 mr-2"></i>Hardware y Software</li>
-            <li class="flex items-center mb-1"><i class="fas fa-check text-blue-600 mr-2"></i>Redes</li>
-            <li class="flex items-center"><i class="fas fa-check text-blue-600 mr-2"></i>Soporte Técnico</li>
-          </ul>
-          <a href="pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="inline-block bg-blue-600 text-white text-sm py-2 px-4 rounded-full hover:bg-blue-700 transition-colors duration-300">Explorar más</a>
-        </div>
-      </div>
-
-      <!-- Ventas -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
-        <div class="h-32 bg-purple-600 flex items-center justify-center">
-          <i class="fas fas fa-chart-line text-4xl text-white"></i>
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-900 mb-2">Ventas</h3>
-          <p class="text-sm text-gray-600 mb-3">Desarrolla habilidades en marketing, negociación y estrategias de venta para destacar en el mundo comercial.</p>
-          <ul class="text-sm text-gray-600 mb-4">
-            <li class="flex items-center mb-1"><i class="fas fa-check text-purple-600 mr-2"></i>Marketing Digital</li>
-            <li class="flex items-center mb-1"><i class="fas fa-check text-purple-600 mr-2"></i>Estrategias de Venta</li>
-            <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-2"></i>Atención al Cliente</li>
-          </ul>
-          <a href="pages_oferta_educativa/ventas.html" class="inline-block bg-purple-600 text-white py-2 px-4 rounded-full hover:bg-purple-700 transition-colors duration-300">Explorar más</a>
-        </div>
-      </div>
-
-      <!-- Mantenimiento de Equipo de Cómputo -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
-        <div class="h-32 bg-yellow-600 flex items-center justify-center">
-          <i class="fas fa-laptop text-4xl text-white"></i>
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-900 mb-2">Ecoturismo</h3>
-          <p class="text-sm text-gray-600 mb-3">Aprende a gestionar proyectos turísticos sostenibles y a promover la conservación del medio ambiente.</p>
-          <ul class="text-sm text-gray-600 mb-4">
-            <li class="flex items-center mb-1"><i class="fas fa-check text-yellow-600 mr-2"></i>Turismo Sostenible</li>
-            <li class="flex items-center mb-1"><i class="fas fa-check text-yellow-600 mr-2"></i>Gestión Ambiental</li>
-            <li class="flex items-center"><i class="fas fa-check text-yellow-600 mr-2"></i>Guía Turístico</li>
-          </ul>
-          <a href="pages_oferta_educativa/ecoturismo.html" class="inline-block bg-yellow-600 text-white py-2 px-4 rounded-full hover:bg-yellow-700 transition-colors duration-300">Explorar más</a>
-        </div>
-      </div>
-
-      <!-- Mantenimiento de Equipo de Cómputo -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
-        <div class="h-32 bg-red-600 flex items-center justify-center">
-          <i class="fas fa-hotel text-4xl text-white"></i>
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-900 mb-2">Servicios de Hotelería</h3>
-          <p class="text-sm text-gray-600 mb-3">Prepárate para una carrera en la industria hotelera y turística, desarrollando habilidades en gestión y servicio al cliente.</p>
-          <ul class="text-sm text-gray-600 mb-4">
-            <li class="flex items-center mb-1"><i class="fas fa-check text-red-600 mr-2"></i>Gestión Hotelera</li>
-            <li class="flex items-center mb-1"><i class="fas fa-check text-red-600 mr-2"></i>Servicio al Cliente</li>
-            <li class="flex items-center"><i class="fas fa-check text-red-600 mr-2"></i>Organización de Eventos</li>
-          </ul>
-          <a href="pages_oferta_educativa/servicios_de_hoteleria.html" class="inline-block bg-red-600 text-white py-2 px-4 rounded-full hover:bg-red-700 transition-colors duration-300">Explorar más</a>
-        </div>
-      </div>
-
-      <!-- Mantenimiento de Equipo de Cómputo -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
-        <div class="h-32 bg-orange-600 flex items-center justify-center">
-          <i class="fas fa-industry text-4xl text-white"></i>
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-900 mb-2">Producción Industrial de Alimentos</h3>
-          <p class="text-sm text-gray-600 mb-3">Especialízate en procesos de producción alimentaria, control de calidad y seguridad alimentaria.</p>
-          <ul class="text-sm text-gray-600 mb-4">
-            <li class="flex items-center mb-1"><i class="fas fa-check text-orange-600 mr-2"></i>Procesos de Producción</li>
-            <li class="flex items-center mb-1"><i class="fas fa-check text-orange-600 mr-2"></i>Control de Calidad</li>
-            <li class="flex items-center"><i class="fas fa-check text-orange-600 mr-2"></i>Seguridad Alimentaria</li>
-          </ul>
-          <a href="pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="inline-block bg-orange-600 text-white py-2 px-6 rounded-full hover:bg-orange-700 transition-colors duration-300">Explorar más</a>
-        </div>
-      </div>
-
-      <!-- Repeat similar pattern for other cards with reduced sizes -->
-      <!-- Only showing first 2 cards for brevity, repeat pattern for others -->
-
-    </div>
-
-    <!-- Call to Action -->
-    <div class="text-center mt-12">
-      <p class="text-lg text-gray-600 mb-4">¿Listo para comenzar tu viaje profesional?</p>
-      <a href="pages_alumnos/requisitos_de_ingreso.html" class="inline-block bg-green-600 text-white py-2 px-6 rounded-full text-sm font-semibold hover:bg-green-700 transition-colors duration-300">
-        Conoce los Requisitos de Ingreso
-      </a>
-    </div>
-  </div>
-</section>
-<!-- FIN SECTION CARRERAS -->
-
-
-     
-    
-    
-    
-
-
-<!-- Start Announcements Section -->
-<section class="relative py-16 bg-gradient-to-b from-white to-gray-50">
-  <div class="container mx-auto px-4">
-    <!-- Decorative elements -->
-    <div class="absolute top-0 left-0 w-32 h-32 bg-green-50 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
-    <div class="absolute top-0 right-0 w-32 h-32 bg-orange-50 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
-    
-    <div class="relative text-center max-w-3xl mx-auto">
-      <!-- Main heading with animated underline -->
-      <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
-        Convocatorias
-      </h2>
-      
-      <!-- Decorative separator -->
-      <div class="flex justify-center items-center gap-4 mb-6">
-        <div class="h-1 w-20 bg-green-600 rounded animate-pulse"></div>
-        <div class="h-1 w-20 bg-orange-500 rounded animate-pulse"></div>
-        <div class="h-1 w-20 bg-green-600 rounded animate-pulse"></div>
-      </div>
-
-      <!-- Subtitle with highlight -->
-      <p class="text-lg text-gray-600">
-        Última Actualización - <span class="font-semibold text-green-600">Febrero 2025</span>
-      </p>
-    </div>
-  </div>
-</section>
-<!-- End Announcements Section -->
-
-<section class="w-full bg-white py-16 px-4">
-  <div class="max-w-7xl mx-auto">
-    <!-- Announcements Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      
-      <!-- Announcement Card 1 -->
-      <div class="group relative overflow-hidden rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
-        <a href="https://drive.google.com/drive/folders/1pTh5sxJkOBPixDxVoHspuJcrX9Ef7ZSn" 
-           class="block relative">
-          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-          <img 
-            src="img_recuros_pagina/CONVOCATORIOAS/BANNERS/Blue and Orange Modern Welcome Banner.png"
-            alt="Convocatoria de plazas administrativas vacantes"
-            class="w-full h-[300px] object-cover rounded-2xl"
-          >
-          <div class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-            <h3 class="text-xl font-bold mb-2">Plazas Administrativas Vacantes</h3>
-            <p class="text-sm opacity-90">Consulta las oportunidades laborales disponibles</p>
+    <!-- INICIO SECTION CARRERAS -->
+    <section id="carreras" class="bg-white py-12">
+      <div class="max-w-5xl mx-auto px-4">
+        <!-- Career Cards Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Programación -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+            <div class="h-32 bg-green-600 flex items-center justify-center">
+              <i class="fas fa-code text-4xl text-white"></i>
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-gray-900 mb-2">Programación</h3>
+              <p class="text-sm text-gray-600 mb-3">Desarrollo de software, web y aplicaciones móviles.</p>
+              <ul class="text-sm text-gray-600 mb-4">
+                <li class="flex items-center mb-1"><i class="fas fa-check text-green-600 mr-2"></i>Desarrollo Web</li>
+                <li class="flex items-center mb-1"><i class="fas fa-check text-green-600 mr-2"></i>Apps Móviles</li>
+                <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i>Bases de Datos</li>
+              </ul>
+              <a href="pages_oferta_educativa/programacion.html" class="inline-block bg-green-600 text-white text-sm py-2 px-4 rounded-full hover:bg-green-700 transition-colors duration-300">Explorar más</a>
+            </div>
           </div>
-        </a>
-      </div>
 
-      <!-- Announcement Card 2 -->
-      <div class="group relative overflow-hidden rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
-        <a href="#" class="block relative">
-          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-          <img 
-            src="img_recuros_pagina/CONVOCATORIOAS/BANNERS/NORMATIVA-DE-LA-USICAMM-CICLO-ESCOLAR-1-2048x768.png"
-            alt="Normativa USICAMM"
-            class="w-full h-[300px] object-cover rounded-2xl"
-          >
-          <div class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-            <h3 class="text-xl font-bold mb-2">Normativa USICAMM</h3>
-            <p class="text-sm opacity-90">Información importante sobre el ciclo escolar</p>
+          <!-- Mantenimiento de Equipo de Cómputo -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+            <div class="h-32 bg-blue-600 flex items-center justify-center">
+              <i class="fas fa-laptop text-4xl text-white"></i>
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-gray-900 mb-2">Mant. de Equipo de Cómputo</h3>
+              <p class="text-sm text-gray-600 mb-3">Mantenimiento y reparación de equipos informáticos.</p>
+              <ul class="text-sm text-gray-600 mb-4">
+                <li class="flex items-center mb-1"><i class="fas fa-check text-blue-600 mr-2"></i>Hardware y Software</li>
+                <li class="flex items-center mb-1"><i class="fas fa-check text-blue-600 mr-2"></i>Redes</li>
+                <li class="flex items-center"><i class="fas fa-check text-blue-600 mr-2"></i>Soporte Técnico</li>
+              </ul>
+              <a href="pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="inline-block bg-blue-600 text-white text-sm py-2 px-4 rounded-full hover:bg-blue-700 transition-colors duration-300">Explorar más</a>
+            </div>
           </div>
-        </a>
-      </div>
 
-      <!-- Announcement Card 3 -->
-      <div class="group relative overflow-hidden rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
-        <a href="https://drive.google.com/file/d/1uBNrmnCXSFdrd6vHz6KfMLUFJnCz4Vxk/view" 
-           class="block relative">
-          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-          <img 
-            src="img_recuros_pagina/CONVOCATORIOAS/BANNERS/Banner1.png"
-            alt="Convocatoria Especial"
-            class="w-full h-[300px] object-cover rounded-2xl"
-          >
-          <div class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-            <h3 class="text-xl font-bold mb-2">Convocatoria Especial</h3>
-            <p class="text-sm opacity-90">Consulta los detalles importantes</p>
+          <!-- Ventas -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+            <div class="h-32 bg-purple-600 flex items-center justify-center">
+              <i class="fas fas fa-chart-line text-4xl text-white"></i>
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-gray-900 mb-2">Ventas</h3>
+              <p class="text-sm text-gray-600 mb-3">Desarrolla habilidades en marketing, negociación y estrategias de venta para destacar en el mundo comercial.</p>
+              <ul class="text-sm text-gray-600 mb-4">
+                <li class="flex items-center mb-1"><i class="fas fa-check text-purple-600 mr-2"></i>Marketing Digital</li>
+                <li class="flex items-center mb-1"><i class="fas fa-check text-purple-600 mr-2"></i>Estrategias de Venta</li>
+                <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-2"></i>Atención al Cliente</li>
+              </ul>
+              <a href="pages_oferta_educativa/ventas.html" class="inline-block bg-purple-600 text-white py-2 px-4 rounded-full hover:bg-purple-700 transition-colors duration-300">Explorar más</a>
+            </div>
           </div>
-        </a>
-      </div>
 
-      <!-- Announcement Card 4 -->
-      <div class="group relative overflow-hidden rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfOfmG7BHg8p731LYgcVC5WO5l3hzCtjJqzxMrkgByNG4Iz5A/viewform" 
-           class="block relative">
-          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-          <img 
-            src="img_recuros_pagina/CONVOCATORIOAS/BANNERS/Simple Email Marketing Class Google Classroom Headers.png"
-            alt="Formulario de Registro"
-            class="w-full h-[300px] object-cover rounded-2xl"
-          >
-          <div class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-            <h3 class="text-xl font-bold mb-2">Buzon de quejas </h3>
-            <p class="text-sm opacity-90">presenta tu queja </p>
+          <!-- Mantenimiento de Equipo de Cómputo -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+            <div class="h-32 bg-yellow-600 flex items-center justify-center">
+              <i class="fas fa-laptop text-4xl text-white"></i>
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-gray-900 mb-2">Ecoturismo</h3>
+              <p class="text-sm text-gray-600 mb-3">Aprende a gestionar proyectos turísticos sostenibles y a promover la conservación del medio ambiente.</p>
+              <ul class="text-sm text-gray-600 mb-4">
+                <li class="flex items-center mb-1"><i class="fas fa-check text-yellow-600 mr-2"></i>Turismo Sostenible</li>
+                <li class="flex items-center mb-1"><i class="fas fa-check text-yellow-600 mr-2"></i>Gestión Ambiental</li>
+                <li class="flex items-center"><i class="fas fa-check text-yellow-600 mr-2"></i>Guía Turístico</li>
+              </ul>
+              <a href="pages_oferta_educativa/ecoturismo.html" class="inline-block bg-yellow-600 text-white py-2 px-4 rounded-full hover:bg-yellow-700 transition-colors duration-300">Explorar más</a>
+            </div>
           </div>
-        </a>
+
+          <!-- Mantenimiento de Equipo de Cómputo -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+            <div class="h-32 bg-red-600 flex items-center justify-center">
+              <i class="fas fa-hotel text-4xl text-white"></i>
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-gray-900 mb-2">Servicios de Hotelería</h3>
+              <p class="text-sm text-gray-600 mb-3">Prepárate para una carrera en la industria hotelera y turística, desarrollando habilidades en gestión y servicio al cliente.</p>
+              <ul class="text-sm text-gray-600 mb-4">
+                <li class="flex items-center mb-1"><i class="fas fa-check text-red-600 mr-2"></i>Gestión Hotelera</li>
+                <li class="flex items-center mb-1"><i class="fas fa-check text-red-600 mr-2"></i>Servicio al Cliente</li>
+                <li class="flex items-center"><i class="fas fa-check text-red-600 mr-2"></i>Organización de Eventos</li>
+              </ul>
+              <a href="pages_oferta_educativa/servicios_de_hoteleria.html" class="inline-block bg-red-600 text-white py-2 px-4 rounded-full hover:bg-red-700 transition-colors duration-300">Explorar más</a>
+            </div>
+          </div>
+
+          <!-- Mantenimiento de Equipo de Cómputo -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+            <div class="h-32 bg-orange-600 flex items-center justify-center">
+              <i class="fas fa-industry text-4xl text-white"></i>
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-gray-900 mb-2">Producción Industrial de Alimentos</h3>
+              <p class="text-sm text-gray-600 mb-3">Especialízate en procesos de producción alimentaria, control de calidad y seguridad alimentaria.</p>
+              <ul class="text-sm text-gray-600 mb-4">
+                <li class="flex items-center mb-1"><i class="fas fa-check text-orange-600 mr-2"></i>Procesos de Producción</li>
+                <li class="flex items-center mb-1"><i class="fas fa-check text-orange-600 mr-2"></i>Control de Calidad</li>
+                <li class="flex items-center"><i class="fas fa-check text-orange-600 mr-2"></i>Seguridad Alimentaria</li>
+              </ul>
+              <a href="pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="inline-block bg-orange-600 text-white py-2 px-6 rounded-full hover:bg-orange-700 transition-colors duration-300">Explorar más</a>
+            </div>
+          </div>
+
+          <!-- Repeat similar pattern for other cards with reduced sizes -->
+          <!-- Only showing first 2 cards for brevity, repeat pattern for others -->
+
+        </div>
+
+        <!-- Call to Action -->
+        <div class="text-center mt-12">
+          <p class="text-lg text-gray-600 mb-4">¿Listo para comenzar tu viaje profesional?</p>
+          <a href="pages_alumnos/requisitos_de_ingreso.html" class="inline-block bg-green-600 text-white py-2 px-6 rounded-full text-sm font-semibold hover:bg-green-700 transition-colors duration-300">
+            Conoce los Requisitos de Ingreso
+          </a>
+        </div>
       </div>
+    </section>
+    <!-- FIN SECTION CARRERAS -->
 
-    </div>
-  </div>
-</section>
+    <!-- Start Announcements Section -->
+    <section class="relative py-16 bg-gradient-to-b from-white to-gray-50">
+      <div class="container mx-auto px-4">
+        <!-- Decorative elements -->
+        <div class="absolute top-0 left-0 w-32 h-32 bg-green-50 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
+        <div class="absolute top-0 right-0 w-32 h-32 bg-orange-50 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
+        
+        <div class="relative text-center max-w-3xl mx-auto">
+          <!-- Main heading with animated underline -->
+          <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
+            Convocatorias
+          </h2>
+          
+          <!-- Decorative separator -->
+          <div class="flex justify-center items-center gap-4 mb-6">
+            <div class="h-1 w-20 bg-green-600 rounded animate-pulse"></div>
+            <div class="h-1 w-20 bg-orange-500 rounded animate-pulse"></div>
+            <div class="h-1 w-20 bg-green-600 rounded animate-pulse"></div>
+          </div>
+
+          <!-- Subtitle with highlight -->
+          <p class="text-lg text-gray-600">
+            Última Actualización - <span class="font-semibold text-green-600">Febrero 2025</span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- End Announcements Section -->
+
+    <section class="w-full bg-white py-16 px-4">
+      <div class="max-w-7xl mx-auto">
+        <!-- Announcements Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+          <!-- Announcement Card 1 -->
+          <div class="group relative overflow-hidden rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
+            <a href="https://drive.google.com/drive/folders/1pTh5sxJkOBPixDxVoHspuJcrX9Ef7ZSn" 
+               class="block relative">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <img 
+                src="img_recuros_pagina/CONVOCATORIOAS/BANNERS/Blue and Orange Modern Welcome Banner.png"
+                alt="Convocatoria de plazas administrativas vacantes"
+                class="w-full h-[300px] object-cover rounded-2xl"
+              >
+              <div class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                <h3 class="text-xl font-bold mb-2">Plazas Administrativas Vacantes</h3>
+                <p class="text-sm opacity-90">Consulta las oportunidades laborales disponibles</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Announcement Card 2 -->
+          <div class="group relative overflow-hidden rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
+            <a href="#" class="block relative">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <img 
+                src="img_recuros_pagina/CONVOCATORIOAS/BANNERS/NORMATIVA-DE-LA-USICAMM-CICLO-ESCOLAR-1-2048x768.png"
+                alt="Normativa USICAMM"
+                class="w-full h-[300px] object-cover rounded-2xl"
+              >
+              <div class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                <h3 class="text-xl font-bold mb-2">Normativa USICAMM</h3>
+                <p class="text-sm opacity-90">Información importante sobre el ciclo escolar</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Announcement Card 3 -->
+          <div class="group relative overflow-hidden rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
+            <a href="https://drive.google.com/file/d/1uBNrmnCXSFdrd6vHz6KfMLUFJnCz4Vxk/view" 
+               class="block relative">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <img 
+                src="img_recuros_pagina/CONVOCATORIOAS/BANNERS/Banner1.png"
+                alt="Convocatoria Especial"
+                class="w-full h-[300px] object-cover rounded-2xl"
+              >
+              <div class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                <h3 class="text-xl font-bold mb-2">Convocatoria Especial</h3>
+                <p class="text-sm opacity-90">Consulta los detalles importantes</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Announcement Card 4 -->
+          <div class="group relative overflow-hidden rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfOfmG7BHg8p731LYgcVC5WO5l3hzCtjJqzxMrkgByNG4Iz5A/viewform" 
+               class="block relative">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <img 
+                src="img_recuros_pagina/CONVOCATORIOAS/BANNERS/Simple Email Marketing Class Google Classroom Headers.png"
+                alt="Formulario de Registro"
+                class="w-full h-[300px] object-cover rounded-2xl"
+              >
+              <div class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                <h3 class="text-xl font-bold mb-2">Buzon de quejas </h3>
+                <p class="text-sm opacity-90">presenta tu queja </p>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
     
-    
-    
-  <!-- FIN convocatoria  -->
-
-
-
-
     <footer id="footer" class="bg-white dark:bg-gray-900">
       <div class="border-t-4 border-gray-400 dark:border-gray-1000"></div>
       <div class="mx-auto w-full max-w-screen-xl">
@@ -1090,8 +1038,9 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
     </footer>
 
+    <!-- Scripts -->
     <script>
-      // Toggle the mobile menu
+        // Variables de navegación móvil
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         const serviciosBtn = document.getElementById('servicios-btn');
@@ -1105,37 +1054,33 @@ document.addEventListener('DOMContentLoaded', function() {
         const trnsBtn = document.getElementById('trns-btn');
         const trnsSubmenu = document.getElementById('trns-submenu');
 
+        // Event listeners para menú móvil
         menuBtn.addEventListener('click', () => {
-          mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('hidden');
         });
 
         serviciosBtn?.addEventListener('click', () => {
-          serviciosSubmenu.classList.toggle('hidden');
+            serviciosSubmenu.classList.toggle('hidden');
         });
 
         nosotrosBtn?.addEventListener('click', () => {
-          nosotrosSubmenu.classList.toggle('hidden');
+            nosotrosSubmenu.classList.toggle('hidden');
         });
 
         alumnosBtn?.addEventListener('click', () => {
-          alumnosSubmenu.classList.toggle('hidden');
+            alumnosSubmenu.classList.toggle('hidden');
         });
 
         normaBtn?.addEventListener('click', () => {
-          normaSubmenu.classList.toggle('hidden');
+            normaSubmenu.classList.toggle('hidden');
         });
 
         trnsBtn?.addEventListener('click', () => {
-          trnsSubmenu.classList.toggle('hidden');
+            trnsSubmenu.classList.toggle('hidden');
         });
 
-     
-
-
-
-     
-
-function mostrarFecha() {
+        // Función para mostrar fecha
+        function mostrarFecha() {
             const fecha = new Date();
             const mes = fecha.toLocaleDateString('es-ES', { month: 'long' });
             const año = fecha.getFullYear();
@@ -1144,8 +1089,8 @@ function mostrarFecha() {
             document.getElementById("año").textContent = año;
         }
 
-      // Inicializar el slider
-      updateSlider();
-  </script>
+        // Inicializar el slider
+        updateSlider();
+    </script>
   </body>
 </html>
