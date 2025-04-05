@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Planteles EMSAD</title>
+    <title>Planteles EMSaD</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -17,14 +17,13 @@
       href="https://unpkg.com/flowbite@^2.1/dist/flowbite.min.css"
       rel="stylesheet"
     />
-    
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <script src="https://unpkg.com/flowbite@^2.1/dist/flowbite.min.js"></script>
 </head>
-<body class="bg-white-100">
+<body class="bg-gray-50">
 
    <!-- INCIO NAVBAR CON SUBEMENUS -->
 <nav class="bg-white shadow-lg">
@@ -218,749 +217,720 @@
 
 
     <!-- Main Content -->
-    <main class="container mx-auto p-6 space-y-6">
-        <!-- Introducción -->
-        <section class="bg-white p-8 rounded-lg shadow-lg">
-            <h2 class="text-3xl font-bold text-green-600 border-b-4 border-orange-500 inline-block mb-4">Acerca de EMSaD</h2>
-            
-            <p class="mt-4 text-justify">Los Centros de Educación Media Superior a Distancia (EMSaD) son una modalidad educativa perteneciente al Colegio de Estudios Científicos y Tecnológicos del Estado de Baja California Sur (CECYTEBCS), que ofrece estudios de bachillerato tecnológico a jóvenes y adultos en comunidades rurales y semiurbanas, permitiéndoles acceder a una educación de calidad sin necesidad de trasladarse a las ciudades.</p>
-
-            <a href="ubica_tu_plantel.html" class="inline-block px-6 py-3 text-white font-bold rounded-lg shadow-md bg-green-800 transform hover:scale-105 transition-all ">
-              <i class="fas fa-map-marker-alt mr-2"></i>
-              Ubica tu plantel más cercano
-          </a>
+    <main class="container mx-auto px-4 py-12 max-w-7xl">
+        <!-- Hero Section -->
+        <section class="mb-16">
+            <div class="bg-gradient-to-r from-green-600 to-green-800 rounded-2xl p-8 md:p-12 text-white shadow-xl">
+                <div class="max-w-3xl">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Planteles EMSaD</h1>
+                    <p class="text-lg md:text-xl text-green-100 mb-6">Descubre nuestras instalaciones educativas distribuidas en todo el estado de Baja California Sur.</p>
+                    <a href="ubica_tu_plantel.html" class="inline-flex items-center px-6 py-3 bg-white text-green-800 font-semibold rounded-lg shadow-md hover:bg-green-50 transition-all duration-300">
+                        <i class="fas fa-map-marker-alt mr-2"></i>
+                        Encuentra tu plantel más cercano
+                    </a>
+                </div>
+            </div>
         </section>
 
-        <!-- Planteles EMSaD -->
-        <section class="bg-white p-8 rounded-lg shadow-lg">
-            <h2 class="text-3xl font-bold text-green-600 border-b-4 border-orange-500 inline-block mb-4">Planteles EMSaD</h2>
-            
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-    <div class="bg-white rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300 max-w-md mx-auto">
-        <!-- Image container with overlay -->
-        <div class="relative">
-            <img src="../img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_01/emsad01.jpg" 
-                 alt="EMSaD 01 Bahía Asunción" 
-                 class="w-full h-56 object-cover">
-            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-                <h3 class="text-2xl font-bold text-white">EMSaD 01 - Bahía Asunción</h3>
+        <!-- About Section -->
+        <section class="mb-16">
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Acerca de EMSaD</h2>
+                <p class="text-gray-600 text-lg leading-relaxed">El Colegio de Estudios Científicos y Tecnológicos del Estado de Baja California Sur (CECYTEBCS) es una institución educativa que ofrece estudios de bachillerato tecnológico a jóvenes y adultos en todo el estado. Su misión es brindar una educación de calidad, fomentando el desarrollo integral de sus estudiantes a través de programas educativos que combinan la formación académica con la capacitación técnica. Esto permite a los estudiantes acceder a mejores oportunidades laborales y continuar con estudios superiores, contribuyendo así al desarrollo social y económico de sus comunidades.</p>
             </div>
-        </div>
+        </section>
 
-        <!-- Content container -->
-        <div class="p-6 space-y-4">
-            <!-- Coordinator info -->
-            <div class="flex items-center space-x-3">
-                <div class="p-2 bg-green-100 rounded-full">
-                    <i class="fas fa-user-tie text-green-600"></i>
+        <!-- Planteles Grid Section -->
+        <section class="mb-16">
+            <div class="flex items-center justify-between mb-8">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-800">Nuestros Planteles</h2>
+                    <p class="text-gray-600 mt-2">Conoce nuestras instalaciones y encuentra la que mejor se adapte a ti</p>
+                </div>
+                <div class="hidden md:block">
+                    <i class="fas fa-school text-5xl text-green-600 opacity-80"></i>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300 max-w-md mx-auto">
+                    <!-- Image container with overlay -->
+                    <div class="relative">
+                        <img src="../img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_01/emsad01.jpg" 
+                             alt="EMSaD 01 Bahía Asunción" 
+                             class="w-full h-56 object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                            <h3 class="text-2xl font-bold text-white">EMSaD 01 - Bahía Asunción</h3>
+                        </div>
+                    </div>
+
+                    <!-- Content container -->
+                    <div class="p-6 space-y-4">
+                        <!-- Coordinator info -->
+                        <div class="flex items-center space-x-3">
+                            <div class="p-2 bg-green-100 rounded-full">
+                                <i class="fas fa-user-tie text-green-600"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500">Coordinador del Centro</p>
+                                <p class="font-semibold text-gray-800">C. Luis Fernández Ojeda</p>
+                            </div>
+                        </div>
+
+                        <!-- Contact info -->
+                        <div class="space-y-3">
+                            <a href="mailto:emsad01@cecytebcs.edu.mx" 
+                               class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition-colors">
+                                <div class="p-2 bg-blue-100 rounded-full">
+                                    <i class="fas fa-envelope text-blue-600"></i>
+                                </div>
+                                <span class="text-blue-600 hover:underline">emsad01@cecytebcs.edu.mx</span>
+                            </a>
+
+                            <div class="flex items-center space-x-3 p-2">
+                                <div class="p-2 bg-purple-100 rounded-full">
+                                    <i class="fas fa-phone text-purple-600"></i>
+                                </div>
+                                <span class="text-gray-700">(615) 160 0041</span>
+                            </div>
+
+                            <div class="flex items-center space-x-3 p-2">
+                                <div class="p-2 bg-red-100 rounded-full">
+                                    <i class="fas fa-map-marker-alt text-red-600"></i>
+                                </div>
+                                <p class="text-gray-700">Av. Benito Juárez y Calle Atún, CP 23960. Bahía Asunción, B.C.S.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300 max-w-md mx-auto">
+                    <!-- Image container with overlay -->
+                    <div class="relative">
+                        <img src="../img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_03/emsad_03.jpg" 
+                             alt="EMSaD 03 Bahía Tortugas" 
+                             class="w-full h-56 object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                            <h3 class="text-2xl font-bold text-white">EMSaD 03 - Bahía Tortugas</h3>
+                        </div>
+                    </div>
+
+                    <!-- Content container -->
+                    <div class="p-6 space-y-4">
+                        <!-- Coordinator info -->
+                        <div class="flex items-center space-x-3">
+                            <div class="p-2 bg-green-100 rounded-full">
+                                <i class="fas fa-user-tie text-green-600"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500">Coordinador del Centro</p>
+                                <p class="font-semibold text-gray-800">C. Sergio Jorge Barajas Torres</p>
+                            </div>
+                        </div>
+
+                        <!-- Contact info -->
+                        <div class="space-y-3">
+                            <a href="mailto:emsad03@cecytebcs.edu.mx" 
+                               class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition-colors">
+                                <div class="p-2 bg-blue-100 rounded-full">
+                                    <i class="fas fa-envelope text-blue-600"></i>
+                                </div>
+                                <span class="text-blue-600 hover:underline">emsad03@cecytebcs.edu.mx</span>
+                            </a>
+
+                            <div class="flex items-center space-x-3 p-2">
+                                <div class="p-2 bg-purple-100 rounded-full">
+                                    <i class="fas fa-phone text-purple-600"></i>
+                                </div>
+                                <span class="text-gray-700">(615) 158 0447</span>
+                            </div>
+
+                            <div class="flex items-center space-x-3 p-2">
+                                <div class="p-2 bg-red-100 rounded-full">
+                                    <i class="fas fa-map-marker-alt text-red-600"></i>
+                                </div>
+                                <p class="text-gray-700">Marina Nacional Norte s/n, CP 23950, Bahía Tortugas, B.C.S.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300 max-w-md mx-auto">
+                    <!-- Image container with overlay -->
+                    <div class="relative">
+                        <img src="../img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_06/emsad06.jpg" 
+                             alt="EMSaD 06 La Bocana" 
+                             class="w-full h-56 object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                            <h3 class="text-2xl font-bold text-white">EMSaD 06 - La Bocana</h3>
+                        </div>
+                    </div>
+
+                    <!-- Content container -->
+                    <div class="p-6 space-y-4">
+                        <!-- Coordinator info -->
+                        <div class="flex items-center space-x-3">
+                            <div class="p-2 bg-green-100 rounded-full">
+                                <i class="fas fa-user-tie text-green-600"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500">Coordinador del Centro</p>
+                                <p class="font-semibold text-gray-800">C. Nohelia Aguilar Villavicencio</p>
+                            </div>
+                        </div>
+
+                        <!-- Contact info -->
+                        <div class="space-y-3">
+                            <a href="mailto:emsad06@cecytebcs.edu.mx" 
+                               class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition-colors">
+                                <div class="p-2 bg-blue-100 rounded-full">
+                                    <i class="fas fa-envelope text-blue-600"></i>
+                                </div>
+                                <span class="text-blue-600 hover:underline">emsad06@cecytebcs.edu.mx</span>
+                            </a>
+
+                            <div class="flex items-center space-x-3 p-2">
+                                <div class="p-2 bg-purple-100 rounded-full">
+                                    <i class="fas fa-phone text-purple-600"></i>
+                                </div>
+                                <span class="text-gray-700">(615) 156 0006</span>
+                            </div>
+
+                            <div class="flex items-center space-x-3 p-2">
+                                <div class="p-2 bg-red-100 rounded-full">
+                                    <i class="fas fa-map-marker-alt text-red-600"></i>
+                                </div>
+                                <p class="text-gray-700">Dom. Avenida Abulon esquina Garropa s/n, CP 23973, La Bocana, B.C.S.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300 max-w-md mx-auto">
+                    <!-- Image container with overlay -->
+                    <div class="relative">
+                        <img src="../img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_07/emsad07.jpg" 
+                             alt="EMSaD 07 San Ignacio" 
+                             class="w-full h-56 object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                            <h3 class="text-2xl font-bold text-white">EMSaD 07 - San Ignacio</h3>
+                        </div>
+                    </div>
+
+                    <!-- Content container -->
+                    <div class="p-6 space-y-4">
+                        <!-- Coordinator info -->
+                        <div class="flex items-center space-x-3">
+                            <div class="p-2 bg-green-100 rounded-full">
+                                <i class="fas fa-user-tie text-green-600"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500">Coordinador del Centro</p>
+                                <p class="font-semibold text-gray-800">C. José Lino Fontes Murillo</p>
+                            </div>
+                        </div>
+
+                        <!-- Contact info -->
+                        <div class="space-y-3">
+                            <a href="mailto:emsad07@cecytebcs.edu.mx" 
+                               class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition-colors">
+                                <div class="p-2 bg-blue-100 rounded-full">
+                                    <i class="fas fa-envelope text-blue-600"></i>
+                                </div>
+                                <span class="text-blue-600 hover:underline">emsad07@cecytebcs.edu.mx</span>
+                            </a>
+
+                            <div class="flex items-center space-x-3 p-2">
+                                <div class="p-2 bg-purple-100 rounded-full">
+                                    <i class="fas fa-phone text-purple-600"></i>
+                                </div>
+                                <span class="text-gray-700">(615) 154 0025</span>
+                            </div>
+
+                            <div class="flex items-center space-x-3 p-2">
+                                <div class="p-2 bg-red-100 rounded-full">
+                                    <i class="fas fa-map-marker-alt text-red-600"></i>
+                                </div>
+                                <p class="text-gray-700">Av. Venustiano Carranza # 20, Col. Pueblo Nuevo, CP 23930, San Ignacio, B.C.S.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300 max-w-md mx-auto">
+                    <!-- Image container with overlay -->
+                    <div class="relative">
+                        <img src="../img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_08/emsad08.jpg" 
+                             alt="EMSaD 08 Ciudad Insurgentes" 
+                             class="w-full h-56 object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                            <h3 class="text-2xl font-bold text-white">EMSaD 08 - Ciudad Insurgentes</h3>
+                        </div>
+                    </div>
+
+                    <!-- Content container -->
+                    <div class="p-6 space-y-4">
+                        <!-- Coordinator info -->
+                        <div class="flex items-center space-x-3">
+                            <div class="p-2 bg-green-100 rounded-full">
+                                <i class="fas fa-user-tie text-green-600"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500">Coordinador del Centro</p>
+                                <p class="font-semibold text-gray-800">C. Vianey Arce Gerardo</p>
+                            </div>
+                        </div>
+
+                        <!-- Contact info -->
+                        <div class="space-y-3">
+                            <a href="mailto:emsad08@cecytebcs.edu.mx" 
+                               class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition-colors">
+                                <div class="p-2 bg-blue-100 rounded-full">
+                                    <i class="fas fa-envelope text-blue-600"></i>
+                                </div>
+                                <span class="text-blue-600 hover:underline">emsad08@cecytebcs.edu.mx</span>
+                            </a>
+
+                            <div class="flex items-center space-x-3 p-2">
+                                <div class="p-2 bg-purple-100 rounded-full">
+                                    <i class="fas fa-phone text-purple-600"></i>
+                                </div>
+                                <span class="text-gray-700">(613) 131 0954</span>
+                            </div>
+
+                            <div class="flex items-center space-x-3 p-2">
+                                <div class="p-2 bg-red-100 rounded-full">
+                                    <i class="fas fa-map-marker-alt text-red-600"></i>
+                                </div>
+                                <p class="text-gray-700">Av. Vicente Guerrero e/ 18 De Julio y 21 De Marzo, CP 23700, Cd. Insurgentes, B.C.S.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300 max-w-md mx-auto">
+                    <!-- Image container with overlay -->
+                    <div class="relative">
+                        <img src="../img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_09/emsad09.jpg" 
+                             alt="EMSaD 09 Benito Juárez" 
+                             class="w-full h-56 object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                            <h3 class="text-2xl font-bold text-white">EMSaD 09 - Benito Juárez</h3>
+                        </div>
+                    </div>
+
+                    <!-- Content container -->
+                    <div class="p-6 space-y-4">
+                        <!-- Coordinator info -->
+                        <div class="flex items-center space-x-3">
+                            <div class="p-2 bg-green-100 rounded-full">
+                                <i class="fas fa-user-tie text-green-600"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500">Coordinador del Centro</p>
+                                <p class="font-semibold text-gray-800">C. Francisco Javier Ponce Bernal</p>
+                            </div>
+                        </div>
+
+                        <!-- Contact info -->
+                        <div class="space-y-3">
+                            <a href="mailto:emsad09@cecytebcs.edu.mx" 
+                               class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition-colors">
+                                <div class="p-2 bg-blue-100 rounded-full">
+                                    <i class="fas fa-envelope text-blue-600"></i>
+                                </div>
+                                <span class="text-blue-600 hover:underline">emsad09@cecytebcs.edu.mx</span>
+                            </a>
+
+                            <div class="flex items-center space-x-3 p-2">
+                                <div class="p-2 bg-purple-100 rounded-full">
+                                    <i class="fas fa-phone text-purple-600"></i>
+                                </div>
+                                <span class="text-gray-700">(613) 131 6054</span>
+                            </div>
+
+                            <div class="flex items-center space-x-3 p-2">
+                                <div class="p-2 bg-red-100 rounded-full">
+                                    <i class="fas fa-map-marker-alt text-red-600"></i>
+                                </div>
+                                <p class="text-gray-700">Dom. Calzada de la Reforma, CP 23730, Benito Juárez, B.C.S.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300 max-w-md mx-auto">
+                    <!-- Image container with overlay -->
+                    <div class="relative">
+                        <img src="../img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_10/emsad10.jpg" 
+                             alt="EMSaD 10 Puerto Adolfo López Mateos" 
+                             class="w-full h-56 object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                            <h3 class="text-2xl font-bold text-white">EMSaD 10 - Puerto Adolfo López Mateos</h3>
+                        </div>
+                    </div>
+
+                    <!-- Content container -->
+                    <div class="p-6 space-y-4">
+                        <!-- Coordinator info -->
+                        <div class="flex items-center space-x-3">
+                            <div class="p-2 bg-green-100 rounded-full">
+                                <i class="fas fa-user-tie text-green-600"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500">Coordinador del Centro</p>
+                                <p class="font-semibold text-gray-800">C. José Manuel Miranda Cadena</p>
+                            </div>
+                        </div>
+
+                        <!-- Contact info -->
+                        <div class="space-y-3">
+                            <a href="mailto:emsad10@cecytebcs.edu.mx" 
+                               class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition-colors">
+                                <div class="p-2 bg-blue-100 rounded-full">
+                                    <i class="fas fa-envelope text-blue-600"></i>
+                                </div>
+                                <span class="text-blue-600 hover:underline">emsad10@cecytebcs.edu.mx</span>
+                            </a>
+
+                            <div class="flex items-center space-x-3 p-2">
+                                <div class="p-2 bg-purple-100 rounded-full">
+                                    <i class="fas fa-phone text-purple-600"></i>
+                                </div>
+                                <span class="text-gray-700">(613) 131 5258</span>
+                            </div>
+
+                            <div class="flex items-center space-x-3 p-2">
+                                <div class="p-2 bg-red-100 rounded-full">
+                                    <i class="fas fa-map-marker-alt text-red-600"></i>
+                                </div>
+                                <p class="text-gray-700">Lázaro Cárdenas y Anastacio Bustamante s/n, CP 23710, Pto. Adolfo López Mateos, B.C.S.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300 max-w-md mx-auto">
+                    <!-- Image container with overlay -->
+                    <div class="relative">
+                        <img src="../img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_11/emsad11.jpg" 
+                             alt="EMSaD 11 San Isidro" 
+                             class="w-full h-56 object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                            <h3 class="text-2xl font-bold text-white">EMSaD 11 - San Isidro</h3>
+                        </div>
+                    </div>
+
+                    <!-- Content container -->
+                    <div class="p-6 space-y-4">
+                        <!-- Coordinator info -->
+                        <div class="flex items-center space-x-3">
+                            <div class="p-2 bg-green-100 rounded-full">
+                                <i class="fas fa-user-tie text-green-600"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500">Coordinador del Centro</p>
+                                <p class="font-semibold text-gray-800">C. Mónica Ramona Meza Higuera</p>
+                            </div>
+                        </div>
+
+                        <!-- Contact info -->
+                        <div class="space-y-3">
+                            <a href="mailto:emsad11@cecytebcs.edu.mx" 
+                               class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition-colors">
+                                <div class="p-2 bg-blue-100 rounded-full">
+                                    <i class="fas fa-envelope text-blue-600"></i>
+                                </div>
+                                <span class="text-blue-600 hover:underline">emsad11@cecytebcs.edu.mx</span>
+                            </a>
+
+                            <div class="flex items-center space-x-3 p-2">
+                                <div class="p-2 bg-purple-100 rounded-full">
+                                    <i class="fas fa-phone text-purple-600"></i>
+                                </div>
+                                <span class="text-gray-700">(613) 118 2907</span>
+                            </div>
+
+                            <div class="flex items-center space-x-3 p-2">
+                                <div class="p-2 bg-red-100 rounded-full">
+                                    <i class="fas fa-map-marker-alt text-red-600"></i>
+                                </div>
+                                <p class="text-gray-700">Col. Ranchera, CP 23810, San Isidro, Comondú, B.C.S.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300 max-w-md mx-auto">
+                    <!-- Image container with overlay -->
+                    <div class="relative">
+                        <img src="../img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_12/emsad12.jpg" 
+                             alt="EMSaD 12 Las Pocitas" 
+                             class="w-full h-56 object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                            <h3 class="text-2xl font-bold text-white">EMSaD 12 - Las Pocitas</h3>
+                        </div>
+                    </div>
+
+                    <!-- Content container -->
+                    <div class="p-6 space-y-4">
+                        <!-- Coordinator info -->
+                        <div class="flex items-center space-x-3">
+                            <div class="p-2 bg-green-100 rounded-full">
+                                <i class="fas fa-user-tie text-green-600"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500">Coordinador del Centro</p>
+                                <p class="font-semibold text-gray-800">C. Javier Amarillas Marquez</p>
+                            </div>
+                        </div>
+
+                        <!-- Contact info -->
+                        <div class="space-y-3">
+                            <a href="mailto:emsad12@cecytebcs.edu.mx" 
+                               class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition-colors">
+                                <div class="p-2 bg-blue-100 rounded-full">
+                                    <i class="fas fa-envelope text-blue-600"></i>
+                                </div>
+                                <span class="text-blue-600 hover:underline">emsad12@cecytebcs.edu.mx</span>
+                            </a>
+
+                            <div class="flex items-center space-x-3 p-2">
+                                <div class="p-2 bg-purple-100 rounded-full">
+                                    <i class="fas fa-phone text-purple-600"></i>
+                                </div>
+                                <span class="text-gray-700">(612) 111 2222</span>
+                            </div>
+
+                            <div class="flex items-center space-x-3 p-2">
+                                <div class="p-2 bg-red-100 rounded-full">
+                                    <i class="fas fa-map-marker-alt text-red-600"></i>
+                                </div>
+                                <p class="text-gray-700">Carretera Transpeninsular Km. 112, La Paz- Ciudad Constitución, CP 23150, Las Pocitas, B.C.S.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300 max-w-md mx-auto">
+                    <!-- Image container with overlay -->
+                    <div class="relative">
+                        <img src="../img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_13/EMSAD13-1.jpg" 
+                             alt="EMSaD 13 Manuel Márquez de León" 
+                             class="w-full h-56 object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                            <h3 class="text-2xl font-bold text-white">EMSaD 13 - Manuel Márquez de León</h3>
+                        </div>
+                    </div>
+
+                    <!-- Content container -->
+                    <div class="p-6 space-y-4">
+                        <!-- Coordinator info -->
+                        <div class="flex items-center space-x-3">
+                            <div class="p-2 bg-green-100 rounded-full">
+                                <i class="fas fa-user-tie text-green-600"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500">Coordinador del Centro</p>
+                                <p class="font-semibold text-gray-800">C. Leyla Zulema Contreras</p>
+                            </div>
+                        </div>
+
+                        <!-- Contact info -->
+                        <div class="space-y-3">
+                            <a href="mailto:emsad13@cecytebcs.edu.mx" 
+                               class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition-colors">
+                                <div class="p-2 bg-blue-100 rounded-full">
+                                    <i class="fas fa-envelope text-blue-600"></i>
+                                </div>
+                                <span class="text-blue-600 hover:underline">emsad13@cecytebcs.edu.mx</span>
+                            </a>
+
+                            <div class="flex items-center space-x-3 p-2">
+                                <div class="p-2 bg-purple-100 rounded-full">
+                                    <i class="fas fa-phone text-purple-600"></i>
+                                </div>
+                                <span class="text-gray-700">(612) 185 8446</span>
+                            </div>
+
+                            <div class="flex items-center space-x-3 p-2">
+                                <div class="p-2 bg-red-100 rounded-full">
+                                    <i class="fas fa-map-marker-alt text-red-600"></i>
+                                </div>
+                                <p class="text-gray-700">Calle San Juan Bautista e/ San Ramón Nonato y Santa Ana, CP 23038, Colonia Villas De Guadalupe, La Paz, B.C.S.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300 max-w-md mx-auto">
+                    <!-- Image container with overlay -->
+                    <div class="relative">
+                        <img src="../img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_14/E_14.jpg" 
+                             alt="EMSaD 14 Ejido Melitón Albañez Domínguez" 
+                             class="w-full h-56 object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                            <h3 class="text-2xl font-bold text-white">EMSaD 14 - Ejido Melitón Albañez Domínguez</h3>
+                        </div>
+                    </div>
+
+                    <!-- Content container -->
+                    <div class="p-6 space-y-4">
+                        <!-- Coordinator info -->
+                        <div class="flex items-center space-x-3">
+                            <div class="p-2 bg-green-100 rounded-full">
+                                <i class="fas fa-user-tie text-green-600"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500">Coordinador del Centro</p>
+                                <p class="font-semibold text-gray-800">C. Mariel Gerardo Arce</p>
+                            </div>
+                        </div>
+
+                        <!-- Contact info -->
+                        <div class="space-y-3">
+                            <a href="mailto:emsad14@cecytebcs.edu.mx" 
+                               class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition-colors">
+                                <div class="p-2 bg-blue-100 rounded-full">
+                                    <i class="fas fa-envelope text-blue-600"></i>
+                                </div>
+                                <span class="text-blue-600 hover:underline">emsad14@cecytebcs.edu.mx</span>
+                            </a>
+
+                            <div class="flex items-center space-x-3 p-2">
+                                <div class="p-2 bg-purple-100 rounded-full">
+                                    <i class="fas fa-phone text-purple-600"></i>
+                                </div>
+                                <span class="text-gray-700">(613) 137 2586</span>
+                            </div>
+
+                            <div class="flex items-center space-x-3 p-2">
+                                <div class="p-2 bg-red-100 rounded-full">
+                                    <i class="fas fa-map-marker-alt text-red-600"></i>
+                                </div>
+                                <p class="text-gray-700">Domicilio Conocido, CP 23258, Localidad Ejido Melitón Albañez Domínguez, B.C.S.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300 max-w-md mx-auto">
+                    <!-- Image container with overlay -->
+                    <div class="relative">
+                        <img src="../img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_16/emsad16.jpg" 
+                             alt="EMSaD 16 Los Barriles" 
+                             class="w-full h-56 object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                            <h3 class="text-2xl font-bold text-white">EMSaD 16 - Los Barriles</h3>
+                        </div>
+                    </div>
+
+                    <!-- Content container -->
+                    <div class="p-6 space-y-4">
+                        <!-- Coordinator info -->
+                        <div class="flex items-center space-x-3">
+                            <div class="p-2 bg-green-100 rounded-full">
+                                <i class="fas fa-user-tie text-green-600"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500">Coordinador del Centro</p>
+                                <p class="font-semibold text-gray-800">C. Carmen Cota Ruíz</p>
+                            </div>
+                        </div>
+
+                        <!-- Contact info -->
+                        <div class="space-y-3">
+                            <a href="mailto:emsad16@cecytebcs.edu.mx" 
+                               class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition-colors">
+                                <div class="p-2 bg-blue-100 rounded-full">
+                                    <i class="fas fa-envelope text-blue-600"></i>
+                                </div>
+                                <span class="text-blue-600 hover:underline">emsad16@cecytebcs.edu.mx</span>
+                            </a>
+
+                            <div class="flex items-center space-x-3 p-2">
+                                <div class="p-2 bg-purple-100 rounded-full">
+                                    <i class="fas fa-phone text-purple-600"></i>
+                                </div>
+                                <span class="text-gray-700">(624) 124 8566</span>
+                            </div>
+
+                            <div class="flex items-center space-x-3 p-2">
+                                <div class="p-2 bg-red-100 rounded-full">
+                                    <i class="fas fa-map-marker-alt text-red-600"></i>
+                                </div>
+                                <p class="text-gray-700">Carretera Transpeninsular, Kilómetro 101 Tramo Cabo San Lucas- La Paz, CP 23330, Los Barriles, B.C.S.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200">
+        <div class="mx-auto max-w-7xl px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Sitios de Interés</h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="https://itaibcs.net/" class="text-gray-600 hover:text-green-600 transition-colors">ITAI del Estado de B.C.S.</a>
+                        </li>
+                        <li>
+                            <a href="https://transparencia.cre.gob.mx/plataforma-nacional-de-transparencia-sipot/" class="text-gray-600 hover:text-green-600 transition-colors">SIPOT</a>
+                        </li>
+                    </ul>
                 </div>
                 <div>
-                    <p class="text-sm text-gray-500">Coordinador del Centro</p>
-                    <p class="font-semibold text-gray-800">C. Luis Fernández Ojeda</p>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Domicilio</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li>Golfo de California No. 190</li>
+                        <li>Col. El Conchalito.</li>
+                        <li>Cp: 23090</li>
+                        <li>La Paz B.C.S</li>
+                    </ul>
                 </div>
-            </div>
-
-            <!-- Contact info -->
-            <div class="space-y-3">
-                <a href="mailto:emsad01@cecytebcs.edu.mx" 
-                   class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition-colors">
-                    <div class="p-2 bg-blue-100 rounded-full">
-                        <i class="fas fa-envelope text-blue-600"></i>
-                    </div>
-                    <span class="text-blue-600 hover:underline">emsad01@cecytebcs.edu.mx</span>
-                </a>
-
-                <div class="flex items-center space-x-3 p-2">
-                    <div class="p-2 bg-purple-100 rounded-full">
-                        <i class="fas fa-phone text-purple-600"></i>
-                    </div>
-                    <span class="text-gray-700">(615) 160 0041</span>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Teléfonos</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-600 hover:text-green-600 transition-colors">612 - 12 32244</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-green-600 transition-colors">612 - 12 40430</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-green-600 transition-colors">612 - 12 40656</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-green-600 transition-colors">612 - 12 40656</a></li>
+                    </ul>
                 </div>
-
-                <div class="flex items-center space-x-3 p-2">
-                    <div class="p-2 bg-red-100 rounded-full">
-                        <i class="fas fa-map-marker-alt text-red-600"></i>
-                    </div>
-                    <p class="text-gray-700">Av. Benito Juárez y Calle Atún, CP 23960. Bahía Asunción, B.C.S.</p>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Síguenos</h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="https://www.facebook.com/DGCECYTEBCS" class="text-gray-600 hover:text-green-600 transition-colors flex items-center">
+                                <i class="fab fa-facebook mr-2"></i> Facebook
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://x.com/CECYTE_BCS?lang=es" class="text-gray-600 hover:text-green-600 transition-colors flex items-center">
+                                <i class="fab fa-twitter mr-2"></i> Twitter
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCAjoT3ODBsMhq75-KFJuNYA" class="text-gray-600 hover:text-green-600 transition-colors flex items-center">
+                                <i class="fab fa-youtube mr-2"></i> YouTube
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
-            
-                
-                
-<div class="bg-white rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300 max-w-md mx-auto">
-    <!-- Image container with overlay -->
-    <div class="relative">
-        <img src="../img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_03/emsad_03.jpg" 
-             alt="EMSaD 03 Bahía Tortugas" 
-             class="w-full h-56 object-cover">
-        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-            <h3 class="text-2xl font-bold text-white">EMSaD 03 - Bahía Tortugas</h3>
-        </div>
-    </div>
-
-    <!-- Content container -->
-    <div class="p-6 space-y-4">
-        <!-- Coordinator info -->
-        <div class="flex items-center space-x-3">
-            <div class="p-2 bg-green-100 rounded-full">
-                <i class="fas fa-user-tie text-green-600"></i>
-            </div>
-            <div>
-                <p class="text-sm text-gray-500">Coordinador del Centro</p>
-                <p class="font-semibold text-gray-800">C. Sergio Jorge Barajas Torres</p>
+        <div class="bg-gray-800 text-white py-4">
+            <div class="container mx-auto px-4 text-center text-sm">
+                © 2024 Departamento de Informática. Todos los derechos reservados.
             </div>
         </div>
+    </footer>
 
-        <!-- Contact info -->
-        <div class="space-y-3">
-            <a href="mailto:emsad03@cecytebcs.edu.mx" 
-               class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition-colors">
-                <div class="p-2 bg-blue-100 rounded-full">
-                    <i class="fas fa-envelope text-blue-600"></i>
-                </div>
-                <span class="text-blue-600 hover:underline">emsad03@cecytebcs.edu.mx</span>
-            </a>
-
-            <div class="flex items-center space-x-3 p-2">
-                <div class="p-2 bg-purple-100 rounded-full">
-                    <i class="fas fa-phone text-purple-600"></i>
-                </div>
-                <span class="text-gray-700">(615) 158 0447</span>
-            </div>
-
-            <div class="flex items-center space-x-3 p-2">
-                <div class="p-2 bg-red-100 rounded-full">
-                    <i class="fas fa-map-marker-alt text-red-600"></i>
-                </div>
-                <p class="text-gray-700">Marina Nacional Norte s/n, CP 23950, Bahía Tortugas, B.C.S.</p>
-            </div>
-        </div>
-    </div>
-</div>
-                
-<div class="bg-white rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300 max-w-md mx-auto">
-    <!-- Image container with overlay -->
-    <div class="relative">
-        <img src="../img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_06/emsad06.jpg" 
-             alt="EMSaD 06 La Bocana" 
-             class="w-full h-56 object-cover">
-        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-            <h3 class="text-2xl font-bold text-white">EMSaD 06 - La Bocana</h3>
-        </div>
-    </div>
-
-    <!-- Content container -->
-    <div class="p-6 space-y-4">
-        <!-- Coordinator info -->
-        <div class="flex items-center space-x-3">
-            <div class="p-2 bg-green-100 rounded-full">
-                <i class="fas fa-user-tie text-green-600"></i>
-            </div>
-            <div>
-                <p class="text-sm text-gray-500">Coordinador del Centro</p>
-                <p class="font-semibold text-gray-800">C. Nohelia Aguilar Villavicencio</p>
-            </div>
-        </div>
-
-        <!-- Contact info -->
-        <div class="space-y-3">
-            <a href="mailto:emsad06@cecytebcs.edu.mx" 
-               class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition-colors">
-                <div class="p-2 bg-blue-100 rounded-full">
-                    <i class="fas fa-envelope text-blue-600"></i>
-                </div>
-                <span class="text-blue-600 hover:underline">emsad06@cecytebcs.edu.mx</span>
-            </a>
-
-            <div class="flex items-center space-x-3 p-2">
-                <div class="p-2 bg-purple-100 rounded-full">
-                    <i class="fas fa-phone text-purple-600"></i>
-                </div>
-                <span class="text-gray-700">(615) 156 0006</span>
-            </div>
-
-            <div class="flex items-center space-x-3 p-2">
-                <div class="p-2 bg-red-100 rounded-full">
-                    <i class="fas fa-map-marker-alt text-red-600"></i>
-                </div>
-                <p class="text-gray-700">Dom. Avenida Abulon esquina Garropa s/n, CP 23973, La Bocana, B.C.S.</p>
-            </div>
-        </div>
-    </div>
-</div>
-                
-<div class="bg-white rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300 max-w-md mx-auto">
-    <!-- Image container with overlay -->
-    <div class="relative">
-        <img src="../img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_07/emsad07.jpg" 
-             alt="EMSaD 07 San Ignacio" 
-             class="w-full h-56 object-cover">
-        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-            <h3 class="text-2xl font-bold text-white">EMSaD 07 - San Ignacio</h3>
-        </div>
-    </div>
-
-    <!-- Content container -->
-    <div class="p-6 space-y-4">
-        <!-- Coordinator info -->
-        <div class="flex items-center space-x-3">
-            <div class="p-2 bg-green-100 rounded-full">
-                <i class="fas fa-user-tie text-green-600"></i>
-            </div>
-            <div>
-                <p class="text-sm text-gray-500">Coordinador del Centro</p>
-                <p class="font-semibold text-gray-800">C. José Lino Fontes Murillo</p>
-            </div>
-        </div>
-
-        <!-- Contact info -->
-        <div class="space-y-3">
-            <a href="mailto:emsad07@cecytebcs.edu.mx" 
-               class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition-colors">
-                <div class="p-2 bg-blue-100 rounded-full">
-                    <i class="fas fa-envelope text-blue-600"></i>
-                </div>
-                <span class="text-blue-600 hover:underline">emsad07@cecytebcs.edu.mx</span>
-            </a>
-
-            <div class="flex items-center space-x-3 p-2">
-                <div class="p-2 bg-purple-100 rounded-full">
-                    <i class="fas fa-phone text-purple-600"></i>
-                </div>
-                <span class="text-gray-700">(615) 154 0025</span>
-            </div>
-
-            <div class="flex items-center space-x-3 p-2">
-                <div class="p-2 bg-red-100 rounded-full">
-                    <i class="fas fa-map-marker-alt text-red-600"></i>
-                </div>
-                <p class="text-gray-700">Av. Venustiano Carranza # 20, Col. Pueblo Nuevo, CP 23930, San Ignacio, B.C.S.</p>
-            </div>
-        </div>
-    </div>
-</div>
-                
-<div class="bg-white rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300 max-w-md mx-auto">
-    <!-- Image container with overlay -->
-    <div class="relative">
-        <img src="../img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_08/emsad08.jpg" 
-             alt="EMSaD 08 Ciudad Insurgentes" 
-             class="w-full h-56 object-cover">
-        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-            <h3 class="text-2xl font-bold text-white">EMSaD 08 - Ciudad Insurgentes</h3>
-        </div>
-    </div>
-
-    <!-- Content container -->
-    <div class="p-6 space-y-4">
-        <!-- Coordinator info -->
-        <div class="flex items-center space-x-3">
-            <div class="p-2 bg-green-100 rounded-full">
-                <i class="fas fa-user-tie text-green-600"></i>
-            </div>
-            <div>
-                <p class="text-sm text-gray-500">Coordinador del Centro</p>
-                <p class="font-semibold text-gray-800">C. Vianey Arce Gerardo</p>
-            </div>
-        </div>
-
-        <!-- Contact info -->
-        <div class="space-y-3">
-            <a href="mailto:emsad08@cecytebcs.edu.mx" 
-               class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition-colors">
-                <div class="p-2 bg-blue-100 rounded-full">
-                    <i class="fas fa-envelope text-blue-600"></i>
-                </div>
-                <span class="text-blue-600 hover:underline">emsad08@cecytebcs.edu.mx</span>
-            </a>
-
-            <div class="flex items-center space-x-3 p-2">
-                <div class="p-2 bg-purple-100 rounded-full">
-                    <i class="fas fa-phone text-purple-600"></i>
-                </div>
-                <span class="text-gray-700">(613) 131 0954</span>
-            </div>
-
-            <div class="flex items-center space-x-3 p-2">
-                <div class="p-2 bg-red-100 rounded-full">
-                    <i class="fas fa-map-marker-alt text-red-600"></i>
-                </div>
-                <p class="text-gray-700">Av. Vicente Guerrero e/ 18 De Julio y 21 De Marzo, CP 23700, Cd. Insurgentes, B.C.S.</p>
-            </div>
-        </div>
-    </div>
-</div>
-                
-<div class="bg-white rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300 max-w-md mx-auto">
-    <!-- Image container with overlay -->
-    <div class="relative">
-        <img src="../img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_09/emsad09.jpg" 
-             alt="EMSaD 09 Benito Juárez" 
-             class="w-full h-56 object-cover">
-        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-            <h3 class="text-2xl font-bold text-white">EMSaD 09 - Benito Juárez</h3>
-        </div>
-    </div>
-
-    <!-- Content container -->
-    <div class="p-6 space-y-4">
-        <!-- Coordinator info -->
-        <div class="flex items-center space-x-3">
-            <div class="p-2 bg-green-100 rounded-full">
-                <i class="fas fa-user-tie text-green-600"></i>
-            </div>
-            <div>
-                <p class="text-sm text-gray-500">Coordinador del Centro</p>
-                <p class="font-semibold text-gray-800">C. Francisco Javier Ponce Bernal</p>
-            </div>
-        </div>
-
-        <!-- Contact info -->
-        <div class="space-y-3">
-            <a href="mailto:emsad09@cecytebcs.edu.mx" 
-               class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition-colors">
-                <div class="p-2 bg-blue-100 rounded-full">
-                    <i class="fas fa-envelope text-blue-600"></i>
-                </div>
-                <span class="text-blue-600 hover:underline">emsad09@cecytebcs.edu.mx</span>
-            </a>
-
-            <div class="flex items-center space-x-3 p-2">
-                <div class="p-2 bg-purple-100 rounded-full">
-                    <i class="fas fa-phone text-purple-600"></i>
-                </div>
-                <span class="text-gray-700">(613) 131 6054</span>
-            </div>
-
-            <div class="flex items-center space-x-3 p-2">
-                <div class="p-2 bg-red-100 rounded-full">
-                    <i class="fas fa-map-marker-alt text-red-600"></i>
-                </div>
-                <p class="text-gray-700">Dom. Calzada de la Reforma, CP 23730, Benito Juárez, B.C.S.</p>
-            </div>
-        </div>
-    </div>
-</div>
-                
-<div class="bg-white rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300 max-w-md mx-auto">
-    <!-- Image container with overlay -->
-    <div class="relative">
-        <img src="../img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_10/emsad10.jpg" 
-             alt="EMSaD 10 Puerto Adolfo López Mateos" 
-             class="w-full h-56 object-cover">
-        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-            <h3 class="text-2xl font-bold text-white">EMSaD 10 - Puerto Adolfo López Mateos</h3>
-        </div>
-    </div>
-
-    <!-- Content container -->
-    <div class="p-6 space-y-4">
-        <!-- Coordinator info -->
-        <div class="flex items-center space-x-3">
-            <div class="p-2 bg-green-100 rounded-full">
-                <i class="fas fa-user-tie text-green-600"></i>
-            </div>
-            <div>
-                <p class="text-sm text-gray-500">Coordinador del Centro</p>
-                <p class="font-semibold text-gray-800">C. José Manuel Miranda Cadena</p>
-            </div>
-        </div>
-
-        <!-- Contact info -->
-        <div class="space-y-3">
-            <a href="mailto:emsad10@cecytebcs.edu.mx" 
-               class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition-colors">
-                <div class="p-2 bg-blue-100 rounded-full">
-                    <i class="fas fa-envelope text-blue-600"></i>
-                </div>
-                <span class="text-blue-600 hover:underline">emsad10@cecytebcs.edu.mx</span>
-            </a>
-
-            <div class="flex items-center space-x-3 p-2">
-                <div class="p-2 bg-purple-100 rounded-full">
-                    <i class="fas fa-phone text-purple-600"></i>
-                </div>
-                <span class="text-gray-700">(613) 131 5258</span>
-            </div>
-
-            <div class="flex items-center space-x-3 p-2">
-                <div class="p-2 bg-red-100 rounded-full">
-                    <i class="fas fa-map-marker-alt text-red-600"></i>
-                </div>
-                <p class="text-gray-700">Lázaro Cárdenas y Anastacio Bustamante s/n, CP 23710, Pto. Adolfo López Mateos, B.C.S.</p>
-            </div>
-        </div>
-    </div>
-</div>
-                
-<div class="bg-white rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300 max-w-md mx-auto">
-    <!-- Image container with overlay -->
-    <div class="relative">
-        <img src="../img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_11/emsad11.jpg" 
-             alt="EMSaD 11 San Isidro" 
-             class="w-full h-56 object-cover">
-        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-            <h3 class="text-2xl font-bold text-white">EMSaD 11 - San Isidro</h3>
-        </div>
-    </div>
-
-    <!-- Content container -->
-    <div class="p-6 space-y-4">
-        <!-- Coordinator info -->
-        <div class="flex items-center space-x-3">
-            <div class="p-2 bg-green-100 rounded-full">
-                <i class="fas fa-user-tie text-green-600"></i>
-            </div>
-            <div>
-                <p class="text-sm text-gray-500">Coordinador del Centro</p>
-                <p class="font-semibold text-gray-800">C. Mónica Ramona Meza Higuera</p>
-            </div>
-        </div>
-
-        <!-- Contact info -->
-        <div class="space-y-3">
-            <a href="mailto:emsad11@cecytebcs.edu.mx" 
-               class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition-colors">
-                <div class="p-2 bg-blue-100 rounded-full">
-                    <i class="fas fa-envelope text-blue-600"></i>
-                </div>
-                <span class="text-blue-600 hover:underline">emsad11@cecytebcs.edu.mx</span>
-            </a>
-
-            <div class="flex items-center space-x-3 p-2">
-                <div class="p-2 bg-purple-100 rounded-full">
-                    <i class="fas fa-phone text-purple-600"></i>
-                </div>
-                <span class="text-gray-700">(613) 118 2907</span>
-            </div>
-
-            <div class="flex items-center space-x-3 p-2">
-                <div class="p-2 bg-red-100 rounded-full">
-                    <i class="fas fa-map-marker-alt text-red-600"></i>
-                </div>
-                <p class="text-gray-700">Col. Ranchera, CP 23810, San Isidro, Comondú, B.C.S.</p>
-            </div>
-        </div>
-    </div>
-</div>
-                
-<div class="bg-white rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300 max-w-md mx-auto">
-    <!-- Image container with overlay -->
-    <div class="relative">
-        <img src="../img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_12/emsad12.jpg" 
-             alt="EMSaD 12 Las Pocitas" 
-             class="w-full h-56 object-cover">
-        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-            <h3 class="text-2xl font-bold text-white">EMSaD 12 - Las Pocitas</h3>
-        </div>
-    </div>
-
-    <!-- Content container -->
-    <div class="p-6 space-y-4">
-        <!-- Coordinator info -->
-        <div class="flex items-center space-x-3">
-            <div class="p-2 bg-green-100 rounded-full">
-                <i class="fas fa-user-tie text-green-600"></i>
-            </div>
-            <div>
-                <p class="text-sm text-gray-500">Coordinador del Centro</p>
-                <p class="font-semibold text-gray-800">C. Javier Amarillas Marquez</p>
-            </div>
-        </div>
-
-        <!-- Contact info -->
-        <div class="space-y-3">
-            <a href="mailto:emsad12@cecytebcs.edu.mx" 
-               class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition-colors">
-                <div class="p-2 bg-blue-100 rounded-full">
-                    <i class="fas fa-envelope text-blue-600"></i>
-                </div>
-                <span class="text-blue-600 hover:underline">emsad12@cecytebcs.edu.mx</span>
-            </a>
-
-            <div class="flex items-center space-x-3 p-2">
-                <div class="p-2 bg-purple-100 rounded-full">
-                    <i class="fas fa-phone text-purple-600"></i>
-                </div>
-                <span class="text-gray-700">(612) 111 2222</span>
-            </div>
-
-            <div class="flex items-center space-x-3 p-2">
-                <div class="p-2 bg-red-100 rounded-full">
-                    <i class="fas fa-map-marker-alt text-red-600"></i>
-                </div>
-                <p class="text-gray-700">Carretera Transpeninsular Km. 112, La Paz- Ciudad Constitución, CP 23150, Las Pocitas, B.C.S.</p>
-            </div>
-        </div>
-    </div>
-</div>
-                
-<div class="bg-white rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300 max-w-md mx-auto">
-    <!-- Image container with overlay -->
-    <div class="relative">
-        <img src="../img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_13/EMSAD13-1.jpg" 
-             alt="EMSaD 13 Manuel Márquez de León" 
-             class="w-full h-56 object-cover">
-        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-            <h3 class="text-2xl font-bold text-white">EMSaD 13 - Manuel Márquez de León</h3>
-        </div>
-    </div>
-
-    <!-- Content container -->
-    <div class="p-6 space-y-4">
-        <!-- Coordinator info -->
-        <div class="flex items-center space-x-3">
-            <div class="p-2 bg-green-100 rounded-full">
-                <i class="fas fa-user-tie text-green-600"></i>
-            </div>
-            <div>
-                <p class="text-sm text-gray-500">Coordinador del Centro</p>
-                <p class="font-semibold text-gray-800">C. Leyla Zulema Contreras</p>
-            </div>
-        </div>
-
-        <!-- Contact info -->
-        <div class="space-y-3">
-            <a href="mailto:emsad13@cecytebcs.edu.mx" 
-               class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition-colors">
-                <div class="p-2 bg-blue-100 rounded-full">
-                    <i class="fas fa-envelope text-blue-600"></i>
-                </div>
-                <span class="text-blue-600 hover:underline">emsad13@cecytebcs.edu.mx</span>
-            </a>
-
-            <div class="flex items-center space-x-3 p-2">
-                <div class="p-2 bg-purple-100 rounded-full">
-                    <i class="fas fa-phone text-purple-600"></i>
-                </div>
-                <span class="text-gray-700">(612) 185 8446</span>
-            </div>
-
-            <div class="flex items-center space-x-3 p-2">
-                <div class="p-2 bg-red-100 rounded-full">
-                    <i class="fas fa-map-marker-alt text-red-600"></i>
-                </div>
-                <p class="text-gray-700">Calle San Juan Bautista e/ San Ramón Nonato y Santa Ana, CP 23038, Colonia Villas De Guadalupe, La Paz, B.C.S.</p>
-            </div>
-        </div>
-    </div>
-</div>
-                
-<div class="bg-white rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300 max-w-md mx-auto">
-    <!-- Image container with overlay -->
-    <div class="relative">
-        <img src="../img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_14/E_14.jpg" 
-             alt="EMSaD 14 Ejido Melitón Albañez Domínguez" 
-             class="w-full h-56 object-cover">
-        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-            <h3 class="text-2xl font-bold text-white">EMSaD 14 - Ejido Melitón Albañez Domínguez</h3>
-        </div>
-    </div>
-
-    <!-- Content container -->
-    <div class="p-6 space-y-4">
-        <!-- Coordinator info -->
-        <div class="flex items-center space-x-3">
-            <div class="p-2 bg-green-100 rounded-full">
-                <i class="fas fa-user-tie text-green-600"></i>
-            </div>
-            <div>
-                <p class="text-sm text-gray-500">Coordinador del Centro</p>
-                <p class="font-semibold text-gray-800">C. Mariel Gerardo Arce</p>
-            </div>
-        </div>
-
-        <!-- Contact info -->
-        <div class="space-y-3">
-            <a href="mailto:emsad14@cecytebcs.edu.mx" 
-               class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition-colors">
-                <div class="p-2 bg-blue-100 rounded-full">
-                    <i class="fas fa-envelope text-blue-600"></i>
-                </div>
-                <span class="text-blue-600 hover:underline">emsad14@cecytebcs.edu.mx</span>
-            </a>
-
-            <div class="flex items-center space-x-3 p-2">
-                <div class="p-2 bg-purple-100 rounded-full">
-                    <i class="fas fa-phone text-purple-600"></i>
-                </div>
-                <span class="text-gray-700">(613) 137 2586</span>
-            </div>
-
-            <div class="flex items-center space-x-3 p-2">
-                <div class="p-2 bg-red-100 rounded-full">
-                    <i class="fas fa-map-marker-alt text-red-600"></i>
-                </div>
-                <p class="text-gray-700">Domicilio Conocido, CP 23258, Localidad Ejido Melitón Albañez Domínguez, B.C.S.</p>
-            </div>
-        </div>
-    </div>
-</div>
-                
-<div class="bg-white rounded-xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300 max-w-md mx-auto">
-    <!-- Image container with overlay -->
-    <div class="relative">
-        <img src="../img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_16/emsad16.jpg" 
-             alt="EMSaD 16 Los Barriles" 
-             class="w-full h-56 object-cover">
-        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-            <h3 class="text-2xl font-bold text-white">EMSaD 16 - Los Barriles</h3>
-        </div>
-    </div>
-
-    <!-- Content container -->
-    <div class="p-6 space-y-4">
-        <!-- Coordinator info -->
-        <div class="flex items-center space-x-3">
-            <div class="p-2 bg-green-100 rounded-full">
-                <i class="fas fa-user-tie text-green-600"></i>
-            </div>
-            <div>
-                <p class="text-sm text-gray-500">Coordinador del Centro</p>
-                <p class="font-semibold text-gray-800">C. Carmen Cota Ruíz</p>
-            </div>
-        </div>
-
-        <!-- Contact info -->
-        <div class="space-y-3">
-            <a href="mailto:emsad16@cecytebcs.edu.mx" 
-               class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition-colors">
-                <div class="p-2 bg-blue-100 rounded-full">
-                    <i class="fas fa-envelope text-blue-600"></i>
-                </div>
-                <span class="text-blue-600 hover:underline">emsad16@cecytebcs.edu.mx</span>
-            </a>
-
-            <div class="flex items-center space-x-3 p-2">
-                <div class="p-2 bg-purple-100 rounded-full">
-                    <i class="fas fa-phone text-purple-600"></i>
-                </div>
-                <span class="text-gray-700">(624) 124 8566</span>
-            </div>
-
-            <div class="flex items-center space-x-3 p-2">
-                <div class="p-2 bg-red-100 rounded-full">
-                    <i class="fas fa-map-marker-alt text-red-600"></i>
-                </div>
-                <p class="text-gray-700">Carretera Transpeninsular, Kilómetro 101 Tramo Cabo San Lucas- La Paz, CP 23330, Los Barriles, B.C.S.</p>
-            </div>
-        </div>
-    </div>
-</div>
-            </div>
-        </section>
-
-        
-    </main>
-    <footer class="bg-white dark:bg-gray-900 mt-10">
-        <div class="border-t-4 border-gray-400 dark:border-gray-1000"></div>
-        <div class="mx-auto w-full max-w-screen-xl">
-          <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
-            <div>
-              <h2
-                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
-              >
-                Sitios de Interés
-              </h2>
-              <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                <li class="mb-4">
-                  <a href="https://itaibcs.net/" class="hover:underline"
-                    >ITAI del Estado de B.C.S.</a
-                  >
-                </li>
-                <li class="mb-4">
-                  <a
-                    href="https://transparencia.cre.gob.mx/plataforma-nacional-de-transparencia-sipot/"
-                    class="hover:underline"
-                    >SIPOT</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h2
-                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
-              >
-                Domicilio
-              </h2>
-              <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                <li class="mb-4">
-                  <p>Golfo de California No. 190</p>
-                </li>
-                <li class="mb-4">
-                  <p>Col. El Conchalito.</p>
-                </li>
-                <li class="mb-4">
-                  <p>Cp: 23090</p>
-                </li>
-                <li class="mb-4">
-                  <p>La Paz B.C.S</p>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h2
-                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
-              >
-                Teléfonos
-              </h2>
-              <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                <li class="mb-4">
-                  <a href="#" class="hover:underline">612 - 12 32244</a>
-                </li>
-                <li class="mb-4">
-                  <a href="#" class="hover:underline">612 - 12 40430</a>
-                </li>
-                <li class="mb-4">
-                  <a href="#" class="hover:underline">612 - 12 40656</a>
-                </li>
-                <li class="mb-4">
-                  <a href="#" class="hover:underline">612 - 12 40656</a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h2
-                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
-              >
-                SIGUENOS
-              </h2>
-              <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                <li class="mb-4">
-                  <a
-                    href="https://www.facebook.com/DGCECYTEBCS"
-                    class="hover:underline"
-                    >FACEBOOK</a
-                  >
-                </li>
-  
-                <li class="mb-4">
-                  <a
-                    href="https://x.com/CECYTE_BCS?lang=es"
-                    class="hover:underline"
-                    >x</a
-                  >
-                </li>
-                <li class="mb-4">
-                  <a
-                    href="https://www.youtube.com/channel/UCAjoT3ODBsMhq75-KFJuNYA"
-                    class="hover:underline"
-                    >YOUTUBE</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-  
-        <div class="text-center p-4 bg-gray-800 text-white text-sm">
-          © 2024 Departamento de Informática. Todos los derechos reservados.
-        </div>
-      </footer>
-
-      <script>
+    <script>
         // Toggle the mobile menu
         const menuBtn = document.getElementById('menu-btn');
               const mobileMenu = document.getElementById('mobile-menu');
@@ -998,6 +968,6 @@
               trnsBtn?.addEventListener('click', () => {
                 trnsSubmenu.classList.toggle('hidden');
               });
-      </script>
+    </script>
 </body>
 </html>
