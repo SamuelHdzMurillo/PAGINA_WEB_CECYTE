@@ -1197,156 +1197,293 @@
             </div>
             <!-- rh -->
 
-            <div id="admin" class="tab-content hidden">
-                <ul class="divide-y divide-gray-200">
-                    <section class="p-8 bg-gray-100">
-                        <h2 class="text-2xl font-bold text-center mb-8">Dirección de Administración</h2>
-                    
-                        <!-- Director -->
-                        <div class="flex flex-col items-center mb-12">
-                            <div class="bg-white p-4 rounded-lg shadow-lg w-90 text-center">
-                                <img src="img_dt/img_directivos/iloveimg-resized_mas/img_rosy_pano_s.jpg" 
-                                     alt="Director" 
-                                     class="w-full h-full mx-auto rounded-lg object-cover border-4 border-gray-600">
-                                <h3 class="text-xl font-semibold mt-4">C. Rosa Evelia Solorio Ramírez</h3>
-                                <p class="text-gray-600">Directora de Administración</p>
+            <!-- Administración -->
+            <div id="admin" class="tab-content">
+                <section class="min-h-screen bg-gradient-to-br from-green-50 via-white to-orange-50 py-16 px-4">
+                    <!-- Encabezado con efecto de gradiente -->
+                    <div class="max-w-4xl mx-auto text-center mb-16">
+                        <h2 class="text-4xl font-extrabold bg-clip-text text-black-700 mb-4">
+                            Dirección de Administración
+                        </h2>
+                        <div class="w-24 h-1 bg-gradient-to-r from-green-500 to-orange-500 mx-auto rounded-full"></div>
+                    </div>
+
+                    <!-- Directora con diseño destacado -->
+                    <div class="max-w-5xl mx-auto mb-20">
+                        <div class="bg-white rounded-2xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-500 hover:shadow-3xl">
+                            <div class="relative">
+                                <div class="flex flex-col md:flex-row items-center p-8">
+                                    <div class="w-64 h-64 md:w-72 md:h-72 relative mb-6 md:mb-0">
+                                        <img src="img_dt/img_directivos/iloveimg-resized_mas/img_rosy_pano_s.jpg" 
+                                             alt="Directora" 
+                                             class="w-full h-full object-cover rounded-xl shadow-lg border-4 border-white">
+                                        <div class="absolute -bottom-4 -right-4 bg-green-700 text-white px-4 py-2 rounded-full text-sm font-semibold">
+                                            Directora
+                                        </div>
+                                    </div>
+                                    <div class="md:ml-8 text-center md:text-left">
+                                        <h3 class="text-3xl font-bold text-gray-800 mb-2">C. Rosa Evelia Solorio Ramírez</h3>
+                                        <p class="text-xl text-gray-600 mb-4">Directora de Administración</p>
+                                        <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+                                            <div class="bg-green-50 px-4 py-2 rounded-full text-green-700">
+                                                <i class="fas fa-phone mr-2"></i> Ext. 123
+                                            </div>
+                                            <div class="bg-orange-50 px-4 py-2 rounded-full text-black-700">
+                                                <i class="fas fa-envelope mr-2"></i> administracion@cecytebcs.edu.mx
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    
-                        <!-- Jefes en la misma fila -->
-                        <div class="flex flex-wrap justify-center gap-8 mb-8">
-    
-                            
-    
+                    </div>
+
+                    <!-- Jefes de Departamento -->
+                    <div class="max-w-5xl mx-auto mb-20">
+                        <h3 class="text-2xl font-bold text-center text-gray-800 mb-12">Jefes de Departamento</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                             <!-- Jefe 1 -->
-                            <div class="bg-white p-5 rounded-lg shadow-lg w-56 text-center">
-                                <img src="img_dt/img_da/img_daniel_carillo_2.jpg" 
-                                     alt="Jefe 1" 
-                                     class="w-30 h-50 mx-auto rounded-lg object-cover border-2 border-green-700">
-                                <h4 class="font-semibold mt-2">C. Daniel Carillo Cortes</h4>
-                                <p class="text-sm text-gray-500">Jefe de Departamento de Informática</p>
-                                
+                            <div class="group">
+                                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-xl">
+                                    <div class="relative">
+                                        <div class="aspect-w-10 aspect-h-10">
+                                            <img src="img_dt/img_da/img_daniel_carillo_2.jpg" 
+                                                 alt="Jefe Informática" 
+                                                 class="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-500">
+                                        </div>
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                                        <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+                                            <h4 class="text-xl font-bold mb-2">C. Daniel Carillo Cortes</h4>
+                                            <p class="text-sm opacity-90">Jefe de Departamento de Informática</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                    
+
                             <!-- Jefe 2 -->
-                            <div class="bg-white p-5 rounded-lg shadow-lg w-56 text-center">
-                                <img src="img_dt/img_da/img_jose_david_olachea_2.jpg" 
-                                     alt="Jefe 2" 
-                                     class="w-30 h-50 mx-auto rounded-lg object-cover border-2 border-green-700">
-                                <h4 class="font-semibold mt-2">C. José David Olachea Pérez</h4>
-                                <p class="text-sm text-gray-500">Jefe del Departamento de Recursos Financieros</p>
+                            <div class="group">
+                                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-xl">
+                                    <div class="relative">
+                                        <div class="aspect-w-10 aspect-h-10">
+                                            <img src="img_dt/img_da/img_jose_david_olachea_2.jpg" 
+                                                 alt="Jefe Recursos Financieros" 
+                                                 class="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-500">
+                                        </div>
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                                        <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+                                            <h4 class="text-xl font-bold mb-2">C. José David Olachea Pérez</h4>
+                                            <p class="text-sm opacity-90">Jefe del Departamento de Recursos Financieros</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                    
+
                             <!-- Jefe 3 -->
-                            <div class="bg-white p-5 rounded-lg shadow-lg w-56 text-center">
-                                <img src="img_dt/img_da/img_cynthia_ivette_mendez_2.png" 
-                                     alt="Jefe 3" 
-                                     class="w-30 h-50 mx-auto rounded-lg object-cover border-2 border-green-700">
-                                <h4 class="font-semibold mt-2">C. Cynthia Ivette Méndez Martin</h4>
-                                <p class="text-sm text-gray-500">Jefa del Depto. de Ingresos Propios</p>
+                            <div class="group">
+                                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-xl">
+                                    <div class="relative">
+                                        <div class="aspect-w-10 aspect-h-10">
+                                            <img src="img_dt/img_da/img_cynthia_ivette_mendez_2.png" 
+                                                 alt="Jefa Ingresos Propios" 
+                                                 class="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-500">
+                                        </div>
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                                        <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+                                            <h4 class="text-xl font-bold mb-2">C. Cynthia Ivette Méndez Martin</h4>
+                                            <p class="text-sm opacity-90">Jefa del Depto. de Ingresos Propios</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                    
+
                             <!-- Jefe 4 -->
-                            <div class="bg-white p-5 rounded-lg shadow-lg w-56 text-center">
-                                <img src="img_dt/img_da/img_christian_julian_romero_2.jpg" 
-                                     alt="Jefe 4" 
-                                     class="w-30 h-50 mx-auto rounded-lg object-cover border-2 border-green-700">
-                                <h4 class="font-semibold mt-2">C. Christian Julián Romero Martínez</h4>
-                                <p class="text-sm text-gray-500">Jefe del Departamento de Servicios Generales</p>
+                            <div class="group">
+                                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-xl">
+                                    <div class="relative">
+                                        <div class="aspect-w-10 aspect-h-10">
+                                            <img src="img_dt/img_da/img_christian_julian_romero_2.jpg" 
+                                                 alt="Jefe Servicios Generales" 
+                                                 class="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-500">
+                                        </div>
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                                        <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+                                            <h4 class="text-xl font-bold mb-2">C. Christian Julián Romero Martínez</h4>
+                                            <p class="text-sm opacity-90">Jefe del Departamento de Servicios Generales</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
                             <!-- Jefe 5 -->
-                            <div class="bg-white p-5 rounded-lg shadow-lg w-56 text-center">
-                                <img src="img_dt/img_dg/img_frank.jpg" 
-                                     alt="Jefe 4" 
-                                     class="w-30 h-50 mx-auto rounded-lg object-cover border-2 border-green-700">
-                                <h4 class="font-semibold mt-2">C. Jose Francisco Gonzales Cruz</h4>
-                                <p class="text-sm text-gray-500">Jefe del Departamento de Eventos Espciales</p>
+                            <div class="group">
+                                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-xl">
+                                    <div class="relative">
+                                        <div class="aspect-w-10 aspect-h-10">
+                                            <img src="img_dt/img_dg/img_frank.jpg" 
+                                                 alt="Jefe Eventos Especiales" 
+                                                 class="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-500">
+                                        </div>
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                                        <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+                                            <h4 class="text-xl font-bold mb-2">C. Jose Francisco Gonzales Cruz</h4>
+                                            <p class="text-sm opacity-90">Jefe del Departamento de Eventos Espciales</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
-                             <!-- Jefe 6 -->
-                             <div class="bg-white p-5 rounded-lg shadow-lg w-56 text-center">
-                                <img src="img_dt/img_da/img_claudia_luz_arballo.jpg" 
-                                     alt="Jefe 4" 
-                                     class="w-30 h-50 mx-auto rounded-lg object-cover border-2 border-green-700">
-                                <h4 class="font-semibold mt-2">C. Claudia Luz Arballo Cota</h4>
-                                <p class="text-sm text-gray-500">Jefe del Departamento de Recursos Materiales</p>
+                            <!-- Jefe 6 -->
+                            <div class="group">
+                                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-xl">
+                                    <div class="relative">
+                                        <div class="aspect-w-10 aspect-h-10">
+                                            <img src="img_dt/img_da/img_claudia_luz_arballo.jpg" 
+                                                 alt="Jefa Recursos Materiales" 
+                                                 class="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-500">
+                                        </div>
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                                        <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+                                            <h4 class="text-xl font-bold mb-2">C. Claudia Luz Arballo Cota</h4>
+                                            <p class="text-sm opacity-90">Jefa del Departamento de Recursos Materiales</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    
-                        <!-- Trabajadores normales -->
-                        <div class="flex flex-wrap justify-center gap-10">
-                            <!-- Trabajador 1 -->
-                            <div class="bg-white p-3 rounded-lg shadow w-44 text-center">
-                                <img src="img_dt/img_da/img_maria_elena_arellano.jpg" 
-                                     alt="Trabajador 1" 
-                                     class="w-full h-50 mx-auto rounded-lg object-cover border-2 border-gray-400">
-                                <h5 class="text-sm font-medium mt-2">C. María Elena Arellano Tellez</h5>
-                                <p class="text-xs text-gray-500">Auxiliar de Dirección de Administración</p>
+                    </div>
+
+                    <!-- Personal Administrativo -->
+                    <div class="max-w-5xl mx-auto">
+                        <h3 class="text-2xl font-bold text-center text-gray-800 mb-12">Personal Administrativo</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                            <!-- Personal 1 -->
+                            <div class="group">
+                                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-xl">
+                                    <div class="relative">
+                                        <div class="aspect-w-16 aspect-h-9">
+                                            <img src="img_dt/img_da/img_maria_elena_arellano.jpg" 
+                                                 alt="Auxiliar Dirección" 
+                                                 class="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-500">
+                                        </div>
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                                        <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+                                            <h5 class="font-semibold">C. María Elena Arellano Tellez</h5>
+                                            <p class="text-sm opacity-90">Auxiliar de Dirección de Administración</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
-                            <!-- Trabajador 1 -->
-                            <div class="bg-white p-3 rounded-lg shadow w-44 text-center">
-                                <img src="img_dt/img_da/img_alejandra_viridiana_2.jpg" 
-                                     alt="Trabajador 1" 
-                                     class="w-full h-50 mx-auto rounded-lg object-cover border-2 border-gray-400">
-                                <h5 class="text-sm font-medium mt-2">C. Alejandra Viridian Morales Higuera</h5>
-                                <p class="text-xs text-gray-500">Secretaria de Dirección de Administración</p>
-                            </div>
-                    
-                            
-                            
-                    
-                            <!-- Trabajador 4 -->
-                            <div class="bg-white p-3 rounded-lg shadow w-44 text-center">
-                                <img src="img_dt/img_da/img_marianela_bareño_gerardo_2.jpg" 
-                                     alt="Trabajador 4" 
-                                     class="w-full h-50 mx-auto rounded-lg object-cover border-2 border-gray-400">
-                                <h5 class="text-sm font-medium mt-2">C. Marianela Bareño Gerardo</h5>
-                                <p class="text-xs text-gray-500">Encargada del Departamento de Recursos Materiales</p>
-                            </div>
-    
-                            <!-- Trabajador 5 -->
-                            <div class="bg-white p-3 rounded-lg shadow w-44 text-center">
-                                <img src="img_dt/img_da/img_sandra_mireya_lucero_2.jpg" 
-                                     alt="Trabajador 4" 
-                                     class="w-full h-50 mx-auto rounded-lg object-cover border-2 border-gray-400">
-                                <h5 class="text-sm font-medium mt-2">C. Sandra Mireya Lucero Araiza</h5>
-                                <p class="text-xs text-gray-500">Auxiliar del Departamento de Recursos Materiales</p>
-                            </div>
-    
-                            <!-- Trabajador 6 -->
-                            <div class="bg-white p-3 rounded-lg shadow w-44 text-center">
-                                <img src="img_dt/img_da/img_rodolfo_estrada_martinez_2.jpg" 
-                                     alt="Trabajador 4" 
-                                     class="w-full h-50 mx-auto rounded-lg object-cover border-2 border-gray-400">
-                                <h5 class="text-sm font-medium mt-2">C. Rodolfo Estrada Martínez</h5>
-                                <p class="text-xs text-gray-500">Auxiliar del Departamento de Recursos Materiales</p>
+                            <!-- Personal 2 -->
+                            <div class="group">
+                                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-xl">
+                                    <div class="relative">
+                                        <div class="aspect-w-16 aspect-h-9">
+                                            <img src="img_dt/img_da/img_alejandra_viridiana_2.jpg" 
+                                                 alt="Secretaria Dirección" 
+                                                 class="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-500">
+                                        </div>
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                                        <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+                                            <h5 class="font-semibold">C. Alejandra Viridian Morales Higuera</h5>
+                                            <p class="text-sm opacity-90">Secretaria de Dirección de Administración</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
-                            <!-- Trabajador 7 -->
-                            <div class="bg-white p-3 rounded-lg shadow w-44 text-center">
-                                <img src="img_dt/img_da/img_guillermo_gorozave_2.jpg" 
-                                     alt="Trabajador 4" 
-                                     class="w-full h-50 mx-auto rounded-lg object-cover border-2 border-gray-400">
-                                <h5 class="text-sm font-medium mt-2">C. Guillermo Gorozave Miranda</h5>
-                                <p class="text-xs text-gray-500">Auxiliar del Departamento de Servicios Generales</p>
+                            <!-- Personal 3 -->
+                            <div class="group">
+                                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-xl">
+                                    <div class="relative">
+                                        <div class="aspect-w-16 aspect-h-9">
+                                            <img src="img_dt/img_da/img_marianela_bareño_gerardo_2.jpg" 
+                                                 alt="Encargada Recursos Materiales" 
+                                                 class="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-500">
+                                        </div>
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                                        <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+                                            <h5 class="font-semibold">C. Marianela Bareño Gerardo</h5>
+                                            <p class="text-sm opacity-90">Encargada del Departamento de Recursos Materiales</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
-                            <!-- Trabajador 7 -->
-                            <div class="bg-white p-3 rounded-lg shadow w-44 text-center">
-                                <img src="img_dt/img_da/img_alfredo_collins_2.jpg" 
-                                     alt="Trabajador 4" 
-                                     class="w-full h-50 mx-auto rounded-lg object-cover border-2 border-gray-400">
-                                <h5 class="text-sm font-medium mt-2">C. Alfredo collins</h5>
-                                <p class="text-xs text-gray-500">Auxiliar del Departamento de Servicios Generales</p>
+                            <!-- Personal 4 -->
+                            <div class="group">
+                                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-xl">
+                                    <div class="relative">
+                                        <div class="aspect-w-16 aspect-h-9">
+                                            <img src="img_dt/img_da/img_sandra_mireya_lucero_2.jpg" 
+                                                 alt="Auxiliar Recursos Materiales" 
+                                                 class="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-500">
+                                        </div>
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                                        <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+                                            <h5 class="font-semibold">C. Sandra Mireya Lucero Araiza</h5>
+                                            <p class="text-sm opacity-90">Auxiliar del Departamento de Recursos Materiales</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-    
-                            
+
+                            <!-- Personal 5 -->
+                            <div class="group">
+                                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-xl">
+                                    <div class="relative">
+                                        <div class="aspect-w-16 aspect-h-9">
+                                            <img src="img_dt/img_da/img_rodolfo_estrada_martinez_2.jpg" 
+                                                 alt="Auxiliar Recursos Materiales" 
+                                                 class="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-500">
+                                        </div>
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                                        <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+                                            <h5 class="font-semibold">C. Rodolfo Estrada Martínez</h5>
+                                            <p class="text-sm opacity-90">Auxiliar del Departamento de Recursos Materiales</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Personal 6 -->
+                            <div class="group">
+                                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-xl">
+                                    <div class="relative">
+                                        <div class="aspect-w-16 aspect-h-9">
+                                            <img src="img_dt/img_da/img_guillermo_gorozave_2.jpg" 
+                                                 alt="Auxiliar Servicios Generales" 
+                                                 class="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-500">
+                                        </div>
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                                        <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+                                            <h5 class="font-semibold">C. Guillermo Gorozave Miranda</h5>
+                                            <p class="text-sm opacity-90">Auxiliar del Departamento de Servicios Generales</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Personal 7 -->
+                            <div class="group">
+                                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-xl">
+                                    <div class="relative">
+                                        <div class="aspect-w-16 aspect-h-9">
+                                            <img src="img_dt/img_da/img_alfredo_collins_2.jpg" 
+                                                 alt="Auxiliar Servicios Generales" 
+                                                 class="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-500">
+                                        </div>
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                                        <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+                                            <h5 class="font-semibold">C. Alfredo Collins</h5>
+                                            <p class="text-sm opacity-90">Auxiliar del Departamento de Servicios Generales</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </section>
-
-                </ul>
+                    </div>
+                </section>
             </div>
 
             <div id="pla" class="tab-content hidden">
