@@ -3,281 +3,357 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Requisitos para Examen de Admisión 2024</title>
+    <title>Requisitos para Examen de Admisión 2024 | CECYTE BCS</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+      .hero-pattern {
+        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f0fdf4' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      }
+      .card-hover {
+        transition: all 0.3s ease;
+      }
+      .card-hover:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+    </style>
   </head>
-  <body class="bg-white text-gray-800">
+  <body class="bg-gray-50 text-gray-800">
     <!-- INCIO NAVBAR CON SUBEMENUS -->
-<nav class="bg-white shadow-lg relative z-50">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between h-16">
-          <!-- Logo -->
-          <div class="flex-shrink-0 flex items-center">
-              <img src="../img_logos/logo_Cecyte_vertical_sin_fondo.png" alt="logo_Cecyte_vertical_sin_fondo" class="h-12 w-auto">
-          </div>
-          <!-- Responsive menu button -->
-          <div class="flex items-center sm:hidden">
-              <button id="menu-btn" class="text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700">
-                  <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                  </svg>
-              </button>
-          </div>
-          <!-- Navbar links -->
-          <div class="hidden sm:flex sm:items-center sm:ml-6">
-              <div class="relative group">
-                  <a href="../index.html" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Inicio</a>
+    <nav class="bg-white shadow-lg relative z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between h-16">
+              <!-- Logo -->
+              <div class="flex-shrink-0 flex items-center">
+                  <img src="../img_logos/logo_Cecyte_vertical_sin_fondo.png" alt="logo_Cecyte_vertical_sin_fondo" class="h-12 w-auto">
               </div>
-              <div class="relative group">
-                  <a href="#" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Institución</a>
-                  <!-- Submenu -->
-                  <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md z-10">
-                      <a href="../pages_institucion/pagina_historia.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Historia, Misión y Visión</a>
-
-                      <a href="../pages_institucion/planteles_cecyte.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Planteles CecyteBCS</a>
-                      
-                      <a href="../pages_institucion/planteles_emsad.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Planteles Emsad</a>
-                      
-                      <a href="../directorio_telefonico.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Directorio Telefónico</a>
+              <!-- Responsive menu button -->
+              <div class="flex items-center sm:hidden">
+                  <button id="menu-btn" class="text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700">
+                      <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                      </svg>
+                  </button>
+              </div>
+              <!-- Navbar links -->
+              <div class="hidden sm:flex sm:items-center sm:ml-6">
+                  <div class="relative group">
+                      <a href="../index.html" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Inicio</a>
                   </div>
-              </div>
-              <div class="relative group">
-                  <a href="#" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Oferta Educativa</a>
-                  <!-- Submenu -->
-                  <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
-                      
-                      <a href="../pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Soporte  y  Mantenimiento equipo de computo</a>
-                      <a href="../pages_oferta_educativa/programacion.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programacion</a>
-                      <a href="../pages_oferta_educativa/ventas.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ventas</a>
-                      <a href="../pages_oferta_educativa/ecoturismo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ecoturismo</a>
-                      <a href="../pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Producción industrial de alimentos</a>
-                      <a href="../pages_oferta_educativa/mantenimiento_industrial.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Mantenimiento Industrial</a>
-                      <a href="../pages_oferta_educativa/servicios_de_hoteleria.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Servicios de Hoteleria</a>
+                  <div class="relative group">
+                      <a href="#" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Institución</a>
+                      <!-- Submenu -->
+                      <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md z-10">
+                          <a href="../pages_institucion/pagina_historia.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Historia, Misión y Visión</a>
+
+                          <a href="../pages_institucion/planteles_cecyte.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Planteles CecyteBCS</a>
+                          
+                          <a href="../pages_institucion/planteles_emsad.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Planteles Emsad</a>
+                          
+                          <a href="../directorio_telefonico.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Directorio Telefónico</a>
+                      </div>
                   </div>
-              </div>
-              <div class="relative group">
-                  <a href="#" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Alumnos</a>
-                  <!-- Submenu -->
-                  <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
-                      
-                      <a href="../pages_alumnos/becas.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Becas</a>
-                      <a href="../pages_alumnos/prog_acompanamiento.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programa de Acompañamiento</a>
-                      <a href="../pages_alumnos/requisitos_de_ingreso.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Requisitos de Ingreso</a>
+                  <div class="relative group">
+                      <a href="#" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Oferta Educativa</a>
+                      <!-- Submenu -->
+                      <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
+                          
+                          <a href="../pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Soporte  y  Mantenimiento equipo de computo</a>
+                          <a href="../pages_oferta_educativa/programacion.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programacion</a>
+                          <a href="../pages_oferta_educativa/ventas.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ventas</a>
+                          <a href="../pages_oferta_educativa/ecoturismo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ecoturismo</a>
+                          <a href="../pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Producción industrial de alimentos</a>
+                          <a href="../pages_oferta_educativa/mantenimiento_industrial.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Mantenimiento Industrial</a>
+                          <a href="../pages_oferta_educativa/servicios_de_hoteleria.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Servicios de Hoteleria</a>
+                      </div>
                   </div>
-              </div>
+                  <div class="relative group">
+                      <a href="#" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Alumnos</a>
+                      <!-- Submenu -->
+                      <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
+                          
+                          <a href="../pages_alumnos/becas.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Becas</a>
+                          <a href="../pages_alumnos/prog_acompanamiento.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programa de Acompañamiento</a>
+                          <a href="../pages_alumnos/requisitos_de_ingreso.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Requisitos de Ingreso</a>
+                      </div>
+                  </div>
 
-              <div class="relative group">
-                <a href="#" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Normatividad</a>
-                <!-- Submenu -->
-                <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
-                    
-                    <a href="../pages_normatividad/manuales_de_procedimientos.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Manuales de Procedimientos</a>
-                    
+                  <div class="relative group">
+                    <a href="#" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Normatividad</a>
+                    <!-- Submenu -->
+                    <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
+                        
+                        <a href="../pages_normatividad/manuales_de_procedimientos.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Manuales de Procedimientos</a>
+                        
 
-                    <a href="../pages_normatividad/manuales_de_org.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Manuales de Organizacion</a>
+                        <a href="../pages_normatividad/manuales_de_org.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Manuales de Organizacion</a>
 
-                    <a href="https://drive.google.com/file/d/1w1kARXVhw-SFsSY7q7JPBH4MgAqN8C_S/view?usp=drive_link" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Reglamento interno</a>
+                        <a href="https://drive.google.com/file/d/1w1kARXVhw-SFsSY7q7JPBH4MgAqN8C_S/view?usp=drive_link" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Reglamento interno</a>
 
-                    <a href="https://drive.google.com/file/d/13m142kMwEJ6hj8xaDJXu-XdA-jAkO9jb/view?usp=sharing" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Codigo de Conducta</a>
+                        <a href="https://drive.google.com/file/d/13m142kMwEJ6hj8xaDJXu-XdA-jAkO9jb/view?usp=sharing" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Codigo de Conducta</a>
 
-                    <a href="https://drive.google.com/file/d/1lIJBD8IXxHcM3hwp7v3VmG2X1EJZXKnG/view?usp=sharing" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Protocolo de Seguridad </a>
+                        <a href="https://drive.google.com/file/d/1lIJBD8IXxHcM3hwp7v3VmG2X1EJZXKnG/view?usp=sharing" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Protocolo de Seguridad </a>
 
-                    
+                        
     
+                    </div>
                 </div>
-            </div>
 
-              <div class="relative group">
-                <a href="https://transparencia.cecytebcs.edu.mx/" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Transparencia</a>
-                <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
+                  <div class="relative group">
+                    <a href="https://transparencia.cecytebcs.edu.mx/" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Transparencia</a>
+                    <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
 
-                  <a href="https://transparencia.cecytebcs.edu.mx/informacion-publica/articulo-75" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Articulo 75</a>
-                    
-                  <a href="../pages_transparencia/cuenta_publica.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Cuenta publica</a>
+                      <a href="https://transparencia.cecytebcs.edu.mx/informacion-publica/articulo-75" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Articulo 75</a>
+                        
+                      <a href="../pages_transparencia/cuenta_publica.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Cuenta publica</a>
 
-                  <a href="../pages_transparencia/ley_diciplina.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ley de diciplina Financiera </a>
+                      <a href="../pages_transparencia/ley_diciplina.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ley de diciplina Financiera </a>
 
-                  
+                      
   
+                  </div>
+                </div>
               </div>
-            </div>
           </div>
       </div>
-  </div>
-  
-  <!-- Responsive Menu -->
-  <div class="sm:hidden hidden" id="mobile-menu">
-<a href="#" class="block text-gray-700 hover:text-green-600 px-4 py-2">Inicio</a>
-<div class="block">
-    <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="servicios-btn">
-        Institución
-        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-        </svg>
-    </button>
-    <!-- Submenu -->
-    <div class="hidden" id="servicios-submenu">
-        <a href="../pages_institucion/pagina_historia.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Historia, Misión y Visión</a>
-        <a href="../pages_institucion/planteles_cecyte.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Planteles CecyteBCS</a>
-        <a href="../pages_institucion/planteles_emsad.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Planteles Emsad</a>
-        <a href="../directorio_telefonico.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Directorio Telefonico</a>
-    </div>
-</div>
-<div class="block">
-    <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="nosotros-btn">
-        Oferta Educativa
-        
-        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-        </svg>
-    </button>
-    
-    <!-- Submenu -->
-    <div class="hidden" id="nosotros-submenu">
-        <a href="../pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Soporte y Mantenimiento equipo de cómputo</a>
-        <a href="../pages_oferta_educativa/programacion.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programación</a>
-        <a href="../pages_oferta_educativa/ventas.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ventas</a>
-        <a href="../pages_oferta_educativa/ecoturismo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ecoturismo</a>
-        <a href="../pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Producción industrial de alimentos</a>
-        <a href="../pages_oferta_educativa/mantenimiento_industrial.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Mantenimiento industrial</a>
-        <a href="../pages_oferta_educativa/servicios_de_hoteleria.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Servicios de Hotelería</a>
-    </div>
-</div>
-<div class="block">
-  <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="alumnos-btn">
-    Alumnos
-    <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-    </svg>
-  </button>
-  <!-- Submenu -->
-  <div class="hidden" id="alumnos-submenu">
-    <a href="../pages_alumnos/becas.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Becas</a>
-    <a href="../pages_alumnos/prog_acompanamiento.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programa de Acompañamiento</a>
-    <a href="../pages_alumnos/requisitos_de_ingreso.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Requisitos de Ingreso</a>
-  </div>
-</div>
+      
+      <!-- Responsive Menu -->
+      <div class="sm:hidden hidden" id="mobile-menu">
+        <a href="#" class="block text-gray-700 hover:text-green-600 px-4 py-2">Inicio</a>
+        <div class="block">
+            <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="servicios-btn">
+                Institución
+                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </button>
+            <!-- Submenu -->
+            <div class="hidden" id="servicios-submenu">
+                <a href="../pages_institucion/pagina_historia.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Historia, Misión y Visión</a>
+                <a href="../pages_institucion/planteles_cecyte.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Planteles CecyteBCS</a>
+                <a href="../pages_institucion/planteles_emsad.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Planteles Emsad</a>
+                <a href="../directorio_telefonico.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Directorio Telefónico</a>
+            </div>
+        </div>
+        <div class="block">
+            <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="nosotros-btn">
+                Oferta Educativa
+                
+                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </button>
+            
+            <!-- Submenu -->
+            <div class="hidden" id="nosotros-submenu">
+                <a href="../pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Soporte y Mantenimiento equipo de cómputo</a>
+                <a href="../pages_oferta_educativa/programacion.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programación</a>
+                <a href="../pages_oferta_educativa/ventas.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ventas</a>
+                <a href="../pages_oferta_educativa/ecoturismo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ecoturismo</a>
+                <a href="../pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Producción industrial de alimentos</a>
+                <a href="../pages_oferta_educativa/mantenimiento_industrial.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Mantenimiento industrial</a>
+                <a href="../pages_oferta_educativa/servicios_de_hoteleria.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Servicios de Hotelería</a>
+            </div>
+        </div>
+        <div class="block">
+          <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="alumnos-btn">
+            Alumnos
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <!-- Submenu -->
+          <div class="hidden" id="alumnos-submenu">
+            <a href="../pages_alumnos/becas.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Becas</a>
+            <a href="../pages_alumnos/prog_acompanamiento.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programa de Acompañamiento</a>
+            <a href="../pages_alumnos/requisitos_de_ingreso.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Requisitos de Ingreso</a>
+          </div>
+        </div>
 
 
 
-<div class="block">
-  <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="norma-btn">
-    Normatividad
-    <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-    </svg>
-  </button>
-  <!-- Submenu -->
-  <div class="hidden" id="norma-submenu">
-    <a href="../pages_normatividad/manuales_de_procedimientos.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Manual de Procedimientos</a>
-    <a href="../pages_normatividad/manuales_de_org.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Manual de Organizacion</a>
-  </div>
-</div>
+        <div class="block">
+          <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="norma-btn">
+            Normatividad
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <!-- Submenu -->
+          <div class="hidden" id="norma-submenu">
+            <a href="../pages_normatividad/manuales_de_procedimientos.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Manual de Procedimientos</a>
+            <a href="../pages_normatividad/manuales_de_org.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Manual de Organizacion</a>
+          </div>
+        </div>
 
-<div class="block">
-  <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="trns-btn">
-    Transparencia
-    <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-    </svg>
-  </button>
-  <!-- Submenu -->
-  <div class="hidden" id="trns-submenu">
-    <a href="https://transparencia.cecytebcs.edu.mx/" class="block px-4 py-4 text-gray-700 hover:bg-gray-100">Artiuclo 75</a>
-    <a href="../pages_transparencia/cuenta_publica.html" class="block px-4 py-4 text-gray-700 hover:bg-gray-100">Cuenta publica</a>
-    <a href="../pages_transparencia/ley_diciplina.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ley de diciplina</a>
-  </div>
-</div>
+        <div class="block">
+          <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="trns-btn">
+            Transparencia
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <!-- Submenu -->
+          <div class="hidden" id="trns-submenu">
+            <a href="https://transparencia.cecytebcs.edu.mx/" class="block px-4 py-4 text-gray-700 hover:bg-gray-100">Artiuclo 75</a>
+            <a href="../pages_transparencia/cuenta_publica.html" class="block px-4 py-4 text-gray-700 hover:bg-gray-100">Cuenta publica</a>
+            <a href="../pages_transparencia/ley_diciplina.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ley de diciplina</a>
+          </div>
+        </div>
 
-</div>
-</div>
+        </div>
+      </div>
 
-  <div class="w-full h-1 bg-orange-500"></div>
-</nav>
-<!-- FIN NAVBAR CON SUBEMENUS -->
-    <!-- Contenedor principal -->
-    <div class="max-w-4xl mx-auto p-8">
-      <!-- Título principal -->
-      <div class="text-center mb-12">
-        <h1 class="text-5xl font-bold text-gray-800 mb-4">
+      <div class="w-full h-1 bg-orange-500"></div>
+    </nav>
+    <!-- FIN NAVBAR CON SUBEMENUS -->
+
+    <!-- Hero Section -->
+    <div class="hero-pattern py-16 bg-gradient-to-r from-green-50 to-blue-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
           Requisitos para Examen de Admisión 2024
         </h1>
-        <div class="w-24 h-1 bg-green-600 mx-auto"></div>
-      </div>
-
-      <!-- Sección de requisitos -->
-      <div class="bg-white p-8 rounded-xl shadow-2xl mb-10 transform hover:scale-[1.02] transition-transform duration-300 border border-gray-100">
-        <div class="flex items-center mb-6">
-          <svg class="w-8 h-8 text-green-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-          </svg>
-          <h2 class="text-3xl font-bold text-gray-800">Documentos Necesarios</h2>
-        </div>
-        <ul class="grid gap-4 text-lg text-gray-700">
-          <li class="flex items-center">
-            <span class="w-2 h-2 bg-green-600 rounded-full mr-3"></span>
-            Boleta o constancia de acreditación del 3er. año de secundaria
-          </li>
-          <li class="flex items-center">
-            <span class="w-2 h-2 bg-green-600 rounded-full mr-3"></span>
-            Comprobante de Domicilio
-          </li>
-          <li class="flex items-center">
-            <span class="w-2 h-2 bg-green-600 rounded-full mr-3"></span>
-            CURP
-          </li>
-          <li class="flex items-center">
-            <span class="w-2 h-2 bg-green-600 rounded-full mr-3"></span>
-            Acta de nacimiento
-          </li>
-        </ul>
-      </div>
-
-      <!-- Sección de Guía de Estudio -->
-      <div class="bg-white p-8 rounded-xl shadow-2xl mb-10 transform hover:scale-[1.02] transition-transform duration-300 border border-gray-100">
-        <div class="flex items-center mb-6">
-          <svg class="w-8 h-8 text-green-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
-          </svg>
-          <h2 class="text-3xl font-bold text-gray-800">Guía de Estudio</h2>
-        </div>
-        <div class="bg-green-50 border-l-4 border-green-600 p-4 mb-6 rounded">
-          <p class="text-lg text-gray-700">
-            <span class="font-semibold">Fecha importante:</span> El día <span class="text-green-600 font-bold">25 de Mayo</span> accede a la página de Gmail
-            con tu cuenta de correo institucional para ingresar a tu examen vía Classroom.
-          </p>
-        </div>
-        <p class="text-lg text-gray-700 mb-8">
-          En caso de cualquier duda o extravío de tu cuenta, comunícate con tu plantel.
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Información importante para el proceso de admisión al ciclo escolar 2024-2025
         </p>
-        <button class="bg-green-600 text-white py-4 px-8 rounded-lg shadow-lg hover:bg-green-700 transition duration-300 flex items-center">
-          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
-          </svg>
-          Descargar la Guía de Estudio
-        </button>
-      </div>
-
-      <!-- Sección de Manuales -->
-      <div class="bg-white p-8 rounded-xl shadow-2xl transform hover:scale-[1.02] transition-transform duration-300 border border-gray-100">
-        <div class="flex items-center mb-6">
-          <svg class="w-8 h-8 text-green-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
-          </svg>
-          <h2 class="text-3xl font-bold text-gray-800">Manuales de Alumnos - Curso Propedéutico 2024</h2>
-        </div>
-        <button class="bg-green-600 text-white py-4 px-8 rounded-lg shadow-lg hover:bg-green-700 transition duration-300 flex items-center">
-          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
-          </svg>
-          Descargar Cuadernillos
-        </button>
+        <div class="w-24 h-1 bg-green-600 mx-auto mt-6"></div>
       </div>
     </div>
+
+    <!-- Contenedor principal -->
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <!-- Timeline Section -->
+      <div class="mb-16">
+        <h2 class="text-3xl font-bold text-center mb-10 text-gray-800">Proceso de Admisión</h2>
+        <div class="relative">
+          <div class="absolute inset-0 flex items-center" aria-hidden="true">
+            <div class="w-full border-t border-gray-300"></div>
+          </div>
+          <div class="relative flex justify-between">
+            <div class="flex flex-col items-center">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-600 text-white z-10">
+                <i class="fas fa-file-alt text-xl"></i>
+              </div>
+              <div class="mt-4 text-center">
+                <p class="text-sm font-medium text-gray-900">Documentos</p>
+                <p class="text-xs text-gray-500">Requisitos</p>
+              </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-600 text-white z-10">
+                <i class="fas fa-book text-xl"></i>
+              </div>
+              <div class="mt-4 text-center">
+                <p class="text-sm font-medium text-gray-900">Guía de Estudio</p>
+                <p class="text-xs text-gray-500">Preparación</p>
+              </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-600 text-white z-10">
+                <i class="fas fa-calendar-check text-xl"></i>
+              </div>
+              <div class="mt-4 text-center">
+                <p class="text-sm font-medium text-gray-900">Examen</p>
+                <p class="text-xs text-gray-500">25 de Mayo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cards Section -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <!-- Documentos Card -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+          <div class="p-8">
+            <div class="flex items-center mb-6">
+              <div class="flex-shrink-0 bg-green-100 rounded-full p-3">
+                <i class="fas fa-file-alt text-green-600 text-2xl"></i>
+              </div>
+              <h2 class="text-2xl font-bold text-gray-800 ml-4">Documentos Necesarios</h2>
+            </div>
+            <ul class="space-y-4">
+              <li class="flex items-start">
+                <span class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 flex items-center justify-center text-green-600 mr-3 mt-0.5">
+                  <i class="fas fa-check text-sm"></i>
+                </span>
+                <span class="text-gray-700">Boleta o constancia de acreditación del 3er. año de secundaria</span>
+              </li>
+              <li class="flex items-start">
+                <span class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 flex items-center justify-center text-green-600 mr-3 mt-0.5">
+                  <i class="fas fa-check text-sm"></i>
+                </span>
+                <span class="text-gray-700">Comprobante de Domicilio</span>
+              </li>
+              <li class="flex items-start">
+                <span class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 flex items-center justify-center text-green-600 mr-3 mt-0.5">
+                  <i class="fas fa-check text-sm"></i>
+                </span>
+                <span class="text-gray-700">CURP</span>
+              </li>
+              <li class="flex items-start">
+                <span class="flex-shrink-0 h-6 w-6 rounded-full bg-green-100 flex items-center justify-center text-green-600 mr-3 mt-0.5">
+                  <i class="fas fa-check text-sm"></i>
+                </span>
+                <span class="text-gray-700">Acta de nacimiento</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Guía de Estudio Card -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+          <div class="p-8">
+            <div class="flex items-center mb-6">
+              <div class="flex-shrink-0 bg-green-100 rounded-full p-3">
+                <i class="fas fa-book text-green-600 text-2xl"></i>
+              </div>
+              <h2 class="text-2xl font-bold text-gray-800 ml-4">Guía de Estudio</h2>
+            </div>
+            <div class="bg-green-50 border-l-4 border-green-600 p-4 mb-6 rounded">
+              <p class="text-gray-700">
+                <span class="font-semibold">Fecha importante:</span> El día <span class="text-green-600 font-bold">25 de Mayo</span> accede a la página de Gmail
+                con tu cuenta de correo institucional para ingresar a tu examen vía Classroom.
+              </p>
+            </div>
+            <p class="text-gray-700 mb-6">
+              En caso de cualquier duda o extravío de tu cuenta, comunícate con tu plantel.
+            </p>
+            <a href="#" class="inline-flex items-center justify-center w-full bg-green-600 text-white py-3 px-6 rounded-lg shadow-md hover:bg-green-700 transition duration-300">
+              <i class="fas fa-download mr-2"></i>
+              Descargar la Guía de Estudio
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Manuales Section -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+        <div class="p-8">
+          <div class="flex items-center mb-6">
+            <div class="flex-shrink-0 bg-green-100 rounded-full p-3">
+              <i class="fas fa-book-open text-green-600 text-2xl"></i>
+            </div>
+            <h2 class="text-2xl font-bold text-gray-800 ml-4">Manuales de Alumnos - Curso Propedéutico 2024</h2>
+          </div>
+          <p class="text-gray-700 mb-6">
+            Descarga los cuadernillos de estudio para prepararte para el curso propedéutico.
+          </p>
+          <a href="#" class="inline-flex items-center justify-center w-full bg-green-600 text-white py-3 px-6 rounded-lg shadow-md hover:bg-green-700 transition duration-300">
+            <i class="fas fa-download mr-2"></i>
+            Descargar Cuadernillos
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
     <footer class="bg-white dark:bg-gray-900 mt-10">
       <div class="border-t-4 border-gray-400 dark:border-gray-1000"></div>
       <div class="mx-auto w-full max-w-screen-xl">
@@ -383,51 +459,49 @@
         © 2024 Departamento de Informática. Todos los derechos reservados.
       </div>
     </footer>
+
+    <script>
+      const menuBtn = document.getElementById('menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const serviciosBtn = document.getElementById('servicios-btn');
+      const serviciosSubmenu = document.getElementById('servicios-submenu');
+      const nosotrosBtn = document.getElementById('nosotros-btn');
+      const nosotrosSubmenu = document.getElementById('nosotros-submenu');
+      const alumnosBtn = document.getElementById('alumnos-btn');
+      const alumnosSubmenu = document.getElementById('alumnos-submenu');
+      const normaBtn = document.getElementById('norma-btn');
+      const normaSubmenu = document.getElementById('norma-submenu');
+      const trnsBtn = document.getElementById('trns-btn');
+      const trnsSubmenu = document.getElementById('trns-submenu');
+
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      serviciosBtn?.addEventListener('click', () => {
+        serviciosSubmenu.classList.toggle('hidden');
+      });
+
+      nosotrosBtn?.addEventListener('click', () => {
+        nosotrosSubmenu.classList.toggle('hidden');
+      });
+
+      alumnosBtn?.addEventListener('click', () => {
+        alumnosSubmenu.classList.toggle('hidden');
+      });
+
+      normaBtn?.addEventListener('click', () => {
+        normaSubmenu.classList.toggle('hidden');
+      });
+
+      trnsBtn?.addEventListener('click', () => {
+        trnsSubmenu.classList.toggle('hidden');
+      });
+
+      function toggleContent(id) {
+        const content = document.getElementById(id);
+        content.classList.toggle("hidden");
+      }
+    </script>
   </body>
 </html>
-
-<script>
-  const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const serviciosBtn = document.getElementById('servicios-btn');
-        const serviciosSubmenu = document.getElementById('servicios-submenu');
-        const nosotrosBtn = document.getElementById('nosotros-btn');
-        const nosotrosSubmenu = document.getElementById('nosotros-submenu');
-        const alumnosBtn = document.getElementById('alumnos-btn');
-        const alumnosSubmenu = document.getElementById('alumnos-submenu');
-        const normaBtn = document.getElementById('norma-btn');
-        const normaSubmenu = document.getElementById('norma-submenu');
-        const trnsBtn = document.getElementById('trns-btn');
-        const trnsSubmenu = document.getElementById('trns-submenu');
-
-        menuBtn.addEventListener('click', () => {
-          mobileMenu.classList.toggle('hidden');
-        });
-
-        serviciosBtn?.addEventListener('click', () => {
-          serviciosSubmenu.classList.toggle('hidden');
-        });
-
-        nosotrosBtn?.addEventListener('click', () => {
-          nosotrosSubmenu.classList.toggle('hidden');
-        });
-
-        alumnosBtn?.addEventListener('click', () => {
-          alumnosSubmenu.classList.toggle('hidden');
-        });
-
-        normaBtn?.addEventListener('click', () => {
-          normaSubmenu.classList.toggle('hidden');
-        });
-
-        trnsBtn?.addEventListener('click', () => {
-          trnsSubmenu.classList.toggle('hidden');
-        });
-
-
-
-  function toggleContent(id) {
-    const content = document.getElementById(id);
-    content.classList.toggle("hidden");
-  }
-</script>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CECYTE BCS</title>
+    <title>CECYTE BCS - Historia</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -20,12 +20,78 @@
       href="https://unpkg.com/flowbite@^2.1/dist/flowbite.min.css"
       rel="stylesheet"
     />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <script src="https://unpkg.com/flowbite@^2.1/dist/flowbite.min.js"></script>
+    <style>
+      .parallax {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      
+      .glass-effect {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+      }
+
+      .hover-scale {
+        transition: transform 0.3s ease;
+      }
+      
+      .hover-scale:hover {
+        transform: scale(1.02);
+      }
+
+      .gradient-overlay {
+        background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.4));
+      }
+
+      .section-fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      }
+
+      .section-fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .card-hover {
+        transition: all 0.3s ease;
+      }
+
+      .card-hover:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      }
+
+      .text-shadow {
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+      }
+
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 4px;
+      }
+
+      .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+    </style>
   </head>
   <!-- INCIO NAVBAR CON SUBEMENUS -->
 <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
@@ -221,32 +287,34 @@
    
 
     <!-- Main Content -->
-<main class="container mx-auto px-4 py-16 space-y-20 mt-20">
-  <!-- Hero Section with Parallax Effect -->
-<section class="relative h-[600px] rounded-3xl overflow-hidden shadow-2xl">
-    <!-- Black overlay with increased opacity -->
-    <div class="absolute inset-0 bg-gradient-to-b from-black/80 to-black/60 z-10"></div>
-    <!-- Additional black tint layer -->
-    <div class="absolute inset-0 bg-black opacity-40"></div>
-    <div class="absolute inset-0 bg-fixed" style="background: url('../img_recuros_pagina/IMG_COVER_ALUMNOS_SALACOMPUTO.jpg') center/cover;"></div>
+<main class="container mx-auto px-4 py-16 space-y-20 mt-20 custom-scrollbar">
+  <!-- Hero Section with Enhanced Parallax Effect -->
+<section class="relative h-[80vh] rounded-3xl overflow-hidden shadow-2xl">
+    <div class="absolute inset-0 gradient-overlay z-10"></div>
+    <div class="absolute inset-0 parallax" style="background-image: url('../img_recuros_pagina/IMG_COVER_ALUMNOS_SALACOMPUTO.jpg');"></div>
     <div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center p-8 space-y-8 z-20">
       <img src="../img_logos/logo_Cecyte_vertical_sin_fondo.png" 
            alt="CECyTE Logo" 
-           class="w-48 animate__animated animate__fadeInDown">
-      <h1 class="text-6xl font-bold mb-4 animate__animated animate__fadeInUp leading-tight">
+           class="w-48 animate__animated animate__fadeInDown hover-scale">
+      <h1 class="text-6xl font-bold mb-4 animate__animated animate__fadeInUp leading-tight text-shadow">
         Colegio de Estudios Científicos<br>y Tecnológicos
       </h1>
-      <p class="text-2xl animate__animated animate__fadeInUp animate__delay-1s font-light">
+      <p class="text-2xl animate__animated animate__fadeInUp animate__delay-1s font-light text-shadow">
         Formando líderes para el futuro de Baja California Sur
       </p>
+      <div class="mt-8">
+        <a href="#mision-vision" class="bg-white text-green-600 px-8 py-3 rounded-full font-semibold hover:bg-green-600 hover:text-white transition-all duration-300 animate__animated animate__fadeInUp animate__delay-2s">
+          Conoce más
+        </a>
+      </div>
     </div>
 </section>
 
-  <!-- Mission & Vision Cards -->
-  <section class="grid md:grid-cols-2 gap-12 px-4">
+  <!-- Mission & Vision Cards with Enhanced Design -->
+  <section id="mision-vision" class="grid md:grid-cols-2 gap-12 px-4">
     <!-- Mission Card -->
-    <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-all duration-300 section-fade-in">
-      <div class="bg-green-600 p-6">
+    <div class="bg-white rounded-2xl shadow-xl overflow-hidden card-hover section-fade-in">
+      <div class="bg-gradient-to-r from-green-600 to-green-700 p-6">
         <div class="flex items-center space-x-4">
           <div class="p-3 bg-white/20 rounded-full">
             <i class="fas fa-bullseye text-3xl text-white"></i>
@@ -262,8 +330,8 @@
     </div>
 
     <!-- Vision Card -->
-    <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-all duration-300 section-fade-in">
-      <div class="bg-orange-500 p-6">
+    <div class="bg-white rounded-2xl shadow-xl overflow-hidden card-hover section-fade-in">
+      <div class="bg-gradient-to-r from-orange-500 to-orange-600 p-6">
         <div class="flex items-center space-x-4">
           <div class="p-3 bg-white/20 rounded-full">
             <i class="fas fa-eye text-3xl text-white"></i>
@@ -273,21 +341,22 @@
       </div>
       <div class="p-8">
         <p class="text-gray-700 leading-relaxed text-lg">
-          El CECyTE-BCS se propone lograr una formación educativa integral,  de calidad, que permita a sus egresados participar en la sociedad del conocimiento, realizar estudios de nivel superior e integrarse al campo laboral de manera exitosa, constituyendo  los servicios de educación media superior en un espacio de convivencia juvenil ordenada, plural y respetuosa, que fomente el aprendizaje colaborativo y la discusión en un ambiente de libertad y rigor académico que vincule  los centros escolares con sus propias comunidades para lograr una interrelación más estrecha y pertinente entre planes y programas de estudio, el ámbito laboral y el desarrollo sustentables entre regiones y microrregiones del Estado de BCS.
+          El CECyTE-BCS se propone lograr una formación educativa integral, de calidad, que permita a sus egresados participar en la sociedad del conocimiento, realizar estudios de nivel superior e integrarse al campo laboral de manera exitosa, constituyendo los servicios de educación media superior en un espacio de convivencia juvenil ordenada, plural y respetuosa, que fomente el aprendizaje colaborativo y la discusión en un ambiente de libertad y rigor académico que vincule los centros escolares con sus propias comunidades para lograr una interrelación más estrecha y pertinente entre planes y programas de estudio, el ámbito laboral y el desarrollo sustentables entre regiones y microrregiones del Estado de BCS.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- Objectives Section -->
+  <!-- Objectives Section with Enhanced Design -->
   <section class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-12 shadow-xl section-fade-in">
     <div class="max-w-5xl mx-auto">
-      <h2 class="text-4xl font-bold text-center text-green-700 mb-12">
-        Objetivos Institucionales
+      <h2 class="text-4xl font-bold text-center text-green-700 mb-12 relative">
+        <span class="relative z-10">Objetivos Institucionales</span>
+        <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-orange-500"></div>
       </h2>
       
       <!-- General Objective -->
-      <div class="bg-white rounded-2xl shadow-lg p-8 mb-12 hover:shadow-xl transition-all duration-300">
+      <div class="bg-white rounded-2xl shadow-lg p-8 mb-12 card-hover">
         <h3 class="text-3xl font-bold text-orange-600 mb-6 flex items-center">
           <i class="fas fa-star mr-4"></i>
           Objetivo General
@@ -298,7 +367,7 @@
       </div>
 
       <!-- Specific Objectives -->
-      <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300">
+      <div class="bg-white rounded-2xl shadow-lg p-8 card-hover">
         <h3 class="text-3xl font-bold text-green-700 mb-6 flex items-center">
           <i class="fas fa-list-check mr-4"></i>
           Objetivos Específicos
@@ -357,18 +426,30 @@
 <!-- ... existing footer content ... -->
 
 <script>
-  // Add intersection observer for fade-in animations
+  // Enhanced intersection observer for fade-in animations
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.style.opacity = '1';
-        entry.target.style.transform = 'translateY(0)';
+        entry.target.classList.add('visible');
       }
     });
-  }, { threshold: 0.1 });
+  }, { 
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  });
 
   document.querySelectorAll('.section-fade-in').forEach(section => {
     observer.observe(section);
+  });
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
   });
 </script>
     
