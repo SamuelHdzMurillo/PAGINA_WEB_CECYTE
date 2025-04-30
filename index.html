@@ -39,11 +39,10 @@
                 <div class="flex-shrink-0 flex items-center">
                     <img src="img_logos/logo_Cecyte_vertical_sin_fondo.png" alt="logo_Cecyte_vertical_sin_fondo" class="h-12 w-auto">
                 </div>
-
                 <!-- Botón de menú móvil -->
                 <div class="flex items-center sm:hidden">
                     <button id="menu-btn" class="text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700">
-                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <svg class="h-6 w-6 transition-transform duration-300" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                         </svg>
                     </button>
@@ -120,91 +119,104 @@
             </div>
         </div>
 
-        <!-- Menú móvil -->
-        <div class="sm:hidden hidden" id="mobile-menu">
-            <a href="#" class="block text-gray-700 hover:text-green-600 px-4 py-2">Inicio</a>
-            <div class="block">
-                <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="servicios-btn">
-                    Institución
-                    <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                    </svg>
-                </button>
-                <!-- Submenu -->
-                <div class="hidden" id="servicios-submenu">
-                    <a href="pages_institucion/pagina_historia.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Historia, Misión y Visión</a>
-                    <a href="pages_institucion/planteles_cecyte.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Planteles CecyteBCS</a>
-                    <a href="pages_institucion/planteles_emsad.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Planteles Emsad</a>
-                    <a href="directorio_telefonico.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Directorio Telefonico</a>
-                </div>
-            </div>
-            <div class="block">
-                <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="nosotros-btn">
-                    Oferta Educativa
-                    
-                    <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                    </svg>
-                </button>
-                
-                <!-- Submenu -->
-                <div class="hidden" id="nosotros-submenu">
-                    <a href="pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Soporte y Mantenimiento equipo de cómputo</a>
-                    <a href="pages_oferta_educativa/programacion.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programación</a>
-                    <a href="pages_oferta_educativa/ventas.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ventas</a>
-                    <a href="pages_oferta_educativa/ecoturismo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ecoturismo</a>
-                    <a href="pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Producción industrial de alimentos</a>
-                    <a href="pages_oferta_educativa/mantenimiento_industrial.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Mantenimiento industrial</a>
-                    <a href="pages_oferta_educativa/servicios_de_hoteleria.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Servicios de Hotelería</a>
-                </div>
-            </div>
-            <div class="block">
-              <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="alumnos-btn">
-                Alumnos
-                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-              <!-- Submenu -->
-              <div class="hidden" id="alumnos-submenu">
-                <a href="pages_alumnos/becas.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Becas</a>
-                <a href="pages_alumnos/prog_acompanamiento.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programa de Acompañamiento</a>
-                <a href="pages_alumnos/requisitos_de_ingreso.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Requisitos de Ingreso</a>
+                <!-- Menú móvil -->
+                <div class="sm:hidden hidden" id="mobile-menu">
+                  <!-- Docentes Menu -->
+                  <div class="block">
+                      <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="docentes-btn">
+                          Docentes
+                          <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                          </svg>
+                      </button>
+                      <div class="hidden" id="docentes-submenu">
+                          <a href="pages_institucion/" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Convocatorias</a>
+                          <a href="https://sites.google.com/cecytebcs.edu.mx/orientacionespej23/inicio?authuser=0" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Centro Virtual 2024-2025</a>
+                      </div>
+                  </div>
+      
+                  <!-- Institución Menu -->
+                  <div class="block">
+                      <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="servicios-btn">
+                          Institución
+                          <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                          </svg>
+                      </button>
+                      <div class="hidden" id="servicios-submenu">
+                          <a href="pages_institucion/pagina_historia.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Historia, Misión y Visión</a>
+                          <a href="pages_institucion/planteles_cecyte.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Planteles CecyteBCS</a>
+                          <a href="pages_institucion/planteles_emsad.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Planteles Emsad</a>
+                          <a href="directorio_telefonico.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Directorio Telefónico</a>
+                      </div>
+                  </div>
+      
+                  <!-- Oferta Educativa Menu -->
+                  <div class="block">
+                      <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="nosotros-btn">
+                          Oferta Educativa
+                          <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                          </svg>
+                      </button>
+                      <div class="hidden" id="nosotros-submenu">
+                          <a href="pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Soporte y Mantenimiento equipo de cómputo</a>
+                          <a href="pages_oferta_educativa/programacion.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Programación</a>
+                          <a href="pages_oferta_educativa/ventas.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Ventas</a>
+                          <a href="pages_oferta_educativa/ecoturismo.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Ecoturismo</a>
+                          <a href="pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Producción industrial de alimentos</a>
+                          <a href="pages_oferta_educativa/mantenimiento_industrial.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Mantenimiento Industrial</a>
+                          <a href="pages_oferta_educativa/servicios_de_hoteleria.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Servicios de Hotelería</a>
+                      </div>
+                  </div>
+      
+                  <!-- Alumnos Menu -->
+                  <div class="block">
+                      <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="alumnos-btn">
+                          Alumnos
+                          <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                          </svg>
+                      </button>
+                      <div class="hidden" id="alumnos-submenu">
+                          <a href="pages_alumnos/becas.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Becas</a>
+                          <a href="pages_alumnos/prog_acompanamiento.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Programa de Acompañamiento</a>
+                          <a href="pages_alumnos/requisitos_de_ingreso.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Requisitos de Ingreso</a>
+                      </div>
+                  </div>
+      
+                  <!-- Normatividad Menu -->
+                  <div class="block">
+                      <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="norma-btn">
+                          Normatividad
+                          <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                          </svg>
+                      </button>
+                      <div class="hidden" id="norma-submenu">
+                          <a href="pages_normatividad/manuales_de_procedimientos.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Manuales de Procedimientos</a>
+                          <a href="pages_normatividad/manuales_de_org.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Manuales de Organización</a>
+                          <a href="https://drive.google.com/file/d/1w1kARXVhw-SFsSY7q7JPBH4MgAqN8C_S/view?usp=drive_link" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Reglamento interno</a>
+                          <a href="https://drive.google.com/file/d/13m142kMwEJ6hj8xaDJXu-XdA-jAkO9jb/view?usp=sharing" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Código de Conducta</a>
+                          <a href="https://drive.google.com/file/d/1lIJBD8IXxHcM3hwp7v3VmG2X1EJZXKnG/view?usp=sharing" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Protocolo de Seguridad</a>
+                      </div>
+                  </div>
+      
+                  <!-- Transparencia Menu -->
+                  <div class="block">
+                      <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="trns-btn">
+                          Transparencia
+                          <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                          </svg>
+                      </button>
+                      <div class="hidden" id="trns-submenu">
+                          <a href="https://transparencia.cecytebcs.edu.mx/informacion-publica/articulo-75" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Artículo 75</a>
+                          <a href="pages_transparencia/cuenta_publica.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Cuenta pública</a>
+                          <a href="pages_transparencia/ley_diciplina.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Ley de disciplina Financiera</a>
+                      </div>
+                  </div>
               </div>
-            </div>
-
-
-
-            <div class="block">
-              <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="norma-btn">
-                Normatividad
-                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-              <!-- Submenu -->
-              <div class="hidden" id="norma-submenu">
-                <a href="pages_normatividad/manuales_de_procedimientos.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Manual de Procedimientos</a>
-                <a href="pages_normatividad/manuales_de_org.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Manual de Organizacion</a>
-              </div>
-            </div>
-
-            <div class="block">
-              <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="trns-btn">
-                Transparencia
-                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-              <!-- Submenu -->
-              <div class="hidden" id="trns-submenu">
-                <a href="pages_transparencia/cuenta_publica.html" class="block px-4 py-4 text-gray-700 hover:bg-gray-100">Cuenta publica</a>
-                <a href="pages_transparencia/ley_diciplina.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ley de diciplina</a>
-              </div>
-            </div>
-            
-        </div>
-    </div>
 
     <!-- Lema -->
     <div class="w-full h-1 bg-orange-500"></div>
@@ -978,6 +990,14 @@
         const normaSubmenu = document.getElementById('norma-submenu');
         const trnsBtn = document.getElementById('trns-btn');
         const trnsSubmenu = document.getElementById('trns-submenu');
+
+                // Additional mobile menu handlers
+                const docentesBtn = document.getElementById('docentes-btn');
+        const docentesSubmenu = document.getElementById('docentes-submenu');
+
+        docentesBtn?.addEventListener('click', () => {
+            docentesSubmenu.classList.toggle('hidden');
+        });
 
         // Event listeners para menú móvil
         menuBtn.addEventListener('click', () => {
