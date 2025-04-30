@@ -224,7 +224,7 @@
     <!-- BOTON SUBIR FIN -->
 
     <!-- SECTION HERO INICIO -->
-    <section class="hero-section min-h-screen relative overflow-hidden">
+    <section class="hero-section min-h-screen relative overflow-hidden pt-20 md:pt-0"> <!-- Added padding top for mobile -->
       <!-- Capa negra constante -->
       <div class="absolute inset-0 bg-black opacity-50 z-10"></div>
 
@@ -232,39 +232,39 @@
       <div class="absolute inset-0 bg-cover bg-center" id="bgSlideshow"></div>
 
       <!-- Main content container -->
-      <div class="container mx-auto px-4 h-screen flex items-center relative z-20">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="container mx-auto px-4 min-h-screen flex items-center relative z-20">
+        <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center mt-16 md:mt-0"> <!-- Adjusted gap and margin for mobile -->
           <!-- Left column - Logo -->
           <div class="relative animate-float">
             <img 
               src="img_logos/logo_Cecyte_vertical_sin_fondo.png" 
               alt="CECyTE Logo" 
-              class="relative max-w-md mx-auto transform hover:scale-105 transition-all duration-500 drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]"
+              class="relative w-48 md:max-w-md mx-auto transform hover:scale-105 transition-all duration-500 drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]"
             >
           </div>
 
           <!-- Right column - Text content -->
-          <div class="text-center md:text-left space-y-8 animate-fadeIn">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight animate-slideRight">
+          <div class="text-center md:text-left space-y-4 md:space-y-8 animate-fadeIn"> <!-- Adjusted spacing for mobile -->
+            <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight animate-slideRight"> <!-- Reduced text size for mobile -->
               Colegio de Estudios 
               <span class="text-orange-400">Científicos</span> y 
               <span class="text-orange-400">Tecnológicos</span>
             </h1>
-            <p class="text-2xl md:text-3xl text-gray-200 font-light italic animate-slideUp">
+            <p class="text-xl md:text-3xl text-gray-200 font-light italic animate-slideUp"> <!-- Adjusted text size for mobile -->
               "Ciencia y Tecnología, Luz y Camino"
             </p>
-            <p class="text-lg text-gray-300 max-w-xl animate-fadeIn">
+            <p class="text-base md:text-lg text-gray-300 max-w-xl animate-fadeIn"> <!-- Adjusted text size for mobile -->
               Formando líderes del mañana con excelencia académica y valores sólidos para un futuro brillante.
             </p>
             <!-- In the hero section, modify the links -->
-            <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+            <div class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center md:justify-start"> <!-- Adjusted gap for mobile -->
               <a href="#carreras" 
-                 class="px-8 py-4 bg-orange-500 text-white font-bold rounded-lg hover:bg-orange-600 transition-all duration-300 transform hover:scale-105 hover:shadow-lg scroll-smooth"
+                 class="px-6 md:px-8 py-3 md:py-4 bg-orange-500 text-white font-bold rounded-lg hover:bg-orange-600 transition-all duration-300 transform hover:scale-105 hover:shadow-lg scroll-smooth text-sm md:text-base" 
                  onclick="scrollToSection('carreras')">
                 Explorar Programas
               </a>
               <a href="#footer" 
-                 class="px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-105 hover:shadow-lg scroll-smooth"
+                 class="px-6 md:px-8 py-3 md:py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-105 hover:shadow-lg scroll-smooth text-sm md:text-base"
                  onclick="scrollToSection('footer')">
                 Contactar
               </a>
