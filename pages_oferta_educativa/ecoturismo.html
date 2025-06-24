@@ -26,7 +26,7 @@
 </head>
 <body class="bg-white-500">
    <!-- INCIO NAVBAR CON SUBEMENUS -->
-<nav class="bg-white shadow-lg">
+   <nav class="bg-white shadow-lg relative z-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
             <!-- Logo -->
@@ -217,149 +217,139 @@
    
 
       <main>
-        <div class="parallax" style="background-image: url('../img_recuros_pagina/img_oferta_edu/ecoturismo/panorama_verde.jfif');">
-            <div class="container mx-auto py-24">
-                <div class="flex flex-col md:flex-row justify-between bg-orange-500 bg-opacity-75 p-8">
-                    <div class="max-h-full md:w-full animate__animated animate__fadeInRight">
-                        <h1 class="text-4xl font-bold text-white">ECOTURISMO</h1>
-                        <p class="text-lg text-white mt-4"></p>
-                    </div>
-                </div>
+        <!-- HERO SECTION MEJORADO -->
+        <section class="relative min-h-[350px] flex items-center justify-center bg-cover bg-center" style="background-image: url('../img_recuros_pagina/img_oferta_edu/ecoturismo/panorama_verde.jfif');">
+          <div class="absolute inset-0 bg-gradient-to-r from-green-900/80 via-green-680/70 to-green-900/60 backdrop-blur-sm"></div>
+          <div class="relative z-10 text-center max-w-2xl mx-auto py-16 px-6">
+            <h1 class="text-5xl md:text-6xl font-extrabold text-white drop-shadow-lg animate__animated animate__fadeInDown">ECOTURISMO</h1>
+            <p class="text-lg md:text-xl text-white mt-6 font-medium animate__animated animate__fadeInUp">Vive, protege y promueve la naturaleza. Sé un profesional del ecoturismo.</p>
+          </div>
+        </section>
+
+        <!-- PLANTELES SECTION MEJORADO -->
+        <section class="bg-gradient-to-br from-orange-50 to-white py-12">
+          <div class="container mx-auto px-4">
+            <div class="mb-10 text-center">
+              <h2 class="text-3xl font-bold text-gray-800 border-b-4 border-green-600 inline-block pb-2">Planteles que imparten esta carrera</h2>
+              <p class="text-gray-600 text-lg mt-2">Descubre dónde puedes estudiar Ecoturismo en BCS</p>
             </div>
-            <div class="bg-white bg-opacity-75 p-4 md:p-6 mt-4">
-                <div class="flex flex-col items-center space-y-4 md:space-y-0 md:flex-row md:justify-center md:space-x-8">
-                    <h2 class="text-xl md:text-2xl font-bold text-gray-800 border-b-2 border-orange-500 text-center md:text-left">Planteles que imparten esta carrera</h2>
-                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-3">
-                  
-                        <div class="bg-orange-600 hover:bg-orange-500 text-white font-semibold py-2 px-4 md:px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out flex items-center justify-center">
-                            <span>CECYTE 04</span>
-                        </div>
-
-                        <div class="bg-orange-600 hover:bg-orange-500 text-white font-semibold py-2 px-4 md:px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out flex items-center justify-center">
-                            <span>CECYTE 05</span>
-                        </div>
-                        
-                        <div class="bg-orange-600 hover:bg-orange-500 text-white font-semibold py-2 px-4 md:px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out flex items-center justify-center">
-                            <span>CECYTE 08</span>
-                        </div>
-
-                        <div class="bg-orange-600 hover:bg-orange-500 text-white font-semibold py-2 px-4 md:px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out flex items-center justify-center">
-                            <span>CECYTE 09</span>
-                        </div>
-
-                        <div class="bg-orange-600 hover:bg-orange-500 text-white font-semibold py-2 px-4 md:px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out flex items-center justify-center">
-                            <span>CECYTE 10</span>
-                        </div>
-
-                        <div class="bg-orange-600 hover:bg-orange-500 text-white font-semibold py-2 px-4 md:px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out flex items-center justify-center">
-                            <span>CECYTE 11</span>
-                        </div>
-                    </div>
+            <div class="flex justify-center">
+              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full max-w-4xl">
+                <div class="bg-gradient-to-br from-green-800 to-green-700 text-white font-semibold py-8 px-8 rounded-2xl shadow-2xl flex flex-col items-center hover:scale-105 transition-transform duration-300">
+                  <i class="fas fa-leaf text-4xl mb-4"></i>
+                  <span class="text-xl">CECYTE 04</span>
                 </div>
+                <div class="bg-gradient-to-br from-green-800 to-green-700 text-white font-semibold py-8 px-8 rounded-2xl shadow-2xl flex flex-col items-center hover:scale-105 transition-transform duration-300">
+                  <i class="fas fa-leaf text-4xl mb-4"></i>
+                  <span class="text-xl">CECYTE 05</span>
+                </div>
+                <div class="bg-gradient-to-br from-green-800 to-green-700 text-white font-semibold py-8 px-8 rounded-2xl shadow-2xl flex flex-col items-center hover:scale-105 transition-transform duration-300">
+                  <i class="fas fa-leaf text-4xl mb-4"></i>
+                  <span class="text-xl">CECYTE 08</span>
+                </div>
+                <div class="bg-gradient-to-br from-green-800 to-green-700 text-white font-semibold py-8 px-8 rounded-2xl shadow-2xl flex flex-col items-center hover:scale-105 transition-transform duration-300">
+                  <i class="fas fa-leaf text-4xl mb-4"></i>
+                  <span class="text-xl">CECYTE 09</span>
+                </div>
+                <div class="bg-gradient-to-br from-green-800 to-green-700 text-white font-semibold py-8 px-8 rounded-2xl shadow-2xl flex flex-col items-center hover:scale-105 transition-transform duration-300">
+                  <i class="fas fa-leaf text-4xl mb-4"></i>
+                  <span class="text-xl">CECYTE 10</span>
+                </div>
+                <div class="bg-gradient-to-br from-green-800 to-green-700 text-white font-semibold py-8 px-8 rounded-2xl shadow-2xl flex flex-col items-center hover:scale-105 transition-transform duration-300">
+                  <i class="fas fa-leaf text-4xl mb-4"></i>
+                  <span class="text-xl">CECYTE 11</span>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
+        </section>
 
-        <div class="container mx-auto p-8 bg-white shadow-lg rounded-lg">
-                <div id="accordion-collapse" data-accordion="collapse">
-                    <h3 id="accordion-heading-1">
-                        <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 " data-accordion-target="#accordion-body-1" aria-expanded="true" aria-controls="accordion-body-1">
-                            <span>Justificación de la carrera.</span>
-                            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414-1.414l5-5A1 1 0 0110 3z" clip-rule="evenodd"></path></svg>
-                        </button>
-                    </h3>
-                    <div id="accordion-body-1" class="hidden" aria-labelledby="accordion-heading-1">
-                        <div class="p-5 border border-b-0 border-gray-200">
-                            <p class="text-gray-500">La carrera de Técnico en Ecoturismo ofrece las competencias profesionales que permiten al egresado realizar actividades basadas en las necesidades detectadas en el ramo del turismo, el cual genera una gran derrama económica, la modalidad del turismo de naturaleza: El ecoturismo tiene a futuro un gran potencial para nuestro país.</p>
-                        </div>
-                    </div>
-                    <h3 id="accordion-heading-2">
-                        <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 " data-accordion-target="#accordion-body-2" aria-expanded="false" aria-controls="accordion-body-2">
-                            <span>Desarrollo Integral y Competencias Profesionales en Ecoturismo: Un Programa de Estudios para la Inserción Laboral y el Compromiso Cívico</span>
-                            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414-1.414l5-5A1 1 0 0110 3z" clip-rule="evenodd"></path></svg>
-                        </button>
-                    </h3>
-                    <div id="accordion-body-2" class="hidden" aria-labelledby="accordion-heading-2">
-                        <div class="p-5 border border-b-0 border-gray-200">
-                            <P>El programa de estudios permitirá al egresado identificar los problemas y retos teniendo en cuenta los objetivos que persigue así como sustentar una postura personal sobre temas de interés y relevancia general, considerando otros puntos de vista de manera crítica y reflexiva, también participará con una conciencia cívica y ética en la vida de su comunidad, región, México y el mundo.</P>
+        <!-- ACORDEÓN MEJORADO -->
+        <section class="container mx-auto p-6 md:p-10 bg-white shadow-2xl rounded-2xl my-10">
+          <div id="accordion-collapse" data-accordion="collapse">
+            <!-- Justificación -->
+            <h3 id="accordion-heading-1">
+              <button type="button" class="flex items-center justify-between w-full p-6 font-semibold text-lg text-left text-green-700 border border-b-0 border-gray-200 rounded-t-2xl focus:ring-4 focus:ring-green-200 transition-all" data-accordion-target="#accordion-body-1" aria-expanded="true" aria-controls="accordion-body-1">
+                <span><i class="fas fa-lightbulb mr-2 text-green-700"></i>Justificación de la carrera</span>
+                <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414-1.414l5-5A1 1 0 0110 3z" clip-rule="evenodd"></path></svg>
+              </button>
+            </h3>
+            <div id="accordion-body-1" class="hidden" aria-labelledby="accordion-heading-1">
+              <div class="p-6 border border-b-0 border-gray-200 bg-green-50 rounded-b-xl">
+                <p class="text-gray-700">La carrera de Técnico en Ecoturismo ofrece las competencias profesionales que permiten al egresado realizar actividades basadas en las necesidades detectadas en el ramo del turismo, el cual genera una gran derrama económica, la modalidad del turismo de naturaleza: El ecoturismo tiene a futuro un gran potencial para nuestro país.</p>
+              </div>
+            </div>
+            <!-- Desarrollo Integral -->
+            <h3 id="accordion-heading-2">
+              <button type="button" class="flex items-center justify-between w-full p-6 font-semibold text-lg text-left text-green-700 border border-b-0 border-gray-200 focus:ring-4 focus:ring-green-200 transition-all" data-accordion-target="#accordion-body-2" aria-expanded="false" aria-controls="accordion-body-2">
+                <span><i class="fas fa-users mr-2 text-green-700"></i>Desarrollo Integral y Competencias Profesionales en Ecoturismo</span>
+                <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414-1.414l5-5A1 1 0 0110 3z" clip-rule="evenodd"></path></svg>
+              </button>
+            </h3>
+            <div id="accordion-body-2" class="hidden" aria-labelledby="accordion-heading-2">
+              <div class="p-6 border border-b-0 border-gray-200 bg-green-50">
+                <p>El programa de estudios permitirá al egresado identificar los problemas y retos teniendo en cuenta los objetivos que persigue así como sustentar una postura personal sobre temas de interés y relevancia general, considerando otros puntos de vista de manera crítica y reflexiva, también participará con una conciencia cívica y ética en la vida de su comunidad, región, México y el mundo.</p>
+                <ul class="mt-4 space-y-2 list-disc list-inside text-gray-700">
+                  <li>Cabe resaltar que los jóvenes deberán desarrollar las habilidades necesarias para lograr su inserción laboral en organismos públicos y privados de los sectores turísticos y ecoturísticos, esta carrera en Ecoturismo ofrecerá a los egresados una opción profesional con excelentes perspectivas laborales, en áreas tan diversas como empresas de viajes especializadas en turismo de naturaleza y aventura, operadores de turismo receptivo, hoteles ecológicos, empresas de agroturismo y etnoturismo o bien en parques y áreas naturales protegidas, incluso pueden trabajar de manera independiente como guías ecoturísticos o crear su propia empresa.</li>
+                  <li>Los primeros tres módulos de la carrera técnica tienen una duración de 272 horas cada uno, y los dos últimos de 192, un total de 1200 horas de formación profesional. Cabe destacar que los módulos de formación profesional tienen carácter transdisciplinario, por cuanto corresponden con objetos y procesos de transformación que implica la integración de saberes de distintas disciplinas.</li>
+                </ul>
+              </div>
+            </div>
+            <!-- Perfil de egreso -->
+            <h3 id="accordion-heading-3">
+              <button type="button" class="flex items-center justify-between w-full p-6 font-semibold text-lg text-left text-green-700 border border-gray-200 focus:ring-4 focus:ring-green-200 transition-all" data-accordion-target="#accordion-body-3" aria-expanded="false" aria-controls="accordion-body-3">
+                <span><i class="fas fa-user-graduate mr-2 text-green-700"></i>Perfil de egreso</span>
+                <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414-1.414l5-5A1 1 0 0110 3z" clip-rule="evenodd"></path></svg>
+              </button>
+            </h3>
+            <div id="accordion-body-3" class="hidden" aria-labelledby="accordion-heading-3">
+              <div class="p-6 border border-t-0 border-gray-200 bg-green-50 rounded-b-2xl">
+                <p class="text-gray-700">La formación que ofrece la carrera de Técnico en Ecoturismo permite al egresado, a través de la articulación de saberes de diversos campos, realizar actividades dirigidas a la demanda ecoturística correspondiente. Durante el proceso de formación de los cinco módulos, el estudiante desarrollará o reforzará:</p>
+                <br>
+                <p class="font-semibold text-gray-800">Competencias profesionales:</p>
+                <ul class="list-disc pl-5 text-gray-700 space-y-2 mt-2">
+                  <li>Fomenta la educación ambiental para un desarrollo sostenible</li>
+                  <li>Apoya en la administración de los servicios ecoturísticos para un desarrollo sostenible</li>
+                  <li>Auxilia en la coordinación de los servicios ecoturísticos para un desarrollo sostenible</li>
+                  <li>Opera el marketing y los recursos financieros dentro de los servicios ecoturísticos</li>
+                  <li>Colabora en la elaboración de proyectos y programas ecoturísticos para un desarrollo sostenible</li>
+                </ul>
+                <br>
+                <p class="font-semibold text-gray-800">Competencias de empleabilidad y productividad:</p>
+                <ul class="list-disc pl-5 text-gray-700 space-y-2 mt-2">
+                  <li>Planeación y organización</li>
+                  <li>Orientación a la mejora continua</li>
+                  <li>Atención al cliente</li>
+                  <li>Relaciones interpersonales</li>
+                  <li>Ética profesional</li>
+                </ul>
+                <br>
+                <p class="font-semibold text-gray-800">Competencias genéricas:</p>
+                <ul class="list-disc pl-5 text-gray-700 space-y-2 mt-2">
+                  <li>Escucha, interpreta y emite mensajes pertinentes en distintos contextos mediante la utilización de medios, códigos y herramientas apropiados.</li>
+                  <li>Desarrolla innovaciones y propone soluciones a problemas a partir de métodos establecidos.</li>
+                  <li>Sustenta una postura personal sobre temas de interés y relevancia general, considerando otros puntos de vista de manera crítica y reflexiva.</li>
+                  <li>Participa con una conciencia cívica y ética en la vida de su comunidad, región, México y el mundo.</li>
+                  <li>Mantiene una actitud respetuosa hacia la interculturalidad y la diversidad de creencias, valores, ideas y prácticas sociales.</li>
+                </ul>
+                <br>
+                <p class="text-gray-700">Es importante recordar que, en este Modelo Educativo, el egresado de la Educación Media Superior desarrolla las competencias genéricas a partir de la contribución de las competencias profesionales al componente de formación profesional, y no en forma aislada e individual, sino a través de una propuesta de formación integral, en un marco de diversidad.</p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-                            <ul>
-                                <li>
-                                    Cabe resaltar que los jóvenes deberán desarrollar las habilidades necesarias para lograr su inserción laboral en organismos públicos y privados de los sectores turísticos y ecoturísticos, esta carrera en Ecoturismo ofrecerá a los egresados una opción profesional con excelentes perspectivas laborales, en áreas tan diversas como empresas de viajes especializadas en turismo de naturaleza y aventura, operadores de turismo receptivo, hoteles ecológicos, empresas de agroturismo y etnoturismo o bien en parques y áreas naturales protegidas, incluso pueden trabajar de manera independiente como guías ecoturísticos o crear su propia empresa.                                </li>
-
-                                <li>
-                                    Los primeros tres módulos de la carrera técnica tienen una duración de 272 horas cada uno, y los dos últimos de 192, un total de 1200 horas de formación profesional.
-
-                                    Cabe destacar que los módulos de formación profesional tienen carácter transdisciplinario, por cuanto corresponden con objetos y procesos de transformación que implica la integración de saberes de distintas disciplinas.                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <h3 id="accordion-heading-3">
-                        <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 " data-accordion-target="#accordion-body-3" aria-expanded="false" aria-controls="accordion-body-3">
-                            <span>Perfil de egreso.</span>
-                            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414-1.414l5-5A1 1 0 0110 3z" clip-rule="evenodd"></path></svg>
-                        </button>
-                    </h3>
-                    <div id="accordion-body-3" class="hidden" aria-labelledby="accordion-heading-3">
-                        <div class="p-5 border border-t-0 border-gray-200">
-
-                            <p class="list-disc pl-5 text-gray-500 space-y-2">La formación que ofrece la carrera de Técnico en Ecoturismo permite al egresado, a través de la articulación de saberes de diversos campos, realizar actividades dirigidas a la demanda ecoturística correspondiente.
-
-                                Durante el proceso de formación de los cinco módulos, el estudiante desarrollará o reforzará:
-                                Las siguientes competencias profesionales:</p>
-                                <br>
-
-                            <ul class="list-disc pl-5 text-gray-500 space-y-2">
-                                <li>Fomenta la educación ambiental para un desarrollo sostenible</li>
-                                <li>Apoya en la administración de los servicios ecoturísticos para un desarrollo sostenible</li>
-                                <li>Auxilia en la coordinación de los servicios ecoturísticos para un desarrollo sostenible</li>
-                                <li>Opera el marketing y los recursos financieros dentro de los servicios ecoturísticos</li>
-                                <li>Colabora en la elaboración de proyectos y programas ecoturísticos para un desarrollo sostenible</li>
-                            </ul>
-                                <br>
-                            <p class="list-disc pl-5 text-gray-500 space-y-2">Y las competencias de empleabilidad y productividad:</p>
-                                <br>
-                            <ul class="list-disc pl-5 text-gray-500 space-y-2">
-                                <li>Planeación y organización</li>
-                                <li>Orientación a la mejora continua</li>
-                                <li>Atención al cliente</li>
-                                <li>Relaciones interpersonales</li>
-                                <li>Ética profesional</li>
-                            </ul>
-                                <br>
-                            <p class="list-disc pl-5 text-gray-500 space-y-2">El egresado de la carrera de Técnico en Ecoturismo está en posibilidades de demostrar las competencias genéricas como:</p>
-                                <br>
-                            <ul class="list-disc pl-5 text-gray-500 space-y-2">
-                                <li>Escucha, interpreta y emite mensajes pertinentes en distintos contextos mediante la utilización de medios, códigos y herramientas apropiados.</li>
-                                <li>Desarrolla innovaciones y propone soluciones a problemas a partir de métodos establecidos.</li>
-                                <li>Sustenta una postura personal sobre temas de interés y relevancia general, considerando otros puntos de vista de manera crítica y reflexiva.</li>
-                                <li>Participa con una conciencia cívica y ética en la vida de su comunidad, región, México y el mundo.</li>
-                                <li>Mantiene una actitud respetuosa hacia la interculturalidad y la diversidad de creencias, valores, ideas y prácticas sociales.</li>
-                            </ul>
-                            <br>
-                            <p class="list-disc pl-5 text-gray-500 space-y-2">Es importante recordar que, en este Modelo Educativo, el egresado de la Educación Media Superior desarrolla las competencias genéricas a partir de la contribución de las competencias profesionales al componente de formación profesional, y no en forma aislada e individual, sino a través de una propuesta de formación integral, en un marco de diversidad.</p>
-
-                        </div>
-                    </div>
-                    
-
-                    
-                </div>
-
-                <section class="py-8 px-4">
-                    <div class="max-w-4xl mx-auto text-center">
-                        <h2 class="text-2xl font-bold text-gray-700 mb-6">Mapa de competencias profesionales de la carrera de Técnico en Ecoturismo.</h2>
-                        
-                        <div class="mb-6">
-                            <img src="../img_recuros_pagina/img_oferta_edu/ecoturismo/ecoturismomapa.jpg" alt="Mapa de competencias" class="w-full h-auto rounded-lg shadow-lg">
-                        </div>
-                        
-                        
-                    </div>
-                </section>
-                
-                
-        </div>
-
+        <!-- MAPA DE COMPETENCIAS MEJORADO -->
+        <section class="py-12 px-4 bg-gradient-to-br from-green-50 to-white">
+          <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8">Mapa de competencias profesionales de la carrera de Técnico en Ecoturismo</h2>
+            <div class="mb-8 flex justify-center">
+              <div class="bg-white rounded-2xl shadow-2xl p-4 md:p-8 border-2 border-green-100 inline-block">
+                <img src="../img_recuros_pagina/img_oferta_edu/ecoturismo/ecoturismomapa.jpg" alt="Mapa de competencias" class="w-full h-auto rounded-lg shadow-lg max-w-md mx-auto">
+              </div>
+            </div>
+          </div>
+        </section>
 
       </main>
       <script>

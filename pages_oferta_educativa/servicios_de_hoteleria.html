@@ -28,7 +28,7 @@
   </head>
   <body class="bg-white-500">
     <!-- INCIO NAVBAR CON SUBEMENUS -->
-<nav class="bg-white shadow-lg">
+    <nav class="bg-white shadow-lg relative z-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
             <!-- Logo -->
@@ -217,377 +217,148 @@
   <!-- FIN NAVBAR CON SUBEMENUS -->
 
     <main>
-      <div
-        class="parallax"
-        style="
-          background-image: url('../img_recuros_pagina/img_oferta_edu/serv_hoteleria/room-service.png.webp');
-        "
-      >
-        <div class="container mx-auto py-24">
-          <div
-            class="flex flex-col md:flex-row justify-between bg-orange-500 bg-opacity-75 p-8"
-          >
-            <div
-              class="max-h-full md:w-full animate__animated animate__fadeInRight"
-            >
-              <h1 class="text-4xl font-bold text-white">
-                SERVICIOS DE HOTELERÍA
-              </h1>
-              <p class="text-lg text-white mt-4"></p>
+      <!-- HERO SECTION MEJORADO -->
+      <section class="relative min-h-[350px] flex items-center justify-center bg-cover bg-center" style="background-image: url('../img_recuros_pagina/img_oferta_edu/serv_hoteleria/room-service.png.webp');">
+        <div class="absolute inset-0 bg-gradient-to-r from-gray-900/80 via-orange-600/70 to-gray-800/60 backdrop-blur-sm"></div>
+        <div class="relative z-10 text-center max-w-2xl mx-auto py-16 px-6">
+          <h1 class="text-5xl md:text-6xl font-extrabold text-white drop-shadow-lg animate__animated animate__fadeInDown">SERVICIOS DE HOTELERÍA</h1>
+          <p class="text-lg md:text-xl text-white mt-6 font-medium animate__animated animate__fadeInUp">Atiende, organiza y brinda experiencias. Sé un profesional en servicios de hotelería.</p>
+        </div>
+      </section>
+
+      <!-- PLANTELES SECTION MEJORADO -->
+      <section class="bg-gradient-to-br from-orange-50 to-white py-12">
+        <div class="container mx-auto px-4">
+          <div class="mb-10 text-center">
+            <h2 class="text-3xl font-bold text-gray-800 border-b-4 border-orange-500 inline-block pb-2">Planteles que imparten esta carrera</h2>
+            <p class="text-gray-600 text-lg mt-2">Descubre dónde puedes estudiar Servicios de Hotelería en BCS</p>
+          </div>
+          <div class="flex justify-center">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 w-full max-w-5xl">
+              <div class="bg-gradient-to-br from-orange-600 to-gray-800 text-white font-semibold py-8 px-8 rounded-2xl shadow-2xl flex flex-col items-center hover:scale-105 transition-transform duration-300">
+                <i class="fas fa-hotel text-4xl mb-4"></i>
+                <span class="text-xl">CECYTE 01</span>
+              </div>
+              <div class="bg-gradient-to-br from-orange-600 to-gray-800 text-white font-semibold py-8 px-8 rounded-2xl shadow-2xl flex flex-col items-center hover:scale-105 transition-transform duration-300">
+                <i class="fas fa-hotel text-4xl mb-4"></i>
+                <span class="text-xl">CECYTE 02</span>
+              </div>
+              <div class="bg-gradient-to-br from-orange-600 to-gray-800 text-white font-semibold py-8 px-8 rounded-2xl shadow-2xl flex flex-col items-center hover:scale-105 transition-transform duration-300">
+                <i class="fas fa-hotel text-4xl mb-4"></i>
+                <span class="text-xl">CECYTE 04</span>
+              </div>
+              <div class="bg-gradient-to-br from-orange-600 to-gray-800 text-white font-semibold py-8 px-8 rounded-2xl shadow-2xl flex flex-col items-center hover:scale-105 transition-transform duration-300">
+                <i class="fas fa-hotel text-4xl mb-4"></i>
+                <span class="text-xl">CECYTE 05</span>
+              </div>
+              <div class="bg-gradient-to-br from-orange-600 to-gray-800 text-white font-semibold py-8 px-8 rounded-2xl shadow-2xl flex flex-col items-center hover:scale-105 transition-transform duration-300">
+                <i class="fas fa-hotel text-4xl mb-4"></i>
+                <span class="text-xl">CECYTE 09</span>
+              </div>
             </div>
           </div>
         </div>
-        <div class="flex flex-col items-center space-y-4 md:space-y-0 md:flex-row md:justify-center md:space-x-8">
-          <h2 class="text-xl md:text-2xl font-bold text-gray-800 border-b-2 border-orange-500 text-center md:text-left">Planteles que imparten esta carrera</h2>
-          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-3">
-              <div class="flex items-center space-x-6">
-                  <div class="bg-orange-600 hover:bg-orange-500 text-white font-semibold py-2 px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out flex items-center justify-center">
-                      <span>CECYTE 01</span>
-                  </div>
-                  <div class="bg-orange-600 hover:bg-orange-500 text-white font-semibold py-2 px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out flex items-center justify-center">
-                      <span>CECYTE 02</span>
-                  </div>
-                  <div class="bg-orange-600 hover:bg-orange-500 text-white font-semibold py-2 px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out flex items-center justify-center">
-                    <span>CECYTE 04</span>
-                </div>
-                <div class="bg-orange-600 hover:bg-orange-500 text-white font-semibold py-2 px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out flex items-center justify-center">
-                  <span>CECYTE 05</span>
-              </div>
-              <div class="bg-orange-600 hover:bg-orange-500 text-white font-semibold py-2 px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out flex items-center justify-center">
-                <span>CECYTE 09</span>
-            </div>
-              </div>
-          </div>
-      </div>
-      </div>
-      
+      </section>
 
-      <div class="container mx-auto p-8 bg-white shadow-lg rounded-lg">
+      <!-- ACORDEÓN MEJORADO -->
+      <section class="container mx-auto p-6 md:p-10 bg-white shadow-2xl rounded-2xl my-10">
         <div id="accordion-collapse" data-accordion="collapse">
+          <!-- Justificación -->
           <h3 id="accordion-heading-1">
-            <button
-              type="button"
-              class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200"
-              data-accordion-target="#accordion-body-1"
-              aria-expanded="true"
-              aria-controls="accordion-body-1"
-            >
-              <span>Justificación de la carrera.</span>
-              <svg
-                data-accordion-icon
-                class="w-6 h-6 rotate-180 shrink-0"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414-1.414l5-5A1 1 0 0110 3z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
+            <button type="button" class="flex items-center justify-between w-full p-6 font-semibold text-lg text-left text-orange-700 border border-b-0 border-gray-200 rounded-t-2xl focus:ring-4 focus:ring-orange-200 transition-all" data-accordion-target="#accordion-body-1" aria-expanded="true" aria-controls="accordion-body-1">
+              <span><i class="fas fa-lightbulb mr-2 text-orange-500"></i>Justificación de la carrera</span>
+              <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414-1.414l5-5A1 1 0 0110 3z" clip-rule="evenodd"></path></svg>
             </button>
           </h3>
-          <div
-            id="accordion-body-1"
-            class="hidden"
-            aria-labelledby="accordion-heading-1"
-          >
-            <div class="p-5 border border-b-0 border-gray-200">
-              <p class="text-gray-500">
-                La carrera de Técnico en Servicios de Hotelería ofrece las
-                competencias profesionales que permiten al egresado realizar
-                actividades basadas en las necesidades detectadas en el ramo del
-                hotelería, la cual genera una gran derrama económica.
-              </p>
+          <div id="accordion-body-1" class="hidden" aria-labelledby="accordion-heading-1">
+            <div class="p-6 border border-b-0 border-gray-200 bg-orange-50 rounded-b-xl">
+              <p class="text-gray-700">La carrera de Técnico en Servicios de Hotelería ofrece las competencias profesionales que permiten al egresado realizar actividades basadas en las necesidades detectadas en el ramo del hotelería, la cual genera una gran derrama económica.</p>
               <br />
-              <p class="text-gray-500">
-                De tal suerte que el egresado de servicios de hotelería
-                demostrará a través de las diferentes competencias que puede
-                orientar a un turista con información acerca de los sitios y
-                actividades de interés que existen y se desarrollan en su
-                contexto influyendo además de manera positiva en la toma de
-                decisiones del turista en los lugares a visitar y las
-                actividades a realizar, por lo que, sin ser un vendedor,
-                desarrollará algunas de esas habilidades de manera implícita.
-                Así mismo ser competente en atender al huésped en el área de
-                división cuartos de un hotel, preparando alimentos y bebidas
-                utilizando las técnicas básicas; atendiéndolo en el servicio de
-                alimentos y bebidas y apoyando en la realización de eventos
-                especiales como son de negocios sociales y culturales.
-              </p>
+              <p class="text-gray-700">De tal suerte que el egresado de servicios de hotelería demostrará a través de las diferentes competencias que puede orientar a un turista con información acerca de los sitios y actividades de interés que existen y se desarrollan en su contexto influyendo además de manera positiva en la toma de decisiones del turista en los lugares a visitar y las actividades a realizar, por lo que, sin ser un vendedor, desarrollará algunas de esas habilidades de manera implícita. Así mismo ser competente en atender al huésped en el área de división cuartos de un hotel, preparando alimentos y bebidas utilizando las técnicas básicas; atendiéndolo en el servicio de alimentos y bebidas y apoyando en la realización de eventos especiales como son de negocios sociales y culturales.</p>
             </div>
           </div>
+          <!-- Competencias para la Inserción Laboral y Desarrollo Integral del Egresado -->
           <h3 id="accordion-heading-2">
-            <button
-              type="button"
-              class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200"
-              data-accordion-target="#accordion-body-2"
-              aria-expanded="false"
-              aria-controls="accordion-body-2"
-            >
-              <span
-                >Competencias para la Inserción Laboral y Desarrollo Integral
-                del Egresado</span
-              >
-              <svg
-                data-accordion-icon
-                class="w-6 h-6 rotate-180 shrink-0"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414-1.414l5-5A1 1 0 0110 3z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
+            <button type="button" class="flex items-center justify-between w-full p-6 font-semibold text-lg text-left text-orange-700 border border-b-0 border-gray-200 focus:ring-4 focus:ring-orange-200 transition-all" data-accordion-target="#accordion-body-2" aria-expanded="false" aria-controls="accordion-body-2">
+              <span><i class="fas fa-briefcase mr-2 text-orange-500"></i>Competencias para la Inserción Laboral y Desarrollo Integral del Egresado</span>
+              <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414-1.414l5-5A1 1 0 0110 3z" clip-rule="evenodd"></path></svg>
             </button>
           </h3>
-          <div
-            id="accordion-body-2"
-            class="hidden"
-            aria-labelledby="accordion-heading-2"
-          >
-            <div class="p-5 border border-b-0 border-gray-200">
-              <p class="text-gray-500">
-                Todas estas competencias posibilitan al egresado su
-                incorporación al mundo laboral o desarrollar procesos
-                productivos independientes, de acuerdo con sus intereses
-                profesionales y necesidades de su entorno social. Asimismo,
-                contribuyen a desarrollar competencias genéricas que les
-                permitan comprender el mundo e influir en él, les capacita para
-                aprender de forma autónoma a lo largo de la vida, desarrollar
-                relaciones armónicas, participar en los ámbitos social,
-                profesional y político.
-              </p>
-
+          <div id="accordion-body-2" class="hidden" aria-labelledby="accordion-heading-2">
+            <div class="p-6 border border-b-0 border-gray-200 bg-orange-50">
+              <p class="text-gray-700">Todas estas competencias posibilitan al egresado su incorporación al mundo laboral o desarrollar procesos productivos independientes, de acuerdo con sus intereses profesionales y necesidades de su entorno social. Asimismo, contribuyen a desarrollar competencias genéricas que les permitan comprender el mundo e influir en él, les capacita para aprender de forma autónoma a lo largo de la vida, desarrollar relaciones armónicas, participar en los ámbitos social, profesional y político.</p>
               <br />
-
-              <p class="text-gray-500">
-                Con las competencias de empleabilidad y productividad:
-              </p>
-
+              <p class="text-gray-700">Con las competencias de empleabilidad y productividad:</p>
               <br />
-
-              <ul class="list-disc pl-5 text-gray-500 space-y-2">
-                <li>
-                  Expresar sus ideas de forma verbal o escrita, teniendo en
-                  cuenta las características de su(s) interlocutor(es) y la
-                  situación dada.
-                </li>
-                <li>
-                  Solucionar oportunamente los problemas que encuentran los
-                  clientes en los productos o servicios.
-                </li>
+              <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                <li>Expresar sus ideas de forma verbal o escrita, teniendo en cuenta las características de su(s) interlocutor(es) y la situación dada.</li>
+                <li>Solucionar oportunamente los problemas que encuentran los clientes en los productos o servicios.</li>
                 <li>Trabajar hasta alcanzar las metas o retos propuestos.</li>
-                <li>
-                  Coordinar el lenguaje corporal con el lenguaje oral en las
-                  situaciones de comunicación interpersonal.
-                </li>
-                <li>
-                  Utilizar la comunicación efectiva para identificar las
-                  necesidades del cliente.
-                </li>
-                <li>
-                  Actuar responsablemente de acuerdo a las normas y
-                  disposiciones definidas en un espacio dado.
-                </li>
-                <li>
-                  Observar permanentemente y reportar los cambios presentes en
-                  los procesos, infraestructura e insumos.
-                </li>
-                <li>
-                  Realizar seguimiento de las necesidades del cliente para darle
-                  una respuesta.
-                </li>
-                <li>
-                  Diseñar y utilizar indicadores para medir y comprobar los
-                  resultados obtenidos.
-                </li>
-                <li>
-                  Actualizarse respecto a las mejores prácticas en su
-                  especialidad o área de trabajo.
-                </li>
-                <li>
-                  Cuidar y manejar los recursos y bienes ajenos siguiendo normas
-                  y disposiciones definidas.
-                </li>
-                <li>
-                  Verificar el cumplimiento de los parámetros de calidad
-                  exigidos.
-                </li>
-                <li>
-                  Compartir su experiencia, conocimiento y recursos para el
-                  desempeño armónico del equipo.
-                </li>
-                <li>
-                  Organizar la propia actividad de forma que se pueda dar mejor
-                  servicio a los clientes.
-                </li>
-                <li>
-                  Orientar las acciones llevadas a cabo a lograr y superar los
-                  estándares de desempeño y los plazos establecidos.
-                </li>
-                <li>
-                  Mostrar interés por atender los errores cometidos con los
-                  clientes.
-                </li>
-                <li>
-                  Realizar preguntas para asegurarse de que comprenden lo que
-                  los demás están comunicando.
-                </li>
-                <li>
-                  Cumplir los compromisos de acuerdo con las condiciones de
-                  tiempo y forma acordados.
-                </li>
-                <li>
-                  Realizar actividades para la concreción de objetivos y metas.
-                </li>
-                <li>
-                  Enfrentar situaciones distintas a la que se está
-                  acostumbrado/a en la rutina de trabajo de forma abierta.
-                </li>
-                <li>
-                  Evaluar mediante seguimiento el cumplimiento de los objetivos
-                  y corregir las desviaciones si fuera necesario.
-                </li>
-                <li>
-                  Realizar seguimiento de las necesidades del cliente para darle
-                  una respuesta.
-                </li>
+                <li>Coordinar el lenguaje corporal con el lenguaje oral en las situaciones de comunicación interpersonal.</li>
+                <li>Utilizar la comunicación efectiva para identificar las necesidades del cliente.</li>
+                <li>Actuar responsablemente de acuerdo a las normas y disposiciones definidas en un espacio dado.</li>
+                <li>Observar permanentemente y reportar los cambios presentes en los procesos, infraestructura e insumos.</li>
+                <li>Realizar seguimiento de las necesidades del cliente para darle una respuesta.</li>
+                <li>Diseñar y utilizar indicadores para medir y comprobar los resultados obtenidos.</li>
+                <li>Actualizarse respecto a las mejores prácticas en su especialidad o área de trabajo.</li>
+                <li>Cuidar y manejar los recursos y bienes ajenos siguiendo normas y disposiciones definidas.</li>
+                <li>Verificar el cumplimiento de los parámetros de calidad exigidos.</li>
+                <li>Compartir su experiencia, conocimiento y recursos para el desempeño armónico del equipo.</li>
+                <li>Organizar la propia actividad de forma que se pueda dar mejor servicio a los clientes.</li>
+                <li>Orientar las acciones llevadas a cabo a lograr y superar los estándares de desempeño y los plazos establecidos.</li>
+                <li>Mostrar interés por atender los errores cometidos con los clientes.</li>
+                <li>Realizar preguntas para asegurarse de que comprenden lo que los demás están comunicando.</li>
+                <li>Cumplir los compromisos de acuerdo con las condiciones de tiempo y forma acordados.</li>
+                <li>Realizar actividades para la concreción de objetivos y metas.</li>
+                <li>Enfrentar situaciones distintas a la que se está acostumbrado/a en la rutina de trabajo de forma abierta.</li>
+                <li>Evaluar mediante seguimiento el cumplimiento de los objetivos y corregir las desviaciones si fuera necesario.</li>
+                <li>Realizar seguimiento de las necesidades del cliente para darle una respuesta.</li>
               </ul>
             </div>
           </div>
+          <!-- Formación Profesional y Ámbitos de Inserción Laboral -->
           <h3 id="accordion-heading-3">
-            <button
-              type="button"
-              class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200"
-              data-accordion-target="#accordion-body-3"
-              aria-expanded="false"
-              aria-controls="accordion-body-3"
-            >
-              <span
-                >Formación Profesional y Ámbitos de Inserción Laboral para
-                Técnicos en Hotelería</span
-              >
-              <svg
-                data-accordion-icon
-                class="w-6 h-6 rotate-180 shrink-0"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414-1.414l5-5A1 1 0 0110 3z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
+            <button type="button" class="flex items-center justify-between w-full p-6 font-semibold text-lg text-left text-orange-700 border border-b-0 border-gray-200 focus:ring-4 focus:ring-orange-200 transition-all" data-accordion-target="#accordion-body-3" aria-expanded="false" aria-controls="accordion-body-3">
+              <span><i class="fas fa-briefcase mr-2 text-orange-500"></i>Formación Profesional y Ámbitos de Inserción Laboral para Técnicos en Hotelería</span>
+              <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414-1.414l5-5A1 1 0 0110 3z" clip-rule="evenodd"></path></svg>
             </button>
           </h3>
-          <div
-            id="accordion-body-3"
-            class="hidden"
-            aria-labelledby="accordion-heading-3"
-          >
-            <div class="p-5 border border-t-0 border-gray-200">
-              <p class="text-gray-500">
-                Permite al técnico incorporarse al ámbito laboral en diversos
-                sitios de inserción como:
-              </p>
+          <div id="accordion-body-3" class="hidden" aria-labelledby="accordion-heading-3">
+            <div class="p-6 border border-b-0 border-gray-200 bg-orange-50">
+              <p class="text-gray-700">Permite al técnico incorporarse al ámbito laboral en diversos sitios de inserción como:</p>
               <br />
-
-              <ul class="list-disc pl-5 text-gray-500 space-y-2">
+              <ul class="list-disc pl-5 text-gray-700 space-y-2">
                 <li>Puestos de información turística</li>
                 <li>Agencias de viajes</li>
                 <li>Establecimientos de hospedaje</li>
-                <li>
-                  Organización de eventos sociales, culturales y de negocios.
-                </li>
+                <li>Organización de eventos sociales, culturales y de negocios.</li>
               </ul>
-
               <br />
-
-              <p class="text-gray-500">
-                Para lograr las competencias el estudiante debe de tener una
-                formación profesional, que se inicia en el segundo semestre y se
-                concluye en el sexto semestre, desarrollando en este lapso de
-                tiempo las competencias profesionales que marca el programa de
-                estudios. Los primeros tres módulos de la carrera técnica tienen
-                una duración de 272 horas cada uno, y los dos últimos de 192, un
-                total de 1200 horas de formación profesional. Cabe destacar que
-                los módulos de formación profesional tienen carácter
-                transdisciplinario, por cuanto corresponden con objetos y
-                procesos de transformación que implica la integración de saberes
-                de distintas disciplinas.
-              </p>
+              <p class="text-gray-700">Para lograr las competencias el estudiante debe de tener una formación profesional, que se inicia en el segundo semestre y se concluye en el sexto semestre, desarrollando en este lapso de tiempo las competencias profesionales que marca el programa de estudios. Los primeros tres módulos de la carrera técnica tienen una duración de 272 horas cada uno, y los dos últimos de 192, un total de 1200 horas de formación profesional. Cabe destacar que los módulos de formación profesional tienen carácter transdisciplinario, por cuanto corresponden con objetos y procesos de transformación que implica la integración de saberes de distintas disciplinas.</p>
             </div>
           </div>
+          <!-- Perfil de egreso -->
           <h3 id="accordion-heading-4">
-            <button
-              type="button"
-              class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200"
-              data-accordion-target="#accordion-body-4"
-              aria-expanded="false"
-              aria-controls="accordion-body-4"
-            >
-              <span>Perfil de egreso.</span>
-              <svg
-                data-accordion-icon
-                class="w-6 h-6 rotate-180 shrink-0"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414-1.414l5-5A1 1 0 0110 3z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
+            <button type="button" class="flex items-center justify-between w-full p-6 font-semibold text-lg text-left text-orange-700 border border-gray-200 focus:ring-4 focus:ring-orange-200 transition-all" data-accordion-target="#accordion-body-4" aria-expanded="false" aria-controls="accordion-body-4">
+              <span><i class="fas fa-user-graduate mr-2 text-orange-500"></i>Perfil de egreso</span>
+              <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414-1.414l5-5A1 1 0 0110 3z" clip-rule="evenodd"></path></svg>
             </button>
           </h3>
-          <div
-            id="accordion-body-4"
-            class="hidden"
-            aria-labelledby="accordion-heading-4"
-          >
-            <div class="p-5 border border-t-0 border-gray-200">
-              <p class="text-gray-500">
-                La formación que ofrece la carrera de Técnico en Servicios de
-                Hotelería permite al egresado, a través de la articulación de
-                saberes de diversos campos, realizar actividades dirigidas a
-                satisfacer la demanda en la prestación de servicios de hotelería
-                correspondiente. Durante el proceso de formación de los cinco
-                módulos, el estudiante desarrollará o reforzará: <br />
-                Las siguientes competencias profesionales:
-              </p>
+          <div id="accordion-body-4" class="hidden" aria-labelledby="accordion-heading-4">
+            <div class="p-6 border border-t-0 border-gray-200 bg-orange-50 rounded-b-2xl">
+              <p class="text-gray-700">La formación que ofrece la carrera de Técnico en Servicios de Hotelería permite al egresado, a través de la articulación de saberes de diversos campos, realizar actividades dirigidas a satisfacer la demanda en la prestación de servicios de hotelería correspondiente. Durante el proceso de formación de los cinco módulos, el estudiante desarrollará o reforzará: <br />Las siguientes competencias profesionales:</p>
               <div class="section-separator"></div>
-
-              <ul class="list-disc pl-5 text-gray-500 space-y-2">
-                <li>
-                  Orienta al cliente con la información de los servicios
-                  turísticos.
-                </li>
+              <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                <li>Orienta al cliente con la información de los servicios turísticos.</li>
                 <li>Atiende al huésped en el área de división cuartos.</li>
                 <li>Prepara alimentos y bebidas aplicando técnicas básicas.</li>
-                <li>
-                  Brinda el servicio de alimentos y bebidas en centros de
-                  hospedaje.
-                </li>
-                <li>
-                  Asiste en la organización y realización de eventos de
-                  negocios, sociales y culturales.
-                </li>
+                <li>Brinda el servicio de alimentos y bebidas en centros de hospedaje.</li>
+                <li>Asiste en la organización y realización de eventos de negocios, sociales y culturales.</li>
               </ul>
               <br />
-              <p class="text-gray-500 mt-4">
-                Y las competencias de empleabilidad y productividad:
-              </p>
+              <p class="text-gray-700 mt-4">Y las competencias de empleabilidad y productividad:</p>
               <br />
-              <ul class="list-disc pl-5 text-gray-500 space-y-2">
+              <ul class="list-disc pl-5 text-gray-700 space-y-2">
                 <li>Planeación y organización.</li>
                 <li>Orientación a la mejora continua.</li>
                 <li>Atención al cliente.</li>
@@ -597,31 +368,22 @@
             </div>
           </div>
         </div>
+      </section>
 
-        <section class="py-8 px-4">
-          <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-2xl font-bold text-gray-700 mb-6">
-              Mapa de competencias profesionales de la carrera de Técnico en
-              servicios de hotelería.
-            </h2>
-
-            <div class="mb-6">
-              <img
-                src="../img_recuros_pagina/img_oferta_edu/serv_hoteleria/serv_hoteleria.jpg"
-                alt="Mapa de competencias"
-                class="w-full h-auto rounded-lg shadow-lg"
-              />
+      <!-- MAPA DE COMPETENCIAS MEJORADO -->
+      <section class="py-12 px-4 bg-gradient-to-br from-orange-50 to-white">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl font-bold text-gray-800 mb-8">Mapa de competencias profesionales de la carrera de Técnico en servicios de hotelería</h2>
+          <div class="mb-8 flex justify-center">
+            <div class="bg-white rounded-2xl shadow-2xl p-4 md:p-8 border-2 border-orange-100 inline-block">
+              <img src="../img_recuros_pagina/img_oferta_edu/serv_hoteleria/serv_hoteleria.jpg" alt="Mapa de competencias" class="w-full h-auto rounded-lg shadow-lg max-w-md mx-auto" />
             </div>
-
-            <a
-              href="https://drive.google.com/file/d/1Ov8--IBJy7j9B0w8cM8PzxM7Qji0J0V5/view?usp=sharing"
-              class="inline-block bg-orange-500 text-white font-semibold py-2 px-4 rounded hover:bg-orange-600 transition duration-300"
-            >
-              Ver más detalles
-            </a>
           </div>
-        </section>
-      </div>
+          <a href="https://drive.google.com/file/d/1Ov8--IBJy7j9B0w8cM8PzxM7Qji0J0V5/view?usp=sharing" class="inline-block bg-gradient-to-r from-orange-500 to-orange-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:from-orange-600 hover:to-orange-700 transition duration-300 text-lg">
+            <i class="fas fa-file-download mr-2"></i>Ver más detalles
+          </a>
+        </div>
+      </section>
     </main>
     <script>
       // Toggle the mobile menu

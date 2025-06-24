@@ -25,7 +25,7 @@
 </head>
 <body class="bg-white-500">
    <!-- INCIO NAVBAR CON SUBEMENUS -->
-<nav class="bg-white shadow-lg">
+<nav class="bg-white shadow-lg relative z-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
             <!-- Logo -->
@@ -216,155 +216,143 @@
    
 
       <main>
-        <div class="parallax" style="background-image: url('../img_recuros_pagina/img_oferta_edu/ventas/gra_ven.jpg');">
-            <div class="container mx-auto py-24">
-                <div class="flex flex-col md:flex-row justify-between bg-orange-500 bg-opacity-75 p-8">
-                    <div class="max-h-full md:w-full animate__animated animate__fadeInRight">
-                        <h1 class="text-4xl font-bold text-white">VENTAS</h1>
-                        <p class="text-lg text-white mt-4"></p>
-                    </div>
-                </div>
+        <!-- HERO SECTION MEJORADO -->
+        <section class="relative min-h-[350px] flex items-center justify-center bg-cover bg-center" style="background-image: url('../img_recuros_pagina/img_oferta_edu/ventas/gra_ven.jpg');">
+          <div class="absolute inset-0 bg-gradient-to-r from-gray-900/80 via-orange-600/70 to-gray-800/60 backdrop-blur-sm"></div>
+          <div class="relative z-10 text-center max-w-2xl mx-auto py-16 px-6">
+            <h1 class="text-5xl md:text-6xl font-extrabold text-white drop-shadow-lg animate__animated animate__fadeInDown">Ventas</h1>
+            <p class="text-lg md:text-xl text-white mt-6 font-medium animate__animated animate__fadeInUp">Desarrolla habilidades para el mundo comercial y de los negocios.</p>
+          </div>
+        </section>
+
+        <!-- PLANTELES SECTION MEJORADO -->
+        <section class="bg-gradient-to-br from-orange-50 to-white py-12">
+          <div class="container mx-auto px-4">
+            <div class="mb-10 text-center">
+              <h2 class="text-3xl font-bold text-gray-800 border-b-4 border-orange-500 inline-block pb-2">Planteles que imparten esta carrera</h2>
+              <p class="text-gray-600 text-lg mt-2">Conoce dónde puedes estudiar Ventas en BCS</p>
             </div>
-            <div class="bg-white bg-opacity-75 p-4 md:p-6 mt-4">
-                <div class="flex flex-col items-center space-y-4 md:space-y-0 md:flex-row md:justify-center md:space-x-8">
-                    <h2 class="text-xl md:text-2xl font-bold text-gray-800 border-b-2 border-orange-500 text-center md:text-left">Planteles que imparten esta carrera</h2>
-                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-3">
-                  
-                        <div class="bg-orange-600 hover:bg-orange-500 text-white font-semibold py-2 px-4 md:px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out flex items-center justify-center">
-                            <span>CECYTE 03</span>
-                        </div>
-
-                        <div class="bg-orange-600 hover:bg-orange-500 text-white font-semibold py-2 px-4 md:px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out flex items-center justify-center">
-                            <span>CECYTE 05</span>
-                        </div>
-
-                        
-                    </div>
+            <div class="flex justify-center">
+              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4 w-full max-w-4xl">
+                <div class="bg-gradient-to-br from-orange-600 to-gray-800 text-white font-semibold py-8 px-8 rounded-2xl shadow-2xl flex flex-col items-center hover:scale-105 transition-transform duration-300">
+                  <i class="fas fa-store text-4xl mb-4"></i>
+                  <span class="text-xl">CECYTE 03</span>
                 </div>
+                <div class="bg-gradient-to-br from-orange-600 to-gray-800 text-white font-semibold py-8 px-8 rounded-2xl shadow-2xl flex flex-col items-center hover:scale-105 transition-transform duration-300">
+                  <i class="fas fa-store text-4xl mb-4"></i>
+                  <span class="text-xl">CECYTE 05</span>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
+        </section>
 
-        <div class="container mx-auto p-8 bg-white shadow-lg rounded-lg">
-                <div id="accordion-collapse" data-accordion="collapse">
-                    <h3 id="accordion-heading-1">
-                        <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 " data-accordion-target="#accordion-body-1" aria-expanded="true" aria-controls="accordion-body-1">
-                            <span>Justificación de la carrera.</span>
-                            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414-1.414l5-5A1 1 0 0110 3z" clip-rule="evenodd"></path></svg>
-                        </button>
-                    </h3>
-                    <div id="accordion-body-1" class="hidden" aria-labelledby="accordion-heading-1">
-                        <div class="p-5 border border-b-0 border-gray-200">
-                            <p class="text-gray-500">La carrera de Técnico en ventas ofrece las competencias profesionales que permiten al estudiante realizar actividades dirigidas a posicionar un producto o servicio de una empresa en el mercado, auxiliar en el proceso de administración del área de ventas y en la elaboración  del  estudio de mercado, así como comercializar un servicio y/o producto aplicando las estrategias de comunicación y asesorar al cliente.</p>
-                            <br>
-                            <p class="text-gray-500">Asimismo, contribuyen a desarrollar competencias genéricas que les permitan comprender el mundo e influir en él, les capacita para aprender de forma autónoma a lo largo de la vida, desarrollar relaciones armónicas, participar en los ámbitos social, profesional y político.</p>
-                        </div>
-                    </div>
-                    <h3 id="accordion-heading-2">
-                        <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 " data-accordion-target="#accordion-body-2" aria-expanded="false" aria-controls="accordion-body-2">
-                            <span>Competencias de Productividad y Empleabilidad en la Carrera Técnica</span>
-                            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414-1.414l5-5A1 1 0 0110 3z" clip-rule="evenodd"></path></svg>
-                        </button>
-                    </h3>
-                    <div id="accordion-body-2" class="hidden" aria-labelledby="accordion-heading-2">
-                        <div class="p-5 border border-b-0 border-gray-200">
-                            <ul class="list-disc pl-5 text-gray-500 space-y-2">
-                                <li>Atención al cliente</li>
-                                <li>Orientación al logro</li>
-                                <li>Planeación y organización</li>
-                                <li>Orientación a la mejora continua</li>
-                                <li>Adaptabilidad</li>
-                                <li>Ética profesional</li>
-                                <li>Trabajo en equipo</li>
-                            </ul>
+        <!-- ACORDEÓN MEJORADO -->
+        <section class="container mx-auto p-6 md:p-10 bg-white shadow-2xl rounded-2xl my-10">
+          <div id="accordion-collapse" data-accordion="collapse">
+            <!-- Justificación -->
+            <h3 id="accordion-heading-1">
+              <button type="button" class="flex items-center justify-between w-full p-6 font-semibold text-lg text-left text-orange-700 border border-b-0 border-gray-200 rounded-t-2xl focus:ring-4 focus:ring-orange-200 transition-all" data-accordion-target="#accordion-body-1" aria-expanded="true" aria-controls="accordion-body-1">
+                <span><i class="fas fa-lightbulb mr-2 text-orange-500"></i>Justificación de la carrera</span>
+                <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414-1.414l5-5A1 1 0 0110 3z" clip-rule="evenodd"></path></svg>
+              </button>
+            </h3>
+            <div id="accordion-body-1" class="hidden" aria-labelledby="accordion-heading-1">
+              <div class="p-6 border border-b-0 border-gray-200 bg-orange-50 rounded-b-xl">
+                <p class="text-gray-700">La carrera de Técnico en ventas ofrece las competencias profesionales que permiten al estudiante realizar actividades dirigidas a posicionar un producto o servicio de una empresa en el mercado, auxiliar en el proceso de administración del área de ventas y en la elaboración  del  estudio de mercado, así como comercializar un servicio y/o producto aplicando las estrategias de comunicación y asesorar al cliente.</p>
+                <br>
+                <p class="text-gray-700">Asimismo, contribuyen a desarrollar competencias genéricas que les permitan comprender el mundo e influir en él, les capacita para aprender de forma autónoma a lo largo de la vida, desarrollar relaciones armónicas, participar en los ámbitos social, profesional y político.</p>
+              </div>
+            </div>
+            <!-- Competencias de Productividad y Empleabilidad -->
+            <h3 id="accordion-heading-2">
+              <button type="button" class="flex items-center justify-between w-full p-6 font-semibold text-lg text-left text-orange-700 border border-b-0 border-gray-200 focus:ring-4 focus:ring-orange-200 transition-all" data-accordion-target="#accordion-body-2" aria-expanded="false" aria-controls="accordion-body-2">
+                <span><i class="fas fa-cogs mr-2 text-orange-500"></i>Competencias de Productividad y Empleabilidad en la Carrera Técnica</span>
+                <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414-1.414l5-5A1 1 0 0110 3z" clip-rule="evenodd"></path></svg>
+              </button>
+            </h3>
+            <div id="accordion-body-2" class="hidden" aria-labelledby="accordion-heading-2">
+              <div class="p-6 border border-b-0 border-gray-200 bg-orange-50">
+                <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                  <li>Atención al cliente</li>
+                  <li>Orientación al logro</li>
+                  <li>Planeación y organización</li>
+                  <li>Orientación a la mejora continua</li>
+                  <li>Adaptabilidad</li>
+                  <li>Ética profesional</li>
+                  <li>Trabajo en equipo</li>
+                </ul>
+                <br>
+                <p class="text-gray-700">Permite al técnico incorporarse al ámbito laboral en diversos sitios de inserción como:</p>
+                <br>
+                <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                  <li>Corporativos</li>
+                  <li>Intermediación del comercio al por mayor</li>
+                  <li>Intermediación de comercio al por mayor para productos de uso doméstico y persona, excepto a través de internet y otros medios</li>
+                  <li>Servicios de investigación de mercado y encuestas de opinión pública</li>
+                </ul>
+                <br>
+                <p class="text-gray-700">Para lograr las competencias el estudiante debe de tener una formación profesional, que  se inicia en el segundo semestre y se concluye en el sexto semestre, desarrollando en este lapso de tiempo las competencias profesionales que marca el programa de estudios.</p>
+              </div>
+            </div>
+            <!-- Duración y Enfoque Transdisciplinario -->
+            <h3 id="accordion-heading-3">
+              <button type="button" class="flex items-center justify-between w-full p-6 font-semibold text-lg text-left text-orange-700 border border-b-0 border-gray-200 focus:ring-4 focus:ring-orange-200 transition-all" data-accordion-target="#accordion-body-3" aria-expanded="false" aria-controls="accordion-body-3">
+                <span><i class="fas fa-clock mr-2 text-orange-500"></i>Duración y Enfoque Transdisciplinario de los Módulos en la Carrera Técnica</span>
+                <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414-1.414l5-5A1 1 0 0110 3z" clip-rule="evenodd"></path></svg>
+              </button>
+            </h3>
+            <div id="accordion-body-3" class="hidden" aria-labelledby="accordion-heading-3">
+              <div class="p-6 border border-t-0 border-gray-200 bg-orange-50">
+                <p class="text-gray-700">Los primeros tres módulos de la carrera técnica tienen una duración de 272 horas cada uno, y los dos últimos de 192, un total de 1200 horas de formación profesional. Cabe destacar que los módulos de formación profesional tienen carácter transdisciplinario, por cuanto corresponden con objetos y procesos de transformación que implica la integración de saberes de distintas disciplinas.</p>
+              </div>
+            </div>
+            <!-- Perfil de egreso -->
+            <h3 id="accordion-heading-4">
+              <button type="button" class="flex items-center justify-between w-full p-6 font-semibold text-lg text-left text-orange-700 border border-gray-200 focus:ring-4 focus:ring-orange-200 transition-all" data-accordion-target="#accordion-body-4" aria-expanded="false" aria-controls="accordion-body-4">
+                <span><i class="fas fa-user-graduate mr-2 text-orange-500"></i>Perfil de egreso</span>
+                <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414-1.414l5-5A1 1 0 0110 3z" clip-rule="evenodd"></path></svg>
+              </button>
+            </h3>
+            <div id="accordion-body-4" class="hidden" aria-labelledby="accordion-heading-4">
+              <div class="p-6 border border-t-0 border-gray-200 bg-orange-50 rounded-b-2xl">
+                <p class="text-gray-700">La formación que ofrece la carrera de Técnico en ventas permite al egresado, a través de la articulación de saberes de diversos campos, realizar actividades dirigidas a la satisfacción de las necesidades del consumidor a través de un producto o servicio.</p>
+                <br>
+                <p class="text-gray-700">Durante el proceso de formación de los cinco módulos, el estudiante desarrollará o reforzará: Las siguientes competencias profesionales:</p>
+                <br>
+                <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                  <li>Auxilia en el proceso de administración del área de ventas</li>
+                  <li>Auxilia en la elaboración del estudio de mercado.</li>
+                  <li>Auxilia en la comercialización aplicando las estrategias de comunicación</li>
+                  <li>Asesora al cliente</li>
+                  <li>Posiciona el producto y/o servicio en el mercado</li>
+                </ul>
+                <br>
+                <p class="text-gray-700 mt-4">Y las competencias de productividad y empleabilidad:</p>
+                <br>
+                <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                  <li>Atención al cliente</li>
+                  <li>Orientación al logro</li>
+                  <li>Planeación y organización</li>
+                  <li>Orientación a la mejora continua</li>
+                  <li>Adaptabilidad</li>
+                  <li>Ética profesional</li>
+                  <li>Trabajo en equipo</li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-                            <br>
-
-                            <p class="text-gray-500">Permite al técnico incorporarse al ámbito laboral en diversos sitios de inserción como:</p>
-
-                            <br>
-
-                            <ul class="list-disc pl-5 text-gray-500 space-y-2">
-                                <li>Corporativos</li>
-                                <li>Intermediación del comercio al por mayor</li>
-                                <li>Intermediación de comercio al por mayor para productos de uso doméstico y persona, excepto a través de internet y otros medios</li>
-                                <li>Servicios de investigación de mercado y encuestas de opinión pública</li>
-                            </ul>
-                                <br>
-                            <p class="text-gray-500" >Para lograr las competencias el estudiante debe de tener una formación profesional, que  se inicia en el segundo semestre y se concluye en el sexto semestre, desarrollando en este lapso de tiempo las competencias profesionales que marca el programa de estudios.</p>
-                                
-                        </div>
-                    </div>
-                    <h3 id="accordion-heading-3">
-                        <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 " data-accordion-target="#accordion-body-3" aria-expanded="false" aria-controls="accordion-body-3">
-                            <span>Duración y Enfoque Transdisciplinario de los Módulos en la Carrera Técnica</span>
-                            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414-1.414l5-5A1 1 0 0110 3z" clip-rule="evenodd"></path></svg>
-                        </button>
-                    </h3>
-                    <div id="accordion-body-3" class="hidden" aria-labelledby="accordion-heading-3">
-                        <div class="p-5 border border-t-0 border-gray-200">
-
-                            <p class="text-gray-500">Los primeros tres módulos de la carrera técnica tienen una duración de 272 horas cada uno, y los dos últimos de 192, un total de 1200 horas de formación profesional.
-                                Cabe destacar que los módulos de formación profesional tienen carácter transdisciplinario, por cuanto corresponden con objetos y procesos de transformación que implica la integración de saberes de distintas disciplinas.</p>
-                           
-                            
-                        </div>
-                    </div>
-                    <h3 id="accordion-heading-4">
-                        <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 " data-accordion-target="#accordion-body-4" aria-expanded="false" aria-controls="accordion-body-4">
-                            <span>Perfil de egreso.</span>
-                            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414-1.414l5-5A1 1 0 0110 3z" clip-rule="evenodd"></path></svg>
-                        </button>
-                    </h3>
-                    <div id="accordion-body-4" class="hidden" aria-labelledby="accordion-heading-4">
-                        <div class="p-5 border border-t-0 border-gray-200">
-                            <p class="text-gray-500">La formación que ofrece la carrera de Técnico en ventas permite al egresado, a través de la articulación de saberes de diversos campos, realizar actividades dirigidas a la satisfacción de las necesidades del consumidor a través de un producto o servicio.</p>
-                            <br>
-                            <p class="text-gray-500">Durante el proceso de formación de los cinco módulos, el estudiante desarrollará o reforzará:
-                                Las siguientes competencias profesionales:</p>
-                            <br>
-                            
-                            <ul class="list-disc pl-5 text-gray-500 space-y-2">
-                                <li>Auxilia en el proceso de administración del área de ventas</li>
-                                <li>Auxilia en la elaboración del estudio de mercado.</li>
-                                <li>Auxilia en la comercialización aplicando las estrategias de comunicación</li>
-                                <li>Asesora al cliente</li>
-                                <li>Posiciona el producto y/o servicio en el mercado</li>
-                            </ul>
-                            <br>
-                            <p class="text-gray-500 mt-4">Y las competencias de productividad y empleabilidad:</p>
-                            <br>
-                            <ul class="list-disc pl-5 text-gray-500 space-y-2">
-                                <li>Atención al cliente</li>
-                                <li>Orientación al logro</li>
-                                <li>Planeación y organización</li>
-                                <li>Orientación a la mejora continua</li>
-                                <li>Adaptabilidad</li>
-                                <li>Ética profesional</li>
-                                <li>Trabajo en equipo</li>
-                            </ul>
-                            
-                            
-                        </div>
-                    </div>
-
-                    
-                </div>
-
-                <section class="py-8 px-4">
-                    <div class="max-w-4xl mx-auto text-center">
-                        <h2 class="text-2xl font-bold text-gray-700 mb-6">Mapa de competencias profesionales de la carrera de Técnico en ventas.</h2>
-                        
-                        <div class="mb-6">
-                            <img src="../img_recuros_pagina/img_oferta_edu/ventas/ventas_mapa.jpg" alt="Mapa de competencias" class="w-full h-auto rounded-lg shadow-lg">
-                        </div>
-                        
-                        
-                    </div>
-                </section>
-                
-                
-        </div>
-
+          <!-- MAPA DE COMPETENCIAS PROFESIONALES -->
+          <section class="py-8 px-4">
+            <div class="max-w-4xl mx-auto text-center">
+              <h2 class="text-2xl font-bold text-gray-700 mb-6">Mapa de competencias profesionales de la carrera de Técnico en ventas.</h2>
+              <div class="mb-6">
+                <img src="../img_recuros_pagina/img_oferta_edu/ventas/ventas_mapa.jpg" alt="Mapa de competencias" class="w-full h-auto rounded-lg shadow-lg">
+              </div>
+            </div>
+          </section>
+        </section>
 
       </main>
       <script>
