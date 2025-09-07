@@ -69,6 +69,34 @@
 
           <!-- Enlaces de navegación -->
           <div class="hidden sm:flex sm:items-center sm:ml-6">
+            <!-- Menú Comunidad -->
+            <div class="relative group">
+              <a
+                href="comunidad.html"
+                class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium"
+                >Comunidad</a
+              >
+              <div
+                class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md z-10"
+              >
+                <a
+                  href="noticias.html"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                  >Noticias</a
+                >
+                <a
+                  href="comites.html"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                  >Comités</a
+                >
+                <a
+                  href="directorio_telefonico.html"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                  >Directorio</a
+                >
+              </div>
+            </div>
+
             <!-- Menú Docentes -->
             <div class="relative group">
               <a
@@ -278,6 +306,46 @@
 
       <!-- Menú móvil -->
       <div class="sm:hidden hidden" id="mobile-menu">
+        <!-- Comunidad Menu -->
+        <div class="block">
+          <button
+            class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none"
+            id="comunidad-btn"
+          >
+            Comunidad
+            <svg
+              class="h-5 w-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </button>
+          <div class="hidden" id="comunidad-submenu">
+            <a
+              href="noticias.html"
+              class="block px-8 py-2 text-gray-700 hover:bg-gray-100"
+              >Noticias</a
+            >
+            <a
+              href="comites.html"
+              class="block px-8 py-2 text-gray-700 hover:bg-gray-100"
+              >Comités</a
+            >
+            <a
+              href="directorio_telefonico.html"
+              class="block px-8 py-2 text-gray-700 hover:bg-gray-100"
+              >Directorio</a
+            >
+          </div>
+        </div>
+
         <!-- Docentes Menu -->
         <div class="block">
           <button
@@ -1645,8 +1713,14 @@
       const trnsSubmenu = document.getElementById("trns-submenu");
 
       // Additional mobile menu handlers
+      const comunidadBtn = document.getElementById("comunidad-btn");
+      const comunidadSubmenu = document.getElementById("comunidad-submenu");
       const docentesBtn = document.getElementById("docentes-btn");
       const docentesSubmenu = document.getElementById("docentes-submenu");
+
+      comunidadBtn?.addEventListener("click", () => {
+        comunidadSubmenu.classList.toggle("hidden");
+      });
 
       docentesBtn?.addEventListener("click", () => {
         docentesSubmenu.classList.toggle("hidden");
