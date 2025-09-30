@@ -280,143 +280,243 @@
     <!-- BOTON SUBIR FIN -->
 
     <!-- HERO SECTION -->
-    <section class="relative min-h-screen pt-20 flex items-center">
-      <!-- Background images -->
-      <div class="absolute inset-0 overflow-hidden">
-        <!-- Main background image -->
+    <section
+      class="relative min-h-screen pt-20 flex items-center overflow-hidden"
+    >
+      <!-- Enhanced Background with multiple layers -->
+      <div class="absolute inset-0">
+        <!-- Main background image with parallax effect -->
         <div
-          class="absolute inset-0 bg-cover bg-center"
+          class="absolute inset-0 bg-cover bg-center bg-fixed"
           style="
             background-image: url('img_recuros_pagina/img_noticias/img_1.webp');
           "
         ></div>
-        <!-- Secondary background image -->
+        <!-- Secondary background with blend mode -->
         <div
-          class="absolute inset-0 bg-cover bg-center opacity-30"
+          class="absolute inset-0 bg-cover bg-center opacity-40 mix-blend-overlay"
           style="
             background-image: url('img_recuros_pagina/img_noticias/img_2.webp');
           "
         ></div>
-        <!-- Overlay -->
+        <!-- Enhanced gradient overlay -->
         <div
-          class="absolute inset-0 bg-gradient-to-br from-green-600/70 via-green-700/60 to-green-800/70"
+          class="absolute inset-0 bg-gradient-to-br from-green-600/80 via-green-700/70 to-green-800/80"
+        ></div>
+        <!-- Additional overlay for depth -->
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"
         ></div>
       </div>
 
-      <!-- Decorative elements -->
+      <!-- Enhanced decorative elements -->
       <div class="absolute inset-0 overflow-hidden">
+        <!-- Animated circles -->
         <div
-          class="absolute -top-40 -right-40 w-80 h-80 bg-white opacity-10 rounded-full"
+          class="absolute -top-40 -right-40 w-80 h-80 bg-white opacity-10 rounded-full animate-pulse"
         ></div>
         <div
-          class="absolute -bottom-40 -left-40 w-80 h-80 bg-orange-400 opacity-10 rounded-full"
+          class="absolute -bottom-40 -left-40 w-80 h-80 bg-orange-400 opacity-10 rounded-full animate-bounce"
+          style="animation-duration: 3s"
         ></div>
         <div
-          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-white opacity-5 rounded-full"
+          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-white opacity-5 rounded-full animate-spin"
+          style="animation-duration: 20s"
+        ></div>
+        <!-- Floating particles -->
+        <div
+          class="absolute top-1/4 left-1/4 w-2 h-2 bg-white opacity-60 rounded-full animate-ping"
+        ></div>
+        <div
+          class="absolute top-3/4 right-1/4 w-3 h-3 bg-orange-300 opacity-40 rounded-full animate-ping"
+          style="animation-delay: 1s"
+        ></div>
+        <div
+          class="absolute top-1/2 right-1/3 w-1 h-1 bg-green-300 opacity-80 rounded-full animate-ping"
+          style="animation-delay: 2s"
         ></div>
       </div>
 
       <div class="container mx-auto px-4 relative z-10">
-        <div class="grid lg:grid-cols-2 gap-12 items-center">
-          <!-- Left content -->
-          <div class="text-white">
-            <!-- Main heading -->
-            <h1
-              class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fadeIn"
-            >
-              <span class="block">CECyTE</span>
-              <span class="block text-orange-400">en Tu Comunidad</span>
-            </h1>
-
-            <!-- Hashtag -->
-            <div class="mb-8">
-              <span
-                class="inline-block bg-white bg-opacity-20 backdrop-blur-sm px-6 py-3 rounded-full text-2xl font-bold text-orange-300 border border-white border-opacity-30"
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <!-- Enhanced left content -->
+          <div class="text-white space-y-8">
+            <!-- Enhanced main heading with better typography -->
+            <div class="space-y-4">
+              <h1
+                class="text-5xl md:text-7xl lg:text-8xl font-black leading-tight"
               >
-                #CECyTEsComunidad
-              </span>
+                <span class="block text-white"> CECyTE </span>
+                <span class="block text-orange-300"> en Tu Comunidad </span>
+              </h1>
+
+              <!-- Enhanced hashtag with glassmorphism -->
+              <div class="inline-block">
+                <span
+                  class="inline-flex items-center bg-white/20 backdrop-blur-md px-8 py-4 rounded-full text-2xl font-bold text-orange-200 border border-white/30 shadow-2xl hover:bg-white/30 transition-all duration-300"
+                >
+                  <i class="fas fa-hashtag mr-3 text-orange-300"></i>
+                  #CECyTEsComunidad
+                </span>
+              </div>
             </div>
 
-            <!-- Subtitle -->
-            <p class="text-xl md:text-2xl text-green-100 mb-8 leading-relaxed">
-              Construyendo puentes entre la educación y la sociedad,
-              transformando comunidades a través del compromiso y la
-              solidaridad.
-            </p>
+            <!-- Enhanced subtitle with better spacing -->
+            <div class="space-y-6">
+              <p
+                class="text-2xl md:text-3xl text-green-100 leading-relaxed font-light"
+              >
+                Construyendo puentes entre la educación y la sociedad,
+                transformando comunidades a través del compromiso y la
+                solidaridad.
+              </p>
 
-            <!-- CTA Button -->
-            <div class="flex flex-col sm:flex-row gap-4">
+              <!-- Stats or highlights -->
+              <div class="flex flex-wrap gap-6 text-green-200">
+                <div class="flex items-center space-x-2">
+                  <i class="fas fa-users text-orange-400"></i>
+                  <span class="text-lg font-semibold">+500 Estudiantes</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                  <i class="fas fa-heart text-orange-400"></i>
+                  <span class="text-lg font-semibold">+20 Comunidades</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                  <i class="fas fa-star text-orange-400"></i>
+                  <span class="text-lg font-semibold">100% Compromiso</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Enhanced CTA Buttons -->
+            <div class="flex flex-col sm:flex-row gap-6">
               <a
                 href="#programa"
-                class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
+                class="group inline-flex items-center justify-center bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-5 px-10 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl shadow-xl"
               >
+                <i
+                  class="fas fa-play mr-3 group-hover:translate-x-1 transition-transform"
+                ></i>
                 Conoce el Programa
               </a>
               <a
                 href="#servicios"
-                class="inline-block border-2 border-white text-white hover:bg-white hover:text-green-700 font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105"
+                class="group inline-flex items-center justify-center border-2 border-white/80 text-white hover:bg-white/10 hover:border-white font-bold py-5 px-10 rounded-2xl transition-all duration-300 transform hover:scale-105 backdrop-blur-sm"
               >
-                Acciones concretas
+                <i
+                  class="fas fa-hands-helping mr-3 group-hover:rotate-12 transition-transform"
+                ></i>
+                Acciones Concretas
               </a>
             </div>
           </div>
 
-          <!-- Right content - Multiple community images -->
+          <!-- Enhanced right content with better image layout -->
           <div class="relative">
-            <!-- Main image -->
-            <div class="relative mb-6">
+            <!-- Main image with enhanced styling -->
+            <div class="relative mb-8">
+              <div
+                class="absolute -inset-4 bg-gradient-to-r from-orange-400 to-green-500 rounded-3xl blur opacity-30"
+              ></div>
               <img
                 src="img_recuros_pagina/img_noticias/img_3.webp"
                 alt="CECyTE en la Comunidad"
-                class="w-full h-64 object-cover rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-500"
+                class="relative w-full h-80 object-cover rounded-3xl shadow-2xl transform hover:scale-105 transition-all duration-500 border-4 border-white/20"
               />
+              <!-- Overlay with content -->
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-3xl"
+              ></div>
+              <div class="absolute bottom-4 left-4 text-white">
+                <h3 class="text-xl font-bold mb-2">Comunidad Activa</h3>
+                <p class="text-sm opacity-90">Transformando vidas juntos</p>
+              </div>
             </div>
 
-            <!-- Secondary images grid -->
-            <div class="grid grid-cols-2 gap-4">
-              <!-- Image 1 -->
-              <div class="relative">
+            <!-- Enhanced secondary images grid -->
+            <div class="grid grid-cols-2 gap-6">
+              <!-- Image 1 with enhanced styling -->
+              <div class="relative group">
+                <div
+                  class="absolute -inset-2 bg-gradient-to-br from-green-400 to-blue-500 rounded-2xl blur opacity-20 group-hover:opacity-40 transition-opacity"
+                ></div>
                 <img
                   src="img_recuros_pagina/img_noticias/img_2.webp"
                   alt="Honores y ceremonias"
-                  class="w-full h-32 object-cover rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300"
+                  class="relative w-full h-40 object-cover rounded-2xl shadow-xl transform group-hover:scale-105 transition-all duration-300"
                 />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-2xl"
+                ></div>
+                <div class="absolute bottom-2 left-2 text-white">
+                  <i class="fas fa-flag text-orange-400 mb-1"></i>
+                  <p class="text-xs font-semibold">Honores</p>
+                </div>
               </div>
 
-              <!-- Image 2 -->
-              <div class="relative">
+              <!-- Image 2 with enhanced styling -->
+              <div class="relative group">
+                <div
+                  class="absolute -inset-2 bg-gradient-to-br from-orange-400 to-red-500 rounded-2xl blur opacity-20 group-hover:opacity-40 transition-opacity"
+                ></div>
                 <img
                   src="img_recuros_pagina/img_noticias/img_4.webp"
                   alt="Deportes comunitarios"
-                  class="w-full h-32 object-cover rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300"
+                  class="relative w-full h-40 object-cover rounded-2xl shadow-xl transform group-hover:scale-105 transition-all duration-300"
                 />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-2xl"
+                ></div>
+                <div class="absolute bottom-2 left-2 text-white">
+                  <i class="fas fa-running text-orange-400 mb-1"></i>
+                  <p class="text-xs font-semibold">Deportes</p>
+                </div>
               </div>
             </div>
 
-            <!-- Floating community cards - positioned in front of images -->
+            <!-- Enhanced floating community cards -->
             <div
-              class="absolute top-4 left-4 bg-white rounded-lg p-3 shadow-xl transform rotate-3 hover:rotate-0 transition-transform duration-300 z-30"
+              class="absolute top-6 left-6 bg-white/90 backdrop-blur-md rounded-2xl p-4 shadow-2xl transform rotate-3 hover:rotate-0 transition-all duration-500 z-30 border border-white/50"
             >
-              <div class="flex items-center space-x-2">
-                <i class="fas fa-users text-green-600 text-xl"></i>
-                <span class="text-sm font-bold text-gray-800">Comunidad</span>
+              <div class="flex items-center space-x-3">
+                <div
+                  class="w-10 h-10 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center"
+                >
+                  <i class="fas fa-users text-white text-lg"></i>
+                </div>
+                <div>
+                  <span class="text-sm font-bold text-gray-800 block"
+                    >Comunidad</span
+                  >
+                  <span class="text-xs text-gray-600">Unidos</span>
+                </div>
               </div>
             </div>
 
             <div
-              class="absolute bottom-4 right-4 bg-orange-500 rounded-lg p-3 shadow-xl transform -rotate-3 hover:rotate-0 transition-transform duration-300 z-30"
+              class="absolute bottom-6 right-6 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl p-4 shadow-2xl transform -rotate-3 hover:rotate-0 transition-all duration-500 z-30"
             >
-              <div class="flex items-center space-x-2">
-                <i class="fas fa-heart text-white text-xl"></i>
-                <span class="text-sm font-bold text-white">Solidaridad</span>
+              <div class="flex items-center space-x-3">
+                <div
+                  class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center"
+                >
+                  <i class="fas fa-heart text-white text-lg"></i>
+                </div>
+                <div>
+                  <span class="text-sm font-bold text-white block"
+                    >Solidaridad</span
+                  >
+                  <span class="text-xs text-orange-100">Compromiso</span>
+                </div>
               </div>
             </div>
 
-            <!-- Additional floating elements -->
+            <!-- Enhanced floating elements -->
             <div
-              class="absolute top-1/2 right-4 bg-green-500 rounded-full p-2 shadow-xl transform hover:scale-110 transition-transform duration-300 z-30"
+              class="absolute top-1/2 right-6 bg-gradient-to-br from-green-500 to-green-600 rounded-full p-3 shadow-2xl transform hover:scale-110 transition-all duration-300 z-30 animate-bounce"
+              style="animation-duration: 2s"
             >
-              <i class="fas fa-graduation-cap text-white text-lg"></i>
+              <i class="fas fa-graduation-cap text-white text-xl"></i>
             </div>
           </div>
         </div>
@@ -424,59 +524,109 @@
     </section>
 
     <!-- NOTICIAS SECTION -->
-    <section id="noticias" class="py-20 bg-gray-50">
-      <div class="container mx-auto px-4">
+    <section
+      id="noticias"
+      class="py-24 bg-gradient-to-br from-gray-50 via-white to-gray-100 relative overflow-hidden"
+    >
+      <!-- Background decorative elements -->
+      <div class="absolute inset-0 overflow-hidden">
+        <div
+          class="absolute -top-20 -right-20 w-40 h-40 bg-green-200 opacity-20 rounded-full animate-pulse"
+        ></div>
+        <div
+          class="absolute -bottom-20 -left-20 w-32 h-32 bg-orange-200 opacity-30 rounded-full animate-bounce"
+          style="animation-duration: 4s"
+        ></div>
+        <div
+          class="absolute top-1/2 right-1/4 w-24 h-24 bg-green-300 opacity-10 rounded-full animate-ping"
+          style="animation-duration: 3s"
+        ></div>
+      </div>
+
+      <div class="container mx-auto px-4 relative z-10">
         <div class="max-w-7xl mx-auto">
-          <!-- Section header -->
-          <div class="text-center mb-16">
-            <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Noticias de la Comunidad
-            </h2>
-            <div class="flex justify-center items-center gap-4 mb-6">
-              <div class="h-1 w-20 bg-green-600 rounded"></div>
-              <div class="h-1 w-20 bg-orange-500 rounded"></div>
-              <div class="h-1 w-20 bg-green-600 rounded"></div>
+          <!-- Enhanced section header -->
+          <div class="text-center mb-20">
+            <div class="inline-block mb-6">
+              <span
+                class="inline-flex items-center bg-gradient-to-r from-green-500 to-green-600 text-white px-6 py-3 rounded-full text-sm font-bold shadow-lg"
+              >
+                <i class="fas fa-newspaper mr-2"></i>
+                Últimas Noticias
+              </span>
             </div>
-            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2
+              class="text-5xl md:text-6xl font-black text-gray-900 mb-8 leading-tight"
+            >
+              <span class="block">Noticias de la</span>
+              <span class="block text-green-600"> Comunidad </span>
+            </h2>
+            <div class="flex justify-center items-center gap-4 mb-8">
+              <div
+                class="h-2 w-24 bg-gradient-to-r from-green-500 to-green-600 rounded-full"
+              ></div>
+              <div
+                class="h-2 w-24 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full"
+              ></div>
+              <div
+                class="h-2 w-24 bg-gradient-to-r from-green-500 to-green-600 rounded-full"
+              ></div>
+            </div>
+            <p class="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               Mantente informado sobre las últimas actividades y eventos de
-              "CECyTE en Tu Comunidad"
+              <span class="font-semibold text-green-600"
+                >"CECyTE en Tu Comunidad"</span
+              >
             </p>
           </div>
 
-          <!-- News Grid -->
+          <!-- Enhanced News Grid -->
           <div
             class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto"
           >
-            <!-- Noticia 1: CECyTEBCS Fortalece el Vínculo con su Comunidad Educativa -->
+            <!-- Noticia 1: Enhanced card design -->
             <div
-              class="bg-white rounded-2xl shadow-lg overflow-hidden news-card"
+              class="group bg-white rounded-3xl shadow-xl overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-500 border border-gray-100"
             >
-              <div class="relative">
+              <div class="relative overflow-hidden">
                 <img
                   src="pages_notas/cecyte_fortalece_comunidad_educativa/img/img_1.webp"
                   alt="CECyTEBCS Fortalece el Vínculo con su Comunidad Educativa"
-                  class="w-full h-48 object-cover"
+                  class="w-full h-56 object-cover transform group-hover:scale-110 transition-transform duration-700"
                 />
-                <div class="absolute top-4 left-4">
+                <!-- Enhanced overlay -->
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"
+                ></div>
+                <!-- Enhanced badges -->
+                <div class="absolute top-6 left-6">
                   <span
-                    class="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold"
+                    class="bg-gradient-to-r from-green-500 to-green-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg"
                   >
+                    <i class="fas fa-users mr-2"></i>
                     Comunidad
                   </span>
                 </div>
-                <div class="absolute top-4 right-4">
+                <div class="absolute top-6 right-6">
                   <span
-                    class="bg-white bg-opacity-90 text-gray-700 px-3 py-1 rounded-full text-sm font-semibold"
+                    class="bg-white/90 backdrop-blur-sm text-gray-700 px-4 py-2 rounded-full text-sm font-bold shadow-lg"
                   >
+                    <i class="fas fa-calendar mr-2"></i>
                     29 Sep 2025
                   </span>
                 </div>
+                <!-- Hover effect overlay -->
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-green-600/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
               </div>
-              <div class="p-6">
-                <h3 class="text-xl font-bold text-gray-900 mb-3">
+              <div class="p-8">
+                <h3
+                  class="text-2xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-green-600 transition-colors duration-300"
+                >
                   CECyTEBCS Fortalece el Vínculo con su Comunidad Educativa
                 </h3>
-                <p class="text-gray-600 mb-4">
+                <p class="text-gray-600 mb-6 leading-relaxed line-clamp-3">
                   Como parte de la estrategia de atención a madres, padres de
                   familia, estudiantes y personal de los planteles y Centros
                   EMSaD, el Director General, Vladimir Torres Navarro,
@@ -484,129 +634,163 @@
                   Cd. Constitución.
                 </p>
                 <div class="flex items-center justify-between">
-                  <span class="text-sm text-gray-500">
-                    <i class="fas fa-users mr-1"></i>
-                    Comunidad
-                  </span>
+                  <div class="flex items-center space-x-2 text-gray-500">
+                    <i class="fas fa-users text-green-500"></i>
+                    <span class="text-sm font-medium">Comunidad</span>
+                  </div>
                   <a
                     href="pages_notas/cecyte_fortalece_comunidad_educativa/cecyte_fortalece_comunidad_educativa.html"
-                    class="text-green-600 hover:text-green-700 font-semibold text-sm"
+                    class="group/link inline-flex items-center text-green-600 hover:text-green-700 font-bold text-sm transition-all duration-300"
                   >
-                    Leer más <i class="fas fa-arrow-right ml-1"></i>
+                    Leer más
+                    <i
+                      class="fas fa-arrow-right ml-2 group-hover/link:translate-x-1 transition-transform"
+                    ></i>
                   </a>
                 </div>
               </div>
             </div>
 
-            <!-- Noticia 2: Fortaleciendo nuestra comunidad escolar -->
+            <!-- Noticia 2: Enhanced card design -->
             <div
-              class="bg-white rounded-2xl shadow-lg overflow-hidden news-card"
+              class="group bg-white rounded-3xl shadow-xl overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-500 border border-gray-100"
             >
-              <div class="relative">
+              <div class="relative overflow-hidden">
                 <img
                   src="pages_notas/cecyte_fortalece_e11/img/img_1.webp"
                   alt="Fortaleciendo nuestra comunidad escolar"
-                  class="w-full h-48 object-cover"
+                  class="w-full h-56 object-cover transform group-hover:scale-110 transition-transform duration-700"
                 />
-                <div class="absolute top-4 left-4">
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"
+                ></div>
+                <div class="absolute top-6 left-6">
                   <span
-                    class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold"
+                    class="bg-gradient-to-r from-green-500 to-green-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg"
                   >
-                    Comunidad
+                    <i class="fas fa-school mr-2"></i>
+                    EMSAD
                   </span>
                 </div>
-                <div class="absolute top-4 right-4">
+                <div class="absolute top-6 right-6">
                   <span
-                    class="bg-white bg-opacity-90 text-gray-700 px-3 py-1 rounded-full text-sm font-semibold"
+                    class="bg-white/90 backdrop-blur-sm text-gray-700 px-4 py-2 rounded-full text-sm font-bold shadow-lg"
                   >
+                    <i class="fas fa-calendar mr-2"></i>
                     29 Sep 2025
                   </span>
                 </div>
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-green-600/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
               </div>
-              <div class="p-6">
-                <h3 class="text-xl font-bold text-gray-900 mb-3">
+              <div class="p-8">
+                <h3
+                  class="text-2xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-green-600 transition-colors duration-300"
+                >
                   Fortaleciendo nuestra comunidad escolar
                 </h3>
-                <p class="text-gray-600 mb-4">
+                <p class="text-gray-600 mb-6 leading-relaxed line-clamp-3">
                   En el EMSAD 11 San Isidro, estudiantes, madres de familia y
                   personal docente compartieron sus principales necesidades:
                   transporte, aires acondicionados, mejor conexión a internet,
                   iluminación de la cancha y material deportivo.
                 </p>
                 <div class="flex items-center justify-between">
-                  <span class="text-sm text-gray-500">
-                    <i class="fas fa-school mr-1"></i>
-                    EMSAD
-                  </span>
+                  <div class="flex items-center space-x-2 text-gray-500">
+                    <i class="fas fa-school text-green-500"></i>
+                    <span class="text-sm font-medium">EMSAD</span>
+                  </div>
                   <a
                     href="pages_notas/cecyte_fortalece_e11/cecyte_fortalece_e11.html"
-                    class="text-green-600 hover:text-green-700 font-semibold text-sm"
+                    class="group/link inline-flex items-center text-green-600 hover:text-green-700 font-bold text-sm transition-all duration-300"
                   >
-                    Leer más <i class="fas fa-arrow-right ml-1"></i>
+                    Leer más
+                    <i
+                      class="fas fa-arrow-right ml-2 group-hover/link:translate-x-1 transition-transform"
+                    ></i>
                   </a>
                 </div>
               </div>
             </div>
 
-            <!-- Noticia 3: Fortaleciendo la educación -->
+            <!-- Noticia 3: Enhanced card design -->
             <div
-              class="bg-white rounded-2xl shadow-lg overflow-hidden news-card"
+              class="group bg-white rounded-3xl shadow-xl overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-500 border border-gray-100"
             >
-              <div class="relative">
+              <div class="relative overflow-hidden">
                 <img
                   src="pages_notas/cecyte_y_tecnologico/img/img_1.webp"
                   alt="Fortaleciendo la educación"
-                  class="w-full h-48 object-cover"
+                  class="w-full h-56 object-cover transform group-hover:scale-110 transition-transform duration-700"
                 />
-                <div class="absolute top-4 left-4">
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"
+                ></div>
+                <div class="absolute top-6 left-6">
                   <span
-                    class="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold"
+                    class="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg"
                   >
+                    <i class="fas fa-handshake mr-2"></i>
                     Colaboración
                   </span>
                 </div>
-                <div class="absolute top-4 right-4">
+                <div class="absolute top-6 right-6">
                   <span
-                    class="bg-white bg-opacity-90 text-gray-700 px-3 py-1 rounded-full text-sm font-semibold"
+                    class="bg-white/90 backdrop-blur-sm text-gray-700 px-4 py-2 rounded-full text-sm font-bold shadow-lg"
                   >
+                    <i class="fas fa-calendar mr-2"></i>
                     29 Sep 2025
                   </span>
                 </div>
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-blue-600/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
               </div>
-              <div class="p-6">
-                <h3 class="text-xl font-bold text-gray-900 mb-3">
+              <div class="p-8">
+                <h3
+                  class="text-2xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-blue-600 transition-colors duration-300"
+                >
                   Fortaleciendo la educación
                 </h3>
-                <p class="text-gray-600 mb-4">
+                <p class="text-gray-600 mb-6 leading-relaxed line-clamp-3">
                   El CECyTEBCS sostuvo un primer acercamiento con el Instituto
                   Tecnológico de Ciudad Constitución, con el objetivo de
                   reforzar los lazos de colaboración y facilitar el tránsito de
                   nuestras y nuestros estudiantes hacia la educación superior.
                 </p>
                 <div class="flex items-center justify-between">
-                  <span class="text-sm text-gray-500">
-                    <i class="fas fa-handshake mr-1"></i>
-                    Colaboración
-                  </span>
+                  <div class="flex items-center space-x-2 text-gray-500">
+                    <i class="fas fa-handshake text-blue-500"></i>
+                    <span class="text-sm font-medium">Colaboración</span>
+                  </div>
                   <a
                     href="pages_notas/cecyte_y_tecnologico/cecyte_y_tecnologico.html"
-                    class="text-green-600 hover:text-green-700 font-semibold text-sm"
+                    class="group/link inline-flex items-center text-blue-600 hover:text-blue-700 font-bold text-sm transition-all duration-300"
                   >
-                    Leer más <i class="fas fa-arrow-right ml-1"></i>
+                    Leer más
+                    <i
+                      class="fas fa-arrow-right ml-2 group-hover/link:translate-x-1 transition-transform"
+                    ></i>
                   </a>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Ver más noticias button -->
-          <div class="text-center mt-12">
+          <!-- Enhanced "Ver más noticias" button -->
+          <div class="text-center mt-16">
             <a
               href="noticias.html"
-              class="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
+              class="group inline-flex items-center bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold py-5 px-10 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl shadow-xl"
             >
+              <i
+                class="fas fa-newspaper mr-3 group-hover:rotate-12 transition-transform"
+              ></i>
               Ver Todas las Noticias
-              <i class="fas fa-arrow-right ml-2"></i>
+              <i
+                class="fas fa-arrow-right ml-3 group-hover:translate-x-1 transition-transform"
+              ></i>
             </a>
           </div>
         </div>
@@ -614,144 +798,343 @@
     </section>
 
     <!-- VIDEO SECTION -->
-    <section class="py-20 bg-white">
-      <div class="container mx-auto px-4">
-        <div class="max-w-4xl mx-auto">
-          <!-- Section header -->
-          <div class="text-center mb-12">
-            <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Video Destacado
-            </h2>
-            <div class="flex justify-center items-center gap-4 mb-6">
-              <div class="h-1 w-20 bg-green-600 rounded"></div>
-              <div class="h-1 w-20 bg-orange-500 rounded"></div>
-              <div class="h-1 w-20 bg-green-600 rounded"></div>
+    <section
+      class="py-24 bg-gradient-to-br from-white via-gray-50 to-white relative overflow-hidden"
+    >
+      <!-- Background decorative elements -->
+      <div class="absolute inset-0 overflow-hidden">
+        <div
+          class="absolute top-1/4 left-1/4 w-32 h-32 bg-orange-200 opacity-20 rounded-full animate-pulse"
+        ></div>
+        <div
+          class="absolute bottom-1/4 right-1/4 w-24 h-24 bg-green-200 opacity-30 rounded-full animate-bounce"
+          style="animation-duration: 3s"
+        ></div>
+        <div
+          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-green-300 opacity-10 rounded-full animate-spin"
+          style="animation-duration: 15s"
+        ></div>
+      </div>
+
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="max-w-6xl mx-auto">
+          <!-- Enhanced section header -->
+          <div class="text-center mb-16">
+            <div class="inline-block mb-6">
+              <span
+                class="inline-flex items-center bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-3 rounded-full text-sm font-bold shadow-lg"
+              >
+                <i class="fas fa-play mr-2"></i>
+                Video Destacado
+              </span>
             </div>
-            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-              Conoce más sobre los reconocimientos y logros de nuestra comunidad
-              educativa
+            <h2
+              class="text-5xl md:text-6xl font-black text-gray-900 mb-8 leading-tight"
+            >
+              <span class="block">Premios</span>
+              <span class="block text-orange-500"> Juventud </span>
+            </h2>
+            <div class="flex justify-center items-center gap-4 mb-8">
+              <div
+                class="h-2 w-24 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full"
+              ></div>
+              <div
+                class="h-2 w-24 bg-gradient-to-r from-green-500 to-green-600 rounded-full"
+              ></div>
+              <div
+                class="h-2 w-24 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full"
+              ></div>
+            </div>
+            <p class="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              Conoce más sobre los reconocimientos y logros de nuestra
+              <span class="font-semibold text-orange-600"
+                >comunidad educativa</span
+              >
             </p>
           </div>
 
-          <!-- Video container -->
-          <div class="flex justify-center">
-            <div class="relative w-full max-w-md mx-auto">
-              <div class="aspect-[9/16] w-full">
-                <iframe
-                  width="100%"
-                  height="100%"
-                  src="https://www.youtube.com/embed/-RXezGWHgcU"
-                  title="PREMIOS JUVENTUD"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                  class="rounded-2xl shadow-2xl"
-                ></iframe>
+          <!-- Enhanced video container with better styling -->
+          <div class="flex justify-center mb-12">
+            <div class="relative w-full max-w-lg mx-auto">
+              <!-- Decorative background elements -->
+              <div
+                class="absolute -inset-8 bg-gradient-to-r from-orange-400 to-green-500 rounded-3xl blur opacity-20"
+              ></div>
+              <div
+                class="absolute -inset-4 bg-gradient-to-r from-orange-300 to-green-400 rounded-3xl blur opacity-30"
+              ></div>
+
+              <!-- Video container with enhanced styling -->
+              <div
+                class="relative bg-white rounded-3xl shadow-2xl p-4 border-4 border-white/50"
+              >
+                <div class="aspect-[9/16] w-full rounded-2xl overflow-hidden">
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/-RXezGWHgcU"
+                    title="PREMIOS JUVENTUD"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                    class="rounded-2xl shadow-xl"
+                  ></iframe>
+                </div>
+
+                <!-- Play button overlay (decorative) -->
+                <div
+                  class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg opacity-0 hover:opacity-100 transition-opacity duration-300"
+                >
+                  <i class="fas fa-play text-orange-500 text-xl ml-1"></i>
+                </div>
               </div>
             </div>
-          </div>
-
-          <!-- Video description -->
-          <div class="mt-8 text-center">
-            <h3 class="text-2xl font-bold text-gray-900 mb-4">
-              PREMIOS JUVENTUD
-            </h3>
-            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-              Un reconocimiento especial a los logros y el compromiso de nuestra
-              comunidad estudiantil
-            </p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- PROGRAMA SECTION -->
-    <section id="programa" class="py-20 bg-white">
-      <div class="container mx-auto px-4">
-        <div class="max-w-6xl mx-auto">
-          <!-- Section header -->
-          <div class="text-center mb-16">
-            <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Nuestro Programa
+    <section
+      id="programa"
+      class="py-24 bg-gradient-to-br from-white via-green-50 to-blue-50 relative overflow-hidden"
+    >
+      <!-- Background decorative elements -->
+      <div class="absolute inset-0 overflow-hidden">
+        <div
+          class="absolute top-1/4 right-1/4 w-40 h-40 bg-green-200 opacity-20 rounded-full animate-pulse"
+        ></div>
+        <div
+          class="absolute bottom-1/4 left-1/4 w-32 h-32 bg-blue-200 opacity-30 rounded-full animate-bounce"
+          style="animation-duration: 4s"
+        ></div>
+        <div
+          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-orange-200 opacity-10 rounded-full animate-spin"
+          style="animation-duration: 20s"
+        ></div>
+      </div>
+
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="max-w-7xl mx-auto">
+          <!-- Enhanced section header -->
+          <div class="text-center mb-20">
+            <div class="inline-block mb-6">
+              <span
+                class="inline-flex items-center bg-gradient-to-r from-green-500 to-blue-500 text-white px-6 py-3 rounded-full text-sm font-bold shadow-lg"
+              >
+                <i class="fas fa-graduation-cap mr-2"></i>
+                Nuestro Programa
+              </span>
+            </div>
+            <h2
+              class="text-5xl md:text-6xl font-black text-gray-900 mb-8 leading-tight"
+            >
+              <span class="block">Transformando</span>
+              <span class="block text-green-600"> Comunidades </span>
             </h2>
-            <div class="flex justify-center items-center gap-4 mb-6">
-              <div class="h-1 w-20 bg-green-600 rounded"></div>
-              <div class="h-1 w-20 bg-orange-500 rounded"></div>
-              <div class="h-1 w-20 bg-green-600 rounded"></div>
+            <div class="flex justify-center items-center gap-4 mb-8">
+              <div
+                class="h-2 w-24 bg-gradient-to-r from-green-500 to-green-600 rounded-full"
+              ></div>
+              <div
+                class="h-2 w-24 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full"
+              ></div>
+              <div
+                class="h-2 w-24 bg-gradient-to-r from-green-500 to-green-600 rounded-full"
+              ></div>
+            </div>
+            <p class="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              Un programa integral que combina
+              <span class="font-semibold text-green-600">educación</span> y
+              <span class="font-semibold text-blue-600">compromiso social</span>
+            </p>
+          </div>
+
+          <!-- Enhanced content with better structure -->
+          <div class="max-w-6xl mx-auto mb-16">
+            <div
+              class="bg-white/80 backdrop-blur-sm rounded-3xl border border-white/50 shadow-2xl overflow-hidden"
+            >
+              <!-- Header with gradient -->
+              <div
+                class="bg-gradient-to-r from-green-500 to-blue-500 p-8 text-white"
+              >
+                <div class="flex items-center justify-center mb-4">
+                  <div
+                    class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center"
+                  >
+                    <i class="fas fa-book-open text-2xl"></i>
+                  </div>
+                </div>
+                <h3 class="text-3xl font-bold text-center mb-4">
+                  Bachillerato Nacional
+                </h3>
+                <p class="text-lg text-center opacity-90">
+                  Formación integral para el futuro
+                </p>
+              </div>
+
+              <!-- Content sections -->
+              <div class="p-10 space-y-8">
+                <!-- First paragraph with icon -->
+                <div class="flex items-start space-x-6">
+                  <div
+                    class="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center"
+                  >
+                    <i class="fas fa-university text-white text-lg"></i>
+                  </div>
+                  <div class="flex-1">
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                      El Colegio de Estudios Científicos y Tecnológicos del
+                      Estado de Baja California Sur (CECyTEBCS), bajo los nuevos
+                      lineamientos del
+                      <strong class="text-green-600"
+                        >Bachillerato Nacional</strong
+                      >, impulsa una formación integral que combina el
+                      aprendizaje académico con la práctica social.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Second paragraph with icon -->
+                <div class="flex items-start space-x-6">
+                  <div
+                    class="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center"
+                  >
+                    <i class="fas fa-users text-white text-lg"></i>
+                  </div>
+                  <div class="flex-1">
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                      El
+                      <strong class="text-blue-600"
+                        >Bachillerato Nacional</strong
+                      >
+                      es un modelo educativo que garantiza a las y los
+                      estudiantes del país una educación media superior con un
+                      perfil homogéneo, asegurando el desarrollo de competencias
+                      genéricas, disciplinares y profesionales que los preparan
+                      no solo para la universidad o el mundo laboral, sino
+                      también para ser ciudadanos responsables y comprometidos
+                      con su entorno.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Third paragraph with icon -->
+                <div class="flex items-start space-x-6">
+                  <div
+                    class="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full flex items-center justify-center"
+                  >
+                    <i class="fas fa-handshake text-white text-lg"></i>
+                  </div>
+                  <div class="flex-1">
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                      En concordancia con este marco y con el
+                      <strong class="text-orange-600"
+                        >PAEC: Programa Aula, Escuela, Comunidad</strong
+                      >, que busca fortalecer el vínculo entre las instituciones
+                      educativas y la sociedad, el CECyTEBCS lanza la campaña
+                      <span
+                        class="inline-flex items-center bg-gradient-to-r from-green-500 to-green-600 text-white px-4 py-2 rounded-full text-lg font-bold shadow-lg mx-2"
+                        >#CECyTEsComunidad</span
+                      >, a través del programa
+                      <strong class="text-green-600"
+                        >"CECyTE en Tu Comunidad"</strong
+                      >.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Fourth paragraph with icon -->
+                <div class="flex items-start space-x-6">
+                  <div
+                    class="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full flex items-center justify-center"
+                  >
+                    <i class="fas fa-heart text-white text-lg"></i>
+                  </div>
+                  <div class="flex-1">
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                      Con este programa se pretende acercar a estudiantes,
+                      docentes y personal del Colegio a las comunidades mediante
+                      actividades sociales, culturales, deportivas, de servicio
+                      y apoyo comunitario, fomentando la solidaridad, el
+                      compromiso y el sentido de pertenencia.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Fifth paragraph with icon -->
+                <div class="flex items-start space-x-6">
+                  <div
+                    class="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-teal-500 to-teal-600 rounded-full flex items-center justify-center"
+                  >
+                    <i class="fas fa-globe text-white text-lg"></i>
+                  </div>
+                  <div class="flex-1">
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                      De esta manera, el CECyTEBCS se consolida como un espacio
+                      educativo abierto y solidario, que además de formar
+                      académicamente, contribuye activamente a la transformación
+                      social en Baja California Sur.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- Content intro -->
-          <div class="max-w-5xl mx-auto mb-12">
+          <!-- Enhanced bottom message with better design -->
+          <div class="text-center">
             <div
-              class="bg-gradient-to-r from-green-50 to-blue-50 p-10 rounded-2xl border border-green-200 shadow-lg"
+              class="bg-gradient-to-r from-green-600 to-blue-600 text-white p-12 rounded-3xl shadow-2xl max-w-5xl mx-auto relative overflow-hidden"
             >
-              <div class="text-justify space-y-6">
-                <p class="text-lg text-gray-700 leading-relaxed">
-                  El Colegio de Estudios Científicos y Tecnológicos del Estado
-                  de Baja California Sur (CECyTEBCS), bajo los nuevos
-                  lineamientos del <strong>Bachillerato Nacional</strong>,
-                  impulsa una formación integral que combina el aprendizaje
-                  académico con la práctica social.
-                </p>
+              <!-- Background decorative elements -->
+              <div
+                class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16"
+              ></div>
+              <div
+                class="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full translate-y-12 -translate-x-12"
+              ></div>
 
-                <p class="text-lg text-gray-700 leading-relaxed">
-                  El <strong>Bachillerato Nacional</strong> es un modelo
-                  educativo que garantiza a las y los estudiantes del país una
-                  educación media superior con un perfil homogéneo, asegurando
-                  el desarrollo de competencias genéricas, disciplinares y
-                  profesionales que los preparan no solo para la universidad o
-                  el mundo laboral, sino también para ser ciudadanos
-                  responsables y comprometidos con su entorno.
-                </p>
+              <div class="relative z-10">
+                <div class="flex items-center justify-center mb-8">
+                  <div
+                    class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center"
+                  >
+                    <i class="fas fa-star text-3xl"></i>
+                  </div>
+                </div>
 
-                <p class="text-lg text-gray-700 leading-relaxed">
-                  En concordancia con este marco y con el
-                  <strong>PAEC: Programa Aula, Escuela, Comunidad</strong>, que
-                  busca fortalecer el vínculo entre las instituciones educativas
-                  y la sociedad, el CECyTEBCS lanza la campaña
-                  <span class="text-green-600 font-bold text-xl"
-                    >#CECyTEsComunidad</span
-                  >, a través del programa
-                  <strong>"CECyTE en Tu Comunidad"</strong>.
-                </p>
+                <h3 class="text-3xl md:text-4xl font-bold mb-8 leading-tight">
+                  <span class="block">Transformación Social</span>
+                  <span class="block text-green-200"
+                    >en Baja California Sur</span
+                  >
+                </h3>
 
-                <p class="text-lg text-gray-700 leading-relaxed">
-                  Con este programa se pretende acercar a estudiantes, docentes
-                  y personal del Colegio a las comunidades mediante actividades
-                  sociales, culturales, deportivas, de servicio y apoyo
-                  comunitario, fomentando la solidaridad, el compromiso y el
-                  sentido de pertenencia.
-                </p>
-
-                <p class="text-lg text-gray-700 leading-relaxed">
+                <p
+                  class="text-xl md:text-2xl font-semibold leading-relaxed mb-8 text-green-100"
+                >
                   De esta manera, el CECyTEBCS se consolida como un espacio
                   educativo abierto y solidario, que además de formar
                   académicamente, contribuye activamente a la transformación
                   social en Baja California Sur.
                 </p>
-              </div>
-            </div>
-          </div>
 
-          <!-- Bottom message -->
-          <div class="mt-16 text-center">
-            <div
-              class="bg-gradient-to-r from-green-600 to-green-700 text-white p-8 rounded-2xl shadow-xl"
-            >
-              <p class="text-xl md:text-2xl font-semibold leading-relaxed">
-                De esta manera, el CECyTEBCS se consolida como un espacio
-                educativo abierto y solidario, que además de formar
-                académicamente, contribuye activamente a la transformación
-                social en Baja California Sur.
-              </p>
-              <p class="text-lg mt-4 text-green-100">
-                "CECyT en tu Comunidad" es un programa insignia de proyección
-                social del CECyTEBCS, mostrando al Colegio no solo como una
-                institución educativa, sino también como un aliado activo de las
-                comunidades.
-              </p>
+                <div
+                  class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20"
+                >
+                  <p class="text-lg text-green-100 leading-relaxed">
+                    <i class="fas fa-quote-left text-green-200 mr-2"></i>
+                    "CECyT en tu Comunidad" es un programa insignia de
+                    proyección social del CECyTEBCS, mostrando al Colegio no
+                    solo como una institución educativa, sino también como un
+                    aliado activo de las comunidades.
+                    <i class="fas fa-quote-right text-green-200 ml-2"></i>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -759,216 +1142,457 @@
     </section>
 
     <!-- SERVICIOS SECTION -->
-    <section id="servicios" class="py-20 bg-gray-50">
-      <div class="container mx-auto px-4">
+    <section
+      id="servicios"
+      class="py-24 bg-gradient-to-br from-gray-50 via-white to-gray-100 relative overflow-hidden"
+    >
+      <!-- Background decorative elements -->
+      <div class="absolute inset-0 overflow-hidden">
+        <div
+          class="absolute top-1/4 left-1/4 w-40 h-40 bg-blue-200 opacity-20 rounded-full animate-pulse"
+        ></div>
+        <div
+          class="absolute bottom-1/4 right-1/4 w-32 h-32 bg-orange-200 opacity-30 rounded-full animate-bounce"
+          style="animation-duration: 4s"
+        ></div>
+        <div
+          class="absolute top-1/2 right-1/2 w-24 h-24 bg-green-200 opacity-25 rounded-full animate-ping"
+          style="animation-duration: 3s"
+        ></div>
+      </div>
+
+      <div class="container mx-auto px-4 relative z-10">
         <div class="max-w-7xl mx-auto">
-          <!-- Section header -->
-          <div class="text-center mb-16">
-            <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Acciones concretas
+          <!-- Enhanced section header -->
+          <div class="text-center mb-20">
+            <div class="inline-block mb-6"></div>
+            <h2
+              class="text-5xl md:text-6xl font-black text-gray-900 mb-8 leading-tight"
+            >
+              <span class="block">Acciones</span>
+              <span class="block text-blue-600"> Concretas </span>
             </h2>
-            <div class="flex justify-center items-center gap-4 mb-6">
-              <div class="h-1 w-20 bg-green-600 rounded"></div>
-              <div class="h-1 w-20 bg-orange-500 rounded"></div>
-              <div class="h-1 w-20 bg-green-600 rounded"></div>
+            <div class="flex justify-center items-center gap-4 mb-8">
+              <div
+                class="h-2 w-24 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full"
+              ></div>
+              <div
+                class="h-2 w-24 bg-gradient-to-r from-green-500 to-green-600 rounded-full"
+              ></div>
+              <div
+                class="h-2 w-24 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full"
+              ></div>
             </div>
-            <p class="text-xl text-gray-600 max-w-3xl mx-auto"></p>
+            <p class="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              Transformamos comunidades a través de
+              <span class="font-semibold text-blue-600"
+                >acciones concretas</span
+              >
+              y
+              <span class="font-semibold text-green-600"
+                >compromiso social</span
+              >
+            </p>
           </div>
 
-          <!-- Services Grid -->
-          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- First row - 3 cards -->
+          <!-- Enhanced Services Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Tecnología y Servicios - Enhanced -->
             <div
-              class="md:col-span-2 lg:col-span-3 grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+              class="group bg-white rounded-3xl shadow-xl overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-500 border border-gray-100 relative"
             >
-              <!-- Tecnología y Servicios -->
+              <!-- Decorative background -->
               <div
-                class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300 hover:shadow-xl"
+                class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-blue-600 rounded-3xl blur opacity-20 group-hover:opacity-40 transition-opacity"
+              ></div>
+
+              <div
+                class="relative bg-gradient-to-br from-blue-500 to-blue-600 h-56 flex items-center justify-center"
               >
                 <div
-                  class="h-48 bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center"
-                >
-                  <i class="fas fa-laptop-code text-6xl text-white"></i>
-                </div>
-                <div class="p-6">
-                  <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                  class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"
+                ></div>
+                <i
+                  class="fas fa-laptop-code text-6xl text-white group-hover:scale-110 transition-transform duration-300"
+                ></i>
+                <!-- Floating elements -->
+                <div
+                  class="absolute top-4 right-4 w-8 h-8 bg-white/20 rounded-full animate-ping"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 w-6 h-6 bg-white/30 rounded-full animate-bounce"
+                  style="animation-delay: 1s"
+                ></div>
+              </div>
+              <div class="p-8">
+                <div class="flex items-center mb-6">
+                  <div
+                    class="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center mr-4"
+                  >
+                    <i class="fas fa-laptop-code text-white text-lg"></i>
+                  </div>
+                  <h3 class="text-2xl font-bold text-gray-900">
                     Tecnología y Servicios
                   </h3>
-                  <ul class="space-y-3 text-gray-600">
-                    <li class="flex items-start">
-                      <i class="fas fa-check text-green-500 mr-3 mt-1"></i>
-                      <span
-                        >Campañas de servicio preventivo y correctivo de equipos
-                        de cómputo en espacios comunitarios</span
-                      >
-                    </li>
-                    <li class="flex items-start">
-                      <i class="fas fa-check text-green-500 mr-3 mt-1"></i>
-                      <span
-                        >Asesorías básicas en herramientas digitales para
-                        personas adultas mayores</span
-                      >
-                    </li>
-                    <li class="flex items-start">
-                      <i class="fas fa-check text-green-500 mr-3 mt-1"></i>
-                      <span>Talleres de seguridad digital para jóvenes</span>
-                    </li>
-                  </ul>
                 </div>
-              </div>
-
-              <!-- Gastronomía y Cultura -->
-              <div
-                class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300 hover:shadow-xl"
-              >
-                <div
-                  class="h-48 bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center"
-                >
-                  <i class="fas fa-utensils text-6xl text-white"></i>
-                </div>
-                <div class="p-6">
-                  <h3 class="text-2xl font-bold text-gray-900 mb-4">
-                    Gastronomía y Cultura
-                  </h3>
-                  <ul class="space-y-3 text-gray-600">
-                    <li class="flex items-start">
-                      <i class="fas fa-check text-green-500 mr-3 mt-1"></i>
-                      <span
-                        >Muestras gastronómicas con participación de estudiantes
-                        y familias</span
-                      >
-                    </li>
-                    <li class="flex items-start">
-                      <i class="fas fa-check text-green-500 mr-3 mt-1"></i>
-                      <span
-                        >Exposiciones artísticas y culturales (pintura, danza,
-                        música)</span
-                      >
-                    </li>
-                    <li class="flex items-start">
-                      <i class="fas fa-check text-green-500 mr-3 mt-1"></i>
-                      <span>Presentaciones de declamación y poesía</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <!-- Apoyo Social y Comunitario -->
-              <div
-                class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300 hover:shadow-xl"
-              >
-                <div
-                  class="h-48 bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center"
-                >
-                  <i class="fas fa-hands-helping text-6xl text-white"></i>
-                </div>
-                <div class="p-6">
-                  <h3 class="text-2xl font-bold text-gray-900 mb-4">
-                    Apoyo Social y Comunitario
-                  </h3>
-                  <ul class="space-y-3 text-gray-600">
-                    <li class="flex items-start">
-                      <i class="fas fa-check text-green-500 mr-3 mt-1"></i>
-                      <span>Brigadas de limpieza en espacios públicos</span>
-                    </li>
-                    <li class="flex items-start">
-                      <i class="fas fa-check text-green-500 mr-3 mt-1"></i>
-                      <span
-                        >Reparaciones menores en mobiliario escolar o
-                        comunitario</span
-                      >
-                    </li>
-                    <li class="flex items-start">
-                      <i class="fas fa-check text-green-500 mr-3 mt-1"></i>
-                      <span>Campañas de reciclaje y cuidado ambiental</span>
-                    </li>
-                    <li class="flex items-start">
-                      <i class="fas fa-check text-green-500 mr-3 mt-1"></i>
-                      <span>Paz a la Violencia</span>
-                    </li>
-                  </ul>
-                </div>
+                <ul class="space-y-4 text-gray-600">
+                  <li class="flex items-start group/item">
+                    <div
+                      class="flex-shrink-0 w-6 h-6 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mr-4 mt-1"
+                    >
+                      <i class="fas fa-check text-white text-xs"></i>
+                    </div>
+                    <span
+                      class="group-hover/item:text-blue-600 transition-colors"
+                      >Campañas de servicio preventivo y correctivo de equipos
+                      de cómputo en espacios comunitarios</span
+                    >
+                  </li>
+                  <li class="flex items-start group/item">
+                    <div
+                      class="flex-shrink-0 w-6 h-6 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mr-4 mt-1"
+                    >
+                      <i class="fas fa-check text-white text-xs"></i>
+                    </div>
+                    <span
+                      class="group-hover/item:text-blue-600 transition-colors"
+                      >Asesorías básicas en herramientas digitales para personas
+                      adultas mayores</span
+                    >
+                  </li>
+                  <li class="flex items-start group/item">
+                    <div
+                      class="flex-shrink-0 w-6 h-6 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mr-4 mt-1"
+                    >
+                      <i class="fas fa-check text-white text-xs"></i>
+                    </div>
+                    <span
+                      class="group-hover/item:text-blue-600 transition-colors"
+                      >Talleres de seguridad digital para jóvenes</span
+                    >
+                  </li>
+                </ul>
               </div>
             </div>
 
-            <!-- Second row - 2 cards centered -->
-            <div class="md:col-span-2 lg:col-span-3 flex justify-center">
-              <div class="grid md:grid-cols-2 gap-8 max-w-4xl">
-                <!-- Deporte y Salud -->
-                <div
-                  class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300 hover:shadow-xl"
-                >
-                  <div
-                    class="h-48 bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center"
-                  >
-                    <i class="fas fa-running text-6xl text-white"></i>
-                  </div>
-                  <div class="p-6">
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">
-                      Deporte y Salud
-                    </h3>
-                    <ul class="space-y-3 text-gray-600">
-                      <li class="flex items-start">
-                        <i class="fas fa-check text-green-500 mr-3 mt-1"></i>
-                        <span
-                          >Torneos deportivos (fútbol, básquetbol,
-                          voleibol)</span
-                        >
-                      </li>
-                      <li class="flex items-start">
-                        <i class="fas fa-check text-green-500 mr-3 mt-1"></i>
-                        <span>Jornadas de promoción de la salud</span>
-                      </li>
-                      <li class="flex items-start">
-                        <i class="fas fa-check text-green-500 mr-3 mt-1"></i>
-                        <span
-                          >Pláticas sobre nutrición y prevención de
-                          adicciones</span
-                        >
-                      </li>
-                      <li class="flex items-start">
-                        <i class="fas fa-check text-green-500 mr-3 mt-1"></i>
-                        <span>Promoción de salud mental</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+            <!-- Gastronomía y Cultura - Enhanced -->
+            <div
+              class="group bg-white rounded-3xl shadow-xl overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-500 border border-gray-100 relative"
+            >
+              <div
+                class="absolute -inset-1 bg-gradient-to-r from-orange-500 to-orange-600 rounded-3xl blur opacity-20 group-hover:opacity-40 transition-opacity"
+              ></div>
 
-                <!-- Educación y Formación -->
+              <div
+                class="relative bg-gradient-to-br from-orange-500 to-orange-600 h-56 flex items-center justify-center"
+              >
                 <div
-                  class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300 hover:shadow-xl"
-                >
+                  class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"
+                ></div>
+                <i
+                  class="fas fa-utensils text-6xl text-white group-hover:scale-110 transition-transform duration-300"
+                ></i>
+                <div
+                  class="absolute top-4 right-4 w-8 h-8 bg-white/20 rounded-full animate-ping"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 w-6 h-6 bg-white/30 rounded-full animate-bounce"
+                  style="animation-delay: 1s"
+                ></div>
+              </div>
+              <div class="p-8">
+                <div class="flex items-center mb-6">
                   <div
-                    class="h-48 bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center"
+                    class="w-12 h-12 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full flex items-center justify-center mr-4"
                   >
-                    <i class="fas fa-graduation-cap text-6xl text-white"></i>
+                    <i class="fas fa-utensils text-white text-lg"></i>
                   </div>
-                  <div class="p-6">
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">
-                      Educación y Formación
-                    </h3>
-                    <ul class="space-y-3 text-gray-600">
-                      <li class="flex items-start">
-                        <i class="fas fa-check text-green-500 mr-3 mt-1"></i>
-                        <span
-                          >Círculos de lectura y cuenta cuentos para la
-                          niñez</span
-                        >
-                      </li>
-                      <li class="flex items-start">
-                        <i class="fas fa-check text-green-500 mr-3 mt-1"></i>
-                        <span>Asesorías académicas en materias básicas</span>
-                      </li>
-                      <li class="flex items-start">
-                        <i class="fas fa-check text-green-500 mr-3 mt-1"></i>
-                        <span
-                          >Orientación vocacional para jóvenes de
-                          secundaria</span
-                        >
-                      </li>
-                    </ul>
-                  </div>
+                  <h3 class="text-2xl font-bold text-gray-900">
+                    Gastronomía y Cultura
+                  </h3>
                 </div>
+                <ul class="space-y-4 text-gray-600">
+                  <li class="flex items-start group/item">
+                    <div
+                      class="flex-shrink-0 w-6 h-6 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mr-4 mt-1"
+                    >
+                      <i class="fas fa-check text-white text-xs"></i>
+                    </div>
+                    <span
+                      class="group-hover/item:text-orange-600 transition-colors"
+                      >Muestras gastronómicas con participación de estudiantes y
+                      familias</span
+                    >
+                  </li>
+                  <li class="flex items-start group/item">
+                    <div
+                      class="flex-shrink-0 w-6 h-6 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mr-4 mt-1"
+                    >
+                      <i class="fas fa-check text-white text-xs"></i>
+                    </div>
+                    <span
+                      class="group-hover/item:text-orange-600 transition-colors"
+                      >Exposiciones artísticas y culturales (pintura, danza,
+                      música)</span
+                    >
+                  </li>
+                  <li class="flex items-start group/item">
+                    <div
+                      class="flex-shrink-0 w-6 h-6 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mr-4 mt-1"
+                    >
+                      <i class="fas fa-check text-white text-xs"></i>
+                    </div>
+                    <span
+                      class="group-hover/item:text-orange-600 transition-colors"
+                      >Presentaciones de declamación y poesía</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Apoyo Social y Comunitario - Enhanced -->
+            <div
+              class="group bg-white rounded-3xl shadow-xl overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-500 border border-gray-100 relative"
+            >
+              <div
+                class="absolute -inset-1 bg-gradient-to-r from-green-500 to-green-600 rounded-3xl blur opacity-20 group-hover:opacity-40 transition-opacity"
+              ></div>
+
+              <div
+                class="relative bg-gradient-to-br from-green-500 to-green-600 h-56 flex items-center justify-center"
+              >
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"
+                ></div>
+                <i
+                  class="fas fa-hands-helping text-6xl text-white group-hover:scale-110 transition-transform duration-300"
+                ></i>
+                <div
+                  class="absolute top-4 right-4 w-8 h-8 bg-white/20 rounded-full animate-ping"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 w-6 h-6 bg-white/30 rounded-full animate-bounce"
+                  style="animation-delay: 1s"
+                ></div>
+              </div>
+              <div class="p-8">
+                <div class="flex items-center mb-6">
+                  <div
+                    class="w-12 h-12 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mr-4"
+                  >
+                    <i class="fas fa-hands-helping text-white text-lg"></i>
+                  </div>
+                  <h3 class="text-2xl font-bold text-gray-900">
+                    Apoyo Social y Comunitario
+                  </h3>
+                </div>
+                <ul class="space-y-4 text-gray-600">
+                  <li class="flex items-start group/item">
+                    <div
+                      class="flex-shrink-0 w-6 h-6 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mr-4 mt-1"
+                    >
+                      <i class="fas fa-check text-white text-xs"></i>
+                    </div>
+                    <span
+                      class="group-hover/item:text-green-600 transition-colors"
+                      >Brigadas de limpieza en espacios públicos</span
+                    >
+                  </li>
+                  <li class="flex items-start group/item">
+                    <div
+                      class="flex-shrink-0 w-6 h-6 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mr-4 mt-1"
+                    >
+                      <i class="fas fa-check text-white text-xs"></i>
+                    </div>
+                    <span
+                      class="group-hover/item:text-green-600 transition-colors"
+                      >Reparaciones menores en mobiliario escolar o
+                      comunitario</span
+                    >
+                  </li>
+                  <li class="flex items-start group/item">
+                    <div
+                      class="flex-shrink-0 w-6 h-6 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mr-4 mt-1"
+                    >
+                      <i class="fas fa-check text-white text-xs"></i>
+                    </div>
+                    <span
+                      class="group-hover/item:text-green-600 transition-colors"
+                      >Campañas de reciclaje y cuidado ambiental</span
+                    >
+                  </li>
+                  <li class="flex items-start group/item">
+                    <div
+                      class="flex-shrink-0 w-6 h-6 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mr-4 mt-1"
+                    >
+                      <i class="fas fa-check text-white text-xs"></i>
+                    </div>
+                    <span
+                      class="group-hover/item:text-green-600 transition-colors"
+                      >Paz a la Violencia</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Deporte y Salud - Enhanced -->
+            <div
+              class="group bg-white rounded-3xl shadow-xl overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-500 border border-gray-100 relative"
+            >
+              <div
+                class="absolute -inset-1 bg-gradient-to-r from-red-500 to-red-600 rounded-3xl blur opacity-20 group-hover:opacity-40 transition-opacity"
+              ></div>
+
+              <div
+                class="relative bg-gradient-to-br from-red-500 to-red-600 h-56 flex items-center justify-center"
+              >
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"
+                ></div>
+                <i
+                  class="fas fa-running text-6xl text-white group-hover:scale-110 transition-transform duration-300"
+                ></i>
+                <div
+                  class="absolute top-4 right-4 w-8 h-8 bg-white/20 rounded-full animate-ping"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 w-6 h-6 bg-white/30 rounded-full animate-bounce"
+                  style="animation-delay: 1s"
+                ></div>
+              </div>
+              <div class="p-8">
+                <div class="flex items-center mb-6">
+                  <div
+                    class="w-12 h-12 bg-gradient-to-r from-red-500 to-red-600 rounded-full flex items-center justify-center mr-4"
+                  >
+                    <i class="fas fa-running text-white text-lg"></i>
+                  </div>
+                  <h3 class="text-2xl font-bold text-gray-900">
+                    Deporte y Salud
+                  </h3>
+                </div>
+                <ul class="space-y-4 text-gray-600">
+                  <li class="flex items-start group/item">
+                    <div
+                      class="flex-shrink-0 w-6 h-6 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mr-4 mt-1"
+                    >
+                      <i class="fas fa-check text-white text-xs"></i>
+                    </div>
+                    <span
+                      class="group-hover/item:text-red-600 transition-colors"
+                      >Torneos deportivos (fútbol, básquetbol, voleibol)</span
+                    >
+                  </li>
+                  <li class="flex items-start group/item">
+                    <div
+                      class="flex-shrink-0 w-6 h-6 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mr-4 mt-1"
+                    >
+                      <i class="fas fa-check text-white text-xs"></i>
+                    </div>
+                    <span
+                      class="group-hover/item:text-red-600 transition-colors"
+                      >Jornadas de promoción de la salud</span
+                    >
+                  </li>
+                  <li class="flex items-start group/item">
+                    <div
+                      class="flex-shrink-0 w-6 h-6 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mr-4 mt-1"
+                    >
+                      <i class="fas fa-check text-white text-xs"></i>
+                    </div>
+                    <span
+                      class="group-hover/item:text-red-600 transition-colors"
+                      >Pláticas sobre nutrición y prevención de adicciones</span
+                    >
+                  </li>
+                  <li class="flex items-start group/item">
+                    <div
+                      class="flex-shrink-0 w-6 h-6 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mr-4 mt-1"
+                    >
+                      <i class="fas fa-check text-white text-xs"></i>
+                    </div>
+                    <span
+                      class="group-hover/item:text-red-600 transition-colors"
+                      >Promoción de salud mental</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Educación y Formación - Enhanced -->
+            <div
+              class="group bg-white rounded-3xl shadow-xl overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-500 border border-gray-100 relative"
+            >
+              <div
+                class="absolute -inset-1 bg-gradient-to-r from-purple-500 to-purple-600 rounded-3xl blur opacity-20 group-hover:opacity-40 transition-opacity"
+              ></div>
+
+              <div
+                class="relative bg-gradient-to-br from-purple-500 to-purple-600 h-56 flex items-center justify-center"
+              >
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"
+                ></div>
+                <i
+                  class="fas fa-graduation-cap text-6xl text-white group-hover:scale-110 transition-transform duration-300"
+                ></i>
+                <div
+                  class="absolute top-4 right-4 w-8 h-8 bg-white/20 rounded-full animate-ping"
+                ></div>
+                <div
+                  class="absolute bottom-4 left-4 w-6 h-6 bg-white/30 rounded-full animate-bounce"
+                  style="animation-delay: 1s"
+                ></div>
+              </div>
+              <div class="p-8">
+                <div class="flex items-center mb-6">
+                  <div
+                    class="w-12 h-12 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full flex items-center justify-center mr-4"
+                  >
+                    <i class="fas fa-graduation-cap text-white text-lg"></i>
+                  </div>
+                  <h3 class="text-2xl font-bold text-gray-900">
+                    Educación y Formación
+                  </h3>
+                </div>
+                <ul class="space-y-4 text-gray-600">
+                  <li class="flex items-start group/item">
+                    <div
+                      class="flex-shrink-0 w-6 h-6 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mr-4 mt-1"
+                    >
+                      <i class="fas fa-check text-white text-xs"></i>
+                    </div>
+                    <span
+                      class="group-hover/item:text-purple-600 transition-colors"
+                      >Círculos de lectura y cuenta cuentos para la niñez</span
+                    >
+                  </li>
+                  <li class="flex items-start group/item">
+                    <div
+                      class="flex-shrink-0 w-6 h-6 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mr-4 mt-1"
+                    >
+                      <i class="fas fa-check text-white text-xs"></i>
+                    </div>
+                    <span
+                      class="group-hover/item:text-purple-600 transition-colors"
+                      >Asesorías académicas en materias básicas</span
+                    >
+                  </li>
+                  <li class="flex items-start group/item">
+                    <div
+                      class="flex-shrink-0 w-6 h-6 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mr-4 mt-1"
+                    >
+                      <i class="fas fa-check text-white text-xs"></i>
+                    </div>
+                    <span
+                      class="group-hover/item:text-purple-600 transition-colors"
+                      >Orientación vocacional para jóvenes de secundaria</span
+                    >
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -977,27 +1601,82 @@
     </section>
 
     <!-- CALL TO ACTION SECTION -->
-    <section class="py-16 bg-gradient-to-r from-green-600 to-green-700">
-      <div class="container mx-auto px-4">
-        <div class="max-w-4xl mx-auto text-center">
-          <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
-            ¡Sé parte del cambio!
-          </h2>
-          <p class="text-xl text-green-100 mb-8">
-            Únete a nuestra comunidad y participa en las actividades de "CECyTE
-            en Tu Comunidad"
-          </p>
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+    <section
+      class="py-24 bg-gradient-to-br from-green-600 via-green-700 to-blue-600 relative overflow-hidden"
+    >
+      <!-- Background decorative elements -->
+      <div class="absolute inset-0 overflow-hidden">
+        <div
+          class="absolute top-1/4 left-1/4 w-40 h-40 bg-white/10 rounded-full animate-pulse"
+        ></div>
+        <div
+          class="absolute bottom-1/4 right-1/4 w-32 h-32 bg-orange-300/20 rounded-full animate-bounce"
+          style="animation-duration: 4s"
+        ></div>
+        <div
+          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-white/5 rounded-full animate-spin"
+          style="animation-duration: 20s"
+        ></div>
+        <!-- Floating particles -->
+        <div
+          class="absolute top-1/3 left-1/3 w-2 h-2 bg-white/60 rounded-full animate-ping"
+        ></div>
+        <div
+          class="absolute top-2/3 right-1/3 w-3 h-3 bg-orange-300/40 rounded-full animate-ping"
+          style="animation-delay: 1s"
+        ></div>
+        <div
+          class="absolute top-1/2 right-1/4 w-1 h-1 bg-white/80 rounded-full animate-ping"
+          style="animation-delay: 2s"
+        ></div>
+      </div>
+
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="max-w-6xl mx-auto text-center">
+          <!-- Enhanced header -->
+          <div class="mb-12">
+            <div class="inline-block mb-6">
+              <span
+                class="inline-flex items-center bg-white/20 backdrop-blur-sm text-white px-6 py-3 rounded-full text-sm font-bold shadow-lg border border-white/30"
+              >
+                <i class="fas fa-heart mr-2"></i>
+                Únete a la Comunidad
+              </span>
+            </div>
+            <h2
+              class="text-5xl md:text-6xl font-black text-white mb-8 leading-tight"
+            >
+              <span class="block">¡Sé parte del</span>
+              <span class="block text-orange-300"> Cambio! </span>
+            </h2>
+            <p
+              class="text-xl md:text-2xl text-green-100 mb-8 leading-relaxed max-w-4xl mx-auto"
+            >
+              Únete a nuestra comunidad y participa en las actividades de
+              <span class="font-bold text-orange-200"
+                >"CECyTE en Tu Comunidad"</span
+              >
+            </p>
+          </div>
+
+          <!-- Enhanced CTA buttons -->
+          <div class="flex flex-col sm:flex-row gap-6 justify-center mb-12">
             <a
               href="index.html"
-              class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105"
+              class="group inline-flex items-center justify-center bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-5 px-10 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl shadow-xl"
             >
+              <i
+                class="fas fa-home mr-3 group-hover:translate-x-1 transition-transform"
+              ></i>
               Volver al Inicio
             </a>
             <a
               href="noticias.html"
-              class="inline-block border-2 border-white text-white hover:bg-white hover:text-green-700 font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105"
+              class="group inline-flex items-center justify-center border-2 border-white/80 text-white hover:bg-white/10 hover:border-white font-bold py-5 px-10 rounded-2xl transition-all duration-300 transform hover:scale-105 backdrop-blur-sm"
             >
+              <i
+                class="fas fa-newspaper mr-3 group-hover:rotate-12 transition-transform"
+              ></i>
               Ver Noticias
             </a>
           </div>
@@ -1006,126 +1685,248 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-white dark:bg-gray-900">
-      <div class="border-t-4 border-gray-400 dark:border-gray-1000"></div>
-      <div class="mx-auto w-full max-w-screen-xl">
-        <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
-          <div>
-            <h2
-              class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
-            >
-              Sitios de Interés
-            </h2>
-            <ul class="text-gray-500 dark:text-gray-400 font-medium">
-              <li class="mb-4">
-                <a href="https://itaibcs.net/" class="hover:underline"
-                  >ITAI del Estado de B.C.S.</a
-                >
-              </li>
-              <li class="mb-4">
-                <a href="comites.html" class="hover:underline">Comité</a>
-              </li>
-              <li class="mb-4">
-                <a
-                  href="https://cecytebcs.edu.mx/intranet/"
-                  class="hover:underline"
-                  >Intranet</a
-                >
-              </li>
-              <li class="mb-4">
-                <a
-                  href="https://drive.google.com/drive/folders/1uv1d-JP30PMer_gribOo0pLO7AWGAsNV?usp=sharing/"
-                  class="hover:underline"
-                  >Compras y Licitaciones</a
-                >
-              </li>
-              <li class="mb-4">
-                <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSfOfmG7BHg8p731LYgcVC5WO5l3hzCtjJqzxMrkgByNG4Iz5A/viewform"
-                  class="hover:underline"
-                  >Buzon de quejas</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h2
-              class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
-            >
-              Domicilio
-            </h2>
-            <ul class="text-gray-500 dark:text-gray-400 font-medium">
-              <li class="mb-4">
-                <p>Golfo de California No. 190</p>
-              </li>
-              <li class="mb-4">
-                <p>Col. El Conchalito.</p>
-              </li>
-              <li class="mb-4">
-                <p>Cp: 23090</p>
-              </li>
-              <li class="mb-4">
-                <p>La Paz B.C.S</p>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h2
-              class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
-            >
-              Teléfonos
-            </h2>
-            <ul class="text-gray-500 dark:text-gray-400 font-medium">
-              <li class="mb-4">
-                <a href="#" class="hover:underline">612 - 12 32244</a>
-              </li>
-              <li class="mb-4">
-                <a href="#" class="hover:underline">612 - 12 40430</a>
-              </li>
-              <li class="mb-4">
-                <a href="#" class="hover:underline">612 - 12 40656</a>
-              </li>
-              <li class="mb-4">
-                <a href="#" class="hover:underline">612 - 12 40656</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h2
-              class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
-            >
-              SIGUENOS
-            </h2>
-            <ul class="text-gray-500 dark:text-gray-400 font-medium">
-              <li class="mb-4">
-                <a
-                  href="https://www.facebook.com/DGCECYTEBCS"
-                  class="hover:underline"
-                  >FACEBOOK</a
-                >
-              </li>
-
-              <li class="mb-4">
-                <a
-                  href="https://x.com/CECYTE_BCS?lang=es"
-                  class="hover:underline"
-                  >x</a
-                >
-              </li>
-              <li class="mb-4">
-                <a
-                  href="https://www.youtube.com/channel/UCAjoT3ODBsMhq75-KFJuNYA"
-                  class="hover:underline"
-                  >YOUTUBE</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
+    <footer
+      class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 relative overflow-hidden"
+    >
+      <!-- Background decorative elements -->
+      <div class="absolute inset-0 overflow-hidden">
+        <div
+          class="absolute top-1/4 right-1/4 w-32 h-32 bg-green-500/10 rounded-full animate-pulse"
+        ></div>
+        <div
+          class="absolute bottom-1/4 left-1/4 w-24 h-24 bg-orange-500/10 rounded-full animate-bounce"
+          style="animation-duration: 4s"
+        ></div>
+        <div
+          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-blue-500/5 rounded-full animate-spin"
+          style="animation-duration: 20s"
+        ></div>
       </div>
 
-      <div class="text-center p-4 bg-gray-800 text-white text-sm">
-        © 2024 Departamento de Informática. Todos los derechos reservados.
+      <div class="relative z-10">
+        <!-- Enhanced border -->
+        <div
+          class="h-1 bg-gradient-to-r from-green-500 via-orange-500 to-green-500"
+        ></div>
+
+        <div class="mx-auto w-full max-w-screen-xl">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-4 py-12"
+          >
+            <!-- Sitios de Interés - Enhanced -->
+            <div class="space-y-6">
+              <div class="flex items-center space-x-3">
+                <div
+                  class="w-10 h-10 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center"
+                >
+                  <i class="fas fa-link text-white text-sm"></i>
+                </div>
+                <h2 class="text-lg font-bold text-white">Sitios de Interés</h2>
+              </div>
+              <ul class="space-y-4">
+                <li>
+                  <a
+                    href="https://itaibcs.net/"
+                    class="group flex items-center text-gray-300 hover:text-green-400 transition-colors duration-300"
+                  >
+                    <i
+                      class="fas fa-external-link-alt mr-3 group-hover:translate-x-1 transition-transform"
+                    ></i>
+                    ITAI del Estado de B.C.S.
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="comites.html"
+                    class="group flex items-center text-gray-300 hover:text-green-400 transition-colors duration-300"
+                  >
+                    <i
+                      class="fas fa-users mr-3 group-hover:translate-x-1 transition-transform"
+                    ></i>
+                    Comité
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://cecytebcs.edu.mx/intranet/"
+                    class="group flex items-center text-gray-300 hover:text-green-400 transition-colors duration-300"
+                  >
+                    <i
+                      class="fas fa-network-wired mr-3 group-hover:translate-x-1 transition-transform"
+                    ></i>
+                    Intranet
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://drive.google.com/drive/folders/1uv1d-JP30PMer_gribOo0pLO7AWGAsNV?usp=sharing/"
+                    class="group flex items-center text-gray-300 hover:text-green-400 transition-colors duration-300"
+                  >
+                    <i
+                      class="fas fa-shopping-cart mr-3 group-hover:translate-x-1 transition-transform"
+                    ></i>
+                    Compras y Licitaciones
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfOfmG7BHg8p731LYgcVC5WO5l3hzCtjJqzxMrkgByNG4Iz5A/viewform"
+                    class="group flex items-center text-gray-300 hover:text-green-400 transition-colors duration-300"
+                  >
+                    <i
+                      class="fas fa-envelope mr-3 group-hover:translate-x-1 transition-transform"
+                    ></i>
+                    Buzón de quejas
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Domicilio - Enhanced -->
+            <div class="space-y-6">
+              <div class="flex items-center space-x-3">
+                <div
+                  class="w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center"
+                >
+                  <i class="fas fa-map-marker-alt text-white text-sm"></i>
+                </div>
+                <h2 class="text-lg font-bold text-white">Domicilio</h2>
+              </div>
+              <div class="space-y-4">
+                <div class="flex items-start space-x-3">
+                  <i class="fas fa-building text-green-400 mt-1"></i>
+                  <div>
+                    <p class="text-gray-300">Golfo de California No. 190</p>
+                    <p class="text-gray-300">Col. El Conchalito</p>
+                  </div>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <i class="fas fa-mail-bulk text-green-400"></i>
+                  <p class="text-gray-300">CP: 23090</p>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <i class="fas fa-city text-green-400"></i>
+                  <p class="text-gray-300">La Paz B.C.S</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Teléfonos - Enhanced -->
+            <div class="space-y-6">
+              <div class="flex items-center space-x-3">
+                <div
+                  class="w-10 h-10 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full flex items-center justify-center"
+                >
+                  <i class="fas fa-phone text-white text-sm"></i>
+                </div>
+                <h2 class="text-lg font-bold text-white">Teléfonos</h2>
+              </div>
+              <div class="space-y-4">
+                <a
+                  href="tel:6121232244"
+                  class="group flex items-center text-gray-300 hover:text-orange-400 transition-colors duration-300"
+                >
+                  <i
+                    class="fas fa-phone mr-3 group-hover:scale-110 transition-transform"
+                  ></i>
+                  612 - 12 32244
+                </a>
+                <a
+                  href="tel:6121240430"
+                  class="group flex items-center text-gray-300 hover:text-orange-400 transition-colors duration-300"
+                >
+                  <i
+                    class="fas fa-phone mr-3 group-hover:scale-110 transition-transform"
+                  ></i>
+                  612 - 12 40430
+                </a>
+                <a
+                  href="tel:6121240656"
+                  class="group flex items-center text-gray-300 hover:text-orange-400 transition-colors duration-300"
+                >
+                  <i
+                    class="fas fa-phone mr-3 group-hover:scale-110 transition-transform"
+                  ></i>
+                  612 - 12 40656
+                </a>
+                <a
+                  href="tel:6121240656"
+                  class="group flex items-center text-gray-300 hover:text-orange-400 transition-colors duration-300"
+                >
+                  <i
+                    class="fas fa-phone mr-3 group-hover:scale-110 transition-transform"
+                  ></i>
+                  612 - 12 40656
+                </a>
+              </div>
+            </div>
+
+            <!-- Redes Sociales - Enhanced -->
+            <div class="space-y-6">
+              <div class="flex items-center space-x-3">
+                <div
+                  class="w-10 h-10 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full flex items-center justify-center"
+                >
+                  <i class="fas fa-share-alt text-white text-sm"></i>
+                </div>
+                <h2 class="text-lg font-bold text-white">Síguenos</h2>
+              </div>
+              <div class="space-y-4">
+                <a
+                  href="https://www.facebook.com/DGCECYTEBCS"
+                  class="group flex items-center text-gray-300 hover:text-blue-400 transition-colors duration-300"
+                >
+                  <i
+                    class="fab fa-facebook-f mr-3 group-hover:scale-110 transition-transform"
+                  ></i>
+                  Facebook
+                </a>
+                <a
+                  href="https://x.com/CECYTE_BCS?lang=es"
+                  class="group flex items-center text-gray-300 hover:text-blue-400 transition-colors duration-300"
+                >
+                  <i
+                    class="fab fa-twitter mr-3 group-hover:scale-110 transition-transform"
+                  ></i>
+                  Twitter/X
+                </a>
+                <a
+                  href="https://www.youtube.com/channel/UCAjoT3ODBsMhq75-KFJuNYA"
+                  class="group flex items-center text-gray-300 hover:text-red-400 transition-colors duration-300"
+                >
+                  <i
+                    class="fab fa-youtube mr-3 group-hover:scale-110 transition-transform"
+                  ></i>
+                  YouTube
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Enhanced bottom section -->
+        <div class="bg-gradient-to-r from-gray-800 to-gray-900 py-6">
+          <div class="max-w-screen-xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+              <div class="flex items-center space-x-4 mb-4 md:mb-0">
+                <div
+                  class="w-8 h-8 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center"
+                >
+                  <i class="fas fa-graduation-cap text-white text-sm"></i>
+                </div>
+                <p class="text-gray-300 text-sm">
+                  © 2024 Departamento de Informática. Todos los derechos
+                  reservados.
+                </p>
+              </div>
+              <div class="flex items-center space-x-6">
+                <span class="text-gray-400 text-sm">CECyTE BCS</span>
+                <div class="w-1 h-1 bg-gray-500 rounded-full"></div>
+                <span class="text-gray-400 text-sm">Comunidad Educativa</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
 
@@ -1170,8 +1971,9 @@
       });
     </script>
 
-    <!-- Custom animations -->
+    <!-- Enhanced Custom animations and styles -->
     <style>
+      /* Enhanced fadeIn animation */
       @keyframes fadeIn {
         from {
           opacity: 0;
@@ -1183,14 +1985,112 @@
         }
       }
 
+      /* Slide in from left animation */
+      @keyframes slideInLeft {
+        from {
+          opacity: 0;
+          transform: translateX(-50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      /* Slide in from right animation */
+      @keyframes slideInRight {
+        from {
+          opacity: 0;
+          transform: translateX(50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      /* Scale in animation */
+      @keyframes scaleIn {
+        from {
+          opacity: 0;
+          transform: scale(0.8);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      /* Floating animation */
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      /* Pulse glow animation */
+      @keyframes pulseGlow {
+        0%,
+        100% {
+          box-shadow: 0 0 20px rgba(34, 197, 94, 0.3);
+        }
+        50% {
+          box-shadow: 0 0 40px rgba(34, 197, 94, 0.6);
+        }
+      }
+
+      /* Gradient text animation */
+      @keyframes gradientShift {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      /* Enhanced animation classes */
       .animate-fadeIn {
-        animation: fadeIn 0.6s ease-out forwards;
+        animation: fadeIn 0.8s ease-out forwards;
+      }
+
+      .animate-slideInLeft {
+        animation: slideInLeft 0.8s ease-out forwards;
+      }
+
+      .animate-slideInRight {
+        animation: slideInRight 0.8s ease-out forwards;
+      }
+
+      .animate-scaleIn {
+        animation: scaleIn 0.6s ease-out forwards;
+      }
+
+      .animate-float {
+        animation: float 3s ease-in-out infinite;
+      }
+
+      .animate-pulseGlow {
+        animation: pulseGlow 2s ease-in-out infinite;
+      }
+
+      .animate-gradientShift {
+        background-size: 200% 200%;
+        animation: gradientShift 3s ease infinite;
       }
 
       /* Line clamp utilities */
       .line-clamp-2 {
         display: -webkit-box;
         -webkit-line-clamp: 2;
+        line-clamp: 2;
         -webkit-box-orient: vertical;
         overflow: hidden;
       }
@@ -1198,18 +2098,170 @@
       .line-clamp-3 {
         display: -webkit-box;
         -webkit-line-clamp: 3;
+        line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
       }
 
-      /* News card hover effects */
+      /* Enhanced card hover effects */
       .news-card {
-        transition: all 0.3s ease;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
       }
 
       .news-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        transform: translateY(-8px) scale(1.02);
+        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+      }
+
+      /* Glassmorphism effect */
+      .glass {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      /* Enhanced button hover effects */
+      .btn-hover-lift {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      .btn-hover-lift:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Text gradient animation */
+      .text-gradient-animated {
+        background: linear-gradient(-45deg, #10b981, #f59e0b, #3b82f6, #8b5cf6);
+        background-size: 400% 400%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        animation: gradientShift 3s ease infinite;
+      }
+
+      /* Enhanced scroll animations */
+      .scroll-reveal {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      .scroll-reveal.revealed {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Parallax effect */
+      .parallax {
+        transform: translateZ(0);
+        will-change: transform;
+      }
+
+      /* Enhanced focus states */
+      .focus-ring:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.5);
+        border-radius: 8px;
+      }
+
+      /* Loading animation */
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .animate-spin-slow {
+        animation: spin 3s linear infinite;
+      }
+
+      /* Bounce animation enhancement */
+      @keyframes bounce {
+        0%,
+        20%,
+        53%,
+        80%,
+        100% {
+          transform: translate3d(0, 0, 0);
+        }
+        40%,
+        43% {
+          transform: translate3d(0, -15px, 0);
+        }
+        70% {
+          transform: translate3d(0, -7px, 0);
+        }
+        90% {
+          transform: translate3d(0, -2px, 0);
+        }
+      }
+
+      .animate-bounce-enhanced {
+        animation: bounce 2s infinite;
+      }
+
+      /* Stagger animation for lists */
+      .stagger-item {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeIn 0.6s ease-out forwards;
+      }
+
+      .stagger-item:nth-child(1) {
+        animation-delay: 0.1s;
+      }
+      .stagger-item:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+      .stagger-item:nth-child(3) {
+        animation-delay: 0.3s;
+      }
+      .stagger-item:nth-child(4) {
+        animation-delay: 0.4s;
+      }
+      .stagger-item:nth-child(5) {
+        animation-delay: 0.5s;
+      }
+
+      /* Enhanced mobile responsiveness */
+      @media (max-width: 768px) {
+        .animate-fadeIn {
+          animation-duration: 0.6s;
+        }
+
+        .news-card:hover {
+          transform: translateY(-4px) scale(1.01);
+        }
+      }
+
+      /* Dark mode support */
+      @media (prefers-color-scheme: dark) {
+        .glass {
+          background: rgba(0, 0, 0, 0.1);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+      }
+
+      /* Reduced motion support */
+      @media (prefers-reduced-motion: reduce) {
+        .animate-fadeIn,
+        .animate-slideInLeft,
+        .animate-slideInRight,
+        .animate-scaleIn,
+        .animate-float,
+        .animate-pulseGlow,
+        .animate-gradientShift,
+        .animate-bounce-enhanced {
+          animation: none;
+        }
+
+        .news-card:hover {
+          transform: none;
+        }
       }
     </style>
   </body>
