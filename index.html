@@ -1,10 +1,141 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <!-- Meta tags -->
+    <!-- Meta tags básicos -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CECYTE BCS</title>
+
+    <!-- SEO Meta Tags -->
+    <title>
+      CECYTE BCS - Colegio de Estudios Científicos y Tecnológicos de Baja
+      California Sur
+    </title>
+    <meta
+      name="description"
+      content="CECYTE BCS - Colegio de Estudios Científicos y Tecnológicos de Baja California Sur. Educación media superior de calidad con carreras técnicas en programación, mantenimiento de cómputo, hotelería, ecoturismo y más. Planteles en La Paz, Los Cabos, Mulegé y más municipios."
+    />
+    <meta
+      name="keywords"
+      content="CECYTE BCS, educación media superior, bachillerato tecnológico, carreras técnicas, programación, mantenimiento cómputo, hotelería, ecoturismo, La Paz, Los Cabos, Mulegé, Baja California Sur, educación pública"
+    />
+    <meta name="author" content="CECYTE BCS - Departamento de Informática" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="es" />
+    <meta name="revisit-after" content="7 days" />
+
+    <!-- Open Graph Meta Tags (Facebook, LinkedIn) -->
+    <meta
+      property="og:title"
+      content="CECYTE BCS - Colegio de Estudios Científicos y Tecnológicos"
+    />
+    <meta
+      property="og:description"
+      content="Educación media superior de calidad con carreras técnicas en programación, mantenimiento de cómputo, hotelería, ecoturismo y más en Baja California Sur."
+    />
+    <meta
+      property="og:image"
+      content="https://cecytebcs.edu.mx/img_logos/logo_Cecyte_vertical_sin_fondo.png"
+    />
+    <meta property="og:url" content="https://cecytebcs.edu.mx" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="CECYTE BCS" />
+    <meta property="og:locale" content="es_MX" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="CECYTE BCS - Educación Media Superior de Calidad"
+    />
+    <meta
+      name="twitter:description"
+      content="Carreras técnicas en programación, mantenimiento de cómputo, hotelería, ecoturismo y más en Baja California Sur."
+    />
+    <meta
+      name="twitter:image"
+      content="https://cecytebcs.edu.mx/img_logos/logo_Cecyte_vertical_sin_fondo.png"
+    />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://cecytebcs.edu.mx" />
+
+    <!-- Sitemap -->
+    <link
+      rel="sitemap"
+      type="application/xml"
+      title="Sitemap"
+      href="/sitemap.xml"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="img_logos/logo_Cecyte_vertical_sin_fondo.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="img_logos/logo_Cecyte_vertical_sin_fondo.png"
+    />
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "CECYTE BCS",
+        "alternateName": "Colegio de Estudios Científicos y Tecnológicos de Baja California Sur",
+        "description": "Colegio de Estudios Científicos y Tecnológicos de Baja California Sur, ofreciendo educación media superior de calidad con carreras técnicas.",
+        "url": "https://cecytebcs.edu.mx",
+        "logo": "https://cecytebcs.edu.mx/img_logos/logo_Cecyte_vertical_sin_fondo.png",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Golfo de California No. 190",
+          "addressLocality": "La Paz",
+          "addressRegion": "Baja California Sur",
+          "postalCode": "23090",
+          "addressCountry": "MX"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+52-612-124-0430",
+          "contactType": "Admissions"
+        },
+        "sameAs": [
+          "https://www.facebook.com/DGCECYTEBCS",
+          "https://x.com/CECYTE_BCS",
+          "https://www.youtube.com/channel/UCAjoT3ODBsMhq75-KFJuNYA",
+          "https://www.instagram.com/cecyte_bcs/",
+          "https://www.tiktok.com/@cecytebcs"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Carreras Técnicas",
+          "itemListElement": [
+            {
+              "@type": "Course",
+              "name": "Programación",
+              "description": "Desarrollo de software, web y aplicaciones móviles"
+            },
+            {
+              "@type": "Course",
+              "name": "Mantenimiento de Equipo de Cómputo",
+              "description": "Mantenimiento y reparación de equipos informáticos"
+            },
+            {
+              "@type": "Course",
+              "name": "Servicios de Hotelería",
+              "description": "Gestión hotelera y servicio al cliente"
+            },
+            {
+              "@type": "Course",
+              "name": "Ecoturismo",
+              "description": "Turismo sostenible y gestión ambiental"
+            }
+          ]
+        }
+      }
+    </script>
 
     <!-- Estilos y fuentes -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -41,7 +172,7 @@
           <div class="flex-shrink-0 flex items-center">
             <img
               src="img_logos/logo_Cecyte_vertical_sin_fondo.png"
-              alt="logo_Cecyte_vertical_sin_fondo"
+              alt="CECYTE BCS - Colegio de Estudios Científicos y Tecnológicos de Baja California Sur"
               class="h-12 w-auto"
             />
           </div>
@@ -138,12 +269,12 @@
                 <a
                   href="pages_oferta_educativa/mantenimiento_equipo_de_computo.html"
                   class="block py-2 px-4 text-gray-700 hover:bg-gray-100"
-                  >Soporte y Mantenimiento equipo de computo</a
+                  >Soporte y Mantenimiento de equipo de cómputo</a
                 >
                 <a
                   href="pages_oferta_educativa/programacion.html"
                   class="block py-2 px-4 text-gray-700 hover:bg-gray-100"
-                  >Programacion</a
+                  >Programación</a
                 >
                 <a
                   href="pages_oferta_educativa/ventas.html"
@@ -168,7 +299,7 @@
                 <a
                   href="pages_oferta_educativa/servicios_de_hoteleria.html"
                   class="block py-2 px-4 text-gray-700 hover:bg-gray-100"
-                  >Servicios de Hoteleria</a
+                  >Servicios de Hotelería</a
                 >
               </div>
             </div>
@@ -202,14 +333,14 @@
                 <a
                   href="https://drive.google.com/file/d/143LGPrFHMY_bS4odyrRyx5EuxEjoytEC/view?usp=drive_link"
                   class="block py-2 px-4 text-gray-700 hover:bg-gray-100"
-                  >Reglamento de Escolaridad CEcyteBCS</a
+                  >Reglamento de Escolaridad CECYTE BCS</a
                 >
 
                 <a
                   href="https://drive.google.com/file/d/1ewSW14CPvRKedEoxHU2wB4f_yx7WGZjM/view?usp=drive_link"
                   class="block py-2 px-4 text-gray-700 hover:bg-gray-100"
-                  >Reglamento Asociaciones De Padres Y Madres De Familia
-                  Cecytebcs</a
+                  >Reglamento Asociaciones de Padres y Madres de Familia CECYTE
+                  BCS</a
                 >
               </div>
             </div>
@@ -232,17 +363,17 @@
                 <a
                   href="pages_normatividad/manuales_de_org.html"
                   class="block py-2 px-4 text-gray-700 hover:bg-gray-100"
-                  >Manuales de Organizacion</a
+                  >Manuales de Organización</a
                 >
                 <a
                   href="https://drive.google.com/file/d/1w1kARXVhw-SFsSY7q7JPBH4MgAqN8C_S/view?usp=drive_link"
                   class="block py-2 px-4 text-gray-700 hover:bg-gray-100"
-                  >Reglamento interno</a
+                  >Reglamento Interno</a
                 >
                 <a
                   href="https://drive.google.com/file/d/13m142kMwEJ6hj8xaDJXu-XdA-jAkO9jb/view?usp=sharing"
                   class="block py-2 px-4 text-gray-700 hover:bg-gray-100"
-                  >Codigo de Conducta</a
+                  >Código de Conducta</a
                 >
                 <a
                   href="https://drive.google.com/file/d/1lIJBD8IXxHcM3hwp7v3VmG2X1EJZXKnG/view?usp=sharing"
@@ -253,7 +384,7 @@
                 <a
                   href="https://drive.google.com/file/d/1g3kR6hG8EnDKR-mNqczA9tI48ijncxSF/view?usp=sharing"
                   class="block py-2 px-4 text-gray-700 hover:bg-gray-100"
-                  >Decreto de Creacion</a
+                  >Decreto de Creación</a
                 >
               </div>
             </div>
@@ -271,17 +402,17 @@
                 <a
                   href="https://transparencia.cecytebcs.edu.mx/informacion-publica/articulo-75"
                   class="block py-2 px-4 text-gray-700 hover:bg-gray-100"
-                  >Articulo 75</a
+                  >Artículo 75</a
                 >
                 <a
                   href="pages_transparencia/cuenta_publica.html"
                   class="block py-2 px-4 text-gray-700 hover:bg-gray-100"
-                  >Cuenta publica</a
+                  >Cuenta Pública</a
                 >
                 <a
                   href="pages_transparencia/ley_diciplina.html"
                   class="block py-2 px-4 text-gray-700 hover:bg-gray-100"
-                  >Ley de diciplina Financiera</a
+                  >Ley de Disciplina Financiera</a
                 >
               </div>
             </div>
@@ -290,7 +421,7 @@
             <a
               href="comunidad.html"
               class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium"
-              >Cecyte es Comunidad</a
+              >CECYTE es Comunidad</a
             >
           </div>
         </div>
@@ -403,7 +534,7 @@
             <a
               href="pages_oferta_educativa/mantenimiento_equipo_de_computo.html"
               class="block px-8 py-2 text-gray-700 hover:bg-gray-100"
-              >Soporte y Mantenimiento equipo de cómputo</a
+              >Soporte y Mantenimiento de equipo de cómputo</a
             >
             <a
               href="pages_oferta_educativa/programacion.html"
@@ -513,7 +644,7 @@
             <a
               href="https://drive.google.com/file/d/1w1kARXVhw-SFsSY7q7JPBH4MgAqN8C_S/view?usp=drive_link"
               class="block px-8 py-2 text-gray-700 hover:bg-gray-100"
-              >Reglamento interno</a
+              >Reglamento Interno</a
             >
             <a
               href="https://drive.google.com/file/d/13m142kMwEJ6hj8xaDJXu-XdA-jAkO9jb/view?usp=sharing"
@@ -558,12 +689,12 @@
             <a
               href="pages_transparencia/cuenta_publica.html"
               class="block px-8 py-2 text-gray-700 hover:bg-gray-100"
-              >Cuenta pública</a
+              >Cuenta Pública</a
             >
             <a
               href="pages_transparencia/ley_diciplina.html"
               class="block px-8 py-2 text-gray-700 hover:bg-gray-100"
-              >Ley de disciplina Financiera</a
+              >Ley de Disciplina Financiera</a
             >
           </div>
         </div>
@@ -574,7 +705,7 @@
             href="comunidad.html"
             class="block w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 focus:outline-none"
           >
-            Cecyte es Comunidad
+            CECYTE es Comunidad
           </a>
         </div>
       </div>
@@ -582,11 +713,50 @@
       <!-- Lema -->
       <div class="w-full h-1 bg-orange-500"></div>
       <section
-        class="w-full bg-gray-500 text-white py-2 flex justify-center items-center"
+        class="w-full bg-gray-500 text-white py-2 flex flex-col md:flex-row justify-center items-center gap-4"
       >
         <h1 class="text-xl md:text-xl font-bold text-center">
-          "CECyTE: Orgullo y transformacion de la Nueva Escuela Mexicana."
+          "CECyTE: Orgullo y transformación de la Nueva Escuela Mexicana."
         </h1>
+
+        <!-- Botones de Redes Sociales -->
+        <div class="flex items-center gap-1">
+          <a
+            href="https://www.facebook.com/DGCECYTEBCS"
+            target="_blank"
+            class="text-white/80 hover:text-white hover:bg-white/10 px-2 py-1 rounded transition-all duration-200"
+            title="Síguenos en Facebook"
+          >
+            <i class="fab fa-facebook-f text-sm"></i>
+          </a>
+
+          <a
+            href="https://www.youtube.com/channel/UCAjoT3ODBsMhq75-KFJuNYA"
+            target="_blank"
+            class="text-white/80 hover:text-white hover:bg-white/10 px-2 py-1 rounded transition-all duration-200"
+            title="Síguenos en YouTube"
+          >
+            <i class="fab fa-youtube text-sm"></i>
+          </a>
+
+          <a
+            href="https://www.instagram.com/cecyte_bcs/"
+            target="_blank"
+            class="text-white/80 hover:text-white hover:bg-white/10 px-2 py-1 rounded transition-all duration-200"
+            title="Síguenos en Instagram"
+          >
+            <i class="fab fa-instagram text-sm"></i>
+          </a>
+
+          <a
+            href="https://www.tiktok.com/@cecytebcs"
+            target="_blank"
+            class="text-white/80 hover:text-white hover:bg-white/10 px-2 py-1 rounded transition-all duration-200"
+            title="Síguenos en TikTok"
+          >
+            <i class="fab fa-tiktok text-sm"></i>
+          </a>
+        </div>
       </section>
     </nav>
 
@@ -635,7 +805,7 @@
           <div class="relative animate-float">
             <img
               src="img_logos/logo_Cecyte_vertical_sin_fondo.png"
-              alt="CECyTE Logo"
+              alt="CECYTE BCS - Logo del Colegio de Estudios Científicos y Tecnológicos de Baja California Sur"
               class="relative w-64 md:max-w-lg mx-auto transform hover:scale-105 transition-all duration-500 drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]"
             />
           </div>
@@ -652,6 +822,10 @@
               Colegio de Estudios
               <span class="text-orange-400">Científicos</span> y
               <span class="text-orange-400">Tecnológicos</span>
+              <span
+                class="block text-2xl md:text-3xl lg:text-4xl mt-2 text-gray-200"
+                >Baja California Sur</span
+              >
             </h1>
             <p
               class="text-xl md:text-3xl text-gray-200 font-light italic animate-slideUp"
@@ -892,7 +1066,7 @@
           <div class="lg:w-1/2 space-y-8 bg-white rounded-2xl p-8 shadow-xl">
             <div class="space-y-4">
               <h2 class="text-4xl font-bold text-green-700 leading-tight">
-                Nuestra Misión
+                Nuestra Misión - CECYTE BCS
               </h2>
 
               <div class="w-20 h-1 bg-green-600"></div>
@@ -1066,7 +1240,7 @@
         class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
       >
         <h2 class="text-4xl font-extrabold text-gray-900 mb-4 tracking-tight">
-          ÚLTIMAS NOTICIAS
+          ÚLTIMAS NOTICIAS - CECYTE BCS
         </h2>
 
         <div class="flex justify-center items-center gap-4 mb-6">
@@ -1230,7 +1404,7 @@
         <!-- Título de la sección -->
         <div class="text-center mb-12">
           <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
-            Galería de Videos
+            Galería de Videos - CECYTE BCS
           </h2>
           <div class="flex justify-center items-center gap-4 mb-6">
             <div class="h-1 w-20 bg-green-600 rounded"></div>
@@ -1631,7 +1805,7 @@
         <div class="relative text-center max-w-3xl mx-auto">
           <!-- Main heading with animated underline -->
           <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
-            Explora Nuestras Carreras
+            Explora Nuestras Carreras Técnicas - CECYTE BCS
           </h2>
 
           <!-- Decorative separator -->
@@ -1872,7 +2046,7 @@
             href="oferta_educativa.html"
             class="inline-block bg-orange-600 text-white py-2 px-6 rounded-full text-sm font-semibold hover:bg-orange-700 transition-colors duration-300"
           >
-            CONCOCE TODAS NUESTRAS CARRERAS
+            CONOCE TODAS NUESTRAS CARRERAS
           </a>
         </div>
 
@@ -2032,7 +2206,7 @@
               <div
                 class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"
               >
-                <h3 class="text-xl font-bold mb-2">Buzon de quejas</h3>
+                <h3 class="text-xl font-bold mb-2">Buzón de quejas</h3>
                 <p class="text-sm opacity-90">presenta tu queja</p>
               </div>
             </a>
@@ -2141,7 +2315,7 @@
                 <a
                   href="https://docs.google.com/forms/d/e/1FAIpQLSfOfmG7BHg8p731LYgcVC5WO5l3hzCtjJqzxMrkgByNG4Iz5A/viewform"
                   class="hover:underline"
-                  >Buzon de quejas</a
+                  >Buzón de quejas</a
                 >
               </li>
               <li class="mb-4">
@@ -2202,7 +2376,7 @@
             <h2
               class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
             >
-              SIGUENOS
+              SÍGUENOS
             </h2>
             <ul class="text-gray-500 dark:text-gray-400 font-medium">
               <li class="mb-4">
@@ -2313,6 +2487,12 @@
       // Configuración de videos - ¡MODIFICA ESTE ARREGLO PARA AGREGAR TUS VIDEOS!
       const videoData = [
         {
+          id: "OYnnXBplVFo",
+          title: "",
+          description: "",
+          isReel: true,
+        },
+        {
           id: "Ag5spoS6yIY",
           title: "",
           description: "",
@@ -2350,12 +2530,6 @@
         },
         {
           id: "-RXezGWHgcU",
-          title: "",
-          description: "",
-          isReel: true, // Este es un reel vertical
-        },
-        {
-          id: "B-RrMLJ5SH0",
           title: "",
           description: "",
           isReel: true, // Este es un reel vertical
