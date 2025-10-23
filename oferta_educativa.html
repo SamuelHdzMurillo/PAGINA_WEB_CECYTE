@@ -1,443 +1,1561 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <!-- Meta tags básicos -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Oferta Educativa - CECyTE</title>
+
+    <!-- SEO Meta Tags -->
+    <title>
+      Oferta Educativa - CECYTE BCS | Carreras Técnicas y Bachillerato
+    </title>
+    <meta
+      name="description"
+      content="Descubre nuestra amplia oferta educativa en CECYTE BCS. Carreras técnicas en programación, mantenimiento de cómputo, hotelería, ecoturismo, ciberseguridad y más. Educación de calidad en Baja California Sur."
+    />
+    <meta
+      name="keywords"
+      content="oferta educativa CECYTE BCS, carreras técnicas, bachillerato tecnológico, programación, mantenimiento cómputo, hotelería, ecoturismo, ciberseguridad, Baja California Sur"
+    />
+    <meta name="author" content="CECYTE BCS - Departamento de Informática" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="es" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property="og:title"
+      content="Oferta Educativa - CECYTE BCS | Carreras Técnicas"
+    />
+    <meta
+      property="og:description"
+      content="Descubre nuestra amplia oferta educativa con carreras técnicas de calidad en programación, mantenimiento, hotelería y más."
+    />
+    <meta
+      property="og:url"
+      content="https://cecytebcs.edu.mx/oferta_educativa.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="CECYTE BCS" />
+
+    <!-- Canonical URL -->
+    <link
+      rel="canonical"
+      href="https://cecytebcs.edu.mx/oferta_educativa.html"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="img_logos/logo_Cecyte_vertical_sin_fondo.png"
+    />
+
+    <!-- Estilos y fuentes -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Librerías y frameworks -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://unpkg.com/flowbite@^2.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="https://unpkg.com/flowbite@^2.1/dist/flowbite.min.js"></script>
   </head>
-  <header class="bg-green-700 shadow-md">
-    <div
-      class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center"
-    >
-      <h1 class="text-3xl font-bold text-white">OFERTA EDUCATIVA</h1>
-      <a
-        href="index.html"
-        class="bg-orange-500 text-white px-6 py-2 rounded-lg hover:bg-orange-600 transition-all duration-300 flex items-center gap-2"
+  <body onload="mostrarFecha()">
+    <!-- Barra de navegación -->
+    <nav class="bg-white shadow-lg fixed top-0 left-0 w-full z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <!-- Logo -->
+          <div class="flex-shrink-0 flex items-center">
+            <a href="index.html">
+              <img
+                src="img_logos/logo_Cecyte_vertical_sin_fondo.png"
+                alt="CECYTE BCS - Colegio de Estudios Científicos y Tecnológicos de Baja California Sur"
+                class="h-12 w-auto hover:scale-105 transition-transform duration-300"
+              />
+            </a>
+          </div>
+
+          <!-- Botón de menú móvil -->
+          <div class="flex items-center sm:hidden">
+            <button
+              id="menu-btn"
+              class="text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700"
+            >
+              <svg
+                class="h-6 w-6 transition-transform duration-300"
+                stroke="currentColor"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Enlaces de navegación -->
+          <div class="hidden sm:flex sm:items-center sm:ml-6">
+            <!-- Menú Docentes -->
+            <div class="relative group">
+              <a
+                href="#"
+                class="text-gray-700 hover:text-green-600 px-8 py-5 rounded-md text-sm font-medium"
+                >Docentes</a
+              >
+              <div
+                class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md z-10"
+              >
+                <a
+                  href="pages_institucion/ubica_tu_plantel.html"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                  >Convocatorias</a
+                >
+                <a
+                  href="https://sites.google.com/cecytebcs.edu.mx/orientacionespej23/inicio?authuser=0"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                  >Centro Virtual 2024-2025</a
+                >
+              </div>
+            </div>
+
+            <!-- Menú Institución -->
+            <div class="relative group">
+              <a
+                href="#"
+                class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium"
+                >Institución</a
+              >
+              <div
+                class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md z-10"
+              >
+                <a
+                  href="pages_institucion/pagina_historia.html"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                  >Historia, Misión y Visión</a
+                >
+                <a
+                  href="pages_institucion/planteles_cecyte.html"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                  >Planteles CecyteBCS</a
+                >
+                <a
+                  href="pages_institucion/planteles_emsad.html"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                  >Planteles Emsad</a
+                >
+                <a
+                  href="directorio_telefonico.html"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                  >Directorio Telefónico</a
+                >
+              </div>
+            </div>
+
+            <!-- Menú Oferta Educativa (Activo) -->
+            <div class="relative group">
+              <a
+                href="oferta_educativa.html"
+                class="text-green-600 font-semibold px-5 py-5 rounded-md text-sm font-medium border-b-2 border-green-600"
+                >Oferta Educativa</a
+              >
+            </div>
+
+            <!-- Menú Alumnos -->
+            <div class="relative group">
+              <a
+                href="#"
+                class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium"
+                >Alumnos</a
+              >
+              <div
+                class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md"
+              >
+                <a
+                  href="pages_alumnos/becas.html"
+                  class="block py-2 px-4 text-gray-700 hover:bg-gray-100"
+                  >Becas</a
+                >
+                <a
+                  href="pages_alumnos/prog_acompanamiento.html"
+                  class="block py-2 px-4 text-gray-700 hover:bg-gray-100"
+                  >Programa de Acompañamiento</a
+                >
+                <a
+                  href="pages_alumnos/requisitos_de_ingreso.html"
+                  class="block py-2 px-4 text-gray-700 hover:bg-gray-100"
+                  >Requisitos de Ingreso</a
+                >
+              </div>
+            </div>
+
+            <!-- Menú Normatividad -->
+            <div class="relative group">
+              <a
+                href="#"
+                class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium"
+                >Normatividad</a
+              >
+              <div
+                class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md"
+              >
+                <a
+                  href="pages_normatividad/manuales_de_procedimientos.html"
+                  class="block py-2 px-4 text-gray-700 hover:bg-gray-100"
+                  >Manuales de Procedimientos</a
+                >
+                <a
+                  href="pages_normatividad/manuales_de_org.html"
+                  class="block py-2 px-4 text-gray-700 hover:bg-gray-100"
+                  >Manuales de Organización</a
+                >
+              </div>
+            </div>
+
+            <!-- Menú Transparencia -->
+            <div class="relative group">
+              <a
+                href="https://transparencia.cecytebcs.edu.mx/"
+                class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium"
+                >Transparencia</a
+              >
+            </div>
+
+            <!-- Menú Comunidad -->
+            <a
+              href="comunidad.html"
+              class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium"
+              >CECYTE es Comunidad</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Menú móvil -->
+      <div class="sm:hidden hidden" id="mobile-menu">
+        <!-- Menú móvil simplificado -->
+        <div class="px-2 pt-2 pb-3 space-y-1">
+          <a
+            href="index.html"
+            class="block px-3 py-2 text-gray-700 hover:text-green-600"
+            >Inicio</a
+          >
+          <a
+            href="oferta_educativa.html"
+            class="block px-3 py-2 text-green-600 font-semibold"
+            >Oferta Educativa</a
+          >
+          <a
+            href="pages_alumnos/requisitos_de_ingreso.html"
+            class="block px-3 py-2 text-gray-700 hover:text-green-600"
+            >Requisitos de Ingreso</a
+          >
+          <a
+            href="comunidad.html"
+            class="block px-3 py-2 text-gray-700 hover:text-green-600"
+            >CECYTE es Comunidad</a
+          >
+        </div>
+      </div>
+
+      <!-- Lema -->
+      <div class="w-full h-1 bg-orange-500"></div>
+      <section
+        class="w-full bg-gray-500 text-white py-2 flex flex-col md:flex-row justify-center items-center gap-4"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-5 w-5"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z"
-            clip-rule="evenodd"
-          />
-        </svg>
-        Volver al Inicio
-      </a>
-    </div>
-  </header>
+        <h1 class="text-xl md:text-xl font-bold text-center">
+          "CECyTE: Orgullo y transformación de la Nueva Escuela Mexicana."
+        </h1>
+
+        <!-- Botones de Redes Sociales -->
+        <div class="flex items-center gap-1">
+          <a
+            href="https://www.facebook.com/DGCECYTEBCS"
+            target="_blank"
+            class="text-white/80 hover:text-white hover:bg-white/10 px-2 py-1 rounded transition-all duration-200"
+            title="Síguenos en Facebook"
+          >
+            <i class="fab fa-facebook-f text-sm"></i>
+          </a>
+          <a
+            href="https://www.youtube.com/@ProcesosInform%C3%A1ticaCecytebcs"
+            target="_blank"
+            class="text-white/80 hover:text-white hover:bg-white/10 px-2 py-1 rounded transition-all duration-200"
+            title="Síguenos en YouTube"
+          >
+            <i class="fab fa-youtube text-sm"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/cecyte_bcs/"
+            target="_blank"
+            class="text-white/80 hover:text-white hover:bg-white/10 px-2 py-1 rounded transition-all duration-200"
+            title="Síguenos en Instagram"
+          >
+            <i class="fab fa-instagram text-sm"></i>
+          </a>
+          <a
+            href="https://www.tiktok.com/@cecytebcs"
+            target="_blank"
+            class="text-white/80 hover:text-white hover:bg-white/10 px-2 py-1 rounded transition-all duration-200"
+            title="Síguenos en TikTok"
+          >
+            <i class="fab fa-tiktok text-sm"></i>
+          </a>
+        </div>
+      </section>
+    </nav>
+
+    <!-- BOTON SUBIR INICIO -->
+    <button
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+      class="fixed bottom-6 right-6 bg-green-700 text-white rounded-full p-3 shadow-md hover:bg-green-600 transition-all duration-500 ease-in-out z-[9999]"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-8 w-8"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M5 15l7-7 7 7"
+        />
+      </svg>
+    </button>
+    <!-- BOTON SUBIR FIN -->
+
+    <!-- HERO SECTION -->
+    <section
+      class="relative bg-gradient-to-br from-green-50 via-white to-orange-50 pt-24 pb-16 overflow-hidden"
+    >
+      <!-- Elementos decorativos de fondo -->
+      <div class="absolute inset-0 overflow-hidden">
+        <div
+          class="absolute -top-20 -left-20 w-40 h-40 bg-green-100 rounded-full opacity-30 animate-pulse"
+        ></div>
+        <div
+          class="absolute top-1/2 -right-20 w-32 h-32 bg-orange-100 rounded-full opacity-40 animate-pulse"
+          style="animation-delay: 1s"
+        ></div>
+        <div
+          class="absolute -bottom-10 left-1/3 w-24 h-24 bg-green-200 rounded-full opacity-25 animate-pulse"
+          style="animation-delay: 2s"
+        ></div>
+      </div>
+
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="max-w-6xl mx-auto text-center">
+          <!-- Breadcrumb -->
+          <nav class="mb-8">
+            <ol
+              class="flex items-center justify-center space-x-2 text-sm text-gray-600"
+            >
+              <li>
+                <a
+                  href="index.html"
+                  class="hover:text-green-600 transition-colors"
+                  >Inicio</a
+                >
+              </li>
+              <li class="flex items-center">
+                <svg
+                  class="w-4 h-4 mx-2 text-gray-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span class="text-green-600 font-semibold"
+                  >Oferta Educativa</span
+                >
+              </li>
+            </ol>
+          </nav>
+
+          <!-- Título principal -->
+          <h1
+            class="text-4xl md:text-6xl font-extrabold text-gray-900 mb-6 leading-tight"
+          >
+            Nuestra <span class="text-green-600">Oferta Educativa</span>
+          </h1>
+
+          <!-- Subtítulo -->
+          <p
+            class="text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto leading-relaxed"
+          >
+            Descubre las carreras técnicas que te prepararán para el futuro
+            profesional. Educación de calidad con enfoque práctico y
+            tecnológico.
+          </p>
+
+          <!-- Separador decorativo -->
+          <div class="flex justify-center items-center gap-4 mb-12">
+            <div class="h-1 w-20 bg-green-600 rounded animate-pulse"></div>
+            <div class="h-1 w-20 bg-orange-500 rounded animate-pulse"></div>
+            <div class="h-1 w-20 bg-green-600 rounded animate-pulse"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN DE FILTROS -->
+    <section class="py-8 bg-white border-b border-gray-200">
+      <div class="container mx-auto px-4">
+        <div class="max-w-6xl mx-auto">
+          <div class="flex flex-wrap items-center justify-center gap-4">
+            <span class="text-gray-700 font-medium"
+              >Filtrar por modalidad:</span
+            >
+            <button
+              class="filter-btn active px-4 py-2 rounded-full bg-green-600 text-white font-medium transition-all duration-300"
+              data-filter="all"
+            >
+              Todas las Carreras
+            </button>
+            <button
+              class="filter-btn px-4 py-2 rounded-full bg-gray-100 text-gray-700 font-medium hover:bg-green-100 hover:text-green-700 transition-all duration-300"
+              data-filter="cecyte"
+            >
+              CECYTE
+            </button>
+            <button
+              class="filter-btn px-4 py-2 rounded-full bg-gray-100 text-gray-700 font-medium hover:bg-green-100 hover:text-green-700 transition-all duration-300"
+              data-filter="emsad"
+            >
+              EMSAD
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <main class="container mx-auto px-4 py-12">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Carrera 1 - Programación (Existente) -->
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        id="careers-grid"
+      >
+        <!-- Carrera 1 - Programación -->
         <div
-          class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300"
+          class="career-card group bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-500 border border-gray-100"
+          data-category="cecyte"
         >
-          <div class="relative">
+          <div class="relative overflow-hidden">
             <img
               src="img_recuros_pagina/img_oferta_edu/programacion/programacion_4k.jpg"
               alt="Programación"
-              class="w-full h-48 object-cover"
+              class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
             />
-            <span class="absolute top-0 right-0 bg-orange-500 text-white px-3 py-1 rounded-bl-lg font-bold">
-              CECyTE
-            </span>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            ></div>
+            <div class="absolute top-4 right-4">
+              <span
+                class="bg-green-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg"
+              >
+                CECYTE
+              </span>
+            </div>
+            <div
+              class="absolute bottom-4 left-4 right-4 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300"
+            >
+              <div class="flex items-center gap-2 mb-2">
+                <i class="fas fa-code text-green-400"></i>
+                <span class="text-sm font-medium">Tecnología</span>
+              </div>
+            </div>
           </div>
           <div class="p-6">
-            <h2 class="text-2xl font-bold text-green-800 mb-2">Programación</h2>
-            <p class="text-gray-600">
+            <div class="flex items-center gap-2 mb-3">
+              <i class="fas fa-code text-green-600"></i>
+              <h2 class="text-xl font-bold text-gray-900">Programación</h2>
+            </div>
+            <p class="text-gray-600 mb-4 leading-relaxed">
               Desarrolla software y aplicaciones con las últimas tecnologías.
+              Aprende programación web, móvil y de escritorio.
             </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded-full"
+                >Web</span
+              >
+              <span
+                class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full"
+                >Móvil</span
+              >
+              <span
+                class="px-2 py-1 bg-purple-100 text-purple-700 text-xs rounded-full"
+                >Bases de Datos</span
+              >
+            </div>
             <a
               href="pages_oferta_educativa/programacion.html"
-              class="mt-4 inline-block bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition-colors"
-              >Ver más</a
+              class="inline-flex items-center gap-2 bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition-all duration-300 font-medium group-hover:shadow-lg"
             >
+              <span>Explorar carrera</span>
+              <i
+                class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"
+              ></i>
+            </a>
           </div>
         </div>
 
-        <!-- Carrera 2 - Ecoturismo (Existente) -->
+        <!-- Carrera 2 - Ecoturismo -->
         <div
-          class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300"
+          class="career-card group bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-500 border border-gray-100"
+          data-category="cecyte"
         >
-          <img
-            src="img_recuros_pagina/img_oferta_edu/ecoturismo/eoc_s.jpg"
-            alt="Ecoturismo"
-            class="w-full h-48 object-cover"
-          />
+          <div class="relative overflow-hidden">
+            <img
+              src="img_recuros_pagina/img_oferta_edu/ecoturismo/eoc_s.jpg"
+              alt="Ecoturismo"
+              class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            ></div>
+            <div class="absolute top-4 right-4">
+              <span
+                class="bg-green-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg"
+              >
+                CECYTE
+              </span>
+            </div>
+            <div
+              class="absolute bottom-4 left-4 right-4 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300"
+            >
+              <div class="flex items-center gap-2 mb-2">
+                <i class="fas fa-leaf text-green-400"></i>
+                <span class="text-sm font-medium">Sostenibilidad</span>
+              </div>
+            </div>
+          </div>
           <div class="p-6">
-            <h2 class="text-2xl font-bold text-green-800 mb-2">Ecoturismo</h2>
-            <p class="text-gray-600">
+            <div class="flex items-center gap-2 mb-3">
+              <i class="fas fa-leaf text-green-600"></i>
+              <h2 class="text-xl font-bold text-gray-900">Ecoturismo</h2>
+            </div>
+            <p class="text-gray-600 mb-4 leading-relaxed">
               Gestiona proyectos turísticos sustentables y amigables con el
-              medio ambiente.
+              medio ambiente. Desarrolla turismo responsable.
             </p>
-            <span class="absolute top-0 right-0 bg-orange-500 text-white px-3 py-1 rounded-bl-lg font-bold">
-              CECyTE
-            </span>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded-full"
+                >Sostenibilidad</span
+              >
+              <span
+                class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full"
+                >Turismo</span
+              >
+              <span
+                class="px-2 py-1 bg-yellow-100 text-yellow-700 text-xs rounded-full"
+                >Medio Ambiente</span
+              >
+            </div>
             <a
               href="pages_oferta_educativa/ecoturismo.html"
-              class="mt-4 inline-block bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition-colors"
-              >Ver más</a
+              class="inline-flex items-center gap-2 bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition-all duration-300 font-medium group-hover:shadow-lg"
             >
+              <span>Explorar carrera</span>
+              <i
+                class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"
+              ></i>
+            </a>
           </div>
         </div>
 
-        <!-- Carrera 3 - Ciberseguridad (Existente) -->
+        <!-- Carrera 3 - Ciberseguridad -->
         <div
-          class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300"
+          class="career-card group bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-500 border border-gray-100"
+          data-category="cecyte"
         >
-          <img
-            src="img_recuros_pagina/img_oferta_edu/ciberseguridad/img_1.webp"
-            alt="Ciberseguridad"
-            class="w-full h-48 object-cover"
-          />
+          <div class="relative overflow-hidden">
+            <img
+              src="img_recuros_pagina/img_oferta_edu/ciberseguridad/img_1.webp"
+              alt="Ciberseguridad"
+              class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            ></div>
+            <div class="absolute top-4 right-4">
+              <span
+                class="bg-green-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg"
+              >
+                CECYTE
+              </span>
+            </div>
+            <div
+              class="absolute bottom-4 left-4 right-4 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300"
+            >
+              <div class="flex items-center gap-2 mb-2">
+                <i class="fas fa-shield-alt text-red-400"></i>
+                <span class="text-sm font-medium">Seguridad</span>
+              </div>
+            </div>
+          </div>
           <div class="p-6">
-            <h2 class="text-2xl font-bold text-green-800 mb-2">
-              Ciberseguridad
-            </h2>
-            <p class="text-gray-600">
+            <div class="flex items-center gap-2 mb-3">
+              <i class="fas fa-shield-alt text-red-600"></i>
+              <h2 class="text-xl font-bold text-gray-900">Ciberseguridad</h2>
+            </div>
+            <p class="text-gray-600 mb-4 leading-relaxed">
               Protege sistemas y redes informáticas contra amenazas digitales.
+              Especialízate en seguridad de la información.
             </p>
-            <span class="absolute top-0 right-0 bg-orange-500 text-white px-3 py-1 rounded-bl-lg font-bold">
-              CECyTE
-            </span>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="px-2 py-1 bg-red-100 text-red-700 text-xs rounded-full"
+                >Seguridad</span
+              >
+              <span
+                class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full"
+                >Redes</span
+              >
+              <span
+                class="px-2 py-1 bg-purple-100 text-purple-700 text-xs rounded-full"
+                >Hacking Ético</span
+              >
+            </div>
             <a
               href="pages_oferta_educativa/ciberseguridad.html"
-              class="mt-4 inline-block bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition-colors"
-              >Ver más</a
+              class="inline-flex items-center gap-2 bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition-all duration-300 font-medium group-hover:shadow-lg"
             >
+              <span>Explorar carrera</span>
+              <i
+                class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"
+              ></i>
+            </a>
           </div>
         </div>
 
-        <!-- Carrera 4 - Soporte y Mantenimiento de Cómputo (Existente) -->
+        <!-- Carrera 4 - Soporte y Mantenimiento de Cómputo -->
         <div
-          class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300"
+          class="career-card group bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-500 border border-gray-100"
+          data-category="cecyte"
         >
-          <img
-            src="img_recuros_pagina/img_oferta_edu/mnto_computo/mnto_computo_s.webp"
-            alt="Mantenimiento de Cómputo"
-            class="w-full h-48 object-cover"
-          />
+          <div class="relative overflow-hidden">
+            <img
+              src="img_recuros_pagina/img_oferta_edu/mnto_computo/mnto_computo_s.webp"
+              alt="Mantenimiento de Cómputo"
+              class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            ></div>
+            <div class="absolute top-4 right-4">
+              <span
+                class="bg-green-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg"
+              >
+                CECYTE
+              </span>
+            </div>
+            <div
+              class="absolute bottom-4 left-4 right-4 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300"
+            >
+              <div class="flex items-center gap-2 mb-2">
+                <i class="fas fa-laptop text-blue-400"></i>
+                <span class="text-sm font-medium">Tecnología</span>
+              </div>
+            </div>
+          </div>
           <div class="p-6">
-            <h2 class="text-2xl font-bold text-green-800 mb-2">
-              Soporte y Mantenimiento de Cómputo
-            </h2>
-            <p class="text-gray-600">
-              Mantén y repara equipos de cómputo y redes.
+            <div class="flex items-center gap-2 mb-3">
+              <i class="fas fa-laptop text-blue-600"></i>
+              <h2 class="text-xl font-bold text-gray-900">
+                Soporte y Mantenimiento de Cómputo
+              </h2>
+            </div>
+            <p class="text-gray-600 mb-4 leading-relaxed">
+              Mantén y repara equipos de cómputo y redes. Especialízate en
+              soporte técnico y mantenimiento.
             </p>
-            <span class="absolute top-0 right-0 bg-orange-500 text-white px-3 py-1 rounded-bl-lg font-bold">
-              CECyTE
-            </span>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full"
+                >Hardware</span
+              >
+              <span
+                class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded-full"
+                >Software</span
+              >
+              <span
+                class="px-2 py-1 bg-purple-100 text-purple-700 text-xs rounded-full"
+                >Redes</span
+              >
+            </div>
             <a
               href="pages_oferta_educativa/mantenimiento_equipo_de_computo.html"
-              class="mt-4 inline-block bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition-colors"
-              >Ver más</a
+              class="inline-flex items-center gap-2 bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition-all duration-300 font-medium group-hover:shadow-lg"
             >
+              <span>Explorar carrera</span>
+              <i
+                class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"
+              ></i>
+            </a>
           </div>
         </div>
 
-        <!-- Carrera 5 - Servicios de Hotelería (Existente) -->
+        <!-- Carrera 5 - Servicios de Hotelería -->
         <div
-          class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300"
+          class="career-card group bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-500 border border-gray-100"
+          data-category="cecyte"
         >
-          <img
-            src="img_recuros_pagina/img_oferta_edu/serv_hoteleria/room-service.png.webp"
-            alt="Servicios de Hotelería"
-            class="w-full h-48 object-cover"
-          />
+          <div class="relative overflow-hidden">
+            <img
+              src="img_recuros_pagina/img_oferta_edu/serv_hoteleria/room-service.png.webp"
+              alt="Servicios de Hotelería"
+              class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            ></div>
+            <div class="absolute top-4 right-4">
+              <span
+                class="bg-green-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg"
+              >
+                CECYTE
+              </span>
+            </div>
+            <div
+              class="absolute bottom-4 left-4 right-4 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300"
+            >
+              <div class="flex items-center gap-2 mb-2">
+                <i class="fas fa-hotel text-orange-400"></i>
+                <span class="text-sm font-medium">Hospitalidad</span>
+              </div>
+            </div>
+          </div>
           <div class="p-6">
-            <h2 class="text-2xl font-bold text-green-800 mb-2">
-              Servicios de Hotelería
-            </h2>
-            <p class="text-gray-600">
+            <div class="flex items-center gap-2 mb-3">
+              <i class="fas fa-hotel text-orange-600"></i>
+              <h2 class="text-xl font-bold text-gray-900">
+                Servicios de Hotelería
+              </h2>
+            </div>
+            <p class="text-gray-600 mb-4 leading-relaxed">
               Gestiona servicios de hospitalidad y atención al cliente.
+              Desarrolla habilidades en gestión hotelera y turística.
             </p>
-            <span class="absolute top-0 right-0 bg-orange-500 text-white px-3 py-1 rounded-bl-lg font-bold">
-              CECyTE
-            </span>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="px-2 py-1 bg-orange-100 text-orange-700 text-xs rounded-full"
+                >Hospitalidad</span
+              >
+              <span
+                class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full"
+                >Atención al Cliente</span
+              >
+              <span
+                class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded-full"
+                >Gestión</span
+              >
+            </div>
             <a
               href="pages_oferta_educativa/servicios_de_hoteleria.html"
-              class="mt-4 inline-block bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition-colors"
-              >Ver más</a
+              class="inline-flex items-center gap-2 bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition-all duration-300 font-medium group-hover:shadow-lg"
             >
+              <span>Explorar carrera</span>
+              <i
+                class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"
+              ></i>
+            </a>
           </div>
         </div>
 
-        <!-- Carrera 6 - Procesamiento de Alimentos (Existente) -->
+        <!-- Carrera 6 - Producción Industrial de Alimentos -->
         <div
-          class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300"
+          class="career-card group bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-500 border border-gray-100"
+          data-category="cecyte"
         >
-          <img
-            src="img_recuros_pagina/img_oferta_edu/pro_alimentos/prod_s.jpg"
-            alt="Procesamiento de Alimentos"
-            class="w-full h-48 object-cover"
-          />
+          <div class="relative overflow-hidden">
+            <img
+              src="img_recuros_pagina/img_oferta_edu/pro_alimentos/prod_s.jpg"
+              alt="Producción Industrial de Alimentos"
+              class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            ></div>
+            <div class="absolute top-4 right-4">
+              <span
+                class="bg-green-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg"
+              >
+                CECYTE
+              </span>
+            </div>
+            <div
+              class="absolute bottom-4 left-4 right-4 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300"
+            >
+              <div class="flex items-center gap-2 mb-2">
+                <i class="fas fa-industry text-orange-400"></i>
+                <span class="text-sm font-medium">Industria Alimentaria</span>
+              </div>
+            </div>
+          </div>
           <div class="p-6">
-            <h2 class="text-2xl font-bold text-green-800 mb-2">
-              Procesamiento de Alimentos
-            </h2>
-            <p class="text-gray-600">
+            <div class="flex items-center gap-2 mb-3">
+              <i class="fas fa-industry text-orange-600"></i>
+              <h2 class="text-xl font-bold text-gray-900">
+                Producción Industrial de Alimentos
+              </h2>
+            </div>
+            <p class="text-gray-600 mb-4 leading-relaxed">
               Aprende sobre la industria alimentaria y sus procesos.
+              Especialízate en producción y control de calidad alimentaria.
             </p>
-            <span class="absolute top-0 right-0 bg-orange-500 text-white px-3 py-1 rounded-bl-lg font-bold">
-              CECyTE
-            </span>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="px-2 py-1 bg-orange-100 text-orange-700 text-xs rounded-full"
+                >Producción</span
+              >
+              <span
+                class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded-full"
+                >Calidad</span
+              >
+              <span
+                class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full"
+                >Seguridad</span
+              >
+            </div>
             <a
               href="pages_oferta_educativa/produccion_industrial_de_alimentos.html"
-              class="mt-4 inline-block bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition-colors"
-              >Ver más</a
+              class="inline-flex items-center gap-2 bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition-all duration-300 font-medium group-hover:shadow-lg"
             >
+              <span>Explorar carrera</span>
+              <i
+                class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"
+              ></i>
+            </a>
           </div>
         </div>
 
-        <!-- Mantenimiento Industrial (Nueva) -->
+        <!-- Carrera 7 - Mantenimiento Industrial -->
         <div
-          class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300"
+          class="career-card group bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-500 border border-gray-100"
+          data-category="cecyte"
         >
-          <img
-            src="img_recuros_pagina/img_oferta_edu/mnto_industrial/maintenance-trends.jpeg"
-            alt="Mantenimiento Industrial"
-            class="w-full h-48 object-cover"
-          />
+          <div class="relative overflow-hidden">
+            <img
+              src="img_recuros_pagina/img_oferta_edu/mnto_industrial/maintenance-trends.jpeg"
+              alt="Mantenimiento Industrial"
+              class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            ></div>
+            <div class="absolute top-4 right-4">
+              <span
+                class="bg-green-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg"
+              >
+                CECYTE
+              </span>
+            </div>
+            <div
+              class="absolute bottom-4 left-4 right-4 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300"
+            >
+              <div class="flex items-center gap-2 mb-2">
+                <i class="fas fa-cogs text-blue-400"></i>
+                <span class="text-sm font-medium">Industrial</span>
+              </div>
+            </div>
+          </div>
           <div class="p-6">
-            <h2 class="text-2xl font-bold text-green-800 mb-2">
-              Mantenimiento Industrial
-            </h2>
-            <p class="text-gray-600">
+            <div class="flex items-center gap-2 mb-3">
+              <i class="fas fa-cogs text-blue-600"></i>
+              <h2 class="text-xl font-bold text-gray-900">
+                Mantenimiento Industrial
+              </h2>
+            </div>
+            <p class="text-gray-600 mb-4 leading-relaxed">
               Especialízate en el mantenimiento de equipos y sistemas
-              industriales.
+              industriales. Desarrolla habilidades técnicas avanzadas.
             </p>
-            <span class="absolute top-0 right-0 bg-orange-500 text-white px-3 py-1 rounded-bl-lg font-bold">
-              CECyTE
-            </span>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full"
+                >Mantenimiento</span
+              >
+              <span
+                class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded-full"
+                >Industrial</span
+              >
+              <span
+                class="px-2 py-1 bg-purple-100 text-purple-700 text-xs rounded-full"
+                >Técnico</span
+              >
+            </div>
             <a
               href="pages_oferta_educativa/mantenimiento_industrial.html"
-              class="mt-4 inline-block bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition-colors"
-              >Ver más</a
+              class="inline-flex items-center gap-2 bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition-all duration-300 font-medium group-hover:shadow-lg"
             >
+              <span>Explorar carrera</span>
+              <i
+                class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"
+              ></i>
+            </a>
           </div>
         </div>
 
-        <!-- Ventas (Nueva) -->
+        <!-- Carrera 8 - Ventas -->
         <div
-          class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300"
+          class="career-card group bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-500 border border-gray-100"
+          data-category="cecyte"
         >
-          <img
-            src="img_recuros_pagina/img_oferta_edu/ventas/graficas.avif"
-            alt="Ventas"
-            class="w-full h-48 object-cover"
-          />
+          <div class="relative overflow-hidden">
+            <img
+              src="img_recuros_pagina/img_oferta_edu/ventas/graficas.avif"
+              alt="Ventas"
+              class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            ></div>
+            <div class="absolute top-4 right-4">
+              <span
+                class="bg-green-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg"
+              >
+                CECYTE
+              </span>
+            </div>
+            <div
+              class="absolute bottom-4 left-4 right-4 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300"
+            >
+              <div class="flex items-center gap-2 mb-2">
+                <i class="fas fa-chart-line text-purple-400"></i>
+                <span class="text-sm font-medium">Comercial</span>
+              </div>
+            </div>
+          </div>
           <div class="p-6">
-            <h2 class="text-2xl font-bold text-green-800 mb-2">Ventas</h2>
-            <p class="text-gray-600">
+            <div class="flex items-center gap-2 mb-3">
+              <i class="fas fa-chart-line text-purple-600"></i>
+              <h2 class="text-xl font-bold text-gray-900">Ventas</h2>
+            </div>
+            <p class="text-gray-600 mb-4 leading-relaxed">
               Desarrolla habilidades en estrategias comerciales y atención al
-              cliente.
+              cliente. Especialízate en técnicas de venta y marketing.
             </p>
-            <span class="absolute top-0 right-0 bg-orange-500 text-white px-3 py-1 rounded-bl-lg font-bold">
-              CECyTE
-            </span>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="px-2 py-1 bg-purple-100 text-purple-700 text-xs rounded-full"
+                >Marketing</span
+              >
+              <span
+                class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full"
+                >Ventas</span
+              >
+              <span
+                class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded-full"
+                >Atención al Cliente</span
+              >
+            </div>
             <a
               href="pages_oferta_educativa/ventas.html"
-              class="mt-4 inline-block bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition-colors"
-              >Ver más</a
+              class="inline-flex items-center gap-2 bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition-all duration-300 font-medium group-hover:shadow-lg"
             >
+              <span>Explorar carrera</span>
+              <i
+                class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"
+              ></i>
+            </a>
           </div>
         </div>
 
-        <!-- Inteligencia Artificial (Nueva) -->
+        <!-- Carrera 9 - Inteligencia Artificial -->
         <div
-          class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300"
+          class="career-card group bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-500 border border-gray-100"
+          data-category="cecyte"
         >
-          <img
-            src="img_recuros_pagina/img_oferta_edu/ia/robot_mente.webp"
-            alt="Inteligencia Artificial"
-            class="w-full h-48 object-cover"
-          />
+          <div class="relative overflow-hidden">
+            <img
+              src="img_recuros_pagina/img_oferta_edu/ia/robot_mente.webp"
+              alt="Inteligencia Artificial"
+              class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            ></div>
+            <div class="absolute top-4 right-4">
+              <span
+                class="bg-green-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg"
+              >
+                CECYTE
+              </span>
+            </div>
+            <div
+              class="absolute bottom-4 left-4 right-4 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300"
+            >
+              <div class="flex items-center gap-2 mb-2">
+                <i class="fas fa-robot text-cyan-400"></i>
+                <span class="text-sm font-medium">Tecnología Avanzada</span>
+              </div>
+            </div>
+          </div>
           <div class="p-6">
-            <h2 class="text-2xl font-bold text-green-800 mb-2">
-              Inteligencia Artificial
-            </h2>
-            <p class="text-gray-600">
-              Explora el mundo del aprendizaje automático y la IA.
+            <div class="flex items-center gap-2 mb-3">
+              <i class="fas fa-robot text-cyan-600"></i>
+              <h2 class="text-xl font-bold text-gray-900">
+                Inteligencia Artificial
+              </h2>
+            </div>
+            <p class="text-gray-600 mb-4 leading-relaxed">
+              Explora el mundo del aprendizaje automático y la IA. Desarrolla
+              sistemas inteligentes y algoritmos avanzados.
             </p>
-            <span class="absolute top-0 right-0 bg-orange-500 text-white px-3 py-1 rounded-bl-lg font-bold">
-              CECyTE
-            </span>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="px-2 py-1 bg-cyan-100 text-cyan-700 text-xs rounded-full"
+                >IA</span
+              >
+              <span
+                class="px-2 py-1 bg-purple-100 text-purple-700 text-xs rounded-full"
+                >Machine Learning</span
+              >
+              <span
+                class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full"
+                >Algoritmos</span
+              >
+            </div>
             <a
               href="pages_oferta_educativa/inteligencia_artificial.html"
-              class="mt-4 inline-block bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition-colors"
-              >Ver más</a
+              class="inline-flex items-center gap-2 bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition-all duration-300 font-medium group-hover:shadow-lg"
             >
+              <span>Explorar carrera</span>
+              <i
+                class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"
+              ></i>
+            </a>
           </div>
         </div>
 
-        <!-- Contabilidad (Nueva) -->
+        <!-- Carrera 10 - Contabilidad -->
         <div
-          class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300"
+          class="career-card group bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-500 border border-gray-100"
+          data-category="cecyte"
         >
-          <img
-            src="img_recuros_pagina/img_oferta_edu/contabilidad/conta.webp"
-            alt="Contabilidad"
-            class="w-full h-48 object-cover"
-          />
+          <div class="relative overflow-hidden">
+            <img
+              src="img_recuros_pagina/img_oferta_edu/contabilidad/conta.webp"
+              alt="Contabilidad"
+              class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            ></div>
+            <div class="absolute top-4 right-4">
+              <span
+                class="bg-green-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg"
+              >
+                CECYTE
+              </span>
+            </div>
+            <div
+              class="absolute bottom-4 left-4 right-4 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300"
+            >
+              <div class="flex items-center gap-2 mb-2">
+                <i class="fas fa-calculator text-green-400"></i>
+                <span class="text-sm font-medium">Financiero</span>
+              </div>
+            </div>
+          </div>
           <div class="p-6">
-            <h2 class="text-2xl font-bold text-green-800 mb-2">Contabilidad</h2>
-            <p class="text-gray-600">
-              Aprende gestión financiera y principios contables.
+            <div class="flex items-center gap-2 mb-3">
+              <i class="fas fa-calculator text-green-600"></i>
+              <h2 class="text-xl font-bold text-gray-900">Contabilidad</h2>
+            </div>
+            <p class="text-gray-600 mb-4 leading-relaxed">
+              Aprende gestión financiera y principios contables. Desarrolla
+              habilidades en análisis financiero y fiscal.
             </p>
-            <span class="absolute top-0 right-0 bg-orange-500 text-white px-3 py-1 rounded-bl-lg font-bold">
-              CECyTE
-            </span>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded-full"
+                >Finanzas</span
+              >
+              <span
+                class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full"
+                >Contabilidad</span
+              >
+              <span
+                class="px-2 py-1 bg-purple-100 text-purple-700 text-xs rounded-full"
+                >Fiscal</span
+              >
+            </div>
             <a
               href="pages_oferta_educativa/contabilidad.html"
-              class="mt-4 inline-block bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition-colors"
-              >Ver más</a
+              class="inline-flex items-center gap-2 bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition-all duration-300 font-medium group-hover:shadow-lg"
             >
+              <span>Explorar carrera</span>
+              <i
+                class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"
+              ></i>
+            </a>
           </div>
         </div>
 
-        <!-- Refrigeración y Aire Acondicionado (Nueva) -->
+        <!-- Carrera 11 - Refrigeración y Aire Acondicionado -->
         <div
-          class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300"
+          class="career-card group bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-500 border border-gray-100"
+          data-category="cecyte"
         >
-          <img
-            src="img_recuros_pagina/img_oferta_edu/refrigeración_aire_acondicionado/instrumentos_2.webp"
-            alt="Refrigeración y Aire Acondicionado"
-            class="w-full h-48 object-cover"
-          />
+          <div class="relative overflow-hidden">
+            <img
+              src="img_recuros_pagina/img_oferta_edu/refrigeración_aire_acondicionado/instrumentos_2.webp"
+              alt="Refrigeración y Aire Acondicionado"
+              class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            ></div>
+            <div class="absolute top-4 right-4">
+              <span
+                class="bg-green-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg"
+              >
+                CECYTE
+              </span>
+            </div>
+            <div
+              class="absolute bottom-4 left-4 right-4 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300"
+            >
+              <div class="flex items-center gap-2 mb-2">
+                <i class="fas fa-snowflake text-blue-400"></i>
+                <span class="text-sm font-medium">Climatización</span>
+              </div>
+            </div>
+          </div>
           <div class="p-6">
-            <h2 class="text-2xl font-bold text-green-800 mb-2">
-              Refrigeración y Aire Acondicionado
-            </h2>
-            <p class="text-gray-600">
+            <div class="flex items-center gap-2 mb-3">
+              <i class="fas fa-snowflake text-blue-600"></i>
+              <h2 class="text-xl font-bold text-gray-900">
+                Refrigeración y Aire Acondicionado
+              </h2>
+            </div>
+            <p class="text-gray-600 mb-4 leading-relaxed">
               Especialízate en sistemas de climatización y refrigeración.
+              Desarrolla habilidades en instalación y mantenimiento.
             </p>
-            <span class="absolute top-0 right-0 bg-orange-500 text-white px-3 py-1 rounded-bl-lg font-bold">
-              CECyTE
-            </span>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full"
+                >Climatización</span
+              >
+              <span
+                class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded-full"
+                >Refrigeración</span
+              >
+              <span
+                class="px-2 py-1 bg-purple-100 text-purple-700 text-xs rounded-full"
+                >Mantenimiento</span
+              >
+            </div>
             <a
               href="pages_oferta_educativa/refrigeracion_y_aire_acondicionado.html"
-              class="mt-4 inline-block bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition-colors"
-              >Ver más</a
+              class="inline-flex items-center gap-2 bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition-all duration-300 font-medium group-hover:shadow-lg"
             >
+              <span>Explorar carrera</span>
+              <i
+                class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"
+              ></i>
+            </a>
           </div>
         </div>
 
-        <!-- tics -->
+        <!-- TICS - EMSAD -->
         <div
-          class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300"
+          class="career-card group bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-500 border border-gray-100"
+          data-category="emsad"
         >
-          <img
-            src="img_recuros_pagina/img_oferta_edu/tics/img_2.webp"
-            alt="Refrigeración y Aire Acondicionado"
-            class="w-full h-48 object-cover"
-          />
+          <div class="relative overflow-hidden">
+            <img
+              src="img_recuros_pagina/img_oferta_edu/tics/img_2.webp"
+              alt="Tecnologías de la Información y la Comunicación"
+              class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            ></div>
+            <div class="absolute top-4 right-4">
+              <span
+                class="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg"
+              >
+                EMSAD
+              </span>
+            </div>
+            <div
+              class="absolute bottom-4 left-4 right-4 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300"
+            >
+              <div class="flex items-center gap-2 mb-2">
+                <i class="fas fa-wifi text-blue-400"></i>
+                <span class="text-sm font-medium">Tecnología</span>
+              </div>
+            </div>
+          </div>
           <div class="p-6">
-            <h2 class="text-2xl font-bold text-green-800 mb-2">
-              Tecnologías de la Información y la Comunicación
-            </h2>
-            <p class="text-gray-600">
+            <div class="flex items-center gap-2 mb-3">
+              <i class="fas fa-wifi text-blue-600"></i>
+              <h2 class="text-xl font-bold text-gray-900">
+                Tecnologías de la Información y la Comunicación
+              </h2>
+            </div>
+            <p class="text-gray-600 mb-4 leading-relaxed">
               Especialízate en Tecnologías de la Información y la Comunicación.
+              Desarrolla competencias digitales avanzadas.
             </p>
-            <span class="absolute top-0 right-0 bg-green-700 text-white px-3 py-1 rounded-bl-lg font-bold">
-              EMSAD
-            </span>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full"
+                >TIC</span
+              >
+              <span
+                class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded-full"
+                >Comunicación</span
+              >
+              <span
+                class="px-2 py-1 bg-purple-100 text-purple-700 text-xs rounded-full"
+                >Digital</span
+              >
+            </div>
             <a
               href="pages_oferta_educativa/tics.html"
-              class="mt-4 inline-block bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition-colors"
-              >Ver más</a
+              class="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-all duration-300 font-medium group-hover:shadow-lg"
             >
+              <span>Explorar carrera</span>
+              <i
+                class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"
+              ></i>
+            </a>
           </div>
         </div>
 
-        <!-- turimso -->
+        <!-- Turismo - EMSAD -->
         <div
-          class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300"
+          class="career-card group bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-500 border border-gray-100"
+          data-category="emsad"
         >
-          <img
-            src="img_recuros_pagina/img_oferta_edu/turismo/img_1.webp"
-            alt="Refrigeración y Aire Acondicionado"
-            class="w-full h-48 object-cover"
-          />
+          <div class="relative overflow-hidden">
+            <img
+              src="img_recuros_pagina/img_oferta_edu/turismo/img_1.webp"
+              alt="Turismo"
+              class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            ></div>
+            <div class="absolute top-4 right-4">
+              <span
+                class="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg"
+              >
+                EMSAD
+              </span>
+            </div>
+            <div
+              class="absolute bottom-4 left-4 right-4 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300"
+            >
+              <div class="flex items-center gap-2 mb-2">
+                <i class="fas fa-map-marked-alt text-orange-400"></i>
+                <span class="text-sm font-medium">Turismo</span>
+              </div>
+            </div>
+          </div>
           <div class="p-6">
-            <h2 class="text-2xl font-bold text-green-800 mb-2">
-              Turismo
-            </h2>
-            <p class="text-gray-600">
-              Especialízate en Turismo.
+            <div class="flex items-center gap-2 mb-3">
+              <i class="fas fa-map-marked-alt text-orange-600"></i>
+              <h2 class="text-xl font-bold text-gray-900">Turismo</h2>
+            </div>
+            <p class="text-gray-600 mb-4 leading-relaxed">
+              Especialízate en Turismo. Desarrolla habilidades para la gestión y
+              promoción de destinos turísticos.
             </p>
-            <span class="absolute top-0 right-0 bg-green-700 text-white px-3 py-1 rounded-bl-lg font-bold">
-              EMSAD
-            </span>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="px-2 py-1 bg-orange-100 text-orange-700 text-xs rounded-full"
+                >Turismo</span
+              >
+              <span
+                class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded-full"
+                >Gestión</span
+              >
+              <span
+                class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full"
+                >Promoción</span
+              >
+            </div>
             <a
               href="pages_oferta_educativa/turismo.html"
-              class="mt-4 inline-block bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition-colors"
-              >Ver más</a
+              class="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-all duration-300 font-medium group-hover:shadow-lg"
             >
+              <span>Explorar carrera</span>
+              <i
+                class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"
+              ></i>
+            </a>
           </div>
         </div>
 
-        <!-- Preparacion de alimentos -->
+        <!-- Carrera 12 - Preparación de Alimentos y Bebidas -->
         <div
-          class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300"
+          class="career-card group bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-500 border border-gray-100"
+          data-category="cecyte"
         >
-          <img
-            src="img_recuros_pagina/img_oferta_edu/preparacion_de_alimentos_y_bebidas/alimentos_y_bebidas.png"
-            alt="preparacion de alimetnos y bebidas"
-            class="w-full h-48 object-cover"
-          />
+          <div class="relative overflow-hidden">
+            <img
+              src="img_recuros_pagina/img_oferta_edu/preparacion_de_alimentos_y_bebidas/alimentos_y_bebidas.png"
+              alt="Preparación de Alimentos y Bebidas"
+              class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            ></div>
+            <div class="absolute top-4 right-4">
+              <span
+                class="bg-green-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg"
+              >
+                CECYTE
+              </span>
+            </div>
+            <div
+              class="absolute bottom-4 left-4 right-4 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300"
+            >
+              <div class="flex items-center gap-2 mb-2">
+                <i class="fas fa-utensils text-orange-400"></i>
+                <span class="text-sm font-medium">Gastronomía</span>
+              </div>
+            </div>
+          </div>
           <div class="p-6">
-            <h2 class="text-2xl font-bold text-green-800 mb-2">
-              Preparación de Alimentos y Bebidas
-            </h2>
-            <p class="text-gray-600">
-              Especialízate en preparacion de alimentos y bebidas.
+            <div class="flex items-center gap-2 mb-3">
+              <i class="fas fa-utensils text-orange-600"></i>
+              <h2 class="text-xl font-bold text-gray-900">
+                Preparación de Alimentos y Bebidas
+              </h2>
+            </div>
+            <p class="text-gray-600 mb-4 leading-relaxed">
+              Especialízate en preparación de alimentos y bebidas. Desarrolla
+              habilidades culinarias y de servicio.
             </p>
-            <span class="absolute top-0 right-0 bg-orange-500 text-white px-3 py-1 rounded-bl-lg font-bold">
-              CECYTE
-            </span>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="px-2 py-1 bg-orange-100 text-orange-700 text-xs rounded-full"
+                >Gastronomía</span
+              >
+              <span
+                class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded-full"
+                >Cocina</span
+              >
+              <span
+                class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full"
+                >Servicio</span
+              >
+            </div>
             <a
               href="pages_oferta_educativa/preparacion_de_alimentos_y_bebidas.html"
-              class="mt-4 inline-block bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition-colors"
-              >Ver más</a
+              class="inline-flex items-center gap-2 bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition-all duration-300 font-medium group-hover:shadow-lg"
             >
+              <span>Explorar carrera</span>
+              <i
+                class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"
+              ></i>
+            </a>
           </div>
         </div>
 
-         <!-- servicios de hospedaje -->
-         <div
-         class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300"
-       >
-         <img
-           src="img_recuros_pagina/img_oferta_edu/servicios_de_hospedaje/servicio_hospedaje.png"
-           alt="preparacion de alimetnos y bebidas"
-           class="w-full h-48 object-cover"
-         />
-         <div class="p-6">
-           <h2 class="text-2xl font-bold text-green-800 mb-2">
-             Servicios de Hospedaje
-           </h2>
-           <p class="text-gray-600">
-             Especialízate en hospedaje.
-           </p>
-           <span class="absolute top-0 right-0 bg-orange-500 text-white px-3 py-1 rounded-bl-lg font-bold">
-             CECYTE
-           </span>
-           <a
-             href="pages_oferta_educativa/servicios_de_hospedaje.html"
-             class="mt-4 inline-block bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition-colors"
-             >Ver más</a
-           >
-         </div>
-       </div>
-
+        <!-- Carrera 13 - Servicios de Hospedaje -->
+        <div
+          class="career-card group bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-500 border border-gray-100"
+          data-category="cecyte"
+        >
+          <div class="relative overflow-hidden">
+            <img
+              src="img_recuros_pagina/img_oferta_edu/servicios_de_hospedaje/servicio_hospedaje.png"
+              alt="Servicios de Hospedaje"
+              class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            ></div>
+            <div class="absolute top-4 right-4">
+              <span
+                class="bg-green-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg"
+              >
+                CECYTE
+              </span>
+            </div>
+            <div
+              class="absolute bottom-4 left-4 right-4 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300"
+            >
+              <div class="flex items-center gap-2 mb-2">
+                <i class="fas fa-bed text-blue-400"></i>
+                <span class="text-sm font-medium">Hospedaje</span>
+              </div>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <i class="fas fa-bed text-blue-600"></i>
+              <h2 class="text-xl font-bold text-gray-900">
+                Servicios de Hospedaje
+              </h2>
+            </div>
+            <p class="text-gray-600 mb-4 leading-relaxed">
+              Especialízate en hospedaje. Desarrolla habilidades en gestión
+              hotelera y atención al huésped.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full"
+                >Hospedaje</span
+              >
+              <span
+                class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded-full"
+                >Gestión</span
+              >
+              <span
+                class="px-2 py-1 bg-orange-100 text-orange-700 text-xs rounded-full"
+                >Atención</span
+              >
+            </div>
+            <a
+              href="pages_oferta_educativa/servicios_de_hospedaje.html"
+              class="inline-flex items-center gap-2 bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition-all duration-300 font-medium group-hover:shadow-lg"
+            >
+              <span>Explorar carrera</span>
+              <i
+                class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"
+              ></i>
+            </a>
+          </div>
+        </div>
       </div>
     </main>
+
+    <!-- SECCIÓN INFORMATIVA ADICIONAL -->
+    <section class="py-16 bg-gradient-to-br from-gray-50 to-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              ¿Por qué elegir CECYTE BCS?
+            </h2>
+            <div class="flex justify-center items-center gap-4 mb-6">
+              <div class="h-1 w-20 bg-green-600 rounded"></div>
+              <div class="h-1 w-20 bg-orange-500 rounded"></div>
+              <div class="h-1 w-20 bg-green-600 rounded"></div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div
+              class="text-center p-6 bg-white rounded-2xl shadow-lg border border-gray-100"
+            >
+              <div
+                class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4"
+              >
+                <i class="fas fa-graduation-cap text-2xl text-green-600"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                Educación de Calidad
+              </h3>
+              <p class="text-gray-600">
+                Programas académicos reconocidos con docentes altamente
+                capacitados.
+              </p>
+            </div>
+
+            <div
+              class="text-center p-6 bg-white rounded-2xl shadow-lg border border-gray-100"
+            >
+              <div
+                class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4"
+              >
+                <i class="fas fa-briefcase text-2xl text-orange-600"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                Inserción Laboral
+              </h3>
+              <p class="text-gray-600">
+                Carreras técnicas que te preparan para el mundo laboral con
+                altas tasas de empleabilidad.
+              </p>
+            </div>
+
+            <div
+              class="text-center p-6 bg-white rounded-2xl shadow-lg border border-gray-100"
+            >
+              <div
+                class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4"
+              >
+                <i class="fas fa-university text-2xl text-blue-600"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                Continuidad Educativa
+              </h3>
+              <p class="text-gray-600">
+                Acceso directo a universidades y opciones de especialización
+                para continuar tu formación.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="py-16 bg-gradient-to-r from-green-600 to-green-700">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+            ¿Listo para comenzar tu futuro profesional?
+          </h2>
+          <p class="text-xl text-green-100 mb-8">
+            Descubre todas las carreras disponibles y encuentra la que mejor se
+            adapte a tus intereses.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="pages_alumnos/requisitos_de_ingreso.html"
+              class="inline-flex items-center gap-2 bg-white text-green-600 px-8 py-4 rounded-full font-bold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
+            >
+              <i class="fas fa-file-alt"></i>
+              <span>Ver Requisitos de Ingreso</span>
+            </a>
+            <a
+              href="pages_institucion/planteles_cecyte.html"
+              class="inline-flex items-center gap-2 border-2 border-white text-white px-8 py-4 rounded-full font-bold hover:bg-white hover:text-green-600 transition-all duration-300 transform hover:scale-105"
+            >
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Ubicar Plantel</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer id="footer" class="bg-white dark:bg-gray-900">
       <div class="border-t-4 border-gray-400 dark:border-gray-1000"></div>
@@ -456,13 +1574,6 @@
                 >
               </li>
               <li class="mb-4">
-                <a
-                  href="https://transparencia.cre.gob.mx/plataforma-nacional-de-transparencia-sipot/"
-                  class="hover:underline"
-                  >SIPOT</a
-                >
-              </li>
-              <li class="mb-4">
                 <a href="comites.html" class="hover:underline">Comité</a>
               </li>
               <li class="mb-4">
@@ -474,11 +1585,26 @@
               </li>
               <li class="mb-4">
                 <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSfOfmG7BHg8p731LYgcVC5WO5l3hzCtjJqzxMrkgByNG4Iz5A/viewform"
+                  href="https://drive.google.com/drive/folders/1hTI8TNv3sKQP-svOi3nxP3Rq0Nhpy1gF?usp=sharing"
                   class="hover:underline"
-                  >Buzon de quejas</a
+                  >Ley de Archivo</a
                 >
               </li>
+              <li class="mb-4">
+                <a
+                  href="https://drive.google.com/drive/folders/1uv1d-JP30PMer_gribOo0pLO7AWGAsNV?usp=sharing/"
+                  class="hover:underline"
+                  >Compras y Licitaciones</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfOfmG7BHg8p731LYgcVC5WO5l3hzCtjJqzxMrkgByNG4Iz5A/viewform"
+                  class="hover:underline"
+                  >Buzón de quejas</a
+                >
+              </li>
+              <li class="mb-4"></li>
             </ul>
           </div>
           <div>
@@ -510,16 +1636,19 @@
             </h2>
             <ul class="text-gray-500 dark:text-gray-400 font-medium">
               <li class="mb-4">
-                <a href="#" class="hover:underline">612 - 12 32244</a>
+                <a href="#" class="hover:underline">612-124-0430</a>
               </li>
               <li class="mb-4">
-                <a href="#" class="hover:underline">612 - 12 40430</a>
+                <a href="#" class="hover:underline">612-124-0656</a>
               </li>
               <li class="mb-4">
-                <a href="#" class="hover:underline">612 - 12 40656</a>
+                <a href="#" class="hover:underline">612-124-2700</a>
               </li>
               <li class="mb-4">
-                <a href="#" class="hover:underline">612 - 12 40656</a>
+                <a href="#" class="hover:underline">612-146-2919</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">612-124-2202</a>
               </li>
             </ul>
           </div>
@@ -527,7 +1656,7 @@
             <h2
               class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
             >
-              SIGUENOS
+              SÍGUENOS
             </h2>
             <ul class="text-gray-500 dark:text-gray-400 font-medium">
               <li class="mb-4">
@@ -547,9 +1676,23 @@
               </li>
               <li class="mb-4">
                 <a
-                  href="https://www.youtube.com/channel/UCAjoT3ODBsMhq75-KFJuNYA"
+                  href="https://www.youtube.com/@ProcesosInform%C3%A1ticaCecytebcs"
                   class="hover:underline"
                   >YOUTUBE</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  href="https://www.tiktok.com/@cecytebcs"
+                  class="hover:underline"
+                  >TIKTOK</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  href="https://www.instagram.com/cecyte_bcs/"
+                  class="hover:underline"
+                  >INSTAGRAM</a
                 >
               </li>
             </ul>
@@ -558,8 +1701,95 @@
       </div>
 
       <div class="text-center p-4 bg-gray-800 text-white text-sm">
-        © 2024 Departamento de Informática. Todos los derechos reservados.
+        © 2025 Departamento de Informática. Todos los derechos reservados.
       </div>
     </footer>
+
+    <!-- Scripts -->
+    <script>
+      // Variables de navegación móvil
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      // Event listeners para menú móvil
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Función para mostrar fecha
+      function mostrarFecha() {
+        const fecha = new Date();
+        const mes = fecha.toLocaleDateString("es-ES", { month: "long" });
+        const año = fecha.getFullYear();
+
+        // Actualizar elementos si existen
+        const mesElement = document.getElementById("mes");
+        const añoElement = document.getElementById("año");
+
+        if (mesElement) mesElement.textContent = mes;
+        if (añoElement) añoElement.textContent = año;
+      }
+
+      // Funcionalidad de filtros
+      document.addEventListener("DOMContentLoaded", function () {
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        const careerCards = document.querySelectorAll(".career-card");
+
+        filterButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            // Remover clase active de todos los botones
+            filterButtons.forEach((btn) => {
+              btn.classList.remove("active", "bg-green-600", "text-white");
+              btn.classList.add("bg-gray-100", "text-gray-700");
+            });
+
+            // Agregar clase active al botón clickeado
+            this.classList.add("active", "bg-green-600", "text-white");
+            this.classList.remove("bg-gray-100", "text-gray-700");
+
+            const filter = this.getAttribute("data-filter");
+
+            careerCards.forEach((card) => {
+              const category = card.getAttribute("data-category");
+
+              if (filter === "all" || category === filter) {
+                card.style.display = "block";
+                card.style.animation = "fadeInUp 0.5s ease-out";
+              } else {
+                card.style.display = "none";
+              }
+            });
+          });
+        });
+      });
+
+      // Animaciones personalizadas
+      const style = document.createElement("style");
+      style.textContent = `
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        
+        .career-card {
+          animation: fadeInUp 0.6s ease-out;
+        }
+        
+        .filter-btn.active {
+          transform: scale(1.05);
+        }
+        
+        .career-card:hover {
+          transform: translateY(-8px) scale(1.02);
+        }
+      `;
+      document.head.appendChild(style);
+    </script>
   </body>
 </html>
