@@ -53,211 +53,11 @@
         .fade-in-up { animation: fadeInUp 0.6s ease-out; }
         .pulse-animation { animation: pulse 2s ease-in-out infinite; }
         .rotate-animation { animation: rotate 20s linear infinite; }
-        .hover-lift:hover { transform: translateY(-8px); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .hover-lift:hover { transform: translateY(-5px); transition: all 0.3s ease; }
         .hover-scale:hover { transform: scale(1.05); transition: all 0.3s ease; }
         .hover-rotate:hover { transform: rotate(5deg); transition: all 0.3s ease; }
-        
-        /* Additional hover effects */
-        .hover-glow:hover { 
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.2);
-            transition: all 0.3s ease;
-        }
-        .hover-bounce:hover { 
-            animation: bounce 0.6s ease-in-out;
-        }
-        .hover-shake:hover { 
-            animation: shake 0.5s ease-in-out;
-        }
-        
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-            40% { transform: translateY(-10px); }
-            60% { transform: translateY(-5px); }
-        }
-        
-        @keyframes shake {
-            0%, 100% { transform: translateX(0); }
-            10%, 30%, 50%, 70%, 90% { transform: translateX(-2px); }
-            20%, 40%, 60%, 80% { transform: translateX(2px); }
-        }
-        
-        /* Gradient text animation */
-        .gradient-text {
-            background: linear-gradient(-45deg, #f97316, #ea580c, #dc2626, #b91c1c);
-            background-size: 400% 400%;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            animation: gradientShift 3s ease infinite;
-        }
-        
-        @keyframes gradientShift {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-        
-        /* Card hover effects */
-        .card-hover {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .card-hover:hover {
-            transform: translateY(-10px) scale(1.02);
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
-        }
-        
-        /* Button hover effects */
-        .btn-hover {
-            position: relative;
-            overflow: hidden;
-        }
-        .btn-hover::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-            transition: left 0.5s;
-        }
-        .btn-hover:hover::before {
-            left: 100%;
-        }
-        
-        /* Design System - Academic & Professional */
-        :root {
-            --border-radius-sm: 0.5rem;     /* 8px */
-            --border-radius-md: 0.75rem;    /* 12px */
-            --border-radius-lg: 1rem;       /* 16px */
-            --border-radius-xl: 1.25rem;    /* 20px */
-            --border-radius-2xl: 1.5rem;    /* 24px */
-            
-            --spacing-xs: 0.5rem;           /* 8px */
-            --spacing-sm: 1rem;             /* 16px */
-            --spacing-md: 1.5rem;           /* 24px */
-            --spacing-lg: 2rem;             /* 32px */
-            --spacing-xl: 3rem;             /* 48px */
-            --spacing-2xl: 4rem;            /* 64px */
-            --spacing-3xl: 5rem;            /* 80px */
-            
-            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
-            --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
-            --shadow-lg: 0 8px 15px rgba(0, 0, 0, 0.1);
-            --shadow-xl: 0 12px 25px rgba(0, 0, 0, 0.15);
-            
-            --icon-size-sm: 1rem;           /* 16px */
-            --icon-size-md: 1.25rem;        /* 20px */
-            --icon-size-lg: 1.5rem;         /* 24px */
-            --icon-size-xl: 2rem;           /* 32px */
-            --icon-size-2xl: 2.5rem;        /* 40px */
-            
-            /* Academic Color Palette */
-            --primary-color: #059669;       /* Forest Green */
-            --primary-light: #10b981;       /* Green */
-            --secondary-color: #ea580c;     /* Orange */
-            --accent-color: #f97316;        /* Light Orange */
-            --neutral-50: #f8fafc;
-            --neutral-100: #f1f5f9;
-            --neutral-200: #e2e8f0;
-            --neutral-300: #cbd5e1;
-            --neutral-400: #94a3b8;
-            --neutral-500: #64748b;
-            --neutral-600: #475569;
-            --neutral-700: #334155;
-            --neutral-800: #1e293b;
-            --neutral-900: #0f172a;
-        }
-        
-        /* Academic Card Styles */
-        .card-primary {
-            background: #ffffff;
-            border-radius: var(--border-radius-lg);
-            box-shadow: var(--shadow-sm);
-            border: 1px solid var(--neutral-200);
-            transition: all 0.2s ease;
-        }
-        
-        .card-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-md);
-            border-color: var(--neutral-300);
-        }
-        
-        /* Academic Button Styles */
-        .btn-primary {
-            border-radius: var(--border-radius-md);
-            padding: 0.75rem 1.5rem;
-            font-weight: 500;
-            font-size: 0.875rem;
-            transition: all 0.2s ease;
-            box-shadow: var(--shadow-sm);
-            border: 1px solid transparent;
-        }
-        
-        .btn-primary:hover {
-            transform: translateY(-1px);
-            box-shadow: var(--shadow-md);
-        }
-        
-        /* Academic Icon Container */
-        .icon-container {
-            border-radius: var(--border-radius-md);
-            box-shadow: var(--shadow-sm);
-            transition: all 0.2s ease;
-        }
-        
-        .icon-container:hover {
-            transform: scale(1.05);
-        }
-        
-        /* Academic Typography */
-        .academic-title {
-            color: var(--neutral-900);
-            font-weight: 700;
-            letter-spacing: -0.025em;
-        }
-        
-        .academic-subtitle {
-            color: var(--neutral-700);
-            font-weight: 500;
-        }
-        
-        .academic-text {
-            color: var(--neutral-600);
-            line-height: 1.6;
-        }
-        
-        /* Academic Badge */
-        .academic-badge {
-            background: var(--secondary-color);
-            color: white;
-            border-radius: var(--border-radius-sm);
-            padding: 0.5rem 1rem;
-            font-size: 0.75rem;
-            font-weight: 500;
-            letter-spacing: 0.025em;
-        }
-        
-        /* Consistent Section Spacing */
-        .section-spacing {
-            padding: var(--spacing-3xl) 0;
-        }
-        
-        /* Consistent Content Spacing */
-        .content-spacing {
-            padding: var(--spacing-xl);
-        }
-        
-        /* Consistent Grid Gaps */
-        .grid-gap-md {
-            gap: var(--spacing-lg);
-        }
-        
-        .grid-gap-lg {
-            gap: var(--spacing-xl);
-        }
     </style>
+    <meta name="description" content="CECyT 02 Todos Santos - Oferta educativa, ubicación, contacto y más." />
 </head>
 <body class="bg-gray-50">
 
@@ -267,7 +67,7 @@
             <div class="flex justify-between h-16">
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
-                    <img src="../../img_logos/logo_Cecyte_vertical_sin_fondo.png" alt="CECYTE BCS" class="h-14 w-auto">
+                    <img src="../../img_logos/logo_Cecyte_vertical_sin_fondo.png" alt="logo_Cecyte_vertical_sin_fondo" class="h-12 w-auto">
                 </div>
                 <!-- Responsive menu button -->
                 <div class="flex items-center sm:hidden">
@@ -296,13 +96,13 @@
                         <a href="#" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Oferta Educativa</a>
                         <!-- Submenu -->
                         <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md z-50">
-                            <a href="../../../pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Soporte y Mantenimiento equipo de computo</a>
-                            <a href="../../../pages_oferta_educativa/programacion.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programación</a>
-                            <a href="../../../pages_oferta_educativa/ventas.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ventas</a>
-                            <a href="../../../pages_oferta_educativa/ecoturismo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ecoturismo</a>
-                            <a href="../../../pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Producción industrial de alimentos</a>
-                            <a href="../../../pages_oferta_educativa/mantenimiento_industrial.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Mantenimiento Industrial</a>
-                            <a href="../../../pages_oferta_educativa/servicios_de_hoteleria.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Servicios de Hotelería</a>
+                            <a href="../../pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Soporte y Mantenimiento equipo de computo</a>
+                            <a href="../../pages_oferta_educativa/programacion.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programación</a>
+                            <a href="../../pages_oferta_educativa/ventas.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ventas</a>
+                            <a href="../../pages_oferta_educativa/ecoturismo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ecoturismo</a>
+                            <a href="../../pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Producción industrial de alimentos</a>
+                            <a href="../../pages_oferta_educativa/mantenimiento_industrial.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Mantenimiento Industrial</a>
+                            <a href="../../pages_oferta_educativa/servicios_de_hoteleria.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Servicios de Hotelería</a>
                         </div>
                     </div>
                     <div class="relative group">
@@ -363,84 +163,60 @@
     <!-- FIN NAVBAR CON SUBEMENUS -->
 
     <!-- Hero Section -->
-    <section class="relative bg-white overflow-hidden min-h-screen flex items-center section-spacing">
-        <!-- Subtle Background Pattern -->
-        <div class="absolute inset-0 opacity-5">
-            <div class="absolute top-20 left-10 w-24 h-24 border border-gray-300 rounded-full"></div>
-            <div class="absolute top-40 right-20 w-16 h-16 border border-gray-300 rounded-full"></div>
-            <div class="absolute bottom-20 left-1/4 w-32 h-32 border border-gray-300 rounded-full"></div>
-        </div>
-        
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 grid-gap-lg items-center">
+    <section class="relative bg-white overflow-hidden">
+        <div class="absolute inset-0 bg-gray-100"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <!-- Text Content -->
                 <div class="slide-in-left">
-                    <div class="mb-8">
-                        <div class="academic-badge inline-flex items-center mb-6">
-                            <i class="fas fa-map-marker-alt mr-2" style="font-size: var(--icon-size-sm);"></i>
+                    <div class="mb-6">
+                        <span class="inline-block bg-orange-100 text-orange-800 text-sm font-semibold px-4 py-2 rounded-full mb-4">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
                             Todos Santos, B.C.S.
-                        </div>
-                        <h1 class="text-4xl md:text-5xl academic-title mb-6 leading-tight">
+                        </span>
+                        <h1 class="text-5xl font-bold text-gray-900 mb-4">
                             CECyT 02
-                            <span class="text-green-600">Todos Santos</span>
+                            <span class="text-orange-600">Todos Santos</span>
                         </h1>
-                        <p class="text-lg md:text-xl academic-text mb-8 leading-relaxed">
-                            Formando profesionales del futuro en el corazón de Baja California Sur
+                        <p class="text-xl text-gray-600 mb-6">
+                            Comprometidos con la excelencia académica y la formación integral de nuestros estudiantes
                         </p>
-                        
-                        <!-- CTA Buttons -->
-                        <div class="flex flex-col sm:flex-row gap-4 mb-8">
-                            <a href="#oferta-educativa" class="inline-flex items-center btn-primary bg-green-600 text-white hover:bg-green-700">
-                                <i class="fas fa-graduation-cap mr-3" style="font-size: var(--icon-size-sm);"></i>
-                                Ver Carreras
-                            </a>
-                            <a href="#contacto" class="inline-flex items-center btn-primary bg-white text-orange-600 border border-orange-600 hover:bg-orange-50">
-                                <i class="fas fa-phone mr-3" style="font-size: var(--icon-size-sm);"></i>
-                                Contactar
-                            </a>
-                        </div>
                     </div>
                     
                     <!-- Director Info -->
-                    <div class="card-primary content-spacing mb-8">
-                        <div class="flex items-center space-x-6">
-                            <div class="icon-container p-4 bg-green-600">
-                                <i class="fas fa-user-tie text-white" style="font-size: var(--icon-size-xl);"></i>
+                    <div class="bg-white rounded-2xl shadow-xl p-6 mb-8 hover-lift">
+                        <div class="flex items-center space-x-4">
+                            <div class="p-3 bg-green-100 rounded-full">
+                                <i class="fas fa-user-tie text-2xl text-green-600"></i>
                             </div>
                             <div>
-                                <h3 class="text-xl academic-subtitle mb-1">Director de Plantel</h3>
-                                <p class="academic-text text-lg">Ing. Raúl Jaramillo Ramírez</p>
-                                <div class="flex items-center mt-2 text-sm text-green-600">
-                                    <i class="fas fa-check-circle mr-2" style="font-size: var(--icon-size-sm);"></i>
-                                    <span>Disponible para consultas</span>
-                                </div>
+                                <h3 class="text-lg font-semibold text-gray-800">Director de Plantel</h3>
+                                <p class="text-gray-600">Por confirmar</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- Contact Info -->
-                    <div class="grid grid-cols-1 sm:grid-cols-2 grid-gap-md">
-                        <div class="card-primary content-spacing">
-                            <div class="flex items-center space-x-4">
-                                <div class="icon-container p-3 bg-orange-600">
-                                    <i class="fas fa-envelope text-white" style="font-size: var(--icon-size-md);"></i>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="bg-white rounded-xl shadow-lg p-4 hover-scale">
+                            <div class="flex items-center space-x-3">
+                                <div class="p-2 bg-blue-100 rounded-full">
+                                    <i class="fas fa-envelope text-blue-600"></i>
                                 </div>
                                 <div>
-                                    <p class="text-sm academic-text font-medium">Email</p>
-                                    <a href="mailto:cecyt02@cecytebcs.edu.mx" class="text-orange-600 hover:underline font-semibold text-sm">
-                                        cecyt02@cecytebcs.edu.mx
-                                    </a>
+                                    <p class="text-sm text-gray-500">Email</p>
+                                    <p class="text-gray-700 font-medium">Por confirmar</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="card-primary content-spacing">
-                            <div class="flex items-center space-x-4">
-                                <div class="icon-container p-3 bg-green-600">
-                                    <i class="fas fa-phone text-white" style="font-size: var(--icon-size-md);"></i>
+                        <div class="bg-white rounded-xl shadow-lg p-4 hover-scale">
+                            <div class="flex items-center space-x-3">
+                                <div class="p-2 bg-purple-100 rounded-full">
+                                    <i class="fas fa-phone text-purple-600"></i>
                                 </div>
                                 <div>
-                                    <p class="text-sm academic-text font-medium">Teléfono</p>
-                                    <p class="academic-subtitle">(612) 145 0302</p>
+                                    <p class="text-sm text-gray-500">Teléfono</p>
+                                    <p class="text-gray-700 font-medium">Por confirmar</p>
                                 </div>
                             </div>
                         </div>
@@ -450,25 +226,16 @@
                 <!-- Image Content -->
                 <div class="slide-in-right">
                     <div class="relative">
-                        <!-- Main Image -->
-                        <div class="relative z-10">
-                            <img src="../../img_recuros_pagina/img_planteles/CECYTE/CECYTE_02_TODOS_SANTOS/02_TS.jpg" 
-                                 alt="CECyT 02 - Todos Santos" 
-                                 class="w-full h-[400px] md:h-[500px] object-cover rounded-lg shadow-lg border border-gray-200">
-                            
-                            <!-- Image Overlay -->
-                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent text-white p-6 rounded-b-lg">
-                                <div class="flex items-center justify-between">
-                                    <div>
-                                        <h3 class="text-2xl font-bold mb-1">CCT: 03ETC0001C</h3>
-                                        <p class="text-gray-200 text-sm">Calle del Huerto e/ Morelos e Hidalgo</p>
-                                    </div>
-                                    <div class="text-right">
-                                        <div class="bg-orange-600 text-white px-3 py-1 rounded text-xs font-medium">
-                                            <i class="fas fa-check mr-1" style="font-size: var(--icon-size-sm);"></i>
-                                            Certificado
-                                        </div>
-                                    </div>
+                        <div class="absolute -top-4 -right-4 w-24 h-24 bg-orange-200 rounded-full opacity-20 float-animation"></div>
+                        <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-green-200 rounded-full opacity-20 float-animation" style="animation-delay: 1s;"></div>
+                        <div class="group overflow-hidden rounded-2xl shadow-2xl">
+                            <div class="transition-transform duration-300 ease-out group-hover:scale-105">
+                                <img src="../../img_recuros_pagina/img_planteles/CECYTE/CECYTE_02_TODOS_SANTOS/02_TS.jpg" 
+                                     alt="CECyT 02 - Todos Santos" 
+                                     class="w-full h-96 object-cover">
+                                <div class="bg-black bg-opacity-50 text-white p-6">
+                                    <h3 class="text-2xl font-bold">CCT: Por confirmar</h3>
+                                    <p class="text-orange-300">Dirección: Por confirmar</p>
                                 </div>
                             </div>
                         </div>
@@ -479,198 +246,161 @@
     </section>
 
     <!-- About Section -->
-    <section class="section-spacing bg-gray-50 relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 fade-in-up">
-                <div class="academic-badge inline-flex items-center mb-6">
-                    <i class="fas fa-university mr-2" style="font-size: var(--icon-size-sm);"></i>
-                    Nuestra Institución
-                </div>
-                <h2 class="text-3xl md:text-4xl academic-title mb-6">Acerca de Nuestro Plantel</h2>
-                <div class="w-16 h-0.5 bg-green-600 mx-auto mb-8"></div>
-                <p class="text-lg academic-text max-w-3xl mx-auto leading-relaxed">
-                    El CECyT 02 Todos Santos es una institución educativa comprometida con la excelencia académica y la formación integral de nuestros estudiantes, preparándolos para enfrentar los desafíos del futuro.
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Acerca de Nuestro Plantel</h2>
+                <div class="w-24 h-1 bg-orange-500 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    El CECyT 02 Todos Santos es una institución educativa comprometida con la excelencia académica y la formación integral.
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-3 grid-gap-lg">
-                <!-- Mission -->
-                <div class="card-primary content-spacing fade-in-up">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Misión -->
+                <div class="bg-white rounded-2xl shadow-xl p-8 hover-lift fade-in-up">
                     <div class="text-center">
-                        <div class="icon-container w-16 h-16 bg-green-600 flex items-center justify-center mx-auto mb-6">
-                            <i class="fas fa-bullseye text-white" style="font-size: var(--icon-size-xl);"></i>
+                        <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-bullseye text-2xl text-orange-600"></i>
                         </div>
-                        <h3 class="text-xl md:text-2xl academic-title mb-4">Misión</h3>
-                        <p class="academic-text leading-relaxed">
-                            Formar bachilleres técnicos competentes, con valores sólidos y comprometidos con el desarrollo de su comunidad y el progreso de Baja California Sur.
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Misión</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Formar bachilleres técnicos competentes, con valores sólidos y compromiso social.
                         </p>
-                        <div class="mt-6 flex justify-center">
-                            <div class="w-8 h-0.5 bg-green-600"></div>
-                        </div>
                     </div>
                 </div>
 
-                <!-- Vision -->
-                <div class="card-primary content-spacing fade-in-up" style="animation-delay: 0.2s;">
+                <!-- Visión -->
+                <div class="bg-white rounded-2xl shadow-xl p-8 hover-lift fade-in-up" style="animation-delay: 0.2s;">
                     <div class="text-center">
-                        <div class="icon-container w-16 h-16 bg-orange-600 flex items-center justify-center mx-auto mb-6">
-                            <i class="fas fa-eye text-white" style="font-size: var(--icon-size-xl);"></i>
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-eye text-2xl text-green-600"></i>
                         </div>
-                        <h3 class="text-xl md:text-2xl academic-title mb-4">Visión</h3>
-                        <p class="academic-text leading-relaxed">
-                            Ser reconocidos como el mejor plantel educativo de la región, formando líderes del mañana con una educación de calidad mundial.
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Visión</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Ser un referente educativo regional, formando líderes con sentido ético.
                         </p>
-                        <div class="mt-6 flex justify-center">
-                            <div class="w-8 h-0.5 bg-orange-600"></div>
-                        </div>
                     </div>
                 </div>
 
-                <!-- Values -->
-                <div class="card-primary content-spacing fade-in-up" style="animation-delay: 0.4s;">
+                <!-- Valores -->
+                <div class="bg-white rounded-2xl shadow-xl p-8 hover-lift fade-in-up" style="animation-delay: 0.4s;">
                     <div class="text-center">
-                        <div class="icon-container w-16 h-16 bg-gray-600 flex items-center justify-center mx-auto mb-6">
-                            <i class="fas fa-heart text-white" style="font-size: var(--icon-size-xl);"></i>
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-heart text-2xl text-blue-600"></i>
                         </div>
-                        <h3 class="text-xl md:text-2xl academic-title mb-4">Valores</h3>
-                        <p class="academic-text leading-relaxed">
-                            Respeto, responsabilidad, honestidad y compromiso con la excelencia educativa y el desarrollo sostenible de nuestra comunidad.
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Valores</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Respeto, responsabilidad, honestidad y compromiso con la comunidad.
                         </p>
-                        <div class="mt-6 flex justify-center">
-                            <div class="w-8 h-0.5 bg-gray-600"></div>
-                        </div>
                     </div>
-                </div>
-            </div>
-
-            <!-- Stats Section -->
-            <div class="mt-16 grid grid-cols-2 lg:grid-cols-4 grid-gap-md">
-                <div class="text-center fade-in-up">
-                    <div class="text-2xl md:text-3xl font-bold text-green-600 mb-2">500+</div>
-                    <div class="academic-text font-medium text-sm md:text-base">Estudiantes</div>
-                </div>
-                <div class="text-center fade-in-up" style="animation-delay: 0.1s;">
-                    <div class="text-2xl md:text-3xl font-bold text-orange-600 mb-2">15+</div>
-                    <div class="academic-text font-medium text-sm md:text-base">Años de Experiencia</div>
-                </div>
-                <div class="text-center fade-in-up" style="animation-delay: 0.2s;">
-                    <div class="text-2xl md:text-3xl font-bold text-green-600 mb-2">2</div>
-                    <div class="academic-text font-medium text-sm md:text-base">Carreras Técnicas</div>
-                </div>
-                <div class="text-center fade-in-up" style="animation-delay: 0.3s;">
-                    <div class="text-2xl md:text-3xl font-bold text-orange-600 mb-2">95%</div>
-                    <div class="academic-text font-medium text-sm md:text-base">Eficiencia Terminal</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Oferta Educativa Section -->
-    <section id="oferta-educativa" class="section-spacing bg-white relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 fade-in-up">
-                <div class="academic-badge inline-flex items-center mb-6">
-                    <i class="fas fa-graduation-cap mr-2" style="font-size: var(--icon-size-sm);"></i>
-                    Carreras Técnicas
-                </div>
-                <h2 class="text-3xl md:text-4xl academic-title mb-6">Nuestra Oferta Educativa</h2>
-                <div class="w-16 h-0.5 bg-green-600 mx-auto mb-8"></div>
-                <p class="text-lg academic-text max-w-3xl mx-auto leading-relaxed">
-                    Carreras técnicas de vanguardia que preparan a nuestros estudiantes para el futuro laboral con las competencias más demandadas del mercado
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Nuestra Oferta Educativa</h2>
+                <div class="w-24 h-1 bg-orange-500 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Carreras técnicas que preparan a nuestros estudiantes para el futuro laboral
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 grid-gap-lg">
-                <!-- Programación -->
-                <div class="card-primary overflow-hidden fade-in-up">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <!-- Soporte técnico -->
+                <div class="bg-white rounded-2xl shadow-2xl overflow-hidden hover-lift fade-in-up h-full flex flex-col">
                     <div class="relative">
-                        <div class="absolute top-4 right-4 bg-green-600 text-white px-3 py-1 rounded text-xs font-medium z-10">
-                            <i class="fas fa-code mr-1" style="font-size: var(--icon-size-sm);"></i>
-                            Tecnología
-                        </div>
-                        <div class="h-48 bg-gray-50 flex items-center justify-center relative overflow-hidden">
-                            <i class="fas fa-laptop-code text-green-600 relative z-10" style="font-size: 3rem;"></i>
-                        </div>
-                    </div>
-                    <div class="content-spacing">
-                        <h3 class="text-xl md:text-2xl academic-title mb-4">Programación</h3>
-                        <p class="academic-text mb-6 leading-relaxed">
-                            Desarrolla habilidades en programación, desarrollo de software y tecnologías de la información. 
-                            Aprende los lenguajes más demandados del mercado laboral y prepárate para el futuro digital.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded text-xs font-medium">JavaScript</span>
-                            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded text-xs font-medium">Python</span>
-                            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded text-xs font-medium">Java</span>
-                            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded text-xs font-medium">C++</span>
-                        </div>
-                        <a href="../../../pages_oferta_educativa/programacion.html" 
-                           class="inline-flex items-center btn-primary bg-green-600 text-white hover:bg-green-700">
-                            <span>Conocer más</span>
-                            <i class="fas fa-arrow-right ml-2" style="font-size: var(--icon-size-sm);"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Mantenimiento de Equipo de Cómputo -->
-                <div class="card-primary overflow-hidden fade-in-up" style="animation-delay: 0.2s;">
-                    <div class="relative">
-                        <div class="absolute top-4 right-4 bg-orange-600 text-white px-3 py-1 rounded text-xs font-medium z-10">
-                            <i class="fas fa-tools mr-1" style="font-size: var(--icon-size-sm);"></i>
+                        <div class="absolute top-4 right-4 bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-semibold">
+                            <i class="fas fa-tools mr-2"></i>
                             Técnica
                         </div>
-                        <div class="h-48 bg-gray-50 flex items-center justify-center relative overflow-hidden">
-                            <i class="fas fa-desktop text-orange-600 relative z-10" style="font-size: 3rem;"></i>
+                        <div class="h-48 bg-blue-100 flex items-center justify-center">
+                            <i class="fas fa-desktop text-6xl text-blue-600 pulse-animation"></i>
                         </div>
                     </div>
-                    <div class="content-spacing">
-                        <h3 class="text-lg md:text-xl academic-title mb-4">Soporte y Mantenimiento de Equipo de Cómputo</h3>
-                        <p class="academic-text mb-6 leading-relaxed">
-                            Especialízate en el mantenimiento, reparación y soporte técnico de equipos de cómputo. 
-                            Desarrolla competencias en hardware, software y redes para ser un técnico integral.
+                    <div class="p-8 flex flex-col h-full">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Soporte y Mantenimiento de Equipo de Cómputo</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Mantenimiento, reparación y soporte técnico de equipos de cómputo. Competencias en hardware, software y redes.
                         </p>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded text-xs font-medium">Hardware</span>
-                            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded text-xs font-medium">Software</span>
-                            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded text-xs font-medium">Redes</span>
-                            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded text-xs font-medium">Soporte</span>
+                        <div class="mt-auto pt-6">
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Hardware</span>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Software</span>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Redes</span>
+                            </div>
+                            <a href="../../pages_oferta_educativa/mantenimiento_equipo_de_computo.html" 
+                               class="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors">
+                                <span>Conocer más</span>
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
                         </div>
-                        <a href="../../../pages_oferta_educativa/mantenimiento_equipo_de_computo.html" 
-                           class="inline-flex items-center btn-primary bg-orange-600 text-white hover:bg-orange-700">
-                            <span>Conocer más</span>
-                            <i class="fas fa-arrow-right ml-2" style="font-size: var(--icon-size-sm);"></i>
-                        </a>
                     </div>
                 </div>
-            </div>
 
-            <!-- Additional Info -->
-            <div class="mt-16 bg-green-600 rounded-lg content-spacing text-white text-center fade-in-up">
-                <h3 class="text-xl md:text-2xl font-bold mb-4">¿Por qué elegir nuestras carreras?</h3>
-                <p class="text-lg mb-8 opacity-90">
-                    Nuestros programas están diseñados para brindarte las competencias técnicas y habilidades profesionales que el mercado laboral actual demanda.
-                </p>
-                <div class="grid grid-cols-1 md:grid-cols-3 grid-gap-md">
-                    <div class="text-center">
-                        <div class="icon-container w-12 h-12 bg-white/20 flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-certificate text-white" style="font-size: var(--icon-size-lg);"></i>
+                <!-- Servicios de Hotelería -->
+                <div class="bg-white rounded-2xl shadow-2xl overflow-hidden hover-lift fade-in-up h-full flex flex-col" style="animation-delay: 0.1s;">
+                    <div class="relative">
+                        <div class="absolute top-4 right-4 bg-pink-500 text-white px-4 py-2 rounded-full text-sm font-semibold">
+                            <i class="fas fa-concierge-bell mr-2"></i>
+                            Servicios
                         </div>
-                        <h4 class="text-lg font-semibold mb-2">Certificación Oficial</h4>
-                        <p class="text-sm opacity-80">Títulos reconocidos por la SEP</p>
+                        <div class="h-48 bg-pink-100 flex items-center justify-center">
+                            <i class="fas fa-hotel text-6xl text-pink-600 pulse-animation"></i>
+                        </div>
                     </div>
-                    <div class="text-center">
-                        <div class="icon-container w-12 h-12 bg-white/20 flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-briefcase text-white" style="font-size: var(--icon-size-lg);"></i>
+                    <div class="p-8 flex flex-col h-full">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Servicios de Hotelería</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Atención al huésped, operación de áreas, calidad en el servicio y gestión hotelera.
+                        </p>
+                        <div class="mt-auto pt-6">
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm">Atención</span>
+                                <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm">Operación</span>
+                                <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm">Calidad</span>
+                            </div>
+                            <a href="../../pages_oferta_educativa/servicios_de_hoteleria.html" 
+                               class="inline-flex items-center px-6 py-3 bg-pink-600 text-white font-semibold rounded-lg hover:bg-pink-700 transition-colors">
+                                <span>Conocer más</span>
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
                         </div>
-                        <h4 class="text-lg font-semibold mb-2">Prácticas Profesionales</h4>
-                        <p class="text-sm opacity-80">Experiencia laboral real</p>
                     </div>
-                    <div class="text-center">
-                        <div class="icon-container w-12 h-12 bg-white/20 flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-rocket text-white" style="font-size: var(--icon-size-lg);"></i>
+                </div>
+
+                <!-- Contabilidad -->
+                <div class="bg-white rounded-2xl shadow-2xl overflow-hidden hover-lift fade-in-up h-full flex flex-col" style="animation-delay: 0.2s;">
+                    <div class="relative">
+                        <div class="absolute top-4 right-4 bg-emerald-500 text-white px-4 py-2 rounded-full text-sm font-semibold">
+                            <i class="fas fa-calculator mr-2"></i>
+                            Económico-Administrativa
                         </div>
-                        <h4 class="text-lg font-semibold mb-2">Alta Empleabilidad</h4>
-                        <p class="text-sm opacity-80">95% de egresados trabajando</p>
+                        <div class="h-48 bg-emerald-100 flex items-center justify-center">
+                            <i class="fas fa-file-invoice-dollar text-6xl text-emerald-600 pulse-animation"></i>
+                        </div>
+                    </div>
+                    <div class="p-8 flex flex-col h-full">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Contabilidad</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Registros contables, costos, nómina y declaración básica. Uso de herramientas ofimáticas.
+                        </p>
+                        <div class="mt-auto pt-6">
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-sm">Registros</span>
+                                <span class="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-sm">Costos</span>
+                                <span class="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-sm">Nómina</span>
+                            </div>
+                            <a href="../../pages_oferta_educativa/contabilidad.html" 
+                               class="inline-flex items-center px-6 py-3 bg-emerald-600 text-white font-semibold rounded-lg hover:bg-emerald-700 transition-colors">
+                                <span>Conocer más</span>
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -678,90 +408,81 @@
     </section>
 
     <!-- Location Section -->
-    <section class="section-spacing bg-gray-50 relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 fade-in-up">
-                <div class="academic-badge inline-flex items-center mb-6">
-                    <i class="fas fa-map-marker-alt mr-2" style="font-size: var(--icon-size-sm);"></i>
-                    Ubicación
-                </div>
-                <h2 class="text-3xl md:text-4xl academic-title mb-6">Encuéntranos</h2>
-                <div class="w-16 h-0.5 bg-green-600 mx-auto mb-8"></div>
-                <p class="text-lg academic-text max-w-3xl mx-auto leading-relaxed">
-                    Ubicados en el corazón de Todos Santos, un lugar mágico donde la tradición se encuentra con la innovación educativa
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Ubicación</h2>
+                <div class="w-24 h-1 bg-orange-500 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Encuéntranos en Todos Santos, B.C.S.
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 grid-gap-lg items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <!-- Address Info -->
                 <div class="fade-in-up">
-                    <div class="card-primary content-spacing">
-                        <div class="flex items-start space-x-6 mb-8">
-                            <div class="icon-container p-4 bg-green-600">
-                                <i class="fas fa-map-marker-alt text-white" style="font-size: var(--icon-size-xl);"></i>
+                    <div class="bg-white rounded-2xl shadow-xl p-8 hover-lift">
+                        <div class="flex items-start space-x-4 mb-6">
+                            <div class="p-3 bg-red-100 rounded-full">
+                                <i class="fas fa-map-marker-alt text-2xl text-red-600"></i>
                             </div>
                             <div>
-                                <h3 class="text-xl md:text-2xl academic-title mb-4">Dirección</h3>
-                                <p class="academic-text leading-relaxed">
-                                    Calle del Huerto e/ Morelos e Hidalgo<br>
-                                    CP 23300<br>
-                                    Todos Santos, B.C.S.
+                                <h3 class="text-2xl font-bold text-gray-900 mb-2">Dirección</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    Por confirmar
                                 </p>
                             </div>
                         </div>
 
                         <div class="space-y-4">
-                            <div class="flex items-center space-x-4 p-4 bg-gray-50 rounded-lg">
-                                <div class="icon-container p-3 bg-green-600">
-                                    <i class="fas fa-clock text-white" style="font-size: var(--icon-size-md);"></i>
+                            <div class="flex items-center space-x-3">
+                                <div class="p-2 bg-green-100 rounded-full">
+                                    <i class="fas fa-clock text-green-600"></i>
                                 </div>
                                 <div>
-                                    <p class="academic-subtitle">Horario de Atención</p>
-                                    <p class="academic-text text-sm">Lunes a Viernes: 8:00 AM - 4:00 PM</p>
+                                    <p class="font-semibold text-gray-800">Horario de Atención</p>
+                                    <p class="text-gray-600">Lunes a Viernes: 8:00 AM - 4:00 PM</p>
                                 </div>
                             </div>
 
-                            <div class="flex items-center space-x-4 p-4 bg-gray-50 rounded-lg">
-                                <div class="icon-container p-3 bg-gray-600">
-                                    <i class="fas fa-bus text-white" style="font-size: var(--icon-size-md);"></i>
+                            <div class="flex items-center space-x-3">
+                                <div class="p-2 bg-purple-100 rounded-full">
+                                    <i class="fas fa-bus text-purple-600"></i>
                                 </div>
                                 <div>
-                                    <p class="academic-subtitle">Transporte</p>
-                                    <p class="academic-text text-sm">Acceso por carretera transpeninsular</p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-center space-x-4 p-4 bg-gray-50 rounded-lg">
-                                <div class="icon-container p-3 bg-orange-600">
-                                    <i class="fas fa-parking text-white" style="font-size: var(--icon-size-md);"></i>
-                                </div>
-                                <div>
-                                    <p class="academic-subtitle">Estacionamiento</p>
-                                    <p class="academic-text text-sm">Área de estacionamiento disponible</p>
+                                    <p class="font-semibold text-gray-800">Transporte</p>
+                                    <p class="text-gray-600">Acceso por carretera</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Map Placeholder -->
+                <!-- Map -->
                 <div class="fade-in-up" style="animation-delay: 0.2s;">
-                    <div class="card-primary overflow-hidden">
-                        <div class="h-96 bg-gray-100 flex items-center justify-center relative overflow-hidden">
-                            <div class="text-center relative z-10">
-                                <div class="icon-container w-20 h-20 bg-green-600 flex items-center justify-center mx-auto mb-6">
-                                    <i class="fas fa-map text-white" style="font-size: var(--icon-size-xl);"></i>
-                                </div>
-                                <h3 class="text-xl academic-title mb-2">Mapa Interactivo</h3>
-                                <p class="academic-text font-medium mb-2">Calle del Huerto e/ Morelos e Hidalgo</p>
-                                <p class="text-sm academic-text">Todos Santos, B.C.S.</p>
-                                <div class="mt-6">
-                                    <button class="inline-flex items-center btn-primary bg-green-600 text-white hover:bg-green-700">
-                                        <i class="fas fa-directions mr-2" style="font-size: var(--icon-size-sm);"></i>
-                                        Cómo llegar
-                                    </button>
-                                </div>
-                            </div>
+                    <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale">
+                        <div class="h-80 bg-gray-200 relative">
+                            <iframe
+                                title="Ubicación CECyT 02 Todos Santos"
+                                width="100%"
+                                height="100%"
+                                style="border:0;"
+                                loading="lazy"
+                                allowfullscreen
+                                referrerpolicy="no-referrer-when-downgrade"
+                                src="https://www.google.com/maps?hl=es&q=23.446071080693258, -110.2194109042323&z=16&output=embed">
+                            </iframe>
+                        </div>
+                        <div class="p-4 bg-white border-t flex items-center justify-between">
+                            <div class="text-sm text-gray-600">Coordenadas: 23.446081, -110.219722</div>
+                            <a
+                                href="https://www.google.com/maps?q=23.446071080693258, -110.2194109042323"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="inline-flex items-center px-4 py-2 bg-orange-600 text-white text-sm font-semibold rounded-lg hover:bg-orange-700">
+                                Abrir en Google Maps
+                                <i class="fas fa-external-link-alt ml-2"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -770,93 +491,47 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contacto" class="section-spacing bg-white relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 fade-in-up">
-                <div class="academic-badge inline-flex items-center mb-6">
-                    <i class="fas fa-phone mr-2" style="font-size: var(--icon-size-sm);"></i>
-                    Contacto
-                </div>
-                <h2 class="text-3xl md:text-4xl academic-title mb-6">Contáctanos</h2>
-                <div class="w-16 h-0.5 bg-green-600 mx-auto mb-8"></div>
-                <p class="text-lg academic-text max-w-3xl mx-auto leading-relaxed">
-                    Estamos aquí para resolver tus dudas y brindarte la información que necesitas sobre nuestro plantel y programas educativos
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Contáctanos</h2>
+                <div class="w-24 h-1 bg-orange-500 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Estamos aquí para resolver tus dudas y brindarte la información que necesitas
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 grid-gap-lg">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Email -->
                 <div class="text-center fade-in-up">
-                    <div class="card-primary content-spacing h-full flex flex-col">
-                        <div class="icon-container w-16 h-16 bg-orange-600 flex items-center justify-center mx-auto mb-6">
-                            <i class="fas fa-envelope text-white" style="font-size: var(--icon-size-xl);"></i>
+                    <div class="bg-white rounded-2xl shadow-xl p-8 hover-lift">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-envelope text-2xl text-blue-600"></i>
                         </div>
-                        <h3 class="text-lg md:text-xl academic-title mb-4">Email</h3>
-                        <div class="flex-grow flex flex-col justify-center">
-                            <a href="mailto:cecyt02@cecytebcs.edu.mx" 
-                               class="text-orange-600 hover:underline font-semibold text-sm break-all leading-tight">
-                                cecyt02@cecytebcs.edu.mx
-                            </a>
-                        </div>
-                        <div class="mt-6 flex justify-center">
-                            <div class="w-8 h-0.5 bg-orange-600"></div>
-                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Email</h3>
+                        <p class="text-gray-700 font-medium">Por confirmar</p>
                     </div>
                 </div>
 
                 <!-- Phone -->
                 <div class="text-center fade-in-up" style="animation-delay: 0.2s;">
-                    <div class="card-primary content-spacing h-full flex flex-col">
-                        <div class="icon-container w-16 h-16 bg-green-600 flex items-center justify-center mx-auto mb-6">
-                            <i class="fas fa-phone text-white" style="font-size: var(--icon-size-xl);"></i>
+                    <div class="bg-white rounded-2xl shadow-xl p-8 hover-lift">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-phone text-2xl text-green-600"></i>
                         </div>
-                        <h3 class="text-lg md:text-xl academic-title mb-4">Teléfono</h3>
-                        <div class="flex-grow flex flex-col justify-center">
-                            <p class="academic-subtitle text-lg">(612) 145 0302</p>
-                            <p class="academic-text text-sm mt-2">Lunes a Viernes 8:00 AM - 4:00 PM</p>
-                        </div>
-                        <div class="mt-6 flex justify-center">
-                            <div class="w-8 h-0.5 bg-green-600"></div>
-                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Teléfono</h3>
+                        <p class="text-gray-700 font-medium">Por confirmar</p>
                     </div>
                 </div>
 
                 <!-- Address -->
                 <div class="text-center fade-in-up" style="animation-delay: 0.4s;">
-                    <div class="card-primary content-spacing h-full flex flex-col">
-                        <div class="icon-container w-16 h-16 bg-green-600 flex items-center justify-center mx-auto mb-6">
-                            <i class="fas fa-map-marker-alt text-white" style="font-size: var(--icon-size-xl);"></i>
+                    <div class="bg-white rounded-2xl shadow-xl p-8 hover-lift">
+                        <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-map-marker-alt text-2xl text-red-600"></i>
                         </div>
-                        <h3 class="text-lg md:text-xl academic-title mb-4">Dirección</h3>
-                        <div class="flex-grow flex flex-col justify-center">
-                            <p class="academic-subtitle text-lg">Calle del Huerto e/ Morelos e Hidalgo</p>
-                            <p class="academic-text text-sm mt-2">Todos Santos, B.C.S. CP 23300</p>
-                        </div>
-                        <div class="mt-6 flex justify-center">
-                            <div class="w-8 h-0.5 bg-green-600"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CTA Section -->
-            <div class="mt-16 text-center fade-in-up">
-                <div class="bg-green-600 rounded-lg content-spacing text-white">
-                    <h3 class="text-2xl md:text-3xl font-bold mb-6">¿Listo para comenzar tu futuro?</h3>
-                    <p class="text-lg mb-8 opacity-90 max-w-3xl mx-auto">
-                        Únete a nuestra comunidad educativa y forma parte de la nueva generación de profesionales técnicos de Baja California Sur
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="../../pages_alumnos/requisitos_de_ingreso.html" 
-                           class="inline-flex items-center btn-primary bg-white text-green-600 hover:bg-gray-100">
-                            <i class="fas fa-file-alt mr-2" style="font-size: var(--icon-size-sm);"></i>
-                            Ver Requisitos
-                        </a>
-                        <a href="mailto:cecyt02@cecytebcs.edu.mx" 
-                           class="inline-flex items-center btn-primary bg-green-700 text-white hover:bg-green-800">
-                            <i class="fas fa-envelope mr-2" style="font-size: var(--icon-size-sm);"></i>
-                            Solicitar Información
-                        </a>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Dirección</h3>
+                        <p class="text-gray-700 font-medium">Por confirmar</p>
                     </div>
                 </div>
             </div>
@@ -983,3 +658,4 @@
     </script>
 </body>
 </html>
+

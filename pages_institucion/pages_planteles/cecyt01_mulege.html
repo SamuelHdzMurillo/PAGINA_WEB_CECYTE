@@ -229,12 +229,16 @@
                     <div class="relative">
                         <div class="absolute -top-4 -right-4 w-24 h-24 bg-orange-200 rounded-full opacity-20 float-animation"></div>
                         <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-green-200 rounded-full opacity-20 float-animation" style="animation-delay: 1s;"></div>
-                        <img src="../../img_recuros_pagina/img_planteles/CECYTE/CECYTE_01_MULEGE/01_M.jpeg" 
-                             alt="CECyT 01 - Mulegé" 
-                             class="w-full h-96 object-cover rounded-2xl shadow-2xl hover-rotate">
-                        <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-6 rounded-b-2xl">
-                            <h3 class="text-2xl font-bold">CCT: 03ETC0003A</h3>
-                            <p class="text-orange-300">Carretera Transpeninsular Km. 128 + 800, s/n</p>
+                        <div class="group overflow-hidden rounded-2xl shadow-2xl">
+                            <div class="transition-transform duration-300 ease-out group-hover:scale-105">
+                                <img src="../../img_recuros_pagina/img_planteles/CECYTE/CECYTE_01_MULEGE/01_M.jpeg" 
+                                     alt="CECyT 01 - Mulegé" 
+                                     class="w-full h-96 object-cover">
+                                <div class="bg-black bg-opacity-50 text-white p-6">
+                                    <h3 class="text-2xl font-bold">CCT: 03ETC0003A</h3>
+                                    <p class="text-orange-300">Carretera Transpeninsular Km. 128 + 800, s/n</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -309,7 +313,7 @@
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 <!-- Programación -->
-                <div class="bg-white rounded-2xl shadow-2xl overflow-hidden hover-lift fade-in-up">
+                <div class="bg-white rounded-2xl shadow-2xl overflow-hidden hover-lift fade-in-up h-full flex flex-col">
                     <div class="relative">
                         <div class="absolute top-4 right-4 bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-semibold">
                             <i class="fas fa-code mr-2"></i>
@@ -319,28 +323,30 @@
                             <i class="fas fa-laptop-code text-6xl text-orange-600 pulse-animation"></i>
                         </div>
                     </div>
-                    <div class="p-8">
+                    <div class="p-8 flex flex-col h-full">
                         <h3 class="text-2xl font-bold text-gray-900 mb-4">Programación</h3>
-                        <p class="text-gray-600 mb-6 leading-relaxed">
+                        <p class="text-gray-600 leading-relaxed">
                             Desarrolla habilidades en programación, desarrollo de software y tecnologías de la información. 
                             Aprende los lenguajes más demandados del mercado laboral.
                         </p>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
-                            <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">Python</span>
-                            <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">Java</span>
-                            <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">C++</span>
+                        <div class="mt-auto pt-6">
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                                <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">Python</span>
+                                <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">Java</span>
+                                <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">C++</span>
+                            </div>
+                            <a href="../../pages_oferta_educativa/programacion.html" 
+                               class="inline-flex items-center px-6 py-3 bg-orange-600 text-white font-semibold rounded-lg hover:bg-orange-700 transition-colors">
+                                <span>Conocer más</span>
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
                         </div>
-                        <a href="../../pages_oferta_educativa/programacion.html" 
-                           class="inline-flex items-center px-6 py-3 bg-orange-600 text-white font-semibold rounded-lg hover:bg-orange-700 transition-colors">
-                            <span>Conocer más</span>
-                            <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
                     </div>
                 </div>
 
                 <!-- Mantenimiento de Equipo de Cómputo -->
-                <div class="bg-white rounded-2xl shadow-2xl overflow-hidden hover-lift fade-in-up" style="animation-delay: 0.2s;">
+                <div class="bg-white rounded-2xl shadow-2xl overflow-hidden hover-lift fade-in-up h-full flex flex-col" style="animation-delay: 0.2s;">
                     <div class="relative">
                         <div class="absolute top-4 right-4 bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-semibold">
                             <i class="fas fa-tools mr-2"></i>
@@ -350,23 +356,25 @@
                             <i class="fas fa-desktop text-6xl text-blue-600 pulse-animation" style="animation-delay: 1s;"></i>
                         </div>
                     </div>
-                    <div class="p-8">
+                    <div class="p-8 flex flex-col h-full">
                         <h3 class="text-2xl font-bold text-gray-900 mb-4">Soporte y Mantenimiento de Equipo de Cómputo</h3>
-                        <p class="text-gray-600 mb-6 leading-relaxed">
+                        <p class="text-gray-600 leading-relaxed">
                             Especialízate en el mantenimiento, reparación y soporte técnico de equipos de cómputo. 
                             Desarrolla competencias en hardware y software.
                         </p>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Hardware</span>
-                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Software</span>
-                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Redes</span>
-                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Soporte</span>
+                        <div class="mt-auto pt-6">
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Hardware</span>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Software</span>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Redes</span>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Soporte</span>
+                            </div>
+                            <a href="../../pages_oferta_educativa/mantenimiento_equipo_de_computo.html" 
+                               class="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors">
+                                <span>Conocer más</span>
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
                         </div>
-                        <a href="../../pages_oferta_educativa/mantenimiento_equipo_de_computo.html" 
-                           class="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors">
-                            <span>Conocer más</span>
-                            <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
                     </div>
                 </div>
             </div>
@@ -429,12 +437,30 @@
                 <!-- Map Placeholder -->
                 <div class="fade-in-up" style="animation-delay: 0.2s;">
                     <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale">
-                        <div class="h-80 bg-gray-200 flex items-center justify-center">
-                            <div class="text-center">
-                                <i class="fas fa-map text-6xl text-gray-400 mb-4 rotate-animation"></i>
-                                <p class="text-gray-600 font-medium">Mapa Interactivo</p>
-                                <p class="text-sm text-gray-500">Carretera Transpeninsular Km. 128 + 800</p>
+                        <div class="h-80 bg-gray-200 relative">
+                            <iframe
+                                title="Ubicación CECyT 01 Mulegé"
+                                width="100%"
+                                height="100%"
+                                style="border:0;"
+                                loading="lazy"
+                                allowfullscreen
+                                referrerpolicy="no-referrer-when-downgrade"
+                                src="https://www.google.com/maps?hl=es&q=26.873608067756297,-111.94237885767197&z=16&output=embed">
+                            </iframe>
+                        </div>
+                        <div class="p-4 bg-white border-t flex items-center justify-between">
+                            <div class="text-sm text-gray-600">
+                                Coordenadas: 26.873608, -111.942379
                             </div>
+                            <a
+                                href="https://www.google.com/maps?q=26.873608067756297,-111.94237885767197"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="inline-flex items-center px-4 py-2 bg-orange-600 text-white text-sm font-semibold rounded-lg hover:bg-orange-700">
+                                Abrir en Google Maps
+                                <i class="fas fa-external-link-alt ml-2"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
