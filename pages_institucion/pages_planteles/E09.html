@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMSaD 09 - Benito Juárez | CECYTEBCS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link
+      href="https://unpkg.com/flowbite@^2.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="https://unpkg.com/flowbite@^2.1/dist/flowbite.min.js"></script>
+    <style>
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes slideInLeft {
+            from { transform: translateX(-100px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        @keyframes slideInRight {
+            from { transform: translateX(100px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .float-animation { animation: float 3s ease-in-out infinite; }
+        .slide-in-left { animation: slideInLeft 0.8s ease-out; }
+        .slide-in-right { animation: slideInRight 0.8s ease-out; }
+        .fade-in-up { animation: fadeInUp 0.6s ease-out; }
+        .pulse-animation { animation: pulse 2s ease-in-out infinite; }
+        .rotate-animation { animation: rotate 20s linear infinite; }
+        .hover-lift:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+        .hover-scale:hover { transform: scale(1.05); transition: all 0.3s ease; }
+        .hover-rotate:hover { transform: rotate(5deg); transition: all 0.3s ease; }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- INICIO NAVBAR CON SUBEMENUS -->
+    <nav class="bg-white shadow-lg relative z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <img src="../../img_logos/logo_Cecyte_vertical_sin_fondo.png" alt="logo_Cecyte_vertical_sin_fondo" class="h-12 w-auto">
+                </div>
+                <!-- Responsive menu button -->
+                <div class="flex items-center sm:hidden">
+                    <button id="menu-btn" class="text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700">
+                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+                <!-- Navbar links -->
+                <div class="hidden sm:flex sm:items-center sm:ml-6">
+                    <div class="relative group">
+                        <a href="../../index.html" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Inicio</a>
+                    </div>
+                    <div class="relative group">
+                        <a href="#" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Institución</a>
+                        <!-- Submenu -->
+                        <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md z-50">
+                            <a href="../../pages_institucion/pagina_historia.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Historia, Misión y Visión</a>
+                            <a href="../../pages_institucion/planteles_cecyte.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Planteles CecyteBCS</a>
+                            <a href="../../pages_institucion/planteles_emsad.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Planteles Emsad</a>
+                            <a href="../../directorio_telefonico.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Directorio Telefónico</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="#" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Oferta Educativa</a>
+                        <!-- Submenu -->
+                        <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md z-50">
+                            <a href="../../pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Soporte y Mantenimiento equipo de computo</a>
+                            <a href="../../pages_oferta_educativa/programacion.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programación</a>
+                            <a href="../../pages_oferta_educativa/ventas.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ventas</a>
+                            <a href="../../pages_oferta_educativa/ecoturismo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ecoturismo</a>
+                            <a href="../../pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Producción industrial de alimentos</a>
+                            <a href="../../pages_oferta_educativa/mantenimiento_industrial.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Mantenimiento Industrial</a>
+                            <a href="../../pages_oferta_educativa/servicios_de_hoteleria.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Servicios de Hotelería</a>
+                            <a href="../../pages_oferta_educativa/tics.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Tecnologías de la Información y la Comunicación</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="#" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Alumnos</a>
+                        <!-- Submenu -->
+                        <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md z-50">
+                            <a href="../../pages_alumnos/becas.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Becas</a>
+                            <a href="../../pages_alumnos/prog_acompanamiento.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programa de Acompañamiento</a>
+                            <a href="../../pages_alumnos/requisitos_de_ingreso.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Requisitos de Ingreso</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="#" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Normatividad</a>
+                        <!-- Submenu -->
+                        <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md z-50">
+                            <a href="../../pages_normatividad/manuales_de_procedimientos.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Manuales de Procedimientos</a>
+                            <a href="../../pages_normatividad/manuales_de_org.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Manuales de Organización</a>
+                            <a href="https://drive.google.com/file/d/1w1kARXVhw-SFsSY7q7JPBH4MgAqN8C_S/view?usp=drive_link" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Reglamento interno</a>
+                            <a href="https://drive.google.com/file/d/13m142kMwEJ6hj8xaDJXu-XdA-jAkO9jb/view?usp=sharing" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Código de Conducta</a>
+                            <a href="https://drive.google.com/file/d/1lIJBD8IXxHcM3hwp7v3VmG2X1EJZXKnG/view?usp=sharing" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Protocolo de Seguridad </a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="https://transparencia.cecytebcs.edu.mx/" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Transparencia</a>
+                        <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md z-50">
+                            <a href="https://transparencia.cecytebcs.edu.mx/informacion-publica/articulo-75" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Artículo 75</a>
+                            <a href="../../pages_transparencia/cuenta_publica.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Cuenta pública</a>
+                            <a href="../../pages_transparencia/ley_diciplina.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ley de disciplina Financiera </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Responsive Menu -->
+        <div class="sm:hidden hidden" id="mobile-menu">
+            <a href="../../index.html" class="block text-gray-700 hover:text-green-600 px-4 py-2">Inicio</a>
+            <div class="block">
+                <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="servicios-btn">
+                    Institución
+                    <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <!-- Submenu -->
+                <div class="hidden" id="servicios-submenu">
+                    <a href="../../pages_institucion/pagina_historia.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Historia, Misión y Visión</a>
+                    <a href="../../pages_institucion/planteles_cecyte.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Planteles CecyteBCS</a>
+                    <a href="../../pages_institucion/planteles_emsad.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Planteles Emsad</a>
+                    <a href="../../directorio_telefonico.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Directorio Telefonico</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full h-1 bg-orange-500"></div>
+    </nav>
+    <!-- FIN NAVBAR CON SUBEMENUS -->
+
+    <!-- Hero Section -->
+    <section class="relative bg-white overflow-hidden">
+        <div class="absolute inset-0 bg-gray-100"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Text Content -->
+                <div class="slide-in-left">
+                    <div class="mb-6">
+                        <span class="inline-block bg-orange-100 text-orange-800 text-sm font-semibold px-4 py-2 rounded-full mb-4">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            Benito Juárez, B.C.S.
+                        </span>
+                        <h1 class="text-5xl font-bold text-gray-900 mb-4">
+                            EMSaD 09
+                            <span class="text-orange-600">Benito Juárez</span>
+                        </h1>
+                        <p class="text-xl text-gray-600 mb-6">
+                            Formando profesionales del futuro en la comunidad de Benito Juárez
+                        </p>
+                    </div>
+                    
+                    <!-- Coordinator Info -->
+                    <div class="bg-white rounded-2xl shadow-xl p-6 mb-8 hover-lift">
+                        <div class="flex items-center space-x-4">
+                            <div class="p-3 bg-green-100 rounded-full">
+                                <i class="fas fa-user-tie text-2xl text-green-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-800">Coordinador del Centro</h3>
+                                <p class="text-gray-600">C. Francisco Javier Ponce Bernal</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="bg-white rounded-xl shadow-lg p-4 hover-scale">
+                            <div class="flex items-center space-x-3">
+                                <div class="p-2 bg-blue-100 rounded-full">
+                                    <i class="fas fa-envelope text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-500">Email</p>
+                                    <a href="mailto:emsad09@cecytebcs.edu.mx" class="text-blue-600 hover:underline font-medium">
+                                        emsad09@cecytebcs.edu.mx
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-xl shadow-lg p-4 hover-scale">
+                            <div class="flex items-center space-x-3">
+                                <div class="p-2 bg-purple-100 rounded-full">
+                                    <i class="fas fa-phone text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-500">Teléfono</p>
+                                    <p class="text-gray-700 font-medium">(613) 131 6054</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image Content -->
+                <div class="slide-in-right">
+                    <div class="relative">
+                        <div class="absolute -top-4 -right-4 w-24 h-24 bg-orange-200 rounded-full opacity-20 float-animation"></div>
+                        <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-green-200 rounded-full opacity-20 float-animation" style="animation-delay: 1s;"></div>
+                        <img src="../../img_recuros_pagina/img_planteles/EMSAD/EMSAD/EMSAD_09/emsad09.jpg" 
+                             alt="EMSaD 09 - Benito Juárez" 
+                             class="w-full h-96 object-cover rounded-2xl shadow-2xl hover-rotate">
+                        <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-6 rounded-b-2xl">
+                            <h3 class="text-2xl font-bold">Centro EMSaD</h3>
+                            <p class="text-orange-300">Calzada de la Reforma, Benito Juárez</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- About Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in-up">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Acerca de Nuestro Centro</h2>
+                <div class="w-24 h-1 bg-orange-500 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    El EMSaD 09 Benito Juárez es un centro educativo comprometido con la excelencia académica y la formación integral de nuestros estudiantes en la comunidad de Benito Juárez.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Mission -->
+                <div class="bg-white rounded-2xl shadow-xl p-8 hover-lift fade-in-up">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-bullseye text-2xl text-orange-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Misión</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Formar bachilleres técnicos competentes, con valores sólidos y comprometidos con el desarrollo de su comunidad.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Vision -->
+                <div class="bg-white rounded-2xl shadow-xl p-8 hover-lift fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-eye text-2xl text-green-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Visión</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Ser reconocidos como el mejor centro educativo de la región, formando líderes del mañana.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Values -->
+                <div class="bg-white rounded-2xl shadow-xl p-8 hover-lift fade-in-up" style="animation-delay: 0.4s;">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-heart text-2xl text-blue-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Valores</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Respeto, responsabilidad, honestidad y compromiso con la excelencia educativa.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Oferta Educativa Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in-up">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Nuestra Oferta Educativa</h2>
+                <div class="w-24 h-1 bg-orange-500 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Carrera técnica de vanguardia que prepara a nuestros estudiantes para el futuro laboral
+                </p>
+            </div>
+
+            <div class="flex justify-center">
+                <div class="w-full max-w-2xl">
+                    <!-- Tecnologías de la Información y la Comunicación -->
+                    <div class="bg-white rounded-2xl shadow-2xl overflow-hidden hover-lift fade-in-up flex flex-col">
+                        <div class="relative">
+                            <div class="absolute top-4 right-4 bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-semibold">
+                                <i class="fas fa-network-wired mr-2"></i>
+                                Tecnología
+                            </div>
+                            <div class="h-48 bg-orange-100 flex items-center justify-center">
+                                <i class="fas fa-network-wired text-6xl text-orange-600 pulse-animation"></i>
+                            </div>
+                        </div>
+                        <div class="p-8 flex flex-col h-full">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">Tecnologías de la Información y la Comunicación</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                Desarrollo de competencias en tecnologías de la información, comunicación, redes, sistemas informáticos y aplicaciones digitales para el mundo actual.
+                            </p>
+                            <div class="mt-auto pt-6">
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">TIC</span>
+                                    <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">Redes</span>
+                                    <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">Comunicación</span>
+                                </div>
+                                <a href="../../pages_oferta_educativa/tics.html" 
+                                   class="inline-flex items-center px-6 py-3 bg-orange-600 text-white font-semibold rounded-lg hover:bg-orange-700 transition-colors">
+                                    <span>Conocer más</span>
+                                    <i class="fas fa-arrow-right ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in-up">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Ubicación</h2>
+                <div class="w-24 h-1 bg-orange-500 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Encuéntranos en Benito Juárez, B.C.S.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Address Info -->
+                <div class="fade-in-up">
+                    <div class="bg-white rounded-2xl shadow-xl p-8 hover-lift">
+                        <div class="flex items-start space-x-4 mb-6">
+                            <div class="p-3 bg-red-100 rounded-full">
+                                <i class="fas fa-map-marker-alt text-2xl text-red-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-900 mb-2">Dirección</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    Dom. Calzada de la Reforma<br>
+                                    CP 23730<br>
+                                    Benito Juárez, B.C.S.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="p-2 bg-green-100 rounded-full">
+                                    <i class="fas fa-clock text-green-600"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-800">Horario de Atención</p>
+                                    <p class="text-gray-600">Lunes a Viernes: 8:00 AM - 4:00 PM</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center space-x-3">
+                                <div class="p-2 bg-purple-100 rounded-full">
+                                    <i class="fas fa-bus text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-800">Transporte</p>
+                                    <p class="text-gray-600">Acceso por carretera y transporte local</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map -->
+                <div class="fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover-scale">
+                        <div class="h-80 bg-gray-200 relative">
+                            <iframe
+                                title="Ubicación EMSaD 09 Benito Juárez"
+                                width="100%"
+                                height="100%"
+                                style="border:0;"
+                                loading="lazy"
+                                allowfullscreen
+                                referrerpolicy="no-referrer-when-downgrade"
+                                src="https://www.google.com/maps?hl=es&q=25.11528896679925, -111.82713684016714&z=16&output=embed">
+                            </iframe>
+                        </div>
+                        <div class="p-4 bg-white border-t flex items-center justify-between">
+                            <div class="text-sm text-gray-600">
+                                Coordenadas: 25.11528896679925, -111.82713684016714
+                            </div>
+                            <a
+                                href="https://www.google.com/maps?q=25.11528896679925, -111.82713684016714"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="inline-flex items-center px-4 py-2 bg-orange-600 text-white text-sm font-semibold rounded-lg hover:bg-orange-700">
+                                Abrir en Google Maps
+                                <i class="fas fa-external-link-alt ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in-up">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Contáctanos</h2>
+                <div class="w-24 h-1 bg-orange-500 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Estamos aquí para resolver tus dudas y brindarte la información que necesitas
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Email -->
+                <div class="text-center fade-in-up">
+                    <div class="bg-white rounded-2xl shadow-xl p-8 hover-lift">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-envelope text-2xl text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Email</h3>
+                        <a href="mailto:emsad09@cecytebcs.edu.mx" 
+                           class="text-blue-600 hover:underline font-medium">
+                            emsad09@cecytebcs.edu.mx
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Phone -->
+                <div class="text-center fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="bg-white rounded-2xl shadow-xl p-8 hover-lift">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-phone text-2xl text-green-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Teléfono</h3>
+                        <p class="text-gray-700 font-medium">(613) 131 6054</p>
+                    </div>
+                </div>
+
+                <!-- Address -->
+                <div class="text-center fade-in-up" style="animation-delay: 0.4s;">
+                    <div class="bg-white rounded-2xl shadow-xl p-8 hover-lift">
+                        <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-map-marker-alt text-2xl text-red-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Dirección</h3>
+                        <p class="text-gray-700 font-medium">Calzada de la Reforma, Benito Juárez</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white dark:bg-gray-900 mt-10">
+        <div class="border-t-4 border-gray-400 dark:border-gray-1000"></div>
+        <div class="mx-auto w-full max-w-screen-xl">
+            <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                        Sitios de Interés
+                    </h2>
+                    <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                        <li class="mb-4">
+                            <a href="https://itaibcs.net/" class="hover:underline">ITAI del Estado de B.C.S.</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="https://transparencia.cre.gob.mx/plataforma-nacional-de-transparencia-sipot/" class="hover:underline">SIPOT</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                        Domicilio
+                    </h2>
+                    <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                        <li class="mb-4">
+                            <p>Golfo de California No. 190</p>
+                        </li>
+                        <li class="mb-4">
+                            <p>Col. El Conchalito.</p>
+                        </li>
+                        <li class="mb-4">
+                            <p>Cp: 23090</p>
+                        </li>
+                        <li class="mb-4">
+                            <p>La Paz B.C.S</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                        Teléfonos
+                    </h2>
+                    <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">612 - 12 32244</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">612 - 12 40430</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">612 - 12 40656</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">612 - 12 40656</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                        SIGUENOS
+                    </h2>
+                    <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                        <li class="mb-4">
+                            <a href="https://www.facebook.com/DGCECYTEBCS" class="hover:underline">FACEBOOK</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="https://x.com/CECYTE_BCS?lang=es" class="hover:underline">x</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="https://www.youtube.com/channel/UCAjoT3ODBsMhq75-KFJuNYA" class="hover:underline">YOUTUBE</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center p-4 bg-gray-800 text-white text-sm">
+            © 2024 Departamento de Informática. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <script>
+        // Toggle the mobile menu
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const serviciosBtn = document.getElementById('servicios-btn');
+        const serviciosSubmenu = document.getElementById('servicios-submenu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        serviciosBtn?.addEventListener('click', () => {
+            serviciosSubmenu.classList.toggle('hidden');
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animated elements
+        document.querySelectorAll('.fade-in-up, .slide-in-left, .slide-in-right').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
+
