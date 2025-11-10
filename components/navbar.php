@@ -288,6 +288,12 @@ if (isset($_GET['debug']) && $_GET['debug'] === '1') {
               >Protocolo de Seguridad</a
             >
             <a
+              href="https://drive.google.com/drive/folders/1WeomLmUxITHWVPlQEY_UFss4Z5Ts275n?usp=sharing"
+              class="block py-2 px-4 text-gray-700 hover:bg-gray-100"
+              target="_blank"
+              >Protocolos escolares</a
+            >
+            <a
               href="https://drive.google.com/file/d/1g3kR6hG8EnDKR-mNqczA9tI48ijncxSF/view?usp=sharing"
               class="block py-2 px-4 text-gray-700 hover:bg-gray-100"
               >Decreto de Creación</a
@@ -584,6 +590,12 @@ if (isset($_GET['debug']) && $_GET['debug'] === '1') {
           href="https://drive.google.com/file/d/1lIJBD8IXxHcM3hwp7v3VmG2X1EJZXKnG/view?usp=sharing"
           class="block px-8 py-2 text-gray-700 hover:bg-gray-100"
           >Protocolo de Seguridad</a
+        >
+        <a
+          href="https://drive.google.com/drive/folders/1WeomLmUxITHWVPlQEY_UFss4Z5Ts275n?usp=sharing"
+          class="block px-8 py-2 text-gray-700 hover:bg-gray-100"
+          target="_blank"
+          >Protocolos escolares</a
         >
         <a
           href="https://drive.google.com/file/d/1g3kR6hG8EnDKR-mNqczA9tI48ijncxSF/view?usp=sharing"
