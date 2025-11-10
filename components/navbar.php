@@ -104,12 +104,12 @@ if (isset($_GET['debug']) && $_GET['debug'] === '1') {
       </div>
 
       <!-- Enlaces de navegación -->
-      <div class="hidden sm:flex sm:items-center sm:ml-6">
+      <div class="hidden sm:flex sm:items-center sm:ml-6 sm:space-x-2 lg:space-x-3 xl:space-x-4">
         <!-- Menú Docentes -->
         <div class="relative group">
           <a
             href="#"
-            class="text-gray-700 hover:text-green-600 px-8 py-5 rounded-md text-sm font-medium"
+            class="text-gray-700 hover:text-green-600 px-2 py-5 rounded-md text-sm font-medium whitespace-nowrap"
             >Docentes</a
           >
           <div
@@ -132,7 +132,7 @@ if (isset($_GET['debug']) && $_GET['debug'] === '1') {
         <div class="relative group">
           <a
             href="#"
-            class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium"
+            class="text-gray-700 hover:text-green-600 px-2 py-5 rounded-md text-sm font-medium whitespace-nowrap"
             >Institución</a
           >
           <div
@@ -165,7 +165,7 @@ if (isset($_GET['debug']) && $_GET['debug'] === '1') {
         <div class="relative group">
           <a
             href="<?php echo $basePath; ?>oferta_educativa.php"
-            class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium"
+            class="text-gray-700 hover:text-green-600 px-2 py-5 rounded-md text-sm font-medium whitespace-nowrap"
             >Oferta Educativa</a
           >
           <div
@@ -213,7 +213,7 @@ if (isset($_GET['debug']) && $_GET['debug'] === '1') {
         <div class="relative group">
           <a
             href="#"
-            class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium"
+            class="text-gray-700 hover:text-green-600 px-2 py-5 rounded-md text-sm font-medium whitespace-nowrap"
             >Alumnos</a
           >
           <div
@@ -251,7 +251,7 @@ if (isset($_GET['debug']) && $_GET['debug'] === '1') {
         <div class="relative group">
           <a
             href="#"
-            class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium"
+            class="text-gray-700 hover:text-green-600 px-2 py-5 rounded-md text-sm font-medium whitespace-nowrap"
             >Normatividad</a
           >
           <div
@@ -299,7 +299,7 @@ if (isset($_GET['debug']) && $_GET['debug'] === '1') {
         <div class="relative group">
           <a
             href="https://transparencia.cecytebcs.edu.mx/"
-            class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium"
+            class="text-gray-700 hover:text-green-600 px-2 py-5 rounded-md text-sm font-medium whitespace-nowrap"
             >Transparencia</a
           >
           <div
@@ -323,10 +323,18 @@ if (isset($_GET['debug']) && $_GET['debug'] === '1') {
           </div>
         </div>
 
+        <!-- Menú Libre Tránsito -->
+        <a
+          href="https://drive.google.com/drive/folders/1v50Sj_jg3MJiFPEtTEmUHShc8G2DiavK?usp=sharing"
+          class="text-gray-700 hover:text-green-600 px-2 py-5 rounded-md text-sm font-medium whitespace-nowrap"
+          target="_blank"
+          >Libre Tránsito</a
+        >
+
         <!-- Menú Comunidad -->
         <a
           href="<?php echo $basePath; ?>comunidad.php"
-          class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium"
+          class="text-gray-700 hover:text-green-600 px-2 py-5 rounded-md text-sm font-medium whitespace-nowrap"
           >CECYTE es Comunidad</a
         >
       </div>
@@ -624,6 +632,14 @@ if (isset($_GET['debug']) && $_GET['debug'] === '1') {
         >
       </div>
     </div>
+
+    <!-- Libre Tránsito -->
+    <a
+      href="https://drive.google.com/drive/folders/1v50Sj_jg3MJiFPEtTEmUHShc8G2DiavK?usp=sharing"
+      class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+      target="_blank"
+      >Libre Tránsito</a
+    >
 
     <!-- Comunidad -->
     <a

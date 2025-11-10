@@ -1,0 +1,2142 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acuerdo de Libre Tránsito Estudiantil - CECYTE BCS</title>
+    <meta
+      name="description"
+      content="Información sobre el Acuerdo de Libre Tránsito Estudiantil entre CECYTE BCS e instituciones de educación superior. Preguntas frecuentes y beneficios para estudiantes."
+    />
+    <meta
+      name="keywords"
+      content="libre tránsito, acuerdo académico, educación superior, CECYTE BCS, continuidad educativa"
+    />
+
+    <!-- Estilos y fuentes -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Librerías y frameworks -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://unpkg.com/flowbite@^2.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="https://unpkg.com/flowbite@^2.1/dist/flowbite.min.js"></script>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Barra de navegación -->
+    <nav class="bg-white shadow-lg fixed top-0 left-0 w-full z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <!-- Logo -->
+          <div class="flex-shrink-0 flex items-center">
+            <img
+              src="img_logos/logo_Cecyte_vertical_sin_fondo.png"
+              alt="CECYTE BCS - Colegio de Estudios Científicos y Tecnológicos de Baja California Sur"
+              class="h-12 w-auto"
+            />
+          </div>
+          <!-- Botón de menú móvil -->
+          <div class="flex items-center sm:hidden">
+            <button
+              id="menu-btn"
+              class="text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700"
+            >
+              <svg
+                class="h-6 w-6 transition-transform duration-300"
+                stroke="currentColor"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Enlaces de navegación -->
+          <div
+            class="hidden sm:flex sm:items-center sm:ml-6 sm:space-x-2 lg:space-x-3 xl:space-x-4"
+          >
+            <!-- Menú Docentes -->
+            <div class="relative group">
+              <a
+                href="#"
+                class="text-gray-700 hover:text-green-600 px-2 py-4 rounded-md text-sm font-medium transition-colors duration-200 whitespace-nowrap"
+                >Docentes</a
+              >
+              <div
+                class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md z-10 min-w-48"
+              >
+                <a
+                  href="pages_institucion/ubica_tu_plantel.html"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                  >Convocatorias</a
+                >
+                <a
+                  href="https://sites.google.com/cecytebcs.edu.mx/orientacionespej23/inicio?authuser=0"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                  >Centro Virtual 2024-2025</a
+                >
+              </div>
+            </div>
+
+            <!-- Menú Oferta Educativa -->
+            <div class="relative group">
+              <a
+                href="oferta_educativa.html"
+                class="text-gray-700 hover:text-green-600 px-2 py-4 rounded-md text-sm font-medium transition-colors duration-200 whitespace-nowrap"
+                >Oferta Educativa</a
+              >
+              <div
+                class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md z-10 min-w-64"
+              >
+                <a
+                  href="pages_oferta_educativa/mantenimiento_equipo_de_computo.html"
+                  class="block py-2 px-4 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                  >Soporte y Mantenimiento de equipo de cómputo</a
+                >
+                <a
+                  href="pages_oferta_educativa/programacion.html"
+                  class="block py-2 px-4 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                  >Programación</a
+                >
+                <a
+                  href="pages_oferta_educativa/ventas.html"
+                  class="block py-2 px-4 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                  >Ventas</a
+                >
+                <a
+                  href="pages_oferta_educativa/ecoturismo.html"
+                  class="block py-2 px-4 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                  >Ecoturismo</a
+                >
+                <a
+                  href="pages_oferta_educativa/produccion_industrial_de_alimentos.html"
+                  class="block py-2 px-4 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                  >Producción industrial de alimentos</a
+                >
+                <a
+                  href="pages_oferta_educativa/mantenimiento_industrial.html"
+                  class="block py-2 px-4 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                  >Mantenimiento Industrial</a
+                >
+                <a
+                  href="pages_oferta_educativa/servicios_de_hoteleria.html"
+                  class="block py-2 px-4 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                  >Servicios de Hotelería</a
+                >
+                <a
+                  href="libre_transisto.html"
+                  class="block py-2 px-4 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                  >Libre Tránsito a IES</a
+                >
+              </div>
+            </div>
+
+            <!-- Menú Alumnos -->
+            <div class="relative group">
+              <a
+                href="#"
+                class="text-gray-700 hover:text-green-600 px-2 py-4 rounded-md text-sm font-medium transition-colors duration-200 whitespace-nowrap"
+                >Alumnos</a
+              >
+              <div
+                class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md z-10 min-w-64"
+              >
+                <a
+                  href="pages_alumnos/becas.html"
+                  class="block py-2 px-4 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                  >Becas</a
+                >
+                <a
+                  href="pages_alumnos/prog_acompanamiento.html"
+                  class="block py-2 px-4 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                  >Programa de Acompañamiento</a
+                >
+                <a
+                  href="pages_alumnos/requisitos_de_ingreso.html"
+                  class="block py-2 px-4 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                  >Requisitos de Ingreso</a
+                >
+                <a
+                  href="https://drive.google.com/file/d/1khvr2iSTs7T_ouyu7Bwv17uwzeTKk5C-/view?usp=sharing"
+                  class="block py-2 px-4 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                  >Reglamento de Estudiantado CECYTE BCS</a
+                >
+                <a
+                  href="https://drive.google.com/file/d/1ewSW14CPvRKedEoxHU2wB4f_yx7WGZjM/view?usp=drive_link"
+                  class="block py-2 px-4 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                  >Reglamento Asociaciones de Padres y Madres de Familia CECYTE
+                  BCS</a
+                >
+              </div>
+            </div>
+
+            <!-- Menú Normatividad -->
+            <div class="relative group">
+              <a
+                href="#"
+                class="text-gray-700 hover:text-green-600 px-2 py-4 rounded-md text-sm font-medium transition-colors duration-200 whitespace-nowrap"
+                >Normatividad</a
+              >
+              <div
+                class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md z-10 min-w-56"
+              >
+                <a
+                  href="pages_normatividad/manuales_de_procedimientos.html"
+                  class="block py-2 px-4 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                  >Manuales de Procedimientos</a
+                >
+                <a
+                  href="pages_normatividad/manuales_de_org.html"
+                  class="block py-2 px-4 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                  >Manuales de Organización</a
+                >
+                <a
+                  href="https://drive.google.com/file/d/1k8AwVEAeVoe7URFcN2N2tcElsEYJRgtW/view?usp=sharing"
+                  class="block py-2 px-4 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                  >Reglamento Interno</a
+                >
+                <a
+                  href="https://www.gob.mx/cms/uploads/attachment/file/560393/CODIGO_DE_ETICA.pdf"
+                  class="block py-2 px-4 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                  >Codigo de etica</a
+                >
+                <a
+                  href="https://drive.google.com/file/d/13m142kMwEJ6hj8xaDJXu-XdA-jAkO9jb/view?usp=sharing"
+                  class="block py-2 px-4 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                  >Código de Conducta</a
+                >
+                <a
+                  href="https://drive.google.com/file/d/1lIJBD8IXxHcM3hwp7v3VmG2X1EJZXKnG/view?usp=sharing"
+                  class="block py-2 px-4 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                  >Protocolo de Seguridad</a
+                >
+                <a
+                  href="https://drive.google.com/file/d/1g3kR6hG8EnDKR-mNqczA9tI48ijncxSF/view?usp=sharing"
+                  class="block py-2 px-4 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                  >Decreto de Creación</a
+                >
+                <a
+                  href="libre_transisto.html"
+                  class="block py-2 px-4 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                  >Libre Tránsito a IES</a
+                >
+
+                <!-- Separador -->
+                <div class="border-t border-gray-200 my-2"></div>
+
+                <!-- Submenú Institución -->
+                <div class="px-4 py-2">
+                  <span
+                    class="text-sm font-semibold text-gray-500 uppercase tracking-wide"
+                    >Institución</span
+                  >
+                </div>
+                <a
+                  href="pages_institucion/pagina_historia.html"
+                  class="block py-2 px-4 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                  >Historia, Misión y Visión</a
+                >
+                <a
+                  href="pages_institucion/planteles_cecyte.html"
+                  class="block py-2 px-4 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                  >Planteles CecyteBCS</a
+                >
+                <a
+                  href="pages_institucion/planteles_emsad.html"
+                  class="block py-2 px-4 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                  >Planteles Emsad</a
+                >
+                <a
+                  href="directorio_telefonico.html"
+                  class="block py-2 px-4 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                  >Directorio Telefónico</a
+                >
+              </div>
+            </div>
+
+            <!-- Menú Transparencia -->
+            <div class="relative group">
+              <a
+                href="https://transparencia.cecytebcs.edu.mx/"
+                class="text-gray-700 hover:text-green-600 px-2 py-4 rounded-md text-sm font-medium transition-colors duration-200 whitespace-nowrap"
+                >Transparencia</a
+              >
+              <div
+                class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md z-10 min-w-48"
+              >
+                <a
+                  href="https://transparencia.cecytebcs.edu.mx/informacion-publica/articulo-75"
+                  class="block py-2 px-4 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                  >Artículo 75</a
+                >
+                <a
+                  href="pages_transparencia/cuenta_publica.html"
+                  class="block py-2 px-4 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                  >Cuenta Pública</a
+                >
+                <a
+                  href="pages_transparencia/ley_diciplina.html"
+                  class="block py-2 px-4 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                  >Ley de Disciplina Financiera</a
+                >
+              </div>
+            </div>
+
+            <!-- Menú Vinculación -->
+            <div class="relative group">
+              <a
+                href="#"
+                class="text-gray-700 hover:text-green-600 px-2 py-4 rounded-md text-sm font-medium transition-colors duration-200 whitespace-nowrap"
+                >Vinculación</a
+              >
+              <div
+                class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md z-10 min-w-48"
+              >
+                <a
+                  href="pages_alumnos/becas.html"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                  >Becas</a
+                >
+                <a
+                  href="pages_vinculacion/seguimineto_egresados.html"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                  >Seguimiento a Egresados</a
+                >
+              </div>
+            </div>
+
+            <!-- Menú Libre Tránsito -->
+            <a
+              href="libre_transisto.html"
+              class="text-green-600 font-semibold px-2 py-4 rounded-md text-sm font-medium transition-colors duration-200 whitespace-nowrap"
+              >Libre Tránsito</a
+            >
+
+            <!-- Menú Comunidad -->
+            <a
+              href="comunidad.html"
+              class="text-gray-700 hover:text-green-600 px-2 py-4 rounded-md text-sm font-medium transition-colors duration-200 whitespace-nowrap"
+              >CECYTE es Comunidad</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Menú móvil -->
+      <div
+        class="sm:hidden hidden bg-white border-t border-gray-200"
+        id="mobile-menu"
+      >
+        <!-- Docentes Menu -->
+        <div class="block">
+          <button
+            class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-3 flex justify-between items-center focus:outline-none transition-colors duration-200"
+            id="docentes-btn"
+          >
+            Docentes
+            <svg
+              class="h-5 w-5 transition-transform duration-200"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </button>
+          <div class="hidden bg-gray-50" id="docentes-submenu">
+            <a
+              href="pages_institucion/ubica_tu_plantel.html"
+              class="block px-8 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+              >Convocatorias</a
+            >
+            <a
+              href="https://sites.google.com/cecytebcs.edu.mx/orientacionespej23/inicio?authuser=0"
+              class="block px-8 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+              >Centro Virtual 2024-2025</a
+            >
+          </div>
+        </div>
+
+        <!-- Oferta Educativa Menu -->
+        <div class="block">
+          <button
+            class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-3 flex justify-between items-center focus:outline-none transition-colors duration-200"
+            id="oferta-btn"
+          >
+            Oferta Educativa
+            <svg
+              class="h-5 w-5 transition-transform duration-200"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </button>
+          <div class="hidden bg-gray-50" id="oferta-submenu">
+            <a
+              href="pages_oferta_educativa/mantenimiento_equipo_de_computo.html"
+              class="block px-8 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+              >Soporte y Mantenimiento de equipo de cómputo</a
+            >
+            <a
+              href="pages_oferta_educativa/programacion.html"
+              class="block px-8 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+              >Programación</a
+            >
+            <a
+              href="pages_oferta_educativa/ventas.html"
+              class="block px-8 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+              >Ventas</a
+            >
+            <a
+              href="pages_oferta_educativa/ecoturismo.html"
+              class="block px-8 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+              >Ecoturismo</a
+            >
+            <a
+              href="pages_oferta_educativa/produccion_industrial_de_alimentos.html"
+              class="block px-8 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+              >Producción industrial de alimentos</a
+            >
+            <a
+              href="pages_oferta_educativa/mantenimiento_industrial.html"
+              class="block px-8 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+              >Mantenimiento Industrial</a
+            >
+            <a
+              href="pages_oferta_educativa/servicios_de_hoteleria.html"
+              class="block px-8 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+              >Servicios de Hotelería</a
+            >
+            <a
+              href="libre_transisto.html"
+              class="block px-8 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+              >Libre Tránsito a IES</a
+            >
+          </div>
+        </div>
+
+        <!-- Alumnos Menu -->
+        <div class="block">
+          <button
+            class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-3 flex justify-between items-center focus:outline-none transition-colors duration-200"
+            id="alumnos-btn"
+          >
+            Alumnos
+            <svg
+              class="h-5 w-5 transition-transform duration-200"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </button>
+          <div class="hidden bg-gray-50" id="alumnos-submenu">
+            <a
+              href="pages_alumnos/becas.html"
+              class="block px-8 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+              >Becas</a
+            >
+            <a
+              href="pages_alumnos/prog_acompanamiento.html"
+              class="block px-8 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+              >Programa de Acompañamiento</a
+            >
+            <a
+              href="pages_alumnos/requisitos_de_ingreso.html"
+              class="block px-8 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+              >Requisitos de Ingreso</a
+            >
+            <a
+              href="https://drive.google.com/file/d/1khvr2iSTs7T_ouyu7Bwv17uwzeTKk5C-/view?usp=sharing"
+              class="block px-8 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+              >Reglamento de Estudiantado CECYTE BCS</a
+            >
+            <a
+              href="https://drive.google.com/file/d/1ewSW14CPvRKedEoxHU2wB4f_yx7WGZjM/view?usp=drive_link"
+              class="block px-8 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+              >Reglamento Asociaciones de Padres y Madres de Familia CECYTE
+              BCS</a
+            >
+          </div>
+        </div>
+
+        <!-- Normatividad Menu -->
+        <div class="block">
+          <button
+            class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-3 flex justify-between items-center focus:outline-none transition-colors duration-200"
+            id="normatividad-btn"
+          >
+            Normatividad
+            <svg
+              class="h-5 w-5 transition-transform duration-200"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </button>
+          <div
+            class="hidden bg-gray-50"
+            id="normatividad-submenu"
+            style="max-height: 80vh; overflow-y: auto"
+          >
+            <a
+              href="pages_normatividad/manuales_de_procedimientos.html"
+              class="block px-8 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+              >Manuales de Procedimientos</a
+            >
+            <a
+              href="pages_normatividad/manuales_de_org.html"
+              class="block px-8 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+              >Manuales de Organización</a
+            >
+            <a
+              href="https://drive.google.com/file/d/1k8AwVEAeVoe7URFcN2N2tcElsEYJRgtW/view?usp=sharing"
+              class="block px-8 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+              >Reglamento Interno</a
+            >
+            <a
+              href="https://www.gob.mx/cms/uploads/attachment/file/560393/CODIGO_DE_ETICA.pdf"
+              class="block px-8 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+              >Codigo de etica</a
+            >
+            <a
+              href="https://drive.google.com/file/d/13m142kMwEJ6hj8xaDJXu-XdA-jAkO9jb/view?usp=sharing"
+              class="block px-8 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+              >Código de Conducta</a
+            >
+            <a
+              href="https://drive.google.com/file/d/1lIJBD8IXxHcM3hwp7v3VmG2X1EJZXKnG/view?usp=sharing"
+              class="block px-8 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+              >Protocolo de Seguridad</a
+            >
+            <a
+              href="https://drive.google.com/file/d/1g3kR6hG8EnDKR-mNqczA9tI48ijncxSF/view?usp=sharing"
+              class="block px-8 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+              >Decreto de Creación</a
+            >
+            <a
+              href="libre_transisto.html"
+              class="block px-8 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+              >Libre Tránsito a IES</a
+            >
+
+            <!-- Separador visual mejorado -->
+            <div class="border-t-2 border-green-300 my-4 mx-6"></div>
+
+            <!-- Submenú Institución con mejor diseño -->
+            <div
+              class="bg-green-100 px-6 py-3 mb-3 border-l-4 border-green-500"
+            >
+              <span
+                class="text-sm font-bold text-green-800 uppercase tracking-wide flex items-center"
+              >
+                <i class="fas fa-building mr-2"></i>
+                Institución</span
+              >
+            </div>
+            <a
+              href="pages_institucion/pagina_historia.html"
+              class="block px-12 py-3 text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors duration-200 border-l-2 border-transparent hover:border-green-500"
+              >Historia, Misión y Visión</a
+            >
+            <a
+              href="pages_institucion/planteles_cecyte.html"
+              class="block px-12 py-3 text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors duration-200 border-l-2 border-transparent hover:border-green-500"
+              >Planteles CecyteBCS</a
+            >
+            <a
+              href="pages_institucion/planteles_emsad.html"
+              class="block px-12 py-3 text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors duration-200 border-l-2 border-transparent hover:border-green-500"
+              >Planteles Emsad</a
+            >
+            <a
+              href="directorio_telefonico.html"
+              class="block px-12 py-3 text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors duration-200 border-l-2 border-transparent hover:border-green-500"
+              >Directorio Telefónico</a
+            >
+          </div>
+        </div>
+
+        <!-- Transparencia Menu -->
+        <div class="block">
+          <button
+            class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-3 flex justify-between items-center focus:outline-none transition-colors duration-200"
+            id="transparencia-btn"
+          >
+            Transparencia
+            <svg
+              class="h-5 w-5 transition-transform duration-200"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </button>
+          <div class="hidden bg-gray-50" id="transparencia-submenu">
+            <a
+              href="https://transparencia.cecytebcs.edu.mx/informacion-publica/articulo-75"
+              class="block px-8 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+              >Artículo 75</a
+            >
+            <a
+              href="pages_transparencia/cuenta_publica.html"
+              class="block px-8 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+              >Cuenta Pública</a
+            >
+            <a
+              href="pages_transparencia/ley_diciplina.html"
+              class="block px-8 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+              >Ley de Disciplina Financiera</a
+            >
+          </div>
+        </div>
+
+        <!-- Vinculación Menu -->
+        <div class="block">
+          <button
+            class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-3 flex justify-between items-center focus:outline-none transition-colors duration-200"
+            id="vinculacion-btn"
+          >
+            Vinculación
+            <svg
+              class="h-5 w-5 transition-transform duration-200"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </button>
+          <div class="hidden bg-gray-50" id="vinculacion-submenu">
+            <a
+              href="pages_alumnos/becas.html"
+              class="block px-8 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+              >Becas</a
+            >
+            <a
+              href="pages_vinculacion/seguimineto_egresados.html"
+              class="block px-8 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+              >Seguimiento a Egresados</a
+            >
+          </div>
+        </div>
+
+        <!-- Libre Tránsito -->
+        <a
+          href="libre_transisto.html"
+          class="block px-4 py-3 text-green-600 font-semibold hover:bg-gray-100 transition-colors duration-200"
+          >Libre Tránsito</a
+        >
+
+        <!-- Comunidad -->
+        <a
+          href="comunidad.html"
+          class="block px-4 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+          >CECYTE es Comunidad</a
+        >
+      </div>
+
+      <!-- Lema -->
+      <div class="w-full h-1 bg-orange-500"></div>
+      <section
+        class="w-full bg-gray-500 text-white py-2 flex flex-col md:flex-row justify-center items-center gap-4"
+      >
+        <h1 class="text-xl md:text-xl font-bold text-center">
+          "CECyTE: Orgullo y transformación de la Nueva Escuela Mexicana."
+        </h1>
+
+        <!-- Botones de Redes Sociales -->
+        <div class="flex items-center gap-1">
+          <a
+            href="https://www.facebook.com/DGCECYTEBCS"
+            target="_blank"
+            class="text-white/80 hover:text-white hover:bg-white/10 px-2 py-1 rounded transition-all duration-200"
+            title="Síguenos en Facebook"
+          >
+            <i class="fab fa-facebook-f text-sm"></i>
+          </a>
+
+          <a
+            href="https://www.youtube.com/@ProcesosInform%C3%A1ticaCecytebcs"
+            target="_blank"
+            class="text-white/80 hover:text-white hover:bg-white/10 px-2 py-1 rounded transition-all duration-200"
+            title="Síguenos en YouTube"
+          >
+            <i class="fab fa-youtube text-sm"></i>
+          </a>
+
+          <a
+            href="https://www.instagram.com/cecyte_bcs/"
+            target="_blank"
+            class="text-white/80 hover:text-white hover:bg-white/10 px-2 py-1 rounded transition-all duration-200"
+            title="Síguenos en Instagram"
+          >
+            <i class="fab fa-instagram text-sm"></i>
+          </a>
+
+          <a
+            href="https://www.tiktok.com/@cecytebcs"
+            target="_blank"
+            class="text-white/80 hover:text-white hover:bg-white/10 px-2 py-1 rounded transition-all duration-200"
+            title="Síguenos en TikTok"
+          >
+            <i class="fab fa-tiktok text-sm"></i>
+          </a>
+        </div>
+      </section>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="relative bg-gradient-to-br from-green-700 via-green-600 to-green-800 text-white pt-24 pb-16 md:pt-32 md:pb-24 overflow-hidden"
+    >
+      <!-- Elementos decorativos -->
+      <div
+        class="absolute top-0 left-0 w-full h-full opacity-10"
+        style="
+          background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+        "
+      ></div>
+
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center animate__animated animate__fadeInUp">
+          <div
+            class="inline-block mb-6 px-4 py-2 bg-white bg-opacity-20 rounded-full backdrop-blur-sm"
+          >
+            <span class="text-sm font-semibold uppercase tracking-wide"
+              >Acuerdo Académico</span
+            >
+          </div>
+          <h1
+            class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
+          >
+            Acuerdo de Libre Tránsito
+            <span class="block text-green-200">Estudiantil</span>
+          </h1>
+          <p
+            class="text-lg md:text-xl lg:text-2xl text-green-100 max-w-3xl mx-auto mb-8 leading-relaxed"
+          >
+            Facilita la continuidad educativa de nuestros estudiantes hacia la
+            educación superior sin necesidad de presentar examen de admisión
+          </p>
+          <div class="flex flex-wrap justify-center gap-4">
+            <div
+              class="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg px-6 py-3 border border-white border-opacity-20"
+            >
+              <div class="text-2xl font-bold">6+</div>
+              <div class="text-sm text-green-100">Instituciones</div>
+            </div>
+            <div
+              class="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg px-6 py-3 border border-white border-opacity-20"
+            >
+              <div class="text-2xl font-bold">100%</div>
+              <div class="text-sm text-green-100">Sin Examen</div>
+            </div>
+            <div
+              class="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg px-6 py-3 border border-white border-opacity-20"
+            >
+              <div class="text-2xl font-bold">∞</div>
+              <div class="text-sm text-green-100">Oportunidades</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Onda decorativa -->
+      <div class="absolute bottom-0 left-0 w-full">
+        <svg
+          viewBox="0 0 1440 120"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-full h-16 md:h-24"
+        >
+          <path
+            d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z"
+            fill="rgb(249, 250, 251)"
+          />
+        </svg>
+      </div>
+    </section>
+
+    <!-- Sección de Introducción -->
+    <section class="py-12 md:py-16 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-10">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+            ¿Qué es el Acuerdo de Libre Tránsito?
+          </h2>
+          <div class="w-20 h-0.5 bg-green-600 mx-auto"></div>
+        </div>
+
+        <div class="space-y-8">
+          <!-- Descripción principal -->
+          <div class="prose prose-lg max-w-none">
+            <p class="text-gray-700 leading-relaxed text-lg">
+              El
+              <strong class="text-gray-900"
+                >Acuerdo de Libre Tránsito Académico</strong
+              >
+              es una iniciativa firmada entre el <strong>CECYTE BCS</strong> y
+              las principales instituciones de educación superior de Baja
+              California Sur. Este acuerdo permite que nuestros estudiantes
+              destacados puedan continuar sus estudios universitarios
+              <strong class="text-gray-900"
+                >sin necesidad de presentar examen de admisión</strong
+              >, siempre y cuando cumplan con los requisitos académicos
+              establecidos.
+            </p>
+          </div>
+
+          <!-- Beneficios -->
+          <div class="grid md:grid-cols-2 gap-6 pt-6 border-t border-gray-200">
+            <div class="flex items-start space-x-4">
+              <div class="flex-shrink-0">
+                <div
+                  class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center"
+                >
+                  <i class="fas fa-graduation-cap text-green-600 text-xl"></i>
+                </div>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                  Continuidad Educativa
+                </h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                  Facilita la transición de nuestros egresados hacia la
+                  educación superior, reduciendo barreras administrativas.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-4">
+              <div class="flex-shrink-0">
+                <div
+                  class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center"
+                >
+                  <i class="fas fa-trophy text-orange-600 text-xl"></i>
+                </div>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                  Reconocimiento al Mérito
+                </h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                  Premia el esfuerzo y excelencia académica de nuestros
+                  estudiantes destacados.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Instituciones Participantes -->
+          <div class="pt-6 border-t border-gray-200">
+            <h3 class="text-xl font-semibold text-gray-900 mb-5">
+              Instituciones Participantes
+            </h3>
+            <ul class="space-y-2.5">
+              <li class="flex items-center text-gray-700">
+                <span
+                  class="w-1.5 h-1.5 bg-green-600 rounded-full mr-3 flex-shrink-0"
+                ></span>
+                <span>Universidad Autónoma de Baja California Sur (UABCS)</span>
+              </li>
+              <li class="flex items-center text-gray-700">
+                <span
+                  class="w-1.5 h-1.5 bg-green-600 rounded-full mr-3 flex-shrink-0"
+                ></span>
+                <span>Universidad Tecnológica de La Paz (UTLP)</span>
+              </li>
+              <li class="flex items-center text-gray-700">
+                <span
+                  class="w-1.5 h-1.5 bg-green-600 rounded-full mr-3 flex-shrink-0"
+                ></span>
+                <span>Tecnológico Nacional de México Campus Los Cabos</span>
+              </li>
+              <li class="flex items-center text-gray-700">
+                <span
+                  class="w-1.5 h-1.5 bg-green-600 rounded-full mr-3 flex-shrink-0"
+                ></span>
+                <span>Instituto Tecnológico de La Paz</span>
+              </li>
+              <li class="flex items-center text-gray-700">
+                <span
+                  class="w-1.5 h-1.5 bg-green-600 rounded-full mr-3 flex-shrink-0"
+                ></span>
+                <span
+                  >Tecnológico Nacional de México - Ciudad Constitución</span
+                >
+              </li>
+              <li class="flex items-center text-gray-700">
+                <span
+                  class="w-1.5 h-1.5 bg-green-600 rounded-full mr-3 flex-shrink-0"
+                ></span>
+                <span>Tecnológico Nacional de México - Mulegé</span>
+              </li>
+            </ul>
+
+            <!-- Botones con logos de instituciones -->
+            <div class="mt-8 pt-6 border-t border-gray-200">
+              <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <!-- UABCS -->
+                <button
+                  onclick="openModal('modal-uabcs')"
+                  class="group flex flex-col items-center justify-center p-4 bg-white border-2 border-gray-200 rounded-lg hover:border-green-500 hover:shadow-md transition-all duration-200 cursor-pointer"
+                >
+                  <img
+                    src="img_recuros_pagina/libre_transito/logo_uabcs.webp"
+                    alt="Universidad Autónoma de Baja California Sur"
+                    class="h-16 w-auto object-contain mb-2 group-hover:scale-105 transition-transform duration-200"
+                  />
+                  <span
+                    class="text-xs text-gray-600 text-center font-medium mt-1"
+                  >
+                    UABCS
+                  </span>
+                </button>
+
+                <!-- UTLP -->
+                <button
+                  onclick="openModal('modal-utlp')"
+                  class="group flex flex-col items-center justify-center p-4 bg-white border-2 border-gray-200 rounded-lg hover:border-green-500 hover:shadow-md transition-all duration-200 cursor-pointer"
+                >
+                  <img
+                    src="img_recuros_pagina/libre_transito/logo_utlp.webp"
+                    alt="Universidad Tecnológica de La Paz"
+                    class="h-16 w-auto object-contain mb-2 group-hover:scale-105 transition-transform duration-200"
+                  />
+                  <span
+                    class="text-xs text-gray-600 text-center font-medium mt-1"
+                  >
+                    UTLP
+                  </span>
+                </button>
+
+                <!-- ITES Los Cabos -->
+                <button
+                  onclick="openModal('modal-ites')"
+                  class="group flex flex-col items-center justify-center p-4 bg-white border-2 border-gray-200 rounded-lg hover:border-green-500 hover:shadow-md transition-all duration-200 cursor-pointer"
+                >
+                  <img
+                    src="img_recuros_pagina/libre_transito/logo_ites_los_cabos.webp"
+                    alt="Tecnológico Nacional de México Campus Los Cabos"
+                    class="h-16 w-auto object-contain mb-2 group-hover:scale-105 transition-transform duration-200"
+                  />
+                  <span
+                    class="text-xs text-gray-600 text-center font-medium mt-1"
+                  >
+                    ITES Los Cabos
+                  </span>
+                </button>
+
+                <!-- IT La Paz -->
+                <button
+                  onclick="openModal('modal-itlp')"
+                  class="group flex flex-col items-center justify-center p-4 bg-white border-2 border-gray-200 rounded-lg hover:border-green-500 hover:shadow-md transition-all duration-200 cursor-pointer"
+                >
+                  <img
+                    src="img_recuros_pagina/libre_transito/logo_tec_la_paz.webp"
+                    alt="Instituto Tecnológico de La Paz"
+                    class="h-16 w-auto object-contain mb-2 group-hover:scale-105 transition-transform duration-200"
+                  />
+                  <span
+                    class="text-xs text-gray-600 text-center font-medium mt-1"
+                  >
+                    IT La Paz
+                  </span>
+                </button>
+
+                <!-- IT Constitución -->
+                <button
+                  onclick="openModal('modal-itscdc')"
+                  class="group flex flex-col items-center justify-center p-4 bg-white border-2 border-gray-200 rounded-lg hover:border-green-500 hover:shadow-md transition-all duration-200 cursor-pointer"
+                >
+                  <img
+                    src="img_recuros_pagina/libre_transito/logo_its_constitucion.webp"
+                    alt="Tecnológico Nacional de México - Ciudad Constitución"
+                    class="h-16 w-auto object-contain mb-2 group-hover:scale-105 transition-transform duration-200"
+                  />
+                  <span
+                    class="text-xs text-gray-600 text-center font-medium mt-1"
+                  >
+                    IT Constitución
+                  </span>
+                </button>
+
+                <!-- ITSM Mulegé -->
+                <button
+                  onclick="openModal('modal-itsm')"
+                  class="group flex flex-col items-center justify-center p-4 bg-white border-2 border-gray-200 rounded-lg hover:border-green-500 hover:shadow-md transition-all duration-200 cursor-pointer"
+                >
+                  <img
+                    src="img_recuros_pagina/libre_transito/logo_itsm.webp"
+                    alt="Tecnológico Nacional de México - Mulegé"
+                    class="h-16 w-auto object-contain mb-2 group-hover:scale-105 transition-transform duration-200"
+                  />
+                  <span
+                    class="text-xs text-gray-600 text-center font-medium mt-1"
+                  >
+                    ITSM Mulegé
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modales para las imágenes PDF -->
+    <!-- Modal UABCS -->
+    <div
+      id="modal-uabcs"
+      class="fixed inset-0 bg-black bg-opacity-75 z-50 hidden flex items-center justify-center p-4 opacity-0"
+      onclick="closeModalOnBackdrop(event, 'modal-uabcs')"
+    >
+      <div
+        class="bg-white rounded-lg max-w-5xl w-full max-h-[90vh] overflow-auto relative"
+        onclick="event.stopPropagation()"
+      >
+        <div
+          class="sticky top-0 bg-white border-b border-gray-200 px-6 py-4 flex justify-between items-center"
+        >
+          <h3 class="text-xl font-semibold text-gray-900">
+            Universidad Autónoma de Baja California Sur
+          </h3>
+          <button
+            onclick="closeModal('modal-uabcs')"
+            class="text-gray-500 hover:text-gray-700 text-2xl font-bold"
+          >
+            ×
+          </button>
+        </div>
+        <div class="p-6">
+          <img
+            src="img_recuros_pagina/libre_transito/PDF/IU - UABCS.webp"
+            alt="Información Universitaria - UABCS"
+            class="w-full h-auto rounded-lg"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal UTLP -->
+    <div
+      id="modal-utlp"
+      class="fixed inset-0 bg-black bg-opacity-75 z-50 hidden flex items-center justify-center p-4 opacity-0"
+      onclick="closeModalOnBackdrop(event, 'modal-utlp')"
+    >
+      <div
+        class="bg-white rounded-lg max-w-5xl w-full max-h-[90vh] overflow-auto relative"
+        onclick="event.stopPropagation()"
+      >
+        <div
+          class="sticky top-0 bg-white border-b border-gray-200 px-6 py-4 flex justify-between items-center"
+        >
+          <h3 class="text-xl font-semibold text-gray-900">
+            Universidad Tecnológica de La Paz
+          </h3>
+          <button
+            onclick="closeModal('modal-utlp')"
+            class="text-gray-500 hover:text-gray-700 text-2xl font-bold"
+          >
+            ×
+          </button>
+        </div>
+        <div class="p-6">
+          <img
+            src="img_recuros_pagina/libre_transito/PDF/IU - UTLP.webp"
+            alt="Información Universitaria - UTLP"
+            class="w-full h-auto rounded-lg"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal ITES Los Cabos -->
+    <div
+      id="modal-ites"
+      class="fixed inset-0 bg-black bg-opacity-75 z-50 hidden flex items-center justify-center p-4 opacity-0"
+      onclick="closeModalOnBackdrop(event, 'modal-ites')"
+    >
+      <div
+        class="bg-white rounded-lg max-w-5xl w-full max-h-[90vh] overflow-auto relative"
+        onclick="event.stopPropagation()"
+      >
+        <div
+          class="sticky top-0 bg-white border-b border-gray-200 px-6 py-4 flex justify-between items-center"
+        >
+          <h3 class="text-xl font-semibold text-gray-900">
+            Instituto Tecnológico de Estudios Superiores de Los Cabos
+          </h3>
+          <button
+            onclick="closeModal('modal-ites')"
+            class="text-gray-500 hover:text-gray-700 text-2xl font-bold"
+          >
+            ×
+          </button>
+        </div>
+        <div class="p-6">
+          <img
+            src="img_recuros_pagina/libre_transito/PDF/IU - ITES.webp"
+            alt="Información Universitaria - ITES Los Cabos"
+            class="w-full h-auto rounded-lg"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal IT La Paz -->
+    <div
+      id="modal-itlp"
+      class="fixed inset-0 bg-black bg-opacity-75 z-50 hidden flex items-center justify-center p-4 opacity-0"
+      onclick="closeModalOnBackdrop(event, 'modal-itlp')"
+    >
+      <div
+        class="bg-white rounded-lg max-w-5xl w-full max-h-[90vh] overflow-auto relative"
+        onclick="event.stopPropagation()"
+      >
+        <div
+          class="sticky top-0 bg-white border-b border-gray-200 px-6 py-4 flex justify-between items-center"
+        >
+          <h3 class="text-xl font-semibold text-gray-900">
+            Instituto Tecnológico de La Paz
+          </h3>
+          <button
+            onclick="closeModal('modal-itlp')"
+            class="text-gray-500 hover:text-gray-700 text-2xl font-bold"
+          >
+            ×
+          </button>
+        </div>
+        <div class="p-6">
+          <img
+            src="img_recuros_pagina/libre_transito/PDF/IU - ITLP.webp"
+            alt="Información Universitaria - IT La Paz"
+            class="w-full h-auto rounded-lg"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal IT Constitución -->
+    <div
+      id="modal-itscdc"
+      class="fixed inset-0 bg-black bg-opacity-75 z-50 hidden flex items-center justify-center p-4 opacity-0"
+      onclick="closeModalOnBackdrop(event, 'modal-itscdc')"
+    >
+      <div
+        class="bg-white rounded-lg max-w-5xl w-full max-h-[90vh] overflow-auto relative"
+        onclick="event.stopPropagation()"
+      >
+        <div
+          class="sticky top-0 bg-white border-b border-gray-200 px-6 py-4 flex justify-between items-center"
+        >
+          <h3 class="text-xl font-semibold text-gray-900">
+            Instituto Tecnológico Superior De Ciudad Constitución
+          </h3>
+          <button
+            onclick="closeModal('modal-itscdc')"
+            class="text-gray-500 hover:text-gray-700 text-2xl font-bold"
+          >
+            ×
+          </button>
+        </div>
+        <div class="p-6">
+          <img
+            src="img_recuros_pagina/libre_transito/PDF/IU - ITSCDC.webp"
+            alt="Información Universitaria - IT Constitución"
+            class="w-full h-auto rounded-lg"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal ITSM Mulegé -->
+    <div
+      id="modal-itsm"
+      class="fixed inset-0 bg-black bg-opacity-75 z-50 hidden flex items-center justify-center p-4 opacity-0"
+      onclick="closeModalOnBackdrop(event, 'modal-itsm')"
+    >
+      <div
+        class="bg-white rounded-lg max-w-5xl w-full max-h-[90vh] overflow-auto relative"
+        onclick="event.stopPropagation()"
+      >
+        <div
+          class="sticky top-0 bg-white border-b border-gray-200 px-6 py-4 flex justify-between items-center"
+        >
+          <h3 class="text-xl font-semibold text-gray-900">
+            Instituto Tecnológico Superior De Mulegé
+          </h3>
+          <button
+            onclick="closeModal('modal-itsm')"
+            class="text-gray-500 hover:text-gray-700 text-2xl font-bold"
+          >
+            ×
+          </button>
+        </div>
+        <div class="p-6">
+          <img
+            src="img_recuros_pagina/libre_transito/PDF/IU - ITSM.webp"
+            alt="Información Universitaria - ITSM Mulegé"
+            class="w-full h-auto rounded-lg"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección de Preguntas Frecuentes -->
+    <section class="py-12 md:py-16 bg-gray-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 animate__animated animate__fadeIn"
+          >
+            Preguntas Frecuentes
+          </h2>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+            Resolvemos las dudas más comunes sobre el Acuerdo de Libre Tránsito
+            Estudiantil
+          </p>
+          <div class="w-24 h-1 bg-orange-500 mx-auto mt-6"></div>
+        </div>
+
+        <!-- Acordeón de Preguntas Frecuentes -->
+        <div class="space-y-4">
+          <!-- Pregunta 1 -->
+          <div
+            class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition-shadow duration-300"
+          >
+            <button
+              class="w-full text-left p-6 md:p-8 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-inset"
+              onclick="toggleFAQ('faq1')"
+              aria-expanded="false"
+              aria-controls="faq1-answer"
+            >
+              <div class="flex items-center justify-between">
+                <div class="flex items-center flex-1">
+                  <div
+                    class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4"
+                  >
+                    <span class="text-green-700 font-bold text-lg">1</span>
+                  </div>
+                  <h3
+                    class="text-lg md:text-xl font-semibold text-gray-900 pr-4"
+                  >
+                    ¿Qué requisitos debo cumplir para acceder al Libre Tránsito?
+                  </h3>
+                </div>
+                <i
+                  class="fas fa-chevron-down text-gray-400 transform transition-transform duration-300"
+                  id="faq1-icon"
+                ></i>
+              </div>
+            </button>
+            <div
+              id="faq1-answer"
+              class="hidden px-6 md:px-8 pb-6 md:pb-8 border-t border-gray-100"
+            >
+              <div class="pt-6 pl-14">
+                <p class="text-gray-700 leading-relaxed mb-4">
+                  Para acceder al beneficio del Libre Tránsito, debes cumplir
+                  con los siguientes requisitos:
+                </p>
+                <ul class="space-y-3 text-gray-700">
+                  <li class="flex items-start">
+                    <i
+                      class="fas fa-check text-green-600 mt-1.5 mr-3 flex-shrink-0"
+                    ></i>
+                    <span
+                      >Haber egresado del CECYTE BCS con un
+                      <strong>promedio mínimo de 8.0</strong> (o el promedio que
+                      establezca cada institución receptora).</span
+                    >
+                  </li>
+                  <li class="flex items-start">
+                    <i
+                      class="fas fa-check text-green-600 mt-1.5 mr-3 flex-shrink-0"
+                    ></i>
+                    <span
+                      >Haber concluido tus estudios de bachillerato en tiempo y
+                      forma.</span
+                    >
+                  </li>
+                  <li class="flex items-start">
+                    <i
+                      class="fas fa-check text-green-600 mt-1.5 mr-3 flex-shrink-0"
+                    ></i>
+                    <span
+                      >No haber presentado examen de admisión en la institución
+                      de educación superior de tu interés durante el mismo ciclo
+                      escolar.</span
+                    >
+                  </li>
+                  <li class="flex items-start">
+                    <i
+                      class="fas fa-check text-green-600 mt-1.5 mr-3 flex-shrink-0"
+                    ></i>
+                    <span
+                      >Cumplir con los requisitos específicos que cada
+                      institución de educación superior establezca
+                      (documentación, fechas límite, etc.).</span
+                    >
+                  </li>
+                </ul>
+                <div
+                  class="mt-6 p-4 bg-blue-50 rounded-lg border-l-4 border-blue-500"
+                >
+                  <p class="text-sm text-blue-800">
+                    <i class="fas fa-info-circle mr-2"></i>
+                    <strong>Nota importante:</strong> Los requisitos pueden
+                    variar según la institución de educación superior. Te
+                    recomendamos contactar directamente con la institución de tu
+                    interés para conocer los requisitos específicos.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pregunta 2 -->
+          <div
+            class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition-shadow duration-300"
+          >
+            <button
+              class="w-full text-left p-6 md:p-8 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-inset"
+              onclick="toggleFAQ('faq2')"
+              aria-expanded="false"
+              aria-controls="faq2-answer"
+            >
+              <div class="flex items-center justify-between">
+                <div class="flex items-center flex-1">
+                  <div
+                    class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4"
+                  >
+                    <span class="text-green-700 font-bold text-lg">2</span>
+                  </div>
+                  <h3
+                    class="text-lg md:text-xl font-semibold text-gray-900 pr-4"
+                  >
+                    ¿A qué carreras puedo acceder con el Libre Tránsito?
+                  </h3>
+                </div>
+                <i
+                  class="fas fa-chevron-down text-gray-400 transform transition-transform duration-300"
+                  id="faq2-icon"
+                ></i>
+              </div>
+            </button>
+            <div
+              id="faq2-answer"
+              class="hidden px-6 md:px-8 pb-6 md:pb-8 border-t border-gray-100"
+            >
+              <div class="pt-6 pl-14">
+                <p class="text-gray-700 leading-relaxed mb-4">
+                  El Acuerdo de Libre Tránsito te permite acceder a todas las
+                  carreras que ofrecen las instituciones participantes, sin
+                  embargo, algunas consideraciones importantes:
+                </p>
+                <ul class="space-y-3 text-gray-700 mb-6">
+                  <li class="flex items-start">
+                    <i
+                      class="fas fa-university text-green-600 mt-1.5 mr-3 flex-shrink-0"
+                    ></i>
+                    <span
+                      >La disponibilidad de espacios puede variar según la
+                      demanda de cada carrera.</span
+                    >
+                  </li>
+                  <li class="flex items-start">
+                    <i
+                      class="fas fa-clipboard-list text-green-600 mt-1.5 mr-3 flex-shrink-0"
+                    ></i>
+                    <span
+                      >Algunas carreras pueden tener requisitos adicionales
+                      específicos (portafolio, entrevista, etc.).</span
+                    >
+                  </li>
+                  <li class="flex items-start">
+                    <i
+                      class="fas fa-calendar-alt text-green-600 mt-1.5 mr-3 flex-shrink-0"
+                    ></i>
+                    <span
+                      >Debes respetar los periodos de inscripción establecidos
+                      por cada institución.</span
+                    >
+                  </li>
+                </ul>
+                <div
+                  class="bg-gradient-to-r from-green-50 to-blue-50 p-6 rounded-lg"
+                >
+                  <h4 class="font-semibold text-gray-800 mb-3">
+                    <i class="fas fa-lightbulb text-yellow-500 mr-2"></i>
+                    Recomendación:
+                  </h4>
+                  <p class="text-gray-700">
+                    Consulta directamente con la institución de tu interés para
+                    conocer la disponibilidad de espacios en la carrera que
+                    deseas estudiar y los requisitos específicos que puedan
+                    aplicar.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pregunta 3 -->
+          <div
+            class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition-shadow duration-300"
+          >
+            <button
+              class="w-full text-left p-6 md:p-8 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-inset"
+              onclick="toggleFAQ('faq3')"
+              aria-expanded="false"
+              aria-controls="faq3-answer"
+            >
+              <div class="flex items-center justify-between">
+                <div class="flex items-center flex-1">
+                  <div
+                    class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4"
+                  >
+                    <span class="text-green-700 font-bold text-lg">3</span>
+                  </div>
+                  <h3
+                    class="text-lg md:text-xl font-semibold text-gray-900 pr-4"
+                  >
+                    ¿Cuándo y cómo debo solicitar el Libre Tránsito?
+                  </h3>
+                </div>
+                <i
+                  class="fas fa-chevron-down text-gray-400 transform transition-transform duration-300"
+                  id="faq3-icon"
+                ></i>
+              </div>
+            </button>
+            <div
+              id="faq3-answer"
+              class="hidden px-6 md:px-8 pb-6 md:pb-8 border-t border-gray-100"
+            >
+              <div class="pt-6 pl-14">
+                <p class="text-gray-700 leading-relaxed mb-6">
+                  El proceso de solicitud del Libre Tránsito debe realizarse
+                  durante los periodos de inscripción establecidos por cada
+                  institución de educación superior. Te recomendamos seguir
+                  estos pasos:
+                </p>
+                <div class="space-y-4">
+                  <div class="flex items-start p-4 bg-gray-50 rounded-lg">
+                    <div
+                      class="flex-shrink-0 w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center font-bold mr-4"
+                    >
+                      1
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-gray-800 mb-1">
+                        Consulta las fechas
+                      </h4>
+                      <p class="text-gray-600 text-sm">
+                        Revisa el calendario de inscripciones de la institución
+                        de tu interés. Generalmente, los periodos de inscripción
+                        son antes del inicio de cada semestre o ciclo escolar.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex items-start p-4 bg-gray-50 rounded-lg">
+                    <div
+                      class="flex-shrink-0 w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center font-bold mr-4"
+                    >
+                      2
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-gray-800 mb-1">
+                        Prepara tu documentación
+                      </h4>
+                      <p class="text-gray-600 text-sm">
+                        Certificado de bachillerato, historial académico,
+                        identificación oficial, comprobante de promedio, y
+                        cualquier otro documento que la institución requiera.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex items-start p-4 bg-gray-50 rounded-lg">
+                    <div
+                      class="flex-shrink-0 w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center font-bold mr-4"
+                    >
+                      3
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-gray-800 mb-1">
+                        Contacta a la institución
+                      </h4>
+                      <p class="text-gray-600 text-sm">
+                        Comunícate con el departamento de servicios escolares o
+                        admisiones de la institución para conocer el proceso
+                        específico y presentar tu solicitud.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="mt-6 p-4 bg-orange-50 rounded-lg border-l-4 border-orange-500"
+                >
+                  <p class="text-sm text-orange-800">
+                    <i class="fas fa-exclamation-triangle mr-2"></i>
+                    <strong>Importante:</strong> Cada institución tiene su
+                    propio proceso y fechas límite. No asumas que el proceso es
+                    el mismo en todas las instituciones.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pregunta 4 -->
+          <div
+            class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition-shadow duration-300"
+          >
+            <button
+              class="w-full text-left p-6 md:p-8 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-inset"
+              onclick="toggleFAQ('faq4')"
+              aria-expanded="false"
+              aria-controls="faq4-answer"
+            >
+              <div class="flex items-center justify-between">
+                <div class="flex items-center flex-1">
+                  <div
+                    class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4"
+                  >
+                    <span class="text-green-700 font-bold text-lg">4</span>
+                  </div>
+                  <h3
+                    class="text-lg md:text-xl font-semibold text-gray-900 pr-4"
+                  >
+                    ¿El Libre Tránsito garantiza mi ingreso a la universidad?
+                  </h3>
+                </div>
+                <i
+                  class="fas fa-chevron-down text-gray-400 transform transition-transform duration-300"
+                  id="faq4-icon"
+                ></i>
+              </div>
+            </button>
+            <div
+              id="faq4-answer"
+              class="hidden px-6 md:px-8 pb-6 md:pb-8 border-t border-gray-100"
+            >
+              <div class="pt-6 pl-14">
+                <p class="text-gray-700 leading-relaxed mb-6">
+                  El Acuerdo de Libre Tránsito <strong>facilita</strong> tu
+                  ingreso al eliminar la necesidad de presentar examen de
+                  admisión, pero no garantiza automáticamente tu ingreso.
+                  Considera lo siguiente:
+                </p>
+                <div class="grid md:grid-cols-2 gap-4 mb-6">
+                  <div
+                    class="p-4 bg-green-50 rounded-lg border border-green-200"
+                  >
+                    <h4 class="font-semibold text-green-800 mb-2">
+                      <i class="fas fa-check-circle mr-2"></i>
+                      Lo que SÍ te ofrece:
+                    </h4>
+                    <ul class="text-sm text-green-700 space-y-1">
+                      <li>• Exención del examen de admisión</li>
+                      <li>• Proceso de inscripción simplificado</li>
+                      <li>• Reconocimiento de tu excelencia académica</li>
+                      <li>• Prioridad en el proceso de admisión</li>
+                    </ul>
+                  </div>
+                  <div
+                    class="p-4 bg-yellow-50 rounded-lg border border-yellow-200"
+                  >
+                    <h4 class="font-semibold text-yellow-800 mb-2">
+                      <i class="fas fa-info-circle mr-2"></i>
+                      Factores a considerar:
+                    </h4>
+                    <ul class="text-sm text-yellow-700 space-y-1">
+                      <li>• Disponibilidad de espacios</li>
+                      <li>• Cumplimiento de requisitos</li>
+                      <li>• Documentación completa</li>
+                      <li>• Fechas límite de inscripción</li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  class="bg-blue-50 p-5 rounded-lg border-l-4 border-blue-500"
+                >
+                  <p class="text-gray-700">
+                    <strong class="text-blue-800">En resumen:</strong> Si
+                    cumples con todos los requisitos y hay disponibilidad de
+                    espacios en la carrera de tu interés, el Libre Tránsito te
+                    facilitará significativamente tu ingreso. Sin embargo, es
+                    importante que te mantengas informado y cumplas con todos
+                    los requisitos establecidos.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pregunta 5 -->
+          <div
+            class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition-shadow duration-300"
+          >
+            <button
+              class="w-full text-left p-6 md:p-8 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-inset"
+              onclick="toggleFAQ('faq5')"
+              aria-expanded="false"
+              aria-controls="faq5-answer"
+            >
+              <div class="flex items-center justify-between">
+                <div class="flex items-center flex-1">
+                  <div
+                    class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4"
+                  >
+                    <span class="text-green-700 font-bold text-lg">5</span>
+                  </div>
+                  <h3
+                    class="text-lg md:text-xl font-semibold text-gray-900 pr-4"
+                  >
+                    ¿Dónde puedo obtener más información o asesoría sobre el
+                    Libre Tránsito?
+                  </h3>
+                </div>
+                <i
+                  class="fas fa-chevron-down text-gray-400 transform transition-transform duration-300"
+                  id="faq5-icon"
+                ></i>
+              </div>
+            </button>
+            <div
+              id="faq5-answer"
+              class="hidden px-6 md:px-8 pb-6 md:pb-8 border-t border-gray-100"
+            >
+              <div class="pt-6 pl-14">
+                <p class="text-gray-700 leading-relaxed mb-6">
+                  Para obtener más información o asesoría sobre el Acuerdo de
+                  Libre Tránsito, puedes contactar a través de los siguientes
+                  canales:
+                </p>
+                <div class="space-y-4">
+                  <div
+                    class="p-5 bg-gradient-to-r from-green-50 to-blue-50 rounded-lg border border-green-200"
+                  >
+                    <h4
+                      class="font-semibold text-gray-800 mb-3 flex items-center"
+                    >
+                      <i class="fas fa-school text-green-600 mr-3"></i>
+                      En tu Plantel CECYTE:
+                    </h4>
+                    <ul class="space-y-2 text-gray-700">
+                      <li class="flex items-start">
+                        <i
+                          class="fas fa-user-tie text-green-600 mt-1 mr-2 flex-shrink-0"
+                        ></i>
+                        <span
+                          >Coordinador Académico o Director de tu plantel</span
+                        >
+                      </li>
+                      <li class="flex items-start">
+                        <i
+                          class="fas fa-user-graduate text-green-600 mt-1 mr-2 flex-shrink-0"
+                        ></i>
+                        <span>Orientación Educativa</span>
+                      </li>
+                      <li class="flex items-start">
+                        <i
+                          class="fas fa-clipboard-check text-green-600 mt-1 mr-2 flex-shrink-0"
+                        ></i>
+                        <span>Servicios Escolares</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div
+                    class="p-5 bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg border border-blue-200"
+                  >
+                    <h4
+                      class="font-semibold text-gray-800 mb-3 flex items-center"
+                    >
+                      <i class="fas fa-university text-blue-600 mr-3"></i>
+                      En las Instituciones de Educación Superior:
+                    </h4>
+                    <ul class="space-y-2 text-gray-700">
+                      <li class="flex items-start">
+                        <i
+                          class="fas fa-phone text-blue-600 mt-1 mr-2 flex-shrink-0"
+                        ></i>
+                        <span>Departamento de Servicios Escolares</span>
+                      </li>
+                      <li class="flex items-start">
+                        <i
+                          class="fas fa-envelope text-blue-600 mt-1 mr-2 flex-shrink-0"
+                        ></i>
+                        <span>Oficina de Admisiones</span>
+                      </li>
+                      <li class="flex items-start">
+                        <i
+                          class="fas fa-globe text-blue-600 mt-1 mr-2 flex-shrink-0"
+                        ></i>
+                        <span>Páginas web oficiales de cada institución</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div
+                    class="p-5 bg-orange-50 rounded-lg border-l-4 border-orange-500"
+                  >
+                    <h4
+                      class="font-semibold text-orange-800 mb-2 flex items-center"
+                    >
+                      <i class="fas fa-link text-orange-600 mr-2"></i>
+                      Recursos Adicionales:
+                    </h4>
+                    <p class="text-sm text-orange-700 mb-3">
+                      También puedes consultar la carpeta de documentos
+                      oficiales del acuerdo:
+                    </p>
+                    <a
+                      href="https://drive.google.com/drive/folders/1v50Sj_jg3MJiFPEtTEmUHShc8G2DiavK?usp=sharing"
+                      target="_blank"
+                      class="inline-flex items-center px-4 py-2 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors duration-200"
+                    >
+                      <i class="fas fa-external-link-alt mr-2"></i>
+                      Ver Documentos del Acuerdo
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de CTA (Call to Action) -->
+    <section
+      class="py-12 md:py-16 bg-gradient-to-br from-green-700 to-green-800 text-white"
+    >
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">
+          ¿Tienes más preguntas?
+        </h2>
+        <p class="text-lg text-green-100 mb-8 max-w-2xl mx-auto">
+          Nuestro equipo está listo para ayudarte. Contacta a tu plantel o a las
+          instituciones de educación superior para más información.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a
+            href="index.html"
+            class="px-6 py-3 bg-white text-green-700 rounded-lg font-semibold hover:bg-green-50 transition-colors duration-200 shadow-lg"
+          >
+            <i class="fas fa-home mr-2"></i>
+            Volver al Inicio
+          </a>
+          <a
+            href="directorio_telefonico.html"
+            class="px-6 py-3 bg-green-600 text-white rounded-lg font-semibold hover:bg-green-500 transition-colors duration-200 shadow-lg border-2 border-white border-opacity-20"
+          >
+            <i class="fas fa-phone mr-2"></i>
+            Directorio Telefónico
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white dark:bg-gray-900">
+      <div class="border-t-4 border-gray-400 dark:border-gray-1000"></div>
+      <div class="mx-auto w-full max-w-screen-xl">
+        <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
+          <div>
+            <h2
+              class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+            >
+              Sitios de Interés
+            </h2>
+            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+              <li class="mb-4">
+                <a href="https://itaibcs.net/" class="hover:underline"
+                  >ITAI del Estado de B.C.S.</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  href="https://transparencia.cre.gob.mx/plataforma-nacional-de-transparencia-sipot/"
+                  class="hover:underline"
+                  >SIPOT</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2
+              class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+            >
+              Domicilio
+            </h2>
+            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+              <li class="mb-4">
+                <p>Golfo de California No. 190</p>
+              </li>
+              <li class="mb-4">
+                <p>Col. El Conchalito.</p>
+              </li>
+              <li class="mb-4">
+                <p>Cp: 23090</p>
+              </li>
+              <li class="mb-4">
+                <p>La Paz B.C.S</p>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2
+              class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+            >
+              Teléfonos
+            </h2>
+            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+              <li class="mb-4">
+                <a href="#" class="hover:underline">612 - 12 32244</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">612 - 12 40430</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">612 - 12 40656</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2
+              class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+            >
+              SIGUENOS
+            </h2>
+            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+              <li class="mb-4">
+                <a
+                  href="https://www.facebook.com/DGCECYTEBCS"
+                  class="hover:underline"
+                  >FACEBOOK</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  href="https://x.com/CECYTE_BCS?lang=es"
+                  class="hover:underline"
+                  >X (Twitter)</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  href="https://www.youtube.com/channel/UCAjoT3ODBsMhq75-KFJuNYA"
+                  class="hover:underline"
+                  >YOUTUBE</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center p-4 bg-gray-800 text-white text-sm">
+        © 2024 Departamento de Informática. Todos los derechos reservados.
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+      // Variables de navegación móvil
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      // Botones del menú móvil
+      const docentesBtn = document.getElementById("docentes-btn");
+      const docentesSubmenu = document.getElementById("docentes-submenu");
+      const ofertaBtn = document.getElementById("oferta-btn");
+      const ofertaSubmenu = document.getElementById("oferta-submenu");
+      const alumnosBtn = document.getElementById("alumnos-btn");
+      const alumnosSubmenu = document.getElementById("alumnos-submenu");
+      const normatividadBtn = document.getElementById("normatividad-btn");
+      const normatividadSubmenu = document.getElementById(
+        "normatividad-submenu"
+      );
+      const transparenciaBtn = document.getElementById("transparencia-btn");
+      const transparenciaSubmenu = document.getElementById(
+        "transparencia-submenu"
+      );
+      const vinculacionBtn = document.getElementById("vinculacion-btn");
+      const vinculacionSubmenu = document.getElementById("vinculacion-submenu");
+
+      // Función para rotar el ícono de flecha
+      function rotateIcon(button, isOpen) {
+        const icon = button.querySelector("svg");
+        if (isOpen) {
+          icon.style.transform = "rotate(180deg)";
+        } else {
+          icon.style.transform = "rotate(0deg)";
+        }
+      }
+
+      // Toggle del menú móvil principal con animación
+      menuBtn.addEventListener("click", () => {
+        const isHidden = mobileMenu.classList.contains("hidden");
+
+        if (isHidden) {
+          mobileMenu.classList.remove("hidden");
+          mobileMenu.style.opacity = "0";
+          mobileMenu.style.transform = "translateY(-10px)";
+
+          // Animar la aparición
+          setTimeout(() => {
+            mobileMenu.style.transition =
+              "opacity 0.3s ease, transform 0.3s ease";
+            mobileMenu.style.opacity = "1";
+            mobileMenu.style.transform = "translateY(0)";
+          }, 10);
+        } else {
+          mobileMenu.style.transition =
+            "opacity 0.3s ease, transform 0.3s ease";
+          mobileMenu.style.opacity = "0";
+          mobileMenu.style.transform = "translateY(-10px)";
+
+          setTimeout(() => {
+            mobileMenu.classList.add("hidden");
+          }, 300);
+        }
+      });
+
+      // Función para manejar submenús con animación
+      function toggleSubmenu(button, submenu) {
+        const isHidden = submenu.classList.contains("hidden");
+
+        if (isHidden) {
+          submenu.classList.remove("hidden");
+          submenu.style.opacity = "0";
+          submenu.style.maxHeight = "0";
+
+          setTimeout(() => {
+            submenu.style.transition =
+              "opacity 0.3s ease, max-height 0.3s ease";
+            submenu.style.opacity = "1";
+            submenu.style.maxHeight = "200px";
+          }, 10);
+
+          rotateIcon(button, true);
+        } else {
+          submenu.style.transition = "opacity 0.3s ease, max-height 0.3s ease";
+          submenu.style.opacity = "0";
+          submenu.style.maxHeight = "0";
+
+          setTimeout(() => {
+            submenu.classList.add("hidden");
+          }, 300);
+
+          rotateIcon(button, false);
+        }
+      }
+
+      // Event listeners para submenús móviles
+      docentesBtn?.addEventListener("click", () => {
+        toggleSubmenu(docentesBtn, docentesSubmenu);
+      });
+
+      ofertaBtn?.addEventListener("click", () => {
+        toggleSubmenu(ofertaBtn, ofertaSubmenu);
+      });
+
+      alumnosBtn?.addEventListener("click", () => {
+        toggleSubmenu(alumnosBtn, alumnosSubmenu);
+      });
+
+      normatividadBtn?.addEventListener("click", () => {
+        toggleSubmenu(normatividadBtn, normatividadSubmenu);
+      });
+
+      transparenciaBtn?.addEventListener("click", () => {
+        toggleSubmenu(transparenciaBtn, transparenciaSubmenu);
+      });
+
+      vinculacionBtn?.addEventListener("click", () => {
+        toggleSubmenu(vinculacionBtn, vinculacionSubmenu);
+      });
+
+      // Funciones para modales de instituciones
+      function openModal(modalId) {
+        const modal = document.getElementById(modalId);
+        if (modal) {
+          modal.classList.remove("hidden");
+          document.body.style.overflow = "hidden"; // Prevenir scroll del body
+          // Animación de entrada
+          setTimeout(() => {
+            modal.style.opacity = "0";
+            modal.style.transition = "opacity 0.3s ease";
+            modal.style.opacity = "1";
+          }, 10);
+        }
+      }
+
+      function closeModal(modalId) {
+        const modal = document.getElementById(modalId);
+        if (modal) {
+          modal.style.transition = "opacity 0.3s ease";
+          modal.style.opacity = "0";
+          setTimeout(() => {
+            modal.classList.add("hidden");
+            document.body.style.overflow = ""; // Restaurar scroll del body
+          }, 300);
+        }
+      }
+
+      function closeModalOnBackdrop(event, modalId) {
+        // Solo cerrar si se hace clic en el backdrop (no en el contenido)
+        if (event.target.id === modalId) {
+          closeModal(modalId);
+        }
+      }
+
+      // Cerrar modal con tecla ESC
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          const modals = document.querySelectorAll('[id^="modal-"]');
+          modals.forEach((modal) => {
+            if (!modal.classList.contains("hidden")) {
+              closeModal(modal.id);
+            }
+          });
+        }
+      });
+
+      // Función para toggle de FAQs
+      function toggleFAQ(faqId) {
+        const answer = document.getElementById(faqId + "-answer");
+        const icon = document.getElementById(faqId + "-icon");
+        const button = answer.previousElementSibling;
+
+        // Cerrar todas las demás FAQs
+        const allAnswers = document.querySelectorAll('[id$="-answer"]');
+        const allIcons = document.querySelectorAll('[id$="-icon"]');
+        const allButtons = document.querySelectorAll('[onclick^="toggleFAQ"]');
+
+        allAnswers.forEach((ans) => {
+          if (ans.id !== faqId + "-answer") {
+            ans.classList.add("hidden");
+          }
+        });
+
+        allIcons.forEach((ic) => {
+          if (ic.id !== faqId + "-icon") {
+            ic.classList.remove("rotate-180");
+          }
+        });
+
+        allButtons.forEach((btn) => {
+          if (btn !== button) {
+            btn.setAttribute("aria-expanded", "false");
+          }
+        });
+
+        // Toggle de la FAQ actual
+        answer.classList.toggle("hidden");
+        icon.classList.toggle("rotate-180");
+        button.setAttribute(
+          "aria-expanded",
+          answer.classList.contains("hidden") ? "false" : "true"
+        );
+      }
+
+      // Smooth scroll para enlaces internos
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+
+      // Animación al hacer scroll
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add(
+              "animate__animated",
+              "animate__fadeInUp"
+            );
+          }
+        });
+      }, observerOptions);
+
+      document
+        .querySelectorAll(".bg-white.rounded-lg.shadow-md")
+        .forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>
