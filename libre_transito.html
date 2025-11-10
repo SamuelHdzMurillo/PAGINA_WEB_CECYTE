@@ -37,6 +37,139 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <script src="https://unpkg.com/flowbite@^2.1/dist/flowbite.min.js"></script>
+
+    <!-- Estilos para animaciones de scroll -->
+    <style>
+      /* Clase base para elementos animables */
+      .scroll-animate {
+        opacity: 0;
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      }
+
+      /* Animación fade-in */
+      .scroll-animate.fade-in {
+        transform: translateY(20px);
+      }
+
+      .scroll-animate.fade-in.animated {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Animación fade-in-up */
+      .scroll-animate.fade-in-up {
+        transform: translateY(30px);
+      }
+
+      .scroll-animate.fade-in-up.animated {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Animación slide-in-left */
+      .scroll-animate.slide-in-left {
+        transform: translateX(-50px);
+      }
+
+      .scroll-animate.slide-in-left.animated {
+        opacity: 1;
+        transform: translateX(0);
+      }
+
+      /* Animación slide-in-right */
+      .scroll-animate.slide-in-right {
+        transform: translateX(50px);
+      }
+
+      .scroll-animate.slide-in-right.animated {
+        opacity: 1;
+        transform: translateX(0);
+      }
+
+      /* Animación scale-in */
+      .scroll-animate.scale-in {
+        transform: scale(0.8);
+      }
+
+      .scroll-animate.scale-in.animated {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      /* Respetar los delays de animación */
+      .scroll-animate[style*="animation-delay"] {
+        transition-delay: inherit;
+      }
+
+      /* Asegurar que los elementos con delay funcionen correctamente */
+      .scroll-animate[style*="animation-delay: 0.1s"] {
+        transition-delay: 0.1s;
+      }
+      .scroll-animate[style*="animation-delay: 0.2s"] {
+        transition-delay: 0.2s;
+      }
+      .scroll-animate[style*="animation-delay: 0.3s"] {
+        transition-delay: 0.3s;
+      }
+      .scroll-animate[style*="animation-delay: 0.4s"] {
+        transition-delay: 0.4s;
+      }
+      .scroll-animate[style*="animation-delay: 0.5s"] {
+        transition-delay: 0.5s;
+      }
+      .scroll-animate[style*="animation-delay: 0.6s"] {
+        transition-delay: 0.6s;
+      }
+
+      /* Animaciones para las FAQs */
+      .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.4s ease-out, opacity 0.3s ease-out,
+          padding-top 0.3s ease-out, padding-bottom 0.3s ease-out;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+      }
+
+      .faq-answer.open {
+        max-height: 3000px;
+        opacity: 1;
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+      }
+
+      @media (min-width: 768px) {
+        .faq-answer.open {
+          padding-top: 2rem !important;
+          padding-bottom: 2rem !important;
+        }
+      }
+
+      .faq-answer.open > div {
+        animation: fadeInUp 0.4s ease-out;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Animación suave para el ícono de la FAQ */
+      .faq-icon {
+        transition: transform 0.3s ease-out;
+      }
+
+      .faq-icon.rotate-180 {
+        transform: rotate(180deg);
+      }
+    </style>
   </head>
   <body class="bg-gray-50">
     <!-- Barra de navegación -->
@@ -45,11 +178,17 @@
         <div class="flex justify-between items-center h-16">
           <!-- Logo -->
           <div class="flex-shrink-0 flex items-center">
-            <img
-              src="img_logos/logo_Cecyte_vertical_sin_fondo.png"
-              alt="CECYTE BCS - Colegio de Estudios Científicos y Tecnológicos de Baja California Sur"
-              class="h-12 w-auto"
-            />
+            <a
+              href="index.html"
+              class="cursor-pointer hover:opacity-80 transition-opacity duration-200"
+              title="Ir a la página principal"
+            >
+              <img
+                src="img_logos/logo_Cecyte_vertical_sin_fondo.png"
+                alt="CECYTE BCS - Colegio de Estudios Científicos y Tecnológicos de Baja California Sur"
+                class="h-12 w-auto"
+              />
+            </a>
           </div>
           <!-- Botón de menú móvil -->
           <div class="flex items-center sm:hidden">
@@ -326,13 +465,6 @@
                 >
               </div>
             </div>
-
-            <!-- Menú Libre Tránsito -->
-            <a
-              href="libre_transisto.html"
-              class="text-green-600 font-semibold px-2 py-4 rounded-md text-sm font-medium transition-colors duration-200 whitespace-nowrap"
-              >Libre Tránsito</a
-            >
 
             <!-- Menú Comunidad -->
             <a
@@ -679,13 +811,6 @@
           </div>
         </div>
 
-        <!-- Libre Tránsito -->
-        <a
-          href="libre_transisto.html"
-          class="block px-4 py-3 text-green-600 font-semibold hover:bg-gray-100 transition-colors duration-200"
-          >Libre Tránsito</a
-        >
-
         <!-- Comunidad -->
         <a
           href="comunidad.html"
@@ -771,55 +896,14 @@
             Acuerdo de Libre Tránsito
             <span class="block text-green-200">Estudiantil</span>
           </h1>
-          <p
-            class="text-lg md:text-xl lg:text-2xl text-green-100 max-w-3xl mx-auto mb-8 leading-relaxed"
-          >
-            Facilita la continuidad educativa de nuestros estudiantes hacia la
-            educación superior sin necesidad de presentar examen de admisión
-          </p>
-          <div class="flex flex-wrap justify-center gap-4">
-            <div
-              class="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg px-6 py-3 border border-white border-opacity-20"
-            >
-              <div class="text-2xl font-bold">6+</div>
-              <div class="text-sm text-green-100">Instituciones</div>
-            </div>
-            <div
-              class="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg px-6 py-3 border border-white border-opacity-20"
-            >
-              <div class="text-2xl font-bold">100%</div>
-              <div class="text-sm text-green-100">Sin Examen</div>
-            </div>
-            <div
-              class="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg px-6 py-3 border border-white border-opacity-20"
-            >
-              <div class="text-2xl font-bold">∞</div>
-              <div class="text-sm text-green-100">Oportunidades</div>
-            </div>
-          </div>
         </div>
-      </div>
-
-      <!-- Onda decorativa -->
-      <div class="absolute bottom-0 left-0 w-full">
-        <svg
-          viewBox="0 0 1440 120"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          class="w-full h-16 md:h-24"
-        >
-          <path
-            d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z"
-            fill="rgb(249, 250, 251)"
-          />
-        </svg>
       </div>
     </section>
 
     <!-- Sección de Introducción -->
     <section class="py-12 md:py-16 bg-white">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-10">
+        <div class="text-center mb-10 scroll-animate fade-in">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
             ¿Qué es el Acuerdo de Libre Tránsito?
           </h2>
@@ -828,87 +912,165 @@
 
         <div class="space-y-8">
           <!-- Descripción principal -->
-          <div class="prose prose-lg max-w-none">
-            <p class="text-gray-700 leading-relaxed text-lg">
-              El
-              <strong class="text-gray-900"
-                >Acuerdo de Libre Tránsito Académico</strong
-              >
-              es una iniciativa firmada entre el <strong>CECYTE BCS</strong> y
-              las principales instituciones de educación superior de Baja
-              California Sur. Este acuerdo permite que nuestros estudiantes
-              destacados puedan continuar sus estudios universitarios
-              <strong class="text-gray-900"
-                >sin necesidad de presentar examen de admisión</strong
-              >, siempre y cuando cumplan con los requisitos académicos
-              establecidos.
+          <div class="prose prose-lg max-w-none scroll-animate fade-in">
+            <p class="text-gray-700 leading-relaxed text-lg mb-4">
+              Un acuerdo de libre tránsito entre el
+              <strong class="text-gray-900">CECyTE BCS</strong> y una
+              Institución de Educación Superior (IES) es un convenio de
+              colaboración educativa que facilita a los egresados del CECyTE
+              continuar sus estudios universitarios sin obstáculos
+              administrativos o académicos innecesarios.
+            </p>
+            <p class="text-gray-700 leading-relaxed text-lg mb-4">
+              En términos sencillos, este acuerdo busca que los alumnos del
+              CECyTE puedan ingresar más fácilmente a universidades o
+              tecnológicos, reconociendo los aprendizajes, competencias o
+              créditos que adquirieron durante su bachillerato.
+            </p>
+          </div>
+
+          <!-- Objetivo principal -->
+          <div
+            class="bg-green-50 border-l-4 border-green-600 p-6 rounded-lg scroll-animate slide-in-left"
+          >
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">
+              <i class="fas fa-bullseye text-green-600 mr-2"></i>
+              Objetivo principal:
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              Fortalecer la continuidad educativa, evitando la deserción y
+              promoviendo que más jóvenes cursen una carrera profesional.
             </p>
           </div>
 
           <!-- Beneficios -->
-          <div class="grid md:grid-cols-2 gap-6 pt-6 border-t border-gray-200">
-            <div class="flex items-start space-x-4">
-              <div class="flex-shrink-0">
-                <div
-                  class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center"
-                >
-                  <i class="fas fa-graduation-cap text-green-600 text-xl"></i>
+          <div class="pt-6 border-t border-gray-200 scroll-animate fade-in">
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">
+              Beneficios para los estudiantes:
+            </h3>
+            <div class="grid md:grid-cols-2 gap-4">
+              <div
+                class="flex items-start space-x-4 scroll-animate fade-in-up"
+                style="animation-delay: 0.1s"
+              >
+                <div class="flex-shrink-0">
+                  <div
+                    class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center"
+                  >
+                    <i class="fas fa-check-circle text-green-600 text-xl"></i>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-900 mb-2">
+                    Simplificación del proceso
+                  </h4>
+                  <p class="text-gray-600 text-sm leading-relaxed">
+                    Simplificación del proceso de ingreso a la universidad.
+                  </p>
                 </div>
               </div>
-              <div>
-                <h3 class="text-lg font-semibold text-gray-900 mb-2">
-                  Continuidad Educativa
-                </h3>
-                <p class="text-gray-600 text-sm leading-relaxed">
-                  Facilita la transición de nuestros egresados hacia la
-                  educación superior, reduciendo barreras administrativas.
-                </p>
-              </div>
-            </div>
 
-            <div class="flex items-start space-x-4">
-              <div class="flex-shrink-0">
-                <div
-                  class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center"
-                >
-                  <i class="fas fa-trophy text-orange-600 text-xl"></i>
+              <div
+                class="flex items-start space-x-4 scroll-animate fade-in-up"
+                style="animation-delay: 0.2s"
+              >
+                <div class="flex-shrink-0">
+                  <div
+                    class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center"
+                  >
+                    <i class="fas fa-certificate text-blue-600 text-xl"></i>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-900 mb-2">
+                    Reconocimiento académico
+                  </h4>
+                  <p class="text-gray-600 text-sm leading-relaxed">
+                    Reconocimiento de materias o competencias (según el
+                    convenio).
+                  </p>
                 </div>
               </div>
-              <div>
-                <h3 class="text-lg font-semibold text-gray-900 mb-2">
-                  Reconocimiento al Mérito
-                </h3>
-                <p class="text-gray-600 text-sm leading-relaxed">
-                  Premia el esfuerzo y excelencia académica de nuestros
-                  estudiantes destacados.
-                </p>
+
+              <div
+                class="flex items-start space-x-4 scroll-animate fade-in-up"
+                style="animation-delay: 0.3s"
+              >
+                <div class="flex-shrink-0">
+                  <div
+                    class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center"
+                  >
+                    <i
+                      class="fas fa-graduation-cap text-orange-600 text-xl"
+                    ></i>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-900 mb-2">
+                    Oportunidades adicionales
+                  </h4>
+                  <p class="text-gray-600 text-sm leading-relaxed">
+                    Oportunidad de acceder a becas o programas conjuntos.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="flex items-start space-x-4 scroll-animate fade-in-up"
+                style="animation-delay: 0.4s"
+              >
+                <div class="flex-shrink-0">
+                  <div
+                    class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center"
+                  >
+                    <i class="fas fa-exchange-alt text-purple-600 text-xl"></i>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-900 mb-2">
+                    Movilidad académica
+                  </h4>
+                  <p class="text-gray-600 text-sm leading-relaxed">
+                    Facilitar la movilidad académica entre instituciones.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
 
+          <!-- Resumen -->
+          <div
+            class="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-lg mt-6 scroll-animate slide-in-right"
+          >
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">
+              <i class="fas fa-lightbulb text-blue-600 mr-2"></i>
+              En resumen:
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              El "acuerdo de libre tránsito" es una alianza que abre puertas
+              para que los alumnos del CECyTE BCS tengan un camino directo y
+              accesible hacia la educación superior, fortaleciendo su formación
+              profesional.
+            </p>
+          </div>
+
           <!-- Instituciones Participantes -->
-          <div class="pt-6 border-t border-gray-200">
+          <div class="pt-6 border-t border-gray-200 scroll-animate fade-in">
             <h3 class="text-xl font-semibold text-gray-900 mb-5">
               Instituciones Participantes
             </h3>
-            <ul class="space-y-2.5">
+            <ul class="space-y-2.5 scroll-animate fade-in-up">
               <li class="flex items-center text-gray-700">
                 <span
                   class="w-1.5 h-1.5 bg-green-600 rounded-full mr-3 flex-shrink-0"
                 ></span>
-                <span>Universidad Autónoma de Baja California Sur (UABCS)</span>
+                <span>Universidad Autónoma de Baja California Sur</span>
               </li>
               <li class="flex items-center text-gray-700">
                 <span
                   class="w-1.5 h-1.5 bg-green-600 rounded-full mr-3 flex-shrink-0"
                 ></span>
-                <span>Universidad Tecnológica de La Paz (UTLP)</span>
-              </li>
-              <li class="flex items-center text-gray-700">
-                <span
-                  class="w-1.5 h-1.5 bg-green-600 rounded-full mr-3 flex-shrink-0"
-                ></span>
-                <span>Tecnológico Nacional de México Campus Los Cabos</span>
+                <span>Universidad Tecnológica de La Paz</span>
               </li>
               <li class="flex items-center text-gray-700">
                 <span
@@ -920,25 +1082,37 @@
                 <span
                   class="w-1.5 h-1.5 bg-green-600 rounded-full mr-3 flex-shrink-0"
                 ></span>
+                <span>Instituto Tecnológico Superior de Los Cabos</span>
+              </li>
+              <li class="flex items-center text-gray-700">
                 <span
-                  >Tecnológico Nacional de México - Ciudad Constitución</span
+                  class="w-1.5 h-1.5 bg-green-600 rounded-full mr-3 flex-shrink-0"
+                ></span>
+                <span
+                  >Instituto Tecnológico Superior de Ciudad Constitución</span
                 >
               </li>
               <li class="flex items-center text-gray-700">
                 <span
                   class="w-1.5 h-1.5 bg-green-600 rounded-full mr-3 flex-shrink-0"
                 ></span>
-                <span>Tecnológico Nacional de México - Mulegé</span>
+                <span>Instituto Tecnológico Superior de Mulegé</span>
               </li>
             </ul>
 
             <!-- Botones con logos de instituciones -->
             <div class="mt-8 pt-6 border-t border-gray-200">
+              <p class="text-sm text-gray-600 mb-4 text-center italic">
+                <i class="fas fa-mouse-pointer mr-2"></i>
+                Haz clic en los logos de las instituciones para ver más
+                información
+              </p>
               <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
                 <!-- UABCS -->
                 <button
                   onclick="openModal('modal-uabcs')"
-                  class="group flex flex-col items-center justify-center p-4 bg-white border-2 border-gray-200 rounded-lg hover:border-green-500 hover:shadow-md transition-all duration-200 cursor-pointer"
+                  class="group flex flex-col items-center justify-center p-4 bg-white border-2 border-gray-200 rounded-lg hover:border-green-500 hover:shadow-md transition-all duration-200 cursor-pointer scroll-animate scale-in"
+                  style="animation-delay: 0.1s"
                 >
                   <img
                     src="img_recuros_pagina/libre_transito/logo_uabcs.webp"
@@ -955,7 +1129,8 @@
                 <!-- UTLP -->
                 <button
                   onclick="openModal('modal-utlp')"
-                  class="group flex flex-col items-center justify-center p-4 bg-white border-2 border-gray-200 rounded-lg hover:border-green-500 hover:shadow-md transition-all duration-200 cursor-pointer"
+                  class="group flex flex-col items-center justify-center p-4 bg-white border-2 border-gray-200 rounded-lg hover:border-green-500 hover:shadow-md transition-all duration-200 cursor-pointer scroll-animate scale-in"
+                  style="animation-delay: 0.2s"
                 >
                   <img
                     src="img_recuros_pagina/libre_transito/logo_utlp.webp"
@@ -972,7 +1147,8 @@
                 <!-- ITES Los Cabos -->
                 <button
                   onclick="openModal('modal-ites')"
-                  class="group flex flex-col items-center justify-center p-4 bg-white border-2 border-gray-200 rounded-lg hover:border-green-500 hover:shadow-md transition-all duration-200 cursor-pointer"
+                  class="group flex flex-col items-center justify-center p-4 bg-white border-2 border-gray-200 rounded-lg hover:border-green-500 hover:shadow-md transition-all duration-200 cursor-pointer scroll-animate scale-in"
+                  style="animation-delay: 0.3s"
                 >
                   <img
                     src="img_recuros_pagina/libre_transito/logo_ites_los_cabos.webp"
@@ -989,7 +1165,8 @@
                 <!-- IT La Paz -->
                 <button
                   onclick="openModal('modal-itlp')"
-                  class="group flex flex-col items-center justify-center p-4 bg-white border-2 border-gray-200 rounded-lg hover:border-green-500 hover:shadow-md transition-all duration-200 cursor-pointer"
+                  class="group flex flex-col items-center justify-center p-4 bg-white border-2 border-gray-200 rounded-lg hover:border-green-500 hover:shadow-md transition-all duration-200 cursor-pointer scroll-animate scale-in"
+                  style="animation-delay: 0.4s"
                 >
                   <img
                     src="img_recuros_pagina/libre_transito/logo_tec_la_paz.webp"
@@ -1006,7 +1183,8 @@
                 <!-- IT Constitución -->
                 <button
                   onclick="openModal('modal-itscdc')"
-                  class="group flex flex-col items-center justify-center p-4 bg-white border-2 border-gray-200 rounded-lg hover:border-green-500 hover:shadow-md transition-all duration-200 cursor-pointer"
+                  class="group flex flex-col items-center justify-center p-4 bg-white border-2 border-gray-200 rounded-lg hover:border-green-500 hover:shadow-md transition-all duration-200 cursor-pointer scroll-animate scale-in"
+                  style="animation-delay: 0.5s"
                 >
                   <img
                     src="img_recuros_pagina/libre_transito/logo_its_constitucion.webp"
@@ -1023,7 +1201,8 @@
                 <!-- ITSM Mulegé -->
                 <button
                   onclick="openModal('modal-itsm')"
-                  class="group flex flex-col items-center justify-center p-4 bg-white border-2 border-gray-200 rounded-lg hover:border-green-500 hover:shadow-md transition-all duration-200 cursor-pointer"
+                  class="group flex flex-col items-center justify-center p-4 bg-white border-2 border-gray-200 rounded-lg hover:border-green-500 hover:shadow-md transition-all duration-200 cursor-pointer scroll-animate scale-in"
+                  style="animation-delay: 0.6s"
                 >
                   <img
                     src="img_recuros_pagina/libre_transito/logo_itsm.webp"
@@ -1245,10 +1424,8 @@
     <!-- Sección de Preguntas Frecuentes -->
     <section class="py-12 md:py-16 bg-gray-50">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2
-            class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 animate__animated animate__fadeIn"
-          >
+        <div class="text-center mb-12 scroll-animate fade-in">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Preguntas Frecuentes
           </h2>
           <p class="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -1262,7 +1439,8 @@
         <div class="space-y-4">
           <!-- Pregunta 1 -->
           <div
-            class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition-shadow duration-300"
+            class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition-shadow duration-300 scroll-animate fade-in-up"
+            style="animation-delay: 0.1s"
           >
             <button
               class="w-full text-left p-6 md:p-8 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-inset"
@@ -1280,74 +1458,123 @@
                   <h3
                     class="text-lg md:text-xl font-semibold text-gray-900 pr-4"
                   >
-                    ¿Qué requisitos debo cumplir para acceder al Libre Tránsito?
+                    ¿Cuáles son los requisitos generales?
                   </h3>
                 </div>
                 <i
-                  class="fas fa-chevron-down text-gray-400 transform transition-transform duration-300"
+                  class="fas fa-chevron-down text-gray-400 faq-icon"
                   id="faq1-icon"
                 ></i>
               </div>
             </button>
             <div
               id="faq1-answer"
-              class="hidden px-6 md:px-8 pb-6 md:pb-8 border-t border-gray-100"
+              class="faq-answer px-6 md:px-8 border-t border-gray-100"
             >
               <div class="pt-6 pl-14">
                 <p class="text-gray-700 leading-relaxed mb-4">
-                  Para acceder al beneficio del Libre Tránsito, debes cumplir
-                  con los siguientes requisitos:
+                  Los requisitos generales para que un alumno del CECyTE BCS
+                  pueda beneficiarse de un acuerdo de libre tránsito hacia una
+                  Institución de Educación Superior (IES) suelen variar
+                  ligeramente según la universidad o tecnológico con el que
+                  exista el convenio, pero en general incluyen lo siguiente:
                 </p>
-                <ul class="space-y-3 text-gray-700">
+
+                <h4 class="text-lg font-semibold text-gray-900 mb-4 mt-6">
+                  Requisitos generales
+                </h4>
+
+                <ul class="space-y-3 text-gray-700 mb-6">
                   <li class="flex items-start">
                     <i
                       class="fas fa-check text-green-600 mt-1.5 mr-3 flex-shrink-0"
                     ></i>
-                    <span
-                      >Haber egresado del CECYTE BCS con un
-                      <strong>promedio mínimo de 8.0</strong> (o el promedio que
-                      establezca cada institución receptora).</span
-                    >
+                    <span>
+                      <strong
+                        >Haber concluido el bachillerato en el CECyTE
+                        BCS</strong
+                      ><br />
+                      Contar con certificado de estudios o constancia de
+                      terminación.
+                    </span>
                   </li>
                   <li class="flex items-start">
                     <i
                       class="fas fa-check text-green-600 mt-1.5 mr-3 flex-shrink-0"
                     ></i>
-                    <span
-                      >Haber concluido tus estudios de bachillerato en tiempo y
-                      forma.</span
-                    >
+                    <span>
+                      <strong
+                        >Cumplir con el perfil del programa educativo</strong
+                      ><br />
+                      Que la carrera elegida sea afín al área de formación
+                      cursada en el CECyTE BCS.
+                    </span>
                   </li>
                   <li class="flex items-start">
                     <i
                       class="fas fa-check text-green-600 mt-1.5 mr-3 flex-shrink-0"
                     ></i>
-                    <span
-                      >No haber presentado examen de admisión en la institución
-                      de educación superior de tu interés durante el mismo ciclo
-                      escolar.</span
-                    >
+                    <span>
+                      <strong>Promedio mínimo establecido</strong><br />
+                      Generalmente se pide un promedio mínimo de 8.0, aunque
+                      depende de la universidad y la carrera.
+                    </span>
                   </li>
                   <li class="flex items-start">
                     <i
                       class="fas fa-check text-green-600 mt-1.5 mr-3 flex-shrink-0"
                     ></i>
-                    <span
-                      >Cumplir con los requisitos específicos que cada
-                      institución de educación superior establezca
-                      (documentación, fechas límite, etc.).</span
-                    >
+                    <span>
+                      <strong
+                        >Presentar la documentación requerida por la IES</strong
+                      ><br />
+                      <ul class="ml-6 mt-2 space-y-1 list-disc">
+                        <li>Acta de nacimiento</li>
+                        <li>CURP</li>
+                        <li>Certificado de bachillerato</li>
+                        <li>Comprobante de domicilio</li>
+                        <li>Fotografías</li>
+                        <li>
+                          Solicitud de ingreso o formato de equivalencia (según
+                          el caso)
+                        </li>
+                      </ul>
+                    </span>
+                  </li>
+                  <li class="flex items-start">
+                    <i
+                      class="fas fa-check text-green-600 mt-1.5 mr-3 flex-shrink-0"
+                    ></i>
+                    <span>
+                      <strong
+                        >Cumplir con el proceso administrativo del
+                        convenio</strong
+                      ><br />
+                      Este depende de cada Institución Educativa.
+                    </span>
+                  </li>
+                  <li class="flex items-start">
+                    <i
+                      class="fas fa-check text-green-600 mt-1.5 mr-3 flex-shrink-0"
+                    ></i>
+                    <span>
+                      <strong>Respetar los plazos de inscripción</strong><br />
+                      Las fechas suelen establecerse por la universidad
+                      receptora, pero el CECyTE BCS puede orientar al
+                      estudiante.
+                    </span>
                   </li>
                 </ul>
+
                 <div
                   class="mt-6 p-4 bg-blue-50 rounded-lg border-l-4 border-blue-500"
                 >
                   <p class="text-sm text-blue-800">
                     <i class="fas fa-info-circle mr-2"></i>
-                    <strong>Nota importante:</strong> Los requisitos pueden
-                    variar según la institución de educación superior. Te
-                    recomendamos contactar directamente con la institución de tu
-                    interés para conocer los requisitos específicos.
+                    El acuerdo facilita el paso del CECyTE a la universidad,
+                    pero el alumno debe haber terminado el bachillerato, tener
+                    buen desempeño académico y cumplir con los requisitos
+                    administrativos de la institución que lo recibirá.
                   </p>
                 </div>
               </div>
@@ -1356,7 +1583,8 @@
 
           <!-- Pregunta 2 -->
           <div
-            class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition-shadow duration-300"
+            class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition-shadow duration-300 scroll-animate fade-in-up"
+            style="animation-delay: 0.2s"
           >
             <button
               class="w-full text-left p-6 md:p-8 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-inset"
@@ -1374,66 +1602,45 @@
                   <h3
                     class="text-lg md:text-xl font-semibold text-gray-900 pr-4"
                   >
-                    ¿A qué carreras puedo acceder con el Libre Tránsito?
+                    ¿Para qué carreras aplica?
                   </h3>
                 </div>
                 <i
-                  class="fas fa-chevron-down text-gray-400 transform transition-transform duration-300"
+                  class="fas fa-chevron-down text-gray-400 faq-icon"
                   id="faq2-icon"
                 ></i>
               </div>
             </button>
             <div
               id="faq2-answer"
-              class="hidden px-6 md:px-8 pb-6 md:pb-8 border-t border-gray-100"
+              class="faq-answer px-6 md:px-8 border-t border-gray-100"
             >
               <div class="pt-6 pl-14">
                 <p class="text-gray-700 leading-relaxed mb-4">
-                  El Acuerdo de Libre Tránsito te permite acceder a todas las
-                  carreras que ofrecen las instituciones participantes, sin
-                  embargo, algunas consideraciones importantes:
+                  Los acuerdos de libre tránsito del CECyTE BCS hacia
+                  Instituciones de Educación Superior (IES) suelen aplicar para
+                  carreras universitarias afines al perfil técnico que los
+                  estudiantes cursaron en el bachillerato.
                 </p>
-                <ul class="space-y-3 text-gray-700 mb-6">
-                  <li class="flex items-start">
-                    <i
-                      class="fas fa-university text-green-600 mt-1.5 mr-3 flex-shrink-0"
-                    ></i>
-                    <span
-                      >La disponibilidad de espacios puede variar según la
-                      demanda de cada carrera.</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    <i
-                      class="fas fa-clipboard-list text-green-600 mt-1.5 mr-3 flex-shrink-0"
-                    ></i>
-                    <span
-                      >Algunas carreras pueden tener requisitos adicionales
-                      específicos (portafolio, entrevista, etc.).</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    <i
-                      class="fas fa-calendar-alt text-green-600 mt-1.5 mr-3 flex-shrink-0"
-                    ></i>
-                    <span
-                      >Debes respetar los periodos de inscripción establecidos
-                      por cada institución.</span
-                    >
-                  </li>
-                </ul>
                 <div
-                  class="bg-gradient-to-r from-green-50 to-blue-50 p-6 rounded-lg"
+                  class="bg-gradient-to-r from-green-50 to-blue-50 p-6 rounded-lg border-l-4 border-green-500"
                 >
-                  <h4 class="font-semibold text-gray-800 mb-3">
-                    <i class="fas fa-lightbulb text-yellow-500 mr-2"></i>
-                    Recomendación:
+                  <h4
+                    class="font-semibold text-gray-800 mb-3 flex items-center"
+                  >
+                    <i class="fas fa-info-circle text-green-600 mr-2"></i>
+                    Información importante:
                   </h4>
-                  <p class="text-gray-700">
-                    Consulta directamente con la institución de tu interés para
-                    conocer la disponibilidad de espacios en la carrera que
-                    deseas estudiar y los requisitos específicos que puedan
-                    aplicar.
+                  <p class="text-gray-700 mb-3">
+                    Conoce las carreras que entran en este convenio dando click
+                    en la parte de abajo a cada plantel educativo.
+                  </p>
+                  <p class="text-gray-600 text-sm">
+                    Cada institución de educación superior tiene un catálogo
+                    específico de carreras disponibles bajo el acuerdo de libre
+                    tránsito. Te recomendamos consultar directamente con la
+                    institución de tu interés para conocer las carreras
+                    disponibles y sus requisitos específicos.
                   </p>
                 </div>
               </div>
@@ -1442,7 +1649,8 @@
 
           <!-- Pregunta 3 -->
           <div
-            class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition-shadow duration-300"
+            class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition-shadow duration-300 scroll-animate fade-in-up"
+            style="animation-delay: 0.3s"
           >
             <button
               class="w-full text-left p-6 md:p-8 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-inset"
@@ -1460,306 +1668,74 @@
                   <h3
                     class="text-lg md:text-xl font-semibold text-gray-900 pr-4"
                   >
-                    ¿Cuándo y cómo debo solicitar el Libre Tránsito?
+                    ¿Qué escuelas participan?
                   </h3>
                 </div>
                 <i
-                  class="fas fa-chevron-down text-gray-400 transform transition-transform duration-300"
+                  class="fas fa-chevron-down text-gray-400 faq-icon"
                   id="faq3-icon"
                 ></i>
               </div>
             </button>
             <div
               id="faq3-answer"
-              class="hidden px-6 md:px-8 pb-6 md:pb-8 border-t border-gray-100"
+              class="faq-answer px-6 md:px-8 border-t border-gray-100"
             >
               <div class="pt-6 pl-14">
-                <p class="text-gray-700 leading-relaxed mb-6">
-                  El proceso de solicitud del Libre Tránsito debe realizarse
-                  durante los periodos de inscripción establecidos por cada
-                  institución de educación superior. Te recomendamos seguir
-                  estos pasos:
+                <p class="text-gray-700 leading-relaxed mb-4">
+                  Por ahora este Acuerdo de Libre Tránsito, aplica para las
+                  siguientes Instituciones de Educación Superior:
                 </p>
-                <div class="space-y-4">
-                  <div class="flex items-start p-4 bg-gray-50 rounded-lg">
-                    <div
-                      class="flex-shrink-0 w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center font-bold mr-4"
+                <ul class="space-y-3 text-gray-700 mb-6">
+                  <li class="flex items-start">
+                    <i
+                      class="fas fa-university text-green-600 mt-1.5 mr-3 flex-shrink-0"
+                    ></i>
+                    <span>Universidad Autónoma de Baja California Sur</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i
+                      class="fas fa-university text-green-600 mt-1.5 mr-3 flex-shrink-0"
+                    ></i>
+                    <span>Universidad Tecnológica de La Paz</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i
+                      class="fas fa-university text-green-600 mt-1.5 mr-3 flex-shrink-0"
+                    ></i>
+                    <span>Instituto Tecnológico de La Paz</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i
+                      class="fas fa-university text-green-600 mt-1.5 mr-3 flex-shrink-0"
+                    ></i>
+                    <span>Instituto Tecnológico Superior de Los Cabos</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i
+                      class="fas fa-university text-green-600 mt-1.5 mr-3 flex-shrink-0"
+                    ></i>
+                    <span
+                      >Instituto Tecnológico Superior de Ciudad
+                      Constitución</span
                     >
-                      1
-                    </div>
-                    <div>
-                      <h4 class="font-semibold text-gray-800 mb-1">
-                        Consulta las fechas
-                      </h4>
-                      <p class="text-gray-600 text-sm">
-                        Revisa el calendario de inscripciones de la institución
-                        de tu interés. Generalmente, los periodos de inscripción
-                        son antes del inicio de cada semestre o ciclo escolar.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="flex items-start p-4 bg-gray-50 rounded-lg">
-                    <div
-                      class="flex-shrink-0 w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center font-bold mr-4"
-                    >
-                      2
-                    </div>
-                    <div>
-                      <h4 class="font-semibold text-gray-800 mb-1">
-                        Prepara tu documentación
-                      </h4>
-                      <p class="text-gray-600 text-sm">
-                        Certificado de bachillerato, historial académico,
-                        identificación oficial, comprobante de promedio, y
-                        cualquier otro documento que la institución requiera.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="flex items-start p-4 bg-gray-50 rounded-lg">
-                    <div
-                      class="flex-shrink-0 w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center font-bold mr-4"
-                    >
-                      3
-                    </div>
-                    <div>
-                      <h4 class="font-semibold text-gray-800 mb-1">
-                        Contacta a la institución
-                      </h4>
-                      <p class="text-gray-600 text-sm">
-                        Comunícate con el departamento de servicios escolares o
-                        admisiones de la institución para conocer el proceso
-                        específico y presentar tu solicitud.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="mt-6 p-4 bg-orange-50 rounded-lg border-l-4 border-orange-500"
-                >
-                  <p class="text-sm text-orange-800">
-                    <i class="fas fa-exclamation-triangle mr-2"></i>
-                    <strong>Importante:</strong> Cada institución tiene su
-                    propio proceso y fechas límite. No asumas que el proceso es
-                    el mismo en todas las instituciones.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Pregunta 4 -->
-          <div
-            class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition-shadow duration-300"
-          >
-            <button
-              class="w-full text-left p-6 md:p-8 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-inset"
-              onclick="toggleFAQ('faq4')"
-              aria-expanded="false"
-              aria-controls="faq4-answer"
-            >
-              <div class="flex items-center justify-between">
-                <div class="flex items-center flex-1">
-                  <div
-                    class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4"
-                  >
-                    <span class="text-green-700 font-bold text-lg">4</span>
-                  </div>
-                  <h3
-                    class="text-lg md:text-xl font-semibold text-gray-900 pr-4"
-                  >
-                    ¿El Libre Tránsito garantiza mi ingreso a la universidad?
-                  </h3>
-                </div>
-                <i
-                  class="fas fa-chevron-down text-gray-400 transform transition-transform duration-300"
-                  id="faq4-icon"
-                ></i>
-              </div>
-            </button>
-            <div
-              id="faq4-answer"
-              class="hidden px-6 md:px-8 pb-6 md:pb-8 border-t border-gray-100"
-            >
-              <div class="pt-6 pl-14">
-                <p class="text-gray-700 leading-relaxed mb-6">
-                  El Acuerdo de Libre Tránsito <strong>facilita</strong> tu
-                  ingreso al eliminar la necesidad de presentar examen de
-                  admisión, pero no garantiza automáticamente tu ingreso.
-                  Considera lo siguiente:
-                </p>
-                <div class="grid md:grid-cols-2 gap-4 mb-6">
-                  <div
-                    class="p-4 bg-green-50 rounded-lg border border-green-200"
-                  >
-                    <h4 class="font-semibold text-green-800 mb-2">
-                      <i class="fas fa-check-circle mr-2"></i>
-                      Lo que SÍ te ofrece:
-                    </h4>
-                    <ul class="text-sm text-green-700 space-y-1">
-                      <li>• Exención del examen de admisión</li>
-                      <li>• Proceso de inscripción simplificado</li>
-                      <li>• Reconocimiento de tu excelencia académica</li>
-                      <li>• Prioridad en el proceso de admisión</li>
-                    </ul>
-                  </div>
-                  <div
-                    class="p-4 bg-yellow-50 rounded-lg border border-yellow-200"
-                  >
-                    <h4 class="font-semibold text-yellow-800 mb-2">
-                      <i class="fas fa-info-circle mr-2"></i>
-                      Factores a considerar:
-                    </h4>
-                    <ul class="text-sm text-yellow-700 space-y-1">
-                      <li>• Disponibilidad de espacios</li>
-                      <li>• Cumplimiento de requisitos</li>
-                      <li>• Documentación completa</li>
-                      <li>• Fechas límite de inscripción</li>
-                    </ul>
-                  </div>
-                </div>
+                  </li>
+                  <li class="flex items-start">
+                    <i
+                      class="fas fa-university text-green-600 mt-1.5 mr-3 flex-shrink-0"
+                    ></i>
+                    <span>Instituto Tecnológico Superior de Mulegé</span>
+                  </li>
+                </ul>
                 <div
                   class="bg-blue-50 p-5 rounded-lg border-l-4 border-blue-500"
                 >
-                  <p class="text-gray-700">
-                    <strong class="text-blue-800">En resumen:</strong> Si
-                    cumples con todos los requisitos y hay disponibilidad de
-                    espacios en la carrera de tu interés, el Libre Tránsito te
-                    facilitará significativamente tu ingreso. Sin embargo, es
-                    importante que te mantengas informado y cumplas con todos
-                    los requisitos establecidos.
+                  <p class="text-gray-700 text-sm">
+                    <i class="fas fa-info-circle text-blue-600 mr-2"></i>
+                    Puedes obtener más información sobre cada institución
+                    haciendo clic en los logos que se muestran en la sección de
+                    Instituciones Participantes.
                   </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Pregunta 5 -->
-          <div
-            class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition-shadow duration-300"
-          >
-            <button
-              class="w-full text-left p-6 md:p-8 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-inset"
-              onclick="toggleFAQ('faq5')"
-              aria-expanded="false"
-              aria-controls="faq5-answer"
-            >
-              <div class="flex items-center justify-between">
-                <div class="flex items-center flex-1">
-                  <div
-                    class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4"
-                  >
-                    <span class="text-green-700 font-bold text-lg">5</span>
-                  </div>
-                  <h3
-                    class="text-lg md:text-xl font-semibold text-gray-900 pr-4"
-                  >
-                    ¿Dónde puedo obtener más información o asesoría sobre el
-                    Libre Tránsito?
-                  </h3>
-                </div>
-                <i
-                  class="fas fa-chevron-down text-gray-400 transform transition-transform duration-300"
-                  id="faq5-icon"
-                ></i>
-              </div>
-            </button>
-            <div
-              id="faq5-answer"
-              class="hidden px-6 md:px-8 pb-6 md:pb-8 border-t border-gray-100"
-            >
-              <div class="pt-6 pl-14">
-                <p class="text-gray-700 leading-relaxed mb-6">
-                  Para obtener más información o asesoría sobre el Acuerdo de
-                  Libre Tránsito, puedes contactar a través de los siguientes
-                  canales:
-                </p>
-                <div class="space-y-4">
-                  <div
-                    class="p-5 bg-gradient-to-r from-green-50 to-blue-50 rounded-lg border border-green-200"
-                  >
-                    <h4
-                      class="font-semibold text-gray-800 mb-3 flex items-center"
-                    >
-                      <i class="fas fa-school text-green-600 mr-3"></i>
-                      En tu Plantel CECYTE:
-                    </h4>
-                    <ul class="space-y-2 text-gray-700">
-                      <li class="flex items-start">
-                        <i
-                          class="fas fa-user-tie text-green-600 mt-1 mr-2 flex-shrink-0"
-                        ></i>
-                        <span
-                          >Coordinador Académico o Director de tu plantel</span
-                        >
-                      </li>
-                      <li class="flex items-start">
-                        <i
-                          class="fas fa-user-graduate text-green-600 mt-1 mr-2 flex-shrink-0"
-                        ></i>
-                        <span>Orientación Educativa</span>
-                      </li>
-                      <li class="flex items-start">
-                        <i
-                          class="fas fa-clipboard-check text-green-600 mt-1 mr-2 flex-shrink-0"
-                        ></i>
-                        <span>Servicios Escolares</span>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div
-                    class="p-5 bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg border border-blue-200"
-                  >
-                    <h4
-                      class="font-semibold text-gray-800 mb-3 flex items-center"
-                    >
-                      <i class="fas fa-university text-blue-600 mr-3"></i>
-                      En las Instituciones de Educación Superior:
-                    </h4>
-                    <ul class="space-y-2 text-gray-700">
-                      <li class="flex items-start">
-                        <i
-                          class="fas fa-phone text-blue-600 mt-1 mr-2 flex-shrink-0"
-                        ></i>
-                        <span>Departamento de Servicios Escolares</span>
-                      </li>
-                      <li class="flex items-start">
-                        <i
-                          class="fas fa-envelope text-blue-600 mt-1 mr-2 flex-shrink-0"
-                        ></i>
-                        <span>Oficina de Admisiones</span>
-                      </li>
-                      <li class="flex items-start">
-                        <i
-                          class="fas fa-globe text-blue-600 mt-1 mr-2 flex-shrink-0"
-                        ></i>
-                        <span>Páginas web oficiales de cada institución</span>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div
-                    class="p-5 bg-orange-50 rounded-lg border-l-4 border-orange-500"
-                  >
-                    <h4
-                      class="font-semibold text-orange-800 mb-2 flex items-center"
-                    >
-                      <i class="fas fa-link text-orange-600 mr-2"></i>
-                      Recursos Adicionales:
-                    </h4>
-                    <p class="text-sm text-orange-700 mb-3">
-                      También puedes consultar la carpeta de documentos
-                      oficiales del acuerdo:
-                    </p>
-                    <a
-                      href="https://drive.google.com/drive/folders/1v50Sj_jg3MJiFPEtTEmUHShc8G2DiavK?usp=sharing"
-                      target="_blank"
-                      class="inline-flex items-center px-4 py-2 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors duration-200"
-                    >
-                      <i class="fas fa-external-link-alt mr-2"></i>
-                      Ver Documentos del Acuerdo
-                    </a>
-                  </div>
                 </div>
               </div>
             </div>
@@ -1772,7 +1748,9 @@
     <section
       class="py-12 md:py-16 bg-gradient-to-br from-green-700 to-green-800 text-white"
     >
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div
+        class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center scroll-animate fade-in"
+      >
         <h2 class="text-3xl md:text-4xl font-bold mb-4">
           ¿Tienes más preguntas?
         </h2>
@@ -1898,7 +1876,7 @@
       </div>
 
       <div class="text-center p-4 bg-gray-800 text-white text-sm">
-        © 2024 Departamento de Informática. Todos los derechos reservados.
+        © 2025 Departamento de Informática. Todos los derechos reservados.
       </div>
     </footer>
 
@@ -2065,42 +2043,52 @@
         }
       });
 
-      // Función para toggle de FAQs
+      // Función para toggle de FAQs con animaciones
       function toggleFAQ(faqId) {
         const answer = document.getElementById(faqId + "-answer");
         const icon = document.getElementById(faqId + "-icon");
         const button = answer.previousElementSibling;
+        const isOpen = answer.classList.contains("open");
 
-        // Cerrar todas las demás FAQs
+        // Cerrar todas las demás FAQs con animación
         const allAnswers = document.querySelectorAll('[id$="-answer"]');
         const allIcons = document.querySelectorAll('[id$="-icon"]');
         const allButtons = document.querySelectorAll('[onclick^="toggleFAQ"]');
 
         allAnswers.forEach((ans) => {
-          if (ans.id !== faqId + "-answer") {
-            ans.classList.add("hidden");
+          if (ans.id !== faqId + "-answer" && ans.classList.contains("open")) {
+            // Cerrar con animación
+            ans.classList.remove("open");
+            const ansIcon = document.getElementById(
+              ans.id.replace("-answer", "-icon")
+            );
+            if (ansIcon) {
+              ansIcon.classList.remove("rotate-180");
+            }
+            const ansButton = ans.previousElementSibling;
+            if (ansButton) {
+              ansButton.setAttribute("aria-expanded", "false");
+            }
           }
         });
 
-        allIcons.forEach((ic) => {
-          if (ic.id !== faqId + "-icon") {
-            ic.classList.remove("rotate-180");
-          }
-        });
+        // Toggle de la FAQ actual con animación
+        if (isOpen) {
+          // Cerrar
+          answer.classList.remove("open");
+          icon.classList.remove("rotate-180");
+          button.setAttribute("aria-expanded", "false");
+        } else {
+          // Abrir
+          answer.classList.add("open");
+          icon.classList.add("rotate-180");
+          button.setAttribute("aria-expanded", "true");
 
-        allButtons.forEach((btn) => {
-          if (btn !== button) {
-            btn.setAttribute("aria-expanded", "false");
-          }
-        });
-
-        // Toggle de la FAQ actual
-        answer.classList.toggle("hidden");
-        icon.classList.toggle("rotate-180");
-        button.setAttribute(
-          "aria-expanded",
-          answer.classList.contains("hidden") ? "false" : "true"
-        );
+          // Scroll suave hacia la pregunta abierta (opcional)
+          setTimeout(() => {
+            answer.scrollIntoView({ behavior: "smooth", block: "nearest" });
+          }, 100);
+        }
       }
 
       // Smooth scroll para enlaces internos
@@ -2117,26 +2105,37 @@
         });
       });
 
-      // Animación al hacer scroll
+      // Sistema mejorado de animaciones al hacer scroll
       const observerOptions = {
         threshold: 0.1,
-        rootMargin: "0px 0px -50px 0px",
+        rootMargin: "0px 0px -100px 0px",
       };
 
-      const observer = new IntersectionObserver((entries) => {
+      const scrollObserver = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add(
-              "animate__animated",
-              "animate__fadeInUp"
-            );
+            // Agregar clase animated para activar la animación
+            entry.target.classList.add("animated");
+
+            // Una vez animado, dejar de observar para mejor rendimiento
+            scrollObserver.unobserve(entry.target);
           }
         });
       }, observerOptions);
 
+      // Observar todos los elementos con clase scroll-animate
+      document.querySelectorAll(".scroll-animate").forEach((el) => {
+        scrollObserver.observe(el);
+      });
+
+      // También mantener compatibilidad con las FAQs existentes
       document
         .querySelectorAll(".bg-white.rounded-lg.shadow-md")
-        .forEach((el) => observer.observe(el));
+        .forEach((el) => {
+          if (!el.classList.contains("scroll-animate")) {
+            scrollObserver.observe(el);
+          }
+        });
     </script>
   </body>
 </html>
