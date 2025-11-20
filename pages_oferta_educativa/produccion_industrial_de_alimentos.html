@@ -217,115 +217,137 @@
 
       <main>
         <!-- HERO SECTION MEJORADO -->
-        <section class="relative min-h-[350px] flex items-center justify-center bg-cover bg-center" style="background-image: url('../img_recuros_pagina/img_oferta_edu/pro_alimentos/frutas.jpeg');">
-          <div class="absolute inset-0 bg-gradient-to-r from-gray-900/80 via-orange-600/70 to-gray-800/60 backdrop-blur-sm"></div>
-          <div class="relative z-10 text-center max-w-2xl mx-auto py-16 px-6">
-            <h1 class="text-5xl md:text-6xl font-extrabold text-white drop-shadow-lg animate__animated animate__fadeInDown">PRODUCCIÓN INDUSTRIAL DE ALIMENTOS</h1>
-            <p class="text-lg md:text-xl text-white mt-6 font-medium animate__animated animate__fadeInUp">Transforma el mundo alimentario. Sé un profesional en la producción industrial de alimentos.</p>
+        <section class="relative min-h-[400px] flex items-center justify-center bg-cover bg-center bg-fixed" style="background-image: url('../img_recuros_pagina/img_oferta_edu/pro_alimentos/frutas.jpeg');">
+          <div class="absolute inset-0 bg-gradient-to-r from-gray-900/85 via-orange-600/75 to-gray-800/65 backdrop-blur-[2px]"></div>
+          <div class="absolute inset-0 bg-black/20"></div>
+          <div class="relative z-10 text-center max-w-3xl mx-auto py-20 px-6">
+            <div class="mb-6 animate__animated animate__fadeInDown">
+              <i class="fas fa-apple-alt text-6xl md:text-7xl text-white/90 mb-4 drop-shadow-2xl"></i>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white drop-shadow-2xl mb-4 animate__animated animate__fadeInDown animate__delay-1s tracking-tight leading-tight">
+              PRODUCCIÓN INDUSTRIAL DE ALIMENTOS
+            </h1>
+            <div class="w-24 h-1 bg-white mx-auto mb-6 animate__animated animate__fadeInLeft animate__delay-2s"></div>
+            <p class="text-lg md:text-2xl text-white mt-6 font-medium drop-shadow-lg animate__animated animate__fadeInUp animate__delay-1s leading-relaxed">
+              Transforma el mundo alimentario. Sé un profesional en la producción industrial de alimentos.
+            </p>
+            <div class="mt-8 animate__animated animate__fadeInUp animate__delay-2s">
+              <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-6 py-3 rounded-full border border-white/30">
+                <i class="fas fa-graduation-cap text-white"></i>
+                <span class="text-white font-semibold">Carrera Técnica</span>
+              </div>
+            </div>
+          </div>
+          <!-- Efecto de ondas decorativo -->
+          <div class="absolute bottom-0 left-0 right-0">
+            <svg class="w-full h-12 text-white" fill="currentColor" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path d="M0,0 C150,100 350,0 600,50 C850,100 1050,0 1200,50 L1200,120 L0,120 Z"></path>
+            </svg>
           </div>
         </section>
 
         <!-- PLANTELES SECTION MEJORADO -->
         <section class="bg-gradient-to-br from-orange-50 to-white py-12">
           <div class="container mx-auto px-4">
-            <div class="mb-10 text-center">
+            <div class="mb-10 text-center animate__animated animate__fadeInDown">
               <h2 class="text-3xl font-bold text-gray-800 border-b-4 border-orange-500 inline-block pb-2">Planteles que imparten esta carrera</h2>
               <p class="text-gray-600 text-lg mt-2">Descubre dónde puedes estudiar Producción Industrial de Alimentos en BCS</p>
             </div>
             <div class="flex justify-center">
               <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4 w-full max-w-4xl">
-                <div class="bg-gradient-to-br from-orange-600 to-red-800 text-white font-semibold py-8 px-8 rounded-2xl shadow-2xl flex flex-col items-center hover:scale-105 transition-transform duration-300">
-                  <i class="fas fa-apple-alt text-4xl mb-4"></i>
-                  <span class="text-xl">CECYTE 06</span>
-                  <p>VIZCAÍNO</p>
-                </div>
-               
+                <a href="../pages_institucion/pages_planteles/C06.html" class="bg-gradient-to-br from-orange-600 to-red-800 text-white font-semibold py-8 px-8 rounded-2xl shadow-2xl flex flex-col items-center hover:scale-110 hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2 group cursor-pointer no-underline">
+                  <div class="bg-white/20 rounded-full p-4 mb-4 group-hover:bg-white/30 transition-all duration-300 group-hover:rotate-12">
+                    <i class="fas fa-apple-alt text-4xl"></i>
+                  </div>
+                  <span class="text-xl mb-1 group-hover:text-orange-100 transition-colors">CECYTE 06</span>
+                  <p class="text-sm opacity-90">VIZCAÍNO</p>
+                </a>
               </div>
             </div>
           </div>
         </section>
 
         <!-- ACORDEÓN MEJORADO -->
-        <section class="container mx-auto p-6 md:p-10 bg-white shadow-2xl rounded-2xl my-10">
+        <section class="container mx-auto p-6 md:p-10 bg-white shadow-2xl rounded-2xl my-10 animate__animated animate__fadeInUp">
           <div id="accordion-collapse" data-accordion="collapse">
             <!-- Justificación -->
             <h3 id="accordion-heading-1">
-              <button type="button" class="flex items-center justify-between w-full p-6 font-semibold text-lg text-left text-orange-700 border border-b-0 border-gray-200 rounded-t-2xl focus:ring-4 focus:ring-orange-200 transition-all" data-accordion-target="#accordion-body-1" aria-expanded="true" aria-controls="accordion-body-1">
+              <button type="button" class="flex items-center justify-between w-full p-6 font-semibold text-lg text-left text-orange-700 border border-b-0 border-gray-200 rounded-t-2xl focus:ring-4 focus:ring-orange-200 transition-all hover:bg-orange-50 hover:shadow-md" data-accordion-target="#accordion-body-1" aria-expanded="true" aria-controls="accordion-body-1">
                 <span><i class="fas fa-lightbulb mr-2 text-orange-500"></i>Justificación de la carrera</span>
-                <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414-1.414l5-5A1 1 0 0110 3z" clip-rule="evenodd"></path></svg>
+                <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414-1.414l5-5A1 1 0 0110 3z" clip-rule="evenodd"></path></svg>
               </button>
             </h3>
             <div id="accordion-body-1" class="hidden" aria-labelledby="accordion-heading-1">
-              <div class="p-6 border border-b-0 border-gray-200 bg-orange-50 rounded-b-xl">
-                <p class="text-gray-700">Las tendencias globalizadoras, actualmente exigen mayor competitividad y profesionalismo del recurso humano, como pieza clave en el desarrollo nacional. Los altos índices de desnutrición, la escasez de alimentos y la pobreza en aumento de los suelos, son problemas que alertan hacia la búsqueda de un mayor y mejor aprovechamiento de los recursos naturales. En México se produce gran diversidad de éstos y su optimización depende en gran medida de las alternativas de conservación y procesamiento que ofrezca la industria alimentaria, a través de sus distintas aplicaciones tecnológicas.</p>
+              <div class="p-6 border border-b-0 border-gray-200 bg-gradient-to-br from-orange-50 to-orange-100 rounded-b-xl animate__animated animate__fadeIn">
+                <p class="text-gray-700 leading-relaxed">Las tendencias globalizadoras, actualmente exigen mayor competitividad y profesionalismo del recurso humano, como pieza clave en el desarrollo nacional. Los altos índices de desnutrición, la escasez de alimentos y la pobreza en aumento de los suelos, son problemas que alertan hacia la búsqueda de un mayor y mejor aprovechamiento de los recursos naturales. En México se produce gran diversidad de éstos y su optimización depende en gran medida de las alternativas de conservación y procesamiento que ofrezca la industria alimentaria, a través de sus distintas aplicaciones tecnológicas.</p>
               </div>
             </div>
             <!-- ¿Por qué elegir esta carrera? -->
             <h3 id="accordion-heading-2">
-              <button type="button" class="flex items-center justify-between w-full p-6 font-semibold text-lg text-left text-orange-700 border border-b-0 border-gray-200 focus:ring-4 focus:ring-orange-200 transition-all" data-accordion-target="#accordion-body-2" aria-expanded="false" aria-controls="accordion-body-2">
+              <button type="button" class="flex items-center justify-between w-full p-6 font-semibold text-lg text-left text-orange-700 border border-b-0 border-gray-200 focus:ring-4 focus:ring-orange-200 transition-all hover:bg-orange-50 hover:shadow-md" data-accordion-target="#accordion-body-2" aria-expanded="false" aria-controls="accordion-body-2">
                 <span><i class="fas fa-question-circle mr-2 text-orange-500"></i>¿Por qué elegir esta carrera?</span>
-                <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414-1.414l5-5A1 1 0 0110 3z" clip-rule="evenodd"></path></svg>
+                <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414-1.414l5-5A1 1 0 0110 3z" clip-rule="evenodd"></path></svg>
               </button>
             </h3>
             <div id="accordion-body-2" class="hidden" aria-labelledby="accordion-heading-2">
-              <div class="p-6 border border-b-0 border-gray-200 bg-orange-50">
-                <p class="text-gray-700">La carrera de Técnico en producción industrial de alimentos ofrece las competencias profesionales que permiten al estudiante conservar y procesar las distintas materias primas de origen primario, como las frutas, hortalizas, cereales, carnes, aves, pescados, mariscos y derivados lácteos, en productos y subproductos, que demandan la aplicación de conocimiento para su aprovechamiento. Asimismo, podrá desarrollar competencias genéricas relacionadas principalmente con la participación en los procesos de comunicación en distintos contextos, la integración efectiva a los equipos de trabajo y la intervención consciente, desde su comunidad en particular, en el país y el mundo en general, todo con apego al cuidado del medio ambiente.</p>
+              <div class="p-6 border border-b-0 border-gray-200 bg-gradient-to-br from-orange-50 to-orange-100 animate__animated animate__fadeIn">
+                <p class="text-gray-700 leading-relaxed">La carrera de Técnico en producción industrial de alimentos ofrece las competencias profesionales que permiten al estudiante conservar y procesar las distintas materias primas de origen primario, como las frutas, hortalizas, cereales, carnes, aves, pescados, mariscos y derivados lácteos, en productos y subproductos, que demandan la aplicación de conocimiento para su aprovechamiento. Asimismo, podrá desarrollar competencias genéricas relacionadas principalmente con la participación en los procesos de comunicación en distintos contextos, la integración efectiva a los equipos de trabajo y la intervención consciente, desde su comunidad en particular, en el país y el mundo en general, todo con apego al cuidado del medio ambiente.</p>
               </div>
             </div>
             <!-- Desarrollo de Competencias en la Carrera Técnica -->
             <h3 id="accordion-heading-3">
-              <button type="button" class="flex items-center justify-between w-full p-6 font-semibold text-lg text-left text-orange-700 border border-b-0 border-gray-200 focus:ring-4 focus:ring-orange-200 transition-all" data-accordion-target="#accordion-body-3" aria-expanded="false" aria-controls="accordion-body-3">
+              <button type="button" class="flex items-center justify-between w-full p-6 font-semibold text-lg text-left text-orange-700 border border-b-0 border-gray-200 focus:ring-4 focus:ring-orange-200 transition-all hover:bg-orange-50 hover:shadow-md" data-accordion-target="#accordion-body-3" aria-expanded="false" aria-controls="accordion-body-3">
                 <span><i class="fas fa-cogs mr-2 text-orange-500"></i>Desarrollo de Competencias en la Carrera Técnica</span>
-                <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414-1.414l5-5A1 1 0 0110 3z" clip-rule="evenodd"></path></svg>
+                <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414-1.414l5-5A1 1 0 0110 3z" clip-rule="evenodd"></path></svg>
               </button>
             </h3>
             <div id="accordion-body-3" class="hidden" aria-labelledby="accordion-heading-3">
-              <div class="p-6 border border-b-0 border-gray-200 bg-orange-50">
-                <p class="text-gray-700">La formación profesional se inicia en el segundo semestre y se concluye en el sexto semestre desarrollando en este lapso de tiempo las competencias: ejecutar procesos de conservación y transformación de alimentos, aplicando la reglamentación, legislación y normatividad vigente, hacia el cumplimiento de estándares establecidos de calidad e inocuidad; al mismo tiempo que pueda evaluar los resultados obtenidos, que le permitan realizar ajustes de mejora continua en la producción y optimización de recursos, hasta el sexto semestre de la carrera técnica. Todas estas competencias posibilitan al egresado su incorporación al mundo laboral o desarrollar procesos productivos independientes, de acuerdo con sus intereses profesionales o las necesidades en su entorno social. Los primeros tres módulos de la carrera técnica tienen una duración de 272 horas cada uno, y los dos últimos de 192, un total de 1200 horas de formación profesional.</p>
+              <div class="p-6 border border-b-0 border-gray-200 bg-gradient-to-br from-orange-50 to-orange-100 animate__animated animate__fadeIn">
+                <p class="text-gray-700 leading-relaxed">La formación profesional se inicia en el segundo semestre y se concluye en el sexto semestre desarrollando en este lapso de tiempo las competencias: ejecutar procesos de conservación y transformación de alimentos, aplicando la reglamentación, legislación y normatividad vigente, hacia el cumplimiento de estándares establecidos de calidad e inocuidad; al mismo tiempo que pueda evaluar los resultados obtenidos, que le permitan realizar ajustes de mejora continua en la producción y optimización de recursos, hasta el sexto semestre de la carrera técnica. Todas estas competencias posibilitan al egresado su incorporación al mundo laboral o desarrollar procesos productivos independientes, de acuerdo con sus intereses profesionales o las necesidades en su entorno social. Los primeros tres módulos de la carrera técnica tienen una duración de 272 horas cada uno, y los dos últimos de 192, un total de 1200 horas de formación profesional.</p>
               </div>
             </div>
             <!-- Perfil de egreso -->
             <h3 id="accordion-heading-4">
-              <button type="button" class="flex items-center justify-between w-full p-6 font-semibold text-lg text-left text-orange-700 border border-gray-200 focus:ring-4 focus:ring-orange-200 transition-all" data-accordion-target="#accordion-body-4" aria-expanded="false" aria-controls="accordion-body-4">
+              <button type="button" class="flex items-center justify-between w-full p-6 font-semibold text-lg text-left text-orange-700 border border-b-0 border-gray-200 focus:ring-4 focus:ring-orange-200 transition-all hover:bg-orange-50 hover:shadow-md" data-accordion-target="#accordion-body-4" aria-expanded="false" aria-controls="accordion-body-4">
                 <span><i class="fas fa-user-graduate mr-2 text-orange-500"></i>Perfil de egreso</span>
-                <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414-1.414l5-5A1 1 0 0110 3z" clip-rule="evenodd"></path></svg>
+                <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414-1.414l5-5A1 1 0 0110 3z" clip-rule="evenodd"></path></svg>
               </button>
             </h3>
             <div id="accordion-body-4" class="hidden" aria-labelledby="accordion-heading-4">
-              <div class="p-6 border border-t-0 border-gray-200 bg-orange-50 rounded-b-2xl">
-                <p class="text-gray-700">La formación que ofrece la Carrera de técnico en producción industrial de alimentos permite al egresado, a través de la articulación de saberes de diversos campos, realizar el acondicionamiento de las materias primas, las áreas de proceso, operación de equipo, maquinaria y herramientas de trabajo necesarias, entre otros, estableciendo relaciones entre ellos y su vida cotidiana para integrarse a la industria alimentaria en las diferentes plazas.</p>
+              <div class="p-6 border border-b-0 border-gray-200 bg-gradient-to-br from-orange-50 to-orange-100 animate__animated animate__fadeIn">
+                <p class="text-gray-700 leading-relaxed">La formación que ofrece la Carrera de técnico en producción industrial de alimentos permite al egresado, a través de la articulación de saberes de diversos campos, realizar el acondicionamiento de las materias primas, las áreas de proceso, operación de equipo, maquinaria y herramientas de trabajo necesarias, entre otros, estableciendo relaciones entre ellos y su vida cotidiana para integrarse a la industria alimentaria en las diferentes plazas.</p>
                 <br>
-                <p class="font-semibold text-gray-800">Competencias profesionales:</p>
+                <p class="font-semibold text-gray-800 text-lg mb-2">Competencias profesionales:</p>
                 <ul class="list-disc pl-5 text-gray-700 space-y-2 mt-2">
-                  <li>Realiza análisis físicos, químicos y microbiológicos a insumos, productos y áreas de proceso de acuerdo a la normativa vigente.</li>
-                  <li>Procesa alimentos lácteos y sus derivados con calidad e inocuidad.</li>
-                  <li>Procesa alimentos cárnicos con calidad e inocuidad.</li>
-                  <li>Procesa alimentos a partir de frutas y hortalizas con calidad e inocuidad.</li>
-                  <li>Procesa alimentos a partir de cereales u oleaginosas con calidad e inocuidad.</li>
+                  <li class="flex items-start"><i class="fas fa-check-circle text-orange-500 mr-2 mt-1"></i>Realiza análisis físicos, químicos y microbiológicos a insumos, productos y áreas de proceso de acuerdo a la normativa vigente.</li>
+                  <li class="flex items-start"><i class="fas fa-check-circle text-orange-500 mr-2 mt-1"></i>Procesa alimentos lácteos y sus derivados con calidad e inocuidad.</li>
+                  <li class="flex items-start"><i class="fas fa-check-circle text-orange-500 mr-2 mt-1"></i>Procesa alimentos cárnicos con calidad e inocuidad.</li>
+                  <li class="flex items-start"><i class="fas fa-check-circle text-orange-500 mr-2 mt-1"></i>Procesa alimentos a partir de frutas y hortalizas con calidad e inocuidad.</li>
+                  <li class="flex items-start"><i class="fas fa-check-circle text-orange-500 mr-2 mt-1"></i>Procesa alimentos a partir de cereales u oleaginosas con calidad e inocuidad.</li>
                 </ul>
               </div>
             </div>
             <!-- Desarrollo y Reforzamiento de Competencias Genéricas -->
             <h3 id="accordion-heading-5">
-              <button type="button" class="flex items-center justify-between w-full p-6 font-semibold text-lg text-left text-orange-700 border border-gray-200 focus:ring-4 focus:ring-orange-200 transition-all" data-accordion-target="#accordion-body-5" aria-expanded="false" aria-controls="accordion-body-5">
+              <button type="button" class="flex items-center justify-between w-full p-6 font-semibold text-lg text-left text-orange-700 border border-gray-200 focus:ring-4 focus:ring-orange-200 transition-all hover:bg-orange-50 hover:shadow-md" data-accordion-target="#accordion-body-5" aria-expanded="false" aria-controls="accordion-body-5">
                 <span><i class="fas fa-users mr-2 text-orange-500"></i>Desarrollo y Reforzamiento de Competencias Genéricas</span>
-                <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414-1.414l5-5A1 1 0 0110 3z" clip-rule="evenodd"></path></svg>
+                <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414-1.414l5-5A1 1 0 0110 3z" clip-rule="evenodd"></path></svg>
               </button>
             </h3>
             <div id="accordion-body-5" class="hidden" aria-labelledby="accordion-heading-5">
-              <div class="p-6 border border-t-0 border-gray-200 bg-orange-50">
+              <div class="p-6 border border-t-0 border-gray-200 bg-gradient-to-br from-orange-50 to-orange-100 rounded-b-2xl animate__animated animate__fadeIn">
                 <ul class="list-disc pl-5 text-gray-700 space-y-2 mt-4">
-                  <li>Se conoce y valora a sí mismo y aborda problemas y retos teniendo en cuenta los objetivos que persigue.</li>
-                  <li>Es sensible al arte y participa en la apreciación e interpretación de sus expresiones en distintos géneros.</li>
-                  <li>Elige y practica estilos de vida saludables.</li>
-                  <li>Escucha, interpreta y emite mensajes pertinentes en distintos contextos mediante la utilización de medios, códigos y herramientas apropiados.</li>
-                  <li>Desarrolla innovaciones y propone soluciones a problemas a partir de métodos establecidos.</li>
-                  <li>Sustenta una postura personal sobre temas de interés y relevancia general, considerando otros puntos de vista de manera crítica y reflexiva.</li>
-                  <li>Aprende por iniciativa e interés propio a lo largo de la vida.</li>
-                  <li>Participa y colabora de manera efectiva en equipos diversos.</li>
-                  <li>Participa con una conciencia cívica y ética en la vida de su comunidad, región, México y el mundo.</li>
-                  <li>Mantiene una actitud respetuosa hacia la interculturalidad y la diversidad de creencias, valores, ideas y prácticas sociales.</li>
-                  <li>Contribuye al desarrollo sustentable de manera crítica, con acciones responsables.</li>
+                  <li class="flex items-start"><i class="fas fa-star text-orange-500 mr-2 mt-1"></i>Se conoce y valora a sí mismo y aborda problemas y retos teniendo en cuenta los objetivos que persigue.</li>
+                  <li class="flex items-start"><i class="fas fa-star text-orange-500 mr-2 mt-1"></i>Es sensible al arte y participa en la apreciación e interpretación de sus expresiones en distintos géneros.</li>
+                  <li class="flex items-start"><i class="fas fa-star text-orange-500 mr-2 mt-1"></i>Elige y practica estilos de vida saludables.</li>
+                  <li class="flex items-start"><i class="fas fa-star text-orange-500 mr-2 mt-1"></i>Escucha, interpreta y emite mensajes pertinentes en distintos contextos mediante la utilización de medios, códigos y herramientas apropiados.</li>
+                  <li class="flex items-start"><i class="fas fa-star text-orange-500 mr-2 mt-1"></i>Desarrolla innovaciones y propone soluciones a problemas a partir de métodos establecidos.</li>
+                  <li class="flex items-start"><i class="fas fa-star text-orange-500 mr-2 mt-1"></i>Sustenta una postura personal sobre temas de interés y relevancia general, considerando otros puntos de vista de manera crítica y reflexiva.</li>
+                  <li class="flex items-start"><i class="fas fa-star text-orange-500 mr-2 mt-1"></i>Aprende por iniciativa e interés propio a lo largo de la vida.</li>
+                  <li class="flex items-start"><i class="fas fa-star text-orange-500 mr-2 mt-1"></i>Participa y colabora de manera efectiva en equipos diversos.</li>
+                  <li class="flex items-start"><i class="fas fa-star text-orange-500 mr-2 mt-1"></i>Participa con una conciencia cívica y ética en la vida de su comunidad, región, México y el mundo.</li>
+                  <li class="flex items-start"><i class="fas fa-star text-orange-500 mr-2 mt-1"></i>Mantiene una actitud respetuosa hacia la interculturalidad y la diversidad de creencias, valores, ideas y prácticas sociales.</li>
+                  <li class="flex items-start"><i class="fas fa-star text-orange-500 mr-2 mt-1"></i>Contribuye al desarrollo sustentable de manera crítica, con acciones responsables.</li>
                 </ul>
               </div>
             </div>
@@ -335,17 +357,69 @@
         <!-- MAPA DE COMPETENCIAS MEJORADO -->
         <section class="py-12 px-4 bg-gradient-to-br from-orange-50 to-white">
           <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl font-bold text-gray-800 mb-8">Mapa de competencias profesionales de la Carrera de Técnico en producción industrial de alimentos</h2>
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 animate__animated animate__fadeInUp">Mapa de competencias profesionales de la Carrera de Técnico en producción industrial de alimentos</h2>
             <div class="mb-8 flex justify-center">
-              <div class="bg-white rounded-2xl shadow-2xl p-4 md:p-8 border-2 border-orange-100 inline-block">
-                <img src="../img_recuros_pagina/img_oferta_edu/pro_alimentos/produccion_alimentos.jpg" alt="Mapa de competencias" class="w-full h-auto rounded-lg shadow-lg max-w-md mx-auto">
+              <div class="bg-white rounded-2xl shadow-2xl p-4 md:p-8 border-2 border-orange-100 inline-block group hover:shadow-3xl transition-all duration-500 hover:scale-105">
+                <div class="relative overflow-hidden rounded-lg">
+                  <img 
+                    src="../img_recuros_pagina/img_oferta_edu/pro_alimentos/produccion_alimentos.jpg" 
+                    alt="Mapa de competencias en Producción Industrial de Alimentos" 
+                    id="mapa-competencias-img"
+                    class="w-full h-auto rounded-lg shadow-lg max-w-md mx-auto cursor-pointer transition-transform duration-500 group-hover:scale-110"
+                    onclick="abrirVistaPrevia(this.src)"
+                  >
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center">
+                    <button 
+                      onclick="abrirVistaPrevia(document.getElementById('mapa-competencias-img').src)"
+                      class="bg-orange-500 text-white px-6 py-3 rounded-full font-semibold shadow-xl transform translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-orange-600 hover:scale-110"
+                    >
+                      <i class="fas fa-search-plus mr-2"></i>Ver mapa completo
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
-            <a href="https://drive.google.com/file/d/1KDvfYjWNOSUAtlj16f5uqfQy4RKqot90/view?usp=sharing" class="inline-block bg-gradient-to-r from-orange-500 to-orange-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:from-orange-600 hover:to-orange-700 transition duration-300 text-lg">
-              <i class="fas fa-file-download mr-2"></i>Ver más detalles
-            </a>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <button 
+                onclick="abrirVistaPrevia('img/PRODUCCIÓN INDUSTRIAL DE ALIMENTOS.png')"
+                class="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 text-lg hover:scale-105 hover:shadow-xl"
+              >
+                <i class="fas fa-info-circle"></i>Más información
+              </button>
+              <a 
+                href="https://drive.google.com/file/d/1KDvfYjWNOSUAtlj16f5uqfQy4RKqot90/view?usp=sharing" 
+                target="_blank"
+                class="inline-flex items-center gap-2 bg-gradient-to-r from-green-600 to-green-700 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:from-green-700 hover:to-green-800 transition-all duration-300 text-lg hover:scale-105 hover:shadow-xl"
+              >
+                <i class="fas fa-file-download mr-2"></i>Ver más detalles
+              </a>
+            </div>
           </div>
         </section>
+
+        <!-- Modal para vista previa de imagen -->
+        <div id="modal-vista-previa" class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 hidden transition-opacity duration-300">
+          <div class="relative max-w-7xl max-h-[95vh] mx-4">
+            <button 
+              onclick="cerrarVistaPrevia()" 
+              class="absolute -top-12 right-0 text-white text-4xl font-bold hover:text-orange-400 transition-colors duration-200 z-10"
+              aria-label="Cerrar"
+            >
+              <i class="fas fa-times-circle"></i>
+            </button>
+            <div class="bg-white rounded-2xl p-4 shadow-2xl overflow-auto max-h-[90vh]">
+              <img 
+                id="imagen-modal" 
+                src="" 
+                alt="Información sobre Producción Industrial de Alimentos" 
+                class="max-w-full h-auto rounded-lg mx-auto"
+              >
+            </div>
+            <p class="text-white text-center mt-4 text-lg">
+              <i class="fas fa-mouse-pointer mr-2"></i>Haz clic fuera de la imagen para cerrar
+            </p>
+          </div>
+        </div>
 
       </main>
       <script>
@@ -385,6 +459,54 @@
  
              trnsBtn?.addEventListener("click", () => {
              trnsSubmenu.classList.toggle("hidden");
+             });
+
+             // Funciones para el modal de vista previa
+             function abrirVistaPrevia(srcImagen) {
+                 const modal = document.getElementById('modal-vista-previa');
+                 const imagenModal = document.getElementById('imagen-modal');
+                 imagenModal.src = srcImagen;
+                 modal.classList.remove('hidden');
+                 document.body.style.overflow = 'hidden'; // Previene scroll del body
+             }
+
+             function cerrarVistaPrevia() {
+                 const modal = document.getElementById('modal-vista-previa');
+                 modal.classList.add('hidden');
+                 document.body.style.overflow = 'auto'; // Restaura scroll del body
+             }
+
+             // Cerrar modal al hacer clic fuera de la imagen
+             document.getElementById('modal-vista-previa').addEventListener('click', function(e) {
+                 if (e.target === this) {
+                     cerrarVistaPrevia();
+                 }
+             });
+
+             // Cerrar modal con tecla ESC
+             document.addEventListener('keydown', function(e) {
+                 if (e.key === 'Escape') {
+                     cerrarVistaPrevia();
+                 }
+             });
+
+             // Animación de los acordeones al abrir
+             const accordionButtons = document.querySelectorAll('[data-accordion-target]');
+             accordionButtons.forEach(button => {
+                 button.addEventListener('click', function() {
+                     const targetId = this.getAttribute('data-accordion-target');
+                     const targetElement = document.querySelector(targetId);
+                     const icon = this.querySelector('svg[data-accordion-icon]');
+                     
+                     // Rotar el icono
+                     if (icon) {
+                         if (targetElement.classList.contains('hidden')) {
+                             icon.style.transform = 'rotate(180deg)';
+                         } else {
+                             icon.style.transform = 'rotate(0deg)';
+                         }
+                     }
+                 });
              });
  
      </script>
