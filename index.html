@@ -1471,7 +1471,7 @@
 
         <p class="text-lg text-gray-600 font-medium">
           Última Actualización -
-          <span class="text-green-600">Octubre 2025</span>
+          <span id="fecha-actualizacion-1" class="text-green-600"></span>
         </p>
       </div>
     </section>
@@ -2036,7 +2036,10 @@
           <!-- Subtitle with highlight -->
           <p class="text-lg text-gray-600">
             Última Actualización -
-            <span class="font-semibold text-green-600">Octubre 2025</span>
+            <span
+              id="fecha-actualizacion-2"
+              class="font-semibold text-green-600"
+            ></span>
           </p>
         </div>
       </div>
@@ -2434,7 +2437,10 @@
           <!-- Subtitle with highlight -->
           <p class="text-lg text-gray-600">
             Última Actualización -
-            <span class="font-semibold text-green-600">Octubre 2025</span>
+            <span
+              id="fecha-actualizacion-3"
+              class="font-semibold text-green-600"
+            ></span>
           </p>
         </div>
       </div>
@@ -2445,36 +2451,6 @@
       <div class="max-w-7xl mx-auto">
         <!-- Announcements Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <!-- Banner Estrategia Contra las Drogas - Full Width (2 columns) -->
-          <div
-            class="group relative overflow-hidden rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] md:col-span-2"
-          >
-            <a
-              href="https://www.gob.mx/lineadelavida"
-              target="_blank"
-              class="block relative"
-            >
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-              ></div>
-              <img
-                src="img_recuros_pagina/CONVOCATORIOAS/BANNERS/estrategia_contra_las_drogas.webp"
-                alt="Estrategia contra las drogas - Línea de la Vida 800 911 2000"
-                class="w-full h-auto object-contain rounded-2xl"
-              />
-              <div
-                class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"
-              >
-                <h3 class="text-xl font-bold mb-2">
-                  Estrategia contra las drogas - Línea de la Vida
-                </h3>
-                <p class="text-sm opacity-90">
-                  Si necesitas ayuda, llama a la Línea de la Vida: 800 911 2000
-                </p>
-              </div>
-            </a>
-          </div>
-
           <!-- Announcement Card 1 -->
           <div
             class="group relative overflow-hidden rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]"
@@ -2506,24 +2482,27 @@
             class="group relative overflow-hidden rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]"
           >
             <a
-              href="https://drive.google.com/file/d/1Tg2q9gmL0uzsA43c6c64yu63VcRGtSKr/view?usp=sharing"
+              href="https://www.gob.mx/lineadelavida"
+              target="_blank"
               class="block relative"
             >
               <div
                 class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
               ></div>
               <img
-                src="img_recuros_pagina/CONVOCATORIOAS/BANNERS/2do_concurso_estatal_de_dibujo.webp"
-                alt="2do Concurso Estatal de Dibujo"
-                class="w-full h-[300px] object-cover rounded-2xl"
+                src="img_recuros_pagina/CONVOCATORIOAS/BANNERS/estrategia_contra_las_drogas.webp"
+                alt="Estrategia contra las drogas - Línea de la Vida 800 911 2000"
+                class="w-full h-[300px] object-contain rounded-2xl bg-gray-100"
               />
               <div
                 class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"
               >
                 <h3 class="text-xl font-bold mb-2">
-                  2do Concurso Estatal de Dibujo
+                  Estrategia contra las drogas - Línea de la Vida
                 </h3>
-                <p class="text-sm opacity-90">2do Concurso Estatal de Dibujo</p>
+                <p class="text-sm opacity-90">
+                  Si necesitas ayuda, llama a la Línea de la Vida: 800 911 2000
+                </p>
               </div>
             </a>
           </div>
@@ -2838,7 +2817,8 @@
       </div>
 
       <div class="text-center p-4 bg-gray-800 text-white text-sm">
-        © 2025 Departamento de Informática. Todos los derechos reservados.
+        © <span id="año-actual">2025</span> Departamento de Informática. Todos
+        los derechos reservados.
       </div>
     </footer>
 
@@ -3333,6 +3313,57 @@
       document.addEventListener("DOMContentLoaded", () => {
         console.log("DOM cargado, inicializando VideoGallery");
         new VideoGallery();
+      });
+
+      // Función para obtener el mes actual en español
+      function obtenerMesActual() {
+        const meses = [
+          "Enero",
+          "Febrero",
+          "Marzo",
+          "Abril",
+          "Mayo",
+          "Junio",
+          "Julio",
+          "Agosto",
+          "Septiembre",
+          "Octubre",
+          "Noviembre",
+          "Diciembre",
+        ];
+        const fecha = new Date();
+        const mes = meses[fecha.getMonth()];
+        const año = fecha.getFullYear();
+        return `${mes} ${año}`;
+      }
+
+      // Función para obtener el año actual
+      function obtenerAñoActual() {
+        const fecha = new Date();
+        return fecha.getFullYear();
+      }
+
+      // Actualizar todas las fechas de última actualización y el año del footer
+      document.addEventListener("DOMContentLoaded", () => {
+        const fechaActual = obtenerMesActual();
+        const elementosFecha = [
+          "fecha-actualizacion-1",
+          "fecha-actualizacion-2",
+          "fecha-actualizacion-3",
+        ];
+
+        elementosFecha.forEach((id) => {
+          const elemento = document.getElementById(id);
+          if (elemento) {
+            elemento.textContent = fechaActual;
+          }
+        });
+
+        // Actualizar el año del footer
+        const añoElemento = document.getElementById("año-actual");
+        if (añoElemento) {
+          añoElemento.textContent = obtenerAñoActual();
+        }
       });
     </script>
   </body>
