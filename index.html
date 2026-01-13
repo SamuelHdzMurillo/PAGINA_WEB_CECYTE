@@ -111,8 +111,8 @@
           "itemListElement": [
             {
               "@type": "Course",
-              "name": "Programación",
-              "description": "Desarrollo de software, web y aplicaciones móviles"
+              "name": "Inteligencia Artificial",
+              "description": "Machine learning, redes neuronales y sistemas inteligentes"
             },
             {
               "@type": "Course",
@@ -250,14 +250,14 @@
                   >Soporte y Mantenimiento de equipo de cómputo</a
                 >
                 <a
-                  href="pages_oferta_educativa/programacion.html"
+                  href="pages_oferta_educativa/inteligencia_artificial.html"
                   class="block py-2 px-4 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
-                  >Programación</a
+                  >Inteligencia Artificial</a
                 >
                 <a
-                  href="pages_oferta_educativa/ventas.html"
+                  href="pages_oferta_educativa/ciberseguridad.html"
                   class="block py-2 px-4 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
-                  >Ventas</a
+                  >Ciberseguridad</a
                 >
                 <a
                   href="pages_oferta_educativa/ecoturismo.html"
@@ -283,6 +283,27 @@
                   href="https://drive.google.com/drive/folders/1v50Sj_jg3MJiFPEtTEmUHShc8G2DiavK?usp=sharing"
                   class="block py-2 px-4 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
                   >Libre Tránsito a IES</a
+                >
+
+                <!-- Separador -->
+                <div class="border-t border-gray-200 my-2"></div>
+
+                <!-- Submenú Institución -->
+                <div class="px-4 py-2">
+                  <span
+                    class="text-sm font-semibold text-gray-500 uppercase tracking-wide"
+                    >Institución</span
+                  >
+                </div>
+                <a
+                  href="pages_institucion/planteles_cecyte.html"
+                  class="block py-2 px-4 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                  >Planteles CECYTE</a
+                >
+                <a
+                  href="pages_institucion/planteles_emsad.html"
+                  class="block py-2 px-4 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                  >Planteles EMSAD</a
                 >
               </div>
             </div>
@@ -558,14 +579,14 @@
               >Soporte y Mantenimiento de equipo de cómputo</a
             >
             <a
-              href="pages_oferta_educativa/programacion.html"
+              href="pages_oferta_educativa/inteligencia_artificial.html"
               class="block px-8 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
-              >Programación</a
+              >Inteligencia Artificial</a
             >
             <a
-              href="pages_oferta_educativa/ventas.html"
+              href="pages_oferta_educativa/ciberseguridad.html"
               class="block px-8 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
-              >Ventas</a
+              >Ciberseguridad</a
             >
             <a
               href="pages_oferta_educativa/ecoturismo.html"
@@ -591,6 +612,66 @@
               href="https://drive.google.com/drive/folders/1v50Sj_jg3MJiFPEtTEmUHShc8G2DiavK?usp=sharing"
               class="block px-8 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
               >Libre Tránsito a IES</a
+            >
+
+            <!-- Separador visual mejorado -->
+            <div class="border-t-2 border-green-300 my-4 mx-6"></div>
+
+            <!-- Submenú Institución con mejor diseño -->
+            <div
+              class="bg-green-100 px-6 py-3 mb-3 border-l-4 border-green-500"
+            >
+              <span
+                class="text-sm font-bold text-green-800 uppercase tracking-wide flex items-center"
+              >
+                <i class="fas fa-building mr-2"></i>
+                Institución</span
+              >
+            </div>
+            <a
+              href="pages_institucion/planteles_cecyte.html"
+              class="block px-12 py-3 text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors duration-200 border-l-2 border-transparent hover:border-green-500"
+              >Planteles CECYTE</a
+            >
+            <a
+              href="pages_institucion/planteles_emsad.html"
+              class="block px-12 py-3 text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors duration-200 border-l-2 border-transparent hover:border-green-500"
+              >Planteles EMSAD</a
+            >
+          </div>
+        </div>
+
+        <!-- Institución Menu -->
+        <div class="block">
+          <button
+            class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-3 flex justify-between items-center focus:outline-none transition-colors duration-200"
+            id="institucion-btn"
+          >
+            Institución
+            <svg
+              class="h-5 w-5 transition-transform duration-200"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </button>
+          <div class="hidden bg-gray-50" id="institucion-submenu">
+            <a
+              href="pages_institucion/planteles_cecyte.html"
+              class="block px-8 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+              >Planteles CECYTE</a
+            >
+            <a
+              href="pages_institucion/planteles_emsad.html"
+              class="block px-8 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+              >Planteles EMSAD</a
             >
           </div>
         </div>
@@ -2052,31 +2133,37 @@
       <div class="max-w-5xl mx-auto px-4">
         <!-- Career Cards Grid -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <!-- Programación -->
+          <!-- Inteligencia Artificial -->
           <div
             class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300"
           >
             <div class="h-32 bg-green-600 flex items-center justify-center">
-              <i class="fas fa-code text-4xl text-white"></i>
+              <i class="fas fa-robot text-4xl text-white"></i>
             </div>
             <div class="p-4">
-              <h3 class="text-lg font-bold text-gray-900 mb-2">Programación</h3>
+              <h3 class="text-lg font-bold text-gray-900 mb-2">
+                Inteligencia Artificial
+              </h3>
               <p class="text-sm text-gray-600 mb-3">
-                Desarrollo de software, web y aplicaciones móviles.
+                Aprende sobre machine learning, redes neuronales y sistemas
+                inteligentes.
               </p>
               <ul class="text-sm text-gray-600 mb-4">
                 <li class="flex items-center mb-1">
-                  <i class="fas fa-check text-green-600 mr-2"></i>Desarrollo Web
+                  <i class="fas fa-check text-green-600 mr-2"></i>Machine
+                  Learning
                 </li>
                 <li class="flex items-center mb-1">
-                  <i class="fas fa-check text-green-600 mr-2"></i>Apps Móviles
+                  <i class="fas fa-check text-green-600 mr-2"></i>Redes
+                  Neuronales
                 </li>
                 <li class="flex items-center">
-                  <i class="fas fa-check text-green-600 mr-2"></i>Bases de Datos
+                  <i class="fas fa-check text-green-600 mr-2"></i>Sistemas
+                  Inteligentes
                 </li>
               </ul>
               <a
-                href="pages_oferta_educativa/programacion.html"
+                href="pages_oferta_educativa/inteligencia_artificial.html"
                 class="inline-block bg-green-600 text-white text-sm py-2 px-4 rounded-full hover:bg-green-700 transition-colors duration-300"
                 >Explorar más</a
               >
@@ -2117,35 +2204,37 @@
             </div>
           </div>
 
-          <!-- Ventas -->
+          <!-- Ciberseguridad -->
           <div
             class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300"
           >
             <div class="h-32 bg-purple-600 flex items-center justify-center">
-              <i class="fas fas fa-chart-line text-4xl text-white"></i>
+              <i class="fas fa-shield-alt text-4xl text-white"></i>
             </div>
             <div class="p-4">
-              <h3 class="text-lg font-bold text-gray-900 mb-2">Ventas</h3>
+              <h3 class="text-lg font-bold text-gray-900 mb-2">
+                Ciberseguridad
+              </h3>
               <p class="text-sm text-gray-600 mb-3">
-                Desarrolla habilidades en marketing, negociación y estrategias
-                de venta para destacar en el mundo comercial.
+                Protege sistemas informáticos y datos contra amenazas
+                cibernéticas y desarrolla habilidades en seguridad digital.
               </p>
               <ul class="text-sm text-gray-600 mb-4">
                 <li class="flex items-center mb-1">
-                  <i class="fas fa-check text-purple-600 mr-2"></i>Marketing
-                  Digital
+                  <i class="fas fa-check text-purple-600 mr-2"></i>Seguridad de
+                  Redes
                 </li>
                 <li class="flex items-center mb-1">
-                  <i class="fas fa-check text-purple-600 mr-2"></i>Estrategias
-                  de Venta
+                  <i class="fas fa-check text-purple-600 mr-2"></i>Análisis de
+                  Vulnerabilidades
                 </li>
                 <li class="flex items-center">
-                  <i class="fas fa-check text-purple-600 mr-2"></i>Atención al
-                  Cliente
+                  <i class="fas fa-check text-purple-600 mr-2"></i>Protección de
+                  Datos
                 </li>
               </ul>
               <a
-                href="pages_oferta_educativa/ventas.html"
+                href="pages_oferta_educativa/ciberseguridad.html"
                 class="inline-block bg-purple-600 text-white py-2 px-4 rounded-full hover:bg-purple-700 transition-colors duration-300"
                 >Explorar más</a
               >
