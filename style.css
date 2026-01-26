@@ -228,3 +228,37 @@ body {
 .mobile-menu-btn:active {
   transform: scale(0.95);
 }
+
+/* Mejoras adicionales para el menú móvil */
+#mobile-menu {
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 #f1f5f9;
+}
+
+#mobile-menu::-webkit-scrollbar {
+  width: 6px;
+}
+
+#mobile-menu::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+#mobile-menu::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 3px;
+}
+
+#mobile-menu::-webkit-scrollbar-thumb:hover {
+  background-color: #94a3b8;
+}
+
+/* Espaciado mejorado para submenús móviles */
+#mobile-menu [id$="-submenu"] {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Mejor separación visual entre secciones del menú */
+#mobile-menu > div:not(:last-child) {
+  margin-bottom: 0;
+}
