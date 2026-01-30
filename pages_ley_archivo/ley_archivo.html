@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -32,7 +32,9 @@
     <style>
       .scroll-animate {
         opacity: 0;
-        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        transition:
+          opacity 0.6s ease-out,
+          transform 0.6s ease-out;
       }
       .scroll-animate.fade-in-up {
         transform: translateY(30px);
@@ -52,9 +54,17 @@
       /* Texturas de fondo */
       .bg-texture-body {
         background-color: #f9fafb;
-        background-image: 
-          radial-gradient(circle at 25% 25%, rgba(34, 197, 94, 0.04) 0%, transparent 50%),
-          radial-gradient(circle at 75% 75%, rgba(34, 197, 94, 0.03) 0%, transparent 50%),
+        background-image:
+          radial-gradient(
+            circle at 25% 25%,
+            rgba(34, 197, 94, 0.04) 0%,
+            transparent 50%
+          ),
+          radial-gradient(
+            circle at 75% 75%,
+            rgba(34, 197, 94, 0.03) 0%,
+            transparent 50%
+          ),
           url("data:image/svg+xml,%3Csvg width='20' height='20' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='2' cy='2' r='0.5' fill='%239ca3af' fill-opacity='0.15'/%3E%3C/svg%3E");
       }
 
@@ -63,7 +73,7 @@
         overflow: hidden;
       }
       .bg-texture-hero::before {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         left: 0;
@@ -75,7 +85,7 @@
 
       .bg-texture-docs {
         background-color: #ffffff;
-        background-image: 
+        background-image:
           linear-gradient(rgba(34, 197, 94, 0.02) 1px, transparent 1px),
           linear-gradient(90deg, rgba(34, 197, 94, 0.02) 1px, transparent 1px);
         background-size: 24px 24px;
@@ -86,7 +96,7 @@
         overflow: hidden;
       }
       .bg-texture-cta::before {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         left: 0;
@@ -257,7 +267,8 @@
                 <a
                   href="https://drive.google.com/file/d/1ewSW14CPvRKedEoxHU2wB4f_yx7WGZjM/view?usp=drive_link"
                   class="block py-2 px-4 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
-                  >Reglamento Asociaciones de Padres y Madres de Familia CECYTE BCS</a
+                  >Reglamento Asociaciones de Padres y Madres de Familia CECYTE
+                  BCS</a
                 >
               </div>
             </div>
@@ -320,7 +331,10 @@
                 >
                 <div class="border-t border-gray-200 my-2"></div>
                 <div class="px-4 py-2">
-                  <span class="text-sm font-semibold text-gray-500 uppercase tracking-wide">Institución</span>
+                  <span
+                    class="text-sm font-semibold text-gray-500 uppercase tracking-wide"
+                    >Institución</span
+                  >
                 </div>
                 <a
                   href="../pages_institucion/pagina_historia.html"
@@ -430,14 +444,37 @@
             id="docentes-btn"
           >
             <span>Docentes</span>
-            <svg class="h-5 w-5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            <svg
+              class="h-5 w-5 transition-transform duration-200"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
             </svg>
           </button>
           <div class="hidden bg-gray-50" id="docentes-submenu">
-            <a href="../pages_institucion/ubica_tu_plantel.html" class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">Convocatorias</a>
-            <a href="https://sites.google.com/cecytebcs.edu.mx/orientacionespej23/inicio?authuser=0" class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">Centro Virtual 2024-2025</a>
-            <a href="https://drive.google.com/drive/folders/1jKBxfXsF-e5cmrzrdaODPZR1fJSE_8Wj" target="_blank" class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">Estrategia contra las drogas</a>
+            <a
+              href="../pages_institucion/ubica_tu_plantel.html"
+              class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm"
+              >Convocatorias</a
+            >
+            <a
+              href="https://sites.google.com/cecytebcs.edu.mx/orientacionespej23/inicio?authuser=0"
+              class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm"
+              >Centro Virtual 2024-2025</a
+            >
+            <a
+              href="https://drive.google.com/drive/folders/1jKBxfXsF-e5cmrzrdaODPZR1fJSE_8Wj"
+              target="_blank"
+              class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm"
+              >Estrategia contra las drogas</a
+            >
           </div>
         </div>
 
@@ -448,25 +485,80 @@
             id="oferta-btn"
           >
             <span>Oferta Educativa</span>
-            <svg class="h-5 w-5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            <svg
+              class="h-5 w-5 transition-transform duration-200"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
             </svg>
           </button>
           <div class="hidden bg-gray-50 py-2" id="oferta-submenu">
-            <a href="../pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">Soporte y Mantenimiento de equipo de cómputo</a>
-            <a href="../pages_oferta_educativa/inteligencia_artificial.html" class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">Inteligencia Artificial</a>
-            <a href="../pages_oferta_educativa/ciberseguridad.html" class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">Ciberseguridad</a>
-            <a href="../pages_oferta_educativa/ecoturismo.html" class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">Ecoturismo</a>
-            <a href="../pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">Producción industrial de alimentos</a>
-            <a href="../pages_oferta_educativa/mantenimiento_industrial.html" class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">Mantenimiento Industrial</a>
-            <a href="../pages_oferta_educativa/servicios_de_hoteleria.html" class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">Servicios de Hotelería</a>
-            <a href="https://drive.google.com/drive/folders/1v50Sj_jg3MJiFPEtTEmUHShc8G2DiavK?usp=sharing" class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">Libre Tránsito a IES</a>
+            <a
+              href="../pages_oferta_educativa/mantenimiento_equipo_de_computo.html"
+              class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm"
+              >Soporte y Mantenimiento de equipo de cómputo</a
+            >
+            <a
+              href="../pages_oferta_educativa/inteligencia_artificial.html"
+              class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm"
+              >Inteligencia Artificial</a
+            >
+            <a
+              href="../pages_oferta_educativa/ciberseguridad.html"
+              class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm"
+              >Ciberseguridad</a
+            >
+            <a
+              href="../pages_oferta_educativa/ecoturismo.html"
+              class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm"
+              >Ecoturismo</a
+            >
+            <a
+              href="../pages_oferta_educativa/produccion_industrial_de_alimentos.html"
+              class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm"
+              >Producción industrial de alimentos</a
+            >
+            <a
+              href="../pages_oferta_educativa/mantenimiento_industrial.html"
+              class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm"
+              >Mantenimiento Industrial</a
+            >
+            <a
+              href="../pages_oferta_educativa/servicios_de_hoteleria.html"
+              class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm"
+              >Servicios de Hotelería</a
+            >
+            <a
+              href="https://drive.google.com/drive/folders/1v50Sj_jg3MJiFPEtTEmUHShc8G2DiavK?usp=sharing"
+              class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm"
+              >Libre Tránsito a IES</a
+            >
             <div class="border-t-2 border-green-300 my-4 mx-6"></div>
-            <div class="bg-green-100 px-6 py-3 mb-3 border-l-4 border-green-500">
-              <span class="text-sm font-bold text-green-800 uppercase tracking-wide flex items-center"><i class="fas fa-building mr-2"></i>Institución</span>
+            <div
+              class="bg-green-100 px-6 py-3 mb-3 border-l-4 border-green-500"
+            >
+              <span
+                class="text-sm font-bold text-green-800 uppercase tracking-wide flex items-center"
+                ><i class="fas fa-building mr-2"></i>Institución</span
+              >
             </div>
-            <a href="../pages_institucion/planteles_cecyte.html" class="block px-12 py-3 text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors duration-200 border-l-2 border-transparent hover:border-green-500 text-sm">Planteles CECYTE</a>
-            <a href="../pages_institucion/planteles_emsad.html" class="block px-12 py-3 text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors duration-200 border-l-2 border-transparent hover:border-green-500 text-sm">Planteles EMSAD</a>
+            <a
+              href="../pages_institucion/planteles_cecyte.html"
+              class="block px-12 py-3 text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors duration-200 border-l-2 border-transparent hover:border-green-500 text-sm"
+              >Planteles CECYTE</a
+            >
+            <a
+              href="../pages_institucion/planteles_emsad.html"
+              class="block px-12 py-3 text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors duration-200 border-l-2 border-transparent hover:border-green-500 text-sm"
+              >Planteles EMSAD</a
+            >
           </div>
         </div>
 
@@ -477,13 +569,31 @@
             id="institucion-btn"
           >
             <span>Institución</span>
-            <svg class="h-5 w-5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            <svg
+              class="h-5 w-5 transition-transform duration-200"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
             </svg>
           </button>
           <div class="hidden bg-gray-50 py-2" id="institucion-submenu">
-            <a href="../pages_institucion/planteles_cecyte.html" class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">Planteles CECYTE</a>
-            <a href="../pages_institucion/planteles_emsad.html" class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">Planteles EMSAD</a>
+            <a
+              href="../pages_institucion/planteles_cecyte.html"
+              class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm"
+              >Planteles CECYTE</a
+            >
+            <a
+              href="../pages_institucion/planteles_emsad.html"
+              class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm"
+              >Planteles EMSAD</a
+            >
           </div>
         </div>
 
@@ -494,16 +604,47 @@
             id="alumnos-btn"
           >
             <span>Alumnos</span>
-            <svg class="h-5 w-5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            <svg
+              class="h-5 w-5 transition-transform duration-200"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
             </svg>
           </button>
           <div class="hidden bg-gray-50 py-2" id="alumnos-submenu">
-            <a href="../pages_alumnos/becas.html" class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">Becas</a>
-            <a href="../pages_alumnos/prog_acompanamiento.html" class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">Programa de Acompañamiento</a>
-            <a href="../pages_alumnos/requisitos_de_ingreso.html" class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">Requisitos de Ingreso</a>
-            <a href="https://drive.google.com/file/d/1khvr2iSTs7T_ouyu7Bwv17uwzeTKk5C-/view?usp=sharing" class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">Reglamento de Estudiantado CECYTE BCS</a>
-            <a href="https://drive.google.com/file/d/1ewSW14CPvRKedEoxHU2wB4f_yx7WGZjM/view?usp=drive_link" class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">Reglamento Asociaciones de Padres y Madres de Familia CECYTE BCS</a>
+            <a
+              href="../pages_alumnos/becas.html"
+              class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm"
+              >Becas</a
+            >
+            <a
+              href="../pages_alumnos/prog_acompanamiento.html"
+              class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm"
+              >Programa de Acompañamiento</a
+            >
+            <a
+              href="../pages_alumnos/requisitos_de_ingreso.html"
+              class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm"
+              >Requisitos de Ingreso</a
+            >
+            <a
+              href="https://drive.google.com/file/d/1khvr2iSTs7T_ouyu7Bwv17uwzeTKk5C-/view?usp=sharing"
+              class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm"
+              >Reglamento de Estudiantado CECYTE BCS</a
+            >
+            <a
+              href="https://drive.google.com/file/d/1ewSW14CPvRKedEoxHU2wB4f_yx7WGZjM/view?usp=drive_link"
+              class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm"
+              >Reglamento Asociaciones de Padres y Madres de Familia CECYTE
+              BCS</a
+            >
           </div>
         </div>
 
@@ -514,28 +655,100 @@
             id="normatividad-btn"
           >
             <span>Normatividad</span>
-            <svg class="h-5 w-5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            <svg
+              class="h-5 w-5 transition-transform duration-200"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
             </svg>
           </button>
-          <div class="hidden bg-gray-50 py-2" id="normatividad-submenu" style="max-height: 80vh; overflow-y: auto">
-            <a href="../pages_normatividad/manuales_de_procedimientos.html" class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">Manuales de Procedimientos</a>
-            <a href="../pages_normatividad/manuales_de_org.html" class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">Manuales de Organización</a>
-            <a href="https://drive.google.com/file/d/1k8AwVEAeVoe7URFcN2N2tcElsEYJRgtW/view?usp=sharing" class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">Reglamento Interno</a>
-            <a href="https://www.gob.mx/cms/uploads/attachment/file/560393/CODIGO_DE_ETICA.pdf" class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">Código de ética</a>
-            <a href="https://drive.google.com/file/d/13m142kMwEJ6hj8xaDJXu-XdA-jAkO9jb/view?usp=sharing" class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">Código de Conducta</a>
-            <a href="https://drive.google.com/file/d/1lIJBD8IXxHcM3hwp7v3VmG2X1EJZXKnG/view?usp=sharing" class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">Protocolo de Seguridad</a>
-            <a href="https://drive.google.com/drive/folders/1WeomLmUxITHWVPlQEY_UFss4Z5Ts275n?usp=sharing" target="_blank" class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">Protocolos escolares</a>
-            <a href="https://drive.google.com/file/d/1g3kR6hG8EnDKR-mNqczA9tI48ijncxSF/view?usp=sharing" class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">Decreto de Creación</a>
-            <a href="https://drive.google.com/drive/folders/1v50Sj_jg3MJiFPEtTEmUHShc8G2DiavK?usp=sharing" class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">Libre Tránsito a IES</a>
+          <div
+            class="hidden bg-gray-50 py-2"
+            id="normatividad-submenu"
+            style="max-height: 80vh; overflow-y: auto"
+          >
+            <a
+              href="../pages_normatividad/manuales_de_procedimientos.html"
+              class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm"
+              >Manuales de Procedimientos</a
+            >
+            <a
+              href="../pages_normatividad/manuales_de_org.html"
+              class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm"
+              >Manuales de Organización</a
+            >
+            <a
+              href="https://drive.google.com/file/d/1k8AwVEAeVoe7URFcN2N2tcElsEYJRgtW/view?usp=sharing"
+              class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm"
+              >Reglamento Interno</a
+            >
+            <a
+              href="https://www.gob.mx/cms/uploads/attachment/file/560393/CODIGO_DE_ETICA.pdf"
+              class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm"
+              >Código de ética</a
+            >
+            <a
+              href="https://drive.google.com/file/d/13m142kMwEJ6hj8xaDJXu-XdA-jAkO9jb/view?usp=sharing"
+              class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm"
+              >Código de Conducta</a
+            >
+            <a
+              href="https://drive.google.com/file/d/1lIJBD8IXxHcM3hwp7v3VmG2X1EJZXKnG/view?usp=sharing"
+              class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm"
+              >Protocolo de Seguridad</a
+            >
+            <a
+              href="https://drive.google.com/drive/folders/1WeomLmUxITHWVPlQEY_UFss4Z5Ts275n?usp=sharing"
+              target="_blank"
+              class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm"
+              >Protocolos escolares</a
+            >
+            <a
+              href="https://drive.google.com/file/d/1g3kR6hG8EnDKR-mNqczA9tI48ijncxSF/view?usp=sharing"
+              class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm"
+              >Decreto de Creación</a
+            >
+            <a
+              href="https://drive.google.com/drive/folders/1v50Sj_jg3MJiFPEtTEmUHShc8G2DiavK?usp=sharing"
+              class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm"
+              >Libre Tránsito a IES</a
+            >
             <div class="border-t-2 border-green-300 my-4 mx-6"></div>
-            <div class="bg-green-100 px-6 py-3 mb-3 border-l-4 border-green-500">
-              <span class="text-sm font-bold text-green-800 uppercase tracking-wide flex items-center"><i class="fas fa-building mr-2"></i>Institución</span>
+            <div
+              class="bg-green-100 px-6 py-3 mb-3 border-l-4 border-green-500"
+            >
+              <span
+                class="text-sm font-bold text-green-800 uppercase tracking-wide flex items-center"
+                ><i class="fas fa-building mr-2"></i>Institución</span
+              >
             </div>
-            <a href="../pages_institucion/pagina_historia.html" class="block px-12 py-3 text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors duration-200 border-l-2 border-transparent hover:border-green-500 text-sm">Historia, Misión y Visión</a>
-            <a href="../pages_institucion/planteles_cecyte.html" class="block px-12 py-3 text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors duration-200 border-l-2 border-transparent hover:border-green-500 text-sm">Planteles CecyteBCS</a>
-            <a href="../pages_institucion/planteles_emsad.html" class="block px-12 py-3 text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors duration-200 border-l-2 border-transparent hover:border-green-500 text-sm">Planteles Emsad</a>
-            <a href="../directorio_telefonico.html" class="block px-12 py-3 text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors duration-200 border-l-2 border-transparent hover:border-green-500 text-sm">Directorio Telefónico</a>
+            <a
+              href="../pages_institucion/pagina_historia.html"
+              class="block px-12 py-3 text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors duration-200 border-l-2 border-transparent hover:border-green-500 text-sm"
+              >Historia, Misión y Visión</a
+            >
+            <a
+              href="../pages_institucion/planteles_cecyte.html"
+              class="block px-12 py-3 text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors duration-200 border-l-2 border-transparent hover:border-green-500 text-sm"
+              >Planteles CecyteBCS</a
+            >
+            <a
+              href="../pages_institucion/planteles_emsad.html"
+              class="block px-12 py-3 text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors duration-200 border-l-2 border-transparent hover:border-green-500 text-sm"
+              >Planteles Emsad</a
+            >
+            <a
+              href="../directorio_telefonico.html"
+              class="block px-12 py-3 text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors duration-200 border-l-2 border-transparent hover:border-green-500 text-sm"
+              >Directorio Telefónico</a
+            >
           </div>
         </div>
 
@@ -546,15 +759,41 @@
             id="transparencia-btn"
           >
             <span>Transparencia</span>
-            <svg class="h-5 w-5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            <svg
+              class="h-5 w-5 transition-transform duration-200"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
             </svg>
           </button>
           <div class="hidden bg-gray-50 py-2" id="transparencia-submenu">
-            <a href="https://transparencia.cecytebcs.edu.mx/informacion-publica/articulo-75" class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">Artículo 75</a>
-            <a href="../pages_transparencia/cuenta_publica.html" class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">Cuenta Pública</a>
-            <a href="../pages_transparencia/ley_diciplina.html" class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">Ley de Disciplina Financiera</a>
-            <a href="ley_archivo.html" class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">Ley de Archivo</a>
+            <a
+              href="https://transparencia.cecytebcs.edu.mx/informacion-publica/articulo-75"
+              class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm"
+              >Artículo 75</a
+            >
+            <a
+              href="../pages_transparencia/cuenta_publica.html"
+              class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm"
+              >Cuenta Pública</a
+            >
+            <a
+              href="../pages_transparencia/ley_diciplina.html"
+              class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm"
+              >Ley de Disciplina Financiera</a
+            >
+            <a
+              href="ley_archivo.html"
+              class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm"
+              >Ley de Archivo</a
+            >
           </div>
         </div>
 
@@ -565,34 +804,68 @@
             id="vinculacion-btn"
           >
             <span>Vinculación</span>
-            <svg class="h-5 w-5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            <svg
+              class="h-5 w-5 transition-transform duration-200"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
             </svg>
           </button>
           <div class="hidden bg-gray-50 py-2" id="vinculacion-submenu">
-            <a href="../pages_alumnos/becas.html" class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">Becas</a>
-            <a href="../pages_vinculacion/seguimineto_egresados.html" class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm">Seguimiento a Egresados</a>
+            <a
+              href="../pages_alumnos/becas.html"
+              class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm"
+              >Becas</a
+            >
+            <a
+              href="../pages_vinculacion/seguimineto_egresados.html"
+              class="block px-8 py-3 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm"
+              >Seguimiento a Egresados</a
+            >
           </div>
         </div>
 
         <!-- Libre Tránsito -->
-        <a href="../libre_transito.html" class="block px-6 py-4 text-gray-700 hover:bg-gray-50 hover:text-green-600 transition-colors duration-200 font-medium border-b border-gray-200">Libre Tránsito</a>
+        <a
+          href="../libre_transito.html"
+          class="block px-6 py-4 text-gray-700 hover:bg-gray-50 hover:text-green-600 transition-colors duration-200 font-medium border-b border-gray-200"
+          >Libre Tránsito</a
+        >
 
         <!-- Comunidad -->
-        <a href="../comunidad.html" class="block px-6 py-4 text-gray-700 hover:bg-gray-50 hover:text-green-600 transition-colors duration-200 font-medium border-b border-gray-200">CECYTE es Comunidad</a>
+        <a
+          href="../comunidad.html"
+          class="block px-6 py-4 text-gray-700 hover:bg-gray-50 hover:text-green-600 transition-colors duration-200 font-medium border-b border-gray-200"
+          >CECYTE es Comunidad</a
+        >
       </div>
 
       <div class="w-full h-1 bg-orange-500"></div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative bg-gradient-to-br from-green-700 via-green-600 to-green-800 text-white pt-24 pb-16 md:pt-32 md:pb-24 bg-texture-hero">
+    <section
+      class="relative bg-gradient-to-br from-green-700 via-green-600 to-green-800 text-white pt-24 pb-16 md:pt-32 md:pb-24 bg-texture-hero"
+    >
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="text-center">
-          <div class="inline-block mb-6 px-4 py-2 bg-white bg-opacity-20 rounded-full backdrop-blur-sm">
-            <span class="text-sm font-semibold uppercase tracking-wide">Normatividad</span>
+          <div
+            class="inline-block mb-6 px-4 py-2 bg-white bg-opacity-20 rounded-full backdrop-blur-sm"
+          >
+            <span class="text-sm font-semibold uppercase tracking-wide"
+              >Normatividad</span
+            >
           </div>
-          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+          <h1
+            class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
+          >
             Coordinación General
             <span class="block text-green-200">Archivos BCS</span>
           </h1>
@@ -604,7 +877,9 @@
     <section class="py-12 md:py-16 bg-texture-docs">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-10 scroll-animate fade-in-up">
-          <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">Documentos disponibles</h2>
+          <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+            Documentos disponibles
+          </h2>
           <div class="w-20 h-0.5 bg-green-600 mx-auto"></div>
         </div>
 
@@ -616,10 +891,14 @@
             rel="noopener noreferrer"
             class="group flex flex-col items-center justify-center p-6 bg-white border-2 border-gray-200 rounded-lg hover:border-green-500 hover:shadow-md transition-all duration-200 scroll-animate scale-in"
           >
-            <div class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-3 group-hover:bg-green-200 transition-colors">
+            <div
+              class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-3 group-hover:bg-green-200 transition-colors"
+            >
               <i class="fas fa-file-pdf text-green-600 text-2xl"></i>
             </div>
-            <span class="text-sm font-semibold text-gray-800 text-center">Programa Anual de desarrollo archivístico 2022-2023</span>
+            <span class="text-sm font-semibold text-gray-800 text-center"
+              >Programa Anual de desarrollo archivístico 2022-2023</span
+            >
           </a>
 
           <!-- Programa 2025 -->
@@ -630,10 +909,33 @@
             class="group flex flex-col items-center justify-center p-6 bg-white border-2 border-gray-200 rounded-lg hover:border-green-500 hover:shadow-md transition-all duration-200 scroll-animate scale-in"
             style="animation-delay: 0.1s"
           >
-            <div class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-3 group-hover:bg-green-200 transition-colors">
+            <div
+              class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-3 group-hover:bg-green-200 transition-colors"
+            >
               <i class="fas fa-file-pdf text-green-600 text-2xl"></i>
             </div>
-            <span class="text-sm font-semibold text-gray-800 text-center">Programa Anual de desarrollo archivístico 2025</span>
+            <span class="text-sm font-semibold text-gray-800 text-center"
+              >Programa Anual de desarrollo archivístico 2025</span
+            >
+          </a>
+
+          <!-- Informe Actividades PADA 2025 -->
+          <a
+            href="https://drive.google.com/drive/folders/1PQN9NnNiticuvrwrtv6QMpqy711WXHap?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="group flex flex-col items-center justify-center p-6 bg-white border-2 border-gray-200 rounded-lg hover:border-green-500 hover:shadow-md transition-all duration-200 scroll-animate scale-in"
+            style="animation-delay: 0.15s"
+          >
+            <div
+              class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-3 group-hover:bg-green-200 transition-colors"
+            >
+              <i class="fas fa-folder-open text-green-600 text-2xl"></i>
+            </div>
+            <span class="text-sm font-semibold text-gray-800 text-center"
+              >Informe de Actividades Realizadas Plan de Desarrollo Archivístico
+              2025</span
+            >
           </a>
 
           <!-- Programa 2026 -->
@@ -644,10 +946,14 @@
             class="group flex flex-col items-center justify-center p-6 bg-white border-2 border-gray-200 rounded-lg hover:border-green-500 hover:shadow-md transition-all duration-200 scroll-animate scale-in"
             style="animation-delay: 0.2s"
           >
-            <div class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-3 group-hover:bg-green-200 transition-colors">
+            <div
+              class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-3 group-hover:bg-green-200 transition-colors"
+            >
               <i class="fas fa-file-pdf text-green-600 text-2xl"></i>
             </div>
-            <span class="text-sm font-semibold text-gray-800 text-center">Programa Anual de desarrollo archivístico 2026</span>
+            <span class="text-sm font-semibold text-gray-800 text-center"
+              >Programa Anual de desarrollo archivístico 2026</span
+            >
           </a>
 
           <!-- Ley General de Archivos -->
@@ -658,10 +964,14 @@
             class="group flex flex-col items-center justify-center p-6 bg-white border-2 border-gray-200 rounded-lg hover:border-green-500 hover:shadow-md transition-all duration-200 scroll-animate scale-in"
             style="animation-delay: 0.3s"
           >
-            <div class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-3 group-hover:bg-green-200 transition-colors">
+            <div
+              class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-3 group-hover:bg-green-200 transition-colors"
+            >
               <i class="fas fa-file-pdf text-green-600 text-2xl"></i>
             </div>
-            <span class="text-sm font-semibold text-gray-800 text-center">Ley General de Archivos</span>
+            <span class="text-sm font-semibold text-gray-800 text-center"
+              >Ley General de Archivos</span
+            >
           </a>
 
           <!-- Ley de Archivos de BCS -->
@@ -672,10 +982,14 @@
             class="group flex flex-col items-center justify-center p-6 bg-white border-2 border-gray-200 rounded-lg hover:border-green-500 hover:shadow-md transition-all duration-200 scroll-animate scale-in"
             style="animation-delay: 0.4s"
           >
-            <div class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-3 group-hover:bg-green-200 transition-colors">
+            <div
+              class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-3 group-hover:bg-green-200 transition-colors"
+            >
               <i class="fas fa-file-pdf text-green-600 text-2xl"></i>
             </div>
-            <span class="text-sm font-semibold text-gray-800 text-center">Ley de Archivos de BCS</span>
+            <span class="text-sm font-semibold text-gray-800 text-center"
+              >Ley de Archivos de BCS</span
+            >
           </a>
 
           <!-- Actas comité de Archivo -->
@@ -686,10 +1000,14 @@
             class="group flex flex-col items-center justify-center p-6 bg-white border-2 border-gray-200 rounded-lg hover:border-green-500 hover:shadow-md transition-all duration-200 scroll-animate scale-in"
             style="animation-delay: 0.5s"
           >
-            <div class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-3 group-hover:bg-green-200 transition-colors">
+            <div
+              class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-3 group-hover:bg-green-200 transition-colors"
+            >
               <i class="fas fa-file-pdf text-green-600 text-2xl"></i>
             </div>
-            <span class="text-sm font-semibold text-gray-800 text-center">Actas Comité de Archivo</span>
+            <span class="text-sm font-semibold text-gray-800 text-center"
+              >Actas Comité de Archivo</span
+            >
           </a>
 
           <!-- Expediente depuración -->
@@ -700,17 +1018,23 @@
             class="group flex flex-col items-center justify-center p-6 bg-white border-2 border-gray-200 rounded-lg hover:border-green-500 hover:shadow-md transition-all duration-200 scroll-animate scale-in sm:col-span-2 lg:col-span-1"
             style="animation-delay: 0.6s"
           >
-            <div class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-3 group-hover:bg-green-200 transition-colors">
+            <div
+              class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-3 group-hover:bg-green-200 transition-colors"
+            >
               <i class="fas fa-file-pdf text-green-600 text-2xl"></i>
             </div>
-            <span class="text-sm font-semibold text-gray-800 text-center">Expediente Depuración Archivo</span>
+            <span class="text-sm font-semibold text-gray-800 text-center"
+              >Expediente Depuración Archivo</span
+            >
           </a>
         </div>
       </div>
     </section>
 
     <!-- CTA -->
-    <section class="py-12 md:py-16 bg-gradient-to-br from-green-700 to-green-800 text-white bg-texture-cta relative">
+    <section
+      class="py-12 md:py-16 bg-gradient-to-br from-green-700 to-green-800 text-white bg-texture-cta relative"
+    >
       <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
         <a
           href="../index.html"
@@ -728,18 +1052,54 @@
       <div class="mx-auto w-full max-w-screen-xl">
         <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
           <div>
-            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Sitios de Interés</h2>
+            <h2
+              class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+            >
+              Sitios de Interés
+            </h2>
             <ul class="text-gray-500 dark:text-gray-400 font-medium">
-              <li class="mb-4"><a href="https://itaibcs.net/" class="hover:underline">ITAI del Estado de B.C.S.</a></li>
-              <li class="mb-4"><a href="../comites.html" class="hover:underline">Comité</a></li>
-              <li class="mb-4"><a href="https://cecytebcs.edu.mx/intranet/" class="hover:underline">Intranet</a></li>
-              <li class="mb-4"><a href="ley_archivo.html" class="hover:underline">Ley de Archivo</a></li>
-              <li class="mb-4"><a href="https://drive.google.com/drive/folders/1uv1d-JP30PMer_gribOo0pLO7AWGAsNV?usp=sharing/" class="hover:underline">Compras y Licitaciones</a></li>
-              <li class="mb-4"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfOfmG7BHg8p731LYgcVC5WO5l3hzCtjJqzxMrkgByNG4Iz5A/viewform" class="hover:underline">Buzón de quejas</a></li>
+              <li class="mb-4">
+                <a href="https://itaibcs.net/" class="hover:underline"
+                  >ITAI del Estado de B.C.S.</a
+                >
+              </li>
+              <li class="mb-4">
+                <a href="../comites.html" class="hover:underline">Comité</a>
+              </li>
+              <li class="mb-4">
+                <a
+                  href="https://cecytebcs.edu.mx/intranet/"
+                  class="hover:underline"
+                  >Intranet</a
+                >
+              </li>
+              <li class="mb-4">
+                <a href="ley_archivo.html" class="hover:underline"
+                  >Ley de Archivo</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  href="https://drive.google.com/drive/folders/1uv1d-JP30PMer_gribOo0pLO7AWGAsNV?usp=sharing/"
+                  class="hover:underline"
+                  >Compras y Licitaciones</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfOfmG7BHg8p731LYgcVC5WO5l3hzCtjJqzxMrkgByNG4Iz5A/viewform"
+                  class="hover:underline"
+                  >Buzón de quejas</a
+                >
+              </li>
             </ul>
           </div>
           <div>
-            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Domicilio</h2>
+            <h2
+              class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+            >
+              Domicilio
+            </h2>
             <ul class="text-gray-500 dark:text-gray-400 font-medium">
               <li class="mb-4"><p>Golfo de California No. 190</p></li>
               <li class="mb-4"><p>Col. El Conchalito.</p></li>
@@ -748,29 +1108,78 @@
             </ul>
           </div>
           <div>
-            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Teléfonos</h2>
+            <h2
+              class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+            >
+              Teléfonos
+            </h2>
             <ul class="text-gray-500 dark:text-gray-400 font-medium">
-              <li class="mb-4"><a href="#" class="hover:underline">612-124-0430</a></li>
-              <li class="mb-4"><a href="#" class="hover:underline">612-124-0656</a></li>
-              <li class="mb-4"><a href="#" class="hover:underline">612-124-2700</a></li>
-              <li class="mb-4"><a href="#" class="hover:underline">612-146-2919</a></li>
-              <li class="mb-4"><a href="#" class="hover:underline">612-124-2202</a></li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">612-124-0430</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">612-124-0656</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">612-124-2700</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">612-146-2919</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">612-124-2202</a>
+              </li>
             </ul>
           </div>
           <div>
-            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">SÍGUENOS</h2>
+            <h2
+              class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+            >
+              SÍGUENOS
+            </h2>
             <ul class="text-gray-500 dark:text-gray-400 font-medium">
-              <li class="mb-4"><a href="https://www.facebook.com/DGCECYTEBCS" class="hover:underline">FACEBOOK</a></li>
-              <li class="mb-4"><a href="https://x.com/CECYTE_BCS?lang=es" class="hover:underline">X</a></li>
-              <li class="mb-4"><a href="https://www.youtube.com/@ProcesosInform%C3%A1ticaCecytebcs" class="hover:underline">YOUTUBE</a></li>
-              <li class="mb-4"><a href="https://www.tiktok.com/@cecytebcs" class="hover:underline">TIKTOK</a></li>
-              <li class="mb-4"><a href="https://www.instagram.com/cecyte_bcs/" class="hover:underline">INSTAGRAM</a></li>
+              <li class="mb-4">
+                <a
+                  href="https://www.facebook.com/DGCECYTEBCS"
+                  class="hover:underline"
+                  >FACEBOOK</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  href="https://x.com/CECYTE_BCS?lang=es"
+                  class="hover:underline"
+                  >X</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  href="https://www.youtube.com/@ProcesosInform%C3%A1ticaCecytebcs"
+                  class="hover:underline"
+                  >YOUTUBE</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  href="https://www.tiktok.com/@cecytebcs"
+                  class="hover:underline"
+                  >TIKTOK</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  href="https://www.instagram.com/cecyte_bcs/"
+                  class="hover:underline"
+                  >INSTAGRAM</a
+                >
+              </li>
             </ul>
           </div>
         </div>
       </div>
       <div class="text-center p-4 bg-gray-800 text-white text-sm">
-        © <span id="año-actual">2026</span> Departamento de Informática. Todos los derechos reservados.
+        © <span id="año-actual">2026</span> Departamento de Informática. Todos
+        los derechos reservados.
       </div>
     </footer>
 
@@ -795,16 +1204,68 @@
           if (icon) icon.style.transform = "rotate(0deg)";
         }
       }
-      document.getElementById("docentes-btn")?.addEventListener("click", () => toggleSubmenu(document.getElementById("docentes-btn"), document.getElementById("docentes-submenu")));
-      document.getElementById("oferta-btn")?.addEventListener("click", () => toggleSubmenu(document.getElementById("oferta-btn"), document.getElementById("oferta-submenu")));
-      document.getElementById("institucion-btn")?.addEventListener("click", () => toggleSubmenu(document.getElementById("institucion-btn"), document.getElementById("institucion-submenu")));
-      document.getElementById("alumnos-btn")?.addEventListener("click", () => toggleSubmenu(document.getElementById("alumnos-btn"), document.getElementById("alumnos-submenu")));
-      document.getElementById("normatividad-btn")?.addEventListener("click", () => toggleSubmenu(document.getElementById("normatividad-btn"), document.getElementById("normatividad-submenu")));
-      document.getElementById("transparencia-btn")?.addEventListener("click", () => toggleSubmenu(document.getElementById("transparencia-btn"), document.getElementById("transparencia-submenu")));
-      document.getElementById("vinculacion-btn")?.addEventListener("click", () => toggleSubmenu(document.getElementById("vinculacion-btn"), document.getElementById("vinculacion-submenu")));
+      document
+        .getElementById("docentes-btn")
+        ?.addEventListener("click", () =>
+          toggleSubmenu(
+            document.getElementById("docentes-btn"),
+            document.getElementById("docentes-submenu"),
+          ),
+        );
+      document
+        .getElementById("oferta-btn")
+        ?.addEventListener("click", () =>
+          toggleSubmenu(
+            document.getElementById("oferta-btn"),
+            document.getElementById("oferta-submenu"),
+          ),
+        );
+      document
+        .getElementById("institucion-btn")
+        ?.addEventListener("click", () =>
+          toggleSubmenu(
+            document.getElementById("institucion-btn"),
+            document.getElementById("institucion-submenu"),
+          ),
+        );
+      document
+        .getElementById("alumnos-btn")
+        ?.addEventListener("click", () =>
+          toggleSubmenu(
+            document.getElementById("alumnos-btn"),
+            document.getElementById("alumnos-submenu"),
+          ),
+        );
+      document
+        .getElementById("normatividad-btn")
+        ?.addEventListener("click", () =>
+          toggleSubmenu(
+            document.getElementById("normatividad-btn"),
+            document.getElementById("normatividad-submenu"),
+          ),
+        );
+      document
+        .getElementById("transparencia-btn")
+        ?.addEventListener("click", () =>
+          toggleSubmenu(
+            document.getElementById("transparencia-btn"),
+            document.getElementById("transparencia-submenu"),
+          ),
+        );
+      document
+        .getElementById("vinculacion-btn")
+        ?.addEventListener("click", () =>
+          toggleSubmenu(
+            document.getElementById("vinculacion-btn"),
+            document.getElementById("vinculacion-submenu"),
+          ),
+        );
 
       // Animaciones al scroll
-      const observerOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
       const scrollObserver = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
@@ -813,7 +1274,9 @@
           }
         });
       }, observerOptions);
-      document.querySelectorAll(".scroll-animate").forEach((el) => scrollObserver.observe(el));
+      document
+        .querySelectorAll(".scroll-animate")
+        .forEach((el) => scrollObserver.observe(el));
 
       // Actualizar año del footer
       const añoElemento = document.getElementById("año-actual");
