@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -169,7 +169,29 @@
       // News data structure
       const newsArticles = [
         {
-          title: "CECYTEBCS FIRMA CONTRATO COLECTIVO DE TRABAJO EN UN MARCO DE DIÁLOGO Y RESPONSABILIDAD INSTITUCIONAL",
+          title:
+            "CECYTEBCS DESTACA A NIVEL NACIONAL POR SU DESEMPEÑO ACADÉMICO Y PERMANENCIA ESTUDIANTIL",
+          description:
+            "En el marco de la Primera Reunión Nacional Virtual de Directoras y Directores Generales del subsistema CECyTE, se presentaron los avances y resultados académicos de los Colegios en todo el país, donde Baja California Sur destacó por su desempeño en materia de permanencia escolar y conclusión de estudios.",
+          image:
+            "pages_notas/cecyte_destaca_a_nivel_nacional_por_desempeno_academico/img/img_1.webp",
+          link: "pages_notas/cecyte_destaca_a_nivel_nacional_por_desempeno_academico/boletin.html",
+          date: "2026-02-04",
+          category: "NOTICIAS",
+        },
+        {
+          title: "Regresan a clases cerca de 10 mil estudiantes a CECyTEBCS",
+          description:
+            "Con la realización de un acto cívico se dio por iniciado formalmente el reinicio de actividades del ciclo escolar 2025-2026 y el semestre febrero-julio 2026 en todo el estado. Cerca de 10 mil alumnos en los 23 centros escolares...",
+          image:
+            "pages_notas/regresan_a_clases_cerca_de_10mil_estudiantes_a_cecytebcs/img/img_1.webp",
+          link: "pages_notas/regresan_a_clases_cerca_de_10mil_estudiantes_a_cecytebcs/boletin.html",
+          date: "2026-02-03",
+          category: "NOTICIAS",
+        },
+        {
+          title:
+            "CECYTEBCS FIRMA CONTRATO COLECTIVO DE TRABAJO EN UN MARCO DE DIÁLOGO Y RESPONSABILIDAD INSTITUCIONAL",
           description:
             "El Colegio de Estudios Científicos y Tecnológicos del Estado de Baja California Sur (CECyTEBCS) llevó a cabo la firma del Contrato Colectivo de Trabajo en la Sala de Juntas de la Dirección General del Colegio, consolidando un proceso de negociación basado en el diálogo, el respeto y la responsabilidad institucional.",
           image:
@@ -179,7 +201,8 @@
           category: "NOTICIAS",
         },
         {
-          title: "CECyTEBCS REALIZA EVENTO PÚBLICO DE ASIGNACIÓN DE PLAZAS DOCENTES 2025–2026",
+          title:
+            "CECyTEBCS REALIZA EVENTO PÚBLICO DE ASIGNACIÓN DE PLAZAS DOCENTES 2025–2026",
           description:
             "El Colegio de Estudios Científicos y Tecnológicos del Estado de Baja California Sur (CECyTEBCS) llevó a cabo la inauguración del Evento Público de Asignación de Plazas Docentes en Educación Media Superior, correspondiente a la Convocatoria 2025–2026, mediante un proceso desarrollado con estricto apego al listado de prelación y a la normatividad vigente, garantizando transparencia, legalidad y certeza para las y los participantes.",
           image:
@@ -192,8 +215,7 @@
           title: "CECyTE en Transformación en Mulegé",
           description:
             "Como parte de este programa, visitamos el CECyTE 01 Plantel Mulegé, donde el director general Vladimir Torres Navarro, acompañado de su equipo, supervisó los avances de las obras de transformación y modernización del plantel. Se fortalecerán los talleres de gastronomía y hotelería, además de la mejora de áreas comunes, para brindar espacios más funcionales y de calidad a las y los estudiantes.",
-          image:
-            "pages_notas/cecyte_tranforma_mulege/img/img_1.webp",
+          image: "pages_notas/cecyte_tranforma_mulege/img/img_1.webp",
           link: "pages_notas/cecyte_tranforma_mulege/cecyte_transforma_mulege.html",
           date: "2026-01-19",
           category: "NOTICIAS",
@@ -1264,7 +1286,7 @@
                                       article.category
                                     }</span>
                                     <time class="text-white text-sm">${new Date(
-                                      article.date
+                                      article.date,
                                     ).toLocaleDateString("es-ES", {
                                       day: "2-digit",
                                       month: "short",
