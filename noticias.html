@@ -182,9 +182,16 @@
             '<p class="text-center text-red-600 py-8">No se pudieron cargar las noticias. Verifica que exista noticias.json</p>';
         });
 
+      function parseDateLocal(dateStr) {
+        const parts = (dateStr || "").toString().trim().split("-");
+        if (parts.length === 3) {
+          return new Date(parseInt(parts[0], 10), parseInt(parts[1], 10) - 1, parseInt(parts[2], 10));
+        }
+        return new Date(dateStr);
+      }
       function groupNewsByYear(articles) {
         return articles.reduce((acc, article) => {
-          const year = new Date(article.date).getFullYear();
+          const year = parseDateLocal(article.date).getFullYear();
           if (!acc[year]) {
             acc[year] = [];
           }
@@ -207,7 +214,13 @@
                                       article.category
                                     }</span>
                                     <time class="text-white text-sm">${(function () {
-                                      const d = new Date(article.date);
+                                      let d;
+                                      const parts = (article.date || "").toString().trim().split("-");
+                                      if (parts.length === 3) {
+                                        d = new Date(parseInt(parts[0], 10), parseInt(parts[1], 10) - 1, parseInt(parts[2], 10));
+                                      } else {
+                                        d = new Date(article.date);
+                                      }
                                       const dia = d.getDate();
                                       const mes = d.toLocaleDateString("es-ES", { month: "long" });
                                       const mesCap = mes.charAt(0).toUpperCase() + mes.slice(1);

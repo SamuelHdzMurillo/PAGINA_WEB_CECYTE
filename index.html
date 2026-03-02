@@ -1555,7 +1555,13 @@
               noticias.forEach(function (article) {
                 var fecha = "";
                 try {
-                  var d = new Date(article.date);
+                  var d;
+                  var parts = (article.date || "").toString().trim().split("-");
+                  if (parts.length === 3) {
+                    d = new Date(parseInt(parts[0], 10), parseInt(parts[1], 10) - 1, parseInt(parts[2], 10));
+                  } else {
+                    d = new Date(article.date);
+                  }
                   var dia = d.getDate();
                   var mes = d.toLocaleDateString("es-ES", { month: "long" });
                   fecha = dia + " de " + mes.charAt(0).toUpperCase() + mes.slice(1);
