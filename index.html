@@ -1546,7 +1546,8 @@
         (function () {
           var CANTIDAD_NOTICIAS_INDEX = 6;
           var container = document.getElementById("index-noticias-container");
-          fetch("noticias.json")
+          // Agregamos un query param para evitar caché del navegador y forzar siempre la versión más reciente de noticias.json
+          fetch("noticias.json?v=" + Date.now())
             .then(function (res) { return res.json(); })
             .then(function (data) {
               container.innerHTML = "";

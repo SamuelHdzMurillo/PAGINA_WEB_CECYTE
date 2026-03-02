@@ -169,7 +169,8 @@
       // Cargar noticias desde JSON (una sola fuente de verdad, se actualiza en tiempo real)
       let newsArticles = [];
 
-      fetch("noticias.json")
+      // Se agrega un parámetro dinámico para evitar que el navegador use una versión vieja en caché
+      fetch("noticias.json?v=" + Date.now())
         .then((res) => res.json())
         .then((data) => {
           newsArticles = data;
