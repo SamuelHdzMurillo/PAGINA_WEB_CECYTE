@@ -242,7 +242,22 @@
         </div>
     </section>
 
-    
+    <!-- Galería de Instalaciones -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 fade-in-up">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Galería de Instalaciones</h2>
+                <div class="w-24 h-1 bg-orange-500 mx-auto"></div>
+            </div>
+
+            <!-- Masonry layout con columnas responsivas -->
+            <div class="columns-1 sm:columns-2 lg:columns-3 gap-6 [column-fill:_balance]">
+                <figure class="mb-6 break-inside-avoid overflow-hidden rounded-2xl shadow-lg group hover-lift fade-in-up">
+                    <img src="C06/C06_VISTA_AEREA.webp" alt="CECyT 06 Vizcaíno - Vista aérea" class="w-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" data-gallery-index="0">
+                </figure>
+            </div>
+        </div>
+    </section>
 
     <!-- About Section -->
     <section class="py-20 bg-white">
@@ -636,115 +651,78 @@
 
         // Lightbox simple para galería
         (function() {
-            const container = document.getElementById('gallery-container');
-            if (!container) return;
+            const images = Array.from(document.querySelectorAll('[data-gallery-index]'));
+            if (!images.length) return;
 
-            // Función para cargar imágenes cuando estén disponibles
-            function loadGallery(images) {
-                if (!images || images.length === 0) return;
-                
-                container.innerHTML = '';
-                let index = 0;
-                
-                images.forEach(img => {
-                    const figure = document.createElement('figure');
-                    figure.className = `mb-6 break-inside-avoid overflow-hidden rounded-2xl shadow-lg group hover-lift fade-in-up`;
-                    figure.style.animationDelay = `${index * 0.03}s`;
-                    
-                    const imgEl = document.createElement('img');
-                    imgEl.src = `C06/${img}`;
-                    imgEl.alt = `Instalaciones CECyT 06 - Vista ${index + 1}`;
-                    imgEl.className = 'w-full object-cover transition-transform duration-300 group-hover:scale-105';
-                    imgEl.loading = 'lazy';
-                    imgEl.setAttribute('data-gallery-index', index);
-                    imgEl.style.cursor = 'zoom-in';
-                    
-                    figure.appendChild(imgEl);
-                    container.appendChild(figure);
-                    index++;
-                });
+            let current = 0;
 
-                // Inicializar lightbox después de cargar imágenes
-                initializeLightbox();
+            const overlay = document.createElement('div');
+            overlay.className = 'fixed inset-0 bg-black bg-opacity-90 z-[1000] hidden';
+
+            const container = document.createElement('div');
+            container.className = 'absolute inset-0 flex items-center justify-center p-4';
+
+            const img = document.createElement('img');
+            img.className = 'max-h-full max-w-full rounded-xl shadow-2xl';
+
+            const closeBtn = document.createElement('button');
+            closeBtn.innerHTML = '&times;';
+            closeBtn.setAttribute('aria-label', 'Cerrar');
+            closeBtn.className = 'absolute top-4 right-4 text-white text-4xl leading-none hover:scale-110 transition-transform';
+
+            const prevBtn = document.createElement('button');
+            prevBtn.innerHTML = '&#10094;';
+            prevBtn.setAttribute('aria-label', 'Anterior');
+            prevBtn.className = 'absolute left-4 top-1/2 -translate-y-1/2 text-white text-5xl leading-none px-2 hover:scale-110 transition-transform';
+
+            const nextBtn = document.createElement('button');
+            nextBtn.innerHTML = '&#10095;';
+            nextBtn.setAttribute('aria-label', 'Siguiente');
+            nextBtn.className = 'absolute right-4 top-1/2 -translate-y-1/2 text-white text-5xl leading-none px-2 hover:scale-110 transition-transform';
+
+            container.appendChild(img);
+            overlay.appendChild(container);
+            overlay.appendChild(closeBtn);
+            overlay.appendChild(prevBtn);
+            overlay.appendChild(nextBtn);
+            document.body.appendChild(overlay);
+
+            function open(index) {
+                current = index;
+                img.src = images[current].getAttribute('src');
+                overlay.classList.remove('hidden');
             }
 
-            function initializeLightbox() {
-                const images = Array.from(document.querySelectorAll('[data-gallery-index]'));
-                if (!images.length) return;
-
-                let current = 0;
-
-                // Crear modal
-                const overlay = document.createElement('div');
-                overlay.className = 'fixed inset-0 bg-black bg-opacity-90 z-[1000] hidden';
-
-                const modalContainer = document.createElement('div');
-                modalContainer.className = 'absolute inset-0 flex items-center justify-center p-4';
-
-                const img = document.createElement('img');
-                img.className = 'max-h-full max-w-full rounded-xl shadow-2xl';
-
-                const closeBtn = document.createElement('button');
-                closeBtn.innerHTML = '&times;';
-                closeBtn.setAttribute('aria-label', 'Cerrar');
-                closeBtn.className = 'absolute top-4 right-4 text-white text-4xl leading-none hover:scale-110 transition-transform';
-
-                const prevBtn = document.createElement('button');
-                prevBtn.innerHTML = '&#10094;';
-                prevBtn.setAttribute('aria-label', 'Anterior');
-                prevBtn.className = 'absolute left-4 top-1/2 -translate-y-1/2 text-white text-5xl leading-none px-2 hover:scale-110 transition-transform';
-
-                const nextBtn = document.createElement('button');
-                nextBtn.innerHTML = '&#10095;';
-                nextBtn.setAttribute('aria-label', 'Siguiente');
-                nextBtn.className = 'absolute right-4 top-1/2 -translate-y-1/2 text-white text-5xl leading-none px-2 hover:scale-110 transition-transform';
-
-                modalContainer.appendChild(img);
-                overlay.appendChild(modalContainer);
-                overlay.appendChild(closeBtn);
-                overlay.appendChild(prevBtn);
-                overlay.appendChild(nextBtn);
-                document.body.appendChild(overlay);
-
-                function open(index) {
-                    current = index;
-                    img.src = images[current].getAttribute('src');
-                    overlay.classList.remove('hidden');
-                }
-
-                function close() {
-                    overlay.classList.add('hidden');
-                }
-
-                function next() {
-                    current = (current + 1) % images.length;
-                    img.src = images[current].getAttribute('src');
-                }
-
-                function prev() {
-                    current = (current - 1 + images.length) % images.length;
-                    img.src = images[current].getAttribute('src');
-                }
-
-                images.forEach((el, i) => {
-                    el.addEventListener('click', () => open(i));
-                });
-
-                closeBtn.addEventListener('click', close);
-                overlay.addEventListener('click', (e) => { if (e.target === overlay) close(); });
-                nextBtn.addEventListener('click', (e) => { e.stopPropagation(); next(); });
-                prevBtn.addEventListener('click', (e) => { e.stopPropagation(); prev(); });
-
-                document.addEventListener('keydown', (e) => {
-                    if (overlay.classList.contains('hidden')) return;
-                    if (e.key === 'Escape') close();
-                    if (e.key === 'ArrowRight') next();
-                    if (e.key === 'ArrowLeft') prev();
-                });
+            function close() {
+                overlay.classList.add('hidden');
             }
 
-            // Cuando tengas las imágenes, puedes cargarlas así:
-            // loadGallery(['IMG1.webp', 'IMG2.webp', ...]);
+            function next() {
+                current = (current + 1) % images.length;
+                img.src = images[current].getAttribute('src');
+            }
+
+            function prev() {
+                current = (current - 1 + images.length) % images.length;
+                img.src = images[current].getAttribute('src');
+            }
+
+            images.forEach((el, i) => {
+                el.style.cursor = 'zoom-in';
+                el.addEventListener('click', () => open(i));
+            });
+
+            closeBtn.addEventListener('click', close);
+            overlay.addEventListener('click', (e) => { if (e.target === overlay) close(); });
+            nextBtn.addEventListener('click', (e) => { e.stopPropagation(); next(); });
+            prevBtn.addEventListener('click', (e) => { e.stopPropagation(); prev(); });
+
+            document.addEventListener('keydown', (e) => {
+                if (overlay.classList.contains('hidden')) return;
+                if (e.key === 'Escape') close();
+                if (e.key === 'ArrowRight') next();
+                if (e.key === 'ArrowLeft') prev();
+            });
         })();
     </script>
 </body>

@@ -1,0 +1,375 @@
+{
+  "organizacion": "CECYTE BCS",
+  "directorio": [
+    {
+      "area": "Dirección General",
+      "nombre": "Vladimir Torres Navarro",
+      "puesto": "Director General",
+      "extension": "101",
+      "email": "direcciongeneral@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Dirección General",
+      "nombre": "Míriam Claudeth Mendoza Geraldo",
+      "puesto": "Auxiliar de Dirección General",
+      "extension": "101",
+      "email": "direcciongeneral@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Dirección General",
+      "nombre": "Golfredo Meza Cota",
+      "puesto": "Jefe del Departamento Jurídico",
+      "telefono": "6121240114",
+      "email": "juridico@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Dirección General",
+      "nombre": "María Elena Castro Terrazas",
+      "puesto": "Contralora",
+      "extension": null,
+      "email": "direcciongeneral@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Dirección General",
+      "nombre": "Gabriela Murillo Castro",
+      "puesto": "Titular de Transparencia",
+      "extension": null,
+      "email": "transparencia@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Dirección General",
+      "nombre": "Teresa Herrera Vazquez",
+      "puesto": "Oficialía de Partes",
+      "extension": "104",
+      "email": "correspondencia@cecytebcs.edu.mx"
+    },
+
+    {
+      "area": "Recursos Humanos",
+      "nombre": "Patricia Elizabeth Alvarez",
+      "puesto": "Directora de Recursos Humanos",
+      "extension": "125",
+      "email": "rh@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Recursos Humanos",
+      "nombre": "Hilda del Rosario Gaxiola Gómez",
+      "puesto": "Jefa de Nóminas, Auditorías y Prestaciones",
+      "extension": "128",
+      "email": "rh@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Recursos Humanos",
+      "nombre": "Ángeles Evelyn Espinoza Amador",
+      "puesto": "Jefa de Administración de Personal",
+      "extension": "122",
+      "email": "rh@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Recursos Humanos",
+      "nombre": "Cristian Eleazar Salgado Landa",
+      "puesto": "Auxiliar de Recursos Humanos",
+      "extension": "127",
+      "email": "rh@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Recursos Humanos",
+      "nombre": "Maria del Rosario De la Peña Rochin",
+      "puesto": "Auxiliar de Recursos Humanos",
+      "extension": "119",
+      "email": "rh@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Recursos Humanos",
+      "nombre": "Jesus Wenceslao Guluarte",
+      "puesto": "Auxiliar de Recursos Humanos",
+      "extension": "108",
+      "email": "rh@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Recursos Humanos",
+      "nombre": "María José Meza Huerta",
+      "puesto": "Movimientos Afiliatorios ISSSTE",
+      "extension": "109",
+      "email": "rh@cecytebcs.edu.mx"
+    },
+
+    {
+      "area": "Administración",
+      "nombre": "Cynthia Ivette Méndez Martín",
+      "puesto": "Directora de Administración",
+      "extension": "120",
+      "email": "administracion@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Administración",
+      "nombre": "María Elena Arellano Tellez",
+      "puesto": "Secretaria de Dirección",
+      "extension": "121",
+      "email": "administracion@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Administración",
+      "nombre": "Daniel Carrillo Cortés",
+      "puesto": "Jefe del Departamento de Informática",
+      "extension": "160",
+      "email": null
+    },
+    {
+      "area": "Administración",
+      "nombre": "Samuel Hernandez Murillo",
+      "puesto": "Procesos Informáticos y Programación",
+      "extension": "165",
+      "email": "procesos.informatica@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Administración",
+      "nombre": "Nora Dayana Montiel Martinez",
+      "puesto": "Soporte Técnico",
+      "extension": "161",
+      "email": "nora.montiel@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Administración",
+      "nombre": "Yoliztli Villavicencio Vélazquez",
+      "puesto": "Soporte Técnico",
+      "extension": "166",
+      "email": "yoliztli.villavicencio@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Administración",
+      "nombre": "José David Olachea Pérez",
+      "puesto": "Jefe de Recursos Financieros",
+      "extension": "129",
+      "email": "r.financieros@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Administración",
+      "nombre": "Claudia Luz Arballo Cota",
+      "puesto": "Jefa de Recursos Materiales",
+      "extension": "124",
+      "email": "r.materiales@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Administración",
+      "nombre": "Sandra Mireya Lucero Araiza",
+      "puesto": "Auxiliar Recursos Materiales",
+      "extension": "164",
+      "email": "almacen@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Administración",
+      "nombre": "Rodolfo Estrada Martínez",
+      "puesto": "Auxiliar Recursos Materiales",
+      "extension": "164",
+      "email": "rodolfo.estrada@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Administración",
+      "nombre": "Sergio Ernesto Salgado Miranda",
+      "puesto": "Jefe de Servicios Generales",
+      "extension": "126",
+      "email": "servicios@cecytebcs.edu.mx"
+    },
+
+    {
+      "area": "Planeación",
+      "nombre": "Hugo Alberto Murillo Yee",
+      "puesto": "Director de Planeación y Evaluación",
+      "extension": "140",
+      "email": "planeacion@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Planeación",
+      "nombre": "Cecilia Miranda Amador",
+      "puesto": "Subdirectora de Planeación",
+      "extension": "145",
+      "email": "inventario@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Planeación",
+      "nombre": "Liliana Favela Rodríguez",
+      "puesto": "Secretaria de Dirección",
+      "extension": "141",
+      "email": "planeacion@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Planeación",
+      "nombre": "Mónica Bañales Cossio",
+      "puesto": "Infraestructura Educativa",
+      "extension": "144",
+      "email": "aux.presupuesto@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Planeación",
+      "nombre": "Carmen Yadira Sánchez Nuñez",
+      "puesto": "Auxiliar de Planeación",
+      "extension": "146",
+      "email": "aux.planeacion@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Planeación",
+      "nombre": "Fabiola Patricia Velázquez Calderón",
+      "puesto": "Auxiliar de Presupuesto",
+      "extension": "146",
+      "email": "aux.presupuesto@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Planeación",
+      "nombre": "Mónica Lizet Márquez Lara",
+      "puesto": "Inventarios",
+      "extension": "147",
+      "email": "inventario@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Planeación",
+      "nombre": "Domingo Guzman Higuera Higuera",
+      "puesto": "Inventarios",
+      "extension": "147",
+      "email": "inventario@cecytebcs.edu.mx"
+    },
+
+    {
+      "area": "Dirección Académica",
+      "nombre": "Roberto Carlos Martínez Zavala",
+      "puesto": "Director Académico",
+      "extension": "130",
+      "email": "direccionacademica@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Dirección Académica",
+      "nombre": "Norma Leticia León Avilés",
+      "puesto": "Secretaria",
+      "extension": "131",
+      "email": "direccionacademica@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Dirección Académica",
+      "nombre": "Minerva Romero Cinco",
+      "puesto": "Subdirectora Académica",
+      "extension": "132",
+      "email": "subdir.academico@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Dirección Académica",
+      "nombre": "Ingrid Danahí Pacheco Pérez",
+      "puesto": "Jefa de Capacitación y Desarrollo",
+      "extension": "137",
+      "email": "desarrollo.academico@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Dirección Académica",
+      "nombre": "Oscar Guevara Domínguez",
+      "puesto": "Jefe de Seguimiento Académico",
+      "extension": "138",
+      "email": "seguimiento.academico@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Dirección Académica",
+      "nombre": "Francis Alicia Caro Gómez",
+      "puesto": "Jefa de Orientación y Extensión Educativa",
+      "extension": "173",
+      "email": "orientacion@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Dirección Académica",
+      "nombre": "Marco Antonio Hirales Patrón",
+      "puesto": "Registro, Certificación y Titulación",
+      "extension": "134",
+      "email": "marco.hirales@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Dirección Académica",
+      "nombre": "Candelaria Erika Coronado García",
+      "puesto": "Registro, Certificación y Titulación",
+      "extension": "134",
+      "email": "aux.docentes@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Dirección Académica",
+      "nombre": "Angélica Yadira Ramos Manriquez",
+      "puesto": "Servicios Escolares",
+      "extension": "170",
+      "email": "serv.escolares@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Dirección Académica",
+      "nombre": "Glenda Insunza Valdez",
+      "puesto": "Control Escolar CECyT",
+      "extension": "172",
+      "email": "serv.escolares@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Dirección Académica",
+      "nombre": "Myriam Guadalupe Cazares Rojas",
+      "puesto": "Control Escolar EMSaD",
+      "extension": "171",
+      "email": "escolares.emsad@cecytebcs.edu.mx"
+    },
+
+    {
+      "area": "Vinculación",
+      "nombre": "Imer Noé Osuna Cárdenas",
+      "puesto": "Director de Vinculación",
+      "extension": "181",
+      "email": "vinculacion@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Vinculación",
+      "nombre": "Marlen Leyva Montaño",
+      "puesto": "Secretaria de Dirección",
+      "extension": "181",
+      "email": "vinculacion@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Vinculación",
+      "nombre": "Sandra Luz Orozco Peña",
+      "puesto": "Seguimiento a Egresados",
+      "extension": "181",
+      "email": "seguimiento.egresados@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Vinculación",
+      "nombre": "Jorge Alberto Sánchez Aguirre",
+      "puesto": "Diseño Vinculación",
+      "extension": "181",
+      "email": "diseno.vinculacion@cecytebcs.edu.mx"
+    },
+
+    {
+      "area": "Contabilidad",
+      "nombre": "Ana Karen Lagarda Lara",
+      "puesto": "Directora de Contabilidad",
+      "extension": "150",
+      "email": "contabilidad@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Contabilidad",
+      "nombre": "Acela Susana Anzaldo Romero",
+      "puesto": "Jefa de Departamento de Contabilidad",
+      "extension": "151",
+      "email": "acela.anzaldo@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Contabilidad",
+      "nombre": "Claudia Guluarte Gutierrez",
+      "puesto": "Jefa de Oficina de Contabilidad",
+      "extension": "152",
+      "email": "claudia.guluarte@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Contabilidad",
+      "nombre": "Anabel Cancino Rubio",
+      "puesto": "Fondo Revolvente Planteles",
+      "extension": "110",
+      "email": "anabel.cancino@cecytebcs.edu.mx"
+    },
+    {
+      "area": "Contabilidad",
+      "nombre": "Missael De Jesús Cosio Ruiz",
+      "puesto": "Fondo Revolvente EMSaD",
+      "extension": "152",
+      "email": "misael.cosio@cecytebcs.edu.mx"
+    }
+  ]
+}
