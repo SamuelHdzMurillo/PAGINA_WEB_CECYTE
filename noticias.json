@@ -1,5 +1,29 @@
 [
   {
+    "title": "¡La ciencia también se vive y se siente!",
+    "description": "Estudiantes de Cecyte Centenario participaron en el taller teórico-práctico Divulgación comunitaria y fomento de las vocaciones científicas, donde exploraron la química de las plantas de Baja California Sur.",
+    "image": "pages_notas/la_ciencia_se_vive_y_se_siente/img/img_1.webp",
+    "link": "pages_notas/la_ciencia_se_vive_y_se_siente/nota.html",
+    "date": "2026-03-23",
+    "category": "NOTICIAS"
+  },
+  {
+    "title": "CECyT 08 La Paz en la Jornada Preventiva \"Juventud, Comunidad y Prevención\"",
+    "description": "Alumnas y alumnos del CECyT 08 La Paz participaron en la Jornada Preventiva 'Juventud, Comunidad y Prevención', un espacio para fortalecer la confianza institucional y promover el desarrollo personal.",
+    "image": "pages_notas/cecyte08_jornada_prevenitva/img/img_1.webp",
+    "link": "pages_notas/cecyte08_jornada_prevenitva/nota.html",
+    "date": "2026-03-20",
+    "category": "NOTICIAS"
+  },
+  {
+    "title": "CECyTE BCS Avanza con el Programa \"CECyTE en Transformación\" en el Municipio de Mulegé",
+    "description": "Como parte del programa CECyTE en Transformación, se llevó a cabo una gira de trabajo en planteles CECyT y Centros EMSaD del municipio de Mulegé, fortaleciendo el equipamiento, infraestructura y condiciones de aprendizaje de los estudiantes.",
+    "image": "pages_notas/cecytebcs_avanza_con_programa_de_transformacion_en_mulege/img/img_1.webp",
+    "link": "pages_notas/cecytebcs_avanza_con_programa_de_transformacion_en_mulege/boletin.html",
+    "date": "2026-03-20",
+    "category": "NOTICIAS"
+  },
+  {
     "title": "CECYTEBCS participa en la integración del Comité Nacional de Gestión por Competencias",
     "description": "El CECyTEBCS se integra al Comité de Gestión por Competencias del Sistema Nacional de Competencias para fortalecer la capacitación laboral y el reconocimiento formal de habilidades y conocimientos.",
     "image": "pages_notas/comite_nacional_de_gestion_por_competencias/img/img_1.webp",
