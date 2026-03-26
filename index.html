@@ -1316,96 +1316,6 @@
     </section>
     <!-- FIN SECTION DE MISION -->
 
-    <!-- INICIO SECTION CONOCE TUS PLANTELES -->
-    <section class="py-6 bg-white">
-      <div class="container mx-auto px-4">
-        <div class="max-w-6xl mx-auto">
-          <!-- Título de la sección -->
-          <div class="text-center mb-6">
-            <h2 class="text-2xl font-bold text-gray-800 mb-2">
-              Conoce tus <span class="text-green-600">Planteles</span>
-            </h2>
-            <p class="text-sm text-gray-600">
-              Explora nuestros planteles CECYTE y EMSAD
-            </p>
-          </div>
-
-          <div class="grid md:grid-cols-2 gap-4">
-            <!-- Card CECYTE -->
-            <div
-              class="flex flex-col md:flex-row items-center gap-4 bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow h-full"
-            >
-              <!-- Icono lado izquierdo -->
-              <div class="flex items-center gap-3">
-                <div
-                  class="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center"
-                >
-                  <i class="fas fa-graduation-cap text-white text-xl"></i>
-                </div>
-              </div>
-
-              <!-- Contenido central -->
-              <div class="text-center md:text-left flex-1">
-                <h3 class="text-lg font-bold text-gray-800 mb-1">
-                  Conoce los
-                  <span class="text-green-600">Planteles CECYTE</span>
-                </h3>
-                <p class="text-sm text-gray-600">Planteles Tecnológicos</p>
-              </div>
-
-              <!-- Botón lado derecho -->
-              <div>
-                <a
-                  href="pages_institucion/planteles_cecyte.html"
-                  class="inline-flex items-center px-4 py-2 bg-green-600 text-white text-sm font-medium rounded-full hover:bg-green-700 transition-colors duration-200"
-                >
-                  <i class="fas fa-arrow-right mr-2"></i>
-                  Explorar
-                </a>
-              </div>
-            </div>
-
-            <!-- Card EMSAD -->
-            <div
-              class="flex flex-col md:flex-row items-center gap-4 bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow h-full"
-            >
-              <!-- Icono lado izquierdo -->
-              <div class="flex items-center gap-3">
-                <div
-                  class="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center"
-                >
-                  <i class="fas fa-school text-white text-xl"></i>
-                </div>
-              </div>
-
-              <!-- Contenido central -->
-              <div class="text-center md:text-left flex-1">
-                <h3 class="text-lg font-bold text-gray-800 mb-1">
-                  Conoce los
-                  <span class="text-orange-600">Planteles EMSAD</span>
-                </h3>
-                <p class="text-sm text-gray-600">
-                  Educación Media Superior a Distancia
-                </p>
-              </div>
-
-              <!-- Botón lado derecho -->
-              <div>
-                <a
-                  href="pages_institucion/planteles_emsad.html"
-                  class="inline-flex items-center px-4 py-2 bg-orange-500 text-white text-sm font-medium rounded-full hover:bg-orange-600 transition-colors duration-200"
-                >
-                  <i class="fas fa-arrow-right mr-2"></i>
-                  Explorar
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- FIN SECTION CONOCE TUS PLANTELES -->
-
     <!-- INICIO SECTION DE CARDS NOTICIAS -->
     <section class="relative bg-white py-5">
       <!-- Decorative background elements -->
@@ -1622,10 +1532,187 @@
           class="px-6 py-3 bg-green-600 text-white rounded-full hover:bg-green-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
         >
           <a href="noticias.html">Ver más noticias</a>
+          
         </button>
       </div>
     </div>
     <!-- FIN SECTION DE CARDS NOTICIAS -->
+
+    <!-- INICIO SECTION DE CARDS CARRERAS -->
+    <section class="relative py-16 bg-gradient-to-b from-white to-gray-50">
+      <div class="container mx-auto px-4">
+        <!-- Decorative elements -->
+        <div
+          class="absolute top-0 left-0 w-32 h-32 bg-green-50 rounded-full mix-blend-multiply filter blur-xl opacity-70"
+        ></div>
+        <div
+          class="absolute top-0 right-0 w-32 h-32 bg-orange-50 rounded-full mix-blend-multiply filter blur-xl opacity-70"
+        ></div>
+
+        <div class="relative text-center max-w-3xl mx-auto">
+          <!-- Main heading with animated underline -->
+          <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
+            Explora Nuestras Carreras Técnicas - CECYTE BCS
+          </h2>
+
+          <!-- Decorative separator -->
+          <div class="flex justify-center items-center gap-4 mb-6">
+            <div class="h-1 w-20 bg-green-600 rounded animate-pulse"></div>
+            <div class="h-1 w-20 bg-orange-500 rounded animate-pulse"></div>
+            <div class="h-1 w-20 bg-green-600 rounded animate-pulse"></div>
+          </div>
+
+          <!-- Subtitle with highlight -->
+          <p class="text-lg text-gray-600">
+            Última Actualización -
+            <span
+              id="fecha-actualizacion-2"
+              class="font-semibold text-green-600"
+            ></span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- INICIO SECTION CARRERAS -->
+    <section id="carreras" class="bg-white py-12">
+      <div class="max-w-5xl mx-auto px-4">
+        <!-- Oferta educativa - Imágenes 2026 (6 carreras) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <a href="pages_oferta_educativa/ecoturismo.html" class="block rounded-lg overflow-hidden group">
+            <img src="img_recuros_pagina/img_oferta_edu/oferta_educativa_img_2026/ECOTURISMO.webp" alt="Ecoturismo" class="w-full h-auto object-contain transition-transform duration-500 ease-out group-hover:scale-110" />
+          </a>
+          <a href="pages_oferta_educativa/ciberseguridad.html" class="block rounded-lg overflow-hidden group">
+            <img src="img_recuros_pagina/img_oferta_edu/oferta_educativa_img_2026/CIBERSEGURIDAD.webp" alt="Ciberseguridad" class="w-full h-auto object-contain transition-transform duration-500 ease-out group-hover:scale-110" />
+          </a>
+          <a href="pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block rounded-lg overflow-hidden group">
+            <img src="img_recuros_pagina/img_oferta_edu/oferta_educativa_img_2026/INFORMÁTICA.webp" alt="Soporte y Mantenimiento de Cómputo" class="w-full h-auto object-contain transition-transform duration-500 ease-out group-hover:scale-110" />
+          </a>
+          <a href="pages_oferta_educativa/servicios_de_hoteleria.html" class="block rounded-lg overflow-hidden group">
+            <img src="img_recuros_pagina/img_oferta_edu/oferta_educativa_img_2026/HOTELERIA.webp" alt="Servicios de Hotelería" class="w-full h-auto object-contain transition-transform duration-500 ease-out group-hover:scale-110" />
+          </a>
+          <a href="pages_oferta_educativa/inteligencia_artificial.html" class="block rounded-lg overflow-hidden group">
+            <img src="img_recuros_pagina/img_oferta_edu/oferta_educativa_img_2026/IA.webp" alt="Inteligencia Artificial" class="w-full h-auto object-contain transition-transform duration-500 ease-out group-hover:scale-110" />
+          </a>
+          <a href="pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="block rounded-lg overflow-hidden group">
+            <img src="img_recuros_pagina/img_oferta_edu/oferta_educativa_img_2026/PRODUCCION.webp" alt="Producción Industrial de Alimentos" class="w-full h-auto object-contain transition-transform duration-500 ease-out group-hover:scale-110" />
+          </a>
+        </div>
+
+        <div class="text-center mt-12">
+          <a
+            href="oferta_educativa.html"
+            class="inline-block bg-orange-600 text-white py-2 px-6 rounded-full text-sm font-semibold hover:bg-orange-700 transition-colors duration-300"
+          >
+            CONOCE TODAS NUESTRAS CARRERAS
+          </a>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="text-center mt-12">
+          <p class="text-lg text-gray-600 mb-4">
+            ¿Listo para comenzar tu viaje profesional?
+          </p>
+          <a
+            href="pages_alumnos/requisitos_de_ingreso.html"
+            class="inline-block bg-green-600 text-white py-2 px-6 rounded-full text-sm font-semibold hover:bg-green-700 transition-colors duration-300"
+          >
+            Conoce los Requisitos de Ingreso
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- FIN SECTION CARRERAS -->
+
+    <!-- INICIO SECTION CONOCE TUS PLANTELES -->
+    <section class="py-6 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-6xl mx-auto">
+          <!-- Título de la sección -->
+          <div class="text-center mb-6">
+            <h2 class="text-2xl font-bold text-gray-800 mb-2">
+              Conoce tus <span class="text-green-600">Planteles</span>
+            </h2>
+            <p class="text-sm text-gray-600">
+              Explora nuestros planteles CECYTE y EMSAD
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-4">
+            <!-- Card CECYTE -->
+            <div
+              class="flex flex-col md:flex-row items-center gap-4 bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow h-full"
+            >
+              <!-- Icono lado izquierdo -->
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center"
+                >
+                  <i class="fas fa-graduation-cap text-white text-xl"></i>
+                </div>
+              </div>
+
+              <!-- Contenido central -->
+              <div class="text-center md:text-left flex-1">
+                <h3 class="text-lg font-bold text-gray-800 mb-1">
+                  Conoce los
+                  <span class="text-green-600">Planteles CECYTE</span>
+                </h3>
+                <p class="text-sm text-gray-600">Planteles Tecnológicos</p>
+              </div>
+
+              <!-- Botón lado derecho -->
+              <div>
+                <a
+                  href="pages_institucion/planteles_cecyte.html"
+                  class="inline-flex items-center px-4 py-2 bg-green-600 text-white text-sm font-medium rounded-full hover:bg-green-700 transition-colors duration-200"
+                >
+                  <i class="fas fa-arrow-right mr-2"></i>
+                  Explorar
+                </a>
+              </div>
+            </div>
+
+            <!-- Card EMSAD -->
+            <div
+              class="flex flex-col md:flex-row items-center gap-4 bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow h-full"
+            >
+              <!-- Icono lado izquierdo -->
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center"
+                >
+                  <i class="fas fa-school text-white text-xl"></i>
+                </div>
+              </div>
+
+              <!-- Contenido central -->
+              <div class="text-center md:text-left flex-1">
+                <h3 class="text-lg font-bold text-gray-800 mb-1">
+                  Conoce los
+                  <span class="text-orange-600">Planteles EMSAD</span>
+                </h3>
+                <p class="text-sm text-gray-600">
+                  Educación Media Superior a Distancia
+                </p>
+              </div>
+
+              <!-- Botón lado derecho -->
+              <div>
+                <a
+                  href="pages_institucion/planteles_emsad.html"
+                  class="inline-flex items-center px-4 py-2 bg-orange-500 text-white text-sm font-medium rounded-full hover:bg-orange-600 transition-colors duration-200"
+                >
+                  <i class="fas fa-arrow-right mr-2"></i>
+                  Explorar
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FIN SECTION CONOCE TUS PLANTELES -->
 
     <!-- INICIO GALERÍA DE VIDEOS -->
     <section
@@ -2022,91 +2109,7 @@
       }
     </style>
 
-    <!-- INICIO SECTION DE CARDS NOTICIAS -->
-    <section class="relative py-16 bg-gradient-to-b from-white to-gray-50">
-      <div class="container mx-auto px-4">
-        <!-- Decorative elements -->
-        <div
-          class="absolute top-0 left-0 w-32 h-32 bg-green-50 rounded-full mix-blend-multiply filter blur-xl opacity-70"
-        ></div>
-        <div
-          class="absolute top-0 right-0 w-32 h-32 bg-orange-50 rounded-full mix-blend-multiply filter blur-xl opacity-70"
-        ></div>
-
-        <div class="relative text-center max-w-3xl mx-auto">
-          <!-- Main heading with animated underline -->
-          <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
-            Explora Nuestras Carreras Técnicas - CECYTE BCS
-          </h2>
-
-          <!-- Decorative separator -->
-          <div class="flex justify-center items-center gap-4 mb-6">
-            <div class="h-1 w-20 bg-green-600 rounded animate-pulse"></div>
-            <div class="h-1 w-20 bg-orange-500 rounded animate-pulse"></div>
-            <div class="h-1 w-20 bg-green-600 rounded animate-pulse"></div>
-          </div>
-
-          <!-- Subtitle with highlight -->
-          <p class="text-lg text-gray-600">
-            Última Actualización -
-            <span
-              id="fecha-actualizacion-2"
-              class="font-semibold text-green-600"
-            ></span>
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- INICIO SECTION CARRERAS -->
-    <section id="carreras" class="bg-white py-12">
-      <div class="max-w-5xl mx-auto px-4">
-        <!-- Oferta educativa - Imágenes 2026 (6 carreras) -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <a href="pages_oferta_educativa/ecoturismo.html" class="block rounded-lg overflow-hidden group">
-            <img src="img_recuros_pagina/img_oferta_edu/oferta_educativa_img_2026/ECOTURISMO.webp" alt="Ecoturismo" class="w-full h-auto object-contain transition-transform duration-500 ease-out group-hover:scale-110" />
-          </a>
-          <a href="pages_oferta_educativa/ciberseguridad.html" class="block rounded-lg overflow-hidden group">
-            <img src="img_recuros_pagina/img_oferta_edu/oferta_educativa_img_2026/CIBERSEGURIDAD.webp" alt="Ciberseguridad" class="w-full h-auto object-contain transition-transform duration-500 ease-out group-hover:scale-110" />
-          </a>
-          <a href="pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block rounded-lg overflow-hidden group">
-            <img src="img_recuros_pagina/img_oferta_edu/oferta_educativa_img_2026/INFORMÁTICA.webp" alt="Soporte y Mantenimiento de Cómputo" class="w-full h-auto object-contain transition-transform duration-500 ease-out group-hover:scale-110" />
-          </a>
-          <a href="pages_oferta_educativa/servicios_de_hoteleria.html" class="block rounded-lg overflow-hidden group">
-            <img src="img_recuros_pagina/img_oferta_edu/oferta_educativa_img_2026/HOTELERIA.webp" alt="Servicios de Hotelería" class="w-full h-auto object-contain transition-transform duration-500 ease-out group-hover:scale-110" />
-          </a>
-          <a href="pages_oferta_educativa/inteligencia_artificial.html" class="block rounded-lg overflow-hidden group">
-            <img src="img_recuros_pagina/img_oferta_edu/oferta_educativa_img_2026/IA.webp" alt="Inteligencia Artificial" class="w-full h-auto object-contain transition-transform duration-500 ease-out group-hover:scale-110" />
-          </a>
-          <a href="pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="block rounded-lg overflow-hidden group">
-            <img src="img_recuros_pagina/img_oferta_edu/oferta_educativa_img_2026/PRODUCCION.webp" alt="Producción Industrial de Alimentos" class="w-full h-auto object-contain transition-transform duration-500 ease-out group-hover:scale-110" />
-          </a>
-        </div>
-
-        <div class="text-center mt-12">
-          <a
-            href="oferta_educativa.html"
-            class="inline-block bg-orange-600 text-white py-2 px-6 rounded-full text-sm font-semibold hover:bg-orange-700 transition-colors duration-300"
-          >
-            CONOCE TODAS NUESTRAS CARRERAS
-          </a>
-        </div>
-
-        <!-- Call to Action -->
-        <div class="text-center mt-12">
-          <p class="text-lg text-gray-600 mb-4">
-            ¿Listo para comenzar tu viaje profesional?
-          </p>
-          <a
-            href="pages_alumnos/requisitos_de_ingreso.html"
-            class="inline-block bg-green-600 text-white py-2 px-6 rounded-full text-sm font-semibold hover:bg-green-700 transition-colors duration-300"
-          >
-            Conoce los Requisitos de Ingreso
-          </a>
-        </div>
-      </div>
-    </section>
-    <!-- FIN SECTION CARRERAS -->
+    
 
     <!-- Contraloría Social Section -->
     <section class="py-12 bg-white relative">
