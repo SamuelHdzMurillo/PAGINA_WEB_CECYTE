@@ -571,7 +571,7 @@
         </div>
 
         <!-- TICS -->
-        <div class="career-card" data-category="cecyte">
+        <div class="career-card" data-category="emsad">
           <a href="pages_oferta_educativa/tics.html" class="block rounded-lg overflow-hidden">
             <img
               src="img_recuros_pagina/img_oferta_edu/oferta_educativa_img_2026/TICS.webp"
@@ -582,7 +582,7 @@
         </div>
 
         <!-- Turismo -->
-        <div class="career-card" data-category="cecyte">
+        <div class="career-card" data-category="emsad">
           <a href="pages_oferta_educativa/turismo.html" class="block rounded-lg overflow-hidden">
             <img
               src="img_recuros_pagina/img_oferta_edu/oferta_educativa_img_2026/TURISMO.webp"
@@ -908,12 +908,15 @@
             this.classList.add("active", "bg-green-600", "text-white");
             this.classList.remove("bg-gray-100", "text-gray-700");
 
-            const filter = this.getAttribute("data-filter");
+            const filter = (this.getAttribute("data-filter") || "").toLowerCase();
 
             careerCards.forEach((card) => {
-              const category = card.getAttribute("data-category");
+              const categories = (card.getAttribute("data-category") || "")
+                .toLowerCase()
+                .split(/\s+/)
+                .filter(Boolean);
 
-              if (filter === "all" || category === filter) {
+              if (filter === "all" || categories.includes(filter)) {
                 card.style.display = "block";
                 card.style.animation = "fadeInUp 0.5s ease-out";
               } else {
