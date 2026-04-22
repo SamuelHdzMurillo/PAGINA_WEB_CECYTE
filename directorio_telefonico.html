@@ -10,6 +10,222 @@
      <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
      
      <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Estilo moderno para bloques por area (excepto buscador general). */
+        .tab-content:not(#general) .grid {
+            grid-template-columns: repeat(auto-fit, minmax(430px, 1fr)) !important;
+            gap: 1.4rem !important;
+        }
+
+        .tab-content:not(#general) .group,
+        .tab-content:not(#general) .group.max-w-sm,
+        .tab-content:not(#general) .group.max-w-md,
+        .tab-content:not(#general) .group.max-w-lg {
+            width: 100%;
+            max-width: 100% !important;
+            margin: 0.55rem 0;
+        }
+
+        .tab-content:not(#general) .flex.justify-center {
+            justify-content: flex-start;
+        }
+
+        .tab-content:not(#general) .flex.justify-center > .group {
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+
+        .tab-content:not(#general) .group > .bg-white.rounded-xl {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(2, 6, 23, 0.06);
+            overflow: hidden;
+            margin: 0.2rem 0;
+            height: 100%;
+        }
+
+        /* Espaciado extra para el componente solicitado */
+        .bg-white.rounded-xl.shadow-lg.overflow-hidden.transform.transition-all.duration-500.hover\:scale-105.hover\:shadow-xl {
+            margin: 0.85rem 0 !important;
+            padding: 0 !important;
+        }
+
+        .tab-content:not(#general) .group .relative {
+            display: flex;
+            align-items: stretch;
+            gap: 1.15rem;
+            min-height: 152px;
+            height: auto;
+            padding: 1.2rem 1.4rem;
+        }
+
+        .tab-content:not(#general) .group .aspect-w-10,
+        .tab-content:not(#general) .group .aspect-w-16 {
+            width: 110px;
+            min-width: 110px;
+            height: 110px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tab-content:not(#general) .group .aspect-w-10 img,
+        .tab-content:not(#general) .group .aspect-w-16 img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+            border-radius: 10px;
+            border: 1px solid #e5e7eb;
+            background: #f8fafc;
+        }
+
+        .tab-content:not(#general) .group .absolute.inset-0 {
+            display: none;
+        }
+
+        .tab-content:not(#general) .group .absolute.bottom-0 {
+            position: static;
+            padding: 0.35rem 0.2rem;
+            color: #374151;
+            flex: 1;
+            min-width: 0;
+            min-height: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            left: auto;
+            right: auto;
+        }
+
+        .tab-content:not(#general) .group .absolute.bottom-0 h4,
+        .tab-content:not(#general) .group .absolute.bottom-0 h5 {
+            color: #111827;
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 1.24;
+            margin-bottom: 0.14rem;
+            letter-spacing: -0.01em;
+            white-space: normal;
+            overflow-wrap: break-word;
+            word-break: normal;
+            hyphens: none;
+        }
+
+        .tab-content:not(#general) .group .absolute.bottom-0 p {
+            color: #64748b;
+            font-size: 0.87rem;
+            line-height: 1.3;
+            font-weight: 500;
+            overflow-wrap: break-word;
+            word-break: normal;
+        }
+
+        /* Titulos de seccion por area */
+        .tab-content:not(#general) h2.text-4xl {
+            font-size: clamp(1.85rem, 2.6vw, 2.4rem);
+            line-height: 1.15;
+            font-weight: 800;
+            letter-spacing: -0.015em;
+            color: #0f172a;
+            margin-bottom: 0.65rem;
+        }
+
+        .tab-content:not(#general) h3.text-2xl {
+            font-size: clamp(1.22rem, 1.9vw, 1.5rem);
+            line-height: 1.2;
+            font-weight: 800;
+            letter-spacing: -0.01em;
+            color: #166534;
+            margin-bottom: 1rem;
+            position: relative;
+            padding-bottom: 0.28rem;
+        }
+
+        .tab-content:not(#general) h3.text-2xl::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 48px;
+            height: 3px;
+            border-radius: 999px;
+            background: #16a34a;
+        }
+
+        @media (min-width: 641px) and (max-width: 1024px) {
+            .tab-content:not(#general) .grid {
+                grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)) !important;
+                gap: 1.2rem !important;
+            }
+
+            .tab-content:not(#general) .group {
+                margin: 0.5rem 0;
+            }
+
+            .tab-content:not(#general) .group .relative {
+                min-height: 148px;
+                height: auto;
+                padding: 1.05rem 1.15rem;
+            }
+
+            .bg-white.rounded-xl.shadow-lg.overflow-hidden.transform.transition-all.duration-500.hover\:scale-105.hover\:shadow-xl {
+                margin: 0.75rem 0 !important;
+                padding: 0 !important;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .tab-content:not(#general) .grid {
+                grid-template-columns: 1fr !important;
+                gap: 1.2rem !important;
+            }
+
+            .tab-content:not(#general) .group {
+                margin: 0.5rem 0;
+            }
+
+            .bg-white.rounded-xl.shadow-lg.overflow-hidden.transform.transition-all.duration-500.hover\:scale-105.hover\:shadow-xl {
+                margin: 0.65rem 0 !important;
+                padding: 0 !important;
+            }
+
+            .tab-content:not(#general) .group .relative {
+                min-height: 138px;
+                height: auto;
+                gap: 0.9rem;
+                padding: 1rem 1rem;
+            }
+
+            .tab-content:not(#general) .group .absolute.bottom-0 {
+                min-height: 0;
+                padding: 0.15rem 0.05rem;
+            }
+
+            .tab-content:not(#general) .group .aspect-w-10,
+            .tab-content:not(#general) .group .aspect-w-16 {
+                width: 92px;
+                min-width: 92px;
+                height: 92px;
+            }
+
+            .tab-content:not(#general) .group .aspect-w-10 img,
+            .tab-content:not(#general) .group .aspect-w-16 img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .tab-content:not(#general) .group .absolute.bottom-0 h4,
+            .tab-content:not(#general) .group .absolute.bottom-0 h5 {
+                font-size: 0.95rem;
+            }
+
+            .tab-content:not(#general) .group .absolute.bottom-0 p {
+                font-size: 0.82rem;
+            }
+        }
+    </style>
     
 </head>
 
@@ -532,19 +748,19 @@
                             </div>
                         </div>
                     </li>
-                    <!-- persona -->
+                    <!-- persona (movido a Contabilidad) 
                     <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
                         <div class="flex items-center justify-between">
                             <div class="flex items-center">
                                 <img src="img_dt/img_da/img_jose_david_olachea_2.webp" alt="Avatar" class="w-40 h-30 rounded">
                                 <div class="ml-4">
                                     <h2 class="text-lg font-semibold">C. José David Olachea Pérez</h2>
-                                    <p class="text-sm text-gray-500">Jefe del Departamento de Recursos Financieros</p>
+                                    <p class="text-sm text-gray-500">Auxiliar de Contabilidad</p>
                                     <p class="text-sm text-gray-600">Extensión: 129 | Email: r.financieros@cecytebcs.edu.mx</p>
                                 </div>
                             </div>
                         </div>
-                    </li>
+                    </li> -->
                     <!-- persona -->
                     <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
                         <div class="flex items-center justify-between">
@@ -553,7 +769,7 @@
                                 <div class="ml-4">
                                     <h2 class="text-lg font-semibold">C. Cynthia Ivette Méndez Martín</h2>
                                     <p class="text-sm text-gray-500">Directora de administración</p>
-                                    <p class="text-sm text-gray-600">Extensión: 120 | Email: administracion@cecytebcs.edu.mx</p>
+                                    <p class="text-sm text-gray-600">Extensión: 120 | Email: Administracion@cecytebcs.edu.mx</p>
                                 </div>
                             </div>
                         </div>
@@ -1004,6 +1220,20 @@
                 <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
                     <div class="flex items-center justify-between">
                         <div class="flex items-center">
+                            <img src="img_dt/img_da/img_jose_david_olachea_2.webp" alt="Avatar" class="w-40 h-30 rounded">
+                            <div class="ml-4">
+                                <h2 class="text-lg font-semibold">
+                                    C. José David Olachea Pérez</h2>
+                                <p class="text-sm text-gray-500">Auxiliar de Contabilidad</p>
+                                <p class="text-sm text-gray-600">Extensión: 129 | Email: r.financieros@cecytebcs.edu.mx</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- persona (comentado) 
+                <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
                             <img src="img_dt/img_cont/img_anabel_cancino_2.webp" alt="Avatar" class="w-40 h-30 rounded">
                             <div class="ml-4">
                                 <h2 class="text-lg font-semibold">
@@ -1013,8 +1243,8 @@
                             </div>
                         </div>
                     </div>
-                </li>
-                <!-- persona -->
+                </li> -->
+                <!-- persona (comentado) 
                 <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
                     <div class="flex items-center justify-between">
                         <div class="flex items-center">
@@ -1027,7 +1257,7 @@
                             </div>
                         </div>
                     </div>
-                </li>
+                </li> -->
                     
                 </ul>
 
@@ -1393,7 +1623,7 @@
                                                 <i class="fas fa-phone mr-2"></i> Ext. 120
                                             </div>
                                             <div class="bg-orange-50 px-4 py-2 rounded-full text-black-700">
-                                                <i class="fas fa-envelope mr-2"></i> administracion@cecytebcs.edu.mx
+                                                <i class="fas fa-envelope mr-2"></i> Administracion@cecytebcs.edu.mx
                                             </div>
                                         </div>
                                     </div>
@@ -1424,7 +1654,7 @@
                                 </div>
                             </div>
 
-                            <!-- Jefe 2 -->
+                            <!-- Jefe 2 (movido a Contabilidad) 
                             <div class="group">
                                 <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-xl">
                                     <div class="relative">
@@ -1436,11 +1666,11 @@
                                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                                         <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
                                             <h4 class="text-xl font-bold mb-2">C. José David Olachea Pérez</h4>
-                                            <p class="text-sm opacity-90">Jefe del Departamento de Recursos Financieros</p>
+                                            <p class="text-sm opacity-90">Auxiliar de Contabilidad</p>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
                             <!-- Jefe 3 
                             <div class="group">
@@ -1453,8 +1683,8 @@
                                         </div>
                                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                                         <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
-                                            <h4 class="text-xl font-bold mb-2">C. Cynthia Ivette Méndez Martin</h4>
-                                            <p class="text-sm opacity-90">Jefa del Depto. de Ingresos Propios</p>
+                                            <h4 class="text-xl font-bold mb-2">C. Cynthia Ivette Méndez Martín</h4>
+                                            <p class="text-sm opacity-90">Directora de administración</p>
                                         </div>
                                     </div>
                                 </div>
@@ -2206,7 +2436,7 @@
                     </div>
                 </div>
 
-                <!-- Personal 3 -->
+                <!-- Personal 3 (comentado) 
                 <div class="group">
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-xl">
                         <div class="relative">
@@ -2222,9 +2452,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
-                <!-- Personal 4 -->
+                <!-- Personal 4 (comentado) 
                 <div class="group">
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-xl">
                         <div class="relative">
@@ -2240,7 +2470,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Personal 5 -->
                 <div class="group">
@@ -2671,6 +2901,24 @@
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-xl">
                         <div class="relative">
                             <div class="aspect-w-16 aspect-h-9">
+                                <img src="img_dt/img_da/img_jose_david_olachea_2.webp" 
+                                     alt="Auxiliar de Contabilidad" 
+                                     class="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                            <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+                                <h5 class="font-semibold">C. José David Olachea Pérez</h5>
+                                <p class="text-sm opacity-90">Auxiliar de Contabilidad</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Personal 4 (comentado)
+                <div class="group">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-xl">
+                        <div class="relative">
+                            <div class="aspect-w-16 aspect-h-9">
                                 <img src="img_dt/img_cont/img_anabel_cancino_2.webp" 
                                      alt="Fondo Revolvente" 
                                      class="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-500">
@@ -2682,9 +2930,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
-                <!-- Personal 4 -->
+                <!-- Personal 5 (comentado)
                 <div class="group">
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-xl">
                         <div class="relative">
@@ -2700,7 +2948,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
