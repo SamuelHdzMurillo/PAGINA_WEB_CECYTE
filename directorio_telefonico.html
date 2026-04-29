@@ -451,7 +451,7 @@
         <div class="mb-6">
             <input type="text" id="searchInput" placeholder="Buscar contacto..." class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600">
         </div>
-                <ul class="divide-y divide-gray-200">
+                <ul id="generalContactsList" class="divide-y divide-gray-200">
                     <!-- persona -->
                     <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
                         <div class="flex items-center justify-between">
@@ -2966,40 +2966,108 @@
         const buttons = document.querySelectorAll('.tab-button');
         const contents = document.querySelectorAll('.tab-content');
         const searchInput = document.getElementById('searchInput');
+        const generalContactsList = document.getElementById('generalContactsList');
+        let allGeneralContacts = [];
+
+        function escapeHtml(value) {
+            return String(value ?? '')
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;');
+        }
+
+        function renderGeneralContacts(contacts) {
+            if (!generalContactsList) return;
+
+            if (!contacts.length) {
+                generalContactsList.innerHTML = `
+                    <li class="p-4 text-center text-gray-500">
+                        No se encontraron contactos para la búsqueda.
+                    </li>
+                `;
+                return;
+            }
+
+            generalContactsList.innerHTML = contacts.map(contact => {
+                const nombre = escapeHtml(contact.nombre || 'Sin nombre');
+                const puesto = escapeHtml(contact.puesto || 'Sin puesto');
+                const extension = escapeHtml(contact.extension || 'Sin extensión');
+                const area = escapeHtml(contact.area || 'Sin área');
+                const imagen = escapeHtml(contact.imagen || 'img_dt/img_default.webp');
+
+                return `
+                    <li class="p-4 hover:bg-gray-50 transition duration-150 ease-in-out">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="${imagen}" alt="${nombre}" class="w-40 h-30 rounded object-cover" loading="lazy" onerror="this.src='img_dt/img_default.webp'">
+                                <div class="ml-4">
+                                    <h2 class="text-lg font-semibold">${nombre}</h2>
+                                    <p class="text-sm text-gray-500">${puesto}</p>
+                                    <p class="text-sm text-gray-600">Extensión: ${extension} | Área: ${area}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                `;
+            }).join('');
+        }
+
+        async function loadGeneralContactsFromJson() {
+            if (!generalContactsList) return;
+
+            try {
+                const response = await fetch('./directorio.json', { cache: 'no-cache' });
+                if (!response.ok) {
+                    throw new Error(`Error HTTP ${response.status}`);
+                }
+
+                const data = await response.json();
+                allGeneralContacts = Object.entries(data).flatMap(([area, contacts]) =>
+                    (contacts || []).map(contact => ({ ...contact, area }))
+                );
+
+                renderGeneralContacts(allGeneralContacts);
+            } catch (error) {
+                console.error('No se pudo cargar directorio.json:', error);
+                generalContactsList.innerHTML = `
+                    <li class="p-4 text-center text-red-600">
+                        Ocurrió un error al cargar el directorio.
+                    </li>
+                `;
+            }
+        }
 
         buttons.forEach(button => {
             button.addEventListener('click', () => {
-                // Cambiar el color de fondo de los botones
                 buttons.forEach(btn => btn.classList.replace('bg-orange-500', 'bg-gray-300'));
                 button.classList.replace('bg-gray-300', 'bg-orange-500');
-
-                // Ocultar todos los contenidos
                 contents.forEach(content => content.classList.add('hidden'));
-
-                // Mostrar solo el contenido correspondiente a la pestaña seleccionada
                 document.getElementById(button.getAttribute('data-tab')).classList.remove('hidden');
             });
         });
 
-        searchInput.addEventListener('input', function() {
-            const searchTerm = this.value.toLowerCase();
-            const activeTab = document.querySelector('.tab-content:not(.hidden)');
-            const contacts = activeTab.querySelectorAll('li');
+        searchInput.addEventListener('input', function () {
+            const searchTerm = this.value.trim().toLowerCase();
+            const filtered = allGeneralContacts.filter(contact => {
+                const nombre = (contact.nombre || '').toLowerCase();
+                const extension = (contact.extension || '').toLowerCase();
+                const puesto = (contact.puesto || '').toLowerCase();
+                const area = (contact.area || '').toLowerCase();
 
-            contacts.forEach(contact => {
-                const name = contact.querySelector('h2').textContent.toLowerCase();
-                const phone = contact.querySelector('p:nth-child(3)').textContent.toLowerCase();
-                const position = contact.querySelector('p:nth-child(2)').textContent.toLowerCase();
-
-                if (name.includes(searchTerm) || phone.includes(searchTerm) || position.includes(searchTerm)) {
-                    contact.style.display = 'flex';
-                } else {
-                    contact.style.display = 'none';
-                }
+                return (
+                    nombre.includes(searchTerm) ||
+                    extension.includes(searchTerm) ||
+                    puesto.includes(searchTerm) ||
+                    area.includes(searchTerm)
+                );
             });
+
+            renderGeneralContacts(filtered);
         });
 
-        // Mostrar la primera pestaña por defecto al cargar la página
+        loadGeneralContactsFromJson();
         document.querySelector('.tab-button').click();
     </script>
 </body>
