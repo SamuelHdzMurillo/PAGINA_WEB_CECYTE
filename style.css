@@ -1,0 +1,264 @@
+.bg-green-500 {
+  background-color: #107926;
+}
+
+.bg-orange-500 {
+  background-color: #f97316;
+}
+
+.bg-orange-700 {
+  background-color: #c2410c;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+.section-fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.02);
+}
+
+.content-card {
+  background: white;
+  border-radius: 0.75rem;
+  border: 2px solid #047857;
+  transition: all 0.3s ease;
+}
+
+.content-card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero-section h1,
+.hero-section p,
+.hero-section button,
+.section-separator,
+.section-separator-VERDE,
+.nota p,
+.texto-sobre-imagen,
+.imagen-con-desenfoque {
+  font-family: "Work Sans", sans-serif;
+}
+
+.navbar-transparent {
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+.navbar-white {
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+
+.section-separator {
+  width: 100%;
+  height: 4px;
+  background-color: #f97316; /* Orange color */
+  margin: 0.5rem auto;
+}
+
+.section-separator-VERDE {
+  width: 100%;
+  height: 4px;
+  background-color: #278a2a; /* Orange color */
+  margin: 0.5rem auto;
+}
+
+.nota {
+  position: relative;
+  overflow: hidden;
+}
+
+.nota:hover:hover .texto-sobre-imagen {
+  opacity: 1;
+}
+.imagen-con-desenfoque:hover {
+  filter: blur(5px);
+  transform: rotate(5deg);
+  cursor: pointer;
+}
+
+.nota:hover {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.nota:active {
+  transform: rotate(5deg);
+}
+
+/* Estilo del texto */
+.texto-sobre-imagen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+/* Estilo para el desenfoque */
+.imagen-con-desenfoque {
+  transition: filter 0.3s ease;
+}
+
+.imagen-con-desenfoque:hover {
+  filter: blur(5px);
+}
+
+.relative {
+  z-index: 1;
+}
+
+.parallax {
+  /* Reemplaza con tu URL de imagen */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider {
+  scroll-snap-type: x mandatory;
+  display: flex;
+  overflow-x: scroll;
+  scrollbar-width: none; /* Oculta la barra de desplazamiento en Firefox */
+  -ms-overflow-style: none; /* Oculta la barra de desplazamiento en Internet Explorer y Edge */
+}
+.slider::-webkit-scrollbar {
+  display: none; /* Oculta la barra de desplazamiento en Chrome, Safari y Opera */
+}
+.slide {
+  scroll-snap-align: start;
+  flex: none;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  height: 500px;
+}
+.slide-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 20px;
+}
+
+/* Mejoras para el navbar */
+.navbar-transition {
+  transition: all 0.3s ease;
+}
+
+/* Mejoras para el menú móvil */
+.mobile-menu-transition {
+  transition: opacity 0.3s ease, transform 0.3s ease, max-height 0.3s ease;
+}
+
+/* Mejoras para los submenús */
+.submenu-transition {
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+/* Mejoras para el espaciado del navbar en diferentes tamaños */
+@media (min-width: 640px) {
+  .navbar-desktop {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar-desktop {
+    gap: 1rem;
+  }
+}
+
+/* Mejoras para el hover en desktop */
+.navbar-link-hover {
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.navbar-link-hover:hover {
+  color: #059669;
+  background-color: rgba(5, 150, 105, 0.1);
+}
+
+/* Mejoras para los dropdowns */
+.dropdown-menu {
+  min-width: 12rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e7eb;
+}
+
+/* Mejoras para el botón del menú móvil */
+.mobile-menu-btn {
+  transition: transform 0.3s ease, color 0.2s ease;
+}
+
+.mobile-menu-btn:hover {
+  transform: scale(1.05);
+}
+
+.mobile-menu-btn:active {
+  transform: scale(0.95);
+}
+
+/* Mejoras adicionales para el menú móvil */
+#mobile-menu {
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 #f1f5f9;
+}
+
+#mobile-menu::-webkit-scrollbar {
+  width: 6px;
+}
+
+#mobile-menu::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+#mobile-menu::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 3px;
+}
+
+#mobile-menu::-webkit-scrollbar-thumb:hover {
+  background-color: #94a3b8;
+}
+
+/* Espaciado mejorado para submenús móviles */
+#mobile-menu [id$="-submenu"] {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Mejor separación visual entre secciones del menú */
+#mobile-menu > div:not(:last-child) {
+  margin-bottom: 0;
+}

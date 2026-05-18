@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link
+      href="https://unpkg.com/flowbite@^2.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="https://unpkg.com/flowbite@^2.1/dist/flowbite.min.js"></script>
+    <style>
+      .career-card-page a { overflow: hidden; display: block; }
+      .career-card-img { transition: transform 0.4s ease; }
+      .career-card-page:hover .career-card-img { transform: scale(1.03); }
+    </style>
+</head>
+<body class="bg-[#f8fafc]">
+   <!-- INCIO NAVBAR CON SUBEMENUS -->
+<nav class="bg-white shadow-lg relative z-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+            <!-- Logo -->
+            <div class="flex-shrink-0 flex items-center">
+                <img src="../img_logos/logo_Cecyte_vertical_sin_fondo.png" alt="logo_Cecyte_vertical_sin_fondo" class="h-12 w-auto">
+            </div>
+            <!-- Responsive menu button -->
+            <div class="flex items-center sm:hidden">
+                <button id="menu-btn" class="text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700">
+                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Navbar links -->
+            <div class="hidden sm:flex sm:items-center sm:ml-6">
+                <div class="relative group">
+                    <a href="../index.html" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Inicio</a>
+                </div>
+                <div class="relative group">
+                    <a href="#" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Institución</a>
+                    <!-- Submenu -->
+                    <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md z-10">
+                        <a href="../pages_institucion/pagina_historia.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Historia, Misión y Visión</a>
+  
+                        <a href="../pages_institucion/planteles_cecyte.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Planteles CecyteBCS</a>
+                        
+                        <a href="../pages_institucion/planteles_emsad.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Planteles Emsad</a>
+                        
+                        <a href="../directorio_telefonico.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Directorio Telefónico</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <a href="#" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Oferta Educativa</a>
+                    <!-- Submenu -->
+                    <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
+                        
+                        <a href="../pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Soporte  y  Mantenimiento equipo de computo</a>
+                        <a href="../pages_oferta_educativa/programacion.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programacion</a>
+                        <a href="../pages_oferta_educativa/ventas.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ventas</a>
+                        <a href="../pages_oferta_educativa/ecoturismo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ecoturismo</a>
+                        <a href="../pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Producción industrial de alimentos</a>
+                        <a href="../pages_oferta_educativa/mantenimiento_industrial.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Mantenimiento Industrial</a>
+                        <a href="../pages_oferta_educativa/servicios_de_hoteleria.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Servicios de Hoteleria</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <a href="#" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Alumnos</a>
+                    <!-- Submenu -->
+                    <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
+                        
+                        <a href="../pages_alumnos/becas.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Becas</a>
+                        <a href="../pages_alumnos/prog_acompanamiento.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programa de Acompañamiento</a>
+                        <a href="../pages_alumnos/requisitos_de_ingreso.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Requisitos de Ingreso</a>
+                    </div>
+                </div>
+  
+                <div class="relative group">
+                  <a href="#" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Normatividad</a>
+                  <!-- Submenu -->
+                  <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
+                      
+                      <a href="../pages_normatividad/manuales_de_procedimientos.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Manuales de Procedimientos</a>
+                      
+  
+                      <a href="../pages_normatividad/manuales_de_org.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Manuales de Organizacion</a>
+  
+                      <a href="https://drive.google.com/file/d/1w1kARXVhw-SFsSY7q7JPBH4MgAqN8C_S/view?usp=drive_link" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Reglamento interno</a>
+  
+                      <a href="https://drive.google.com/file/d/13m142kMwEJ6hj8xaDJXu-XdA-jAkO9jb/view?usp=sharing" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Codigo de Conducta</a>
+  
+                      <a href="https://drive.google.com/file/d/1lIJBD8IXxHcM3hwp7v3VmG2X1EJZXKnG/view?usp=sharing" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Protocolo de Seguridad </a>
+  
+                      
+      
+                  </div>
+              </div>
+  
+                <div class="relative group">
+                  <a href="https://transparencia.cecytebcs.edu.mx/" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Transparencia</a>
+                  <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
+  
+                    <a href="https://transparencia.cecytebcs.edu.mx/informacion-publica/articulo-75" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Articulo 75</a>
+                      
+                    <a href="../pages_transparencia/cuenta_publica.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Cuenta publica</a>
+  
+                    <a href="../pages_transparencia/ley_diciplina.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ley de diciplina Financiera </a>
+  
+                    
+    
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Responsive Menu -->
+    <div class="sm:hidden hidden" id="mobile-menu">
+  <a href="#" class="block text-gray-700 hover:text-green-600 px-4 py-2">Inicio</a>
+  <div class="block">
+      <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="servicios-btn">
+          Institución
+          <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+      </button>
+      <!-- Submenu -->
+      <div class="hidden" id="servicios-submenu">
+          <a href="../pages_institucion/pagina_historia.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Historia, Misión y Visión</a>
+          <a href="../pages_institucion/planteles_cecyte.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Planteles CecyteBCS</a>
+          <a href="../pages_institucion/planteles_emsad.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Planteles Emsad</a>
+          <a href="../directorio_telefonico.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Directorio Telefonico</a>
+      </div>
+  </div>
+  <div class="block">
+      <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="nosotros-btn">
+          Oferta Educativa
+          
+          <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+      </button>
+      
+      <!-- Submenu -->
+      <div class="hidden" id="nosotros-submenu">
+          <a href="../pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Soporte y Mantenimiento equipo de cómputo</a>
+          <a href="../pages_oferta_educativa/programacion.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programación</a>
+          <a href="../pages_oferta_educativa/ventas.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ventas</a>
+          <a href="../pages_oferta_educativa/ecoturismo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ecoturismo</a>
+          <a href="../pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Producción industrial de alimentos</a>
+          <a href="../pages_oferta_educativa/mantenimiento_industrial.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Mantenimiento industrial</a>
+          <a href="../pages_oferta_educativa/servicios_de_hoteleria.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Servicios de Hotelería</a>
+      </div>
+  </div>
+  <div class="block">
+    <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="alumnos-btn">
+      Alumnos
+      <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+      </svg>
+    </button>
+    <!-- Submenu -->
+    <div class="hidden" id="alumnos-submenu">
+      <a href="../pages_alumnos/becas.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Becas</a>
+      <a href="../pages_alumnos/prog_acompanamiento.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programa de Acompañamiento</a>
+      <a href="../pages_alumnos/requisitos_de_ingreso.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Requisitos de Ingreso</a>
+    </div>
+  </div>
+  
+  
+  
+  <div class="block">
+    <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="norma-btn">
+      Normatividad
+      <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+      </svg>
+    </button>
+    <!-- Submenu -->
+    <div class="hidden" id="norma-submenu">
+      <a href="../pages_normatividad/manuales_de_procedimientos.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Manual de Procedimientos</a>
+      <a href="../pages_normatividad/manuales_de_org.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Manual de Organizacion</a>
+    </div>
+  </div>
+  
+  <div class="block">
+    <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="trns-btn">
+      Transparencia
+      <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+      </svg>
+    </button>
+    <!-- Submenu -->
+    <div class="hidden" id="trns-submenu">
+      <a href="https://transparencia.cecytebcs.edu.mx/" class="block px-4 py-4 text-gray-700 hover:bg-gray-100">Artiuclo 75</a>
+      <a href="../pages_transparencia/cuenta_publica.html" class="block px-4 py-4 text-gray-700 hover:bg-gray-100">Cuenta publica</a>
+      <a href="../pages_transparencia/ley_diciplina.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ley de diciplina</a>
+    </div>
+  </div>
+  
+  </div>
+  </div>
+  
+    <div class="w-full h-1 bg-orange-500"></div>
+  </nav>
+  <!-- FIN NAVBAR CON SUBEMENUS -->
+
+   
+
+      <main class="bg-[#f8fafc] min-h-screen">
+        <div class="max-w-6xl mx-auto px-4 py-8 md:py-12 space-y-8">
+
+          <section class="career-card-page rounded-lg overflow-hidden bg-white shadow-lg border border-gray-100 transition-all duration-300 hover:shadow-xl">
+            <a href="../oferta_educativa.html" class="block rounded-lg overflow-hidden">
+              <img src="../img_recuros_pagina/img_oferta_edu/oferta_educativa_img_2026/BANNERS/VENTAS.webp" alt="Ventas - CECYTE BCS" class="w-full h-auto block transition-transform duration-500 ease-out career-card-img" />
+            </a>
+            <div class="px-6 py-5 md:px-8 md:py-6 border-t border-gray-100 bg-white">
+              <div class="flex flex-wrap items-center gap-3">
+                <span class="inline-flex items-center gap-2 bg-green-500 text-white px-4 py-1.5 rounded-full text-sm font-semibold">Carrera Técnica</span>
+                <span class="h-1 w-12 bg-orange-500 rounded-full"></span>
+                <h1 class="text-xl md:text-2xl font-bold text-gray-800 tracking-tight">Ventas</h1>
+              </div>
+              <p class="text-gray-600 mt-2 text-sm md:text-base max-w-2xl">Desarrolla habilidades para el mundo comercial y de los negocios.</p>
+            </div>
+          </section>
+
+          <section class="rounded-lg bg-white p-6 md:p-8 shadow-lg border border-gray-100">
+            <div class="flex flex-wrap items-center gap-2 mb-6">
+              <div class="h-1 w-16 bg-green-500 rounded-full"></div>
+              <h2 class="text-2xl font-bold text-gray-800">Planteles que imparten esta carrera</h2>
+            </div>
+            <p class="text-gray-600 mb-6">Descubre dónde puedes estudiar Ventas en BCS.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              <a href="../pages_institucion/pages_planteles/C03.html" class="rounded-lg overflow-hidden border border-gray-100 bg-gray-50 hover:border-green-500/30 hover:shadow-md transition-all duration-300 group no-underline text-inherit">
+                <div class="p-5 flex items-center gap-4">
+                  <div class="w-12 h-12 rounded-lg bg-green-500 flex items-center justify-center shrink-0 group-hover:bg-green-600 transition-colors"><i class="fas fa-map-marker-alt text-white"></i></div>
+                  <div><h3 class="font-semibold text-gray-800 group-hover:text-green-600 transition-colors">CECYTE 03</h3><p class="text-sm text-gray-500">Santiago</p></div>
+                </div>
+              </a>
+              <a href="../pages_institucion/pages_planteles/C04.html" class="rounded-lg overflow-hidden border border-gray-100 bg-gray-50 hover:border-green-500/30 hover:shadow-md transition-all duration-300 group no-underline text-inherit">
+                <div class="p-5 flex items-center gap-4">
+                  <div class="w-12 h-12 rounded-lg bg-green-500 flex items-center justify-center shrink-0 group-hover:bg-green-600 transition-colors"><i class="fas fa-map-marker-alt text-white"></i></div>
+                  <div><h3 class="font-semibold text-gray-800 group-hover:text-green-600 transition-colors">CECYTE 04</h3><p class="text-sm text-gray-500">Vista Hermosa, San José del Cabo</p></div>
+                </div>
+              </a>
+              <a href="../pages_institucion/pages_planteles/C05.html" class="rounded-lg overflow-hidden border border-gray-100 bg-gray-50 hover:border-green-500/30 hover:shadow-md transition-all duration-300 group no-underline text-inherit">
+                <div class="p-5 flex items-center gap-4">
+                  <div class="w-12 h-12 rounded-lg bg-green-500 flex items-center justify-center shrink-0 group-hover:bg-green-600 transition-colors"><i class="fas fa-map-marker-alt text-white"></i></div>
+                  <div><h3 class="font-semibold text-gray-800 group-hover:text-green-600 transition-colors">CECYTE 05</h3><p class="text-sm text-gray-500">Cabo San Lucas</p></div>
+                </div>
+              </a>
+            </div>
+          </section>
+
+          <section class="rounded-lg bg-white shadow-lg border border-gray-100 overflow-hidden">
+            <div class="px-6 py-5 md:px-8 border-b border-gray-100">
+              <div class="flex flex-wrap items-center gap-2">
+                <div class="h-1 w-16 bg-orange-500 rounded-full"></div>
+                <h2 class="text-2xl font-bold text-gray-800">Información de la carrera</h2>
+              </div>
+            </div>
+            <div id="accordion-collapse" data-accordion="collapse">
+              <h3 id="accordion-heading-1">
+                <button type="button" class="flex items-center justify-between w-full p-5 md:p-6 font-semibold text-left text-gray-800 border-b border-gray-100 hover:bg-gray-50 focus:ring-2 focus:ring-green-500/20 transition-all" data-accordion-target="#accordion-body-1" aria-expanded="true" aria-controls="accordion-body-1">
+                  <span class="flex items-center gap-2"><i class="fas fa-lightbulb text-orange-500"></i>Justificación de la carrera</span>
+                  <svg data-accordion-icon class="w-5 h-5 shrink-0 transition-transform duration-300 text-gray-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414-1.414l5-5A1 1 0 0110 3z" clip-rule="evenodd"></path></svg>
+                </button>
+              </h3>
+              <div id="accordion-body-1" class="hidden" aria-labelledby="accordion-heading-1">
+                <div class="p-5 md:p-6 bg-gray-50 border-b border-gray-100">
+                  <p class="text-gray-700 leading-relaxed">La carrera de Técnico en ventas ofrece las competencias profesionales que permiten al estudiante posicionar un producto o servicio en el mercado, auxiliar en la administración del área de ventas, elaborar estudios de mercado, comercializar productos o servicios aplicando estrategias de comunicación y asesorar al cliente. Contribuye a desarrollar competencias genéricas para comprender el mundo e influir en él.</p>
+                </div>
+              </div>
+              <h3 id="accordion-heading-2">
+                <button type="button" class="flex items-center justify-between w-full p-5 md:p-6 font-semibold text-left text-gray-800 border-b border-gray-100 hover:bg-gray-50 focus:ring-2 focus:ring-green-500/20 transition-all" data-accordion-target="#accordion-body-2" aria-expanded="false" aria-controls="accordion-body-2">
+                  <span class="flex items-center gap-2"><i class="fas fa-cogs text-orange-500"></i>Desarrollo de Competencias</span>
+                  <svg data-accordion-icon class="w-5 h-5 shrink-0 transition-transform duration-300 text-gray-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414-1.414l5-5A1 1 0 0110 3z" clip-rule="evenodd"></path></svg>
+                </button>
+              </h3>
+              <div id="accordion-body-2" class="hidden" aria-labelledby="accordion-heading-2">
+                <div class="p-5 md:p-6 bg-gray-50 border-b border-gray-100">
+                  <p class="text-gray-700 leading-relaxed">Los primeros tres módulos tienen 272 horas cada uno, y los dos últimos 192, un total de 1200 horas. La formación se inicia en el segundo semestre y se concluye en el sexto. Permite incorporarse en corporativos, intermediación de comercio, servicios de investigación de mercado, entre otros.</p>
+                </div>
+              </div>
+              <h3 id="accordion-heading-3">
+                <button type="button" class="flex items-center justify-between w-full p-5 md:p-6 font-semibold text-left text-gray-800 border-b border-gray-100 hover:bg-gray-50 focus:ring-2 focus:ring-green-500/20 transition-all" data-accordion-target="#accordion-body-3" aria-expanded="false" aria-controls="accordion-body-3">
+                  <span class="flex items-center gap-2"><i class="fas fa-user-graduate text-orange-500"></i>Perfil de egreso</span>
+                  <svg data-accordion-icon class="w-5 h-5 shrink-0 transition-transform duration-300 text-gray-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414-1.414l5-5A1 1 0 0110 3z" clip-rule="evenodd"></path></svg>
+                </button>
+              </h3>
+              <div id="accordion-body-3" class="hidden" aria-labelledby="accordion-heading-3">
+                <div class="p-5 md:p-6 bg-gray-50 border-b border-gray-100">
+                  <p class="text-gray-700 leading-relaxed mb-4">Competencias profesionales:</p>
+                  <ul class="space-y-2 text-gray-700">
+                    <li class="flex items-start gap-2"><i class="fas fa-check-circle text-green-500 mt-1 shrink-0"></i>Auxilia en el proceso de administración del área de ventas</li>
+                    <li class="flex items-start gap-2"><i class="fas fa-check-circle text-green-500 mt-1 shrink-0"></i>Auxilia en la elaboración del estudio de mercado</li>
+                    <li class="flex items-start gap-2"><i class="fas fa-check-circle text-green-500 mt-1 shrink-0"></i>Auxilia en la comercialización aplicando las estrategias de comunicación</li>
+                    <li class="flex items-start gap-2"><i class="fas fa-check-circle text-green-500 mt-1 shrink-0"></i>Asesora al cliente</li>
+                    <li class="flex items-start gap-2"><i class="fas fa-check-circle text-green-500 mt-1 shrink-0"></i>Posiciona el producto y/o servicio en el mercado</li>
+                  </ul>
+                </div>
+              </div>
+              <h3 id="accordion-heading-4">
+                <button type="button" class="flex items-center justify-between w-full p-5 md:p-6 font-semibold text-left text-gray-800 border-b border-gray-100 hover:bg-gray-50 focus:ring-2 focus:ring-green-500/20 transition-all" data-accordion-target="#accordion-body-4" aria-expanded="false" aria-controls="accordion-body-4">
+                  <span class="flex items-center gap-2"><i class="fas fa-certificate text-orange-500"></i>Competencias genéricas</span>
+                  <svg data-accordion-icon class="w-5 h-5 shrink-0 transition-transform duration-300 text-gray-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414-1.414l5-5A1 1 0 0110 3z" clip-rule="evenodd"></path></svg>
+                </button>
+              </h3>
+              <div id="accordion-body-4" class="hidden" aria-labelledby="accordion-heading-4">
+                <div class="p-5 md:p-6 bg-gray-50">
+                  <p class="text-gray-700 leading-relaxed">El egresado desarrolla competencias de productividad y empleabilidad: atención al cliente, orientación al logro, planeación y organización, orientación a la mejora continua, adaptabilidad, ética profesional y trabajo en equipo.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="rounded-lg bg-white p-6 md:p-8 shadow-lg border border-gray-100 text-center">
+            <button onclick="abrirVistaPrevia('../img_recuros_pagina/img_oferta_edu/ventas/ventas_mapa.jpg')" class="inline-flex items-center gap-2 bg-green-500 hover:bg-[#0d6b20] text-white font-semibold py-3 px-6 rounded-lg shadow transition-all duration-300 hover:shadow-lg">
+              <i class="fas fa-info-circle"></i> Más información
+            </button>
+          </section>
+
+        </div>
+        <div id="modal-vista-previa" class="fixed inset-0 bg-black/80 flex items-center justify-center z-50 hidden transition-opacity duration-300">
+          <div class="relative max-w-4xl w-full mx-4">
+            <button onclick="cerrarVistaPrevia()" class="absolute -top-10 right-0 text-white hover:text-orange-500 transition-colors z-10" aria-label="Cerrar"><i class="fas fa-times-circle text-3xl"></i></button>
+            <div class="bg-white rounded-lg p-4 shadow-2xl overflow-auto max-h-[90vh]">
+              <img id="imagen-modal" src="" alt="Mapa de competencias" class="w-full h-auto rounded-lg">
+            </div>
+            <p class="text-white text-center mt-3 text-sm">Clic fuera para cerrar</p>
+          </div>
+        </div>
+      </main>
+      <script>
+        // Toggle the mobile menu
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const serviciosBtn = document.getElementById("servicios-btn");
+        const serviciosSubmenu = document.getElementById("servicios-submenu");
+        const nosotrosBtn = document.getElementById("nosotros-btn");
+        const nosotrosSubmenu = document.getElementById("nosotros-submenu");
+        const alumnosBtn = document.getElementById("alumnos-btn");
+        const alumnosSubmenu = document.getElementById("alumnos-submenu");
+        const normaBtn = document.getElementById("norma-btn");
+        const normaSubmenu = document.getElementById("norma-submenu");
+        const trnsBtn = document.getElementById("trns-btn");
+        const trnsSubmenu = document.getElementById("trns-submenu");
+  
+        menuBtn.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+        });
+  
+        serviciosBtn?.addEventListener("click", () => {
+          serviciosSubmenu.classList.toggle("hidden");
+        });
+  
+        nosotrosBtn?.addEventListener("click", () => {
+          nosotrosSubmenu.classList.toggle("hidden");
+        });
+  
+        alumnosBtn?.addEventListener("click", () => {
+          alumnosSubmenu.classList.toggle("hidden");
+        });
+  
+        normaBtn?.addEventListener("click", () => {
+          normaSubmenu.classList.toggle("hidden");
+        });
+  
+        trnsBtn?.addEventListener("click", () => {
+          trnsSubmenu.classList.toggle("hidden");
+        });
+
+        // Funciones para el modal de vista previa
+        function abrirVistaPrevia(srcImagen) {
+            const modal = document.getElementById('modal-vista-previa');
+            const imagenModal = document.getElementById('imagen-modal');
+            imagenModal.src = srcImagen;
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // Previene scroll del body
+        }
+
+        function cerrarVistaPrevia() {
+            const modal = document.getElementById('modal-vista-previa');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto'; // Restaura scroll del body
+        }
+
+        // Cerrar modal al hacer clic fuera de la imagen
+        document.getElementById('modal-vista-previa').addEventListener('click', function(e) {
+            if (e.target === this) {
+                cerrarVistaPrevia();
+            }
+        });
+
+        // Cerrar modal con tecla ESC
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                cerrarVistaPrevia();
+            }
+        });
+
+        // Animación de los acordeones al abrir
+        const accordionButtons = document.querySelectorAll('[data-accordion-target]');
+        accordionButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const targetId = this.getAttribute('data-accordion-target');
+                const targetElement = document.querySelector(targetId);
+                const icon = this.querySelector('svg[data-accordion-icon]');
+                
+                // Rotar el icono
+                if (icon) {
+                    if (targetElement.classList.contains('hidden')) {
+                        icon.style.transform = 'rotate(180deg)';
+                    } else {
+                        icon.style.transform = 'rotate(0deg)';
+                    }
+                }
+            });
+        });
+      </script>
+</body>
+</html>

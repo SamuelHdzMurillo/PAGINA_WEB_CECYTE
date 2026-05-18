@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sección de Becas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+
+  <body class="bg-gray-100 font-sans">
+
+    <!-- INCIO NAVBAR CON SUBEMENUS -->
+<nav class="bg-white shadow-lg">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+          <!-- Logo -->
+          <div class="flex-shrink-0 flex items-center">
+              <img src="../img_logos/logo_Cecyte_vertical_sin_fondo.png" alt="logo_Cecyte_vertical_sin_fondo" class="h-12 w-auto">
+          </div>
+          <!-- Responsive menu button -->
+          <div class="flex items-center sm:hidden">
+              <button id="menu-btn" class="text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700">
+                  <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                  </svg>
+              </button>
+          </div>
+          <!-- Navbar links -->
+          <div class="hidden sm:flex sm:items-center sm:ml-6">
+              <div class="relative group">
+                  <a href="../index.html" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Inicio</a>
+              </div>
+              <div class="relative group">
+                  <a href="#" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Institución</a>
+                  <!-- Submenu -->
+                  <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md z-10">
+                      <a href="../pages_institucion/pagina_historia.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Historia, Misión y Visión</a>
+
+                      <a href="../pages_institucion/planteles_cecyte.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Planteles CecyteBCS</a>
+                      
+                      <a href="../pages_institucion/planteles_emsad.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Planteles Emsad</a>
+                      
+                      <a href="../directorio_telefonico.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Directorio Telefónico</a>
+                  </div>
+              </div>
+              <div class="relative group">
+                  <a href="#" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Oferta Educativa</a>
+                  <!-- Submenu -->
+                  <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
+                      
+                      <a href="../pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Soporte  y  Mantenimiento equipo de computo</a>
+                      <a href="../pages_oferta_educativa/programacion.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programación</a>
+                      <a href="../pages_oferta_educativa/ventas.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ventas</a>
+                      <a href="../pages_oferta_educativa/ecoturismo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ecoturismo</a>
+                      <a href="../pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Producción industrial de alimentos</a>
+                      <a href="../pages_oferta_educativa/mantenimiento_industrial.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Mantenimiento Industrial</a>
+                      <a href="../pages_oferta_educativa/servicios_de_hoteleria.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Servicios de Hotelería</a>
+                  </div>
+              </div>
+              <div class="relative group">
+                  <a href="#" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Alumnos</a>
+                  <!-- Submenu -->
+                  <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
+                      
+                      <a href="../pages_alumnos/becas.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Becas</a>
+                      <a href="../pages_alumnos/prog_acompanamiento.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programa de Acompañamiento</a>
+                      <a href="../pages_alumnos/requisitos_de_ingreso.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Requisitos de Ingreso</a>
+                  </div>
+              </div>
+
+              <div class="relative group">
+                <a href="#" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Normatividad</a>
+                <!-- Submenu -->
+                <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
+                    
+                    <a href="../pages_normatividad/manuales_de_procedimientos.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Manuales de Procedimientos</a>
+                    
+
+                    <a href="../pages_normatividad/manuales_de_org.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Manuales de Organización</a>
+
+                    <a href="https://drive.google.com/file/d/1w1kARXVhw-SFsSY7q7JPBH4MgAqN8C_S/view?usp=drive_link" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Reglamento interno</a>
+
+                    <a href="https://drive.google.com/file/d/13m142kMwEJ6hj8xaDJXu-XdA-jAkO9jb/view?usp=sharing" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Código de Conducta</a>
+
+                    <a href="https://drive.google.com/file/d/1lIJBD8IXxHcM3hwp7v3VmG2X1EJZXKnG/view?usp=sharing" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Protocolo de Seguridad </a>
+
+                    
+    
+                </div>
+            </div>
+
+              <div class="relative group">
+                <a href="https://transparencia.cecytebcs.edu.mx/" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Transparencia</a>
+                <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
+
+                  <a href="https://transparencia.cecytebcs.edu.mx/informacion-publica/articulo-75" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Artículo 75</a>
+                    
+                  <a href="../pages_transparencia/cuenta_publica.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Cuenta pública</a>
+
+                  <a href="../pages_transparencia/ley_diciplina.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ley de disciplina Financiera </a>
+
+                  
+  
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+  
+  <!-- Responsive Menu -->
+  <div class="sm:hidden hidden" id="mobile-menu">
+<a href="#" class="block text-gray-700 hover:text-green-600 px-4 py-2">Inicio</a>
+<div class="block">
+    <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="servicios-btn">
+        Institución
+        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+    </button>
+    <!-- Submenu -->
+    <div class="hidden" id="servicios-submenu">
+        <a href="../pages_institucion/pagina_historia.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Historia, Misión y Visión</a>
+        <a href="../pages_institucion/planteles_cecyte.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Planteles CecyteBCS</a>
+        <a href="../pages_institucion/planteles_emsad.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Planteles Emsad</a>
+        <a href="../directorio_telefonico.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Directorio Telefonico</a>
+    </div>
+</div>
+<div class="block">
+    <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="nosotros-btn">
+        Oferta Educativa
+        
+        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+    </button>
+    
+    <!-- Submenu -->
+    <div class="hidden" id="nosotros-submenu">
+        <a href="../pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Soporte y Mantenimiento equipo de cómputo</a>
+        <a href="../pages_oferta_educativa/programacion.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programación</a>
+        <a href="../pages_oferta_educativa/ventas.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ventas</a>
+        <a href="../pages_oferta_educativa/ecoturismo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ecoturismo</a>
+        <a href="../pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Producción industrial de alimentos</a>
+        <a href="../pages_oferta_educativa/mantenimiento_industrial.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Mantenimiento industrial</a>
+        <a href="../pages_oferta_educativa/servicios_de_hoteleria.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Servicios de Hotelería</a>
+    </div>
+</div>
+<div class="block">
+  <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="alumnos-btn">
+    Alumnos
+    <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+    </svg>
+  </button>
+  <!-- Submenu -->
+  <div class="hidden" id="alumnos-submenu">
+    <a href="../pages_alumnos/becas.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Becas</a>
+    <a href="../pages_alumnos/prog_acompanamiento.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programa de Acompañamiento</a>
+    <a href="../pages_alumnos/requisitos_de_ingreso.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Requisitos de Ingreso</a>
+  </div>
+</div>
+
+
+
+<div class="block">
+  <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="norma-btn">
+    Normatividad
+    <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+    </svg>
+  </button>
+  <!-- Submenu -->
+  <div class="hidden" id="norma-submenu">
+    <a href="../pages_normatividad/manuales_de_procedimientos.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Manual de Procedimientos</a>
+    <a href="../pages_normatividad/manuales_de_org.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Manual de Organizacion</a>
+  </div>
+</div>
+
+<div class="block">
+  <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="trns-btn">
+    Transparencia
+    <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+    </svg>
+  </button>
+  <!-- Submenu -->
+  <div class="hidden" id="trns-submenu">
+    <a href="https://transparencia.cecytebcs.edu.mx/" class="block px-4 py-4 text-gray-700 hover:bg-gray-100">Artiuclo 75</a>
+    <a href="../pages_transparencia/cuenta_publica.html" class="block px-4 py-4 text-gray-700 hover:bg-gray-100">Cuenta pública</a>
+    <a href="../pages_transparencia/ley_diciplina.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ley de disciplina</a>
+  </div>
+</div>
+
+</div>
+</div>
+
+  <div class="w-full h-1 bg-orange-500"></div>
+</nav>
+<!-- FIN NAVBAR CON SUBEMENUS -->
+    <!-- Header Section -->
+    <header class="bg-green-700 text-white py-10">
+      <div class="max-w-5xl mx-auto text-center">
+        <h1 class="text-5xl font-bold mb-4">Explora Nuestras Becas</h1>
+        <p class="text-xl font-light">
+          Descubre las oportunidades que tenemos para apoyarte en tu educación
+        </p>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="max-w-5xl mx-auto p-6 min-h-[calc(100vh-500px)]">
+      
+
+      <!-- Becas Benito Juárez -->
+      <div class="bg-white rounded-lg shadow-lg mb-6 overflow-hidden">
+        <div
+          class="flex items-center justify-between p-6 bg-blue-50 cursor-pointer border-b"
+          onclick="toggleInfo('beca-benito-juarez')"
+        >
+          <h2 class="text-2xl font-semibold text-gray-800 flex items-center">
+            <i class="fas fa-book-open mr-3 text-green-600"></i> Becas Benito
+            Juárez
+          </h2>
+          <i
+            class="fas fa-chevron-down text-gray-600"
+            id="icon-beca-benito-juarez"
+          ></i>
+        </div>
+        <div id="beca-benito-juarez" class="hidden px-6 py-4 space-y-4">
+          <div class="bg-gray-50 p-4 rounded-lg">
+            <h3 class="text-xl font-semibold text-gray-700">
+              Beca Benito Juárez 
+            </h3>
+            <p class="text-gray-600">
+              <p>Documentos de descarga:</p>
+              <br>
+              <p>procesos de Beca Universal <a  class="text-orange-600 underline hover:text-orange-800" href="https://drive.google.com/file/d/1m1uOQ6UQXlvBFoegsGPpxOKyNTJVPNlg/view?usp=sharing">(DESCARGAR)</a></p>
+
+              <p>Capacitación SIREL <a class="text-orange-600 underline hover:text-orange-800" href="https://drive.google.com/file/d/1vrO1SG21jMZwxAKL3TBI1fQtDiKRELfY/view?usp=sharing">(DESCARGAR)</a></p>
+
+              <p>Guia de usuario SIREL <a class="text-orange-600 underline hover:text-orange-800" href="https://drive.google.com/file/d/1Ab-kJbYz-EwGOtHDf3WA-UBtJQKCez90/view?usp=sharing">(DESCARGAR)</a></p>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Becas Estatales -->
+      <div class="bg-white rounded-lg shadow-lg mb-6 overflow-hidden">
+        <div
+          class="flex items-center justify-between p-6 bg-blue-50 cursor-pointer border-b"
+          onclick="toggleInfo('beca-estatales')"
+        >
+          <h2 class="text-2xl font-semibold text-gray-800 flex items-center">
+            <i class="fas fa-university mr-3 text-blue-600"></i> Becas Estatales
+          </h2>
+          <i
+            class="fas fa-chevron-down text-gray-600"
+            id="icon-beca-estatales"
+          ></i>
+        </div>
+        <div id="beca-estatales" class="hidden px-6 py-4 space-y-4">
+          
+          <div class="bg-gray-50 p-4 rounded-lg">
+            <h3 class="text-xl font-semibold text-gray-700">
+              BECA DE EXCELENCIA
+            </h3>
+            <p class="text-gray-600">
+              La Beca a la Excelencia académica es un beneficio económico que
+              otorga el Gobierno del Estado a los alumnos destacados por su alto
+              nivel académico y observen una conducta ejemplar y solidaria
+              dentro y fuera de la institución donde se encuentren realizando
+              sus estudios, con el fin de colaborar en el cumplimiento de los
+              objetivos y metas, que en el ramo educativo establece en el plan
+              estatal de desarrollo y fomentar en México una Educación de
+              Calidad.
+            </p>
+            <br />
+            <a
+              class="text-orange-600 underline hover:text-orange-800"
+              href="https://drive.google.com/file/d/1IfDO-9VDpde1lk-vh8PQeVbw1brfpcgb/view?usp=sharing"
+              >Clic aqui para más Información.</a
+            >
+          </div>
+          
+
+        
+
+          <div class="bg-gray-50 p-4 rounded-lg">
+            <h3 class="text-xl font-semibold text-gray-700">
+              BECA BENITO JUÁREZ
+            </h3>
+            <p class="text-gray-600">
+              Beca Universal para Estudiantes de Educación Media Superior Benito
+              Juárez
+            </p>
+            <br />
+            <p>
+              Es un apoyo del Gobierno de México dirigido a las y los alumnos
+              que cursan el bachillerato o profesional técnico bachiller en
+              alguna escuela pública. Tienen prioridad las y los alumnos
+              inscritos en escuelas de modalidad escolarizada o mixta que se
+              ubican en localidades prioritarias. Al comenzar el semestre o
+              periodo escolar, debes ponerte en contacto con el enlace de becas
+              de tu escuela para corroborar que estés inscrita o inscrito y
+              entregar tus datos de contacto cuando el plantel te lo solicite.
+            </p>
+            <br />
+            <a
+              class="text-orange-600 underline hover:text-orange-800"
+              href="https://www.gob.mx/becasbenitojuarez/documentos/reglas-de-operacion-2025-del-programa-beca-universal-para-estudiantes-de-educacion-media-superior-benito-juarez"
+              >Clic aqui para más Información.</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-white dark:bg-gray-900 w-full">
+      <div class="border-t-4 border-gray-400 dark:border-gray-1000"></div>
+      <div class="mx-auto w-full max-w-screen-xl">
+        <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
+          <div>
+            <h2
+              class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+            >
+              Sitios de Interés
+            </h2>
+            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+              <li class="mb-4">
+                <a href="https://itaibcs.net/" class="hover:underline"
+                  >ITAI del Estado de B.C.S.</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  href="https://transparencia.cre.gob.mx/plataforma-nacional-de-transparencia-sipot/"
+                  class="hover:underline"
+                  >SIPOT</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2
+              class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+            >
+              Domicilio
+            </h2>
+            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+              <li class="mb-4">
+                <p>Golfo de California No. 190</p>
+              </li>
+              <li class="mb-4">
+                <p>Col. El Conchalito.</p>
+              </li>
+              <li class="mb-4">
+                <p>Cp: 23090</p>
+              </li>
+              <li class="mb-4">
+                <p>La Paz B.C.S</p>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2
+              class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+            >
+              Teléfonos
+            </h2>
+            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+              <li class="mb-4">
+                <a href="#" class="hover:underline">612 - 12 32244</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">612 - 12 40430</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">612 - 12 40656</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">612 - 12 40656</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2
+              class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+            >
+              SIGUENOS
+            </h2>
+            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+              <li class="mb-4">
+                <a
+                  href="https://www.facebook.com/DGCECYTEBCS"
+                  class="hover:underline"
+                  >FACEBOOK</a
+                >
+              </li>
+
+              <li class="mb-4">
+                <a
+                  href="https://x.com/CECYTE_BCS?lang=es"
+                  class="hover:underline"
+                  >x</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  href="https://www.youtube.com/channel/UCAjoT3ODBsMhq75-KFJuNYA"
+                  class="hover:underline"
+                  >YOUTUBE</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center p-4 bg-gray-800 text-white text-sm">
+        © 2024 Departamento de Informática. Todos los derechos reservados.
+      </div>
+    </footer>
+
+    <script>
+      
+      // Toggle the mobile menu
+      const menuBtn = document.getElementById('menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const serviciosBtn = document.getElementById('servicios-btn');
+            const serviciosSubmenu = document.getElementById('servicios-submenu');
+            const nosotrosBtn = document.getElementById('nosotros-btn');
+            const nosotrosSubmenu = document.getElementById('nosotros-submenu');
+            const alumnosBtn = document.getElementById('alumnos-btn');
+            const alumnosSubmenu = document.getElementById('alumnos-submenu');
+            const normaBtn = document.getElementById('norma-btn');
+            const normaSubmenu = document.getElementById('norma-submenu');
+            const trnsBtn = document.getElementById('trns-btn');
+            const trnsSubmenu = document.getElementById('trns-submenu');
+    
+            menuBtn.addEventListener('click', () => {
+              mobileMenu.classList.toggle('hidden');
+            });
+    
+            serviciosBtn?.addEventListener('click', () => {
+              serviciosSubmenu.classList.toggle('hidden');
+            });
+    
+            nosotrosBtn?.addEventListener('click', () => {
+              nosotrosSubmenu.classList.toggle('hidden');
+            });
+    
+            alumnosBtn?.addEventListener('click', () => {
+              alumnosSubmenu.classList.toggle('hidden');
+            });
+    
+            normaBtn?.addEventListener('click', () => {
+              normaSubmenu.classList.toggle('hidden');
+            });
+    
+            trnsBtn?.addEventListener('click', () => {
+              trnsSubmenu.classList.toggle('hidden');
+            });
+
+      function toggleInfo(id) {
+        const element = document.getElementById(id);
+        const icon = document.getElementById("icon-" + id);
+        if (element.classList.contains("hidden")) {
+          element.classList.remove("hidden");
+          icon.classList.replace("fa-chevron-down", "fa-chevron-up");
+        } else {
+          element.classList.add("hidden");
+          icon.classList.replace("fa-chevron-up", "fa-chevron-down");
+        }
+      }
+    </script>
+  </body>
+</html>

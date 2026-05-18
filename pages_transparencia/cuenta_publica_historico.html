@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Información Presupuestal</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link
+    href="https://unpkg.com/flowbite@^2.1/dist/flowbite.min.css"
+    rel="stylesheet"
+  />
+ 
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+  <script src="https://unpkg.com/flowbite@^2.1/dist/flowbite.min.js"></script>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<!-- INCIO NAVBAR CON SUBEMENUS -->
+<nav class="bg-white shadow-lg">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+          <!-- Logo -->
+          <div class="flex-shrink-0 flex items-center">
+              <img src="../img_logos/logo_Cecyte_vertical_sin_fondo.png" alt="logo_Cecyte_vertical_sin_fondo" class="h-12 w-auto">
+          </div>
+          <!-- Responsive menu button -->
+          <div class="flex items-center sm:hidden">
+              <button id="menu-btn" class="text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700">
+                  <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                  </svg>
+              </button>
+          </div>
+          <!-- Navbar links -->
+          <div class="hidden sm:flex sm:items-center sm:ml-6">
+              <div class="relative group">
+                  <a href="../index.html" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Inicio</a>
+              </div>
+              <div class="relative group">
+                  <a href="#" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Institución</a>
+                  <!-- Submenu -->
+                  <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md z-10">
+                      <a href="../pages_institucion/pagina_historia.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Historia, Misión y Visión</a>
+
+                      <a href="../pages_institucion/planteles_cecyte.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Planteles CecyteBCS</a>
+                      
+                      <a href="../pages_institucion/planteles_emsad.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Planteles Emsad</a>
+                      
+                      <a href="../directorio_telefonico.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Directorio Telefónico</a>
+                  </div>
+              </div>
+              <div class="relative group">
+                  <a href="#" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Oferta Educativa</a>
+                  <!-- Submenu -->
+                  <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
+                      
+                      <a href="../pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Soporte  y  Mantenimiento equipo de computo</a>
+                      <a href="../pages_oferta_educativa/programacion.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programacion</a>
+                      <a href="../pages_oferta_educativa/ventas.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ventas</a>
+                      <a href="../pages_oferta_educativa/ecoturismo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ecoturismo</a>
+                      <a href="../pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Producción industrial de alimentos</a>
+                      <a href="../pages_oferta_educativa/mantenimiento_industrial.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Mantenimiento Industrial</a>
+                      <a href="../pages_oferta_educativa/servicios_de_hoteleria.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Servicios de Hoteleria</a>
+                  </div>
+              </div>
+              <div class="relative group">
+                  <a href="#" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Alumnos</a>
+                  <!-- Submenu -->
+                  <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
+                      
+                      <a href="../pages_alumnos/becas.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Becas</a>
+                      <a href="../pages_alumnos/prog_acompanamiento.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programa de Acompañamiento</a>
+                      <a href="../pages_alumnos/requisitos_de_ingreso.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Requisitos de Ingreso</a>
+                  </div>
+              </div>
+
+              <div class="relative group">
+                <a href="#" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Normatividad</a>
+                <!-- Submenu -->
+                <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
+                    
+                    <a href="../pages_normatividad/manuales_de_procedimientos.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Manuales de Procedimientos</a>
+                    
+
+                    <a href="../pages_normatividad/manuales_de_org.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Manuales de Organizacion</a>
+
+                    <a href="https://drive.google.com/file/d/1w1kARXVhw-SFsSY7q7JPBH4MgAqN8C_S/view?usp=drive_link" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Reglamento interno</a>
+
+                    <a href="https://drive.google.com/file/d/13m142kMwEJ6hj8xaDJXu-XdA-jAkO9jb/view?usp=sharing" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Codigo de Conducta</a>
+
+                    <a href="https://drive.google.com/file/d/1lIJBD8IXxHcM3hwp7v3VmG2X1EJZXKnG/view?usp=sharing" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Protocolo de Seguridad </a>
+
+                    
+    
+                </div>
+            </div>
+
+              <div class="relative group">
+                <a href="https://transparencia.cecytebcs.edu.mx/" class="text-gray-700 hover:text-green-600 px-5 py-5 rounded-md text-sm font-medium">Transparencia</a>
+                <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
+
+                  <a href="https://transparencia.cecytebcs.edu.mx/informacion-publica/articulo-75" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Articulo 75</a>
+                    
+                  <a href="../pages_transparencia/cuenta_publica.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Cuenta publica</a>
+
+                  <a href="../pages_transparencia/ley_diciplina.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ley de diciplina Financiera </a>
+
+                  
+  
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+  
+  <!-- Responsive Menu -->
+  <div class="sm:hidden hidden" id="mobile-menu">
+<a href="#" class="block text-gray-700 hover:text-green-600 px-4 py-2">Inicio</a>
+<div class="block">
+    <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="servicios-btn">
+        Institución
+        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+    </button>
+    <!-- Submenu -->
+    <div class="hidden" id="servicios-submenu">
+        <a href="../pages_institucion/pagina_historia.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Historia, Misión y Visión</a>
+        <a href="../pages_institucion/planteles_cecyte.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Planteles CecyteBCS</a>
+        <a href="../pages_institucion/planteles_emsad.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Planteles Emsad</a>
+        <a href="../directorio_telefonico.html" class="block px-8 py-2 text-gray-700 hover:bg-gray-100">Directorio Telefonico</a>
+    </div>
+</div>
+<div class="block">
+    <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="nosotros-btn">
+        Oferta Educativa
+        
+        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+    </button>
+    
+    <!-- Submenu -->
+    <div class="hidden" id="nosotros-submenu">
+        <a href="../pages_oferta_educativa/mantenimiento_equipo_de_computo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Soporte y Mantenimiento equipo de cómputo</a>
+        <a href="../pages_oferta_educativa/programacion.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programación</a>
+        <a href="../pages_oferta_educativa/ventas.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ventas</a>
+        <a href="../pages_oferta_educativa/ecoturismo.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ecoturismo</a>
+        <a href="../pages_oferta_educativa/produccion_industrial_de_alimentos.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Producción industrial de alimentos</a>
+        <a href="../pages_oferta_educativa/mantenimiento_industrial.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Mantenimiento industrial</a>
+        <a href="../pages_oferta_educativa/servicios_de_hoteleria.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Servicios de Hotelería</a>
+    </div>
+</div>
+<div class="block">
+  <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="alumnos-btn">
+    Alumnos
+    <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+    </svg>
+  </button>
+  <!-- Submenu -->
+  <div class="hidden" id="alumnos-submenu">
+    <a href="../pages_alumnos/becas.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Becas</a>
+    <a href="../pages_alumnos/prog_acompanamiento.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Programa de Acompañamiento</a>
+    <a href="../pages_alumnos/requisitos_de_ingreso.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Requisitos de Ingreso</a>
+  </div>
+</div>
+
+
+
+<div class="block">
+  <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="norma-btn">
+    Normatividad
+    <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+    </svg>
+  </button>
+  <!-- Submenu -->
+  <div class="hidden" id="norma-submenu">
+    <a href="../pages_normatividad/manuales_de_procedimientos.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Manual de Procedimientos</a>
+    <a href="../pages_normatividad/manuales_de_org.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Manual de Organizacion</a>
+  </div>
+</div>
+
+<div class="block">
+  <button class="w-full text-left text-gray-700 hover:text-green-600 px-4 py-2 flex justify-between items-center focus:outline-none" id="trns-btn">
+    Transparencia
+    <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+    </svg>
+  </button>
+  <!-- Submenu -->
+  <div class="hidden" id="trns-submenu">
+    <a href="https://transparencia.cecytebcs.edu.mx/" class="block px-4 py-4 text-gray-700 hover:bg-gray-100">Artiuclo 75</a>
+    <a href="../pages_transparencia/cuenta_publica.html" class="block px-4 py-4 text-gray-700 hover:bg-gray-100">Cuenta publica</a>
+    <a href="../pages_transparencia/ley_diciplina.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Ley de diciplina</a>
+  </div>
+</div>
+
+</div>
+</div>
+
+  <div class="w-full h-1 bg-orange-500"></div>
+</nav>
+<!-- FIN NAVBAR CON SUBEMENUS -->
+
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Contenedor Principal -->
+  <div class="container mx-auto px-4 py-8">
+
+    <!-- Título Principal 2023 -->
+    <h1 class="text-3xl font-bold text-center mb-6">INFORMACIÓN PRESUPUESTAL 2023</h1>
+    <div class="section-separator"></div>
+
+    <!-- Primer Trimestre 2023 -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold text-center mb-4">PRIMER TRIMESTRE</h2>
+      <ul class="list-disc list-inside space-y-2 text-center">
+        <li>
+          <a href="https://drive.google.com/file/d/14ZA08DvrV1B8Xr7nfXICZv3MYN1Ggh5T/view" class="text-green-600 hover:underline">I Información contable 1er Trim 2023.pdf</a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/file/d/1eCLo6Vz7B8tAZXbIwBfMATmG1CrfOg2x/view" class="text-green-600 hover:underline">II Información presupuestal 1er Trim 2023.pdf</a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/file/d/1eCLo6Vz7B8tAZXbIwBfMATmG1CrfOg2x/view" class="text-green-600 hover:underline">III Información programática 1er Trim 2023.pdf</a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/file/d/1JUbbI7tqH0r3pNszCFqx1Yisl7YOESx6/view" class="text-green-600 hover:underline">IV Información de Resultado 1er Trim 2023.pdf</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Segundo Trimestre 2023 -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold text-center mb-4">SEGUNDO TRIMESTRE</h2>
+      <ul class="list-disc list-inside space-y-2 text-center">
+        <li>
+          <a href="https://drive.google.com/file/d/1_Gv5VIZ1BqZ7BR74VPTEVxxqcKBi5l0c/view" class="text-green-600 hover:underline">I Información contable 2do Trim 2023.pdf</a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/file/d/1rGLrMpBhJUCPjRQVVPOQG5Yxiia90uUa/view" class="text-green-600 hover:underline">II Información presupuestal 2do Trim 2023.pdf</a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/file/d/1T57An1uEkoCYTbLJdHbPnianVEQ8JjIy/view" class="text-green-600 hover:underline">III Información programática 2do Trim 2023.pdf</a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/drive/folders/1Oo3K9YMGS5-ZvmKuVyls1zshNcfsI3e3" class="text-green-600 hover:underline">IV Información de Resultado 2do Trim 2023.pdf</a>
+        </li>
+      </ul>
+      <h3 class="text-xl font-medium text-center mt-6 mb-4">Subsidios y apoyos del CECyTE BCS</h3>
+      <ul class="list-disc list-inside space-y-2 text-center">
+        <li>
+          <a href="https://drive.google.com/file/d/1bkORvGbIANMPF-ZOYjIa7HIvt3M47viC/view" class="text-green-600 hover:underline">AYUDAS Y SUBSIDIOS AL 31 MAR 2023.pdf</a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/file/d/1T7-bbPlhXCgqRu8_Xou2_3V5vJIzHPZ8/view" class="text-green-600 hover:underline">AYUDAS Y SUBSIDIOS AL 31 JUN 2023.pdf</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Tercer Trimestre 2023 -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold text-center mb-4">TERCER TRIMESTRE</h2>
+      <ul class="list-disc list-inside space-y-2 text-center">
+        <li>
+          <a href="https://drive.google.com/file/d/1qCo1Ym1LgHuZZuX71CaTQabeZk3x_Aqd/view" class="text-green-600 hover:underline">I Información contable 3er Trim 2023.pdf</a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/file/d/1fnECiaTwqV4P8kHwdIVXjBihTdobkV2t/view" class="text-green-600 hover:underline">II Información presupuestal 3er Trim 2023.pdf</a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/file/d/1_BBRmB8xUjio8aNUG8_zODdTTwYFvX4d/view" class="text-green-600 hover:underline">III Información programática 3er Trim 2023.pdf</a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/file/d/1YjDHndBCY-y7ZKS0pwfSlgnOpsrWmX2_/view" class="text-green-600 hover:underline">IV Información de Resultado 3er Trim 2023.pdf</a>
+        </li>
+      </ul>
+      <h3 class="text-xl font-medium text-center mt-6 mb-4">Subsidios y apoyos del CECyTE BCS</h3>
+      <ul class="list-disc list-inside space-y-2 text-center">
+        <li>
+          <a href="https://drive.google.com/file/d/1Ko2A0NwevMBe3VumRsm9hL3DoUwJ_yAz/view" class="text-green-600 hover:underline">AYUDAS Y SUBSIDIOS AL 30 SEP 2023.pdf</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Cuarto Trimestre 2023 -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold text-center mb-4">CUARTO TRIMESTRE</h2>
+      <h3 class="text-xl font-medium text-center mt-6 mb-4">Subsidios y apoyos del CECyTE BCS</h3>
+      <ul class="list-disc list-inside space-y-2 text-center">
+        <li>
+          <a href="https://drive.google.com/file/d/17TxnXIWiO4caUi57dcG7-5okK8WGRCEt/view" class="text-green-600 hover:underline">AYUDAS Y SUBSIDIOS AL 31 DIC 2023.pdf</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Inventario 2023 -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold text-center mb-4">INVENTARIO PRIMER SEMESTRE 2023</h2>
+      <ul class="list-disc list-inside space-y-2 text-center">
+        <li>
+          <a href="https://docs.google.com/spreadsheets/d/1JajG6vF0almamRMq9SXMqJ5NCZ0PqMCK/edit?gid=1836174281#gid=1836174281" class="text-green-600 hover:underline">Bienes Muebles</a>
+        </li>
+        <li>
+          <a href="https://docs.google.com/spreadsheets/d/1ZI5woO2IokpJoRUyUdO3xoXvr6p4WIQN/edit?gid=1234154943#gid=1234154943" class="text-green-600 hover:underline">Bienes Inmuebles</a>
+        </li>
+      </ul>
+      <h2 class="text-2xl font-semibold text-center mt-8 mb-4">INVENTARIO SEGUNDO SEMESTRE 2023</h2>
+      <ul class="list-disc list-inside space-y-2 text-center">
+        <li>
+          <a href="https://docs.google.com/spreadsheets/d/1F8Df0PQ-VkNqxkhG_Lass50TFhc4xYrm/edit?gid=392815705#gid=392815705" class="text-green-600 hover:underline">Bienes Muebles</a>
+        </li>
+        <li>
+          <a href="https://docs.google.com/spreadsheets/d/1VatOm-qlNpGLt3v9Ip9uye13Sfm4S6ls/edit?gid=1233721711#gid=1233721711" class="text-green-600 hover:underline">Bienes Inmuebles</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Título Principal 2022 -->
+    <h1 class="text-3xl font-bold text-center mb-6">INFORMACIÓN PRESUPUESTAL 2022</h1>
+
+    <!-- Primer Trimestre 2022 -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold text-center mb-4">PRIMER TRIMESTRE</h2>
+      <ul class="list-disc list-inside space-y-2 text-center">
+        <li>
+          <a href="https://drive.google.com/file/d/18H2lfezi_1L6wPZqgyrziuNsbY9WTn0A/view" class="text-green-600 hover:underline">I Información contable 1er Trim 2022.pdf</a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/file/d/1R57V0zgzCoW1YjP_DIxMn90i5xAz3Ifg/view" class="text-green-600 hover:underline">II Información presupuestal 1er Trim 2022.pdf</a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/file/d/1QdhIdrQM79qCC8MVWOJLtsybS33IZyln/view" class="text-green-600 hover:underline">III Información programática 1er Trim 2022.pdf</a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/file/d/1su9fd-Iu7h6XbLaNgILt8kR1CYwStUYk/view" class="text-green-600 hover:underline">IV Información_de Resultado_1er_Trim_2022.pdf</a>
+        </li>
+      </ul>
+
+      <h3 class="text-xl font-medium text-center mt-6 mb-4">Subsidios y apoyos del CECyTE BCS</h3>
+      <ul class="list-disc list-inside space-y-2 text-center">
+        <li>
+          <a href="https://docs.google.com/spreadsheets/d/1-PoXcuLNSg9825oRiE99D_-QHW6xxlJN/edit?gid=1834375193#gid=1834375193" class="text-green-600 hover:underline">LTAIPBCSA75FXVA</a>
+        </li>
+        <li>
+          <a href="https://docs.google.com/spreadsheets/d/1DTSHOpiLAFMTXYuUcAysW86GAm-cgoyT/edit?gid=923240705#gid=923240705" class="text-green-600 hover:underline">LTAIPBCSA75FXVB</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Segundo Trimestre 2022 -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold text-center mb-4">SEGUNDO TRIMESTRE</h2>
+      <ul class="list-disc list-inside space-y-2 text-center">
+        <li>
+          <a href="https://drive.google.com/file/d/1v6MTPasNiktndyqm2Qj9eRFJYYnTj_yD/view" class="text-green-600 hover:underline">I Información contable 2o Trim 2022.pdf</a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/file/d/1aQYgs_jzhWlMTVDDPJlU48rcjgm7a_3_/view" class="text-green-600 hover:underline">II Información presupuestal 2o Trim 2022.pdf</a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/file/d/1T57An1uEkoCYTbLJdHbPnianVEQ8JjIy/view" class="text-green-600 hover:underline">III Información programática 2o Trim 2022.pdf</a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/file/d/191ng616gyeyJUnsCCXMF0pu2NVbAJF7m/view" class="text-green-600 hover:underline">IV Indicadores de Resultado 2o Trim 2022.pdf</a>
+        </li>
+      </ul>
+
+      <h3 class="text-xl font-medium text-center mt-6 mb-4">Subsidios y apoyos del CECyTE BCS</h3>
+      <ul class="list-disc list-inside space-y-2 text-center">
+        <li>
+          <a href="https://docs.google.com/spreadsheets/d/1LPIfzWYzHr6yGh5ru4IsSbWRil_cdGRB/edit?gid=305325851#gid=305325851" class="text-green-600 hover:underline">LTAIPBCSA75FXVA.xlsx</a>
+        </li>
+        <li>
+          <a href="https://docs.google.com/spreadsheets/d/1nKwoSZesA3ytcFNV_5Bn2eKngisKj4tQ/edit?gid=693199539#gid=693199539" class="text-green-600 hover:underline">LTAIPBCSA75FXVB.xlsx</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Tercer Trimestre 2022 -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold text-center mb-4">TERCER TRIMESTRE</h2>
+      <ul class="list-disc list-inside space-y-2 text-center">
+        <li>
+          <a href="https://drive.google.com/file/d/1EmBQFeuvb16U--9d4aQaV7RCOC0duLcS/view" class="text-green-600 hover:underline">I Información Financiera al 3er Trim 2022.pdf</a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/file/d/1tZG7PSgBM1KA9jiJS-cQAEp6w2o6r5Mt/view" class="text-green-600 hover:underline">II Información presupuestal al 3er Trim 2022.pdf</a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/file/d/13VZdmG-HMlabZXsxMF3dNHkIPWY80mmK/view" class="text-green-600 hover:underline">III Información programática al 3er Trim 2022.pdf</a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/file/d/1hf3YRhPk4nDcRgIB84REn6zNvw8NXegE/view" class="text-green-600 hover:underline">IV Indicadores de Resultado 3er Trim 2022.pdf</a>
+        </li>
+      </ul>
+
+      <h3 class="text-xl font-medium text-center mt-6 mb-4">Subsidios y apoyos del CECyTE BCS</h3>
+      <ul class="list-disc list-inside space-y-2 text-center">
+        <li>
+          <a href="https://docs.google.com/spreadsheets/d/1cJxShn4ORAO8sCLr41AJ_nSfIZye2485/edit?gid=1666971915#gid=1666971915" class="text-green-600 hover:underline">LTAIPBCSA75FXVA.xlsx</a>
+        </li>
+        <li>
+          <a href="https://docs.google.com/spreadsheets/d/17SCSkjrPd9LnQjsrVr-8Jikgs9GqKJ5U/edit?gid=2135092565#gid=2135092565" class="text-green-600 hover:underline">LTAIPBCSA75FXVB.xlsx</a>
+        </li>
+      </ul>
+    </section>
+
+    
+
+    <!-- Presupuesto de Egresos de la Federación -->
+    <h1 class="text-3xl font-bold text-center mb-6">PRESUPUESTO DE EGRESOS DE LA FEDERACIÓN</h1>
+
+    <!-- Informes Trimestrales 2023 -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold text-center mb-4">Informes Trimestrales </h2>
+      <h2 class="text-2xl font-semibold text-center mt-8 mb-4">2023</h2>
+      <ul class="list-disc list-inside space-y-2 text-center">
+        <li>
+          <a href="https://drive.google.com/drive/folders/1Gg6deWFtrDmf1XaOrBQNmEnEyE-SiYVC" class="text-green-600 hover:underline">1er. Informe Art 37 2023</a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/drive/folders/1WxEoyYZXkoFd0gMYm0RqaM_wdpMyg068" class="text-green-600 hover:underline">2do. Informe Art 37 2023</a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/drive/folders/1iadHvXn5rt5flxDWZLK3nxGfzfstDd8g" class="text-green-600 hover:underline">3er. Informe Art 37 2023</a>
+        </li>
+        <li>
+            <a href="https://drive.google.com/drive/folders/1_QtGfUrOF4YukLFKegYnXnd1-FvPV75O" class="text-green-600 hover:underline">– Ejercicio del Gasto</a>
+          </li>
+      </ul>
+      <h2 class="text-2xl font-semibold text-center mt-8 mb-4">2022</h2>
+      <ul class="list-disc list-inside space-y-2 text-center">
+       
+        <li>
+          <a href="https://drive.google.com/drive/folders/1_b9eCe9_1UjTO01JGsjHKoJ3jm9ZL21P" class="text-green-600 hover:underline">1er. Informe Art. 36 2022</a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/drive/folders/1lUbAZ5v3rqLUwD1lzyJQ53akhhIkY0r_" class="text-green-600 hover:underline">2do. Informe Art. 36 2022</a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/drive/folders/1TROHOoE8pokxuBe_92PHxUhUWoNYoEVx" class="text-green-600 hover:underline">3er. Informe Art. 36 2022</a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/drive/folders/1Ifi9r5nyyPQWtY2RhW8eQCVMXPgyOrKg" class="text-green-600 hover:underline">4to. Informe Art. 36 2022</a>
+        </li>
+        <li>
+            <a href="https://drive.google.com/drive/folders/1CFQDhvTBMAxkaedkUlUMhCHRcPE0A5CL" class="text-green-600 hover:underline">– Ejercicio del Gasto</a>
+          </li>
+      </ul>
+
+      <h2 class="text-2xl font-semibold text-center mt-8 mb-4">Estados Financieros 2021</h2>
+      <ul class="list-disc list-inside space-y-2 text-center">
+       
+        <li>
+          <a href="https://drive.google.com/file/d/1iUNTiSIMza0hhQ3axRWLKdKtHhEDx0Mx/view" class="text-green-600 hover:underline">I Información contable 1er Trim 2021.pdf</a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/file/d/1UmPuuQHKMKfxYZABbKKHjNcsWkH2HjzI/view" class="text-green-600 hover:underline">I Información contable 2o Trim 2021.pdf</a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/file/d/1tSfcGQ6FcrzGIbqyJ5C23T_xQ243pFmZ/view" class="text-green-600 hover:underline">I Información contable 3er Trim 2021.pdf</a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/file/d/1q06yZv7kgcc6aNKgClkjGSTR3wgIYq6t/view" class="text-green-600 hover:underline">I Información contable 4o Trim 2021.pdf</a>
+        </li>
+
+                    <br>
+        <li>
+            <a href="https://drive.google.com/file/d/1PgwNuTl0FzNWvB63aWs_rav2bkFssY12/view" class="text-green-600 hover:underline">II Información presupuestal 1er Trim 2021.pdf</a>
+          </li>
+          <li>
+            <a href="https://drive.google.com/file/d/1kuT5SZwQO8tO8YY2GrijSo75oxbgmwtW/view" class="text-green-600 hover:underline">II Información presupuestal 2o Trim 2021.pdf</a>
+          </li>
+          <li>
+            <a href="https://drive.google.com/file/d/1_v0GkvAgaNry8yk-O8hr5mGqujbx8DIB/view" class="text-green-600 hover:underline">II Información presupuestal 3er Trim 2021.pdf</a>
+          </li>
+          <li>
+            <a href="https://drive.google.com/file/d/1rfRrCKvfKkFxypDuHOqXrQ_942qjHoGN/view" class="text-green-600 hover:underline">II Información presupuestal 4o Trim 2021.pdf</a>
+        </li>
+        
+        <br>
+
+        <li>
+            <a href="https://drive.google.com/file/d/1BVebDROkYz777Ok_FhMC0LUOlSw68cdP/view" class="text-green-600 hover:underline">III Información programática 1er Trim 2021.pdf</a>
+          </li>
+          <li>
+            <a href="https://drive.google.com/file/d/1k__gw3GHVBM0kRTNMoHvopoxOFDnJN7K/view" class="text-green-600 hover:underline">III Información programática 2o Trim 2021.pdf</a>
+          </li>
+          <li>
+            <a href="https://drive.google.com/file/d/1dd-BhrJO8uYJvRjo4mjKLNa08NGyXMxn/view" class="text-green-600 hover:underline">III Información programática 3er Trim 2021.pdf</a>
+          </li>
+          <li>
+            <a href="https://drive.google.com/file/d/1NHVLMdJ4rPq8XQ2_rMFI290bHvWCehUX/view" class="text-green-600 hover:underline">III Información programática 4o Trim 2021.pdf</a>
+        </li>
+        
+        <br>
+
+        <h2 class="text-2xl font-semibold text-center mt-8 mb-4">Estados Financieros 2020</h2>
+
+        <br>
+
+        <li>
+            <a href="https://drive.google.com/file/d/17vfLMtnNhJC2V5YsGhawtgz5WypNS4Ce/view" class="text-green-600 hover:underline">01 ESTADOS_FINANCIEROS_PPTALES_Y_PROGRAMATICOS_AL_31_MAR_2020.pdf</a>
+          </li>
+          <li>
+            <a href="https://drive.google.com/file/d/1L21bCu4j5b26uBSeWrJwmiv7uaxWE-H8/view" class="text-green-600 hover:underline">02 ESTADOS_FINANCIEROS_PPTALES_Y_PROGRAMATICOS_AL_30_JUN_2020.pdf</a>
+          </li>
+          <li>
+            <a href="https://drive.google.com/file/d/1BOr4A2IZdkETMHSY2hpP8mPk3MTPKhfu/view" class="text-green-600 hover:underline">03 ESTADOS_FINANCIEROS_PPTALES_Y_PROGRAMATICOS_AL_30_SEPT_2020.pdf</a>
+          </li>
+          <li>
+            <a href="https://drive.google.com/file/d/1NE4RgZRBhlopkWb0SVHPRSS9X6hHE0Ve/view" class="text-green-600 hover:underline">04 ESTADOS_FINANCIEROS_PPTALES_Y_PROGRAMATICOS_AL_31_DIC_2020.pdf</a>
+        </li>
+
+        <br>
+
+        <h2 class="text-2xl font-semibold text-center mt-8 mb-4">Estados Financieros 2019</h2>
+
+        <br>
+
+        <li>
+            <a href="https://drive.google.com/file/d/1xc1QgG1X3XOqYAOGiYpFFo5r1QRBiUWs/view" class="text-green-600 hover:underline">01 ESTADOS FINANCIEROS PPTALES Y PROGRAMATICOS AL 31 MAR 2019.pdf</a>
+          </li>
+          <li>
+            <a href="https://drive.google.com/file/d/1pEtzqOuXh6NzqJZfjYPaCiw1OKgpKIpF/view" class="text-green-600 hover:underline">02 ESTADOS FINANCIEROS PPTALES Y PROGRAMATICOS AL 30 JUN 2019.pdf</a>
+          </li>
+          <li>
+            <a href="https://drive.google.com/file/d/18b3gSEmHaG4MpmiomRw8Kazb7vGbt80g/view" class="text-green-600 hover:underline">03 ESTADOS FINANCIEROS PPTALES Y PROGRAMATICOS AL 30 SEP 2019.pdf</a>
+          </li>
+          <li>
+            <a href="https://drive.google.com/file/d/1wYmuD3mhy0eRDttNgUX_2jRFUJMSUEo3/view" class="text-green-600 hover:underline">04 ESTADOS FINANCIEROS PPTALES Y PROGRAMATICOS AL 31 DIC 2019.pdf</a>
+        </li>
+        
+      </ul>
+      
+    </section>
+
+  </div>
+   <!-- Consulta otros años -->
+   <a class="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded transition duration-300 ease-in-out block text-center" href="cuenta_publica.html">Regresar</a>
+
+</body>
+
+<footer class="bg-white dark:bg-gray-900">
+    <div class="border-t-4 border-gray-400 dark:border-gray-1000"></div>
+    <div class="mx-auto w-full max-w-screen-xl">
+      <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
+        <div>
+          <h2
+            class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+          >
+            Sitios de Interés
+          </h2>
+          <ul class="text-gray-500 dark:text-gray-400 font-medium">
+            <li class="mb-4">
+              <a href="https://itaibcs.net/" class="hover:underline"
+                >ITAI del Estado de B.C.S.</a
+              >
+            </li>
+            <li class="mb-4">
+              <a
+                href="https://transparencia.cre.gob.mx/plataforma-nacional-de-transparencia-sipot/"
+                class="hover:underline"
+                >SIPOT</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2
+            class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+          >
+            Domicilio
+          </h2>
+          <ul class="text-gray-500 dark:text-gray-400 font-medium">
+            <li class="mb-4">
+              <p>Golfo de California No. 190</p>
+            </li>
+            <li class="mb-4">
+              <p>Col. El Conchalito.</p>
+            </li>
+            <li class="mb-4">
+              <p>Cp: 23090</p>
+            </li>
+            <li class="mb-4">
+              <p>La Paz B.C.S</p>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2
+            class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+          >
+            Teléfonos
+          </h2>
+          <ul class="text-gray-500 dark:text-gray-400 font-medium">
+            <li class="mb-4">
+              <a href="#" class="hover:underline">612 - 12 32244</a>
+            </li>
+            <li class="mb-4">
+              <a href="#" class="hover:underline">612 - 12 40430</a>
+            </li>
+            <li class="mb-4">
+              <a href="#" class="hover:underline">612 - 12 40656</a>
+            </li>
+            <li class="mb-4">
+              <a href="#" class="hover:underline">612 - 12 40656</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2
+            class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+          >
+            SIGUENOS
+          </h2>
+          <ul class="text-gray-500 dark:text-gray-400 font-medium">
+            <li class="mb-4">
+              <a
+                href="https://www.facebook.com/DGCECYTEBCS"
+                class="hover:underline"
+                >FACEBOOK</a
+              >
+            </li>
+
+            <li class="mb-4">
+              <a
+                href="https://x.com/CECYTE_BCS?lang=es"
+                class="hover:underline"
+                >x</a
+              >
+            </li>
+            <li class="mb-4">
+              <a
+                href="https://www.youtube.com/channel/UCAjoT3ODBsMhq75-KFJuNYA"
+                class="hover:underline"
+                >YOUTUBE</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center p-4 bg-gray-800 text-white text-sm">
+      © 2024 Departamento de Informática. Todos los derechos reservados.
+    </div>
+  </footer>
+
+</html>
+
+<script>
+  // Toggle the mobile menu
+  const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const serviciosBtn = document.getElementById('servicios-btn');
+        const serviciosSubmenu = document.getElementById('servicios-submenu');
+        const nosotrosBtn = document.getElementById('nosotros-btn');
+        const nosotrosSubmenu = document.getElementById('nosotros-submenu');
+        const alumnosBtn = document.getElementById('alumnos-btn');
+        const alumnosSubmenu = document.getElementById('alumnos-submenu');
+        const normaBtn = document.getElementById('norma-btn');
+        const normaSubmenu = document.getElementById('norma-submenu');
+        const trnsBtn = document.getElementById('trns-btn');
+        const trnsSubmenu = document.getElementById('trns-submenu');
+
+        menuBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+
+        serviciosBtn?.addEventListener('click', () => {
+          serviciosSubmenu.classList.toggle('hidden');
+        });
+
+        nosotrosBtn?.addEventListener('click', () => {
+          nosotrosSubmenu.classList.toggle('hidden');
+        });
+
+        alumnosBtn?.addEventListener('click', () => {
+          alumnosSubmenu.classList.toggle('hidden');
+        });
+
+        normaBtn?.addEventListener('click', () => {
+          normaSubmenu.classList.toggle('hidden');
+        });
+
+        trnsBtn?.addEventListener('click', () => {
+          trnsSubmenu.classList.toggle('hidden');
+        });
+</script>

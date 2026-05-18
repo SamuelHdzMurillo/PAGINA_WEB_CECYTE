@@ -1,0 +1,327 @@
+{
+  "DIRECCIÓN GENERAL": [
+    {
+      "extension": "102",
+      "nombre": "LIC. VLADIMIR TORRES NAVARRO",
+      "puesto": "DIRECTOR GENERAL",
+      "imagen": "img_dt/img_dg/img_vladimir_torres_navarro.webp"
+    },
+    {
+      "extension": "101",
+      "nombre": "C. MIRIAM CLAUDETH MENDOZA GERALDO",
+      "puesto": "SECRETARIA DE DIRECCIÓN GENERAL",
+      "imagen": "img_dt/img_dg/img_miriam_claudeth_mendoza.webp"
+    },
+    {
+      "extension": "106",
+      "nombre": "C. KARLA RIESTRA MURILLO",
+      "puesto": "ASISTENTE DE SECRETARIA PARTICULAR",
+      "imagen": "img_dt/img_general/karla_riestra.webp"
+    },
+    {
+      "extension": "104",
+      "nombre": "C. TERESA HERRERA",
+      "puesto": "OFICIALÍA DE PARTES",
+      "imagen": "img_dt/img_daca/img_teresita.webp"
+    }
+  ],
+  "DIRECCIÓN DE ADMINISTRACIÓN": [
+    {
+      "extension": "120",
+      "nombre": "MTRA. CYNTHIA IVETTE MENDEZ MARTIN",
+      "puesto": "DIRECTORA DE ADMINISTRACIÓN",
+      "imagen": "img_dt/img_directivos/img_cynthia.webp"
+    },
+    {
+      "extension": "121",
+      "nombre": "C. MARÍA ELENA ARELLANO TÉLLEZ",
+      "puesto": "SECRETARIA DE DIRECCIÓN DE ADMINISTRACIÓN",
+      "imagen": "img_dt/img_da/img_maria_elena_arellano.webp"
+    }
+  ],
+  "DIRECCIÓN DE RECURSOS HUMANOS": [
+    {
+      "extension": "125",
+      "nombre": "LIC. PATRICIA ELIZABETH ÁLVAREZ",
+      "puesto": "DIRECTORA DE RECURSOS HUMANOS",
+      "imagen": "img_dt/img_directivos/img_patricia_alvarez.webp"
+    },
+    {
+      "extension": "108",
+      "nombre": "C. JESÚS WENCESLAO GULUARTE",
+      "puesto": "ENCARGADO DE INCIDENCIAS, PAGOS DE SAR, PRIMA DOMINICAL Y JORNADAS EXTRAS",
+      "imagen": "img_dt/img_da/img_jesus_wencelao_2.webp"
+    },
+    {
+      "extension": "109",
+      "nombre": "C. MARÍA JOSÉ MEZA HUERTA",
+      "puesto": "ENCARGADA DE MOVIMIENTOS AFILIATORIOS DE ISSSTE",
+      "imagen": "img_dt/img_da/img_maria_jose_huerta_2.webp"
+    },
+    {
+      "extension": "119",
+      "nombre": "C. MARÍA DEL ROSARIO DE LA PEÑA ROCHÍN",
+      "puesto": "ENCARGADA DE CONSTANCIAS, INTEGRACIÓN DE EXP. Y LICENCIAS SIN GOCE",
+      "imagen": "img_dt/img_da/img_maria_del_rosario_peña_2.webp"
+    },
+    {
+      "extension": "122",
+      "nombre": "C. ÁNGELES EVELYN ESPINOSA AMADOR",
+      "puesto": "JEFA DE DEPARTAMENTO DE ADMINISTRACIÓN DE PERSONAL",
+      "imagen": "img_dt/img_da/img_angeles_evelyn_ezpinoza_aamador._2jpg.webp"
+    },
+    {
+      "extension": "127",
+      "nombre": "C. CRISTIAN ELEAZAR SALGADO LANDA",
+      "puesto": "NOMBRAMIENTOS PERSONAL DOCENTE",
+      "imagen": "img_dt/img_da/img_cristian_eleazar_salgado_2.webp"
+    },
+    {
+      "extension": "128",
+      "nombre": "LIC. HILDA DEL ROSARIO GAXIOLA GÓMEZ",
+      "puesto": "JEFA DEPARTAMENTO DE NÓMINA, AUDITORÍA Y PRESTACIONES ECONÓMICAS",
+      "imagen": "img_dt/img_da/img_hilda_gaxiola_2.webp"
+    }
+  ],
+  "DIRECCIÓN DE PLANEACIÓN": [
+    {
+      "extension": "140",
+      "nombre": "MTRO. HUGO ALBERTO MURILLO YEE",
+      "puesto": "DIRECTOR DE PLANEACIÓN Y EVALUACIÓN",
+      "imagen": "img_dt/img_directivos/img_hugo_murillo.webp"
+    },
+    {
+      "extension": "141",
+      "nombre": "C. LILIANA FAVELA RODRÍGUEZ",
+      "puesto": "SECRETARIA DE LA DIRECCIÓN DE PLANEACIÓN",
+      "imagen": "img_dt/img_dp/img_liliana_favela_2.webp"
+    },
+    {
+      "extension": "144",
+      "nombre": "C. ANGÉLICA FLORES CABRERA",
+      "puesto": "ORGANIZACIÓN Y SISTEMATIZACIÓN",
+      "imagen": "img_dt/img_general/angelica_cabrera.webp"
+    },
+    {
+      "extension": "145",
+      "nombre": "LIC. CECILIA MIRANDA AMADOR",
+      "puesto": "SUBDIRECTORA DE LA DIRECCIÓN DE PLANEACIÓN",
+      "imagen": "img_dt/img_dp/img_cecilia_miranda_amador_2.webp"
+    },
+    {
+      "extension": "110",
+      "nombre": "C. DANTE ULISES VILLALOBOS CARBALLO",
+      "puesto": "JEFE DE DEPARTAMENTO DE INVENTARIOS",
+      "imagen": "img_dt/img_general/dante_villalobos.webp"
+    },
+    {
+      "extension": "146",
+      "nombre": "C. FABIOLA PATRICIA VELÁZQUEZ CALDERÓN",
+      "puesto": "AUXILIAR DE PRESUPUESTO",
+      "imagen": "img_dt/img_dp/img_fabiola_patricia_2.webp"
+    },
+    {
+      "extension": "147",
+      "nombre": "C. MÓNICA LIZETH MÁRQUEZ LARA",
+      "puesto": "CONTROL, REGISTRO Y SUPERVICIÓN DE BIENES MUEBLES",
+      "imagen": "img_dt/img_dp/img_monica_lizet_marquez_2jpg.webp"
+    }
+  ],
+  "DIRECCIÓN DE CONTABILIDAD": [
+    {
+      "extension": "151",
+      "nombre": "LIC. ANA KAREN LAGARDA LARA",
+      "puesto": "DIRECTORA DE CONTABILIDAD",
+      "imagen": "img_dt/img_directivos/img_karen_pano.jpg"
+    },
+    {
+      "extension": "150",
+      "nombre": "C. CLAUDIA GULUARTE GUTIÉRREZ",
+      "puesto": "JEFA DE OFICINA DE CONTABILIDAD",
+      "imagen": "img_dt/img_cont/img_claudia_guluarte.webp"
+    },
+    {
+      "extension": "150",
+      "nombre": "C. DAVID OLEACHEA GOMEZ",
+      "puesto": "AUXILIAR DE CONTABILIDAD",
+      "imagen": "img_dt/img_da/img_jose_david_olachea_2.webp"
+    },
+    {
+      "extension": "152",
+      "nombre": "C. ACELA SUSANA ANZALDO ROMERO",
+      "puesto": "JEFA DE DEPARTAMENTO DE CONTABILIDAD",
+      "imagen": "img_dt/img_cont/img_acela_susana_2.webp"
+    }
+  ],
+  "DIRECCIÓN ACADÉMICA": [
+    {
+      "extension": "130",
+      "nombre": "MTRO. ROBERTO CARLOS MARTÍNEZ ZAVALA",
+      "puesto": "DIRECTOR DE LA DIRECCIÓN ACADÉMICA",
+      "imagen": "img_dt/img_daca/img_roberto_carlos.webp"
+    },
+    {
+      "extension": "131",
+      "nombre": "C. LETICIA LEÓN AVILÉS",
+      "puesto": "SECRETARIA DE LA DIRECCIÓN ACADÉMICA",
+      "imagen": "img_dt/img_daca/img_norma_leticia_2.webp"
+    },
+    {
+      "extension": "132",
+      "nombre": "C. MINERVA ROMERO CINCO",
+      "puesto": "SUBDIRECTORA ACADÉMICA",
+      "imagen": "img_dt/img_daca/img_minerva_2.webp"
+    },
+    {
+      "extension": "134",
+      "nombre": "C. MARCO ANTONIO HIRALES PATRÓN",
+      "puesto": "OFICINA DE CERTIFICACIÓN Y TITULACIÓN",
+      "imagen": "img_dt/img_daca/img_marco_hirales.webp"
+    },
+    {
+      "extension": "135",
+      "nombre": "C. JENNIE HAZIEL HERNANDEZ MARTINEZ",
+      "puesto": "DEPARTAMENTO DE SERVICIOS DOCENTES DE LOS PLANTELES CECYT, PLANES Y PROGRAMAS",
+      "imagen": "img_dt/img_daca/img_default.webp"
+    },
+    {
+      "extension": "136",
+      "nombre": "C. FRANCIS ALICIA CARO GÓMEZ",
+      "puesto": "DEPARTAMENTO DE EXTENSIÓN EDUCATIVA",
+      "imagen": "img_dt/img_daca/img_francis_alicia_caro_2.webp"
+    },
+    {
+      "extension": "137",
+      "nombre": "C. INGRID DANAHÍ PACHECO PÉREZ",
+      "puesto": "DEPARTAMENTO DE CAPACITACIÓN Y DESARROLLO ACADÉMICO",
+      "imagen": "img_dt/img_daca/img_ingrid_danahi_pacheco_2.webp"
+    },
+    {
+      "extension": "138",
+      "nombre": "C. OSCAR GUEVARA DOMÍNGUEZ",
+      "puesto": "DEPARTAMENTO DE EVALUACIÓN Y SEGUIMIENTO ACADÉMICO",
+      "imagen": "img_dt/img_daca/img_oscar_guevara_2.webp"
+    },
+    {
+      "extension": "139",
+      "nombre": "C. JOSE RAMON",
+      "puesto": "AUXILIAR DE CERTIFICACIÓN Y TITULACIÓN",
+      "imagen": "img_dt/img_daca/img_default.webp"
+    },
+    {
+      "extension": "170",
+      "nombre": "C. ANGÉLICA YADIRA RAMOS MANRÍQUEZ",
+      "puesto": "DEPARTAMENTO DE CONTROL ESCOLAR",
+      "imagen": "img_dt/img_daca/img_angelica_yadira_ramos_2.webp"
+    },
+    {
+      "extension": "171",
+      "nombre": "C. LAURA VERÓNICA COTA NÚÑEZ",
+      "puesto": "AUXILIAR DEL DEPTO. DE SERVICIOS DOCENTES DE PLANTELES CECYT",
+      "imagen": "img_dt/img_general/laura_cota.webp"
+    },
+    {
+      "extension": "172",
+      "nombre": "C. GLENDA INZUNZA VALDÉZ",
+      "puesto": "AUXILIAR DEL DEPTO. DE CONTROL ESCOLAR",
+      "imagen": "img_dt/img_daca/img_glenda.webp"
+    },
+    {
+      "extension": "173",
+      "nombre": "C. ROSA ISELA MEZA CASTRO",
+      "puesto": "ASISTENTE ACADÉMICO",
+      "imagen": "img_dt/img_daca/img_rosa_isela_meza.webp"
+    },
+    {
+      "extension": "105",
+      "nombre": "C. ÉRICKA CORONADO GARCÍA",
+      "puesto": "DEPARTAMENTO DE SEGUIMIENTO DE PLANES Y SECUENCIAS DIDÁCTICAS DE CECYT Y EMSAD",
+      "imagen": "img_dt/img_daca/img_erika_candelaria.webp"
+    }
+  ],
+  "DIRECCIÓN DE VINCULACIÓN": [
+    {
+      "extension": "180",
+      "nombre": "MTRO. IMER NOÉ OSUNA CÁRDENAS",
+      "puesto": "DIRECTOR DE VINCULACIÓN",
+      "imagen": "img_dt/img_vinc/img_imer_noe.webp"
+    },
+    {
+      "extension": "181",
+      "nombre": "C. MARLENE LEYVA MONTAÑO",
+      "puesto": "SECRETARIA DE LA DIRECCIÓN DE VINCULACIÓN",
+      "imagen": "img_dt/img_vinc/img_marlen_leyva_2.webp"
+    },
+    {
+      "extension": "180",
+      "nombre": "C. SANDRA LUZ OROZCO PEÑA",
+      "puesto": "ENCARGADA DE SEGUIMIENTO A EGRESADOS",
+      "imagen": "img_dt/img_vinc/img_sandra_luz_2.webp"
+    }
+  ],
+  "DEPARTAMENTO DE RECURSOS FINANCIEROS": [
+    {
+      "extension": "129",
+      "nombre": "C. MISSAEL GONZALES OROZCO",
+      "puesto": "DEPARTAMENTO DE RECURSOS FINANCIEROS",
+      "imagen": "img_dt/img_daca/img_default.webp"
+    }
+  ],
+  "DEPARTAMENTO DE INGRESOS": [
+    {
+      "extension": "123",
+      "nombre": "C. ALEJANDRA VIRIDIANA MORALES HIGUERA",
+      "puesto": "INGRESOS PROPIOS",
+      "imagen": "img_dt/img_general/alejandra_viridiana.webp"
+    }
+  ],
+  "DEPARTAMENTO DE CONTRALORÍA INTERNA Y JURÍDICO": [],
+  "DEPARTAMENTO DE INFORMÁTICA": [
+    {
+      "extension": "160",
+      "nombre": "ING. DANIEL CARRILLO CORTÉS",
+      "puesto": "JEFE DEL DEPARTAMENTO DE INFORMÁTICA",
+      "imagen": "img_dt/img_da/img_daniel_carillo_2.webp"
+    },
+    {
+      "extension": "161",
+      "nombre": "C. NORA DAYANA MONTIEL MARTÍNEZ",
+      "puesto": "TRÁMITES Y SERVICIOS",
+      "imagen": "img_dt/img_da/img_dayana_montiel7.webp"
+    },
+    {
+      "extension": "165",
+      "nombre": "C. SAMUEL HERNÁNDEZ MURILLO",
+      "puesto": "PROGRAMACIÓN Y SOPORTE TÉCNICO",
+      "imagen": "img_dt/img_da/img_samuel_hhz_2.webp"
+    },
+    {
+      "extension": "166",
+      "nombre": "C. YOLIZTLI VILLAVICENCIO VELÁZQUEZ",
+      "puesto": "TRÁMITES Y SERVICIOS",
+      "imagen": "img_dt/img_da/img_yoliztli_villavicencio.webp"
+    }
+  ],
+  "DEPARTAMENTO DE RECURSOS MATERIALES": [
+    {
+      "extension": "124",
+      "nombre": "LIC. CLAUDIA LUZ ARBALLO COTA",
+      "puesto": "ENCARGADA DEL DEPARTAMENTO DE RECURSOS MATERIALES",
+      "imagen": "img_dt/img_da/img_claudia_luz_arballo.webp"
+    },
+    {
+      "extension": "164",
+      "nombre": "C. SANDRA MIREYA LUCERO ARAIZA",
+      "puesto": "AUXILIAR DEL DEPTO. DE RECURSOS MATERIALES",
+      "imagen": "img_dt/img_da/img_sandra_mireya_lucero_2.webp"
+    }
+  ],
+  "DEPARTAMENTO DE SERVICIOS GENERALES": [
+    {
+      "extension": "126",
+      "nombre": "LIC. SERGIO ERNESTO SALGADO MIRANDA",
+      "puesto": "JEFE DEL DEPARTAMENTO DE SERVICIOS GENERALES",
+      "imagen": "img_dt/img_dp/img_sergio_salgado_2.webp"
+    }
+  ]
+}
