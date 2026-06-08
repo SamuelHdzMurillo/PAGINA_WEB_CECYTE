@@ -1,0 +1,151 @@
+{
+  "motto": "CECyTE: Orgullo y transformación de la Nueva Escuela Mexicana.",
+  "social": [
+    {
+      "href": "https://www.facebook.com/DGCECYTEBCS",
+      "icon": "fab fa-facebook-f",
+      "title": "Síguenos en Facebook"
+    },
+    {
+      "href": "https://www.youtube.com/@ProcesosInform%C3%A1ticaCecytebcs",
+      "icon": "fab fa-youtube",
+      "title": "Síguenos en YouTube"
+    },
+    {
+      "href": "https://www.instagram.com/cecyte_bcs/",
+      "icon": "fab fa-instagram",
+      "title": "Síguenos en Instagram"
+    },
+    {
+      "href": "https://www.tiktok.com/@cecytebcs",
+      "icon": "fab fa-tiktok",
+      "title": "Síguenos en TikTok"
+    }
+  ],
+  "items": [
+    {
+      "id": "docentes",
+      "label": "Docentes",
+      "href": "#",
+      "dropdownMinW": "min-w-48",
+      "children": [
+        { "label": "Convocatorias", "href": "pages_institucion/ubica_tu_plantel.html" },
+        { "label": "Centro Virtual 2024-2025", "href": "https://sites.google.com/cecytebcs.edu.mx/orientacionespej23/inicio?authuser=0" },
+        { "label": "Estrategia contra las drogas", "href": "https://drive.google.com/drive/folders/1jKBxfXsF-e5cmrzrdaODPZR1fJSE_8Wj", "target": "_blank" }
+      ]
+    },
+    {
+      "id": "oferta",
+      "label": "Oferta Educativa",
+      "href": "oferta_educativa.html",
+      "dropdownMinW": "min-w-64",
+      "children": [
+        { "label": "Soporte y Mantenimiento de equipo de cómputo", "href": "pages_oferta_educativa/mantenimiento_equipo_de_computo.html" },
+        { "label": "Inteligencia Artificial", "href": "pages_oferta_educativa/inteligencia_artificial.html" },
+        { "label": "Ciberseguridad", "href": "pages_oferta_educativa/ciberseguridad.html" },
+        { "label": "Ecoturismo", "href": "pages_oferta_educativa/ecoturismo.html" },
+        { "label": "Producción industrial de alimentos", "href": "pages_oferta_educativa/produccion_industrial_de_alimentos.html" },
+        { "label": "Mantenimiento Industrial", "href": "pages_oferta_educativa/mantenimiento_industrial.html" },
+        { "label": "Servicios de Hotelería", "href": "pages_oferta_educativa/servicios_de_hoteleria.html" },
+        { "label": "Libre Tránsito a IES", "href": "https://drive.google.com/drive/folders/1v50Sj_jg3MJiFPEtTEmUHShc8G2DiavK?usp=sharing" }
+      ],
+      "mobileExtras": [
+        { "type": "separator-green" },
+        { "type": "heading-green", "label": "Institución", "icon": "fas fa-building" },
+        { "type": "link-green", "label": "Planteles CECYTE", "href": "pages_institucion/planteles_cecyte.html" },
+        { "type": "link-green", "label": "Planteles EMSAD", "href": "pages_institucion/planteles_emsad.html" }
+      ]
+    },
+    {
+      "id": "institucion",
+      "label": "Institución",
+      "href": "#",
+      "mobileOnly": true,
+      "children": [
+        { "label": "Planteles CECYTE", "href": "pages_institucion/planteles_cecyte.html" },
+        { "label": "Planteles EMSAD", "href": "pages_institucion/planteles_emsad.html" }
+      ]
+    },
+    {
+      "id": "alumnos",
+      "label": "Alumnos",
+      "href": "#",
+      "dropdownMinW": "min-w-64",
+      "children": [
+        { "label": "Becas", "href": "pages_alumnos/becas.html" },
+        { "label": "Programa de Acompañamiento", "href": "pages_alumnos/prog_acompanamiento.html" },
+        { "label": "Requisitos de Ingreso", "href": "pages_alumnos/requisitos_de_ingreso.html" },
+        { "label": "Reglamento de Estudiantado CECYTE BCS", "href": "https://drive.google.com/file/d/1khvr2iSTs7T_ouyu7Bwv17uwzeTKk5C-/view?usp=sharing" },
+        { "label": "Reglamento Asociaciones de Padres y Madres de Familia CECYTE BCS", "href": "https://drive.google.com/file/d/1ewSW14CPvRKedEoxHU2wB4f_yx7WGZjM/view?usp=drive_link" }
+      ]
+    },
+    {
+      "id": "normatividad",
+      "label": "Normatividad",
+      "href": "#",
+      "dropdownMinW": "min-w-56",
+      "mobileScrollable": true,
+      "children": [
+        { "label": "Manuales de Procedimientos", "href": "pages_normatividad/manuales_de_procedimientos.html" },
+        { "label": "Manuales de Organización", "href": "pages_normatividad/manuales_de_org.html" },
+        { "label": "Reglamento Interno", "href": "https://drive.google.com/file/d/1k8AwVEAeVoe7URFcN2N2tcElsEYJRgtW/view?usp=sharing" },
+        { "label": "Código de ética", "href": "https://www.gob.mx/cms/uploads/attachment/file/560393/CODIGO_DE_ETICA.pdf" },
+        { "label": "Código de Conducta", "href": "https://drive.google.com/file/d/1gbo-0TFGO3d9nO2FunP3OS7ARTjGZeQ2/view?usp=sharing" },
+        { "label": "Protocolo de Seguridad", "href": "https://drive.google.com/file/d/1lIJBD8IXxHcM3hwp7v3VmG2X1EJZXKnG/view?usp=sharing" },
+        { "label": "Protocolos escolares", "href": "https://drive.google.com/drive/folders/1WeomLmUxITHWVPlQEY_UFss4Z5Ts275n?usp=sharing", "target": "_blank" },
+        { "label": "Decreto de Creación", "href": "https://drive.google.com/file/d/1g3kR6hG8EnDKR-mNqczA9tI48ijncxSF/view?usp=sharing" },
+        { "label": "Libre Tránsito a IES", "href": "https://drive.google.com/drive/folders/1v50Sj_jg3MJiFPEtTEmUHShc8G2DiavK?usp=sharing" },
+        { "type": "separator" },
+        { "type": "heading", "label": "Institución" },
+        { "label": "Historia, Misión y Visión", "href": "pages_institucion/pagina_historia.html" },
+        { "label": "Planteles CecyteBCS", "href": "pages_institucion/planteles_cecyte.html" },
+        { "label": "Planteles Emsad", "href": "pages_institucion/planteles_emsad.html" },
+        { "label": "Directorio Telefónico", "href": "directorio_telefonico.html" }
+      ],
+      "mobileExtras": [
+        { "type": "separator-green" },
+        { "type": "heading-green", "label": "Institución", "icon": "fas fa-building" },
+        { "type": "link-green", "label": "Historia, Misión y Visión", "href": "pages_institucion/pagina_historia.html" },
+        { "type": "link-green", "label": "Planteles CecyteBCS", "href": "pages_institucion/planteles_cecyte.html" },
+        { "type": "link-green", "label": "Planteles Emsad", "href": "pages_institucion/planteles_emsad.html" },
+        { "type": "link-green", "label": "Directorio Telefónico", "href": "directorio_telefonico.html" }
+      ]
+    },
+    {
+      "id": "transparencia",
+      "label": "Transparencia",
+      "href": "https://transparencia.cecytebcs.edu.mx/",
+      "dropdownMinW": "min-w-48",
+      "children": [
+        { "label": "Artículo 75", "href": "https://transparencia.cecytebcs.edu.mx/informacion-publica/articulo-75" },
+        { "label": "Artículo 37", "href": "pages_transparencia/articulo_37.html" },
+        { "label": "Cuenta Pública", "href": "pages_transparencia/cuenta_publica.html" },
+        { "label": "Ley de Disciplina Financiera", "href": "pages_transparencia/ley_diciplina.html" },
+        { "label": "SEVAC", "href": "https://drive.google.com/drive/folders/1DtJMvUmokqZ9v_UuYwZQdcHDHm0TQJ-C?usp=sharing", "target": "_blank", "rel": "noopener noreferrer" }
+      ]
+    },
+    {
+      "id": "vinculacion",
+      "label": "Vinculación",
+      "href": "#",
+      "dropdownMinW": "min-w-48",
+      "children": [
+        { "label": "Becas", "href": "pages_alumnos/becas.html" },
+        { "label": "Seguimiento a Egresados", "href": "pages_vinculacion/seguimineto_egresados.html" },
+        { "label": "Convenios", "href": "https://drive.google.com/drive/folders/1iJY7CBj_9TKJA4cSHPxsE58CDUMaTVyc", "target": "_blank", "rel": "noopener noreferrer" }
+      ]
+    },
+    {
+      "id": "libre-transito",
+      "label": "Libre Tránsito",
+      "href": "libre_transito.html",
+      "type": "link"
+    },
+    {
+      "id": "comunidad",
+      "label": "CECYTE es Comunidad",
+      "href": "comunidad.html",
+      "type": "link"
+    }
+  ]
+}

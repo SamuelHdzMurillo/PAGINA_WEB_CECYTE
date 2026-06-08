@@ -16,10 +16,28 @@ Este componente de navbar en PHP es completamente reutilizable y se adapta autom
 
 ```
 components/
-├── navbar.php          # Componente principal del navbar
-├── navbar_simple.php   # Componente simplificado del navbar
-└── README.md          # Este archivo de documentación
+├── nav-menu.json       # Fuente única del menú (enlaces y estructura)
+├── navbar.php          # [Deprecado] Componente PHP legacy
+├── navbar_simple.php   # [Deprecado] Componente PHP simplificado
+└── README.md           # Este archivo de documentación
+
+js/
+└── navbar.js           # Renderiza el navbar desde nav-menu.json
 ```
+
+### Uso actual (HTML estático)
+
+En cualquier página `.html`:
+
+```html
+<div id="navbar-root" data-base="../" data-variant="default"></div>
+<script src="../js/navbar.js" defer></script>
+```
+
+- `data-base`: prefijo de ruta (`""`, `../`, `../../`) según profundidad del archivo
+- `data-variant`: `home` solo en `index.html` (incluye lema y redes); `default` en el resto
+
+Para cambiar enlaces del menú, editar solo `components/nav-menu.json`.
 
 ## 🔧 Instalación y Uso
 
