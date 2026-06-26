@@ -262,3 +262,22 @@ body {
 #mobile-menu > div:not(:last-child) {
   margin-bottom: 0;
 }
+
+/* Páginas de notas: espacio bajo navbar fijo (h-16 + línea naranja) */
+body.nota-pagina {
+  padding-top: 5.5rem;
+}
+
+@media (min-width: 640px) {
+  body.nota-pagina {
+    padding-top: 6rem;
+  }
+}
+
+.nota-contenedor {
+  max-width: 56rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}

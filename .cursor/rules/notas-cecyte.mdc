@@ -1,0 +1,62 @@
+---
+description: Cómo crear y dar formato a notas en pages_notas
+globs: pages_notas/**/*
+alwaysApply: false
+---
+
+# Notas CECyTE BCS
+
+## Estructura de carpeta
+
+```
+pages_notas/{slug_descriptivo}/
+  nota.html          (o boletin.html / post.html)
+  img/
+    img_1.webp       (imagen principal)
+    img_2.webp
+    img_3.webp
+```
+
+## Registro en noticias.json
+
+Agregar al inicio del arreglo:
+
+```json
+{
+  "title": "Título de la nota",
+  "description": "Resumen breve (1-2 oraciones)",
+  "image": "pages_notas/{slug}/img/img_1.webp",
+  "link": "pages_notas/{slug}/nota.html",
+  "date": "YYYY-MM-DD",
+  "category": "NOTICIAS"
+}
+```
+
+## Plantilla HTML obligatoria
+
+- `<body class="bg-gray-100 text-gray-800 nota-pagina">` — espacio bajo navbar fijo
+- Contenedor: `<div class="nota-contenedor p-6 bg-white rounded-lg shadow-md">` — **no usar** `mt-10`
+- Navbar: `<div id="navbar-root" data-base="../../" data-variant="default"></div>` + `navbar.js`
+- CSS: `../../style.css` + Tailwind CDN
+- Secciones: `<header>` (h1 + fecha), imagen principal, cuerpo (`<section class="mb-7">`), galería, blockquote con hashtags
+- Footer estándar del sitio
+- Script lightbox para galería (`showImage`, `closeLightbox`, `prevImage`, `nextImage`)
+- **Widget de accesibilidad** antes de `</body>`:
+
+```html
+<!-- Widget de accesibilidad -->
+<div id="a11y-widget-root" data-base="../../"></div>
+<script src="../../js/accessibility-widget.js" defer></script>
+```
+
+## Contenido
+
+- Título en `<h1 class="text-4xl font-bold mb-2">`
+- Fecha en `<p class="text-sm text-gray-600">` (formato: "26 de junio de 2026")
+- Párrafos con `class="mb-4 text-justify"`; nombres y datos clave en `<strong>`
+- Meta og:title, og:description, og:image (`img/img_1.webp`)
+- Galería: grid 3 columnas, imágenes `.webp` en carpeta `img/`
+
+## Referencia
+
+Copiar estructura de `pages_notas/jornada_social_y_recreativa_en_emsad12/nota.html` o `pages_notas/clausura_emsad12_2026/nota.html`.
