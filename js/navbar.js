@@ -33,9 +33,10 @@
     if (child.type === "heading") {
       return `<div class="px-4 py-2"><span class="text-sm font-semibold text-gray-500 uppercase tracking-wide">${child.label}</span></div>`;
     }
-    const cls = child.label && child.label.length > 30
-      ? "block py-2 px-4 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
-      : "block px-4 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-200";
+    const cls =
+      child.label && child.label.length > 30
+        ? "block py-2 px-4 text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+        : "block px-4 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-200";
     return `<a href="${resolveHref(child.href)}" class="${cls}"${linkAttrs(child)}>${child.label}</a>`;
   }
 
@@ -74,9 +75,14 @@
     if (item.type === "link" || (!item.children && item.href !== "#")) {
       return `<a href="${resolveHref(item.href)}" class="block px-6 py-4 text-gray-700 hover:bg-gray-50 hover:text-green-600 transition-colors duration-200 font-medium border-b border-gray-200">${item.label}</a>`;
     }
-    const links = (item.children || []).filter((c) => c.href).map(renderMobileLink).join("");
+    const links = (item.children || [])
+      .filter((c) => c.href)
+      .map(renderMobileLink)
+      .join("");
     const extras = (item.mobileExtras || []).map(renderMobileExtra).join("");
-    const scrollStyle = item.mobileScrollable ? ' style="max-height: 80vh; overflow-y: auto"' : "";
+    const scrollStyle = item.mobileScrollable
+      ? ' style="max-height: 80vh; overflow-y: auto"'
+      : "";
     const submenuPy = item.id === "docentes" ? "" : " py-2";
     return `<div class="block border-b border-gray-200">
       <button class="w-full text-left text-gray-700 hover:text-green-600 hover:bg-gray-50 px-6 py-4 flex justify-between items-center focus:outline-none transition-colors duration-200 font-medium" id="${item.id}-btn">
@@ -91,7 +97,7 @@
     const social = (menu.social || [])
       .map(
         (s) =>
-          `<a href="${s.href}" target="_blank" class="text-white/80 hover:text-white hover:bg-white/10 px-2 py-1 rounded transition-all duration-200" title="${s.title}"><i class="${s.icon} text-sm"></i></a>`
+          `<a href="${s.href}" target="_blank" class="text-white/80 hover:text-white hover:bg-white/10 px-2 py-1 rounded transition-all duration-200" title="${s.title}"><i class="${s.icon} text-sm"></i></a>`,
       )
       .join("");
     return `<section class="w-full bg-gray-500 text-white py-2 flex flex-col md:flex-row justify-center items-center gap-4">
@@ -132,7 +138,8 @@
 
     function rotateIcon(button, isOpen) {
       const icon = button.querySelector("svg");
-      if (icon) icon.style.transform = isOpen ? "rotate(180deg)" : "rotate(0deg)";
+      if (icon)
+        icon.style.transform = isOpen ? "rotate(180deg)" : "rotate(0deg)";
     }
 
     function toggleSubmenu(button, submenu) {
@@ -165,7 +172,8 @@
         mobileMenu.style.opacity = "0";
         mobileMenu.style.transform = "translateY(-10px)";
         setTimeout(() => {
-          mobileMenu.style.transition = "opacity 0.3s ease, transform 0.3s ease";
+          mobileMenu.style.transition =
+            "opacity 0.3s ease, transform 0.3s ease";
           mobileMenu.style.opacity = "1";
           mobileMenu.style.transform = "translateY(0)";
         }, 10);
@@ -187,9 +195,13 @@
     });
 
     document.addEventListener("click", (event) => {
-      if (!mobileMenu.contains(event.target) && !menuBtn.contains(event.target)) {
+      if (
+        !mobileMenu.contains(event.target) &&
+        !menuBtn.contains(event.target)
+      ) {
         if (!mobileMenu.classList.contains("hidden")) {
-          mobileMenu.style.transition = "opacity 0.3s ease, transform 0.3s ease";
+          mobileMenu.style.transition =
+            "opacity 0.3s ease, transform 0.3s ease";
           mobileMenu.style.opacity = "0";
           mobileMenu.style.transform = "translateY(-10px)";
           setTimeout(() => mobileMenu.classList.add("hidden"), 300);

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -43,7 +43,9 @@
       /* Clase base para elementos animables */
       .scroll-animate {
         opacity: 0;
-        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        transition:
+          opacity 0.6s ease-out,
+          transform 0.6s ease-out;
       }
 
       /* Animación fade-in */
@@ -126,8 +128,11 @@
         max-height: 0;
         overflow: hidden;
         opacity: 0;
-        transition: max-height 0.4s ease-out, opacity 0.3s ease-out,
-          padding-top 0.3s ease-out, padding-bottom 0.3s ease-out;
+        transition:
+          max-height 0.4s ease-out,
+          opacity 0.3s ease-out,
+          padding-top 0.3s ease-out,
+          padding-bottom 0.3s ease-out;
         padding-top: 0 !important;
         padding-bottom: 0 !important;
       }
@@ -172,7 +177,7 @@
     </style>
   </head>
   <body class="bg-gray-50">
-        <!-- Navbar CECYTE (componente central) -->
+    <!-- Navbar CECYTE (componente central) -->
     <div id="navbar-root" data-base="" data-variant="default"></div>
     <script src="js/navbar.js" defer></script>
 
@@ -184,7 +189,7 @@
       <div
         class="absolute top-0 left-0 w-full h-full opacity-10"
         style="
-          background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+          background-image: url(&quot;data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E&quot;);
         "
       ></div>
 
@@ -555,9 +560,13 @@
         </div>
         <div class="p-6 space-y-6 bg-gray-50">
           <!-- A) Ingreso a programas educativos -->
-          <section class="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden">
+          <section
+            class="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden"
+          >
             <div class="bg-green-100 px-5 py-3 border-l-4 border-green-500">
-              <h4 class="text-base font-bold text-green-800 uppercase tracking-wide flex items-center">
+              <h4
+                class="text-base font-bold text-green-800 uppercase tracking-wide flex items-center"
+              >
                 <i class="fas fa-university mr-2 text-green-600"></i>
                 A) Ingreso a programas educativos
               </h4>
@@ -568,7 +577,10 @@
                   1. Criterios de admisión a alumnado de nuevo ingreso
                 </p>
                 <p class="text-sm mb-3">
-                  El ingreso para las personas aspirantes que presenten su certificado de egreso de nivel bachillerato en los tiempos establecidos por la convocatoria emitida para tales efectos, será en las carreras que se enlistan a continuación:
+                  El ingreso para las personas aspirantes que presenten su
+                  certificado de egreso de nivel bachillerato en los tiempos
+                  establecidos por la convocatoria emitida para tales efectos,
+                  será en las carreras que se enlistan a continuación:
                 </p>
                 <div class="overflow-x-auto rounded-lg border border-gray-200">
                   <table class="min-w-full text-sm text-left">
@@ -576,73 +588,122 @@
                       <tr class="bg-green-800 text-white">
                         <th class="px-4 py-3 font-semibold rounded-tl">No.</th>
                         <th class="px-4 py-3 font-semibold">Sede</th>
-                        <th class="px-4 py-3 font-semibold">Programa educativo</th>
+                        <th class="px-4 py-3 font-semibold">
+                          Programa educativo
+                        </th>
                         <th class="px-4 py-3 font-semibold">Modalidad</th>
-                        <th class="px-4 py-3 font-semibold rounded-tr">Demanda</th>
+                        <th class="px-4 py-3 font-semibold rounded-tr">
+                          Demanda
+                        </th>
                       </tr>
                     </thead>
                     <tbody class="text-gray-700">
-                      <tr class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150">
+                      <tr
+                        class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"
+                      >
                         <td class="px-4 py-2.5">1</td>
                         <td class="px-4 py-2.5">La Paz</td>
-                        <td class="px-4 py-2.5">Lic. en Derecho y Ciencias Jurídicas</td>
+                        <td class="px-4 py-2.5">
+                          Lic. en Derecho y Ciencias Jurídicas
+                        </td>
                         <td class="px-4 py-2.5">No escolarizada</td>
                         <td class="px-4 py-2.5">
-                          <span class="px-2 py-0.5 rounded text-xs font-semibold bg-red-100 text-red-800">ALTA</span>
+                          <span
+                            class="px-2 py-0.5 rounded text-xs font-semibold bg-red-100 text-red-800"
+                            >ALTA</span
+                          >
                         </td>
                       </tr>
-                      <tr class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150">
+                      <tr
+                        class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"
+                      >
                         <td class="px-4 py-2.5">2</td>
                         <td class="px-4 py-2.5">La Paz</td>
                         <td class="px-4 py-2.5">Lic. Mercadotecnia</td>
                         <td class="px-4 py-2.5">No escolarizada</td>
                         <td class="px-4 py-2.5">
-                          <span class="px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-800">MEDIA</span>
+                          <span
+                            class="px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-800"
+                            >MEDIA</span
+                          >
                         </td>
                       </tr>
-                      <tr class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150">
+                      <tr
+                        class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"
+                      >
                         <td class="px-4 py-2.5">3</td>
                         <td class="px-4 py-2.5">La Paz</td>
-                        <td class="px-4 py-2.5">Lic. en Tecnologías de la Información</td>
+                        <td class="px-4 py-2.5">
+                          Lic. en Tecnologías de la Información
+                        </td>
                         <td class="px-4 py-2.5">No escolarizada</td>
                         <td class="px-4 py-2.5">
-                          <span class="px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-800">MEDIA</span>
+                          <span
+                            class="px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-800"
+                            >MEDIA</span
+                          >
                         </td>
                       </tr>
-                      <tr class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150">
+                      <tr
+                        class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"
+                      >
                         <td class="px-4 py-2.5">4</td>
                         <td class="px-4 py-2.5">La Paz</td>
-                        <td class="px-4 py-2.5">Lic. en Comunicación y Producción Multimedia</td>
+                        <td class="px-4 py-2.5">
+                          Lic. en Comunicación y Producción Multimedia
+                        </td>
                         <td class="px-4 py-2.5">No escolarizada</td>
                         <td class="px-4 py-2.5">
-                          <span class="px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-800">MEDIA</span>
+                          <span
+                            class="px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-800"
+                            >MEDIA</span
+                          >
                         </td>
                       </tr>
-                      <tr class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150">
+                      <tr
+                        class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"
+                      >
                         <td class="px-4 py-2.5">5</td>
                         <td class="px-4 py-2.5">Guerrero Negro</td>
                         <td class="px-4 py-2.5">Lic. en Contaduría Pública</td>
                         <td class="px-4 py-2.5">Escolarizada</td>
                         <td class="px-4 py-2.5">
-                          <span class="px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-800">MEDIA</span>
+                          <span
+                            class="px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-800"
+                            >MEDIA</span
+                          >
                         </td>
                       </tr>
-                      <tr class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150">
+                      <tr
+                        class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"
+                      >
                         <td class="px-4 py-2.5">6</td>
                         <td class="px-4 py-2.5">Guerrero Negro</td>
-                        <td class="px-4 py-2.5">Lic. en Gestión de la Producción Agropecuaria</td>
+                        <td class="px-4 py-2.5">
+                          Lic. en Gestión de la Producción Agropecuaria
+                        </td>
                         <td class="px-4 py-2.5">Escolarizada</td>
                         <td class="px-4 py-2.5">
-                          <span class="px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-800">MEDIA</span>
+                          <span
+                            class="px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-800"
+                            >MEDIA</span
+                          >
                         </td>
                       </tr>
-                      <tr class="hover:bg-green-50 transition-colors duration-150">
+                      <tr
+                        class="hover:bg-green-50 transition-colors duration-150"
+                      >
                         <td class="px-4 py-2.5">7</td>
                         <td class="px-4 py-2.5">Guerrero Negro</td>
-                        <td class="px-4 py-2.5">Lic. en Gestión del Turismo Alternativo</td>
+                        <td class="px-4 py-2.5">
+                          Lic. en Gestión del Turismo Alternativo
+                        </td>
                         <td class="px-4 py-2.5">Escolarizada</td>
                         <td class="px-4 py-2.5">
-                          <span class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800">BAJA</span>
+                          <span
+                            class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800"
+                            >BAJA</span
+                          >
                         </td>
                       </tr>
                     </tbody>
@@ -651,56 +712,101 @@
               </div>
               <div class="space-y-2 text-sm">
                 <p>
-                  Las personas aspirantes de nuevo ingreso deberán presentar, además, el test psicométrico con fines diagnósticos en las fechas establecidas de acuerdo con la convocatoria correspondiente.
+                  Las personas aspirantes de nuevo ingreso deberán presentar,
+                  además, el test psicométrico con fines diagnósticos en las
+                  fechas establecidas de acuerdo con la convocatoria
+                  correspondiente.
                 </p>
                 <p>
-                  Asimismo, deberán presentar la documentación establecida en la Convocatoria al Proceso de Admisión de Nuevo Ingreso emitida conforme al Calendario Escolar institucional aprobado por el H. Consejo General Universitario.
+                  Asimismo, deberán presentar la documentación establecida en la
+                  Convocatoria al Proceso de Admisión de Nuevo Ingreso emitida
+                  conforme al Calendario Escolar institucional aprobado por el
+                  H. Consejo General Universitario.
                 </p>
                 <p>
-                  En el caso de los programas educativos ofertados por la UABCS que no se encuentren descritos en el presente anexo, se promoverá la suscripción de convenios específicos de colaboración para ampliar los alcances de este acuerdo marco de colaboración.
+                  En el caso de los programas educativos ofertados por la UABCS
+                  que no se encuentren descritos en el presente anexo, se
+                  promoverá la suscripción de convenios específicos de
+                  colaboración para ampliar los alcances de este acuerdo marco
+                  de colaboración.
                 </p>
                 <p>
-                  En tanto, las personas aspirantes a los programas educativos no descritos en el presente acuerdo se sujetarán a los criterios y requisitos académicos establecidos en la Convocatoria al Proceso de Admisión de Nuevo Ingreso y demás normatividad institucional aplicable, conforme al Calendario Escolar institucional aprobado por el H. Consejo General Universitario.
+                  En tanto, las personas aspirantes a los programas educativos
+                  no descritos en el presente acuerdo se sujetarán a los
+                  criterios y requisitos académicos establecidos en la
+                  Convocatoria al Proceso de Admisión de Nuevo Ingreso y demás
+                  normatividad institucional aplicable, conforme al Calendario
+                  Escolar institucional aprobado por el H. Consejo General
+                  Universitario.
                 </p>
               </div>
             </div>
           </section>
           <!-- Publicidad y difusión -->
-          <section class="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden">
+          <section
+            class="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden"
+          >
             <div class="bg-green-100 px-5 py-3 border-l-4 border-green-500">
-              <h4 class="text-base font-bold text-green-800 uppercase tracking-wide flex items-center">
+              <h4
+                class="text-base font-bold text-green-800 uppercase tracking-wide flex items-center"
+              >
                 <i class="fas fa-bullhorn mr-2 text-green-600"></i>
                 Publicidad y difusión
               </h4>
             </div>
             <div class="p-5 space-y-2 text-gray-700 text-sm">
               <p>
-                La Convocatoria al Proceso de Admisión de Nuevo Ingreso correspondiente será publicada en los medios institucionales de la UABCS, asegurando la difusión oportuna destinada al alumnado de media superior perteneciente al CECYTE que se encuentre interesado en ingresar a alguno de los programas educativos materia de dicha convocatoria.
+                La Convocatoria al Proceso de Admisión de Nuevo Ingreso
+                correspondiente será publicada en los medios institucionales de
+                la UABCS, asegurando la difusión oportuna destinada al alumnado
+                de media superior perteneciente al CECYTE que se encuentre
+                interesado en ingresar a alguno de los programas educativos
+                materia de dicha convocatoria.
               </p>
               <p>
-                De igual manera, la UABCS informará oportunamente la realización de su Feria Educativa para la promoción de los programas educativos que oferta.
+                De igual manera, la UABCS informará oportunamente la realización
+                de su Feria Educativa para la promoción de los programas
+                educativos que oferta.
               </p>
             </div>
           </section>
           <!-- Programa de becas y descuentos -->
-          <section class="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden">
+          <section
+            class="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden"
+          >
             <div class="bg-green-100 px-5 py-3 border-l-4 border-green-500">
-              <h4 class="text-base font-bold text-green-800 uppercase tracking-wide flex items-center">
+              <h4
+                class="text-base font-bold text-green-800 uppercase tracking-wide flex items-center"
+              >
                 <i class="fas fa-hand-holding-usd mr-2 text-green-600"></i>
                 B) Programa de becas y descuentos
               </h4>
             </div>
             <div class="p-5 space-y-4 text-gray-700 text-sm">
               <div>
-                <p class="font-semibold text-gray-900 mb-1">1. Otorgamiento de descuentos</p>
+                <p class="font-semibold text-gray-900 mb-1">
+                  1. Otorgamiento de descuentos
+                </p>
                 <p>
-                  Las personas aspirantes a los programas educativos de Lic. en Contaduría Pública, Lic. en Gestión de la Producción Agropecuaria y Lic. en Gestión del Turismo Alternativo, que se ofertan en la Extensión Académica Guerrero Negro, podrán solicitar la exención de la aportación única de nuevo ingreso y la aportación de inscripción al semestre conforme a los mecanismos que la institución establezca para tales fines, debiendo cubrir el alumnado la aportación por concepto de seguro estudiantil correspondiente.
+                  Las personas aspirantes a los programas educativos de Lic. en
+                  Contaduría Pública, Lic. en Gestión de la Producción
+                  Agropecuaria y Lic. en Gestión del Turismo Alternativo, que se
+                  ofertan en la Extensión Académica Guerrero Negro, podrán
+                  solicitar la exención de la aportación única de nuevo ingreso
+                  y la aportación de inscripción al semestre conforme a los
+                  mecanismos que la institución establezca para tales fines,
+                  debiendo cubrir el alumnado la aportación por concepto de
+                  seguro estudiantil correspondiente.
                 </p>
               </div>
               <div>
                 <p class="font-semibold text-gray-900 mb-1">2. De las becas</p>
                 <p>
-                  Las personas aspirantes a los programas educativos descritos en el presente acuerdo podrán acceder a los programas de becas, convenios y descuentos establecidos en la normatividad institucional aplicable, debiendo cumplir los requisitos correspondientes.
+                  Las personas aspirantes a los programas educativos descritos
+                  en el presente acuerdo podrán acceder a los programas de
+                  becas, convenios y descuentos establecidos en la normatividad
+                  institucional aplicable, debiendo cumplir los requisitos
+                  correspondientes.
                 </p>
               </div>
             </div>
@@ -745,68 +851,137 @@
         </div>
         <div class="p-6 space-y-6 bg-gray-50">
           <!-- A) Criterios de ingreso y descuentos -->
-          <section class="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden">
+          <section
+            class="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden"
+          >
             <div class="bg-green-100 px-5 py-3 border-l-4 border-green-500">
-              <h4 class="text-base font-bold text-green-800 uppercase tracking-wide flex items-center">
+              <h4
+                class="text-base font-bold text-green-800 uppercase tracking-wide flex items-center"
+              >
                 <i class="fas fa-clipboard-list mr-2 text-green-600"></i>
                 A) Criterios de ingreso y descuentos
               </h4>
             </div>
             <div class="p-5 space-y-4 text-gray-700">
-              <div class="bg-gray-50 rounded-md p-4 border border-gray-200 hover:border-green-300 transition-colors duration-200">
+              <div
+                class="bg-gray-50 rounded-md p-4 border border-gray-200 hover:border-green-300 transition-colors duration-200"
+              >
                 <p class="font-semibold text-gray-800 flex items-center mb-2">
-                  <span class="w-6 h-6 rounded-full bg-green-600 text-white text-sm flex items-center justify-center mr-2 flex-shrink-0">1</span>
+                  <span
+                    class="w-6 h-6 rounded-full bg-green-600 text-white text-sm flex items-center justify-center mr-2 flex-shrink-0"
+                    >1</span
+                  >
                   Estudiantes con promedio de 100 a 90
                 </p>
                 <ul class="space-y-1.5 pl-8 text-gray-700">
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
-                    <span>Presentará el examen de ingreso para fines de diagnóstico.</span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
+                    <span
+                      >Presentará el examen de ingreso para fines de
+                      diagnóstico.</span
+                    >
                   </li>
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
-                    <span>Al asistir a su curso propedéutico se otorgará una beca de condonación de pago cubriendo un monto de $350.00 al pago de su inscripción al primer cuatrimestre.</span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
+                    <span
+                      >Al asistir a su curso propedéutico se otorgará una beca
+                      de condonación de pago cubriendo un monto de $350.00 al
+                      pago de su inscripción al primer cuatrimestre.</span
+                    >
                   </li>
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
-                    <span>Una vez siendo estudiante de la institución, si mantiene su promedio de 100 a 90 tendrá la condonación de pago cubriendo un monto de $350.00 al pago de su inscripción a partir del segundo cuatrimestre.</span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
+                    <span
+                      >Una vez siendo estudiante de la institución, si mantiene
+                      su promedio de 100 a 90 tendrá la condonación de pago
+                      cubriendo un monto de $350.00 al pago de su inscripción a
+                      partir del segundo cuatrimestre.</span
+                    >
                   </li>
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
-                    <span>La continuidad de la beca dependerá de su participación en las convocatorias de condonación de pago emitidas por la institución, manteniendo ininterrumpidamente su promedio mayor o igual a 90 y ser alumno regular (sin asignaturas con calificación no aprobatoria).</span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
+                    <span
+                      >La continuidad de la beca dependerá de su participación
+                      en las convocatorias de condonación de pago emitidas por
+                      la institución, manteniendo ininterrumpidamente su
+                      promedio mayor o igual a 90 y ser alumno regular (sin
+                      asignaturas con calificación no aprobatoria).</span
+                    >
                   </li>
                 </ul>
               </div>
-              <div class="bg-gray-50 rounded-md p-4 border border-gray-200 hover:border-green-300 transition-colors duration-200">
+              <div
+                class="bg-gray-50 rounded-md p-4 border border-gray-200 hover:border-green-300 transition-colors duration-200"
+              >
                 <p class="font-semibold text-gray-800 flex items-center mb-2">
-                  <span class="w-6 h-6 rounded-full bg-green-600 text-white text-sm flex items-center justify-center mr-2 flex-shrink-0">2</span>
+                  <span
+                    class="w-6 h-6 rounded-full bg-green-600 text-white text-sm flex items-center justify-center mr-2 flex-shrink-0"
+                    >2</span
+                  >
                   Estudiantes con promedio de 89 a 70
                 </p>
                 <ul class="space-y-1.5 pl-8 text-gray-700">
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
-                    <span>Presentará el examen de ingreso para fines de diagnóstico.</span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
+                    <span
+                      >Presentará el examen de ingreso para fines de
+                      diagnóstico.</span
+                    >
                   </li>
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
-                    <span>Al asistir a su curso propedéutico se otorgará una beca de condonación de pago cubriendo un monto de $1,100.00 al pago de su inscripción al primer cuatrimestre.</span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
+                    <span
+                      >Al asistir a su curso propedéutico se otorgará una beca
+                      de condonación de pago cubriendo un monto de $1,100.00 al
+                      pago de su inscripción al primer cuatrimestre.</span
+                    >
                   </li>
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
-                    <span>Una vez siendo estudiante de la institución, si mantiene su promedio de 89 a 70 tendrá la condonación de pago cubriendo un monto de $1,100.00 al pago de su inscripción a partir del segundo cuatrimestre.</span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
+                    <span
+                      >Una vez siendo estudiante de la institución, si mantiene
+                      su promedio de 89 a 70 tendrá la condonación de pago
+                      cubriendo un monto de $1,100.00 al pago de su inscripción
+                      a partir del segundo cuatrimestre.</span
+                    >
                   </li>
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
-                    <span>La continuidad de la beca dependerá de que mantenga ininterrumpidamente su promedio mayor o igual a 70 y sea alumno regular (sin asignaturas con calificación no aprobatoria).</span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
+                    <span
+                      >La continuidad de la beca dependerá de que mantenga
+                      ininterrumpidamente su promedio mayor o igual a 70 y sea
+                      alumno regular (sin asignaturas con calificación no
+                      aprobatoria).</span
+                    >
                   </li>
                 </ul>
               </div>
             </div>
           </section>
           <!-- B) Demanda de carreras -->
-          <section class="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden">
+          <section
+            class="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden"
+          >
             <div class="bg-green-100 px-5 py-3 border-l-4 border-green-500">
-              <h4 class="text-base font-bold text-green-800 uppercase tracking-wide flex items-center">
+              <h4
+                class="text-base font-bold text-green-800 uppercase tracking-wide flex items-center"
+              >
                 <i class="fas fa-graduation-cap mr-2 text-green-600"></i>
                 B) Demanda de carreras
               </h4>
@@ -816,29 +991,277 @@
                 <thead>
                   <tr class="bg-green-800 text-white">
                     <th class="px-4 py-3 font-semibold rounded-tl">No.</th>
-                    <th class="px-4 py-3 font-semibold">Universidad tecnológica</th>
+                    <th class="px-4 py-3 font-semibold">
+                      Universidad tecnológica
+                    </th>
                     <th class="px-4 py-3 font-semibold">Licenciatura / TSU</th>
                     <th class="px-4 py-3 font-semibold">Modalidad</th>
                     <th class="px-4 py-3 font-semibold rounded-tr">Demanda</th>
                   </tr>
                 </thead>
                 <tbody class="text-gray-700">
-                  <tr class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">1</td><td class="px-4 py-2.5">La Paz</td><td class="px-4 py-2.5">Lic. en Administración - TSU en Gestión en Capital Humano</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800">BAJA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">2</td><td class="px-4 py-2.5">La Paz</td><td class="px-4 py-2.5">Lic. en Administración - TSU en Emprendimiento, Formulación y Evaluación de Proyectos</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800">BAJA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">3</td><td class="px-4 py-2.5">La Paz</td><td class="px-4 py-2.5">Lic. en Administración - TSU en Gestión en Capital Humano</td><td class="px-4 py-2.5">Mixta</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800">BAJA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">4</td><td class="px-4 py-2.5">La Paz</td><td class="px-4 py-2.5">Lic. en Negocios y Mercadotecnia - TSU en Mercadotecnia</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-800">MEDIA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">5</td><td class="px-4 py-2.5">La Paz</td><td class="px-4 py-2.5">Lic. en Negocios y Mercadotecnia - TSU en Ventas</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800">BAJA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">6</td><td class="px-4 py-2.5">La Paz</td><td class="px-4 py-2.5">Lic. en Gestión y Desarrollo Turístico - TSU en Turismo</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-800">MEDIA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">7</td><td class="px-4 py-2.5">La Paz</td><td class="px-4 py-2.5">Lic. en Gastronomía - TSU en Gastronomía</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-red-100 text-red-800">ALTA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">8</td><td class="px-4 py-2.5">La Paz</td><td class="px-4 py-2.5">Ing. en Mantenimiento Industrial - TSU en Mantenimiento en Soldadura</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800">BAJA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">9</td><td class="px-4 py-2.5">La Paz</td><td class="px-4 py-2.5">Ing. en Mantenimiento Industrial - TSU en Mantenimiento Industrial</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-800">MEDIA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">10</td><td class="px-4 py-2.5">La Paz</td><td class="px-4 py-2.5">Ing. en Mantenimiento Industrial - TSU en Mantenimiento Naval</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-800">MEDIA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">11</td><td class="px-4 py-2.5">La Paz</td><td class="px-4 py-2.5">Ing. en Energía y Desarrollo Sustentable - TSU en Energía Solar</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-800">MEDIA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">12</td><td class="px-4 py-2.5">La Paz</td><td class="px-4 py-2.5">Ing. en Agricultura Sustentable y Protegida - TSU en Agricultura Sustentable y Protegida</td><td class="px-4 py-2.5">Escolaridad</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800">BAJA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">13</td><td class="px-4 py-2.5">La Paz</td><td class="px-4 py-2.5">Ing. en Agricultura Sustentable y Protegida - TSU en Agricultura Sustentable y Protegida</td><td class="px-4 py-2.5">Dual</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800">BAJA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">14</td><td class="px-4 py-2.5">La Paz</td><td class="px-4 py-2.5">Ing. en Tecnología de la Información e Innovación Digital - TSU en Entornos Virtuales y Negocios</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800">BAJA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">15</td><td class="px-4 py-2.5">La Paz</td><td class="px-4 py-2.5">Ing. en Mecánica - TSU en Mecánica Automotriz</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-red-100 text-red-800">ALTA</span></td></tr>
-                  <tr class="hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">16</td><td class="px-4 py-2.5">La Paz</td><td class="px-4 py-2.5">Ing. en Acuicultura - TSU en Acuicultura</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800">BAJA</span></td></tr>
+                  <tr
+                    class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">1</td>
+                    <td class="px-4 py-2.5">La Paz</td>
+                    <td class="px-4 py-2.5">
+                      Lic. en Administración - TSU en Gestión en Capital Humano
+                    </td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800"
+                        >BAJA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">2</td>
+                    <td class="px-4 py-2.5">La Paz</td>
+                    <td class="px-4 py-2.5">
+                      Lic. en Administración - TSU en Emprendimiento,
+                      Formulación y Evaluación de Proyectos
+                    </td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800"
+                        >BAJA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">3</td>
+                    <td class="px-4 py-2.5">La Paz</td>
+                    <td class="px-4 py-2.5">
+                      Lic. en Administración - TSU en Gestión en Capital Humano
+                    </td>
+                    <td class="px-4 py-2.5">Mixta</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800"
+                        >BAJA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">4</td>
+                    <td class="px-4 py-2.5">La Paz</td>
+                    <td class="px-4 py-2.5">
+                      Lic. en Negocios y Mercadotecnia - TSU en Mercadotecnia
+                    </td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-800"
+                        >MEDIA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">5</td>
+                    <td class="px-4 py-2.5">La Paz</td>
+                    <td class="px-4 py-2.5">
+                      Lic. en Negocios y Mercadotecnia - TSU en Ventas
+                    </td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800"
+                        >BAJA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">6</td>
+                    <td class="px-4 py-2.5">La Paz</td>
+                    <td class="px-4 py-2.5">
+                      Lic. en Gestión y Desarrollo Turístico - TSU en Turismo
+                    </td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-800"
+                        >MEDIA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">7</td>
+                    <td class="px-4 py-2.5">La Paz</td>
+                    <td class="px-4 py-2.5">
+                      Lic. en Gastronomía - TSU en Gastronomía
+                    </td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-red-100 text-red-800"
+                        >ALTA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">8</td>
+                    <td class="px-4 py-2.5">La Paz</td>
+                    <td class="px-4 py-2.5">
+                      Ing. en Mantenimiento Industrial - TSU en Mantenimiento en
+                      Soldadura
+                    </td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800"
+                        >BAJA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">9</td>
+                    <td class="px-4 py-2.5">La Paz</td>
+                    <td class="px-4 py-2.5">
+                      Ing. en Mantenimiento Industrial - TSU en Mantenimiento
+                      Industrial
+                    </td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-800"
+                        >MEDIA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">10</td>
+                    <td class="px-4 py-2.5">La Paz</td>
+                    <td class="px-4 py-2.5">
+                      Ing. en Mantenimiento Industrial - TSU en Mantenimiento
+                      Naval
+                    </td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-800"
+                        >MEDIA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">11</td>
+                    <td class="px-4 py-2.5">La Paz</td>
+                    <td class="px-4 py-2.5">
+                      Ing. en Energía y Desarrollo Sustentable - TSU en Energía
+                      Solar
+                    </td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-800"
+                        >MEDIA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">12</td>
+                    <td class="px-4 py-2.5">La Paz</td>
+                    <td class="px-4 py-2.5">
+                      Ing. en Agricultura Sustentable y Protegida - TSU en
+                      Agricultura Sustentable y Protegida
+                    </td>
+                    <td class="px-4 py-2.5">Escolaridad</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800"
+                        >BAJA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">13</td>
+                    <td class="px-4 py-2.5">La Paz</td>
+                    <td class="px-4 py-2.5">
+                      Ing. en Agricultura Sustentable y Protegida - TSU en
+                      Agricultura Sustentable y Protegida
+                    </td>
+                    <td class="px-4 py-2.5">Dual</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800"
+                        >BAJA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">14</td>
+                    <td class="px-4 py-2.5">La Paz</td>
+                    <td class="px-4 py-2.5">
+                      Ing. en Tecnología de la Información e Innovación Digital
+                      - TSU en Entornos Virtuales y Negocios
+                    </td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800"
+                        >BAJA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">15</td>
+                    <td class="px-4 py-2.5">La Paz</td>
+                    <td class="px-4 py-2.5">
+                      Ing. en Mecánica - TSU en Mecánica Automotriz
+                    </td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-red-100 text-red-800"
+                        >ALTA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr class="hover:bg-green-50 transition-colors duration-150">
+                    <td class="px-4 py-2.5">16</td>
+                    <td class="px-4 py-2.5">La Paz</td>
+                    <td class="px-4 py-2.5">
+                      Ing. en Acuicultura - TSU en Acuicultura
+                    </td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800"
+                        >BAJA</span
+                      >
+                    </td>
+                  </tr>
                 </tbody>
               </table>
             </div>
@@ -883,117 +1306,208 @@
         </div>
         <div class="p-6 space-y-6 bg-gray-50">
           <!-- Criterios de Ingreso -->
-          <section class="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden">
+          <section
+            class="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden"
+          >
             <div class="bg-green-100 px-5 py-3 border-l-4 border-green-500">
-              <h4 class="text-base font-bold text-green-800 uppercase tracking-wide flex items-center">
+              <h4
+                class="text-base font-bold text-green-800 uppercase tracking-wide flex items-center"
+              >
                 <i class="fas fa-clipboard-list mr-2 text-green-600"></i>
                 Criterios de Ingreso y Descuentos
               </h4>
             </div>
             <div class="p-5 space-y-4">
-              <div class="bg-gray-50 rounded-md p-4 border border-gray-200 hover:border-green-300 transition-colors duration-200">
+              <div
+                class="bg-gray-50 rounded-md p-4 border border-gray-200 hover:border-green-300 transition-colors duration-200"
+              >
                 <p class="font-semibold text-gray-800 flex items-center mb-2">
-                  <span class="w-6 h-6 rounded-full bg-green-600 text-white text-sm flex items-center justify-center mr-2 flex-shrink-0">1</span>
+                  <span
+                    class="w-6 h-6 rounded-full bg-green-600 text-white text-sm flex items-center justify-center mr-2 flex-shrink-0"
+                    >1</span
+                  >
                   Estudiantes con promedio de 95 a 100
                 </p>
                 <ul class="space-y-1.5 pl-8 text-gray-700">
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
                     <span>Ingreso a la carrera de su elección.</span>
                   </li>
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
                     <span>Turno matutino.</span>
                   </li>
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
-                    <span>Descuento del 50% en el derecho de admisión (paga solo el 50% del valor de la ficha de ingreso), siempre y cuando sea en la primera convocatoria.</span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
+                    <span
+                      >Descuento del 50% en el derecho de admisión (paga solo el
+                      50% del valor de la ficha de ingreso), siempre y cuando
+                      sea en la primera convocatoria.</span
+                    >
                   </li>
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
-                    <span>Presenta examen diagnóstico y curso propedéutico.</span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
+                    <span
+                      >Presenta examen diagnóstico y curso propedéutico.</span
+                    >
                   </li>
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
-                    <span>Una vez siendo estudiante, si mantiene su promedio de 95 a 100 tendrá el 20% de descuento en su reinscripción a partir del segundo semestre, siempre que conserve promedio mayor o igual a 95 y sea alumno regular (sin asignaturas no aprobadas).</span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
+                    <span
+                      >Una vez siendo estudiante, si mantiene su promedio de 95
+                      a 100 tendrá el 20% de descuento en su reinscripción a
+                      partir del segundo semestre, siempre que conserve promedio
+                      mayor o igual a 95 y sea alumno regular (sin asignaturas
+                      no aprobadas).</span
+                    >
                   </li>
                 </ul>
               </div>
-              <div class="bg-gray-50 rounded-md p-4 border border-gray-200 hover:border-green-300 transition-colors duration-200">
+              <div
+                class="bg-gray-50 rounded-md p-4 border border-gray-200 hover:border-green-300 transition-colors duration-200"
+              >
                 <p class="font-semibold text-gray-800 flex items-center mb-2">
-                  <span class="w-6 h-6 rounded-full bg-green-600 text-white text-sm flex items-center justify-center mr-2 flex-shrink-0">2</span>
+                  <span
+                    class="w-6 h-6 rounded-full bg-green-600 text-white text-sm flex items-center justify-center mr-2 flex-shrink-0"
+                    >2</span
+                  >
                   Estudiantes con promedio de 85 a 95
                 </p>
                 <ul class="space-y-1.5 pl-8 text-gray-700">
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
                     <span>Ingreso a la carrera de su elección.</span>
                   </li>
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
-                    <span>Turno sujeto al resultado del examen diagnóstico y del curso propedéutico.</span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
+                    <span
+                      >Turno sujeto al resultado del examen diagnóstico y del
+                      curso propedéutico.</span
+                    >
                   </li>
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
-                    <span>Descuento del 20% en el derecho de admisión (paga el 80% del valor de la ficha de ingreso), siempre y cuando sea en la primera convocatoria.</span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
+                    <span
+                      >Descuento del 20% en el derecho de admisión (paga el 80%
+                      del valor de la ficha de ingreso), siempre y cuando sea en
+                      la primera convocatoria.</span
+                    >
                   </li>
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
-                    <span>Presenta examen diagnóstico y curso propedéutico.</span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
+                    <span
+                      >Presenta examen diagnóstico y curso propedéutico.</span
+                    >
                   </li>
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
-                    <span>Una vez siendo estudiante, si mantiene su promedio de 85 a 95 tendrá el 10% de descuento en su reinscripción a partir del segundo semestre, siempre que conserve promedio mayor o igual a 85 y sea alumno regular (sin asignaturas no aprobadas).</span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
+                    <span
+                      >Una vez siendo estudiante, si mantiene su promedio de 85
+                      a 95 tendrá el 10% de descuento en su reinscripción a
+                      partir del segundo semestre, siempre que conserve promedio
+                      mayor o igual a 85 y sea alumno regular (sin asignaturas
+                      no aprobadas).</span
+                    >
                   </li>
                 </ul>
               </div>
-              <div class="bg-gray-50 rounded-md p-4 border border-gray-200 hover:border-green-300 transition-colors duration-200">
+              <div
+                class="bg-gray-50 rounded-md p-4 border border-gray-200 hover:border-green-300 transition-colors duration-200"
+              >
                 <p class="font-semibold text-gray-800 flex items-center mb-2">
-                  <span class="w-6 h-6 rounded-full bg-green-600 text-white text-sm flex items-center justify-center mr-2 flex-shrink-0">3</span>
+                  <span
+                    class="w-6 h-6 rounded-full bg-green-600 text-white text-sm flex items-center justify-center mr-2 flex-shrink-0"
+                    >3</span
+                  >
                   Estudiantes con promedio de 70 a 85
                 </p>
                 <ul class="space-y-1.5 pl-8 text-gray-700">
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
                     <span>Ingreso a la carrera de su elección.</span>
                   </li>
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
-                    <span>Turno sujeto al resultado del examen diagnóstico y del curso propedéutico.</span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
+                    <span
+                      >Turno sujeto al resultado del examen diagnóstico y del
+                      curso propedéutico.</span
+                    >
                   </li>
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
                     <span>No cuenta con descuento.</span>
                   </li>
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
-                    <span>Presenta examen diagnóstico y curso propedéutico.</span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
+                    <span
+                      >Presenta examen diagnóstico y curso propedéutico.</span
+                    >
                   </li>
                 </ul>
               </div>
             </div>
           </section>
           <!-- Nota -->
-          <section class="bg-white rounded-lg border border-amber-200 shadow-sm overflow-hidden">
+          <section
+            class="bg-white rounded-lg border border-amber-200 shadow-sm overflow-hidden"
+          >
             <div class="bg-amber-100 px-5 py-3 border-l-4 border-amber-500">
-              <h4 class="text-base font-bold text-amber-900 uppercase tracking-wide flex items-center">
+              <h4
+                class="text-base font-bold text-amber-900 uppercase tracking-wide flex items-center"
+              >
                 <i class="fas fa-info-circle mr-2 text-amber-700"></i>
                 Nota importante
               </h4>
             </div>
             <div class="p-5 space-y-2 text-gray-800 text-sm">
               <p>
-                1. Los criterios de ingreso y descuentos son una propuesta y están sujetos a la autorización de la Junta Directiva del Instituto Tecnológico de Estudios Superiores de Los Cabos.
+                1. Los criterios de ingreso y descuentos son una propuesta y
+                están sujetos a la autorización de la Junta Directiva del
+                Instituto Tecnológico de Estudios Superiores de Los Cabos.
               </p>
               <p>
-                2. Todos los estudiantes podrán aspirar a cualquier programa educativo, independientemente de su promedio y de la demanda del programa.
+                2. Todos los estudiantes podrán aspirar a cualquier programa
+                educativo, independientemente de su promedio y de la demanda del
+                programa.
               </p>
             </div>
           </section>
           <!-- Carreras ofertadas -->
-          <section class="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden">
+          <section
+            class="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden"
+          >
             <div class="bg-green-100 px-5 py-3 border-l-4 border-green-500">
-              <h4 class="text-base font-bold text-green-800 uppercase tracking-wide flex items-center">
+              <h4
+                class="text-base font-bold text-green-800 uppercase tracking-wide flex items-center"
+              >
                 <i class="fas fa-graduation-cap mr-2 text-green-600"></i>
                 Carreras ofertadas por ITES Los Cabos
               </h4>
@@ -1010,24 +1524,162 @@
                   </tr>
                 </thead>
                 <tbody class="text-gray-700">
-                  <tr class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">1</td><td class="px-4 py-2.5">Los Cabos</td><td class="px-4 py-2.5">Arquitectura</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-red-100 text-red-800">ALTA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">2</td><td class="px-4 py-2.5">Los Cabos</td><td class="px-4 py-2.5">Contador Público</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-red-100 text-red-800">ALTA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">3</td><td class="px-4 py-2.5">Los Cabos</td><td class="px-4 py-2.5">Gastronomía</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-red-100 text-red-800">ALTA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">4</td><td class="px-4 py-2.5">Los Cabos</td><td class="px-4 py-2.5">Ing. en Administración</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-red-100 text-red-800">ALTA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">5</td><td class="px-4 py-2.5">Los Cabos</td><td class="px-4 py-2.5">Ing. en Administración</td><td class="px-4 py-2.5">Mixta</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800">BAJA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">6</td><td class="px-4 py-2.5">Los Cabos</td><td class="px-4 py-2.5">Ing. Civil</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800">BAJA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">7</td><td class="px-4 py-2.5">Los Cabos</td><td class="px-4 py-2.5">Ing. Electromecánica</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800">BAJA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">8</td><td class="px-4 py-2.5">Los Cabos</td><td class="px-4 py-2.5">Ing. en Sistemas Computacionales</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800">BAJA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">9</td><td class="px-4 py-2.5">Los Cabos</td><td class="px-4 py-2.5">Ing. en Sistemas Computacionales</td><td class="px-4 py-2.5">No escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800">BAJA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">10</td><td class="px-4 py-2.5">Los Cabos</td><td class="px-4 py-2.5">Lic. en Turismo</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-800">MEDIA</span></td></tr>
+                  <tr
+                    class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">1</td>
+                    <td class="px-4 py-2.5">Los Cabos</td>
+                    <td class="px-4 py-2.5">Arquitectura</td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-red-100 text-red-800"
+                        >ALTA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">2</td>
+                    <td class="px-4 py-2.5">Los Cabos</td>
+                    <td class="px-4 py-2.5">Contador Público</td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-red-100 text-red-800"
+                        >ALTA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">3</td>
+                    <td class="px-4 py-2.5">Los Cabos</td>
+                    <td class="px-4 py-2.5">Gastronomía</td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-red-100 text-red-800"
+                        >ALTA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">4</td>
+                    <td class="px-4 py-2.5">Los Cabos</td>
+                    <td class="px-4 py-2.5">Ing. en Administración</td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-red-100 text-red-800"
+                        >ALTA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">5</td>
+                    <td class="px-4 py-2.5">Los Cabos</td>
+                    <td class="px-4 py-2.5">Ing. en Administración</td>
+                    <td class="px-4 py-2.5">Mixta</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800"
+                        >BAJA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">6</td>
+                    <td class="px-4 py-2.5">Los Cabos</td>
+                    <td class="px-4 py-2.5">Ing. Civil</td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800"
+                        >BAJA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">7</td>
+                    <td class="px-4 py-2.5">Los Cabos</td>
+                    <td class="px-4 py-2.5">Ing. Electromecánica</td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800"
+                        >BAJA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">8</td>
+                    <td class="px-4 py-2.5">Los Cabos</td>
+                    <td class="px-4 py-2.5">
+                      Ing. en Sistemas Computacionales
+                    </td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800"
+                        >BAJA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">9</td>
+                    <td class="px-4 py-2.5">Los Cabos</td>
+                    <td class="px-4 py-2.5">
+                      Ing. en Sistemas Computacionales
+                    </td>
+                    <td class="px-4 py-2.5">No escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800"
+                        >BAJA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">10</td>
+                    <td class="px-4 py-2.5">Los Cabos</td>
+                    <td class="px-4 py-2.5">Lic. en Turismo</td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-800"
+                        >MEDIA</span
+                      >
+                    </td>
+                  </tr>
                 </tbody>
               </table>
             </div>
           </section>
           <!-- Requisitos -->
-          <section class="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden">
+          <section
+            class="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden"
+          >
             <div class="bg-green-100 px-5 py-3 border-l-4 border-green-500">
-              <h4 class="text-base font-bold text-green-800 uppercase tracking-wide flex items-center">
+              <h4
+                class="text-base font-bold text-green-800 uppercase tracking-wide flex items-center"
+              >
                 <i class="fas fa-file-alt mr-2 text-green-600"></i>
                 Requisitos
               </h4>
@@ -1035,16 +1687,31 @@
             <div class="p-5">
               <ul class="space-y-2 text-gray-700">
                 <li class="flex items-start">
-                  <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
-                  <span>Certificado del CECYTEBCS donde conste el promedio de los estudiantes.</span>
+                  <span
+                    class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                  ></span>
+                  <span
+                    >Certificado del CECYTEBCS donde conste el promedio de los
+                    estudiantes.</span
+                  >
                 </li>
                 <li class="flex items-start">
-                  <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
-                  <span>Constancia de haber cursado de forma continua los 6 semestres del bachillerato en el CECYTEBCS.</span>
+                  <span
+                    class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                  ></span>
+                  <span
+                    >Constancia de haber cursado de forma continua los 6
+                    semestres del bachillerato en el CECYTEBCS.</span
+                  >
                 </li>
                 <li class="flex items-start">
-                  <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
-                  <span>Los documentos que el Tecnológico requiera para la inscripción de las y los estudiantes.</span>
+                  <span
+                    class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                  ></span>
+                  <span
+                    >Los documentos que el Tecnológico requiera para la
+                    inscripción de las y los estudiantes.</span
+                  >
                 </li>
               </ul>
             </div>
@@ -1089,88 +1756,155 @@
         </div>
         <div class="p-6 space-y-6 bg-gray-50">
           <!-- Criterios de Ingreso -->
-          <section class="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden">
+          <section
+            class="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden"
+          >
             <div class="bg-green-100 px-5 py-3 border-l-4 border-green-500">
-              <h4 class="text-base font-bold text-green-800 uppercase tracking-wide flex items-center">
+              <h4
+                class="text-base font-bold text-green-800 uppercase tracking-wide flex items-center"
+              >
                 <i class="fas fa-clipboard-list mr-2 text-green-600"></i>
                 Criterios de Ingreso y Descuentos
               </h4>
             </div>
             <div class="p-5 space-y-4">
-              <div class="bg-gray-50 rounded-md p-4 border border-gray-200 hover:border-green-300 transition-colors duration-200">
+              <div
+                class="bg-gray-50 rounded-md p-4 border border-gray-200 hover:border-green-300 transition-colors duration-200"
+              >
                 <p class="font-semibold text-gray-800 flex items-center mb-2">
-                  <span class="w-6 h-6 rounded-full bg-green-600 text-white text-sm flex items-center justify-center mr-2 flex-shrink-0">1</span>
+                  <span
+                    class="w-6 h-6 rounded-full bg-green-600 text-white text-sm flex items-center justify-center mr-2 flex-shrink-0"
+                    >1</span
+                  >
                   Estudiantes con promedio de 100 a 90
                 </p>
                 <ul class="space-y-1.5 pl-8 text-gray-700">
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
-                    <span>Ingreso a la carrera de su elección en los Tecnológicos.</span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
+                    <span
+                      >Ingreso a la carrera de su elección en los
+                      Tecnológicos.</span
+                    >
                   </li>
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
-                    <span>Descuento del 50% en la ficha del examen de admisión con fines de diagnóstico.</span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
+                    <span
+                      >Descuento del 50% en la ficha del examen de admisión con
+                      fines de diagnóstico.</span
+                    >
                   </li>
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
                     <span>Curso propedéutico sin costo.</span>
                   </li>
                 </ul>
               </div>
-              <div class="bg-gray-50 rounded-md p-4 border border-gray-200 hover:border-green-300 transition-colors duration-200">
+              <div
+                class="bg-gray-50 rounded-md p-4 border border-gray-200 hover:border-green-300 transition-colors duration-200"
+              >
                 <p class="font-semibold text-gray-800 flex items-center mb-2">
-                  <span class="w-6 h-6 rounded-full bg-green-600 text-white text-sm flex items-center justify-center mr-2 flex-shrink-0">2</span>
+                  <span
+                    class="w-6 h-6 rounded-full bg-green-600 text-white text-sm flex items-center justify-center mr-2 flex-shrink-0"
+                    >2</span
+                  >
                   Estudiantes con promedio de 89 a 85
                 </p>
                 <ul class="space-y-1.5 pl-8 text-gray-700">
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
-                    <span>Ingreso automático a carreras, media y baja demanda. El acceso a las carreras de alta demanda estará sujeto a la disponibilidad de espacios.</span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
+                    <span
+                      >Ingreso automático a carreras, media y baja demanda. El
+                      acceso a las carreras de alta demanda estará sujeto a la
+                      disponibilidad de espacios.</span
+                    >
                   </li>
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
-                    <span>Descuento del 25% en la ficha del examen de admisión con fines de diagnóstico.</span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
+                    <span
+                      >Descuento del 25% en la ficha del examen de admisión con
+                      fines de diagnóstico.</span
+                    >
                   </li>
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
                     <span>Curso propedéutico sin costo.</span>
                   </li>
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
-                    <span>En caso de decidir una carrera de alta demanda también pueden optar por el procedimiento convencional.</span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
+                    <span
+                      >En caso de decidir una carrera de alta demanda también
+                      pueden optar por el procedimiento convencional.</span
+                    >
                   </li>
                 </ul>
               </div>
-              <div class="bg-gray-50 rounded-md p-4 border border-gray-200 hover:border-green-300 transition-colors duration-200">
+              <div
+                class="bg-gray-50 rounded-md p-4 border border-gray-200 hover:border-green-300 transition-colors duration-200"
+              >
                 <p class="font-semibold text-gray-800 flex items-center mb-2">
-                  <span class="w-6 h-6 rounded-full bg-green-600 text-white text-sm flex items-center justify-center mr-2 flex-shrink-0">3</span>
+                  <span
+                    class="w-6 h-6 rounded-full bg-green-600 text-white text-sm flex items-center justify-center mr-2 flex-shrink-0"
+                    >3</span
+                  >
                   Estudiantes con promedio de 85 a 70
                 </p>
                 <ul class="space-y-1.5 pl-8 text-gray-700">
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
                     <span>Ingreso únicamente a carreras de baja demanda.</span>
                   </li>
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
-                    <span>Presentación obligatoria del examen de admisión con fines de diagnóstico.</span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
+                    <span
+                      >Presentación obligatoria del examen de admisión con fines
+                      de diagnóstico.</span
+                    >
                   </li>
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
                     <span>Curso propedéutico sin costo.</span>
                   </li>
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
-                    <span>En caso de decidir una carrera de alta o mediana demanda lo realizan por procedimiento convencional.</span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
+                    <span
+                      >En caso de decidir una carrera de alta o mediana demanda
+                      lo realizan por procedimiento convencional.</span
+                    >
                   </li>
                 </ul>
               </div>
             </div>
           </section>
           <!-- Demanda de Carreras -->
-          <section class="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden">
+          <section
+            class="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden"
+          >
             <div class="bg-green-100 px-5 py-3 border-l-4 border-green-500">
-              <h4 class="text-base font-bold text-green-800 uppercase tracking-wide flex items-center">
+              <h4
+                class="text-base font-bold text-green-800 uppercase tracking-wide flex items-center"
+              >
                 <i class="fas fa-graduation-cap mr-2 text-green-600"></i>
                 Demanda de Carreras
               </h4>
@@ -1187,18 +1921,178 @@
                   </tr>
                 </thead>
                 <tbody class="text-gray-700">
-                  <tr class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">1</td><td class="px-4 py-2.5">ITLP</td><td class="px-4 py-2.5">Contador Público</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-red-100 text-red-800">ALTA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">2</td><td class="px-4 py-2.5">ITLP</td><td class="px-4 py-2.5">Arquitectura</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-red-100 text-red-800">ALTA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">3</td><td class="px-4 py-2.5">ITLP</td><td class="px-4 py-2.5">Ing. Civil</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-red-100 text-red-800">ALTA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">4</td><td class="px-4 py-2.5">ITLP</td><td class="px-4 py-2.5">Ing. Electromecánica</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-800">MEDIA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">5</td><td class="px-4 py-2.5">ITLP</td><td class="px-4 py-2.5">Lic. en Administración</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800">BAJA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">6</td><td class="px-4 py-2.5">ITLP</td><td class="px-4 py-2.5">Ing. Bioquímica</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800">BAJA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">7</td><td class="px-4 py-2.5">ITLP</td><td class="px-4 py-2.5">Ing. Industrial</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800">BAJA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">8</td><td class="px-4 py-2.5">ITLP</td><td class="px-4 py-2.5">Ing. en Sistemas Computacionales</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800">BAJA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">9</td><td class="px-4 py-2.5">ITLP</td><td class="px-4 py-2.5">Ing. en Gestión Empresarial</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800">BAJA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">10</td><td class="px-4 py-2.5">ITLP</td><td class="px-4 py-2.5">Ingeniería en Inteligencia Artificial</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800">BAJA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">11</td><td class="px-4 py-2.5">ITLP</td><td class="px-4 py-2.5">Ing. en Ciberseguridad</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800">BAJA</span></td></tr>
-                  <tr class="hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">12</td><td class="px-4 py-2.5">ITLP</td><td class="px-4 py-2.5">Ing. en Sistemas Computacionales</td><td class="px-4 py-2.5">A distancia</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800">BAJA</span></td></tr>
+                  <tr
+                    class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">1</td>
+                    <td class="px-4 py-2.5">ITLP</td>
+                    <td class="px-4 py-2.5">Contador Público</td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-red-100 text-red-800"
+                        >ALTA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">2</td>
+                    <td class="px-4 py-2.5">ITLP</td>
+                    <td class="px-4 py-2.5">Arquitectura</td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-red-100 text-red-800"
+                        >ALTA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">3</td>
+                    <td class="px-4 py-2.5">ITLP</td>
+                    <td class="px-4 py-2.5">Ing. Civil</td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-red-100 text-red-800"
+                        >ALTA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">4</td>
+                    <td class="px-4 py-2.5">ITLP</td>
+                    <td class="px-4 py-2.5">Ing. Electromecánica</td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-800"
+                        >MEDIA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">5</td>
+                    <td class="px-4 py-2.5">ITLP</td>
+                    <td class="px-4 py-2.5">Lic. en Administración</td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800"
+                        >BAJA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">6</td>
+                    <td class="px-4 py-2.5">ITLP</td>
+                    <td class="px-4 py-2.5">Ing. Bioquímica</td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800"
+                        >BAJA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">7</td>
+                    <td class="px-4 py-2.5">ITLP</td>
+                    <td class="px-4 py-2.5">Ing. Industrial</td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800"
+                        >BAJA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">8</td>
+                    <td class="px-4 py-2.5">ITLP</td>
+                    <td class="px-4 py-2.5">
+                      Ing. en Sistemas Computacionales
+                    </td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800"
+                        >BAJA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">9</td>
+                    <td class="px-4 py-2.5">ITLP</td>
+                    <td class="px-4 py-2.5">Ing. en Gestión Empresarial</td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800"
+                        >BAJA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">10</td>
+                    <td class="px-4 py-2.5">ITLP</td>
+                    <td class="px-4 py-2.5">
+                      Ingeniería en Inteligencia Artificial
+                    </td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800"
+                        >BAJA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">11</td>
+                    <td class="px-4 py-2.5">ITLP</td>
+                    <td class="px-4 py-2.5">Ing. en Ciberseguridad</td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800"
+                        >BAJA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr class="hover:bg-green-50 transition-colors duration-150">
+                    <td class="px-4 py-2.5">12</td>
+                    <td class="px-4 py-2.5">ITLP</td>
+                    <td class="px-4 py-2.5">
+                      Ing. en Sistemas Computacionales
+                    </td>
+                    <td class="px-4 py-2.5">A distancia</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800"
+                        >BAJA</span
+                      >
+                    </td>
+                  </tr>
                 </tbody>
               </table>
             </div>
@@ -1243,80 +2137,130 @@
         </div>
         <div class="p-6 space-y-6 bg-gray-50">
           <!-- Criterios de Ingreso -->
-          <section class="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden">
+          <section
+            class="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden"
+          >
             <div class="bg-green-100 px-5 py-3 border-l-4 border-green-500">
-              <h4 class="text-base font-bold text-green-800 uppercase tracking-wide flex items-center">
+              <h4
+                class="text-base font-bold text-green-800 uppercase tracking-wide flex items-center"
+              >
                 <i class="fas fa-clipboard-list mr-2 text-green-600"></i>
                 Criterios de Ingreso y Descuentos
               </h4>
             </div>
             <div class="p-5 space-y-4">
-              <div class="bg-gray-50 rounded-md p-4 border border-gray-200 hover:border-green-300 transition-colors duration-200">
+              <div
+                class="bg-gray-50 rounded-md p-4 border border-gray-200 hover:border-green-300 transition-colors duration-200"
+              >
                 <p class="font-semibold text-gray-800 flex items-center mb-2">
-                  <span class="w-6 h-6 rounded-full bg-green-600 text-white text-sm flex items-center justify-center mr-2 flex-shrink-0">1</span>
+                  <span
+                    class="w-6 h-6 rounded-full bg-green-600 text-white text-sm flex items-center justify-center mr-2 flex-shrink-0"
+                    >1</span
+                  >
                   Estudiantes con promedio de 100 a 90
                 </p>
                 <ul class="space-y-1.5 pl-8 text-gray-700">
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
                     <span>Ingreso a la carrera de su elección.</span>
                   </li>
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
                     <span>Descuento del 50% en la ficha de inscripción.</span>
                   </li>
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
-                    <span>Presentará el examen de ingreso para fines de diagnóstico.</span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
+                    <span
+                      >Presentará el examen de ingreso para fines de
+                      diagnóstico.</span
+                    >
                   </li>
                 </ul>
               </div>
-              <div class="bg-gray-50 rounded-md p-4 border border-gray-200 hover:border-green-300 transition-colors duration-200">
+              <div
+                class="bg-gray-50 rounded-md p-4 border border-gray-200 hover:border-green-300 transition-colors duration-200"
+              >
                 <p class="font-semibold text-gray-800 flex items-center mb-2">
-                  <span class="w-6 h-6 rounded-full bg-green-600 text-white text-sm flex items-center justify-center mr-2 flex-shrink-0">2</span>
+                  <span
+                    class="w-6 h-6 rounded-full bg-green-600 text-white text-sm flex items-center justify-center mr-2 flex-shrink-0"
+                    >2</span
+                  >
                   Estudiantes con promedio de 89 a 85
                 </p>
                 <ul class="space-y-1.5 pl-8 text-gray-700">
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
                     <span>Ingreso a la carrera de su elección.</span>
                   </li>
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
                     <span>Descuento del 25% en la ficha de inscripción.</span>
                   </li>
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
-                    <span>Presentará el examen de ingreso para fines de diagnóstico.</span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
+                    <span
+                      >Presentará el examen de ingreso para fines de
+                      diagnóstico.</span
+                    >
                   </li>
                 </ul>
               </div>
-              <div class="bg-gray-50 rounded-md p-4 border border-gray-200 hover:border-green-300 transition-colors duration-200">
+              <div
+                class="bg-gray-50 rounded-md p-4 border border-gray-200 hover:border-green-300 transition-colors duration-200"
+              >
                 <p class="font-semibold text-gray-800 flex items-center mb-2">
-                  <span class="w-6 h-6 rounded-full bg-green-600 text-white text-sm flex items-center justify-center mr-2 flex-shrink-0">3</span>
+                  <span
+                    class="w-6 h-6 rounded-full bg-green-600 text-white text-sm flex items-center justify-center mr-2 flex-shrink-0"
+                    >3</span
+                  >
                   Estudiantes con promedio de 85 a 70
                 </p>
                 <ul class="space-y-1.5 pl-8 text-gray-700">
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
                     <span>Ingreso a la carrera de su elección.</span>
                   </li>
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
                     <span>No cuenta con descuento.</span>
                   </li>
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
-                    <span>Presentará el examen de ingreso para fines de diagnóstico.</span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
+                    <span
+                      >Presentará el examen de ingreso para fines de
+                      diagnóstico.</span
+                    >
                   </li>
                 </ul>
               </div>
             </div>
           </section>
           <!-- Requisitos -->
-          <section class="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden">
+          <section
+            class="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden"
+          >
             <div class="bg-green-100 px-5 py-3 border-l-4 border-green-500">
-              <h4 class="text-base font-bold text-green-800 uppercase tracking-wide flex items-center">
+              <h4
+                class="text-base font-bold text-green-800 uppercase tracking-wide flex items-center"
+              >
                 <i class="fas fa-file-alt mr-2 text-green-600"></i>
                 Requisitos
               </h4>
@@ -1324,20 +2268,34 @@
             <div class="p-5">
               <ul class="space-y-2 text-gray-700">
                 <li class="flex items-start">
-                  <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
-                  <span>Certificado del CECYTEBCS, donde conste el promedio de los estudiantes.</span>
+                  <span
+                    class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                  ></span>
+                  <span
+                    >Certificado del CECYTEBCS, donde conste el promedio de los
+                    estudiantes.</span
+                  >
                 </li>
                 <li class="flex items-start">
-                  <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
-                  <span>Los aspirantes presentarán los documentos que el ITSCC requiera para la inscripción de las y los estudiantes.</span>
+                  <span
+                    class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                  ></span>
+                  <span
+                    >Los aspirantes presentarán los documentos que el ITSCC
+                    requiera para la inscripción de las y los estudiantes.</span
+                  >
                 </li>
               </ul>
             </div>
           </section>
           <!-- Demanda de Carreras -->
-          <section class="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden">
+          <section
+            class="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden"
+          >
             <div class="bg-green-100 px-5 py-3 border-l-4 border-green-500">
-              <h4 class="text-base font-bold text-green-800 uppercase tracking-wide flex items-center">
+              <h4
+                class="text-base font-bold text-green-800 uppercase tracking-wide flex items-center"
+              >
                 <i class="fas fa-graduation-cap mr-2 text-green-600"></i>
                 Demanda de Carreras
               </h4>
@@ -1354,17 +2312,162 @@
                   </tr>
                 </thead>
                 <tbody class="text-gray-700">
-                  <tr class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">1</td><td class="px-4 py-2.5">Ciudad Constitución</td><td class="px-4 py-2.5">Lic. en Gastronomía</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-red-100 text-red-800">ALTA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">2</td><td class="px-4 py-2.5">Ciudad Constitución</td><td class="px-4 py-2.5">Ing. en Innovación Agrícola Sustentable</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-red-100 text-red-800">ALTA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">3</td><td class="px-4 py-2.5">Ciudad Constitución</td><td class="px-4 py-2.5">Lic. en Administración</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-red-100 text-red-800">ALTA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">4</td><td class="px-4 py-2.5">Ciudad Constitución</td><td class="px-4 py-2.5">Lic. en Arquitectura</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-red-100 text-red-800">ALTA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">5</td><td class="px-4 py-2.5">Ciudad Constitución</td><td class="px-4 py-2.5">Ing. Electromecánica</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-red-100 text-red-800">ALTA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">6</td><td class="px-4 py-2.5">Ciudad Constitución</td><td class="px-4 py-2.5">Ing. en Gestión Empresarial</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-800">MEDIA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">7</td><td class="px-4 py-2.5">Ciudad Constitución</td><td class="px-4 py-2.5">Ing. en Sistemas Computacionales</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-800">MEDIA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">8</td><td class="px-4 py-2.5">Ciudad Constitución</td><td class="px-4 py-2.5">Ing. en Industrias Alimentarias</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-800">MEDIA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">9</td><td class="px-4 py-2.5">Ciudad Constitución</td><td class="px-4 py-2.5">Lic. en Administración (Mixta)</td><td class="px-4 py-2.5">Semiescolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-800">MEDIA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">10</td><td class="px-4 py-2.5">Ciudad Constitución</td><td class="px-4 py-2.5">Ing. Industrial</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800">BAJA</span></td></tr>
-                  <tr class="hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">11</td><td class="px-4 py-2.5">Ciudad Constitución</td><td class="px-4 py-2.5">Ing. en Sistemas (En línea)</td><td class="px-4 py-2.5">No escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800">BAJA</span></td></tr>
+                  <tr
+                    class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">1</td>
+                    <td class="px-4 py-2.5">Ciudad Constitución</td>
+                    <td class="px-4 py-2.5">Lic. en Gastronomía</td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-red-100 text-red-800"
+                        >ALTA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">2</td>
+                    <td class="px-4 py-2.5">Ciudad Constitución</td>
+                    <td class="px-4 py-2.5">
+                      Ing. en Innovación Agrícola Sustentable
+                    </td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-red-100 text-red-800"
+                        >ALTA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">3</td>
+                    <td class="px-4 py-2.5">Ciudad Constitución</td>
+                    <td class="px-4 py-2.5">Lic. en Administración</td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-red-100 text-red-800"
+                        >ALTA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">4</td>
+                    <td class="px-4 py-2.5">Ciudad Constitución</td>
+                    <td class="px-4 py-2.5">Lic. en Arquitectura</td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-red-100 text-red-800"
+                        >ALTA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">5</td>
+                    <td class="px-4 py-2.5">Ciudad Constitución</td>
+                    <td class="px-4 py-2.5">Ing. Electromecánica</td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-red-100 text-red-800"
+                        >ALTA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">6</td>
+                    <td class="px-4 py-2.5">Ciudad Constitución</td>
+                    <td class="px-4 py-2.5">Ing. en Gestión Empresarial</td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-800"
+                        >MEDIA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">7</td>
+                    <td class="px-4 py-2.5">Ciudad Constitución</td>
+                    <td class="px-4 py-2.5">
+                      Ing. en Sistemas Computacionales
+                    </td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-800"
+                        >MEDIA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">8</td>
+                    <td class="px-4 py-2.5">Ciudad Constitución</td>
+                    <td class="px-4 py-2.5">Ing. en Industrias Alimentarias</td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-800"
+                        >MEDIA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">9</td>
+                    <td class="px-4 py-2.5">Ciudad Constitución</td>
+                    <td class="px-4 py-2.5">Lic. en Administración (Mixta)</td>
+                    <td class="px-4 py-2.5">Semiescolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-800"
+                        >MEDIA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">10</td>
+                    <td class="px-4 py-2.5">Ciudad Constitución</td>
+                    <td class="px-4 py-2.5">Ing. Industrial</td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800"
+                        >BAJA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr class="hover:bg-green-50 transition-colors duration-150">
+                    <td class="px-4 py-2.5">11</td>
+                    <td class="px-4 py-2.5">Ciudad Constitución</td>
+                    <td class="px-4 py-2.5">Ing. en Sistemas (En línea)</td>
+                    <td class="px-4 py-2.5">No escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800"
+                        >BAJA</span
+                      >
+                    </td>
+                  </tr>
                 </tbody>
               </table>
             </div>
@@ -1409,88 +2512,162 @@
         </div>
         <div class="p-6 space-y-6 bg-gray-50">
           <!-- Criterios de Ingreso -->
-          <section class="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden">
+          <section
+            class="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden"
+          >
             <div class="bg-green-100 px-5 py-3 border-l-4 border-green-500">
-              <h4 class="text-base font-bold text-green-800 uppercase tracking-wide flex items-center">
+              <h4
+                class="text-base font-bold text-green-800 uppercase tracking-wide flex items-center"
+              >
                 <i class="fas fa-clipboard-list mr-2 text-green-600"></i>
                 Criterios de Ingreso y Descuentos
               </h4>
             </div>
             <div class="p-5 space-y-4">
-              <div class="bg-gray-50 rounded-md p-4 border border-gray-200 hover:border-green-300 transition-colors duration-200">
+              <div
+                class="bg-gray-50 rounded-md p-4 border border-gray-200 hover:border-green-300 transition-colors duration-200"
+              >
                 <p class="font-semibold text-gray-800 flex items-center mb-2">
-                  <span class="w-6 h-6 rounded-full bg-green-600 text-white text-sm flex items-center justify-center mr-2 flex-shrink-0">1</span>
+                  <span
+                    class="w-6 h-6 rounded-full bg-green-600 text-white text-sm flex items-center justify-center mr-2 flex-shrink-0"
+                    >1</span
+                  >
                   Estudiantes con promedio de 100 a 90
                 </p>
                 <ul class="space-y-1.5 pl-8 text-gray-700">
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
-                    <span>Ingreso directo a la carrera de alta y media demanda (Ingeniería en Administración, Ingeniería Industrial, Ingeniería Electromecánica, Ingeniería en Gestión Empresarial, Ingeniería en Tecnologías de la Información y Comunicaciones, Contador Público).</span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
+                    <span
+                      >Ingreso directo a la carrera de alta y media demanda
+                      (Ingeniería en Administración, Ingeniería Industrial,
+                      Ingeniería Electromecánica, Ingeniería en Gestión
+                      Empresarial, Ingeniería en Tecnologías de la Información y
+                      Comunicaciones, Contador Público).</span
+                    >
                   </li>
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
                     <span>Descuento del 50% en la ficha de inscripción.</span>
                   </li>
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
-                    <span>Presentará el examen de ingreso para fines de diagnóstico.</span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
+                    <span
+                      >Presentará el examen de ingreso para fines de
+                      diagnóstico.</span
+                    >
                   </li>
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
-                    <span>En caso de decidir una carrera de alta demanda lo realizan por procedimiento convencional.</span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
+                    <span
+                      >En caso de decidir una carrera de alta demanda lo
+                      realizan por procedimiento convencional.</span
+                    >
                   </li>
                 </ul>
               </div>
-              <div class="bg-gray-50 rounded-md p-4 border border-gray-200 hover:border-green-300 transition-colors duration-200">
+              <div
+                class="bg-gray-50 rounded-md p-4 border border-gray-200 hover:border-green-300 transition-colors duration-200"
+              >
                 <p class="font-semibold text-gray-800 flex items-center mb-2">
-                  <span class="w-6 h-6 rounded-full bg-green-600 text-white text-sm flex items-center justify-center mr-2 flex-shrink-0">2</span>
+                  <span
+                    class="w-6 h-6 rounded-full bg-green-600 text-white text-sm flex items-center justify-center mr-2 flex-shrink-0"
+                    >2</span
+                  >
                   Estudiantes con promedio de 89 a 85
                 </p>
                 <ul class="space-y-1.5 pl-8 text-gray-700">
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
-                    <span>Ingreso directo a la carrera de baja y media demanda (Ingeniería en Tecnologías de la Información y Comunicaciones, Ingeniería en Energías Renovables, Técnico Superior en Minería y Contador Público).</span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
+                    <span
+                      >Ingreso directo a la carrera de baja y media demanda
+                      (Ingeniería en Tecnologías de la Información y
+                      Comunicaciones, Ingeniería en Energías Renovables, Técnico
+                      Superior en Minería y Contador Público).</span
+                    >
                   </li>
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
                     <span>Descuento del 25% en la ficha de inscripción.</span>
                   </li>
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
-                    <span>Presentará el examen de ingreso para fines de diagnóstico.</span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
+                    <span
+                      >Presentará el examen de ingreso para fines de
+                      diagnóstico.</span
+                    >
                   </li>
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
-                    <span>En caso de decidir una carrera de alta demanda lo realizan por procedimiento convencional.</span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
+                    <span
+                      >En caso de decidir una carrera de alta demanda lo
+                      realizan por procedimiento convencional.</span
+                    >
                   </li>
                 </ul>
               </div>
-              <div class="bg-gray-50 rounded-md p-4 border border-gray-200 hover:border-green-300 transition-colors duration-200">
+              <div
+                class="bg-gray-50 rounded-md p-4 border border-gray-200 hover:border-green-300 transition-colors duration-200"
+              >
                 <p class="font-semibold text-gray-800 flex items-center mb-2">
-                  <span class="w-6 h-6 rounded-full bg-green-600 text-white text-sm flex items-center justify-center mr-2 flex-shrink-0">3</span>
+                  <span
+                    class="w-6 h-6 rounded-full bg-green-600 text-white text-sm flex items-center justify-center mr-2 flex-shrink-0"
+                    >3</span
+                  >
                   Estudiantes con promedio de 85 a 70
                 </p>
                 <ul class="space-y-1.5 pl-8 text-gray-700">
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
-                    <span>Ingreso directo a carreras de baja demanda (Ingeniería en Energías Renovables, Técnico Superior en Minería).</span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
+                    <span
+                      >Ingreso directo a carreras de baja demanda (Ingeniería en
+                      Energías Renovables, Técnico Superior en Minería).</span
+                    >
                   </li>
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
                     <span>No cuenta con descuento.</span>
                   </li>
                   <li class="flex items-start">
-                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
-                    <span>En caso de decidir una carrera de alta o media demanda lo realizan por procedimiento convencional.</span>
+                    <span
+                      class="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                    ></span>
+                    <span
+                      >En caso de decidir una carrera de alta o media demanda lo
+                      realizan por procedimiento convencional.</span
+                    >
                   </li>
                 </ul>
               </div>
             </div>
           </section>
           <!-- Demanda de Carreras -->
-          <section class="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden">
+          <section
+            class="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden"
+          >
             <div class="bg-green-100 px-5 py-3 border-l-4 border-green-500">
-              <h4 class="text-base font-bold text-green-800 uppercase tracking-wide flex items-center">
+              <h4
+                class="text-base font-bold text-green-800 uppercase tracking-wide flex items-center"
+              >
                 <i class="fas fa-graduation-cap mr-2 text-green-600"></i>
                 Demanda de Carreras
               </h4>
@@ -1507,14 +2684,118 @@
                   </tr>
                 </thead>
                 <tbody class="text-gray-700">
-                  <tr class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">1</td><td class="px-4 py-2.5">Mulegé</td><td class="px-4 py-2.5">Ing. en Administración</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-red-100 text-red-800">ALTA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">2</td><td class="px-4 py-2.5">Mulegé</td><td class="px-4 py-2.5">Ing. en Tecnologías de la Información y Comunicaciones</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-800">MEDIA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">3</td><td class="px-4 py-2.5">Mulegé</td><td class="px-4 py-2.5">Ing. en Energías Renovables</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800">BAJA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">4</td><td class="px-4 py-2.5">Mulegé</td><td class="px-4 py-2.5">Ing. Industrial</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-red-100 text-red-800">ALTA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">5</td><td class="px-4 py-2.5">Mulegé</td><td class="px-4 py-2.5">Ing. Electromecánica</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-red-100 text-red-800">ALTA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">6</td><td class="px-4 py-2.5">Mulegé</td><td class="px-4 py-2.5">Ing. en Gestión Empresarial</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-red-100 text-red-800">ALTA</span></td></tr>
-                  <tr class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">7</td><td class="px-4 py-2.5">Mulegé</td><td class="px-4 py-2.5">Técnico Superior en Minería</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800">BAJA</span></td></tr>
-                  <tr class="hover:bg-green-50 transition-colors duration-150"><td class="px-4 py-2.5">8</td><td class="px-4 py-2.5">Mulegé</td><td class="px-4 py-2.5">Contador Público</td><td class="px-4 py-2.5">Escolarizada</td><td class="px-4 py-2.5"><span class="px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-800">MEDIA</span></td></tr>
+                  <tr
+                    class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">1</td>
+                    <td class="px-4 py-2.5">Mulegé</td>
+                    <td class="px-4 py-2.5">Ing. en Administración</td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-red-100 text-red-800"
+                        >ALTA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">2</td>
+                    <td class="px-4 py-2.5">Mulegé</td>
+                    <td class="px-4 py-2.5">
+                      Ing. en Tecnologías de la Información y Comunicaciones
+                    </td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-800"
+                        >MEDIA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">3</td>
+                    <td class="px-4 py-2.5">Mulegé</td>
+                    <td class="px-4 py-2.5">Ing. en Energías Renovables</td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800"
+                        >BAJA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">4</td>
+                    <td class="px-4 py-2.5">Mulegé</td>
+                    <td class="px-4 py-2.5">Ing. Industrial</td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-red-100 text-red-800"
+                        >ALTA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">5</td>
+                    <td class="px-4 py-2.5">Mulegé</td>
+                    <td class="px-4 py-2.5">Ing. Electromecánica</td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-red-100 text-red-800"
+                        >ALTA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-gray-50 hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">6</td>
+                    <td class="px-4 py-2.5">Mulegé</td>
+                    <td class="px-4 py-2.5">Ing. en Gestión Empresarial</td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-red-100 text-red-800"
+                        >ALTA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-gray-200 bg-white hover:bg-green-50 transition-colors duration-150"
+                  >
+                    <td class="px-4 py-2.5">7</td>
+                    <td class="px-4 py-2.5">Mulegé</td>
+                    <td class="px-4 py-2.5">Técnico Superior en Minería</td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800"
+                        >BAJA</span
+                      >
+                    </td>
+                  </tr>
+                  <tr class="hover:bg-green-50 transition-colors duration-150">
+                    <td class="px-4 py-2.5">8</td>
+                    <td class="px-4 py-2.5">Mulegé</td>
+                    <td class="px-4 py-2.5">Contador Público</td>
+                    <td class="px-4 py-2.5">Escolarizada</td>
+                    <td class="px-4 py-2.5">
+                      <span
+                        class="px-2 py-0.5 rounded text-xs font-semibold bg-amber-100 text-amber-800"
+                        >MEDIA</span
+                      >
+                    </td>
+                  </tr>
                 </tbody>
               </table>
             </div>
@@ -1994,8 +3275,115 @@
     </footer>
 
     <!-- Scripts -->
-    
-  
+    <script>
+      function openModal(modalId) {
+        const modal = document.getElementById(modalId);
+        if (modal) {
+          modal.classList.remove("hidden");
+          document.body.style.overflow = "hidden";
+          setTimeout(() => {
+            modal.style.opacity = "0";
+            modal.style.transition = "opacity 0.3s ease";
+            modal.style.opacity = "1";
+          }, 10);
+        }
+      }
+
+      function closeModal(modalId) {
+        const modal = document.getElementById(modalId);
+        if (modal) {
+          modal.style.transition = "opacity 0.3s ease";
+          modal.style.opacity = "0";
+          setTimeout(() => {
+            modal.classList.add("hidden");
+            document.body.style.overflow = "";
+          }, 300);
+        }
+      }
+
+      function closeModalOnBackdrop(event, modalId) {
+        if (event.target.id === modalId) {
+          closeModal(modalId);
+        }
+      }
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          document.querySelectorAll('[id^="modal-"]').forEach((modal) => {
+            if (!modal.classList.contains("hidden")) {
+              closeModal(modal.id);
+            }
+          });
+        }
+      });
+
+      function toggleFAQ(faqId) {
+        const answer = document.getElementById(faqId + "-answer");
+        const icon = document.getElementById(faqId + "-icon");
+        const button = answer.previousElementSibling;
+        const isOpen = answer.classList.contains("open");
+
+        document.querySelectorAll('[id$="-answer"]').forEach((ans) => {
+          if (ans.id !== faqId + "-answer" && ans.classList.contains("open")) {
+            ans.classList.remove("open");
+            const ansIcon = document.getElementById(
+              ans.id.replace("-answer", "-icon"),
+            );
+            if (ansIcon) ansIcon.classList.remove("rotate-180");
+            const ansButton = ans.previousElementSibling;
+            if (ansButton) ansButton.setAttribute("aria-expanded", "false");
+          }
+        });
+
+        if (isOpen) {
+          answer.classList.remove("open");
+          icon.classList.remove("rotate-180");
+          button.setAttribute("aria-expanded", "false");
+        } else {
+          answer.classList.add("open");
+          icon.classList.add("rotate-180");
+          button.setAttribute("aria-expanded", "true");
+          setTimeout(() => {
+            answer.scrollIntoView({ behavior: "smooth", block: "nearest" });
+          }, 100);
+        }
+      }
+
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        });
+      });
+
+      const scrollObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("animated");
+              scrollObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.1, rootMargin: "0px 0px -100px 0px" },
+      );
+
+      document.querySelectorAll(".scroll-animate").forEach((el) => {
+        scrollObserver.observe(el);
+      });
+
+      document
+        .querySelectorAll(".bg-white.rounded-lg.shadow-md")
+        .forEach((el) => {
+          if (!el.classList.contains("scroll-animate")) {
+            scrollObserver.observe(el);
+          }
+        });
+    </script>
+
     <!-- Widget de accesibilidad -->
     <div id="a11y-widget-root" data-base=""></div>
     <script src="js/accessibility-widget.js" defer></script>

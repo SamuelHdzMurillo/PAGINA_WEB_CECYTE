@@ -175,12 +175,17 @@ body {
 
 /* Mejoras para el menú móvil */
 .mobile-menu-transition {
-  transition: opacity 0.3s ease, transform 0.3s ease, max-height 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    max-height 0.3s ease;
 }
 
 /* Mejoras para los submenús */
 .submenu-transition {
-  transition: opacity 0.3s ease, max-height 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    max-height 0.3s ease;
 }
 
 /* Mejoras para el espaciado del navbar en diferentes tamaños */
@@ -200,7 +205,9 @@ body {
 
 /* Mejoras para el hover en desktop */
 .navbar-link-hover {
-  transition: color 0.2s ease, background-color 0.2s ease;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
 }
 
 .navbar-link-hover:hover {
@@ -211,14 +218,17 @@ body {
 /* Mejoras para los dropdowns */
 .dropdown-menu {
   min-width: 12rem;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
     0 4px 6px -2px rgba(0, 0, 0, 0.05);
   border: 1px solid #e5e7eb;
 }
 
 /* Mejoras para el botón del menú móvil */
 .mobile-menu-btn {
-  transition: transform 0.3s ease, color 0.2s ease;
+  transition:
+    transform 0.3s ease,
+    color 0.2s ease;
 }
 
 .mobile-menu-btn:hover {
@@ -263,15 +273,31 @@ body {
   margin-bottom: 0;
 }
 
-/* Páginas de notas: espacio bajo navbar fijo (h-16 + línea naranja) */
-body.nota-pagina {
-  padding-top: 5.5rem;
+/* Espacio global bajo navbar fijo (h-16 + línea naranja + respiro) */
+#navbar-root[data-variant="default"] {
+  display: block;
+  height: 5.5rem;
 }
 
 @media (min-width: 640px) {
-  body.nota-pagina {
-    padding-top: 6rem;
+  #navbar-root[data-variant="default"] {
+    height: 6rem;
   }
+}
+
+/* Evitar doble compensación en páginas que ya tenían padding para el navbar */
+body.nota-pagina:has(#navbar-root),
+body.pt-20:has(#navbar-root) {
+  padding-top: 0 !important;
+}
+
+body:has(#navbar-root[data-variant="default"]) > main.pt-16,
+body:has(#navbar-root[data-variant="default"]) > main.pt-20,
+body:has(#navbar-root[data-variant="default"]) > main.pt-24,
+body:has(#navbar-root[data-variant="default"]) > section.pt-20,
+body:has(#navbar-root[data-variant="default"]) > section.pt-24,
+body:has(#navbar-root) .page-main-offset {
+  padding-top: 0 !important;
 }
 
 .nota-contenedor {

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -22,7 +22,7 @@
     />
   </head>
   <body class="bg-gray-50">
-        <!-- Navbar CECYTE (componente central) -->
+    <!-- Navbar CECYTE (componente central) -->
     <div id="navbar-root" data-base="" data-variant="default"></div>
     <script src="js/navbar.js" defer></script>
 
@@ -974,8 +974,10 @@
                 <div class="text-right">
                   <span class="text-xs font-semibold bg-white bg-opacity-20 px-3 py-1 rounded-full">
                     ${participantesEquipo.length} ${
-          participantesEquipo.length === 1 ? "Participante" : "Participantes"
-        }
+                      participantesEquipo.length === 1
+                        ? "Participante"
+                        : "Participantes"
+                    }
                   </span>
                 </div>
               </div>
@@ -1004,8 +1006,10 @@
                 <span>Integrantes del Equipo</span>
                 <span class="ml-auto text-sm font-normal text-gray-600 bg-white px-3 py-1 rounded-full">
                   ${participantesEquipo.length} ${
-          participantesEquipo.length === 1 ? "participante" : "participantes"
-        }
+                    participantesEquipo.length === 1
+                      ? "participante"
+                      : "participantes"
+                  }
                 </span>
               </h4>
               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -1023,7 +1027,7 @@
         // Filtrar participantes que no sean "asesora"
         const participantesFiltrados = participantes.filter(
           (participante) =>
-            !participante.rol_participante.toLowerCase().includes("asesora")
+            !participante.rol_participante.toLowerCase().includes("asesora"),
         );
 
         participantesFiltrados.forEach((participante) => {
@@ -1108,7 +1112,7 @@
         overflow: hidden;
       }
     </style>
-  
+
     <!-- Widget de accesibilidad -->
     <div id="a11y-widget-root" data-base=""></div>
     <script src="js/accessibility-widget.js" defer></script>
