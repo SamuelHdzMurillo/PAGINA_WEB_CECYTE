@@ -307,3 +307,106 @@ body:has(#navbar-root) .page-main-offset {
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
+
+/* Notas: lectura cómoda en móvil (título, padding y espacio bajo navbar) */
+body.nota-pagina .nota-contenedor {
+  box-sizing: border-box;
+  width: calc(100% - 1.5rem);
+  max-width: 56rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.25rem 1.35rem 5rem !important;
+}
+
+body.nota-pagina .nota-contenedor h1 {
+  font-size: clamp(1.45rem, 5.5vw, 2.25rem) !important;
+  line-height: 1.35 !important;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.65rem;
+  overflow-wrap: break-word;
+}
+
+body.nota-pagina .nota-contenedor header p {
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: #374151;
+}
+
+body.nota-pagina .nota-contenedor p {
+  overflow-wrap: break-word;
+}
+
+body.nota-pagina .nota-contenedor blockquote {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  padding-left: 0.9rem;
+  margin-right: 0.15rem;
+}
+
+body.nota-pagina .nota-contenedor img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 639px) {
+  #navbar-root[data-variant="default"] {
+    height: 4.75rem;
+  }
+
+  body.nota-pagina .nota-contenedor .text-justify {
+    text-align: left;
+  }
+
+  body.nota-pagina .nota-contenedor section br {
+    display: none;
+  }
+
+  body.nota-pagina .nota-contenedor h2 {
+    font-size: 1.25rem !important;
+    line-height: 1.35;
+  }
+
+  body.nota-pagina footer .grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  body.nota-pagina #lightbox .relative {
+    width: 100%;
+    max-width: 100%;
+    padding: 2.5rem 0.75rem 0.75rem;
+  }
+
+  body.nota-pagina #prev-btn,
+  body.nota-pagina #next-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+  }
+
+  body.nota-pagina #prev-btn {
+    left: 0.35rem;
+  }
+
+  body.nota-pagina #next-btn {
+    right: 0.35rem;
+  }
+}
+
+@media (min-width: 640px) {
+  body.nota-pagina .nota-contenedor {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem !important;
+  }
+
+  body.nota-pagina .nota-contenedor h1 {
+    font-size: 2.25rem !important;
+    line-height: 1.25 !important;
+  }
+}
