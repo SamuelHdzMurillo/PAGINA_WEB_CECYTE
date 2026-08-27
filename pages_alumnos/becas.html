@@ -11,17 +11,17 @@
     />
   </head>
 
-  <body class="bg-gray-100 font-sans">
+  <body class="bg-gray-100 font-sans pt-20">
 
         <!-- Navbar CECYTE (componente central) -->
     <div id="navbar-root" data-base="../" data-variant="default"></div>
     <script src="../js/navbar.js" defer></script>
 <!-- FIN NAVBAR CON SUBEMENUS -->
     <!-- Header Section -->
-    <header class="bg-green-700 text-white py-10">
+    <header class="bg-green-700 text-white py-10 px-4">
       <div class="max-w-5xl mx-auto text-center">
-        <h1 class="text-5xl font-bold mb-4">Explora Nuestras Becas</h1>
-        <p class="text-xl font-light">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Explora Nuestras Becas</h1>
+        <p class="text-lg sm:text-xl font-light">
           Descubre las oportunidades que tenemos para apoyarte en tu educación
         </p>
       </div>
@@ -42,24 +42,23 @@
             Juárez
           </h2>
           <i
-            class="fas fa-chevron-down text-gray-600"
+            class="fas fa-chevron-down text-gray-600 rotate-180 transition-transform duration-200"
             id="icon-beca-benito-juarez"
           ></i>
         </div>
-        <div id="beca-benito-juarez" class="hidden px-6 py-4 space-y-4">
+        <div id="beca-benito-juarez" class="px-6 py-4 space-y-4">
           <div class="bg-gray-50 p-4 rounded-lg">
             <h3 class="text-xl font-semibold text-gray-700">
               Beca Benito Juárez 
             </h3>
-            <p class="text-gray-600">
-              <p>Documentos de descarga:</p>
-              <br>
-              <p>procesos de Beca Universal <a  class="text-orange-600 underline hover:text-orange-800" href="https://drive.google.com/file/d/1m1uOQ6UQXlvBFoegsGPpxOKyNTJVPNlg/view?usp=sharing">(DESCARGAR)</a></p>
-
-              <p>Capacitación SIREL <a class="text-orange-600 underline hover:text-orange-800" href="https://drive.google.com/file/d/1vrO1SG21jMZwxAKL3TBI1fQtDiKRELfY/view?usp=sharing">(DESCARGAR)</a></p>
-
-              <p>Guia de usuario SIREL <a class="text-orange-600 underline hover:text-orange-800" href="https://drive.google.com/file/d/1Ab-kJbYz-EwGOtHDf3WA-UBtJQKCez90/view?usp=sharing">(DESCARGAR)</a></p>
-            </p>
+            <div class="text-gray-600 space-y-2">
+              <p>Enlaces oficiales:</p>
+              <p>Página oficial de Becas Benito Juárez <a class="text-orange-600 underline hover:text-orange-800" href="https://www.gob.mx/becasbenitojuarez" target="_blank" rel="noopener noreferrer">(ABRIR)</a></p>
+              <p>Portal de registro <a class="text-orange-600 underline hover:text-orange-800" href="https://www.becabenitojuarez.gob.mx/" target="_blank" rel="noopener noreferrer">(ABRIR)</a></p>
+              <p>Buscador de escuelas (CCT) <a class="text-orange-600 underline hover:text-orange-800" href="https://buscador.becasbenitojuarez.gob.mx/escuelas-buems/" target="_blank" rel="noopener noreferrer">(ABRIR)</a></p>
+              <p>Reglas de Operación 2026 <a class="text-orange-600 underline hover:text-orange-800" href="https://dof.gob.mx/nota_detalle.php?codigo=5777730&fecha=31/12/2025" target="_blank" rel="noopener noreferrer">(ABRIR)</a></p>
+              <p>Anexo de las Reglas de Operación 2026 (PDF) <a class="text-orange-600 underline hover:text-orange-800" href="https://www.dof.gob.mx/2025/SEP/ANEXO_DEL_ACUERDO_36_12_25.pdf" target="_blank" rel="noopener noreferrer">(DESCARGAR)</a></p>
+            </div>
           </div>
         </div>
       </div>
@@ -74,12 +73,11 @@
             <i class="fas fa-university mr-3 text-blue-600"></i> Becas Estatales
           </h2>
           <i
-            class="fas fa-chevron-down text-gray-600"
+            class="fas fa-chevron-down text-gray-600 rotate-180 transition-transform duration-200"
             id="icon-beca-estatales"
           ></i>
         </div>
-        <div id="beca-estatales" class="hidden px-6 py-4 space-y-4">
-          
+        <div id="beca-estatales" class="px-6 py-4 space-y-4">
           <div class="bg-gray-50 p-4 rounded-lg">
             <h3 class="text-xl font-semibold text-gray-700">
               BECA DE EXCELENCIA
@@ -94,16 +92,19 @@
               estatal de desarrollo y fomentar en México una Educación de
               Calidad.
             </p>
-            <br />
-            <a
-              class="text-orange-600 underline hover:text-orange-800"
-              href="https://drive.google.com/file/d/1IfDO-9VDpde1lk-vh8PQeVbw1brfpcgb/view?usp=sharing"
-              >Clic aqui para más Información.</a
-            >
+            <p class="text-gray-600 mt-3">
+              Para más información, consulta la SEP BCS o acude al enlace de
+              becas de tu plantel.
+            </p>
+            <p class="mt-3">
+              <a
+                class="text-orange-600 underline hover:text-orange-800"
+                href="https://www.sepbcs.gob.mx/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Clic aquí para más información.</a>
+            </p>
           </div>
-          
-
-        
 
           <div class="bg-gray-50 p-4 rounded-lg">
             <h3 class="text-xl font-semibold text-gray-700">
@@ -127,8 +128,10 @@
             <br />
             <a
               class="text-orange-600 underline hover:text-orange-800"
-              href="https://www.gob.mx/becasbenitojuarez/documentos/reglas-de-operacion-2025-del-programa-beca-universal-para-estudiantes-de-educacion-media-superior-benito-juarez"
-              >Clic aqui para más Información.</a
+              href="https://www.gob.mx/becasbenitojuarez"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Clic aquí para más información.</a
             >
           </div>
         </div>
@@ -246,5 +249,14 @@
     <!-- Widget de accesibilidad -->
     <div id="a11y-widget-root" data-base="../"></div>
     <script src="../js/accessibility-widget.js" defer></script>
+    <script>
+      function toggleInfo(id) {
+        const panel = document.getElementById(id);
+        const icon = document.getElementById("icon-" + id);
+        if (!panel) return;
+        panel.classList.toggle("hidden");
+        if (icon) icon.classList.toggle("rotate-180");
+      }
+    </script>
   </body>
 </html>
