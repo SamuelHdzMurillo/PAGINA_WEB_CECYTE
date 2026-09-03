@@ -58,9 +58,9 @@
     </button>
     <!-- BOTON SUBIR FIN -->
 
-    <!-- HERO SECTION -->
+    <!-- HERO SECTION: full-bleed bajo el navbar fijo (sin hueco blanco del spacer) -->
     <section
-      class="relative min-h-screen pt-20 flex items-center overflow-hidden"
+      class="relative -mt-[5.5rem] sm:-mt-[6rem] min-h-screen flex items-center overflow-x-hidden pt-[5.5rem] sm:pt-[6rem] pb-16"
     >
       <!-- Enhanced Background with multiple layers -->
       <div class="absolute inset-0">
@@ -119,20 +119,20 @@
       <div class="container mx-auto px-4 relative z-10">
         <div class="grid lg:grid-cols-2 gap-16 items-center">
           <!-- Enhanced left content -->
-          <div class="text-white space-y-8">
+          <div class="text-white space-y-6">
             <!-- Enhanced main heading with better typography -->
             <div class="space-y-4">
               <h1
-                class="text-5xl md:text-7xl lg:text-8xl font-black leading-tight"
+                class="text-4xl md:text-6xl lg:text-7xl font-black leading-none"
               >
                 <span class="block text-white"> CECyTE </span>
-                <span class="block text-orange-300"> en Tu Comunidad </span>
+                <span class="block text-orange-300 mt-2"> en Tu Comunidad </span>
               </h1>
 
               <!-- Enhanced hashtag with glassmorphism -->
               <div class="inline-block">
                 <span
-                  class="inline-flex items-center bg-white/20 backdrop-blur-md px-8 py-4 rounded-full text-2xl font-bold text-orange-200 border border-white/30 shadow-2xl hover:bg-white/30 transition-all duration-300"
+                  class="inline-flex items-center bg-white/20 backdrop-blur-md px-6 py-3 rounded-full text-xl md:text-2xl font-bold text-orange-200 border border-white/30 shadow-2xl hover:bg-white/30 transition-all duration-300"
                 >
                   <i class="fas fa-hashtag mr-3 text-orange-300"></i>
                   #CECyTEsComunidad
@@ -143,7 +143,7 @@
             <!-- Enhanced subtitle with better spacing -->
             <div class="space-y-6">
               <p
-                class="text-2xl md:text-3xl text-green-100 leading-relaxed font-light"
+                class="text-xl md:text-2xl text-green-100 leading-relaxed font-light"
               >
                 Construyendo puentes entre la educación y la sociedad,
                 transformando comunidades a través del compromiso y la
@@ -177,14 +177,14 @@
           <!-- Enhanced right content with better image layout -->
           <div class="relative">
             <!-- Main image with enhanced styling -->
-            <div class="relative mb-8">
+            <div class="relative mb-6">
               <div
                 class="absolute -inset-4 bg-gradient-to-r from-orange-400 to-green-500 rounded-3xl blur opacity-30"
               ></div>
               <img
                 src="img_recuros_pagina/img_noticias/img_3.webp"
                 alt="CECyTE en la Comunidad"
-                class="relative w-full h-80 object-cover rounded-3xl shadow-2xl transform hover:scale-105 transition-all duration-500 border-4 border-white/20"
+                class="relative w-full h-56 md:h-72 object-cover rounded-3xl shadow-2xl transform hover:scale-105 transition-all duration-500 border-4 border-white/20"
               />
               <!-- Overlay with content -->
               <div
@@ -197,7 +197,7 @@
             </div>
 
             <!-- Enhanced secondary images grid -->
-            <div class="grid grid-cols-2 gap-6">
+            <div class="grid grid-cols-2 gap-4">
               <!-- Image 1 with enhanced styling -->
               <div class="relative group">
                 <div
@@ -206,7 +206,7 @@
                 <img
                   src="img_recuros_pagina/img_noticias/img_2.webp"
                   alt="Honores y ceremonias"
-                  class="relative w-full h-40 object-cover rounded-2xl shadow-xl transform group-hover:scale-105 transition-all duration-300"
+                  class="relative w-full h-28 md:h-36 object-cover rounded-2xl shadow-xl transform group-hover:scale-105 transition-all duration-300"
                 />
                 <div
                   class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-2xl"
@@ -225,7 +225,7 @@
                 <img
                   src="img_recuros_pagina/img_noticias/img_4.webp"
                   alt="Deportes comunitarios"
-                  class="relative w-full h-40 object-cover rounded-2xl shadow-xl transform group-hover:scale-105 transition-all duration-300"
+                  class="relative w-full h-28 md:h-36 object-cover rounded-2xl shadow-xl transform group-hover:scale-105 transition-all duration-300"
                 />
                 <div
                   class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-2xl"

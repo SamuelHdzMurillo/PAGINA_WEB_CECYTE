@@ -24,15 +24,20 @@
       }
       
       #map {
-        height: 100vh;
+        height: calc(100vh - 5.5rem);
         width: 100vw;
         z-index: 0;
       }
-      
-      @media (max-width: 768px) {
+
+      @media (min-width: 640px) {
         #map {
-          height: calc(100vh - 64px);
-          margin-top: 64px;
+          height: calc(100vh - 6rem);
+        }
+      }
+
+      @media (max-width: 639px) {
+        #map {
+          height: calc(100vh - 4.75rem);
         }
       }
       
